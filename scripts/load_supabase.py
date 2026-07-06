@@ -67,7 +67,7 @@ create policy "public read" on meta for select using (true);
 
 def env(name):
     val = os.environ.get(name)
-    if not val:
+    if not val and (ROOT / ".env").exists():
         for line in (ROOT / ".env").read_text(encoding="utf-8").splitlines():
             if line.startswith(f"{name}="):
                 val = line.split("=", 1)[1].strip()

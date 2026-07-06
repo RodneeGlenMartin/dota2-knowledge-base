@@ -1,0 +1,57 @@
+name: Auto-update on new Dota 2 patch
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"   # every 6 hours
+  workflow_dispatch: {}       # manual run button
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests "psycopg[binary]"
+
+      - name: Check for new patch
+        id: check
+        run: |
+          CURRENT=$(python -c "import json; print(json.load(open('data/raw/valve_patches.json'))[-1]['patch_number'])")
+          LATEST=$(python -c "import requests; print(requests.get('https://www.dota2.com/datafeed/patchnoteslist?language=english', timeout=60).json()['patches'][-1]['patch_number'])")
+          echo "current=$CURRENT latest=$LATEST"
+          if [ "$CURRENT" != "$LATEST" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Fetch and rebuild
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          python scripts/fetch_valve.py
+          python scripts/build_kb.py
+
+      - name: Reload Supabase database
+        if: steps.check.outputs.changed == 'true'
+        env:
+          SUPABASE_DB_HOST: ${{ secrets.SUPABASE_DB_HOST }}
+          SUPABASE_DB_USER: ${{ secrets.SUPABASE_DB_USER }}
+          SUPABASE_DB_PASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}
+        run: python scripts/load_supabase.py
+
+      - name: Commit updated data
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          PATCH=$(python -c "import json; print(json.load(open('data/raw/valve_patches.json'))[-1]['patch_number'])")
+          git commit -m "Update data for patch $PATCH" || echo "nothing to commit"
+          git push
