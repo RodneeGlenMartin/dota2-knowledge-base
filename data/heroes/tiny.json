@@ -1,0 +1,813 @@
+{
+  "id": 19,
+  "name": "Tiny",
+  "slug": "tiny",
+  "npc_name": "npc_dota_hero_tiny",
+  "primary_attribute": "str",
+  "attack_type": "Melee",
+  "complexity": 2,
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Disabler",
+    "Durable",
+    "Pusher",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 30,
+    "str_gain": 4.2,
+    "base_agi": 0,
+    "agi_gain": 0,
+    "base_int": 17,
+    "int_gain": 2.4,
+    "damage_min": 61,
+    "damage_max": 67,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 0,
+    "magic_resistance": 25,
+    "movement_speed": 275,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 780,
+    "health_regen": 5,
+    "max_mana": 279,
+    "mana_regen": 0.85
+  },
+  "lore": "Coming to life as a chunk of stone, Tiny's origins are a mystery on which he continually speculates.  He is a Stone Giant now, but what did he used to be?  A splinter broken from a Golem's heel?  A shard swept from a gargoyle-sculptor's workshop?  A fragment of the Oracular Visage of Garthos?  A deep curiosity drives him, and he travels the world tirelessly seeking his origins, his parentage, his people.  As he roams, he gathers weight and size; the forces that weather lesser rocks, instead cause Tiny to grow and ever grow.",
+  "hype": "Growing to <b>tremendous size and strength</b> as the battle progresses, Tiny's power can quickly become terrifying. He <b>tosses heroes and creeps</b> at his enemies, or <b>stuns</b> them beneath an avalanche. Should he gather his full strength, he can demolish the enemy's base with ease.",
+  "abilities": [
+    {
+      "key": "tiny_avalanche",
+      "name": "Avalanche",
+      "description": "Bombards an area with rocks, continously doing small intervals of damage and stun to enemy units.",
+      "max_level": 4,
+      "cooldowns": [
+        23,
+        20,
+        17,
+        14
+      ],
+      "mana_costs": [
+        105,
+        120,
+        135,
+        150
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        600
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            325,
+            340,
+            355,
+            370
+          ]
+        },
+        {
+          "key": "tick_interval",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "total_duration",
+          "heading": "AVALANCHE DURATION:",
+          "values": [
+            1.5
+          ]
+        },
+        {
+          "key": "tick_count",
+          "heading": "",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "stun_duration",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "projectile_speed",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "avalanche_damage",
+          "heading": "AVALANCHE DAMAGE:",
+          "values": [
+            90,
+            180,
+            270,
+            360
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            105,
+            120,
+            135,
+            150
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            23,
+            20,
+            17,
+            14
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Inanimate rock becomes animate when called by the Stone Giant."
+    },
+    {
+      "key": "tiny_toss",
+      "name": "Toss",
+      "description": "Grabs the nearest unit in a %grab_radius% radius around Tiny, ally or enemy, and launches it at the target unit or rune to deal damage where they land.",
+      "max_level": 4,
+      "cooldowns": [
+        20,
+        17,
+        14,
+        11
+      ],
+      "mana_costs": [
+        125
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        800,
+        900,
+        1000,
+        1100
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "",
+          "values": [
+            1.1
+          ]
+        },
+        {
+          "key": "grab_radius",
+          "heading": "",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            275
+          ]
+        },
+        {
+          "key": "toss_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            90,
+            180,
+            270,
+            360
+          ]
+        },
+        {
+          "key": "toss_land_damage_pct",
+          "heading": "BONUS LANDING DAMAGE:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            800,
+            900,
+            1000,
+            1100
+          ]
+        },
+        {
+          "key": "AbilityCharges",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            125
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            20,
+            17,
+            14,
+            11
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "You can toss allies, but they don't take damage.",
+        "Toss deals 33% of its damage to buildings.",
+        "Debuff Immune units can be targeted but cannot be tossed.",
+        "Flight time is %duration%s."
+      ],
+      "lore": "Tiny's gargantuan stature allows him to catapult even the sturdiest of warriors."
+    },
+    {
+      "key": "tiny_tree_grab",
+      "name": "Tree Grab",
+      "description": "Grabs a tree and causes Tiny to have bonus range, damage, and a splashing attack for a limited number of attacks.  The tree can be thrown, to deal your attack to a unit at a distance.",
+      "max_level": 4,
+      "cooldowns": [
+        16,
+        13,
+        10,
+        7
+      ],
+      "mana_costs": [
+        40,
+        35,
+        30,
+        25
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        200
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "attack_count",
+          "heading": "NUMBER OF ATTACKS:",
+          "values": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "key": "bonus_damage",
+          "heading": "BONUS BASE DAMAGE:",
+          "values": [
+            10,
+            20,
+            30,
+            40
+          ]
+        },
+        {
+          "key": "bonus_damage_buildings",
+          "heading": "BONUS BUILDING DAMAGE:",
+          "values": [
+            30,
+            40,
+            50,
+            60
+          ]
+        },
+        {
+          "key": "attack_range",
+          "heading": "ATTACK RANGE:",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "splash_width",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "splash_range",
+          "heading": "",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "splash_pct",
+          "heading": "SPLASH DAMAGE:",
+          "values": [
+            70,
+            80,
+            90,
+            100
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            40,
+            35,
+            30,
+            25
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            16,
+            13,
+            10,
+            7
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "The cooldown begins when the tree is thrown."
+      ],
+      "lore": "Sticks and stones break all the bones, with structures sure to follow."
+    },
+    {
+      "key": "tiny_tree_channel",
+      "name": "Tree Volley",
+      "description": "CHANNELED - Tiny channels to throw random trees within range towards the targeted area. Deals Tiny's attack with Tree Throw bonuses.",
+      "max_level": 1,
+      "cooldowns": [
+        17
+      ],
+      "mana_costs": [
+        150
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1200
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "speed",
+          "heading": "",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "range",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "splash_radius",
+          "heading": "TARGET RADIUS:",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "tree_grab_radius",
+          "heading": "TREE GRAB RADIUS:",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "interval",
+          "heading": "THROW INTERVAL:",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "AbilityChannelTime",
+          "heading": "MAX CHANNEL TIME:",
+          "values": [
+            2.5
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            17
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Sticks thrown from stones are like to shatter many bones."
+    },
+    {
+      "key": "tiny_insurmountable",
+      "name": "Insurmountable",
+      "description": "Tiny gains Status and Slow Resistance from Strength. Slow Resistance also reduces the impact of Attack Speed slows.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "str_to_slow_resist_pct",
+          "heading": "STRENGTH TO SLOW RESIST:",
+          "values": [
+            15
+          ]
+        },
+        {
+          "key": "str_to_status_resist_pct",
+          "heading": "STRENGTH TO STATUS RESIST:",
+          "values": [
+            10
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Insurmountable does not reduce the effect of Grow's Attack Speed Reduction."
+      ],
+      "lore": null
+    },
+    {
+      "key": "tiny_grow",
+      "name": "Grow",
+      "description": "Tiny gains craggy mass, increasing his attack damage, movement speed and armor, and toss power while slowing his attack speed.",
+      "max_level": 3,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bonus_armor",
+          "heading": "BONUS ARMOR:",
+          "values": [
+            5,
+            10,
+            15
+          ]
+        },
+        {
+          "key": "bonus_damage",
+          "heading": "BONUS DAMAGE:",
+          "values": [
+            60,
+            120,
+            180
+          ]
+        },
+        {
+          "key": "attack_speed_reduction",
+          "heading": "ATTACK SPEED REDUCTION:",
+          "values": [
+            -35
+          ]
+        },
+        {
+          "key": "toss_bonus_damage",
+          "heading": "TOSS BONUS DAMAGE:",
+          "values": [
+            50,
+            200,
+            350
+          ]
+        },
+        {
+          "key": "move_speed",
+          "heading": "MOVEMENT SPEED BONUS:",
+          "values": [
+            10,
+            20,
+            30
+          ]
+        },
+        {
+          "key": "land_movement_slow",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "land_attack_slow",
+          "heading": "ATTACK SLOW:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "land_debuff_duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "land_radius_tooltip",
+          "heading": "LAND RADIUS BONUS:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "land_toss_damage_tooltip",
+          "heading": "TOSS LANDING BONUS DAMAGE:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "land_tree_damage_tooltip",
+          "heading": "TREE THROW BONUS DAMAGE:",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Units tossed by Toss or trees tossed by Tree Throw or Tree Volley now deal additional damage and slow in a larger area of effect at their landing location.",
+      "notes": null,
+      "lore": "Watching a hill become a mountain is awe-inspiring - especially if the mountain begins laying waste to adversaries."
+    },
+    {
+      "key": "tiny_toss_tree",
+      "name": "Tree Throw",
+      "description": "Throws the tree at the target unit, proccing your attack on it and splashing damage around the target.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1000
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "speed",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "range",
+          "heading": "CAST RANGE:",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "bonus_damage",
+          "heading": "BONUS DAMAGE:",
+          "values": [
+            10,
+            20,
+            30,
+            40
+          ]
+        },
+        {
+          "key": "splash_radius",
+          "heading": "SPLASH RADIUS:",
+          "values": [
+            275
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Even enemies can share in Tiny's arbor ardor."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_AbilityCastRange} Avalanche Cast Range"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_attack_count} Tree Grab Attacks"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Strength"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_avalanche_damage} Avalanche Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_damage} Tree Grab Base Damage"
+    },
+    {
+      "slot": null,
+      "name": "Toss Requires No Target"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Avalanche Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_AbilityCharges} Toss Charges"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

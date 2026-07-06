@@ -1,0 +1,147 @@
+{
+  "id": 1090,
+  "name": "Mercy & Grace",
+  "slug": "mercy_grace",
+  "internal_key": "item_muertas_gun",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Dead Shot</h1>Fires a ghostly bullet at an enemy unit or tree. When the bullet strikes it will deal %damage% damage and slow the target by %impact_slow_percent%%% for %impact_slow_duration% seconds, then ricochet in the vector-targeted direction. The ricochet will damage all units that it passes through, stopping when it hits a hero. Heroes hit by the ricochet will be feared for %ricochet_fear_duration% seconds in the direction of the shot.",
+  "notes": [
+    "Feared enemies are phased and unslowable.",
+    "The ricochet will travel %ricochet_distance_multiplier%x Dead Shot's cast range."
+  ],
+  "cooldowns": [
+    10
+  ],
+  "mana_costs": [
+    160
+  ],
+  "cast_ranges": [
+    1000
+  ],
+  "special_values": [
+    {
+      "key": "damage",
+      "heading": "",
+      "values": [
+        300
+      ]
+    },
+    {
+      "key": "speed",
+      "heading": "",
+      "values": [
+        2000
+      ]
+    },
+    {
+      "key": "radius",
+      "heading": "",
+      "values": [
+        100
+      ]
+    },
+    {
+      "key": "ricochet_radius_start",
+      "heading": "",
+      "values": [
+        115
+      ]
+    },
+    {
+      "key": "ricochet_radius_end",
+      "heading": "",
+      "values": [
+        115
+      ]
+    },
+    {
+      "key": "ricochet_stun_duration",
+      "heading": "",
+      "values": [
+        2
+      ]
+    },
+    {
+      "key": "ricochet_distance_multiplier",
+      "heading": "",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "ricochet_fear_duration",
+      "heading": "",
+      "values": [
+        2
+      ]
+    },
+    {
+      "key": "impact_slow_percent",
+      "heading": "",
+      "values": [
+        -100
+      ]
+    },
+    {
+      "key": "impact_slow_duration",
+      "heading": "",
+      "values": [
+        0.5
+      ]
+    },
+    {
+      "key": "bonus_cast_pct",
+      "heading": "BONUS CAST RANGE",
+      "values": [
+        100
+      ]
+    },
+    {
+      "key": "bonus_spell_amp",
+      "heading": "SPELL AMPLIFICATION",
+      "values": [
+        100
+      ]
+    },
+    {
+      "key": "health_pct_penalty",
+      "heading": "<font color='#e03e2e'>HEALTH PENALTY</font>",
+      "values": [
+        70
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        1000
+      ]
+    },
+    {
+      "key": "AbilityCastPoint",
+      "heading": "",
+      "values": [
+        0.15
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        160
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        10
+      ]
+    }
+  ],
+  "lore": "One to deliver the body, the other to claim the soul.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

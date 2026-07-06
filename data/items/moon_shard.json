@@ -1,0 +1,53 @@
+{
+  "id": 247,
+  "name": "Moon Shard",
+  "slug": "moon_shard",
+  "internal_key": "item_moon_shard",
+  "cost": 4000,
+  "neutral_tier": null,
+  "description": "<h1>Use: Consume</h1> Consume the Moon Shard to permanently gain %consumed_bonus% attack speed and %consumed_bonus_night_vision% bonus night vision. Max 1 use.\n\n<h1>Passive: Shade Sight</h1>Grants bonus night vision.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_attack_speed",
+      "heading": "+$attack",
+      "values": [
+        140
+      ]
+    },
+    {
+      "key": "bonus_night_vision",
+      "heading": "+Bonus Night Vision",
+      "values": [
+        400
+      ]
+    },
+    {
+      "key": "consumed_bonus",
+      "heading": "",
+      "values": [
+        60
+      ]
+    },
+    {
+      "key": "consumed_bonus_night_vision",
+      "heading": "",
+      "values": [
+        200
+      ]
+    }
+  ],
+  "lore": "Said to be a tear from the lunar goddess Selemene.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": 293,
+  "name": "Phoenix Ash",
+  "slug": "phoenix_ash",
+  "internal_key": "item_phoenix_ash",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Rebirth</h1>Lethal damage is prevented and instead the wearer is healed to half health and non-ultimate ability cooldowns reset. Gets consumed on trigger.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "health_pct",
+      "heading": "",
+      "values": [
+        50
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

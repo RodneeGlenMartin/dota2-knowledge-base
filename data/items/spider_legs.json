@@ -1,0 +1,53 @@
+{
+  "id": 326,
+  "name": "Spider Legs",
+  "slug": "spider_legs",
+  "internal_key": "item_spider_legs",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Skitter</h1> Grants you %bonus_movement_speed_active%%% bonus movement speed, %turn_rate%%% improved turn rate, and free pathing for %duration% seconds. Walking over trees causes them to be destroyed.",
+  "notes": null,
+  "cooldowns": [
+    15
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "turn_rate",
+      "heading": "",
+      "values": [
+        50
+      ]
+    },
+    {
+      "key": "bonus_movement_speed_active",
+      "heading": "",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        12
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        15
+      ]
+    }
+  ],
+  "lore": "A horrifying yet useful mixture of necromancy and artificing.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

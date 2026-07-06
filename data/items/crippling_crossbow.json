@@ -1,0 +1,81 @@
+{
+  "id": 1601,
+  "name": "Crippling Crossbow",
+  "slug": "crippling_crossbow",
+  "internal_key": "item_crippling_crossbow",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Hobble</h1>Hits an enemy for %damage% damage, then slows them by %slow_pct%%% and reduces Health Restoration by %heal_reduce%%% for %duration% seconds. The slow gradually fades over the duration of the spell.",
+  "notes": null,
+  "cooldowns": [
+    30
+  ],
+  "mana_costs": [
+    50
+  ],
+  "cast_ranges": [
+    650
+  ],
+  "special_values": [
+    {
+      "key": "slow_pct",
+      "heading": "",
+      "values": [
+        50
+      ]
+    },
+    {
+      "key": "heal_reduce",
+      "heading": "",
+      "values": [
+        40
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        4
+      ]
+    },
+    {
+      "key": "damage",
+      "heading": "",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "projectile_speed",
+      "heading": "",
+      "values": [
+        1400
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        650
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        50
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        30
+      ]
+    }
+  ],
+  "lore": "The ever-weeping woodgrain of this crossbow coats every bolt in a potent but short-lived narcotic sap.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

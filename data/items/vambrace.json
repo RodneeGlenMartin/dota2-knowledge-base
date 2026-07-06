@@ -1,0 +1,60 @@
+{
+  "id": 331,
+  "name": "Vambrace",
+  "slug": "vambrace",
+  "internal_key": "item_vambrace",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Switch Attributes</h1>Activate to switch the active attribute between <font color='#ec3d06'>Strength</font>, <font color='#3ed038'>Agility</font>, and <font color='#00d9ec'>Intelligence</font>. Vambrace provides +%bonus_primary_stat% of the selected attribute and +%bonus_secondary_stat% of the other two attributes.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_primary_stat",
+      "heading": "",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "bonus_secondary_stat",
+      "heading": "",
+      "values": [
+        4
+      ]
+    },
+    {
+      "key": "bonus_spell_amp",
+      "heading": "",
+      "values": [
+        8
+      ]
+    },
+    {
+      "key": "bonus_magic_resistance",
+      "heading": "",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "bonus_attack_speed",
+      "heading": "",
+      "values": [
+        15
+      ]
+    }
+  ],
+  "lore": "The coveted treasure that divided the heirs of Queen Raiya upon her death, resulting in the eventual downfall of her kingdom.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

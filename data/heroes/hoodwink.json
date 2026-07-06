@@ -1,0 +1,951 @@
+{
+  "id": 123,
+  "name": "Hoodwink",
+  "slug": "hoodwink",
+  "npc_name": "npc_dota_hero_hoodwink",
+  "primary_attribute": "agi",
+  "attack_type": "Ranged",
+  "complexity": 2,
+  "roles": [
+    "Support",
+    "Nuker",
+    "Disabler",
+    "Escape"
+  ],
+  "stats": {
+    "base_str": 17,
+    "str_gain": 2,
+    "base_agi": 22,
+    "agi_gain": 3.6,
+    "base_int": 21,
+    "int_gain": 2.9,
+    "damage_min": 47,
+    "damage_max": 54,
+    "attack_rate": 2,
+    "attack_range": 575,
+    "projectile_speed": 1800,
+    "armor": 3.6666667,
+    "magic_resistance": 25,
+    "movement_speed": 315,
+    "turn_rate": 0.9,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 494,
+    "health_regen": 1.95,
+    "max_mana": 327,
+    "mana_regen": 1.0500001
+  },
+  "lore": "Hoodwink's earliest years were spent in the idyllic expanse of green that once filled the edges of Krimwohl. But as that kingdom grew, and the needs of both her citizens and her armies became ravenous, rival ore and timber barons scratched and clawed to outpace each other in devouring the natural beauty of the border forests, gorging themselves to meet the demands of the changing land.<br><br>To those living in the ancient timberlands, the choice came down to following the line of refugees into the pacified zones, falling to Krimwohl's black powder and steel while defending their homes, or fleeing further north to tempt fate in the haunted glens and groves of the misty Wood Tomo'kan.<br><br>So it was in those treacherous northern mistwoods that Hoodwink came of age, dodging the horrific predators of the Tomo'kan, ingratiating herself with some of the local banditry whilst antagonizing others, and finding absolutely every which way to be underfoot whenever some interesting mischief arose--often <i>allegedly</i> the cause of it.<br><br>But when the faintest whiff of Krimwohl's fires eventually drifted into her adopted home, Hoodwink's thoughts turned to any family and friends who might have survived the invasion--now made to eke out lives in the razed lands whose wounds scarred her very soul--and she couldn't help but approach the edges of civilization to get a glimpse of the devils that had destroyed her old life.<br><br>There, she saw that the monsters from her childhood weren't monsters at all. They were just...people. Soldiers, laborers, merchants...and refugees. And the soldiers, even with their black powder and steel, were nothing compared to the dangers of the Tomo'kan--real dangers with tentacles and teeth--dangers she danced around like a twirling maple seed.<br><br>Knowing she can always find safe passage in the tangles of the Tomo'kan, where most warm-blooded folk wisely fear to tread, Hoodwink now strikes out against those who dare try to further pacify the wilds, happily taking what she likes from their belongings, destroying what she has no use for, and helping guide any kindred survivors back to a life in the green once again.",
+  "hype": "Always at hand when trouble's afoot, Hoodwink lives to tangle with the threats that fill the haunted forest she adopted as her home. Toting a <b>massive crossbow</b> while still able to <b>scurry through the woodland</b> with the greatest of ease, Hoodwink is nearly impossible to keep tabs on in battle. Lose track and she'll pop out behind you -- your stunned carcass already dangling in one of her <b>nets.</b>",
+  "abilities": [
+    {
+      "key": "hoodwink_acorn_shot",
+      "name": "Acorn Shot",
+      "description": "Fires Hoodwink's attack with an acorn at the target unit.  The acorn bounces to nearby targets, slowing them and dealing a percentage of Hoodwink's attack with bonus damage.\nIf point targeted, a tree is created at the target position and the acorn will bounce to nearby targets.  The ability may be placed on alt-cast to force this behavior.",
+      "max_level": 4,
+      "cooldowns": [
+        19,
+        16,
+        13,
+        10
+      ],
+      "mana_costs": [
+        70,
+        80,
+        90,
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        675,
+        700,
+        725,
+        750
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bonus_range",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "acorn_shot_damage",
+          "heading": "BONUS DAMAGE:",
+          "values": [
+            45,
+            90,
+            135,
+            180
+          ]
+        },
+        {
+          "key": "base_damage_pct",
+          "heading": "BASE DAMAGE:",
+          "values": [
+            80
+          ]
+        },
+        {
+          "key": "bounce_count",
+          "heading": "BOUNCE COUNT:",
+          "values": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "key": "bounce_range",
+          "heading": "",
+          "values": [
+            525
+          ]
+        },
+        {
+          "key": "debuff_duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "slow",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "bounce_delay",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "projectile_speed",
+          "heading": "",
+          "values": [
+            2200
+          ]
+        },
+        {
+          "key": "can_bounce_off_of_trees",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "bounces_after_tree_bounce",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            675,
+            700,
+            725,
+            750
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityCharges",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            70,
+            80,
+            90,
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            19,
+            16,
+            13,
+            10
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "The same target can be hit more than once.",
+        "Bounces will seek units in the fog of war in a 525 radius, but not invisible units.",
+        "The planted tree lasts for 20 seconds."
+      ],
+      "lore": "Though she'll make do with almost anything, Oak and Ironwood acorns make the most effective projectiles -- and the bulk of Hoodwink's stash."
+    },
+    {
+      "key": "hoodwink_bushwhack",
+      "name": "Bushwhack",
+      "description": "Tosses a net trap that stuns enemies if they are near a tree in the area.  Affected enemies take damage over time and are pulled towards the tree nearest to them within the target area, and have their vision reduced to 0 for the duration of the stun.",
+      "max_level": 4,
+      "cooldowns": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "mana_costs": [
+        90,
+        100,
+        110,
+        120
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1100
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "trap_radius",
+          "heading": "RADIUS:",
+          "values": [
+            265
+          ]
+        },
+        {
+          "key": "debuff_duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            1.5,
+            1.7,
+            1.9,
+            2.1
+          ]
+        },
+        {
+          "key": "projectile_speed",
+          "heading": "",
+          "values": [
+            1300
+          ]
+        },
+        {
+          "key": "total_damage",
+          "heading": "TOTAL DAMAGE:",
+          "values": [
+            90,
+            180,
+            270,
+            360
+          ]
+        },
+        {
+          "key": "animation_rate",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "visual_height",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1100
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            90,
+            100,
+            110,
+            120
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            15,
+            14,
+            13,
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Units can be freed from the stun by destroying the tree.",
+        "Bushwhack does not hit invisible units."
+      ],
+      "lore": "Hoodwink favors Ironwood groves for ambushes, but the wary step carefully in all areas of the mistwoods."
+    },
+    {
+      "key": "hoodwink_scurry",
+      "name": "Scurry",
+      "description": "Hoodwink gains bonus movement speed, phased movement, and tree-walking for a brief time. While active, the redirect chance of Mistwoods Wayfarer is multiplied by %evasion_multiplier%.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        35
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        275
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "movement_speed_pct",
+          "heading": "BONUS MOVEMENT SPEED:",
+          "values": [
+            15,
+            20,
+            25,
+            30
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "BUFF DURATION:",
+          "values": [
+            3.5,
+            4,
+            4.5,
+            5
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            275
+          ]
+        },
+        {
+          "key": "evasion_multiplier",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            275
+          ]
+        },
+        {
+          "key": "AbilityCharges",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "AbilityChargeRestoreTime",
+          "heading": "",
+          "values": [
+            30,
+            24,
+            18,
+            12
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            35
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "There's not a nook or cranny in the Wood Tomo'kan out of reach of Hoodwink's paws."
+    },
+    {
+      "key": "hoodwink_decoy",
+      "name": "Decoy",
+      "description": "Hoodwink turns invisible, increasing her movement speed, and creates a decoy illusion that starts aiming a decreased damage Sharpshooter at the nearest enemy hero. If the illusion is attacked or hit by a targeted ability, it is destroyed and it throws a lesser bushwhack towards the enemy.",
+      "max_level": 1,
+      "cooldowns": [
+        30
+      ],
+      "mana_costs": [
+        60
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "ILLUSION DURATION:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "decoy_detonate_radius",
+          "heading": "BUSHWHACK RADIUS:",
+          "values": [
+            250
+          ]
+        },
+        {
+          "key": "decoy_stun_duration",
+          "heading": "BUSHWHACK DURATION:",
+          "values": [
+            1.6
+          ]
+        },
+        {
+          "key": "images_do_damage_percent",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "images_take_damage_percent",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "projectile_speed",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "movement_speed",
+          "heading": "MOVEMENT SPEED:",
+          "values": [
+            15
+          ]
+        },
+        {
+          "key": "sharpshooter_damage_pct",
+          "heading": "SHARPSHOOTER DAMAGE:",
+          "values": [
+            60
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            60
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            30
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "The best traps trigger whether you touch them or not."
+    },
+    {
+      "key": "hoodwink_hunters_boomerang",
+      "name": "Hunter's Boomerang",
+      "description": "Tosses a boomerang in an arc. Upon contact, it returns to Hoodwink.  The boomerang will deal damage as it passes through or hits enemies, and apply a debuff that causes affected enemies to be slowed and be more vulnerable to spell damage.",
+      "max_level": 1,
+      "cooldowns": [
+        18
+      ],
+      "mana_costs": [
+        125
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1100
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "speed",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "mark_duration",
+          "heading": "DEBUFF DURATION:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "slow_pct",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "spell_amp",
+          "heading": "INCOMING SPELL DAMAGE AMP:",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "spread",
+          "heading": "",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "min_throw_duration",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "max_throw_duration",
+          "heading": "",
+          "values": [
+            1.2
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1100
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            125
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            18
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "A precious last vestige of Hoodwink's childhood, converted into deadly distraction."
+    },
+    {
+      "key": "hoodwink_sharpshooter",
+      "name": "Sharpshooter",
+      "description": "Hoodwink charges up and fires a deadly bolt from her crossbow, dealing heavy damage, break and slow to an enemy Hero.  The damage and debuff duration scale up to max after %max_charge_time% seconds, and the bolt is fired automatically after %misfire_time% seconds.\nHoodwink is knocked backwards for a distance of %recoil_distance% from the force of the shot. Creeps hit by the bolt are damaged for half the values.",
+      "max_level": 3,
+      "cooldowns": [
+        45
+      ],
+      "mana_costs": [
+        100,
+        150,
+        200
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        3000
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "arrow_speed",
+          "heading": "ARROW SPEED:",
+          "values": [
+            2200
+          ]
+        },
+        {
+          "key": "arrow_width",
+          "heading": "",
+          "values": [
+            125
+          ]
+        },
+        {
+          "key": "arrow_range",
+          "heading": "",
+          "values": [
+            3000
+          ]
+        },
+        {
+          "key": "arrow_vision",
+          "heading": "",
+          "values": [
+            350
+          ]
+        },
+        {
+          "key": "max_charge_time",
+          "heading": "MAX WIND-UP TIME:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "max_damage",
+          "heading": "MAX DAMAGE:",
+          "values": [
+            600,
+            975,
+            1350
+          ]
+        },
+        {
+          "key": "recoil_distance",
+          "heading": "",
+          "values": [
+            350
+          ]
+        },
+        {
+          "key": "recoil_height",
+          "heading": "",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "recoil_duration",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "max_slow_debuff_duration",
+          "heading": "MAX DEBUFF DURATION:",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "misfire_time",
+          "heading": "",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "slow_move_pct",
+          "heading": "MOVE SLOW:",
+          "values": [
+            30,
+            40,
+            50
+          ]
+        },
+        {
+          "key": "turn_rate",
+          "heading": "",
+          "values": [
+            60
+          ]
+        },
+        {
+          "key": "turn_rate_tooltip",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "vision_along_indicator",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "vision_radius_buffer",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "base_power",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "quick_draw_tooltip_pct_cooldown_reduction",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "quick_draw_tooltip_efficacy_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "pierce_debuff_immunity",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            3000
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            150,
+            200
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "COOLDOWN:",
+          "values": [
+            45
+          ]
+        }
+      ],
+      "scepter_upgrade": "Increases arrow speed and movement speed slow.",
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "While her first arbalest was a chance discovery, Hoodwink now takes great care in carving and caring for her own -- of course with some necessary components pilfered or otherwise cleverly procured."
+    },
+    {
+      "key": "hoodwink_mistwoods_wayfarer",
+      "name": "Mistwoods Wayfarer",
+      "description": "Hoodwink has a chance to redirect enemy attacks to a nearby tree.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "TREE SEARCH RADIUS:",
+          "values": [
+            275
+          ]
+        },
+        {
+          "key": "redirect_chance",
+          "heading": "REDIRECT CHANCE:",
+          "values": [
+            14
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Trees that take a redirected attack are destroyed."
+      ],
+      "lore": null
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_total_damage} Bushwhack Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Health"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_AbilityCharges} Scurry Ability Charge"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Agility"
+    },
+    {
+      "slot": null,
+      "name": "Sharpshooter Provides Vision While Charging"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bounce_count} Acorn Shot Bounces"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_max_damage} Sharpshooter Max Damage"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_AbilityCharges} Acorn Shot Charges"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

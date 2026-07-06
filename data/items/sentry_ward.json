@@ -1,0 +1,67 @@
+{
+  "id": 43,
+  "name": "Sentry Ward",
+  "slug": "sentry_ward",
+  "internal_key": "item_ward_sentry",
+  "cost": 50,
+  "neutral_tier": null,
+  "description": "<h1>Use: Plant</h1> Plants a Sentry Ward, an invisible watcher that grants True Sight, the ability to see invisible enemy units and wards, to any existing allied vision within a %true_sight_range% radius.<br>Lasts %duration_minutes_tooltip% minutes.<br><br>Does not grant ground vision.<br>Hold Control to give one Sentry Ward to an allied hero.",
+  "notes": null,
+  "cooldowns": [
+    1
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    500
+  ],
+  "special_values": [
+    {
+      "key": "lifetime",
+      "heading": "",
+      "values": [
+        420
+      ]
+    },
+    {
+      "key": "true_sight_range",
+      "heading": "",
+      "values": [
+        1050
+      ]
+    },
+    {
+      "key": "health",
+      "heading": "",
+      "values": [
+        200
+      ]
+    },
+    {
+      "key": "duration_minutes_tooltip",
+      "heading": "",
+      "values": [
+        7
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        500
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        1
+      ]
+    }
+  ],
+  "lore": "A form of plant originally grown in the garden of a fearful king.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

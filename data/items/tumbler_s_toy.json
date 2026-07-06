@@ -1,0 +1,53 @@
+{
+  "id": 840,
+  "name": "Tumbler's Toy",
+  "slug": "tumbler_s_toy",
+  "internal_key": "item_pogo_stick",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Vault</h1>Propels your hero forward %leap_distance% units. Tumbler's Toy gets disabled for 3 seconds if its owner receives damage from a player source.",
+  "notes": null,
+  "cooldowns": [
+    15
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "leap_distance",
+      "heading": "",
+      "values": [
+        300
+      ]
+    },
+    {
+      "key": "leap_speed",
+      "heading": "",
+      "values": [
+        1300
+      ]
+    },
+    {
+      "key": "leap_acceleration",
+      "heading": "",
+      "values": [
+        20000
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        15
+      ]
+    }
+  ],
+  "lore": "An antique plaything found in the ruins of an Ozenja circus bazaar.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

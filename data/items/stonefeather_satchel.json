@@ -1,0 +1,53 @@
+{
+  "id": 1861,
+  "name": "Stonefeather Satchel",
+  "slug": "stonefeather_satchel",
+  "internal_key": "item_stonefeather_satchel",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Toggle: Transmogrify</h1> Toggle to switch the contents of the Satchel between a pound of Feathers or Rocks.<br><br><b>Feathers:</b> increase movement speed by %feather_movespeed% and distance of forced movement effects applied to the wearer by %knockback_resistance%%%.<br><br><b>Rocks:</b> increase armor by %rocks_armor% and decrease the distance of forced movement effects applied to the wearer by %knockback_resistance%%%.",
+  "notes": null,
+  "cooldowns": [
+    6
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "knockback_resistance",
+      "heading": "",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "feather_movespeed",
+      "heading": "",
+      "values": [
+        12
+      ]
+    },
+    {
+      "key": "rocks_armor",
+      "heading": "",
+      "values": [
+        3
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        6
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

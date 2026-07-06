@@ -1,0 +1,85 @@
+{
+  "id": 127,
+  "name": "Blade Mail",
+  "slug": "blade_mail",
+  "internal_key": "item_blade_mail",
+  "cost": 2400,
+  "neutral_tier": null,
+  "description": "<h1>Active: Damage Return</h1>For %duration% seconds, return all incoming damage, increasing the percentage by %active_reflection_pct%%%.\n\n<h1>Passive: Damage Return</h1>Everytime you are attacked, you return %passive_reflection_constant% damage plus %passive_reflection_pct%%% of the attack damage dealt to you.",
+  "notes": [
+    "Damage Return is calculated before any kind of reduction.",
+    "Returned damage type is the same as it was received.",
+    "Damage done by this item is considered reflected damage. Reflected damage does not provide any lifesteal and cannot be reflected."
+  ],
+  "cooldowns": [
+    25
+  ],
+  "mana_costs": [
+    25
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_damage",
+      "heading": "+$damage",
+      "values": [
+        15
+      ]
+    },
+    {
+      "key": "bonus_armor",
+      "heading": "+$armor",
+      "values": [
+        7
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        5.5
+      ]
+    },
+    {
+      "key": "passive_reflection_constant",
+      "heading": "",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "passive_reflection_pct",
+      "heading": "",
+      "values": [
+        15
+      ]
+    },
+    {
+      "key": "active_reflection_pct",
+      "heading": "",
+      "values": [
+        85
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        25
+      ]
+    }
+  ],
+  "lore": "A razor-sharp coat of mail, it is the choice of selfless martyrs in combat.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

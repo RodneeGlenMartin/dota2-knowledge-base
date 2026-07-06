@@ -1,0 +1,737 @@
+{
+  "id": 55,
+  "name": "Dark Seer",
+  "slug": "dark_seer",
+  "npc_name": "npc_dota_hero_dark_seer",
+  "primary_attribute": "int",
+  "attack_type": "Melee",
+  "complexity": 1,
+  "roles": [
+    "Disabler",
+    "Escape",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 20,
+    "str_gain": 2.6,
+    "base_agi": 19,
+    "agi_gain": 1.5,
+    "base_int": 23,
+    "int_gain": 2.7,
+    "damage_min": 54,
+    "damage_max": 60,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 5.166667,
+    "magic_resistance": 25,
+    "movement_speed": 295,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 560,
+    "health_regen": 3.5,
+    "max_mana": 351,
+    "mana_regen": 1.15
+  },
+  "lore": "Fast when he needs to be, and a cunning strategist, Ish'Kafel the Dark Seer requires no edged weapons to vanquish his enemies, relying instead on the strength of his powerful mind. His talent lies in his ability to maneuver the fight to his advantage. Hailing from a place he calls 'The Land behind the wall,' Dark Seer remains an outsider here--a warrior from a realm beyond the veil of this reality.  \r\n\t\t\t\t<br><br>Once a great general among his people, and a valiant defender of the god-king Damathryx, Dark Seer's army was wiped out by a much larger force in the final days of the Great Boundaries War. Facing certain defeat, he made one last desperate act: he led the enemy forces into the maze between the walls. At the last moment, just before capture, he crossed over--then sealed the walls forever in an explosive release of dark energy. When the dust settled, he saw that he had saved his people but found himself blinking at the sun of a different world, with no way to return.  Now he is committed to proving his worth as a military strategist, and vows to show that he's the greatest tactician this strange new world has ever seen.",
+  "hype": "Versatile and strategic, Dark Seer excels at <b>manipulating the positions</b> of his enemies. <b>Vacuuming foes</b> into the attacks of his allies, he can turn enemy strength against itself by pulling foes through his <b>replicating wall.</b>",
+  "abilities": [
+    {
+      "key": "dark_seer_vacuum",
+      "name": "Vacuum",
+      "description": "Dark Seer creates a vacuum over the target area that sucks in enemy units, disrupting them and dealing damage.",
+      "max_level": 4,
+      "cooldowns": [
+        60,
+        50,
+        40,
+        30
+      ],
+      "mana_costs": [
+        60,
+        90,
+        120,
+        150
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        450,
+        500,
+        550,
+        600
+      ],
+      "cast_points": [
+        0.4
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            325,
+            400,
+            475,
+            550
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "",
+          "values": [
+            0.3,
+            0.4,
+            0.5,
+            0.6
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            70,
+            130,
+            190,
+            250
+          ]
+        },
+        {
+          "key": "radius_tree",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            450,
+            500,
+            550,
+            600
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            60,
+            90,
+            120,
+            150
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            60,
+            50,
+            40,
+            30
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "This ability interrupts channeling.",
+        "Pulls units over %duration% seconds before dealing damage.",
+        "Trees near the center of the vacuum will be destroyed."
+      ],
+      "lore": "Ish'Kafel modifies the center of gravity to a place of his choosing."
+    },
+    {
+      "key": "dark_seer_ion_shell",
+      "name": "Ion Shell",
+      "description": "Surrounds the target unit with a bristling shield that damages enemy units in an area around it.",
+      "max_level": 4,
+      "cooldowns": [
+        9,
+        9,
+        9,
+        9
+      ],
+      "mana_costs": [
+        100,
+        110,
+        120,
+        130
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        800
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            275
+          ]
+        },
+        {
+          "key": "damage_per_second",
+          "heading": "DAMAGE PER SECOND:",
+          "values": [
+            30,
+            50,
+            70,
+            90
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            20,
+            22,
+            24,
+            26
+          ]
+        },
+        {
+          "key": "tick_interval",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityCharges",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            110,
+            120,
+            130
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            9
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Deals small amounts of damage in %tick_interval% second intervals.",
+        "Doesn't damage the target it is cast on.",
+        "If cast on a unit that already has Ion Shell, the new Shell replaces the old one."
+      ],
+      "lore": "The Dark Seer slices holes into the 'Land Behind the Wall,' causing prismatic energy to seep forth."
+    },
+    {
+      "key": "dark_seer_surge",
+      "name": "Surge",
+      "description": "Charges a target friendly unit with power, giving it a brief burst of phased movement speed. Allows the unit to reach maximum movement speed and cannot be slowed.",
+      "max_level": 4,
+      "cooldowns": [
+        24,
+        19,
+        14,
+        9
+      ],
+      "mana_costs": [
+        50
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        600
+      ],
+      "cast_points": [
+        0.4
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "key": "speed_boost",
+          "heading": "",
+          "values": [
+            550
+          ]
+        },
+        {
+          "key": "trail_radius",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "trail_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "trail_move_slow",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "trail_damage",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "trail_damage_interval",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "aoe_radius",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            24,
+            19,
+            14,
+            9
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Surged units leave behind a %trail_radius% radius trail that lasts %trail_duration%s, slows enemies around it by %trail_move_slow%%% and deals %trail_damage% damage per second in %trail_damage_interval%s intervals. Can be put on alt-cast to disable the trail.",
+      "notes": [
+        "Units with Surge cannot be slowed unless the Surge effect is removed."
+      ],
+      "lore": "Ish'Kafel once used his speed of mind to navigate the maze between the walls."
+    },
+    {
+      "key": "dark_seer_normal_punch",
+      "name": "Normal Punch",
+      "description": "Passive ability. Causes Dark Seer's next attack on a hero to have True Strike, knock a replica out of the victim, damaging and stunning them based on how far Dark Seer has moved in the past %recent_duration% seconds. Max power is reached after %max_distance% distance moved.",
+      "max_level": 1,
+      "cooldowns": [
+        10
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "max_stun",
+          "heading": "MAX STUN DURATION:",
+          "values": [
+            1.25
+          ]
+        },
+        {
+          "key": "recent_duration",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "max_distance",
+          "heading": "",
+          "values": [
+            1100
+          ]
+        },
+        {
+          "key": "knockback_distance",
+          "heading": "MAX KNOCKBACK DISTANCE:",
+          "values": [
+            350
+          ]
+        },
+        {
+          "key": "illusion_duration",
+          "heading": "ILLUSION DURATION:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "max_damage",
+          "heading": "MAX DAMAGE:",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "normal_punch_illusion_delay",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            10
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "As a young soldier, long before he became a leader of his people, Ish'Kafel was known amongst his fellow recruits as quite the pugilist."
+    },
+    {
+      "key": "dark_seer_aggrandize",
+      "name": "Quick Wit",
+      "description": "Dark Seer gains %int_to_atkspd% Attack Speed from each point of Intelligence.\n\nWhen Dark Seer levels up, he restores a percentage of his max health and mana.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "int_to_atkspd",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "attack_speed_tooltip",
+          "heading": "BONUS ATTACK SPEED:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "heal_pct",
+          "heading": "MAX HP/MANA RESTORE:",
+          "values": [
+            8.5
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "dark_seer_wall_of_replica",
+      "name": "Wall of Replica",
+      "description": "Raises a wall of warping light that slows, damages, and creates replicas of any enemy hero who crosses it. Enemy replicas serve at the Dark Seer's will. Replicas last until they are destroyed, or until the wall's duration ends.",
+      "max_level": 3,
+      "cooldowns": [
+        100,
+        100,
+        100
+      ],
+      "mana_costs": [
+        125,
+        250,
+        375
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1000
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "WALL DURATION:",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "replica_damage_outgoing",
+          "heading": "",
+          "values": [
+            -30,
+            -20,
+            -10
+          ]
+        },
+        {
+          "key": "tooltip_outgoing",
+          "heading": "REPLICA DAMAGE:",
+          "values": [
+            70,
+            80,
+            90
+          ]
+        },
+        {
+          "key": "replica_damage_incoming",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "tooltip_replica_total_damage_incoming",
+          "heading": "REPLICA DAMAGE TAKEN:",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "width",
+          "heading": "",
+          "values": [
+            1300
+          ]
+        },
+        {
+          "key": "movement_slow",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "slow_duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "scepter_length_multiplier",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "wall_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            25,
+            40,
+            55
+          ]
+        },
+        {
+          "key": "cooldown_reduction",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            125,
+            250,
+            375
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            100
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Doesn't create illusions from other illusions.",
+        "There cannot be more than one illusion per player per wall."
+      ],
+      "lore": "The Dark Seer, while unable to return to his natural realm, can channel part of the prismatic wall with powerful strength of mind, sowing confusion amongst enemy ranks."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_tooltip_outgoing}% Wall of Replica Illusion Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_radius} Ion Shell Radius"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_radius} Vacuum AoE"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Surge Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_cooldown_reduction}s Wall of Replica Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_per_second} Ion Shell Damage"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_AbilityCharges} Ion Shell Charges "
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_aoe_radius} AoE Surge"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

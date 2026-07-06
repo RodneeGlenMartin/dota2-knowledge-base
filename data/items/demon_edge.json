@@ -1,0 +1,32 @@
+{
+  "id": 51,
+  "name": "Demon Edge",
+  "slug": "demon_edge",
+  "internal_key": "item_demon_edge",
+  "cost": 2200,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_damage",
+      "heading": "+$damage",
+      "values": [
+        40
+      ]
+    }
+  ],
+  "lore": "One of the oldest weapons forged by the Demon-Smith Abzidian, it killed its maker when he tested its edge.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

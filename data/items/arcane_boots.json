@@ -1,0 +1,83 @@
+{
+  "id": 180,
+  "name": "Arcane Boots",
+  "slug": "arcane_boots",
+  "internal_key": "item_arcane_boots",
+  "cost": 1500,
+  "neutral_tier": null,
+  "description": "<h1>Active: Replenish</h1>Restores %replenish_amount% mana to all nearby allies.<br><br>Radius: %replenish_radius%\n\n<h1>Passive: Basilius Aura</h1>Grants %aura_mana_regen% mana regeneration to allies.  <br><br>Radius: %aura_radius%\nMovement speed bonuses from multiple pairs of boots do not stack.",
+  "notes": [
+    "Does not work on Meepo clones."
+  ],
+  "cooldowns": [
+    55
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_movement",
+      "heading": "+$move_speed",
+      "values": [
+        45
+      ]
+    },
+    {
+      "key": "mana_regen",
+      "heading": "+$mana_regen",
+      "values": [
+        0.25
+      ]
+    },
+    {
+      "key": "bonus_mana",
+      "heading": "+$mana",
+      "values": [
+        125
+      ]
+    },
+    {
+      "key": "aura_mana_regen",
+      "heading": "",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "aura_radius",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    },
+    {
+      "key": "replenish_amount",
+      "heading": "",
+      "values": [
+        150
+      ]
+    },
+    {
+      "key": "replenish_radius",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        55
+      ]
+    }
+  ],
+  "lore": "Magi equipped with these boots are valued in battle.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

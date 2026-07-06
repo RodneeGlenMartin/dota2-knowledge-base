@@ -1,0 +1,169 @@
+{
+  "id": 158,
+  "name": "Mjollnir",
+  "slug": "mjollnir",
+  "internal_key": "item_mjollnir",
+  "cost": 5500,
+  "neutral_tier": null,
+  "description": "<h1>Active: Static Charge</h1>Places a charged shield on a target unit for %static_duration% seconds which has a %static_chance%%% chance to release a %static_damage% magical damage shocking bolt at a nearby attacker and %static_strikes% additional enemies.\n\n<h1>Passive: Chain Lightning</h1>Grants a %chain_chance%%% chance on attack to release a bolt of electricity that leaps between %chain_strikes% targets within a %chain_radius% radius, dealing %chain_damage% magical damage to each. Lightning proc pierces evasion.",
+  "notes": [
+    "Static Charge cannot trigger more than once per second.",
+    "Static Charge's shock deals magical damage centered on hero with the Static Charge. Static Charge's targets cannot be more than %static_seconary_radius% range away.",
+    "Static Charge procs will not bounce to heroes that are invisible or hidden by Fog of War."
+  ],
+  "cooldowns": [
+    35
+  ],
+  "mana_costs": [
+    50
+  ],
+  "cast_ranges": [
+    800
+  ],
+  "special_values": [
+    {
+      "key": "bonus_damage",
+      "heading": "+$damage",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "bonus_attack_speed",
+      "heading": "+$attack",
+      "values": [
+        90
+      ]
+    },
+    {
+      "key": "static_duration",
+      "heading": "",
+      "values": [
+        15
+      ]
+    },
+    {
+      "key": "static_chance",
+      "heading": "",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "static_strikes",
+      "heading": "",
+      "values": [
+        4
+      ]
+    },
+    {
+      "key": "static_damage",
+      "heading": "",
+      "values": [
+        225
+      ]
+    },
+    {
+      "key": "static_primary_radius",
+      "heading": "",
+      "values": [
+        600
+      ]
+    },
+    {
+      "key": "static_seconary_radius",
+      "heading": "",
+      "values": [
+        900
+      ]
+    },
+    {
+      "key": "static_radius",
+      "heading": "",
+      "values": [
+        900
+      ]
+    },
+    {
+      "key": "static_cooldown",
+      "heading": "",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "chain_chance",
+      "heading": "",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "chain_damage",
+      "heading": "",
+      "values": [
+        180
+      ]
+    },
+    {
+      "key": "chain_strikes",
+      "heading": "",
+      "values": [
+        12
+      ]
+    },
+    {
+      "key": "chain_radius",
+      "heading": "",
+      "values": [
+        650
+      ]
+    },
+    {
+      "key": "chain_delay",
+      "heading": "",
+      "values": [
+        0.25
+      ]
+    },
+    {
+      "key": "chain_cooldown",
+      "heading": "",
+      "values": [
+        0.2
+      ]
+    },
+    {
+      "key": "illusion_multiplier_pct",
+      "heading": "",
+      "values": [
+        100
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        800
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        50
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        35
+      ]
+    }
+  ],
+  "lore": "Thor's magical hammer, made for him by the dwarves Brok and Eitri.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

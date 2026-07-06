@@ -1,0 +1,55 @@
+{
+  "id": 677,
+  "name": "Book of Shadows",
+  "slug": "book_of_shadows",
+  "internal_key": "item_book_of_shadows",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Shadows</h1>Target an enemy, ally or self. Causes the target to become untargetable from enemies to the caster, but also silenced, muted and disarmed for %duration% seconds. Applies a Basic Dispel.\n\nDispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>",
+  "notes": [
+    "Does not trigger spell block or spell reflect."
+  ],
+  "cooldowns": [
+    8
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    700
+  ],
+  "special_values": [
+    {
+      "key": "night_vision",
+      "heading": "",
+      "values": [
+        400
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        4
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        700
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        8
+      ]
+    }
+  ],
+  "lore": "An impossible tome filled with unreadable prose of unknowable thoughts.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

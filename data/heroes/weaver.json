@@ -1,0 +1,626 @@
+{
+  "id": 63,
+  "name": "Weaver",
+  "slug": "weaver",
+  "npc_name": "npc_dota_hero_weaver",
+  "primary_attribute": "agi",
+  "attack_type": "Ranged",
+  "complexity": 2,
+  "roles": [
+    "Carry",
+    "Escape"
+  ],
+  "stats": {
+    "base_str": 16,
+    "str_gain": 2,
+    "base_agi": 17,
+    "agi_gain": 3.3,
+    "base_int": 20,
+    "int_gain": 2,
+    "damage_min": 54,
+    "damage_max": 60,
+    "attack_rate": 1.8,
+    "attack_range": 425,
+    "projectile_speed": 900,
+    "armor": 3.8333335,
+    "magic_resistance": 25,
+    "movement_speed": 275,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 472,
+    "health_regen": 2.85,
+    "max_mana": 315,
+    "mana_regen": 1.5
+  },
+  "lore": "The fabric of creation needs constant care, lest it grow tattered; for when it unravels, whole worlds come undone. It is the work of the Weavers to keep the fabric tight, to repair worn spots in the mesh of reality. They also defend from the things that gnaw and lay their eggs in frayed regions, whose young can quickly devour an entire universe if the Weavers let their attention lapse. Skitskurr was a master Weaver, charged with keeping one small patch of creation tightly woven and unfaded. But the job was not enough to satisfy. It nagged him that the original work of creation all lay in the past; the Loom had done its work and travelled on. He wanted to create rather than merely maintain--to weave worlds of his own devising.  He began making small changes to his domain, but the thrill of creation proved addictive, and his strokes became bolder, pulling against the pattern that the Loom had woven.\r\n\t\t\t\t<br><br>The guardians came, with their scissors, and Weaver's world was pared off, snipped from the cosmic tapestry, which they rewove without him in it. Skitskurr found himself alone, apart from his kind, a state that would have been torment for any other Weaver. But Skitskurr rejoiced, for now he was free. Free to create for himself, to begin anew. The raw materials he needed to weave a new reality were all around him. All he had to do was tear apart this old world at the seams.",
+  "hype": "Weaver has no trouble <b>evading enemies</b> to position himself for another strike. Slipping in and out of sight, he avoids death by <b>rewinding himself to an earlier position and health state</b>. His arsenal of elusive skills ensures he is always a critical nuisance to his foes.",
+  "abilities": [
+    {
+      "key": "weaver_the_swarm",
+      "name": "The Swarm",
+      "description": "Weaver launches a swarm of %count% young Weavers that latch on any enemy unit in their path, attacking and reducing armor until it is killed.",
+      "max_level": 4,
+      "cooldowns": [
+        44,
+        36,
+        28,
+        20
+      ],
+      "mana_costs": [
+        110,
+        105,
+        100,
+        95
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        3000
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage",
+          "heading": "ATTACK DAMAGE:",
+          "values": [
+            18,
+            23,
+            28,
+            33
+          ]
+        },
+        {
+          "key": "attack_rate",
+          "heading": "ATTACK INTERVAL:",
+          "values": [
+            1.2,
+            1.05,
+            0.9,
+            0.75
+          ]
+        },
+        {
+          "key": "count",
+          "heading": "COUNT:",
+          "values": [
+            12
+          ]
+        },
+        {
+          "key": "armor_reduction",
+          "heading": "ARMOR REDUCTION PER ATTACK:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            16
+          ]
+        },
+        {
+          "key": "destroy_attacks",
+          "heading": "ATTACKS TO DESTROY:",
+          "values": [
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "speed",
+          "heading": "",
+          "values": [
+            750
+          ]
+        },
+        {
+          "key": "spawn_radius",
+          "heading": "",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "shard_cooldown_reduction",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            3000
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            110,
+            105,
+            100,
+            95
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            44,
+            36,
+            28,
+            20
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "When a beetle latches on a target, it will remain there until it is killed or the duration expires.",
+        "Beetles are Spell Immune, but can be killed in %destroy_attacks% attacks from a unit. Heroes deal double damage to beetles.",
+        "Beetles provide vision."
+      ],
+      "lore": "Skitskurr opens a gap in the space time fabric, allowing young Weavers to slip through and aid him in combat."
+    },
+    {
+      "key": "weaver_shukuchi",
+      "name": "Shukuchi",
+      "description": "Weaver shifts out of visibility, gaining max movement speed and doing harm to any enemies it passes through.",
+      "max_level": 4,
+      "cooldowns": [
+        15,
+        12,
+        9,
+        6
+      ],
+      "mana_costs": [
+        65
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            100,
+            130,
+            160,
+            190
+          ]
+        },
+        {
+          "key": "speed",
+          "heading": "",
+          "values": [
+            200,
+            230,
+            260,
+            290
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            175
+          ]
+        },
+        {
+          "key": "fade_time",
+          "heading": "FADE TIME:",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "geminate_attack_mark_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "min_movespeed_override",
+          "heading": "MOVESPEED:",
+          "values": [
+            550
+          ]
+        },
+        {
+          "key": "shukuchi_attack_mark_radius",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shukuchi_attack_delay",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            65
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            15,
+            12,
+            9,
+            6
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Shukuchi puts a mark on enemies it damages that last %geminate_attack_mark_duration% seconds. %shukuchi_attack_delay%s after Weaver exits Shukuchi, enemies with a mark within %shukuchi_attack_mark_radius% range will also be attacked with a secondary Geminate attack ",
+      "notes": [
+        "Can only damage the same unit once per cast."
+      ],
+      "lore": "As the Weavers worked in the fabric of creation, small wormholes allowed them to slip through time to better work their craft."
+    },
+    {
+      "key": "weaver_geminate_attack",
+      "name": "Geminate Attack",
+      "description": "Allows Weaver to dispatch two attacks at once.",
+      "max_level": 4,
+      "cooldowns": [
+        9,
+        7,
+        5,
+        3
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        425
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "delay",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "extra_attack",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "bonus_damage",
+          "heading": "BONUS DAMAGE ON GEMINATE:",
+          "values": [
+            20,
+            35,
+            50,
+            65
+          ]
+        },
+        {
+          "key": "shard_beetle_search_range",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            425
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            9,
+            7,
+            5,
+            3
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Geminate Attack will also hit units within %shard_beetle_search_range% range of the original target that have The Swarm beetles attached to them.",
+      "notes": [
+        "Additional attacks leave Weaver %delay% seconds after the previous one, and have no range limit.",
+        "Bonus damage only applies to the geminated attack and not the original attack."
+      ],
+      "lore": "Skitskurr's relationship with time is somewhat variable, causing his actions to be witnessed - and felt - more than once."
+    },
+    {
+      "key": "weaver_time_lapse",
+      "name": "Time Lapse",
+      "description": "Weaver warps backward to whatever position it was in five seconds earlier--regaining the HP and mana from that time. No effect on cooldown, gold or experience.\n\nDISPEL TYPE: Strong Dispel",
+      "max_level": 3,
+      "cooldowns": [
+        70,
+        55,
+        40
+      ],
+      "mana_costs": [
+        150,
+        75,
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        500
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "targets_allies",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            150,
+            75,
+            0
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            70,
+            55,
+            40
+          ]
+        }
+      ],
+      "scepter_upgrade": "Time Lapse may target allied Heroes with %abilitycastrange% cast range.",
+      "shard_upgrade": null,
+      "notes": [
+        "Removes most negative buffs from Weaver.",
+        "Time Lapse disjoints projectiles."
+      ],
+      "lore": "If Skitskurr does not deem the current reality of the world to fit his desires, he simply crawls back in time to right what was wronged."
+    },
+    {
+      "key": "weaver_threads_of_fate",
+      "name": "Threads of Fate",
+      "description": "Whenever Weaver deals damage to an enemy hero with an attack or ability, if he remains within %thread_setup_distance% range of them for %thread_setup_time%s, he establishes a Thread of Fate that briefly slows the enemy and ties Weaver and the enemy together. Each established thread of fate grants bonus damage to Weaver.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "thread_setup_distance",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "thread_setup_time",
+          "heading": "",
+          "values": [
+            1.5
+          ]
+        },
+        {
+          "key": "established_thread_duration",
+          "heading": "THREAD DURATION:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "established_thread_break_distance",
+          "heading": "THREAD BREAK DISTANCE:",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "damage_per_thread_hero",
+          "heading": "DAMAGE PER THREAD:",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "death_linger_duration",
+          "heading": "",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "slow_duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "slow_percent",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            100
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_min_movespeed_override} Shukuchi Movement Speed"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Strength"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Shukuchi Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_destroy_attacks} Swarm Attacks to Kill"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_damage} Bonus Damage On Geminate"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_armor_reduction} Swarm Armor Reduction Per Attack"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Shukuchi Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_extra_attack} Geminate Attack"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

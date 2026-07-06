@@ -1,0 +1,69 @@
+{
+  "id": 239,
+  "name": "Iron Talon",
+  "slug": "iron_talon",
+  "internal_key": "item_iron_talon",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Chop</h1>Targets a non-player enemy unit to remove %creep_damage_pct%%% of its current HP.<br><br>If cast on a tree, instantly destroys it.",
+  "notes": [
+    "Has a 4 second cooldown on Trees."
+  ],
+  "cooldowns": [
+    15
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    350
+  ],
+  "special_values": [
+    {
+      "key": "quelling_range_tooltip",
+      "heading": "",
+      "values": [
+        350
+      ]
+    },
+    {
+      "key": "cast_range_ward",
+      "heading": "",
+      "values": [
+        450
+      ]
+    },
+    {
+      "key": "creep_damage_pct",
+      "heading": "",
+      "values": [
+        80
+      ]
+    },
+    {
+      "key": "alternative_cooldown",
+      "heading": "",
+      "values": [
+        4
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        350
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        15
+      ]
+    }
+  ],
+  "lore": "A simple but effective weapon devised to quell a great Hellbear uprising.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

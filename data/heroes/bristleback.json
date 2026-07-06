@@ -1,0 +1,704 @@
+{
+  "id": 99,
+  "name": "Bristleback",
+  "slug": "bristleback",
+  "npc_name": "npc_dota_hero_bristleback",
+  "primary_attribute": "str",
+  "attack_type": "Melee",
+  "complexity": 1,
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Durable",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 22,
+    "str_gain": 2.8,
+    "base_agi": 17,
+    "agi_gain": 1.8,
+    "base_int": 14,
+    "int_gain": 2.8,
+    "damage_min": 53,
+    "damage_max": 59,
+    "attack_rate": 1.8,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 3.8333335,
+    "magic_resistance": 25,
+    "movement_speed": 295,
+    "turn_rate": 0.9,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 604,
+    "health_regen": 3.2,
+    "max_mana": 243,
+    "mana_regen": 1.1
+  },
+  "lore": "Never one to turn his back on a fight, Rigwarl was known for battling the biggest, meanest scrappers he could get his hands on. Christened Bristleback by the drunken crowds, he waded into backroom brawls in every road tavern between Slom and Elze, until his exploits finally caught the eye of a barkeep in need of an enforcer. For a bit of brew, Bristleback was hired to collect tabs, keep the peace, and break the occasional leg or two (or five, in the case of one unfortunate web-hund).\r\n\t\t\t\t<br><br>After indulging in a night of merriment during which bodily harm was meted out in equal parts upon both delinquent patrons and his own liver, Bristleback finally met his match. \"Your tusks offend me, sir,\" he was heard to drunkenly slur to one particularly large fellow from the northern wastes whose bill had come due. What followed was a fight for the ages. A dozen fighters jumped in. No stool was left unbroken, and in the end, the impossible happened: the tab went unpaid. Over the weeks that followed, Bristleback's wounds healed, and his quills grew back; but an enforcer's honor can be a prickly thing. He paid the tab from his own coin, vowing to track down this northerner and extract redemption. And then he did something he'd never done before: he actually trained, and in so doing made a startling discovery about himself. A smile peeled back from his teeth as he flexed his quills. Turning his back to a fight might be just the thing.",
+  "hype": "When it comes to a fight, Bristleback really puts his back into it. <b>Reducing all damage</b> arriving from the rear or from the sides, he wades into battle with barely a care, spraying enemies with <b>damaging quills</b> and <b>slowing snot.</b>",
+  "abilities": [
+    {
+      "key": "bristleback_viscous_nasal_goo",
+      "name": "Viscous Nasal Goo",
+      "description": "Covers a target in snot, causing it to have reduced armor and movement speed for %goo_duration% seconds.  Multiple casts stack and refresh the duration.",
+      "max_level": 4,
+      "cooldowns": [
+        1.75
+      ],
+      "mana_costs": [
+        12,
+        16,
+        20,
+        24
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        650
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "goo_speed",
+          "heading": "",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "goo_duration",
+          "heading": "",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "base_armor",
+          "heading": "BASE ARMOR LOSS:",
+          "values": [
+            1.5,
+            2,
+            2.5,
+            3
+          ]
+        },
+        {
+          "key": "armor_per_stack",
+          "heading": "ARMOR LOSS PER STACK:",
+          "values": [
+            2,
+            2.5,
+            3,
+            3.5
+          ]
+        },
+        {
+          "key": "base_move_slow",
+          "heading": "BASE MOVEMENT SLOW:",
+          "values": [
+            12
+          ]
+        },
+        {
+          "key": "move_slow_per_stack",
+          "heading": "MOVE SLOW PER STACK:",
+          "values": [
+            3,
+            6,
+            9,
+            12
+          ]
+        },
+        {
+          "key": "stack_limit",
+          "heading": "STACK LIMIT:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            650
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            12,
+            16,
+            20,
+            24
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            1.75
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Having caught a cold while stuck in the snow, Bristleback turns it to his advantage."
+    },
+    {
+      "key": "bristleback_quill_spray",
+      "name": "Quill Spray",
+      "description": "Sprays enemy units with quills dealing damage in an area of effect around Bristleback.  Deals bonus damage for every time a unit was hit by Quill Spray in the last %quill_stack_duration% seconds.",
+      "max_level": 4,
+      "cooldowns": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "mana_costs": [
+        35,
+        35,
+        35,
+        35
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "quill_base_damage",
+          "heading": "QUILL BASE DAMAGE:",
+          "values": [
+            25,
+            45,
+            65,
+            85
+          ]
+        },
+        {
+          "key": "quill_stack_damage",
+          "heading": "QUILL STACK DAMAGE:",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "quill_stack_duration",
+          "heading": "STACK DURATION:",
+          "values": [
+            14
+          ]
+        },
+        {
+          "key": "max_damage",
+          "heading": "MAX DAMAGE:",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "projectile_speed",
+          "heading": "",
+          "values": [
+            2400
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            35
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            3
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Quill Spray damage is not reduced by damage block abilities."
+      ],
+      "lore": "An enforcer's honor can be a prickly thing.  So can his quills."
+    },
+    {
+      "key": "bristleback_bristleback",
+      "name": "Bristleback",
+      "description": "Bristleback takes less damage if hit on the sides or rear. If Bristleback takes enough damage from the rear, he releases a Quill Spray of the current level.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "side_damage_reduction",
+          "heading": "SIDE DAMAGE REDUCTION:",
+          "values": [
+            8,
+            12,
+            16,
+            20
+          ]
+        },
+        {
+          "key": "back_damage_reduction",
+          "heading": "BACK DAMAGE REDUCTION:",
+          "values": [
+            16,
+            24,
+            32,
+            40
+          ]
+        },
+        {
+          "key": "side_angle",
+          "heading": "",
+          "values": [
+            110
+          ]
+        },
+        {
+          "key": "back_angle",
+          "heading": "",
+          "values": [
+            70
+          ]
+        },
+        {
+          "key": "quill_release_threshold",
+          "heading": "DAMAGE THRESHOLD:",
+          "values": [
+            275,
+            250,
+            225,
+            200
+          ]
+        },
+        {
+          "key": "quill_release_interval",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "goo_radius",
+          "heading": "NASAL GOO RADIUS:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "activation_cooldown",
+          "heading": "",
+          "values": [
+            24
+          ]
+        },
+        {
+          "key": "activation_manacost",
+          "heading": "",
+          "values": [
+            125
+          ]
+        },
+        {
+          "key": "activation_delay",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "activation_num_quill_sprays",
+          "heading": "",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "activation_spray_interval",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "activation_angle",
+          "heading": "",
+          "values": [
+            45
+          ]
+        },
+        {
+          "key": "activation_movement_speed_pct",
+          "heading": "",
+          "values": [
+            -40
+          ]
+        },
+        {
+          "key": "activation_turn_rate_pct",
+          "heading": "",
+          "values": [
+            -100
+          ]
+        },
+        {
+          "key": "activation_disable_turning",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "activation_ignore_cast_angle",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "activation_turn_rate",
+          "heading": "",
+          "values": [
+            500
+          ]
+        }
+      ],
+      "scepter_upgrade": "Adds active ability to Bristleback. Bristleback rotates towards the targeted direction and, after %activation_delay%s, forcefully ejects %activation_num_quill_sprays% sequential Quill Sprays in a tight conical pattern out of his back every %activation_spray_interval%s. Bristleback's facing is locked during this time, he is disarmed, and his speed is reduced by %activation_movement_speed_pct%%%.",
+      "shard_upgrade": null,
+      "notes": [
+        "Bristleback's rear is considered to be within 70 degrees from the back.",
+        "Bristleback's side is considered to be within 110 degrees from the back.",
+        "Damage done by Quill Sprays released by this ability passively is considered reflected damage. Reflected damage does not provide any lifesteal and cannot be reflected."
+      ],
+      "lore": "Turning his back to a fight might be just the thing."
+    },
+    {
+      "key": "bristleback_hairball",
+      "name": "Hairball",
+      "description": "Coughs a quill-packed hairball towards the target location. Erupts at the location, hitting enemies with Viscous Nasal Goo stacks and Quill Spray.",
+      "max_level": 1,
+      "cooldowns": [
+        15
+      ],
+      "mana_costs": [
+        60
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        750
+      ],
+      "cast_points": [
+        0.1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "projectile_speed",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "quill_stacks",
+          "heading": "QUILL STACKS:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "goo_stacks",
+          "heading": "GOO STACKS:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            750
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            60
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            15
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Every part of Bristleback's body is a weapon -- even the parts he accidentally swallowed."
+    },
+    {
+      "key": "bristleback_warpath",
+      "name": "Warpath",
+      "description": "Bristleback works himself up into a fury every time he casts a spell, increasing his movement speed and damage.",
+      "max_level": 3,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage_per_stack",
+          "heading": "DAMAGE PER STACK:",
+          "values": [
+            12,
+            16,
+            20
+          ]
+        },
+        {
+          "key": "aspd_per_stack",
+          "heading": "",
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "key": "move_speed_per_stack",
+          "heading": "MOVEMENT PER STACK:",
+          "values": [
+            2,
+            2.5,
+            3
+          ]
+        },
+        {
+          "key": "stack_duration",
+          "heading": "STACK DURATION:",
+          "values": [
+            16,
+            18,
+            20
+          ]
+        },
+        {
+          "key": "max_stacks",
+          "heading": "MAX STACKS:",
+          "values": [
+            8,
+            10,
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Bristleback's illusions will receive the bonuses.",
+        "Items will not trigger Warpath.",
+        "Break disables the gaining of new stacks.",
+        "Break does not disable the bonuses from existing stacks."
+      ],
+      "lore": "'Temper, temper,' his mum always chided.  But in a fight, a temper can come in handy."
+    },
+    {
+      "key": "bristleback_prickly",
+      "name": "Prickly",
+      "description": "Bristleback has bonus damage and debuff duration amp against enemy heroes that are behind him.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "amp_pct",
+          "heading": "DAMAGE AND DEBUFF DURATION AMP:",
+          "values": [
+            4.5
+          ]
+        },
+        {
+          "key": "angle",
+          "heading": "",
+          "values": [
+            110
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:value} Attack Speed"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Mana Regen"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_AbilityCastRange} Goo Cast Range"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_back_damage_reduction}%/{s:bonus_side_damage_reduction}% Bristleback Back/Side Damage Reduction"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Health Regen"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_quill_stack_damage} Quill Stack Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_quill_release_threshold} Bristleback Damage Threshold"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_per_stack} Warpath Damage Per Stack"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

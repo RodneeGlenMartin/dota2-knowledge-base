@@ -1,0 +1,120 @@
+{
+  "id": 1856,
+  "name": "Crella's Crozier",
+  "slug": "crella_s_crozier",
+  "internal_key": "item_crellas_crozier",
+  "cost": 4800,
+  "neutral_tier": null,
+  "description": "<h1>Active: Rite of Rumusque</h1> You enter ghost form for %duration% seconds, becoming immune to physical damage, but are unable to attack and %extra_spell_damage_percent%%% more vulnerable to magic damage.<br><br>Steal %movespeed_steal_pct%%% movement speed from enemy heroes in %active_radius% range every second. Movement speed steal lasts %stack_duration%s.<br><br>Putrefaction Aura's effect is increased to %active_health_steal%%%. All of the lost Health Restoration is redirected to you every second.\n\n<h1>Passive: Putrefaction Aura</h1>Reduces nearby enemy heroes' Health Restoration by %health_steal%%%.<br><br>Radius: %radius%",
+  "notes": [
+    "Ghost form ends if you become Debuff Immune and will have no effect if you are already Debuff Immune.",
+    "Shares cooldown with Ghost Scepter and its upgrades.",
+    "Putrefaction Aura does not redirect Health Restoration from enemy heroes that are at full health."
+  ],
+  "cooldowns": [
+    20
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_all_stats",
+      "heading": "+$all",
+      "values": [
+        6
+      ]
+    },
+    {
+      "key": "bonus_health",
+      "heading": "+$health",
+      "values": [
+        450
+      ]
+    },
+    {
+      "key": "bonus_mana",
+      "heading": "+$mana",
+      "values": [
+        450
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        4
+      ]
+    },
+    {
+      "key": "extra_spell_damage_percent",
+      "heading": "",
+      "values": [
+        -30
+      ]
+    },
+    {
+      "key": "radius",
+      "heading": "",
+      "values": [
+        900
+      ]
+    },
+    {
+      "key": "health_steal",
+      "heading": "",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "interval",
+      "heading": "",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "active_radius",
+      "heading": "",
+      "values": [
+        900
+      ]
+    },
+    {
+      "key": "movespeed_steal_pct",
+      "heading": "",
+      "values": [
+        6
+      ]
+    },
+    {
+      "key": "active_health_steal",
+      "heading": "",
+      "values": [
+        75
+      ]
+    },
+    {
+      "key": "stack_duration",
+      "heading": "",
+      "values": [
+        1.5
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        20
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

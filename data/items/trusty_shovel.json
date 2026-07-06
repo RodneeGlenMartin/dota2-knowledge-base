@@ -1,0 +1,78 @@
+{
+  "id": 356,
+  "name": "Trusty Shovel",
+  "slug": "trusty_shovel",
+  "internal_key": "item_trusty_shovel",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Dig</h1> Channel for %abilitychanneltime% second. <br>Can find a Bounty Rune, a Healing Salve, an Enchanted Mango, or a Kobold. If digging in a river, always digs up a Water Rune.",
+  "notes": [
+    "%chance_bounty_rune%%% chance for a Bounty Rune.",
+    "%chance_other_item%%% chance each for a Flask, an Enchanted Mango, or a kobold.",
+    "The same Trusty Shovel cannot find the same reward twice in a row."
+  ],
+  "cooldowns": [
+    70
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    250
+  ],
+  "special_values": [
+    {
+      "key": "chance_bounty_rune",
+      "heading": "",
+      "values": [
+        16
+      ]
+    },
+    {
+      "key": "chance_other_item",
+      "heading": "",
+      "values": [
+        28
+      ]
+    },
+    {
+      "key": "kobold_duration",
+      "heading": "",
+      "values": [
+        60
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        250
+      ]
+    },
+    {
+      "key": "AbilityChannelTime",
+      "heading": "",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "AbilityCastPoint",
+      "heading": "",
+      "values": [
+        0.1
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        70
+      ]
+    }
+  ],
+  "lore": "Former plaything of a young deity, received as a gift from his uncle.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

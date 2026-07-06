@@ -1,0 +1,695 @@
+{
+  "id": 16,
+  "name": "Sand King",
+  "slug": "sand_king",
+  "npc_name": "npc_dota_hero_sand_king",
+  "primary_attribute": "universal",
+  "attack_type": "Melee",
+  "complexity": 2,
+  "roles": [
+    "Support",
+    "Nuker",
+    "Disabler",
+    "Escape",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 23,
+    "str_gain": 2.5,
+    "base_agi": 19,
+    "agi_gain": 2,
+    "base_int": 17,
+    "int_gain": 2,
+    "damage_min": 19,
+    "damage_max": 29,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 4.166667,
+    "magic_resistance": 25,
+    "movement_speed": 290,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 626,
+    "health_regen": 2.55,
+    "max_mana": 279,
+    "mana_regen": 0.85
+  },
+  "lore": "The sands of the Scintillant Waste are alive and sentient--the whole vast desert speaks to itself, thinking thoughts only such a vastness can conceive. But when it needs must find a form to communicate with those of more limited scope, it frees a fragment of itself, and fills a carapace of magic armor formed by the cunning Djinn of Qaldin. This essential identity calls itself Crixalis, meaning 'Soul of the Sand,' but others know it as Sand King.  Sand King takes the form of a huge arachnid, inspired by the Scintillant Waste's small but ubiquitous denizens; and this is a true outward expression of his ferocious nature. Guardian, warrior, ambassador--Sand King is all of these things, inseparable from the endless desert that gave him life.",
+  "hype": "Not many can survive an ambush from Sand King. Demolishing everything around him with waves of <b>deadly vibration</b> from his ultimate, he <b>evades counterattacks</b> by hiding himself in a scouring gust of sand, and <b>stuns foes</b> by striking them from beneath.",
+  "abilities": [
+    {
+      "key": "sandking_burrowstrike",
+      "name": "Burrowstrike",
+      "description": "Sand King burrows into the ground and tunnels forward, damaging and stunning enemy units above him as he resurfaces. Adds Caustic Finale poison to heroes hit<br><br> Can be put on alt-cast to immediately cast in the desired direction, without walking towards the targeted location.",
+      "max_level": 4,
+      "cooldowns": [
+        14,
+        13,
+        12,
+        11
+      ],
+      "mana_costs": [
+        100,
+        110,
+        120,
+        130
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        550,
+        625,
+        700,
+        775
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        80,
+        150,
+        220,
+        290
+      ],
+      "special_values": [
+        {
+          "key": "burrow_width",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "burrow_duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            1.2,
+            1.4,
+            1.6,
+            1.8
+          ]
+        },
+        {
+          "key": "burrow_speed",
+          "heading": "",
+          "values": [
+            2000
+          ]
+        },
+        {
+          "key": "burrow_anim_time",
+          "heading": "",
+          "values": [
+            0.52
+          ]
+        },
+        {
+          "key": "AbilityDamage",
+          "heading": "",
+          "values": [
+            80,
+            150,
+            220,
+            290
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            550,
+            625,
+            700,
+            775
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            110,
+            120,
+            130
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            14,
+            13,
+            12,
+            11
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Does not trigger spell block or spell reflect."
+      ],
+      "lore": "Crixalis often lies in wait, burrowing under the surface to ambush his adversaries."
+    },
+    {
+      "key": "sandking_sand_storm",
+      "name": "Sand Storm",
+      "description": "Sand King creates a fearsome sandstorm that damages enemy units and grants Sand King Invisibility while he is in it. The effect ends when Sand King leaves the area.",
+      "max_level": 4,
+      "cooldowns": [
+        40,
+        34,
+        28,
+        22
+      ],
+      "mana_costs": [
+        85
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        16,
+        20,
+        24,
+        28
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage_tick_rate",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "sand_storm_radius",
+          "heading": "RADIUS:",
+          "values": [
+            475,
+            550,
+            625,
+            700
+          ]
+        },
+        {
+          "key": "sand_storm_damage",
+          "heading": "DAMAGE PER SECOND:",
+          "values": [
+            30,
+            50,
+            70,
+            90
+          ]
+        },
+        {
+          "key": "fade_delay",
+          "heading": "",
+          "values": [
+            0.7
+          ]
+        },
+        {
+          "key": "blind_pct",
+          "heading": "BLIND:",
+          "values": null
+        },
+        {
+          "key": "sand_storm_slow",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "DURATION:",
+          "values": [
+            16,
+            20,
+            24,
+            28
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            85
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            40,
+            34,
+            28,
+            22
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Sand Storm can be used to dodge projectiles.",
+        "Sand King briefly becomes visible upon attacking or using spells while in Sand Storm. Sand King will become invisible again in %fade_delay% seconds."
+      ],
+      "lore": "Some say Crixalis is a mirage; his carapace appearing then vanishing between the whirling sands of the Scintillant Waste."
+    },
+    {
+      "key": "sandking_scorpion_strike",
+      "name": "Stinger",
+      "description": "Sand King strikes an area, performing an attack on all enemies in the area of effect, dealing extra damage to each. Enemies within an innermost radius of %inner_radius% take %inner_radius_bonus_damage_pct%%% extra damage. Applies Caustic Finale and a slow to all enemies hit.",
+      "max_level": 4,
+      "cooldowns": [
+        15,
+        12,
+        9,
+        6
+      ],
+      "mana_costs": [
+        35,
+        40,
+        45,
+        50
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        200
+      ],
+      "cast_points": [
+        0.4
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            230,
+            250,
+            270,
+            290
+          ]
+        },
+        {
+          "key": "inner_radius",
+          "heading": "",
+          "values": [
+            125
+          ]
+        },
+        {
+          "key": "inner_radius_bonus_damage_pct",
+          "heading": "",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "attack_damage",
+          "heading": "BONUS DAMAGE:",
+          "values": [
+            50,
+            75,
+            100,
+            125
+          ]
+        },
+        {
+          "key": "debuff_duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "strike_slow",
+          "heading": "MOVEMENT SPEED SLOW:",
+          "values": [
+            10,
+            12,
+            14,
+            16
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            35,
+            40,
+            45,
+            50
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            15,
+            12,
+            9,
+            6
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "A Caustic Finale explosion that deals %caustic_damage_pct%%% damage is created around every enemy hero hit in Stinger's innermost radius. Does not apply to strikes created by Aghanim's Scepter upgrade.",
+      "notes": null,
+      "lore": "Crixalis is certainly capable of mercy, but the soul of the sand finds few foes worth sparing."
+    },
+    {
+      "key": "sandking_caustic_finale",
+      "name": "Caustic Finale",
+      "description": "Sand King's attacks inject a venom that causes enemy units to violently explode when they die that does a flat amount of damage and an additional amount based on the dying units max health.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "caustic_finale_radius",
+          "heading": "EXPLODE RADIUS:",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "caustic_finale_damage_flat",
+          "heading": "BASE DAMAGE:",
+          "values": [
+            17
+          ]
+        },
+        {
+          "key": "caustic_finale_damage_pct",
+          "heading": "MAX HEALTH DAMAGE:",
+          "values": [
+            2.5
+          ]
+        },
+        {
+          "key": "caustic_finale_duration",
+          "heading": "DURATION:",
+          "values": [
+            4.5
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "An injection from Crixalis makes one brittle and as dry as the arid wastes, subject to implosive demise."
+    },
+    {
+      "key": "sandking_epicenter",
+      "name": "Epicenter",
+      "description": "After a cast point of %abilitycastpoint% seconds, Sand King sends a disturbance into the earth, causing it to shudder violently. All enemies caught within range will take damage and become slowed. Each subsequent pulse increases the radius of damage dealt.",
+      "max_level": 3,
+      "cooldowns": [
+        120,
+        110,
+        100
+      ],
+      "mana_costs": [
+        150,
+        225,
+        300
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        2
+      ],
+      "durations": [
+        6
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "epicenter_pulses",
+          "heading": "PULSES:",
+          "values": [
+            12,
+            16,
+            20
+          ]
+        },
+        {
+          "key": "epicenter_damage",
+          "heading": "DAMAGE PER PULSE:",
+          "values": [
+            60,
+            70,
+            80
+          ]
+        },
+        {
+          "key": "epicenter_radius_base",
+          "heading": "BASE RADIUS:",
+          "values": [
+            450
+          ]
+        },
+        {
+          "key": "epicenter_radius_increment",
+          "heading": "INCREMENTAL RADIUS:",
+          "values": [
+            13
+          ]
+        },
+        {
+          "key": "epicenter_slow",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            -30,
+            -40,
+            -50
+          ]
+        },
+        {
+          "key": "epicenter_slow_as",
+          "heading": "ATTACK SLOW:",
+          "values": [
+            -30,
+            -40,
+            -50
+          ]
+        },
+        {
+          "key": "proc_passively",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_radius",
+          "heading": "RADIUS:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_interval",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "linger_duration",
+          "heading": "DEBUFF DURATION:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "scepter_explosion_radius_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "scepter_explosion_min_dist",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "scepter_explosions_per_pulse",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "spine_tick_rate",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "spine_damage_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_explosions_per_pulse",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "EPICENTER DURATION:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            150,
+            225,
+            300
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            120,
+            110,
+            100
+          ]
+        }
+      ],
+      "scepter_upgrade": "When the pulses start, %scepter_explosions_per_pulse% Stinger attack areas are created every %spine_tick_rate%s at random locations, each measuring %scepter_explosion_radius_pct%%% of the Epicenter's current radius, that apply %spine_damage_pct%%% of Stinger damage to enemies hit. Shard pulses cause %shard_explosions_per_pulse% attack(s).",
+      "shard_upgrade": "Increases Epicenter damage per pulse. Every %shard_interval%s causes a small single Epicenter Pulse around Sand King.",
+      "notes": [
+        "The pulses are centered on Sand King, not where he first cast the spell."
+      ],
+      "lore": "Many an explorer was lost to the quicksands of the Scintillant Waste."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_strike_slow}% Stinger Slow"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_caustic_finale_radius} Caustic Finale Radius"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_sand_storm_damage} Sand Storm Damage Per Second"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_AbilityCastRange} Burrowstrike Cast Range"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Burrowstrike Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_epicenter_pulses} Epicenter Pulses"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_attack_damage} Stinger Damage"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_sand_storm_slow}% Sand Storm Slow and Blind"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

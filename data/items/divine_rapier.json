@@ -1,0 +1,55 @@
+{
+  "id": 133,
+  "name": "Divine Rapier",
+  "slug": "divine_rapier",
+  "internal_key": "item_rapier",
+  "cost": 5600,
+  "neutral_tier": null,
+  "description": "<h1>Toggle: Transmute</h1> Toggle to gain either %bonus_spell_amp%%% bonus spell amplification or %bonus_damage% bonus attack damage.\n\n<h1>Passive: Everlasting</h1> <font color='#e03e2e'>Dropped on death, and cannot be destroyed.</font> <br><br>Becomes unusable if picked up by an ally of its owner until it is returned to its owner. It is immediately usable by anybody if an enemy of the owner picks it up and is killed. A dropped Rapier cannot be picked up by a courier.",
+  "notes": [
+    "If Divine Rapier is dropped and picked up by an enemy of its original owner, it cannot be dropped again except by death."
+  ],
+  "cooldowns": [
+    6
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_spell_amp",
+      "heading": "",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "bonus_damage",
+      "heading": "",
+      "values": [
+        250
+      ]
+    },
+    {
+      "key": "bonus_damage_base",
+      "heading": "+$damage",
+      "values": [
+        100
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        6
+      ]
+    }
+  ],
+  "lore": "So powerful, it cannot have a single owner.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

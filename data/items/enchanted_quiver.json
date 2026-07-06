@@ -1,0 +1,46 @@
+{
+  "id": 361,
+  "name": "Enchanted Quiver",
+  "slug": "enchanted_quiver",
+  "internal_key": "item_enchanted_quiver",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Certain Strike</h1> Empowers your next attack with %bonus_damage% bonus magical damage and True Strike. <font color='#7d7d7d'>Ranged Attackers</font> have +%active_bonus_attack_range% bonus range for the attack.",
+  "notes": null,
+  "cooldowns": [
+    4
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_damage",
+      "heading": "",
+      "values": [
+        250
+      ]
+    },
+    {
+      "key": "active_bonus_attack_range",
+      "heading": "",
+      "values": [
+        350
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        4
+      ]
+    }
+  ],
+  "lore": "A graceful gift blessed by the goddess of the hunt.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

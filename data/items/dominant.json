@@ -1,0 +1,46 @@
+{
+  "id": 1648,
+  "name": "Dominant",
+  "slug": "dominant",
+  "internal_key": "item_enhancement_dominant",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "attack_speed",
+      "heading": "+$attack",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "magic_resist",
+      "heading": "+$spell_resist",
+      "values": [
+        15
+      ]
+    },
+    {
+      "key": "bonus_health",
+      "heading": "+$health",
+      "values": [
+        205
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": 37,
+  "name": "Ghost Scepter",
+  "slug": "ghost_scepter",
+  "internal_key": "item_ghost",
+  "cost": 1500,
+  "neutral_tier": null,
+  "description": "<h1>Active: Ghost Form</h1> You enter ghost form for %duration% seconds, becoming immune to physical damage, but are unable to attack and %extra_spell_damage_percent%%% more vulnerable to magic damage.",
+  "notes": [
+    "Ends if you become Debuff Immune, and will have no effect if you are already Debuff Immune.",
+    "Shares cooldown with all Ghost Scepter upgrades."
+  ],
+  "cooldowns": [
+    22
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_all_stats",
+      "heading": "+$all",
+      "values": [
+        5
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        4
+      ]
+    },
+    {
+      "key": "extra_spell_damage_percent",
+      "heading": "",
+      "values": [
+        -30
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        22
+      ]
+    }
+  ],
+  "lore": "Imbues the wielder with a ghostly presence, allowing them to evade physical damage.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

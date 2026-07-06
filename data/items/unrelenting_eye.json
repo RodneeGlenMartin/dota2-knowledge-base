@@ -1,0 +1,39 @@
+{
+  "id": 1598,
+  "name": "Unrelenting Eye",
+  "slug": "unrelenting_eye",
+  "internal_key": "item_unrelenting_eye",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Relentless</h1>Increases slow resistance by %max_slow_res%%%. This bonus is reduced by %hero_reduction%%% for every enemy hero within the wearer's attack radius.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "max_slow_res",
+      "heading": "",
+      "values": [
+        50
+      ]
+    },
+    {
+      "key": "hero_reduction",
+      "heading": "",
+      "values": [
+        10
+      ]
+    }
+  ],
+  "lore": "A serpent's eye the size of a melon (and just as moist).",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

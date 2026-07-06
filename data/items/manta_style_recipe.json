@@ -1,0 +1,24 @@
+{
+  "id": 146,
+  "name": "Manta Style Recipe",
+  "slug": "manta_style_recipe",
+  "internal_key": "item_recipe_manta",
+  "cost": 1550,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

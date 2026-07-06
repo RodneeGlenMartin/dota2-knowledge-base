@@ -1,0 +1,53 @@
+{
+  "id": 302,
+  "name": "Elixir",
+  "slug": "elixir",
+  "internal_key": "item_elixer",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Use: Consume</h1> Restores %health% health and %mana% mana to the target over %duration% seconds.<br><br>If the unit is attacked by an enemy hero or Roshan, the effect is lost.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    250
+  ],
+  "special_values": [
+    {
+      "key": "health",
+      "heading": "",
+      "values": [
+        500
+      ]
+    },
+    {
+      "key": "mana",
+      "heading": "",
+      "values": [
+        250
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        6
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        250
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

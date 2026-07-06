@@ -1,0 +1,53 @@
+{
+  "id": 335,
+  "name": "Flicker",
+  "slug": "flicker",
+  "internal_key": "item_flicker",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Flicker</h1> Dispells debuffs and blinks you in a random forward direction for a random distance between %min_range% and %max_range%. If cast within 3 seconds of receiving player damage, it will blink in place.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>",
+  "notes": null,
+  "cooldowns": [
+    5
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "max_range",
+      "heading": "",
+      "values": [
+        600
+      ]
+    },
+    {
+      "key": "min_range",
+      "heading": "",
+      "values": [
+        200
+      ]
+    },
+    {
+      "key": "bonus_movement_speed",
+      "heading": "+$move_speed",
+      "values": [
+        35
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        5
+      ]
+    }
+  ],
+  "lore": "The technically-true-to-his-word 'teleportation device' crafted by a notorious fae trickster.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": 58,
+  "name": "Mystic Staff",
+  "slug": "mystic_staff",
+  "internal_key": "item_mystic_staff",
+  "cost": 2800,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_intellect",
+      "heading": "+$int",
+      "values": [
+        25
+      ]
+    }
+  ],
+  "lore": "Enigmatic staff made of only the most expensive crystals.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

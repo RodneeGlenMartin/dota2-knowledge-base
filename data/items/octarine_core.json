@@ -1,0 +1,53 @@
+{
+  "id": 235,
+  "name": "Octarine Core",
+  "slug": "octarine_core",
+  "internal_key": "item_octarine_core",
+  "cost": 4900,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_cooldown",
+      "heading": "+$cooldown_reduction",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "bonus_health",
+      "heading": "+$health",
+      "values": [
+        450
+      ]
+    },
+    {
+      "key": "bonus_mana",
+      "heading": "+$mana",
+      "values": [
+        450
+      ]
+    },
+    {
+      "key": "bonus_mana_regen",
+      "heading": "+$mana_regen",
+      "values": [
+        6
+      ]
+    }
+  ],
+  "lore": "At the core of spellcraft are spectrums only the very gifted can sense.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

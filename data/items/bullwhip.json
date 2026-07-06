@@ -1,0 +1,62 @@
+{
+  "id": 680,
+  "name": "Bullwhip",
+  "slug": "bullwhip",
+  "internal_key": "item_bullwhip",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Whip</h1>Grants %speed%%% movement speed when cast on allies, and slows by %speed%%% when cast on enemies. Lasts %duration% seconds.",
+  "notes": [
+    "Does not trigger spell block or spell reflect."
+  ],
+  "cooldowns": [
+    11
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    850
+  ],
+  "special_values": [
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        4
+      ]
+    },
+    {
+      "key": "speed",
+      "heading": "",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "bullwhip_delay_time",
+      "heading": "",
+      "values": [
+        0.3
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        850
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        11
+      ]
+    }
+  ],
+  "lore": "Once the favored lash of an infamous broker of pit fighters and other live trade.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

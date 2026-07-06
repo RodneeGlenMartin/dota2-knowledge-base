@@ -1,0 +1,46 @@
+{
+  "id": 354,
+  "name": "Ocean Heart",
+  "slug": "ocean_heart",
+  "internal_key": "item_ocean_heart",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Water Regen</h1> Provides you with %water_hp_regen% HP regen and %water_mp_regen% mana regen while in the river.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "all_stats",
+      "heading": "+$all",
+      "values": [
+        5
+      ]
+    },
+    {
+      "key": "water_hp_regen",
+      "heading": "",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "water_mp_regen",
+      "heading": "",
+      "values": [
+        5
+      ]
+    }
+  ],
+  "lore": "A charm blessed by the Council of the Brine.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

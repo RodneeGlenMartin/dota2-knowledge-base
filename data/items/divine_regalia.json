@@ -1,0 +1,32 @@
+{
+  "id": 1644,
+  "name": "Divine Regalia",
+  "slug": "divine_regalia",
+  "internal_key": "item_divine_regalia",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Exalted</h1> Increases outgoing damage by %outgoing_damage%%%. Dying permanently disables this Neutral Item and the current Enchantment is lost.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "outgoing_damage",
+      "heading": "",
+      "values": [
+        20
+      ]
+    }
+  ],
+  "lore": "So magnificent, it cannot abide failure.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

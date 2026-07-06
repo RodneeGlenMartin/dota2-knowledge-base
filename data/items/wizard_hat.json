@@ -1,0 +1,32 @@
+{
+  "id": 1849,
+  "name": "Wizard Hat",
+  "slug": "wizard_hat",
+  "internal_key": "item_wizard_hat",
+  "cost": 250,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_mana",
+      "heading": "+$mana",
+      "values": [
+        125
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

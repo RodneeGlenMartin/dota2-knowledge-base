@@ -1,0 +1,88 @@
+{
+  "id": 98,
+  "name": "Orchid Malevolence",
+  "slug": "orchid_malevolence",
+  "internal_key": "item_orchid",
+  "cost": 3275,
+  "neutral_tier": null,
+  "description": "<h1>Active: Soul Burn</h1>Silences the target unit for %silence_duration% seconds. At the end of the silence, %silence_damage_percent%%% of the damage received while silenced is inflicted as bonus magical damage.",
+  "notes": null,
+  "cooldowns": [
+    18
+  ],
+  "mana_costs": [
+    125
+  ],
+  "cast_ranges": [
+    900
+  ],
+  "special_values": [
+    {
+      "key": "bonus_attack_speed",
+      "heading": "+$attack",
+      "values": [
+        35
+      ]
+    },
+    {
+      "key": "bonus_damage",
+      "heading": "+$damage",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "bonus_mana_regen",
+      "heading": "+$mana_regen",
+      "values": [
+        2.5
+      ]
+    },
+    {
+      "key": "bonus_intellect",
+      "heading": "+$int",
+      "values": [
+        12
+      ]
+    },
+    {
+      "key": "silence_damage_percent",
+      "heading": "",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "silence_duration",
+      "heading": "",
+      "values": [
+        5
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        900
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        125
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        18
+      ]
+    }
+  ],
+  "lore": "A garnet rod constructed from the essence of a fire demon.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

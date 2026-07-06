@@ -1,0 +1,102 @@
+{
+  "id": 249,
+  "name": "Silver Edge",
+  "slug": "silver_edge",
+  "internal_key": "item_silver_edge",
+  "cost": 5700,
+  "neutral_tier": null,
+  "description": "<h1>Active: Shadow Walk</h1>Makes you invisible for %windwalk_duration% seconds, or until you attack or cast a spell.  While invisible, you move %windwalk_movement_speed%%% faster and can move through units.  <br><br>Attacking to end the invisibility will deal %windwalk_bonus_damage% bonus physical damage, disable their passive abilities for %backstab_duration% seconds, and cap their movement speed to %max_movement_speed%.\n\n",
+  "notes": null,
+  "cooldowns": [
+    22
+  ],
+  "mana_costs": [
+    75
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_damage",
+      "heading": "+$damage",
+      "values": [
+        70
+      ]
+    },
+    {
+      "key": "bonus_attack_speed",
+      "heading": "+$attack",
+      "values": [
+        35
+      ]
+    },
+    {
+      "key": "windwalk_duration",
+      "heading": "",
+      "values": [
+        17
+      ]
+    },
+    {
+      "key": "windwalk_movement_speed",
+      "heading": "",
+      "values": [
+        22
+      ]
+    },
+    {
+      "key": "windwalk_fade_time",
+      "heading": "",
+      "values": [
+        0.3
+      ]
+    },
+    {
+      "key": "windwalk_bonus_damage",
+      "heading": "",
+      "values": [
+        300
+      ]
+    },
+    {
+      "key": "backstab_duration",
+      "heading": "",
+      "values": [
+        5
+      ]
+    },
+    {
+      "key": "max_movement_speed",
+      "heading": "",
+      "values": [
+        200
+      ]
+    },
+    {
+      "key": "visibility_radius",
+      "heading": "",
+      "values": [
+        1025
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        75
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        22
+      ]
+    }
+  ],
+  "lore": "Once used to slay an unjust king, only to have the kingdom erupt into civil war in the aftermath.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

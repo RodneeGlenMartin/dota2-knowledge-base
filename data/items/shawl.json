@@ -1,0 +1,41 @@
+{
+  "id": 1848,
+  "name": "Shawl",
+  "slug": "shawl",
+  "internal_key": "item_shawl",
+  "cost": 450,
+  "neutral_tier": null,
+  "description": "",
+  "notes": [
+    "Stacks multiplicatively with other sources of magic resistance."
+  ],
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_magical_armor",
+      "heading": "",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "tooltip_resist",
+      "heading": "+$spell_resist",
+      "values": [
+        10
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

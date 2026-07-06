@@ -1,0 +1,746 @@
+{
+  "id": 119,
+  "name": "Dark Willow",
+  "slug": "dark_willow",
+  "npc_name": "npc_dota_hero_dark_willow",
+  "primary_attribute": "int",
+  "attack_type": "Ranged",
+  "complexity": 2,
+  "roles": [
+    "Support",
+    "Nuker",
+    "Disabler",
+    "Escape"
+  ],
+  "stats": {
+    "base_str": 20,
+    "str_gain": 2,
+    "base_agi": 18,
+    "agi_gain": 1.6,
+    "base_int": 22,
+    "int_gain": 3.5,
+    "damage_min": 49,
+    "damage_max": 57,
+    "attack_rate": 1.5,
+    "attack_range": 475,
+    "projectile_speed": 1200,
+    "armor": 3,
+    "magic_resistance": 25,
+    "movement_speed": 290,
+    "turn_rate": 0.7,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 560,
+    "health_regen": 2.75,
+    "max_mana": 339,
+    "mana_regen": 1.1
+  },
+  "lore": "Children love telling stories about the whimsical adventures of fairies... That’s because children don’t know that most fairies are spiteful jerks. And in the world of spiteful fairies there are few names spoken of with more contempt than Mireska Sunbreeze.<br><br>Born to a fae merchant king, Mireska grew up in Revtel; a cutthroat nation where manipulation and murder were the norm. But while she was quite adept at navigating the etiquette, unspoken laws, and social rituals that permeated every element of her life, she found the whole thing rather boring.<br><br>So, Mireska did what most rebellious children do: burn down her family estate and set off with her pet wisp Jex to live the life of a wandering grifter.",
+  "hype": "A slight flutter from the shadows may be all an enemy sees of Dark Willow, as she <b>eludes pursuit</b> and <b>controls her foe's movements</b> with cunning fae tricks. Calling upon powers far more ancient than any scholarly magic, she <b>binds enemies in place</b> before unleashing the full wrath and terror of the fae realm upon them.",
+  "abilities": [
+    {
+      "key": "dark_willow_bramble_maze",
+      "name": "Bramble Maze",
+      "description": "Dark Willow creates a %placement_range% AoE maze of %placement_count% brambles that grow in the target area after %initial_creation_delay% seconds. Enemies that walk into a bramble are rooted and take damage over time. Lasts %placement_duration% seconds.",
+      "max_level": 4,
+      "cooldowns": [
+        22
+      ],
+      "mana_costs": [
+        100,
+        120,
+        140,
+        160
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1000,
+        1100,
+        1200,
+        1300
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "placement_range",
+          "heading": "",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "placement_count",
+          "heading": "",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "placement_duration",
+          "heading": "",
+          "values": [
+            12
+          ]
+        },
+        {
+          "key": "extra_brambles_placement_duration",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "latch_duration",
+          "heading": "LATCH ROOT DURATION:",
+          "values": [
+            1,
+            1.5,
+            2,
+            2.5
+          ]
+        },
+        {
+          "key": "latch_range",
+          "heading": "BRAMBLE LATCH RADIUS:",
+          "values": [
+            90
+          ]
+        },
+        {
+          "key": "damage_per_tick",
+          "heading": "DAMAGE PER TICK:",
+          "values": [
+            50,
+            55,
+            60,
+            65
+          ]
+        },
+        {
+          "key": "latch_creation_interval",
+          "heading": "",
+          "values": [
+            0.075
+          ]
+        },
+        {
+          "key": "latch_creation_delay",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "initial_creation_delay",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1000,
+            1100,
+            1200,
+            1300
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            120,
+            140,
+            160
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            22
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Does not interrupt channeling spells upon rooting."
+      ],
+      "lore": "The fae realm exists all around you, merely waiting to draw you in..."
+    },
+    {
+      "key": "dark_willow_shadow_realm",
+      "name": "Shadow Realm",
+      "description": "Dark Willow recedes into the shadows, becoming untargetable.  Her next attack has %attack_range_bonus% bonus attack range and deals bonus magic damage, and will end Shadow Realm. Damage scales based on how long she remains under the effects of Shadow Realm, the maximum being reached after %max_damage_duration% seconds.",
+      "max_level": 4,
+      "cooldowns": [
+        21,
+        19,
+        17,
+        15
+      ],
+      "mana_costs": [
+        80,
+        90,
+        100,
+        110
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "fade_time",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "MAX DAMAGE:",
+          "values": [
+            120,
+            200,
+            280,
+            360
+          ]
+        },
+        {
+          "key": "attack_range_bonus",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "max_damage_duration",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            80,
+            90,
+            100,
+            110
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            21,
+            19,
+            17,
+            15
+          ]
+        }
+      ],
+      "scepter_upgrade": "Attacking no longer takes Dark Willow out of Shadow Realm. Each attack still has bonus damage based on the duration of the buff.",
+      "shard_upgrade": null,
+      "notes": [
+        "Disjoints projectiles upon cast.",
+        "Grants phased movement.",
+        "Spells which require vision cannot affect Dark Willow in the Shadow Realm."
+      ],
+      "lore": "What you can't see will most definitely hurt you."
+    },
+    {
+      "key": "dark_willow_cursed_crown",
+      "name": "Cursed Crown",
+      "description": "Dark Willow casts an ancient fae curse on the target. After a delay, the target and nearby enemies are stunned.",
+      "max_level": 4,
+      "cooldowns": [
+        17,
+        15,
+        13,
+        11
+      ],
+      "mana_costs": [
+        80,
+        90,
+        100,
+        110
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        700
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "delay",
+          "heading": "DELAY:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "stun_duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            1.5,
+            1.8,
+            2.1,
+            2.4
+          ]
+        },
+        {
+          "key": "stun_radius",
+          "heading": "EFFECT RADIUS:",
+          "values": [
+            360
+          ]
+        },
+        {
+          "key": "shard_delay_reduction",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_bramble_amount",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_spawn_radius",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            80,
+            90,
+            100,
+            110
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            17,
+            15,
+            13,
+            11
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Cursed Crown creates %shard_bramble_amount% brambles in a %shard_spawn_radius% radius around the target after the counter ends. Triggers even upon dispel. Cursed Crown cooldown reduced by 1.5 seconds.",
+      "notes": null,
+      "lore": "Didn't anyone ever tell you? Never strike a deal with a fairy..."
+    },
+    {
+      "key": "dark_willow_bedlam",
+      "name": "Bedlam",
+      "description": "Dark Willow sends her pet wisp to roam around herself for the duration, rapidly attacking nearby enemies.  Bedlam cannot be used while Terrorize is active.",
+      "max_level": 3,
+      "cooldowns": [
+        30
+      ],
+      "mana_costs": [
+        100,
+        150,
+        200
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "attack_damage",
+          "heading": "ATTACK DAMAGE:",
+          "values": [
+            70,
+            120,
+            170
+          ]
+        },
+        {
+          "key": "attack_interval",
+          "heading": "ATTACK INTERVAL:",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "attack_radius",
+          "heading": "ATTACK RADIUS:",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "attack_targets",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "roaming_radius",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "roaming_seconds_per_rotation",
+          "heading": "",
+          "values": [
+            1.5
+          ]
+        },
+        {
+          "key": "roaming_duration",
+          "heading": "ROAMING DURATION:",
+          "values": [
+            5.5
+          ]
+        },
+        {
+          "key": "target_count",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "travel_speed",
+          "heading": "",
+          "values": [
+            1800
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            150,
+            200
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            30
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "You'll have to excuse my friend Jex. He's really into murder."
+    },
+    {
+      "key": "dark_willow_pixie_dust",
+      "name": "Pixie Dust",
+      "description": "Dark Willow gains %hp_regen_amp%%% bonus Health and Mana Regeneration, increased to %hp_regen_amp_out_of_world%%% while she is untargetable or invulnerable.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "hp_regen_amp",
+          "heading": "",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "mana_regen_amp",
+          "heading": "",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "hp_regen_amp_out_of_world",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "mana_regen_amp_out_of_world",
+          "heading": "",
+          "values": [
+            100
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "dark_willow_terrorize",
+      "name": "Terrorize",
+      "description": "Dark Willow releases her pet wisp to terrorize her enemies. After a short delay, all enemies in the target area become fearful and run toward their home fountain. Terrorize cannot be used while Bedlam is active.",
+      "max_level": 3,
+      "cooldowns": [
+        100,
+        90,
+        80
+      ],
+      "mana_costs": [
+        150
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1200
+      ],
+      "cast_points": [
+        1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "destination_travel_speed",
+          "heading": "",
+          "values": [
+            2000
+          ]
+        },
+        {
+          "key": "destination_radius",
+          "heading": "RADIUS:",
+          "values": [
+            450,
+            500,
+            550
+          ]
+        },
+        {
+          "key": "destination_status_duration",
+          "heading": "FEAR DURATION:",
+          "values": [
+            2.8,
+            3,
+            3.2
+          ]
+        },
+        {
+          "key": "return_travel_speed",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "starting_height",
+          "heading": "",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "impact_damage",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            100,
+            90,
+            80
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Terrorize provides vision on affected units."
+      ],
+      "lore": "You think you know the first thing about fear? Jex'll show you what that word truly means..."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_roaming_duration}s Bedlam Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Intelligence"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_attack_damage} Bedlam Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Terrorize Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_duration}s Shadow Realm Duration"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Bramble Maze CD"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_target_count} Bedlam Attack Targets"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_impact_damage} Terrorize Impact Damage"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

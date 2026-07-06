@@ -1,0 +1,60 @@
+{
+  "id": 1606,
+  "name": "Pollywog Charm",
+  "slug": "pollywog_charm",
+  "internal_key": "item_polliwog_charm",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Ribbit</h1> Increases the health regeneration of a target ally by %regen_boost% for %duration% seconds. While standing in water, the blessed unit also moves %water_movespeed%%% faster.",
+  "notes": null,
+  "cooldowns": [
+    45
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    1000
+  ],
+  "special_values": [
+    {
+      "key": "regen_boost",
+      "heading": "",
+      "values": [
+        8
+      ]
+    },
+    {
+      "key": "water_movespeed",
+      "heading": "",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        14
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        1000
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        45
+      ]
+    }
+  ],
+  "lore": "A tiny trinket that wriggles when wet.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

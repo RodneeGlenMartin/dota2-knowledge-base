@@ -1,0 +1,67 @@
+{
+  "id": 252,
+  "name": "Echo Sabre",
+  "slug": "echo_sabre",
+  "internal_key": "item_echo_sabre",
+  "cost": 2700,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Echo Strike</h1> Causes melee attacks to attack twice in quick succession. The double attacks apply a %movement_slow%%% movement slow for %slow_duration% seconds on the first strike.",
+  "notes": null,
+  "cooldowns": [
+    5
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_damage",
+      "heading": "+$damage",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "bonus_strength",
+      "heading": "+$str",
+      "values": [
+        15
+      ]
+    },
+    {
+      "key": "bonus_mana_regen",
+      "heading": "+$mana_regen",
+      "values": [
+        1.75
+      ]
+    },
+    {
+      "key": "movement_slow",
+      "heading": "",
+      "values": [
+        100
+      ]
+    },
+    {
+      "key": "slow_duration",
+      "heading": "",
+      "values": [
+        0.8
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        5
+      ]
+    }
+  ],
+  "lore": "A deceptively swift blade imbued with resonant magic.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

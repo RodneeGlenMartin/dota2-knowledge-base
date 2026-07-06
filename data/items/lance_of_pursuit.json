@@ -1,0 +1,67 @@
+{
+  "id": 946,
+  "name": "Lance of Pursuit",
+  "slug": "lance_of_pursuit",
+  "internal_key": "item_lance_of_pursuit",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Hound</h1> Attacking from behind slows enemies by %slow_pct_melee%%% (%slow_pct_ranged%%% if Ranged) and deals %backstab_damage% more damage. Slow lasts %slow_duration% second(s).",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_mana",
+      "heading": "+$mana",
+      "values": [
+        200
+      ]
+    },
+    {
+      "key": "slow_duration",
+      "heading": "",
+      "values": [
+        2
+      ]
+    },
+    {
+      "key": "backstab_damage",
+      "heading": "",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "backstab_angle",
+      "heading": "",
+      "values": [
+        90
+      ]
+    },
+    {
+      "key": "slow_pct_melee",
+      "heading": "",
+      "values": [
+        16
+      ]
+    },
+    {
+      "key": "slow_pct_ranged",
+      "heading": "",
+      "values": [
+        8
+      ]
+    }
+  ],
+  "lore": "The gleaming weapon of a tarnished knight haunted by his duties to an unworthy king.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

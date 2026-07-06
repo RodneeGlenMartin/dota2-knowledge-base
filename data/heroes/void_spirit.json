@@ -1,0 +1,797 @@
+{
+  "id": 126,
+  "name": "Void Spirit",
+  "slug": "void_spirit",
+  "npc_name": "npc_dota_hero_void_spirit",
+  "primary_attribute": "universal",
+  "attack_type": "Melee",
+  "complexity": 2,
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Disabler",
+    "Escape"
+  ],
+  "stats": {
+    "base_str": 22,
+    "str_gain": 2.6,
+    "base_agi": 21,
+    "agi_gain": 2.2,
+    "base_int": 24,
+    "int_gain": 3.1,
+    "damage_min": 18,
+    "damage_max": 22,
+    "attack_rate": 1.7,
+    "attack_range": 200,
+    "projectile_speed": 900,
+    "armor": 2.5,
+    "magic_resistance": 25,
+    "movement_speed": 290,
+    "turn_rate": 0.7,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 604,
+    "health_regen": 2.45,
+    "max_mana": 363,
+    "mana_regen": 1.2
+  },
+  "lore": "Not even the other spirits claim to understand the mind and machinations of the eldest amongst them, Inai the Void Spirit. Privy to secrets that would shatter a mortal mind, the Void Spirit observes the workings of the universe from an unknowable vantage, choosing to let carefully groomed servants do his bidding -- only emerging from his Hidden Temple into the material plane when he deems that he alone can steer the course of reality along its proper path.<br><br>With an expansive perspective on existence, Inai is focused intently on a point in time beyond which he cannot see, when the fabrics of multiple realities are fated to collide. Now he steps from the aether to personally resolve the battle of the Ancients and prepare his allies for what he views as a greater conflict to come.",
+  "hype": "Privy to secrets that would shatter a mortal mind, the Void Spirit emerges from his Hidden Temple to stand guard over <b>multiple areas of the battlefield</b> at once. Able to step into and out of the mortal plane at will, he easily <b>outmaneuvers opponents</b> to strike from wherever he desires, calling upon the powers of the aether to <b>shield him</b> in times of need.",
+  "abilities": [
+    {
+      "key": "void_spirit_aether_remnant",
+      "name": "Aether Remnant",
+      "description": "Void Spirit dispatches a remnant to the target location. The remnant stands watch over the region, facing the direction of his vector. When a unit crosses its gaze, the remnant pulls it in and damages it.",
+      "max_level": 4,
+      "cooldowns": [
+        17,
+        15,
+        13,
+        11
+      ],
+      "mana_costs": [
+        75,
+        80,
+        85,
+        90
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        850
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "start_radius",
+          "heading": "",
+          "values": [
+            90
+          ]
+        },
+        {
+          "key": "end_radius",
+          "heading": "",
+          "values": [
+            90
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "projectile_speed",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "remnant_watch_distance",
+          "heading": "WATCH RANGE:",
+          "values": [
+            450
+          ]
+        },
+        {
+          "key": "remnant_watch_radius",
+          "heading": "",
+          "values": [
+            130
+          ]
+        },
+        {
+          "key": "watch_path_vision_radius",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "activation_delay",
+          "heading": "ACTIVATION TIME:",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "impact_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            90,
+            140,
+            190,
+            240
+          ]
+        },
+        {
+          "key": "pull_duration",
+          "heading": "PULL DURATION:",
+          "values": [
+            1,
+            1.2,
+            1.4,
+            1.6
+          ]
+        },
+        {
+          "key": "pull_destination",
+          "heading": "",
+          "values": [
+            44,
+            50,
+            56,
+            62
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "REMNANT LIFETIME:",
+          "values": [
+            17
+          ]
+        },
+        {
+          "key": "think_interval",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "pierces_creeps",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "damage_tick_rate",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "creep_damage_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "artifice_duration_override",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "artifice_pct_effectiveness",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "truesight_range",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "rotation_speed",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            850
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            75,
+            80,
+            85,
+            90
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            17,
+            15,
+            13,
+            11
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Creates an additional watcher path that rotates around the remnant.  The remnant now provides True Sight, and no longer triggers on creeps, instead dealing %creep_damage_pct%%% damage to them every second in both paths. Does not reveal wards.",
+      "notes": null,
+      "lore": "Inai exists far beyond the scope of a single point in space and time."
+    },
+    {
+      "key": "void_spirit_dissimilate",
+      "name": "Dissimilate",
+      "description": "Void Spirit temporarily fades into the aether, creating a number of portals through which he can reassemble himself. Upon exiting a portal, he damages all enemies in the area.",
+      "max_level": 4,
+      "cooldowns": [
+        20,
+        17,
+        14,
+        11
+      ],
+      "mana_costs": [
+        120
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        105,
+        185,
+        265,
+        345
+      ],
+      "special_values": [
+        {
+          "key": "phase_duration",
+          "heading": "PHASE DURATION:",
+          "values": [
+            1.1
+          ]
+        },
+        {
+          "key": "destination_fx_radius",
+          "heading": "",
+          "values": [
+            183
+          ]
+        },
+        {
+          "key": "portals_per_ring",
+          "heading": "",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "angle_per_ring_portal",
+          "heading": "",
+          "values": [
+            60
+          ]
+        },
+        {
+          "key": "first_ring_distance_offset",
+          "heading": "",
+          "values": [
+            520
+          ]
+        },
+        {
+          "key": "damage_radius",
+          "heading": "",
+          "values": [
+            275
+          ]
+        },
+        {
+          "key": "has_outer_ring",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "aether_remnant_count",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "artifice_duration_override_tooltip",
+          "heading": "REMNANT DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "artifice_pct_effectiveness_tooltip",
+          "heading": "REMNANT EFFECTIVENESS:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "artifice_extra_offset",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "root_duration",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityDamage",
+          "heading": "",
+          "values": [
+            105,
+            185,
+            265,
+            345
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            120
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            20,
+            17,
+            14,
+            11
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Call of the Void will never spawn Aether Remnants in the Outer Ring."
+      ],
+      "lore": "Inai much prefers to observe our plane free from the confines of corporeal form."
+    },
+    {
+      "key": "void_spirit_resonant_pulse",
+      "name": "Resonant Pulse",
+      "description": "Void Spirit wraps himself in a protective shield that absorbs physical damage and emits a single damaging pulse around him. The shield gains increased damage absorption for each enemy hero the pulse hits.",
+      "max_level": 4,
+      "cooldowns": [
+        18
+      ],
+      "mana_costs": [
+        115,
+        120,
+        125,
+        130
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "PULSE RADIUS:",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "speed",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            60,
+            110,
+            160,
+            210
+          ]
+        },
+        {
+          "key": "buff_duration",
+          "heading": "BARRIER DURATION:",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "base_absorb_amount",
+          "heading": "BASE DAMAGE BARRIER:",
+          "values": [
+            25,
+            50,
+            75,
+            100
+          ]
+        },
+        {
+          "key": "absorb_per_hero_hit",
+          "heading": "BARRIER AMOUNT PER HERO HIT:",
+          "values": [
+            50,
+            70,
+            90,
+            110
+          ]
+        },
+        {
+          "key": "is_all_barrier",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "return_projectile_speed",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "max_charges",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "charge_restore_time",
+          "heading": "BASE CHARGE RESTORE TIME:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "silence_duration_scepter",
+          "heading": "SILENCE DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            115,
+            120,
+            125,
+            130
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            18
+          ]
+        }
+      ],
+      "scepter_upgrade": "Causes Resonant Pulse to silence and gain %max_charges% charges.",
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Inai never hesitates to shroud himself in the essence of his true self when forced to interact with the mortal plane."
+    },
+    {
+      "key": "void_spirit_intrinsic_edge",
+      "name": "Intrinsic Edge",
+      "description": "Void Spirit gains %damage_stat_bonus_pct%%% more attack damage per point of each attribute, and %secondary_stat_bonus_pct%%% more HP regen from Strength, attack speed from Agility, and mana regen from Intelligence.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "secondary_stat_bonus_pct",
+          "heading": "",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "damage_stat_bonus_pct",
+          "heading": "",
+          "values": [
+            15
+          ]
+        },
+        {
+          "key": "attack_damage",
+          "heading": "ATTACK DAMAGE:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "hp_regen",
+          "heading": "HEALTH REGENERATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "armor",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "mp_regen",
+          "heading": "MANA REGENERATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "magic_resist",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "attackspeed",
+          "heading": "ATTACK SPEED:",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "void_spirit_astral_step",
+      "name": "Astral Step",
+      "description": "Void Spirit tears a rift through the astral plane to appear at the target location, attacking all enemies along the path. This attack inflicts a void mark that slows for %pop_damage_delay% seconds and then detonates.",
+      "max_level": 3,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        90
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            170
+          ]
+        },
+        {
+          "key": "min_travel_distance",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "max_travel_distance",
+          "heading": "RANGE:",
+          "values": [
+            800,
+            900,
+            1000
+          ]
+        },
+        {
+          "key": "pop_damage_delay",
+          "heading": "",
+          "values": [
+            1.25
+          ]
+        },
+        {
+          "key": "pop_damage",
+          "heading": "VOID MARK DAMAGE:",
+          "values": [
+            130,
+            230,
+            330
+          ]
+        },
+        {
+          "key": "movement_slow_pct",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            40,
+            60,
+            80
+          ]
+        },
+        {
+          "key": "crit_damage",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityCharges",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "AbilityChargeRestoreTime",
+          "heading": "",
+          "values": [
+            25,
+            20,
+            15
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            90
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Astral Step attacks do not cleave."
+      ],
+      "lore": "A small step for Inai creates great devastation on the mortal plane."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:value} Mana Regen"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Resonant Pulse Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_base_absorb_amount}% Resonant Pulse Barrier"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_impact_damage} Aether Remnant Damage"
+    },
+    {
+      "slot": null,
+      "name": "Outer Dissimilate Ring"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityChargeRestoreTime}s Astral Step Charge Restore Time"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_crit_damage}% Astral Step Crit"
+    },
+    {
+      "slot": null,
+      "name": "Dissimilate Roots for {s:bonus_root_duration}s"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

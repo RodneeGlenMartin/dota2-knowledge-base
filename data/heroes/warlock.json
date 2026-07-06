@@ -1,0 +1,749 @@
+{
+  "id": 37,
+  "name": "Warlock",
+  "slug": "warlock",
+  "npc_name": "npc_dota_hero_warlock",
+  "primary_attribute": "int",
+  "attack_type": "Ranged",
+  "complexity": 1,
+  "roles": [
+    "Support",
+    "Disabler",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 22,
+    "str_gain": 2.4,
+    "base_agi": 10,
+    "agi_gain": 1,
+    "base_int": 25,
+    "int_gain": 3.1,
+    "damage_min": 52,
+    "damage_max": 62,
+    "attack_rate": 1.7,
+    "attack_range": 600,
+    "projectile_speed": 1200,
+    "armor": 2.6666667,
+    "magic_resistance": 25,
+    "movement_speed": 300,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 604,
+    "health_regen": 2.45,
+    "max_mana": 375,
+    "mana_regen": 1.25
+  },
+  "lore": "As Chief Curator and Head of Acquisitions for the Arcane Archives of the Ultimyr Academy, Demnok Lannik was tireless in his pursuit of lost, rare and forbidden tomes. No cursed temple was so foreboding, no cavern path so treacherous, that any concern for his own survival could dissuade him from entering if rumors hinted that some pamphlet of primordial lore might still survive in its depths. However, so often did his investigations trigger the wrath of protector entities, that he finally found it necessary to master the arts of magic. He bent himself to learning sorcery with the same thorough obsessiveness that marked his quest for incunabula, becoming the most powerful Warlock of the Academy in less time than most practitioners required to complete a course of undergraduate work. Almost as an afterthought, he carved a staff of Dreadwood and summoned into it a captive spirit from the Outer Hells. And anticipating the day when he will have recovered every last lost spellbook, he has commenced writing his own Black Grimoire. It will undoubtedly be instructive.",
+  "hype": "Summoning forth his <b>demonic golem</b>, Warlock brings ruin to enemies and destroys their defenses. Yet even without his golem, his <b>dark spells</b> can still wreak havoc, whether <b>healing allies</b> and <b>harming enemies</b> with a word, or binding foes together to share their agony.",
+  "abilities": [
+    {
+      "key": "warlock_fatal_bonds",
+      "name": "Fatal Bonds",
+      "description": "Binds several visible enemy units together, causing a percentage of the damage dealt to one of them to be felt by the others.",
+      "max_level": 4,
+      "cooldowns": [
+        42,
+        34,
+        26,
+        18
+      ],
+      "mana_costs": [
+        120,
+        130,
+        140,
+        150
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1000
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "count",
+          "heading": "ENEMIES BOUND:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "damage_share_percentage",
+          "heading": "SHARED DAMAGE:",
+          "values": [
+            15,
+            18,
+            21,
+            24
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            18
+          ]
+        },
+        {
+          "key": "search_aoe",
+          "heading": "BIND RADIUS:",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            120,
+            130,
+            140,
+            150
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            42,
+            34,
+            26,
+            18
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "The shared damage type is the same as the type of damage inflicted.",
+        "Damage done by this ability is considered reflected damage. Reflected damage does not provide any lifesteal and cannot be reflected."
+      ],
+      "lore": "An ancient incantation that links the vital energies of multiple lifeforms into one collective body."
+    },
+    {
+      "key": "warlock_shadow_word",
+      "name": "Shadow Word",
+      "description": "Warlock whispers an incantation, casting a spell on a unit that makes it deal damage to nearby enemy units and heal nearby ally units. Target Unit will also heal or be damaged depending on whether they are ally or enemy.",
+      "max_level": 4,
+      "cooldowns": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "mana_costs": [
+        110,
+        120,
+        130,
+        140
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        650,
+        700,
+        750,
+        800
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage",
+          "heading": "HEAL/DAMAGE:",
+          "values": [
+            15,
+            25,
+            35,
+            45
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "tick_interval",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "spell_aoe",
+          "heading": "EFFECT RADIUS:",
+          "values": [
+            225
+          ]
+        },
+        {
+          "key": "shard_movement_speed_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            650,
+            700,
+            750,
+            800
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            110,
+            120,
+            130,
+            140
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            15,
+            14,
+            13,
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": "Increases Effect Radius. Shadow Word now applies to %additional_targets% additional units in a %cast_aoe% radius, prioritizing heroes. The healing and damage on the additional targets is reduced by %secondary_reduction%%%.",
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Demnok's arcane arts have a myriad of uses, allowing them to be powerful friendly enchantments or damaging curses."
+    },
+    {
+      "key": "warlock_upheaval",
+      "name": "Upheaval",
+      "description": "CHANNELED - A powerful slowing and damaging current that grows stronger as it's channeled. Lasts up to %abilitychanneltime% seconds. Enemies are slowed for %duration% second after leaving the area or the spell ends.",
+      "max_level": 4,
+      "cooldowns": [
+        45,
+        40,
+        35,
+        30
+      ],
+      "mana_costs": [
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        800
+      ],
+      "cast_points": [
+        0.4
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "aoe",
+          "heading": "RADIUS:",
+          "values": [
+            575,
+            600,
+            625,
+            650
+          ]
+        },
+        {
+          "key": "slow_per_second",
+          "heading": "SLOW PER SECOND:",
+          "values": [
+            11,
+            14,
+            17,
+            20
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "max_slow",
+          "heading": "MAX SLOW:",
+          "values": [
+            55,
+            70,
+            85,
+            100
+          ]
+        },
+        {
+          "key": "aspd_per_second",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "base_damage",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "damage_per_second",
+          "heading": "DAMAGE PER SECOND:",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "max_damage",
+          "heading": "MAX DAMAGE:",
+          "values": [
+            35,
+            60,
+            85,
+            110
+          ]
+        },
+        {
+          "key": "damage_tick_interval",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "imps_interval",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "minor_imp_duration",
+          "heading": "",
+          "values": [
+            15
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "AbilityChannelTime",
+          "heading": "MAX CHANNEL DURATION:",
+          "values": [
+            10,
+            12,
+            14,
+            16
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            45,
+            40,
+            35,
+            30
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "While channeling, Warlock spawns a minor imp every %imps_interval% seconds that lasts for %minor_imp_duration% seconds and explodes dealing damage to all enemies around them upon death.",
+      "notes": [
+        "The slow increase is based on length of the channel, not the duration an enemy was standing in the area."
+      ],
+      "lore": "Demnok manipulates space-time, impairing entire armies."
+    },
+    {
+      "key": "warlock_eldritch_summoning",
+      "name": "Eldritch Summoning",
+      "description": "Whenever an enemy unit dies while afflicted by one or more of Warlock's abilities, a minor imp is summoned that lasts for %minor_imp_duration% seconds and explodes on death. Imps will automatically seek out nearby units, favoring fatally bonded heroes, and will explode when reaching their prey.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "minor_imp_duration",
+          "heading": "",
+          "values": [
+            15
+          ]
+        },
+        {
+          "key": "imp_health",
+          "heading": "IMP HEALTH:",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "imp_explode",
+          "heading": "EXPLOSION DAMAGE:",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "imp_speed",
+          "heading": "",
+          "values": [
+            297
+          ]
+        },
+        {
+          "key": "tooltip_imp_explode_radius",
+          "heading": "",
+          "values": [
+            400
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Increases the health and explosion damage of minor imps.",
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "warlock_rain_of_chaos",
+      "name": "Chaotic Offering",
+      "description": "Summons a Golem from the depths, stunning enemies for %stun_duration% seconds. The Golem lives %golem_duration% seconds, takes reduced damage from spells, has increased Slow Resistance, has Permanent Immolation and Flaming Fists on attack.",
+      "max_level": 3,
+      "cooldowns": [
+        165
+      ],
+      "mana_costs": [
+        200,
+        400,
+        600
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        900
+      ],
+      "cast_points": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "golem_duration",
+          "heading": "",
+          "values": [
+            60
+          ]
+        },
+        {
+          "key": "stun_duration",
+          "heading": "",
+          "values": [
+            0.8
+          ]
+        },
+        {
+          "key": "aoe",
+          "heading": "SUMMON BLAST RADIUS:",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "golem_hp",
+          "heading": "GOLEM HEALTH:",
+          "values": [
+            1500,
+            2250,
+            3000
+          ]
+        },
+        {
+          "key": "golem_dmg",
+          "heading": "GOLEM DAMAGE:",
+          "values": [
+            100,
+            150,
+            200
+          ]
+        },
+        {
+          "key": "golem_armor",
+          "heading": "",
+          "values": [
+            8,
+            12,
+            14
+          ]
+        },
+        {
+          "key": "golem_movement_speed",
+          "heading": "GOLEM MOVEMENT SPEED:",
+          "values": [
+            320,
+            340,
+            360
+          ]
+        },
+        {
+          "key": "golem_health_regen",
+          "heading": "GOLEM HEALTH REGEN:",
+          "values": [
+            25,
+            50,
+            75
+          ]
+        },
+        {
+          "key": "golem_gold_bounty",
+          "heading": "GOLEM GOLD BOUNTY:",
+          "values": [
+            100,
+            150,
+            200
+          ]
+        },
+        {
+          "key": "stun_delay",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "number_of_golems_scepter",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "golem_hp_scepter",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "golem_dmg_scepter",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "golem_gold_bounty_scepter",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "bonus_armor",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "bonus_damage_resist",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "tooltip_golem_armor",
+          "heading": "GOLEM ARMOR:",
+          "values": [
+            8,
+            12,
+            14
+          ]
+        },
+        {
+          "key": "bonus_slow_resistance",
+          "heading": "GOLEM SLOW RESISTANCE:",
+          "values": [
+            60
+          ]
+        },
+        {
+          "key": "golem_on_death",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            200,
+            400,
+            600
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            165
+          ]
+        }
+      ],
+      "scepter_upgrade": "Calls %number_of_golems_scepter% Golems.",
+      "shard_upgrade": null,
+      "notes": [
+        "This ability destroys trees in its area of effect."
+      ],
+      "lore": "Demnok unleashes the captive spirit in his Dreadwood staff, causing destruction in enemy ranks."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_share_percentage}% Fatal Bonds Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_aoe} Upheaval Radius"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_aspd_per_second} Upheaval Attack Speed per second on Allies"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_spell_aoe} Shadow Word AoE"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_bonus_damage_resist}% Damage Resistance for Chaotic Offering Golems"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_base_damage} Upheaval Damage"
+    },
+    {
+      "slot": null,
+      "name": "Summons a Golem on death"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_count} Fatal Bonds Targets"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

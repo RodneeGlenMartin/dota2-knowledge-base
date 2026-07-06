@@ -1,0 +1,666 @@
+{
+  "id": 52,
+  "name": "Leshrac",
+  "slug": "leshrac",
+  "npc_name": "npc_dota_hero_leshrac",
+  "primary_attribute": "int",
+  "attack_type": "Ranged",
+  "complexity": 1,
+  "roles": [
+    "Carry",
+    "Support",
+    "Nuker",
+    "Disabler",
+    "Pusher"
+  ],
+  "stats": {
+    "base_str": 20,
+    "str_gain": 2.5,
+    "base_agi": 17,
+    "agi_gain": 2.5,
+    "base_int": 22,
+    "int_gain": 3.5,
+    "damage_min": 49,
+    "damage_max": 53,
+    "attack_rate": 1.7,
+    "attack_range": 575,
+    "projectile_speed": 900,
+    "armor": 3.8333335,
+    "magic_resistance": 25,
+    "movement_speed": 325,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 560,
+    "health_regen": 2.25,
+    "max_mana": 339,
+    "mana_regen": 1.1
+  },
+  "lore": "Leshrac, Tormented Soul, is an entity torn from the heart of nature, a liminal being that exists half in one plane of existence, half in another. His penetrating intelligence is such that he can never ignore for a moment the agonizing horror at the heart of all creation. Once a great philosopher who sought the meaning of existence, he plumbed the depths of nature with the haunted Chronoptic Crystals, and was forever altered by the hideous mysteries thereby revealed to him. Now the darkest depths of his enlightenment are illumined only by the fitful glare of his arrogance. Like other elemental characters, he is completely at one with nature, but in his case it is a nature lurid and vile. He alone sees the evil truth of reality, and has no use for those who believe the cosmos reserves a special reward for those who practice benevolence.",
+  "hype": "Leshrac's powerful spells lay waste to enemies and their defenses alike. Pushing deep into enemy territory with his <b>devastating edict</b>, careful timing of his ability to split the earth will <b>stun foes</b>, allowing his merciless allies to finish them off.",
+  "abilities": [
+    {
+      "key": "leshrac_split_earth",
+      "name": "Split Earth",
+      "description": "Splits the earth under enemies. Deals damage and stuns for a short duration.",
+      "max_level": 4,
+      "cooldowns": [
+        11
+      ],
+      "mana_costs": [
+        80,
+        100,
+        120,
+        140
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        650
+      ],
+      "cast_points": [
+        0.7,
+        0.7,
+        0.7,
+        0.7
+      ],
+      "durations": [
+        1.6
+      ],
+      "damages": [
+        115,
+        170,
+        225,
+        280
+      ],
+      "special_values": [
+        {
+          "key": "delay",
+          "heading": "STUN DELAY:",
+          "values": [
+            0.35
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            150,
+            170,
+            190,
+            210
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            1.7
+          ]
+        },
+        {
+          "key": "shard_radius_increase",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_max_count",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_secondary_delay",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityDamage",
+          "heading": "",
+          "values": [
+            115,
+            170,
+            225,
+            280
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            650
+          ]
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "",
+          "values": [
+            1.6
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.7
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            80,
+            100,
+            120,
+            140
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            11
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Causes Split Earth to repeat in the same location %shard_max_count% additional times, with a %shard_secondary_delay% second delay between each one. Each time the radius increases by %shard_radius_increase%. Split Earth echo location is visible to both teams.",
+      "notes": [
+        "Split Earth will destroy trees in its area of effect.",
+        "There is a %delay% second delay before the effect is applied."
+      ],
+      "lore": "Twisting nature to his vile will, the shifting earth consumes those unlucky enough to cross Leshrac's path."
+    },
+    {
+      "key": "leshrac_diabolic_edict",
+      "name": "Diabolic Edict",
+      "description": "Saturates the area around Leshrac with magical explosions that deal pure damage to enemy units and buildings.  The fewer units available to attack, the more damage those units will take.",
+      "max_level": 4,
+      "cooldowns": [
+        22,
+        21,
+        20,
+        19
+      ],
+      "mana_costs": [
+        90,
+        120,
+        150,
+        180
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.5
+      ],
+      "durations": [
+        8
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "num_explosions",
+          "heading": "EXPLOSIONS:",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            450
+          ]
+        },
+        {
+          "key": "affects_buildings",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE PER EXPLOSION:",
+          "values": [
+            9,
+            16,
+            23,
+            30
+          ]
+        },
+        {
+          "key": "targets",
+          "heading": "TARGETS PER EXPLOSION:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "DURATION:",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            90,
+            120,
+            150,
+            180
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            22,
+            21,
+            20,
+            19
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "The explosions will continue even if Leshrac is killed."
+      ],
+      "lore": "Chronoptic energy bursts from one plane to the other, evaporating anything it touches."
+    },
+    {
+      "key": "leshrac_lightning_storm",
+      "name": "Lightning Storm",
+      "description": "Summons a lightning storm that blasts the target enemy unit, then strikes any nearby enemy units. Struck enemies have their move speed slowed.",
+      "max_level": 4,
+      "cooldowns": [
+        4
+      ],
+      "mana_costs": [
+        80,
+        100,
+        120,
+        140
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        600
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            90,
+            140,
+            190,
+            240
+          ]
+        },
+        {
+          "key": "jump_count",
+          "heading": "LIGHTNING STRIKES:",
+          "values": [
+            5,
+            7,
+            9,
+            11
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "LIGHTNING JUMP RADIUS:",
+          "values": [
+            450
+          ]
+        },
+        {
+          "key": "jump_delay",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "movespeed_slow",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "slow_duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            0.45,
+            0.7,
+            0.95,
+            1.2
+          ]
+        },
+        {
+          "key": "pulse_nova_lightning_interval",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            80,
+            100,
+            120,
+            140
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            4
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "The Tormented Soul's mastery of the elements is evident in the massive storms that strike down armies before him."
+    },
+    {
+      "key": "leshrac_greater_lightning_storm",
+      "name": "Nihilism",
+      "description": "Causes Leshrac and all nearby enemies to turn ethereal, preventing them from attacking, slowing them, and making them take more magic damage. Increases Leshrac's speed rather than reducing it. Does not cause Leshrac to take amplified damage.",
+      "max_level": 1,
+      "cooldowns": [
+        25
+      ],
+      "mana_costs": [
+        75
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "magic_amp",
+          "heading": "INCREASED MAGIC DAMAGE:",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "slow",
+          "heading": "SLOW:",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            25
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "When it serves his purpose, Leshrac briefly reduces his presence in the Terrene Plane."
+    },
+    {
+      "key": "leshrac_defilement",
+      "name": "Defilement",
+      "description": "Leshrac gains %aoe_per_int% Area of Effect Bonus per Intelligence.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "aoe_per_int",
+          "heading": "",
+          "values": [
+            0.7
+          ]
+        },
+        {
+          "key": "current_aoe_bonus",
+          "heading": "BONUS AOE:",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "leshrac_pulse_nova",
+      "name": "Pulse Nova",
+      "description": "Creates waves of damaging energy around Leshrac, one per second, to damage nearby enemy units. Drains Leshrac's mana with each pulse.",
+      "max_level": 3,
+      "cooldowns": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mana_costs": [
+        50,
+        60,
+        70
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "mana_cost_per_second",
+          "heading": "MANA/SEC:",
+          "values": [
+            20,
+            40,
+            60
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            80,
+            135,
+            180
+          ]
+        },
+        {
+          "key": "damage_resistance",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            50,
+            60,
+            70
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            1
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "If necessary, the Tormented Soul can manipulate space time itself, ravaging lesser beings."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:value} Mana Regen"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Armor"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Lightning Storm Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_resistance}% Damage Reduction during Pulse Nova"
+    },
+    {
+      "slot": null,
+      "name": "Diabolic Edict Hits An Additional Target"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Pulse Nova Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_num_explosions} Diabolic Edict Explosions"
+    },
+    {
+      "slot": null,
+      "name": "Pulse Nova triggers Lightning Storm"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

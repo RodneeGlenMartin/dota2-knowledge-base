@@ -1,0 +1,48 @@
+{
+  "id": 33,
+  "name": "Cheese",
+  "slug": "cheese",
+  "internal_key": "item_cheese",
+  "cost": 1000,
+  "neutral_tier": null,
+  "description": "<h1>Use: Fondue</h1> Instantly restores %health_restore% health and %mana_restore% mana.",
+  "notes": [
+    "Cheese is shareable."
+  ],
+  "cooldowns": [
+    40
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "health_restore",
+      "heading": "",
+      "values": [
+        2500
+      ]
+    },
+    {
+      "key": "mana_restore",
+      "heading": "",
+      "values": [
+        1500
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        40
+      ]
+    }
+  ],
+  "lore": "Made from the milk of a long lost Furbolg vendor, it restores the vitality of those who taste it.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

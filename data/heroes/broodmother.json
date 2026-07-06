@@ -1,0 +1,715 @@
+{
+  "id": 61,
+  "name": "Broodmother",
+  "slug": "broodmother",
+  "npc_name": "npc_dota_hero_broodmother",
+  "primary_attribute": "agi",
+  "attack_type": "Melee",
+  "complexity": 2,
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Escape",
+    "Pusher"
+  ],
+  "stats": {
+    "base_str": 18,
+    "str_gain": 2.9,
+    "base_agi": 20,
+    "agi_gain": 3.4,
+    "base_int": 18,
+    "int_gain": 2,
+    "damage_min": 47,
+    "damage_max": 53,
+    "attack_rate": 1.7,
+    "attack_range": 175,
+    "projectile_speed": 900,
+    "armor": 2.3333335,
+    "magic_resistance": 25,
+    "movement_speed": 285,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 516,
+    "health_regen": 2.0500002,
+    "max_mana": 291,
+    "mana_regen": 0.90000004
+  },
+  "lore": "For centuries, Black Arachnia the Broodmother lurked in the dark lava tubes beneath the smoldering caldera of Mount Pyrotheos, raising millions of spiderlings in safety before sending them to find prey in the wide world above. In a later age, the Vizier of Greed, Ptholopthales, erected his lodestone ziggurat on the slopes of the dead volcano, knowing that any looters who sought his magnetic wealth must survive the spider-haunted passages.\r\n\t\t\t\t<br><br>After millennia of maternal peace, Black Arachnia found herself beset by a steady trickle of furfeet and cutpurses, bold knights and noble youths--all of them delicious, certainly, and yet tending to create a less than nurturing environment for her innocent offspring. Tiring of the intrusions, she paid a visit to Ptholopthales; and when he proved unwilling to discuss a compromise, she wrapped the Vizier in silk and set him aside to be the centerpiece of a special birthday feast.\r\n\t\t\t\t<br><br>Unfortunately, the absence of the Magnetic Ziggurat's master merely emboldened a new generation of intruders. When one of her newborns was trodden underfoot by a clumsy adventurer, she reached the end of her silken rope. Broodmother headed for the surface, declaring her intent to rid the world of each and every possible invader, down to the last Hero if necessary, until she could ensure her nursery might once more be a safe and wholesome environment for her precious spiderspawn.",
+  "hype": "Gliding along her webs, Broodmother births an <b>army of spiders</b> to lead her team's forces toward the enemy base. As prey wanders near, she joins her children and attacks, <b>slowing foes</b> with incapacitating bites as she indulges her insatiable hunger.",
+  "abilities": [
+    {
+      "key": "broodmother_insatiable_hunger",
+      "name": "Insatiable Hunger",
+      "description": "A violent lust for vital fluids increases Broodmother's attack damage and gives her and her Spiderlings a vampiric attack.",
+      "max_level": 4,
+      "cooldowns": [
+        45,
+        40,
+        35,
+        30
+      ],
+      "mana_costs": [
+        80
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bonus_damage",
+          "heading": "BASE ATTACK DAMAGE BONUS:",
+          "values": [
+            40,
+            50,
+            60,
+            70
+          ]
+        },
+        {
+          "key": "lifesteal_pct",
+          "heading": "LIFESTEAL:",
+          "values": [
+            40,
+            60,
+            80,
+            100
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            8,
+            10,
+            12,
+            14
+          ]
+        },
+        {
+          "key": "bat_bonus",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "shard_damage_per_tick",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_damage_tick_interval",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "aura_radius",
+          "heading": "SPIDERLING RADIUS:",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            80
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            45,
+            40,
+            35,
+            30
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "While Hunger is active, the bonus damage is increased by %shard_damage_per_tick%%% every %shard_damage_tick_interval%s.",
+      "notes": null,
+      "lore": "While most of her prey is wrapped in silken cocoons and saved for her young, the Broodmother herself has a taste for wandering heroes."
+    },
+    {
+      "key": "broodmother_spin_web",
+      "name": "Spin Web",
+      "description": "Spins a large web that grants Broodmother a passive movement speed increase and increases her Turn Rate, while in its vicinity, as well as giving free movement.<br><br>Spin Web can be cast from anywhere as long as the new web touches an existing web. Webs never expire, and can be manually destroyed. When the maximum limit of webs is exceeded, the oldest web disappears.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        40
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1200
+      ],
+      "cast_points": [
+        0.4
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "count",
+          "heading": "MAX SIMULTANEOUS WEBS:",
+          "values": [
+            3,
+            5,
+            7,
+            9
+          ]
+        },
+        {
+          "key": "bonus_movespeed",
+          "heading": "MOVESPEED BONUS:",
+          "values": [
+            10,
+            20,
+            30,
+            40
+          ]
+        },
+        {
+          "key": "bonus_turn_rate",
+          "heading": "BONUS TURN RATE:",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "degen",
+          "heading": "ENEMY RESTORATION REDUCTION:",
+          "values": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "key": "break_move_cap",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "AbilityCharges",
+          "heading": "",
+          "values": [
+            3,
+            5,
+            7,
+            9
+          ]
+        },
+        {
+          "key": "AbilityChargeRestoreTime",
+          "heading": "",
+          "values": [
+            27
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            40
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Also affects Spiderlings."
+      ],
+      "lore": "Weaving a bed of silken fibers, Arachnia's web both protects her and her offspring, as well as giving advancing opponents a sense of foreboding."
+    },
+    {
+      "key": "broodmother_incapacitating_bite",
+      "name": "Incapacitating Bite",
+      "description": "Broodmother's venom cripples enemy units, causing her attacks to slow and giving the affected unit a chance to miss its attacks and extra damage from attacks.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "miss_chance",
+          "heading": "MISS CHANCE:",
+          "values": [
+            30,
+            40,
+            50,
+            60
+          ]
+        },
+        {
+          "key": "bonus_movespeed",
+          "heading": "MOVE SLOW:",
+          "values": [
+            -15,
+            -20,
+            -25,
+            -30
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "attack_damage",
+          "heading": "ATTACK BONUS:",
+          "values": [
+            3,
+            6,
+            9,
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "The miss chance stacks with evasion and terrain dodge chance."
+      ],
+      "lore": "Paralytic toxins come from Black Arachnia's fangs, causing a slow and painful death to those who intrude on her webs."
+    },
+    {
+      "key": "broodmother_sticky_snare",
+      "name": "Spinner's Snare",
+      "description": "Broodmother may create up to %count% invisible web lines touching any existing web. Enemy Heroes that cross the web line will spring the trap, becoming rooted, revealed in fog, and take damage over time.  Multiple Heroes can trip on the same line until it's destroyed after being initially triggered.  Broodmother's team is alerted via the minimap when an enemy has triggered the snare.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        70
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        600
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "formation_delay",
+          "heading": "FORMATION DELAY:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "root_duration",
+          "heading": "ROOT DURATION:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "damage_per_second",
+          "heading": "DAMAGE PER SECOND:",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "count",
+          "heading": "",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "width",
+          "heading": "WEB LINE WIDTH:",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityCharges",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "AbilityChargeRestoreTime",
+          "heading": "",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            70
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "The slightest tremor of her web is all Arachnia needs to find her prey."
+    },
+    {
+      "key": "broodmother_spiders_milk",
+      "name": "Spider's Milk",
+      "description": "Whenever Broodmother kills a unit, she and all units under her control in a %kill_heal_aoe% radius receive a buff for %kill_heal_duration%s that heals them for a percentage of the victim's health every %tick_rate% seconds. Healing from creeps is reduced by %kill_creeps_penalty%%%.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "kill_heal_heroes",
+          "heading": "HERO HEALTH AS HEAL:",
+          "values": [
+            1.9
+          ]
+        },
+        {
+          "key": "kill_creeps_penalty",
+          "heading": "",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "kill_heal_aoe",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "kill_heal_duration",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "tick_rate",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "broodmother_spawn_spiderlings",
+      "name": "Spawn Spiderlings",
+      "description": "Broodmother injects her young into an enemy unit, dealing damage and slowing them for %slow_duration% seconds. The spiderlings will hatch if the target is killed while under this influence.",
+      "max_level": 3,
+      "cooldowns": [
+        9,
+        8,
+        7
+      ],
+      "mana_costs": [
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        900
+      ],
+      "cast_points": [
+        0.2,
+        0.2,
+        0.2,
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "buff_duration",
+          "heading": "",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "spiderling_duration",
+          "heading": "LIFETIME:",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            220,
+            320,
+            420
+          ]
+        },
+        {
+          "key": "damage_bonus",
+          "heading": "",
+          "values": [
+            0,
+            3,
+            6
+          ]
+        },
+        {
+          "key": "hp_bonus",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "count",
+          "heading": "COUNT:",
+          "values": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "key": "projectile_speed",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "tooltip_spiderling_hp",
+          "heading": "SPIDERLINGS HP:",
+          "values": [
+            325
+          ]
+        },
+        {
+          "key": "slow_duration",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "movement_speed",
+          "heading": "SLOW:",
+          "values": [
+            25,
+            35,
+            45
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            9,
+            8,
+            7
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "If the target is killed within %buff_duration% seconds of being hit with this skill, the Spiderlings will spawn.",
+        "Units killed by Spiderlings will then give birth to additional Spiderlings."
+      ],
+      "lore": "Black Arachnia continues to raise her young, even amidst the field of combat.  The brood quickly learns how to support their mother."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Spawn Spiderlings Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_lifesteal_pct}% Insatiable Hunger Lifesteal"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_attack_damage} Incapacitating Bite Attack Bonus"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_hp_bonus} Spiderlings Health"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityChargeRestoreTime}s Spin Web Charge Restore Time"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_miss_chance}% Incapacitating Bite Slow/Miss Chance"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_bat_bonus}s BAT during Insatiable Hunger"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_movespeed}% Spin Web Move Speed and Ignore Speed Limit"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

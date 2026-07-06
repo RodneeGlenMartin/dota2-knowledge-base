@@ -1,0 +1,764 @@
+{
+  "id": 58,
+  "name": "Enchantress",
+  "slug": "enchantress",
+  "npc_name": "npc_dota_hero_enchantress",
+  "primary_attribute": "int",
+  "attack_type": "Ranged",
+  "complexity": 2,
+  "roles": [
+    "Support",
+    "Disabler",
+    "Durable",
+    "Pusher"
+  ],
+  "stats": {
+    "base_str": 17,
+    "str_gain": 2,
+    "base_agi": 19,
+    "agi_gain": 2.1,
+    "base_int": 22,
+    "int_gain": 4,
+    "damage_min": 43,
+    "damage_max": 53,
+    "attack_rate": 1.7,
+    "attack_range": 575,
+    "projectile_speed": 900,
+    "armor": 4.166667,
+    "magic_resistance": 25,
+    "movement_speed": 320,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 494,
+    "health_regen": 1.95,
+    "max_mana": 339,
+    "mana_regen": 1.6
+  },
+  "lore": "Aiushtha appears to be an innocent, carefree creature of the woods, and while this is certainly true, it is hardly the sum of her story. She well understands the suffering of the natural world. She has wandered far, and fared through forests bright and drear, in every clime and every season, gathering friends, sharing news, bringing laughter and healing wherever she goes. For in worlds wracked by war, forests are leveled for the building of ships and siege engines; and even in places of peace, the woods are stripped for the building of homes, and as fuel for countless hearths.\r\n\t\t\t\t<br><br>Aiushtha hears the pleas of the small creatures, the furtive folk who need green shade and a leafy canopy to thrive. She lends her ears to those who have no other listeners. She carries their stories from the wood to the world, believing that her own good cheer is a kind of Enchantment, that can itself fulfill the promise of a verdant future.",
+  "hype": "Harmful up close and lethal at a distance, Enchantress <b>skewers foes</b> with attacks imbued to become more damaging the further they fly. Whether inflicting <b>powerful slows</b> on her enemies or <b>charming forest creatures</b> to fight her battles, she is never short of tools to win a fight.",
+  "abilities": [
+    {
+      "key": "enchantress_impetus",
+      "name": "Impetus",
+      "description": "Places an enchantment on each attack while activated, causing it to deal additional damage based on how far away the target is.  The farther the target, the greater the damage dealt. Deals double damage to illusions.",
+      "max_level": 4,
+      "cooldowns": [
+        6,
+        4,
+        2,
+        0
+      ],
+      "mana_costs": [
+        40,
+        45,
+        50,
+        55
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        575
+      ],
+      "cast_points": [
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "distance_damage_pct",
+          "heading": "DISTANCE DAMAGE:",
+          "values": [
+            5,
+            10,
+            15,
+            20
+          ]
+        },
+        {
+          "key": "distance_cap",
+          "heading": "",
+          "values": [
+            1750
+          ]
+        },
+        {
+          "key": "illusion_damage_multiplier",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            575
+          ]
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "",
+          "values": [
+            1.5
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            40,
+            45,
+            50,
+            55
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            6,
+            4,
+            2,
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "The damage is capped at %distance_cap% distance.",
+        "Distance to target is measured when the projectile hits."
+      ],
+      "lore": "While Aiushtha favors peaceful means, she is capable of a magical onslaught from a distance, her spears gaining energy from the natural life around her."
+    },
+    {
+      "key": "enchantress_enchant",
+      "name": "Enchant",
+      "description": "Enchantress charms an enemy. If the enemy is a hero, they are dispelled and slowed for %slow_duration%s, and Enchantress and her units gain bonus attack range against the target.\n\n If the enemy is a creep, she brings it under her control and receives %xp_gain_pct%%% of their experience bounty.  Enchantress can control creeps for up to %dominate_duration%s. \n\nDISPEL TYPE: Basic Dispel",
+      "max_level": 4,
+      "cooldowns": [
+        30,
+        24,
+        18,
+        12
+      ],
+      "mana_costs": [
+        70
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        500,
+        600,
+        700,
+        800
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "slow_movement_speed",
+          "heading": "HERO MOVE SLOW:",
+          "values": [
+            -30,
+            -40,
+            -50,
+            -60
+          ]
+        },
+        {
+          "key": "slow_duration",
+          "heading": "",
+          "values": [
+            3.5,
+            4,
+            4.5,
+            5
+          ]
+        },
+        {
+          "key": "attack_range_bonus",
+          "heading": "ATTACK RANGE BONUS:",
+          "values": [
+            50,
+            100,
+            150,
+            200
+          ]
+        },
+        {
+          "key": "dominate_duration",
+          "heading": "",
+          "values": [
+            30,
+            60,
+            90,
+            120
+          ]
+        },
+        {
+          "key": "enchant_health",
+          "heading": "CREEP MAX HEALTH BONUS:",
+          "values": [
+            150,
+            250,
+            350,
+            450
+          ]
+        },
+        {
+          "key": "enchant_damage",
+          "heading": "CREEP ATTACK DAMAGE BONUS:",
+          "values": [
+            0,
+            20,
+            40,
+            60
+          ]
+        },
+        {
+          "key": "xp_gain_pct",
+          "heading": "",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "level_req",
+          "heading": "CREEP MAX LEVEL:",
+          "values": [
+            4,
+            5,
+            6,
+            6
+          ]
+        },
+        {
+          "key": "max_creeps",
+          "heading": "MAX ENCHANTED CREEPS:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "bonus_armor",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "bonus_health",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "bonus_damage",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "bonus_attackspeed",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            500,
+            600,
+            700,
+            800
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            70
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            30,
+            24,
+            18,
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": "Enchantress can control multiple creeps at a time.",
+      "shard_upgrade": null,
+      "notes": [
+        "Illusions can be converted."
+      ],
+      "lore": "A true steward of the forest, Aiushtha befriends all within it - from lowly trolls to powerful centaurs."
+    },
+    {
+      "key": "enchantress_natures_attendants",
+      "name": "Nature's Attendants",
+      "description": "A cloud of wisps heals Enchantress and any friendly units nearby.",
+      "max_level": 4,
+      "cooldowns": [
+        35
+      ],
+      "mana_costs": [
+        140
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "heal_duration",
+          "heading": "DURATION:",
+          "values": [
+            7,
+            9,
+            11,
+            13
+          ]
+        },
+        {
+          "key": "heal_interval",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "heal",
+          "heading": "HEAL PER SECOND:",
+          "values": [
+            4,
+            8,
+            12,
+            16
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            275
+          ]
+        },
+        {
+          "key": "wisp_count",
+          "heading": "WISPS:",
+          "values": [
+            9
+          ]
+        },
+        {
+          "key": "movespeed",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "total_max_heal",
+          "heading": "TOTAL MAX HEAL:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            140
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            35
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Units with full HP will not be selected for the heal.",
+        "Break disables Overprotective Wisps."
+      ],
+      "lore": "Whimsical spirits of the woods possess a healing power that is quite subtle, but gains strength in numbers."
+    },
+    {
+      "key": "enchantress_bunny_hop",
+      "name": "Sproink",
+      "description": "Leaps backward, dodges incoming projectiles, and launches an Impetus attack on the %attack_targets% furthest enemy units within Enchantress' attack range + %bonus_attack_range%.",
+      "max_level": 1,
+      "cooldowns": [
+        10
+      ],
+      "mana_costs": [
+        60
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "hop_distance",
+          "heading": "LEAP DISTANCE:",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "hop_duration",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "hop_height",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "attack_targets",
+          "heading": "TARGETS:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "bonus_attack_range",
+          "heading": "BONUS RANGE:",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            60
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            10
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Sproink is as Sproink does."
+    },
+    {
+      "key": "enchantress_little_friends",
+      "name": "Little Friends",
+      "description": "Enchantress roots an enemy unit. All creeps, ally, enemy and neutral within a radius will gain bonus movement and attack speed and attack the chosen target for %duration% seconds.",
+      "max_level": 1,
+      "cooldowns": [
+        20
+      ],
+      "mana_costs": [
+        75
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        750
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "bonus_attack_speed",
+          "heading": "BONUS ATTACK SPEED:",
+          "values": [
+            70
+          ]
+        },
+        {
+          "key": "bonus_move_speed",
+          "heading": "BONUS MOVE SPEED:",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "root_base_duration",
+          "heading": "MINIMUM ROOT DURATION:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "root_per_target",
+          "heading": "ROOT DURATION PER UNIT:",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "max_root",
+          "heading": "",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            750
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            20
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "The laws of the forest may be oblique, but punishment for breaking them is swift and smiling."
+    },
+    {
+      "key": "enchantress_untouchable",
+      "name": "Untouchable",
+      "description": "Enchantress beguiles her enemies, slowing their attacks when she is attacked.",
+      "max_level": 3,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "slow_attack_speed",
+          "heading": "ATTACK SLOW:",
+          "values": [
+            -110,
+            -160,
+            -210
+          ]
+        },
+        {
+          "key": "slow_duration",
+          "heading": "",
+          "values": [
+            4
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "All units who directly attack Enchantress will get slowed.",
+        "The slow is applied on the attacking unit when the attack starts, not when damage is applied."
+      ],
+      "lore": "After attacking Aiushtha, most opponents are overwhelmed with guilt having attacked such a natural beauty."
+    },
+    {
+      "key": "enchantress_rabblerouser",
+      "name": "Rabble-Rouser",
+      "description": "Enchantress causes neutral creeps or any unit under her control to deal additional damage to enemy Heroes.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage_amp",
+          "heading": "DAMAGE AMPLIFICATION:",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Does not affect converted neutrals, Tormentor, or Roshan."
+      ],
+      "lore": null
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_armor} Armor for Enchantress and her units"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_movespeed} Movespeed during Nature's Attendants"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_attackspeed} Attack Speed for Enchantress and her units"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_heal} Nature's Attendants Heal"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_wisp_count} Nature's Attendants Wisps"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_health} Health / +{s:bonus_bonus_damage} Damage  for Enchantress and her units"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_distance_damage_pct}% Impetus Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_slow_attack_speed} Untouchable Attack Slow"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

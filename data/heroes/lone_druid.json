@@ -1,0 +1,689 @@
+{
+  "id": 80,
+  "name": "Lone Druid",
+  "slug": "lone_druid",
+  "npc_name": "npc_dota_hero_lone_druid",
+  "primary_attribute": "agi",
+  "attack_type": "Ranged",
+  "complexity": 3,
+  "roles": [
+    "Carry",
+    "Durable",
+    "Pusher"
+  ],
+  "stats": {
+    "base_str": 20,
+    "str_gain": 2.5,
+    "base_agi": 22,
+    "agi_gain": 2.8,
+    "base_int": 13,
+    "int_gain": 1.4,
+    "damage_min": 44,
+    "damage_max": 48,
+    "attack_rate": 1.6,
+    "attack_range": 550,
+    "projectile_speed": 1125,
+    "armor": 3.6666667,
+    "magic_resistance": 25,
+    "movement_speed": 300,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 560,
+    "health_regen": 2.25,
+    "max_mana": 231,
+    "mana_regen": 0.65000004
+  },
+  "lore": "Long before the first words of the first histories there rose the druidic Bear Clan. Wise and just they were, and focused in their ways to seek an understanding of the natural order. The arch forces of nature saw this, and so sought the most learned among them. Wise old Sylla, clan justiciar and seer, stepped forward for his kin, and to him was given the Seed with these words: 'When all of the world has dimmed, when civilization has left these lands, when the world is slain and wracked by the endless deserts at the end of ages, plant the Seed.'\r\n\t\t\t\t<br><br>As he grasped his trust, Sylla felt his years recede and his vitality returned. Vast knowledge burst into his mind. He found himself able to project his very will into reality and, with some concentration, alter his own physical form as well. Yet subtle whispers and cruel ears brought word of the Seed and its power to other peoples, and a terrible war crashed upon the Bear Clan. As his ancestral home burned, Sylla took his burden and fled to the wild places.\r\n\t\t\t\t<br><br>Ages passed, and time and myth forgot the Bear Clan, forgot Sylla and the Seed, forgot wondrous civilizations that rose and fell in Bear Clan's wake. For millenia Sylla has waited, waited for word from his deities, waited for peace to come to the ever warring realms, waited in exile and in secret for the end of all things and for the conclusion of his sacred commitment, preparing himself always to face and destroy whatever would dare threaten his purpose.",
+  "hype": "Battling alongside his <b>powerful spirit bear</b>, Lone Druid demolishes enemy forces and structures. Switching as needed between <b>ranged and melee attacks</b> with his transformation, should he have enough time to arm and strengthen both himself and his companion, there is little that can stop them.",
+  "abilities": [
+    {
+      "key": "lone_druid_entangle",
+      "name": "Entangle",
+      "description": "Allows Lone Druid to Entangle enemies once they gain %hits_required% stacks. Entangled enemies are rooted and take damage over time.<br><br>When cast, applies %hits_incremented_on_active% stacks to each enemy hero in the area and %hits_required% stacks to enemy creeps. Also empowers Lone Druid for %lone_druid_buff_duration%s, making him apply %lone_druid_counters_applied_tooltip% stack with each attack on enemy heroes. Enemies cannot gain stacks while Entangled.<br><br>Leveling this ability also levels Spirit Bear's Entangling Claws ability.",
+      "max_level": 4,
+      "cooldowns": [
+        20,
+        19,
+        18,
+        17
+      ],
+      "mana_costs": [
+        60
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        700
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "active_radius",
+          "heading": "RADIUS:",
+          "values": [
+            350
+          ]
+        },
+        {
+          "key": "counter_duration",
+          "heading": "STACK DURATION:",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "lone_druid_counters_applied_tooltip",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "hits_required",
+          "heading": "",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "hits_incremented_on_active",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "lone_druid_buff_duration",
+          "heading": "",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "nostack_protection",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "root_heroes_on_cast",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "entangle_duration",
+          "heading": "ROOT DURATION:",
+          "values": [
+            1.2,
+            1.6,
+            2,
+            2.4
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "ROOT DAMAGE PER SECOND:",
+          "values": [
+            90
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            60
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            20,
+            19,
+            18,
+            17
+          ]
+        }
+      ],
+      "scepter_upgrade": "Entangle applies %hits_required% stacks to enemy heroes in the area and has increased radius. Enemies no longer have protection from gaining stacks while Entangled.",
+      "shard_upgrade": null,
+      "notes": [
+        "Rooted units can't use Blink abilities and are revealed if they are invisible.",
+        "Lone Druid's Empowered Buff and enemy stack counter debuff cannot be dispelled.",
+        "Entangled debuff is dispellable.",
+        "Creeps can't gain stacks from either Lone Druid's or Spirit Bear's attacks, and are Entangled only on cast.",
+        "Roshan is affected as if he were a hero."
+      ],
+      "lore": null
+    },
+    {
+      "key": "lone_druid_spirit_link",
+      "name": "Spirit Link",
+      "description": "Links Lone Druid and the Spirit Bear, increasing their movement speed as well as sharing a percentage of their lifesteal with each other.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bonus_movement_speed_druid",
+          "heading": "MOVEMENT SPEED (LONE DRUID):",
+          "values": [
+            10,
+            20,
+            30,
+            40
+          ]
+        },
+        {
+          "key": "bonus_movement_speed_bear",
+          "heading": "MOVEMENT SPEED (SPIRIT BEAR):",
+          "values": [
+            20,
+            40,
+            60,
+            80
+          ]
+        },
+        {
+          "key": "lifesteal_percent",
+          "heading": "SHARED LIFESTEAL:",
+          "values": [
+            15,
+            30,
+            45,
+            60
+          ]
+        },
+        {
+          "key": "creep_lifesteal_penalty",
+          "heading": "",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "lifesteal_both_ways",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "active_bonus",
+          "heading": "",
+          "values": [
+            35
+          ]
+        }
+      ],
+      "scepter_upgrade": "Lone Druid severs his link to his Spirit Bear, and connects to the target allied hero, sharing the Spirit Link bonuses with them for %duration%s. Armor sharing and attack speed are increased by %active_bonus%%%. Damage done by the ally heals Lone Druid, as well as the other way around.<br><br> The Spirit Bear is feared for the duration of the transformation, unless he has his own Aghanim's Scepter.",
+      "shard_upgrade": null,
+      "notes": [
+        "Break disables the shared lifesteal."
+      ],
+      "lore": "Sylla is emboldened by the presence of his companion, his vitality replenished with each swipe of the Spirit Bear's claws."
+    },
+    {
+      "key": "lone_druid_savage_roar",
+      "name": "Savage Roar",
+      "description": "Lone Druid and the Spirit Bear roar fiercely causing nearby enemies to flee towards their base in terror. Their movement speed is increased by %bonus_speed%%%.",
+      "max_level": 4,
+      "cooldowns": [
+        29,
+        26,
+        23,
+        20
+      ],
+      "mana_costs": [
+        50
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RANGE:",
+          "values": [
+            350
+          ]
+        },
+        {
+          "key": "bonus_speed",
+          "heading": "ENEMY MOVEMENT SPEED BONUS:",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            1.1,
+            1.4,
+            1.7,
+            2
+          ]
+        },
+        {
+          "key": "only_affects_player_units",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "shard_radius",
+          "heading": "RADIUS:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_movement_speed_pct",
+          "heading": "BONUS MOVEMENT SPEED:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_attack_speed",
+          "heading": "BONUS ATTACK SPEED:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_duration",
+          "heading": "DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            29,
+            26,
+            23,
+            20
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Applies a basic dispel and grants allies in an area around the caster bonus movement and attack speed. Replicates between Lone Druid and Spirit Bear regardless of castability on the other.<br><br>DISPEL TYPE: Basic Dispel",
+      "notes": [
+        "An entangled hero will not be able to move.",
+        "Cooldown is shared with Spirit Bear."
+      ],
+      "lore": "Sylla studies and masters the arts of the lost Bear Clan, enhancing his attunement with the wild."
+    },
+    {
+      "key": "lone_druid_spirit_bear",
+      "name": "Summon Spirit Bear",
+      "description": "Summons a powerful Spirit Bear companion that can equip items.<br><br>If the bear moves %bear_attack_leash_range% distance away from the Lone Druid, it cannot attack.  Lone Druid suffers %backlash_damage%%% of his max health as backlash damage if the Spirit Bear dies.\nSpirit Bear has Demolish, Return, Entangling Claws, Savage Roar, and Spirit Link abilities.",
+      "max_level": 1,
+      "cooldowns": [
+        120
+      ],
+      "mana_costs": [
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.5
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bear_hp",
+          "heading": "BEAR BASE HP:",
+          "values": [
+            1500
+          ]
+        },
+        {
+          "key": "bear_regen_tooltip",
+          "heading": "BEAR BASE HP REGEN:",
+          "values": [
+            1.5
+          ]
+        },
+        {
+          "key": "bear_bat",
+          "heading": "BEAR BASE ATTACK TIME:",
+          "values": [
+            1.5
+          ]
+        },
+        {
+          "key": "backlash_damage",
+          "heading": "",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "bear_movespeed",
+          "heading": "BEAR MOVESPEED:",
+          "values": [
+            310
+          ]
+        },
+        {
+          "key": "bear_magic_resistance",
+          "heading": "",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "bear_attack_leash_range",
+          "heading": "",
+          "values": [
+            1100
+          ]
+        },
+        {
+          "key": "strength_gain_tooltip",
+          "heading": "BEAR STRENGTH GAIN:",
+          "values": [
+            4.5
+          ]
+        },
+        {
+          "key": "agility_gain_tooltip",
+          "heading": "BEAR AGILITY GAIN:",
+          "values": [
+            4.5
+          ]
+        },
+        {
+          "key": "intelligence_gain_tooltip",
+          "heading": "BEAR INTELLIGENCE GAIN:",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            120
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Most spells interact with the Spirit Bear in the same way as they do with heroes.",
+        "Spirit Bear has 0 base attributes, 0 base armor, and %base_magic_resistance%%% base magic resistance. Attributes from buffs or items fully affect the bear as they would for Universal heroes.",
+        "Spirit Bear cannot gain experience. The Spirit Bear levels up when Lone Druid levels up.",
+        "Spirit Bear has its own Aghanim's Scepter and Shard upgrades.",
+        "Spirit Bear receives a copy of Lone Druid's Neutral Item that has an independent cooldown."
+      ],
+      "lore": "Sylla's lifelong companion is symbiotic with his spirit and heart, coming to aid him in any time of need."
+    },
+    {
+      "key": "lone_druid_true_form",
+      "name": "True Form",
+      "description": "Lone Druid morphs himself into a raging bear, losing his ranged advantage, but gaining bonus armor, bonus health, and bonus attack damage.",
+      "max_level": 3,
+      "cooldowns": [
+        60,
+        55,
+        50
+      ],
+      "mana_costs": [
+        80
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bonus_armor",
+          "heading": "BONUS ARMOR:",
+          "values": [
+            10,
+            15,
+            20
+          ]
+        },
+        {
+          "key": "bonus_hp",
+          "heading": "BONUS HP:",
+          "values": [
+            500,
+            1000,
+            1500
+          ]
+        },
+        {
+          "key": "bonus_attack_damage",
+          "heading": "BONUS ATTACK DAMAGE:",
+          "values": [
+            50,
+            90,
+            130
+          ]
+        },
+        {
+          "key": "attack_speed_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "transformation_time",
+          "heading": "TRANSFORM TIME:",
+          "values": [
+            1.933
+          ]
+        },
+        {
+          "key": "transform_bear",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "bonus_slow_resistance",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            80
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            60,
+            55,
+            50
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Cooldowns of items that are different for ranged and melee units will be based on which form Lone Druid was in when the item was used."
+      ],
+      "lore": "The mighty bear is the king of the forest, possessing the throne through raw power."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_duration}s True Form Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Entangle Root Damage Per Second"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Savage Roar Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Agility"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_radius} Savage Roar Radius"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Attack Speed"
+    },
+    {
+      "slot": null,
+      "name": "True Form provides {s:bonus_bonus_slow_resistance}% Slow Resistance"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_entangle_duration}s Entangle Root Duration"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

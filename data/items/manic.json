@@ -1,0 +1,46 @@
+{
+  "id": 1867,
+  "name": "Manic",
+  "slug": "manic",
+  "internal_key": "item_enhancement_manic",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bat_reduce",
+      "heading": "-Base Attack Time",
+      "values": [
+        18
+      ]
+    },
+    {
+      "key": "cast_speed",
+      "heading": "+Cast Speed Bonus",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "vision_reduce",
+      "heading": "-<font color='#e03e2e'>Vision</font>",
+      "values": [
+        20
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

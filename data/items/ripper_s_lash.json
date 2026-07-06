@@ -1,0 +1,67 @@
+{
+  "id": 1600,
+  "name": "Ripper's Lash",
+  "slug": "ripper_s_lash",
+  "internal_key": "item_rippers_lash",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Flay</h1>Embeds thorns into all enemies in a %thorn_area% unit radius. Affected units take additional damage when attacked for %duration% seconds.",
+  "notes": null,
+  "cooldowns": [
+    25
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    850
+  ],
+  "special_values": [
+    {
+      "key": "thorn_area",
+      "heading": "",
+      "values": [
+        200
+      ]
+    },
+    {
+      "key": "bonus_damage_hero",
+      "heading": "BONUS DAMAGE (HEROES):",
+      "values": [
+        16
+      ]
+    },
+    {
+      "key": "bonus_damage_creep",
+      "heading": "BONUS DAMAGE (CREEPS):",
+      "values": [
+        4
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        850
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        25
+      ]
+    }
+  ],
+  "lore": "The Fae horticulturists of Revtel are known to push the boundaries of both cross pollination and safety.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

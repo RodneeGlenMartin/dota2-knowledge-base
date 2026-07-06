@@ -1,0 +1,84 @@
+{
+  "id": 152,
+  "name": "Shadow Blade",
+  "slug": "shadow_blade",
+  "internal_key": "item_invis_sword",
+  "cost": 3250,
+  "neutral_tier": null,
+  "description": "<h1>Active: Shadow Walk</h1>Makes you invisible for %windwalk_duration% seconds, or until you attack or cast a spell.  While Shadow Walk is active, you move %windwalk_movement_speed%%% faster and can move through units.  <br><br>If attacking to end the invisibility, you gain %windwalk_bonus_damage% bonus physical damage on that attack.",
+  "notes": [
+    "Has a %windwalk_fade_time% second fade time.",
+    "If the invisibility ends without attacking, the bonus damage is lost."
+  ],
+  "cooldowns": [
+    25
+  ],
+  "mana_costs": [
+    75
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_damage",
+      "heading": "+$damage",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "bonus_attack_speed",
+      "heading": "+$attack",
+      "values": [
+        35
+      ]
+    },
+    {
+      "key": "windwalk_duration",
+      "heading": "",
+      "values": [
+        17
+      ]
+    },
+    {
+      "key": "windwalk_movement_speed",
+      "heading": "",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "windwalk_fade_time",
+      "heading": "",
+      "values": [
+        0.3
+      ]
+    },
+    {
+      "key": "windwalk_bonus_damage",
+      "heading": "",
+      "values": [
+        175
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        75
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        25
+      ]
+    }
+  ],
+  "lore": "The blade of a fallen king, it allows you to move unseen and strike from the shadows.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

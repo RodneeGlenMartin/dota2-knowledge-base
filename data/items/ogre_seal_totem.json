@@ -1,0 +1,109 @@
+{
+  "id": 949,
+  "name": "Ogre Seal Totem",
+  "slug": "ogre_seal_totem",
+  "internal_key": "item_ogre_seal_totem",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Ogre Seal Flop</h1> Flop forward like an ogre seal %max_bounces% times, dealing %flop_damage% damage and slowing enemies in a %radius% radius by %slow%%% for %slow_duration% second on each bounce. %leap_distance% bounce distance. ",
+  "notes": null,
+  "cooldowns": [
+    40
+  ],
+  "mana_costs": [
+    25
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "movement_turn_rate",
+      "heading": "",
+      "values": [
+        75
+      ]
+    },
+    {
+      "key": "leap_distance",
+      "heading": "",
+      "values": [
+        400
+      ]
+    },
+    {
+      "key": "leap_speed",
+      "heading": "",
+      "values": [
+        800
+      ]
+    },
+    {
+      "key": "leap_acceleration",
+      "heading": "",
+      "values": [
+        1250
+      ]
+    },
+    {
+      "key": "radius",
+      "heading": "",
+      "values": [
+        275
+      ]
+    },
+    {
+      "key": "flop_damage",
+      "heading": "",
+      "values": [
+        250
+      ]
+    },
+    {
+      "key": "slow_duration",
+      "heading": "",
+      "values": [
+        1.5
+      ]
+    },
+    {
+      "key": "slow",
+      "heading": "",
+      "values": [
+        -100
+      ]
+    },
+    {
+      "key": "max_bounces",
+      "heading": "",
+      "values": [
+        2
+      ]
+    },
+    {
+      "key": "AbilityCastPoint",
+      "heading": "",
+      "values": [
+        0.3
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        40
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,816 @@
+{
+  "id": 27,
+  "name": "Shadow Shaman",
+  "slug": "shadow_shaman",
+  "npc_name": "npc_dota_hero_shadow_shaman",
+  "primary_attribute": "int",
+  "attack_type": "Ranged",
+  "complexity": 1,
+  "roles": [
+    "Support",
+    "Nuker",
+    "Disabler",
+    "Pusher",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 20,
+    "str_gain": 2.3,
+    "base_agi": 16,
+    "agi_gain": 1.6,
+    "base_int": 23,
+    "int_gain": 3.3,
+    "damage_min": 63,
+    "damage_max": 70,
+    "attack_rate": 1.7,
+    "attack_range": 400,
+    "projectile_speed": 900,
+    "armor": 4.666667,
+    "magic_resistance": 25,
+    "movement_speed": 285,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 560,
+    "health_regen": 3,
+    "max_mana": 351,
+    "mana_regen": 1.15
+  },
+  "lore": "Born in the Bleeding Hills, Rhasta was just a starving youngling when picked up by a travelling con-man.  For two pins of copper, the old con-man would tell your fortune. For three, he'd castrate your pig, for five, he'd circumcise your sons. For a good meal, he'd don his shaman garb, read from his ancient books, and lay a curse upon your enemies. His strange new youngling, part hill troll, part...something else, worked as assistant and lent an air of the exotic to the con-man's trade. \r\n\t\t\t\t<br><br>Always one step ahead of cheated customers, one town ahead of a pursuing patronage, the two trekked across the blighted lands until one day the con-man realized that the little youngling could actually do what he only pretended at. His ward had a gift--a gift that customers valued. And so the youngling Rhasta was thrust before the crowds, and the trade-name Shadow Shaman was born. The two continued from town to town, conjuring for money as Shadow Shaman's reputation grew. Eventually, the pair's duplicitous past caught up with them, and they were ambushed by a mob of swindled ex-clients. The con-man was slain, and for the first time, Rhasta used his powers for darkness, massacring the attackers. He buried his beloved master, and now uses his powers to destroy any who would seek to do him harm.",
+  "hype": "Shadow Shaman quickly clears the way for his team's forces to march on the enemy base. Blasting enemies with <b>shocking spells</b> and <b>interrupting attackers</b> with hexes, his powerful <b>serpent wards</b> destroy enemy defenses with ease.",
+  "abilities": [
+    {
+      "key": "shadow_shaman_ether_shock",
+      "name": "Ether Shock",
+      "description": "Creates a cone of ethereal energy that strikes multiple enemy units.",
+      "max_level": 4,
+      "cooldowns": [
+        14,
+        12,
+        10,
+        8
+      ],
+      "mana_costs": [
+        90,
+        105,
+        120,
+        135
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        600
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "start_radius",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "end_radius",
+          "heading": "",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "end_distance",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "targets",
+          "heading": "TARGETS:",
+          "values": [
+            3,
+            5,
+            7,
+            9
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            125,
+            190,
+            255,
+            320
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            90,
+            105,
+            120,
+            135
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            14,
+            12,
+            10,
+            8
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Can hit secondary targets up to 1000 distance away."
+      ],
+      "lore": "Originally used to open shows with the travelling con-man, Rhasta's lightning display shocks adversaries in more ways than one."
+    },
+    {
+      "key": "shadow_shaman_voodoo",
+      "name": "Hex",
+      "description": "Transforms an enemy unit into a harmless creature, disabling their attacks and abilities.",
+      "max_level": 4,
+      "cooldowns": [
+        24,
+        20,
+        16,
+        12
+      ],
+      "mana_costs": [
+        130,
+        150,
+        170,
+        190
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        550
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "movespeed",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            2,
+            2.3,
+            2.6,
+            2.9
+          ]
+        },
+        {
+          "key": "damage_amp",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            550
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            130,
+            150,
+            170,
+            190
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            24,
+            20,
+            16,
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Instantly destroys illusions.",
+        "The target will have a base movement speed of %movespeed%, but buffs granting maximum movement speed won't be disabled."
+      ],
+      "lore": "Rhasta often ended performances by turning himself into a chicken - now, the humiliation is shared."
+    },
+    {
+      "key": "shadow_shaman_shackles",
+      "name": "Shackles",
+      "description": "CHANNELED - Magically binds an enemy unit so that it cannot move or attack, absorbing their life energy over time.",
+      "max_level": 4,
+      "cooldowns": [
+        14,
+        13,
+        12,
+        11
+      ],
+      "mana_costs": [
+        125,
+        140,
+        155,
+        170
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        450
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "tick_interval",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "total_damage",
+          "heading": "TOTAL DAMAGE/HEAL:",
+          "values": [
+            100,
+            160,
+            220,
+            280
+          ]
+        },
+        {
+          "key": "channel_time",
+          "heading": "MAX DURATION:",
+          "values": [
+            2.4,
+            3,
+            3.6,
+            4.2
+          ]
+        },
+        {
+          "key": "ward_linger_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "heal_percentage",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "scepter_shock_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "scepter_shock_radius",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "scepter_shock_interval",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "alt_cast_on_allies",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "ally_break_range",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "CAST RANGE:",
+          "values": [
+            450
+          ]
+        },
+        {
+          "key": "AbilityChannelTime",
+          "heading": "",
+          "values": [
+            2.4,
+            3,
+            3.6,
+            4.2
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            125,
+            140,
+            155,
+            170
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            14,
+            13,
+            12,
+            11
+          ]
+        }
+      ],
+      "scepter_upgrade": "Increase cast range. Every %scepter_shock_interval% seconds, shackled units emit a radial Ether Shock hitting all other units within %scepter_shock_radius% of the target for %scepter_shock_pct%%% of Ether Shock's normal damage. Shackles can now also be cast on allies and Mass Serpent Wards that stay within %ally_break_range% units of Shadow Shaman. Allied units are not disabled by Shackle.",
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "A self-defense incantation, Rhasta developed shackles after his master was slain in the Bleeding Hills."
+    },
+    {
+      "key": "shadow_shaman_fowl_play",
+      "name": "Fowl Play",
+      "description": "When taking lethal damage, Shadow Shaman receives a strong dispel and survives as a 1 HP chicken with increased movement speed. Incoming damage is reduced to zero for a short duration and additional chickens are created to confuse the enemy. Cooldown resets when Shadow Shaman respawns.\n\nDISPEL TYPE: Strong Dispel",
+      "max_level": 1,
+      "cooldowns": [
+        120
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "hex_duration",
+          "heading": "DURATION:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "movespeed_bonus_pct",
+          "heading": "MOVESPEED BONUS:",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "total_chickens",
+          "heading": "TOTAL CHICKENS:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "damage_reduction_duration",
+          "heading": "INVULNERABLE TIME:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "damage_reduction_pct",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "levels_per_chicken",
+          "heading": "",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "invuln_duration",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "ally_chicken_images_take_damage_percent",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            120
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Increases the amount of time incoming damage is reduced to %damage_reduction_duration% seconds. When Fowl Play is triggered, Shadow Shaman becomes invulnerable for %invuln_duration% seconds. %chicken_illusions% additional uncontrollable chickens are created that last for %ally_voodoo_duration% seconds. While Shadow Shaman is transformed, he can now use items.",
+      "notes": [
+        "Lethal Damage from Axe's Culling Blade and Necrophos's Reaper's Scythe will not be prevented.",
+        "Incoming damage reduction buff will prevent certain sources of HP removal from killing Shadow Shaman."
+      ],
+      "lore": "Rhasta had to learn early on how to stay one step ahead of those who (rightfully or wrongfully) wished him harm."
+    },
+    {
+      "key": "shadow_shaman_urnaconda",
+      "name": "Urnaconda",
+      "description": "Throw a snake jar at the target location, damaging all enemies in the AoE and creating a Massive Serpent Ward that has %megaward_multiplier_tooltip%x the base Serpent Ward damage and health there that lasts %ward_duration%s.",
+      "max_level": 1,
+      "cooldowns": [
+        50
+      ],
+      "mana_costs": [
+        140
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        650
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "ward_duration",
+          "heading": "",
+          "values": [
+            15
+          ]
+        },
+        {
+          "key": "speed",
+          "heading": "",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "impact_radius",
+          "heading": "IMPACT RADIUS:",
+          "values": [
+            225
+          ]
+        },
+        {
+          "key": "impact_damage",
+          "heading": "IMPACT DAMAGE:",
+          "values": [
+            275
+          ]
+        },
+        {
+          "key": "megaward_multiplier_tooltip",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            650
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            140
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            50
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "shadow_shaman_mass_serpent_ward",
+      "name": "Mass Serpent Ward",
+      "description": "Summons %ward_count% Serpent Wards to attack enemy units and structures. The Wards are immune to magic. Creeps deal half damage to the Serpent Ward.",
+      "max_level": 3,
+      "cooldowns": [
+        110,
+        105,
+        100
+      ],
+      "mana_costs": [
+        200,
+        350,
+        550
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        550
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "ward_count",
+          "heading": "",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "bonus_attack_range",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            45
+          ]
+        },
+        {
+          "key": "spawn_radius",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "hits_to_destroy_tooltip",
+          "heading": "HITS TO DESTROY:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "ward_health",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "bonus_attack_targets",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "ward_damage_tooltip",
+          "heading": "WARD DAMAGE:",
+          "values": [
+            50,
+            85,
+            120
+          ]
+        },
+        {
+          "key": "mega_ward_multiplier_damage",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "mega_ward_multiplier_health",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "mega_ward_health_tooltip",
+          "heading": "MEGA WARD HEALTH:",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "mega_ward_damage_tooltip",
+          "heading": "MEGA WARD DAMAGE:",
+          "values": [
+            200,
+            340,
+            480
+          ]
+        },
+        {
+          "key": "mega_ward_model_scale_multiplier",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            550
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            200,
+            350,
+            550
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            110,
+            105,
+            100
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Allows to create a Mega Ward using the Urnaconda ability.",
+      "notes": null,
+      "lore": "Snake charming was a big part of the Shadow Shaman's act; now Rhasta can empower the snakes to do his bidding."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_total_damage} Shackles Total Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Mana Regen"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_attack_range} Serpent Wards Attack Range"
+    },
+    {
+      "slot": null,
+      "name": "Hex Breaks"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_channel_time}s Shackles Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_hits_to_destroy_tooltip}% Serpent Wards Max HP"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Ether Shock Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_attack_targets} Ward Attack Targets"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

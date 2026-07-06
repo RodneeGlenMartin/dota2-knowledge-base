@@ -1,0 +1,86 @@
+{
+  "id": 102,
+  "name": "Force Staff",
+  "slug": "force_staff",
+  "internal_key": "item_force_staff",
+  "cost": 2200,
+  "neutral_tier": null,
+  "description": "<h1>Active: Force</h1>Pushes any target unit %push_length% units in the direction it is facing.",
+  "notes": [
+    "Self-cast will cause you to use Force on yourself.",
+    "Force Staff doesn't interrupt the target's actions.",
+    "Will not work on a unit inside Chronosphere, Duel, or Black Hole.",
+    "Force Staff has %enemy_cast_range% cast range when cast on enemies."
+  ],
+  "cooldowns": [
+    19
+  ],
+  "mana_costs": [
+    150
+  ],
+  "cast_ranges": [
+    550
+  ],
+  "special_values": [
+    {
+      "key": "bonus_intellect",
+      "heading": "+$int",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "bonus_health",
+      "heading": "+$health",
+      "values": [
+        175
+      ]
+    },
+    {
+      "key": "push_length",
+      "heading": "",
+      "values": [
+        600
+      ]
+    },
+    {
+      "key": "enemy_cast_range",
+      "heading": "",
+      "values": [
+        850
+      ]
+    },
+    {
+      "key": "push_time",
+      "heading": "",
+      "values": [
+        0.5
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        550
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        150
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        19
+      ]
+    }
+  ],
+  "lore": "Allows you to manipulate others, for good or evil.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

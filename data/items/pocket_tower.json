@@ -1,0 +1,39 @@
+{
+  "id": 1030,
+  "name": "Pocket Tower",
+  "slug": "pocket_tower",
+  "internal_key": "item_pocket_tower",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    15
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    600
+  ],
+  "special_values": [
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        600
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        15
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

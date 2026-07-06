@@ -1,0 +1,41 @@
+{
+  "id": 292,
+  "name": "Stygian Desolator",
+  "slug": "stygian_desolator",
+  "internal_key": "item_desolator_2",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Greater Corruption</h1> Your attacks reduce the target's armor by %corruption_armor% for %corruption_duration% seconds.",
+  "notes": [
+    "Armor reduction works on buildings."
+  ],
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "corruption_armor",
+      "heading": "",
+      "values": [
+        -13
+      ]
+    },
+    {
+      "key": "corruption_duration",
+      "heading": "",
+      "values": [
+        7
+      ]
+    }
+  ],
+  "lore": "The original demonic favorite that served as basis for the beloved mortal design.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

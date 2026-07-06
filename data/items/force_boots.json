@@ -1,0 +1,76 @@
+{
+  "id": 291,
+  "name": "Force Boots",
+  "slug": "force_boots",
+  "internal_key": "item_force_boots",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Force</h1>Pushes the target %push_length% units in the direction they are facing. Dispels if cast on an ally.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>\n\n<h1>Passive: Speed Unlock</h1> Completely removes the speed limit for the wearer \nMovement speed bonuses from multiple pairs of boots do not stack.",
+  "notes": [
+    "Does not trigger spell block or spell reflect."
+  ],
+  "cooldowns": [
+    8
+  ],
+  "mana_costs": [
+    75
+  ],
+  "cast_ranges": [
+    750
+  ],
+  "special_values": [
+    {
+      "key": "bonus_movement_speed",
+      "heading": "+$move_speed",
+      "values": [
+        115
+      ]
+    },
+    {
+      "key": "push_length",
+      "heading": "",
+      "values": [
+        750
+      ]
+    },
+    {
+      "key": "push_duration",
+      "heading": "",
+      "values": [
+        0.5
+      ]
+    },
+    {
+      "key": "hp_regen",
+      "heading": "+$hp_regen",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        750
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        75
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        8
+      ]
+    }
+  ],
+  "lore": "Elusive marvels never successfully studied for proper classification in the archives.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

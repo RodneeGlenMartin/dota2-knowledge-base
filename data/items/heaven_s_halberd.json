@@ -1,0 +1,81 @@
+{
+  "id": 210,
+  "name": "Heaven's Halberd",
+  "slug": "heaven_s_halberd",
+  "internal_key": "item_heavens_halberd",
+  "cost": 3400,
+  "neutral_tier": null,
+  "description": "<h1>Active: Disarm</h1>Prevents a target from attacking for %disarm_melee% seconds.",
+  "notes": null,
+  "cooldowns": [
+    16
+  ],
+  "mana_costs": [
+    25
+  ],
+  "cast_ranges": [
+    750
+  ],
+  "special_values": [
+    {
+      "key": "bonus_armor",
+      "heading": "+$armor",
+      "values": [
+        9
+      ]
+    },
+    {
+      "key": "bonus_health_regen",
+      "heading": "+$hp_regen",
+      "values": [
+        6.5
+      ]
+    },
+    {
+      "key": "bonus_evasion",
+      "heading": "+$evasion",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "disarm_range",
+      "heading": "",
+      "values": [
+        3.5
+      ]
+    },
+    {
+      "key": "disarm_melee",
+      "heading": "",
+      "values": [
+        3.5
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        750
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        16
+      ]
+    }
+  ],
+  "lore": "This halberd moves with the speed of a smaller weapon, allowing the bearer to win duels that a heavy edge would not.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

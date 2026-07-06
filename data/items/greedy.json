@@ -1,0 +1,49 @@
+{
+  "id": 1593,
+  "name": "Greedy",
+  "slug": "greedy",
+  "internal_key": "item_enhancement_greedy",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_gpm",
+      "heading": "+GPM BONUS",
+      "values": [
+        75,
+        100
+      ]
+    },
+    {
+      "key": "bonus_mana",
+      "heading": "+$mana",
+      "values": [
+        150,
+        200
+      ]
+    },
+    {
+      "key": "bonus_damage",
+      "heading": "-<font color='#e03e2e'>Attack Damage</font>",
+      "values": [
+        -30,
+        -60
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

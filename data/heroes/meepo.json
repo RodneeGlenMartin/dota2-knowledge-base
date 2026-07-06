@@ -1,0 +1,735 @@
+{
+  "id": 82,
+  "name": "Meepo",
+  "slug": "meepo",
+  "npc_name": "npc_dota_hero_meepo",
+  "primary_attribute": "agi",
+  "attack_type": "Melee",
+  "complexity": 3,
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Disabler",
+    "Escape",
+    "Pusher",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 24,
+    "str_gain": 2,
+    "base_agi": 17,
+    "agi_gain": 2.1,
+    "base_int": 18,
+    "int_gain": 1.9,
+    "damage_min": 46,
+    "damage_max": 52,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 5.8333335,
+    "magic_resistance": 25,
+    "movement_speed": 310,
+    "turn_rate": 0.9,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 648,
+    "health_regen": 2.65,
+    "max_mana": 291,
+    "mana_regen": 1.1500001
+  },
+  "lore": "\"If you ask me, life is all about who you know and what you can find. When you live up in the Riftshadow Ruins, just finding food can be tough. So you need to cut corners, you need to scrounge, you need to know your strengths. Some of the beasts up there can kill you, so you need a way to trap the weak and duck the strong. On the upside, the ruins have history, and history is worth a lot to some people. There used to be a palace there, where they had all these dark rituals. Bad stuff. If you survived the ceremony, they would shatter a crystal and split your soul into pieces. They made great art though! Sculptures and such. Let me tell you: sometimes you stumble onto some of those old carvings. Take a pack full of those to town and sell them, then get yourself food for a few weeks. If luck is really on your side, you might find a Riftshadow crystal. Get it appraised and start asking around. Someone always knows some crazy fool looking for this kind of thing. If all else fails, sell it to a Magus the next time one's in town. They love that stuff. Still, whatever you do, be careful handling those crystals. You do not want one to go off on you. It really hurts.\"",
+  "hype": "By summoning up to five permanent copies of himself, Meepo can fight from every front at once. Spreading his clones throughout the battlefield, when an enemy is found, he binds his foe, gathers his selves with an <b>explosive teleport</b>, then buries what remains.",
+  "abilities": [
+    {
+      "key": "meepo_earthbind",
+      "name": "Earthbind",
+      "description": "Tosses a net at the target point, rooting down all enemy units in an area around it.",
+      "max_level": 4,
+      "cooldowns": [
+        16,
+        14,
+        12,
+        10
+      ],
+      "mana_costs": [
+        70,
+        80,
+        90,
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        750,
+        900,
+        1050,
+        1200
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            220
+          ]
+        },
+        {
+          "key": "speed",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "megameepo_net_offset",
+          "heading": "",
+          "values": [
+            160
+          ]
+        },
+        {
+          "key": "true_strike",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            750,
+            900,
+            1050,
+            1200
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            70,
+            80,
+            90,
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            16,
+            14,
+            12,
+            10
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Affects invisible units, revealing them.",
+        "Does not work on Debuff Immune units or Roshan."
+      ],
+      "lore": "Catching dinner in the Riftshadow Ruins can be quite the task."
+    },
+    {
+      "key": "meepo_poof",
+      "name": "Poof",
+      "description": "Drawing mystical energies from the earth, a Meepo can teleport to another Meepo or itself after channeling for %cast_duration% seconds, damaging the enemy in both the departure and arrival locations. <br><br>If the ability is in alt-cast state, all Meepos will also cast Poof to the target. When cast on the ground, all Meepos except the selected one will Poof to the closest location.",
+      "max_level": 4,
+      "cooldowns": [
+        12,
+        10,
+        8,
+        6
+      ],
+      "mana_costs": [
+        80
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        1.5
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "cast_duration",
+          "heading": "",
+          "values": [
+            1.5
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "poof_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            50,
+            80,
+            110,
+            140
+          ]
+        },
+        {
+          "key": "megameepo_poof_scaling",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            1.5
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            80
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            12,
+            10,
+            8,
+            6
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Can be cast through the minimap.",
+        "Can teleport to Meepo illusions."
+      ],
+      "lore": "Sometimes breaking one of the Riftshadow Crystals can be just the trick for getting yourself out of a bind.  Or your other self."
+    },
+    {
+      "key": "meepo_ransack",
+      "name": "Ransack",
+      "description": "Steals health from the enemy with each strike and heals all other Meepos for that amount.<br><br>Reduced to <span class=\"GameplayVariable\">60%</span> against creeps.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "health_steal_heroes",
+          "heading": "HEALTH STEAL (HEROES):",
+          "values": [
+            7,
+            10,
+            13,
+            16
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Amount healed is amplified by Lifesteal Amplification"
+      ],
+      "lore": "So you gonna need that, or...?"
+    },
+    {
+      "key": "meepo_petrify",
+      "name": "Dig",
+      "description": "Digs into the ground for a short duration, dispelling Meepo and causing him to become invulnerable and untargetable for %duration%s. Restores %hp_restore%%% of his max health over that duration.<br><br>DISPEL TYPE: Basic Dispel",
+      "max_level": 1,
+      "cooldowns": [
+        40
+      ],
+      "mana_costs": [
+        125
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "hp_restore",
+          "heading": "MAX HP RESTORE:",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            125
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            40
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "I'm diggin' here!"
+    },
+    {
+      "key": "meepo_megameepo",
+      "name": "MegaMeepo",
+      "description": "Primary Meepo mounts all other Meepos in a %radius% radius around him on top of his shoulders. While in this form, he gains %stats_pct%%% of the other Meepo stats and can Fling them at enemies, dealing damage and slowing them.\n\n When cast, Earthbind generates additional nets and Poof deals %poof_damage_factor%%% more damage for each Meepo on top.",
+      "max_level": 1,
+      "cooldowns": [
+        90
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "damage_distribution_duration",
+          "heading": "",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "end_knockback_duration",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "end_knockback_distance",
+          "heading": "",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "stats_pct",
+          "heading": "",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "poof_damage_factor",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            90
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Hi, Meepos!"
+    },
+    {
+      "key": "meepo_divided_we_stand",
+      "name": "Divided We Stand",
+      "description": "Meepo summons another Meepo, which levels up and shares items and experience with the main Meepo. Ability cooldowns are independent, but items share cooldowns between Meepos, except Teleport Scrolls. <br><br>Damage, attack speed, health, mana, regeneration, mana burn, and proc chance bonuses from items are distributed equally among the amount of Meepos, making them %dps_penalty_pct%%% less effective.<br><br>If any Meepo dies, they all die.",
+      "max_level": 3,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0
+      ],
+      "special_values": [
+        {
+          "key": "tooltip_clones",
+          "heading": "NUMBER OF DUPLICATES:",
+          "values": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "key": "required_level",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "levels_between_upgrades",
+          "heading": "",
+          "values": [
+            7
+          ]
+        },
+        {
+          "key": "max_level",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "dps_penalty_pct",
+          "heading": "",
+          "values": [
+            50,
+            66,
+            75,
+            80
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Do I know you?"
+    },
+    {
+      "key": "meepo_geomancy",
+      "name": "Geomancy",
+      "description": "Meepo grants stacking bonuses to himself and his clones based on their terrain.  Each Meepo grants his bonus to the other Meepos.<br><br>If there is a tree within %tree_radius% range, he receives %tree_regen% HP regen.<br><br>If he is standing on dirt, he receives %dirt_move_speed%%% bonus movement speed.<br><br>If he is in the water, his attacks slow the target by %water_move_slow%%% for %water_slow_duration% seconds.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "tree_radius",
+          "heading": "",
+          "values": [
+            250
+          ]
+        },
+        {
+          "key": "tree_regen",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "dirt_move_speed",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "water_move_slow",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "water_slow_duration",
+          "heading": "",
+          "values": [
+            2
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Dirt includes any terrain that is not water."
+      ],
+      "lore": null
+    },
+    {
+      "key": "meepo_megameepo_fling",
+      "name": "MegaMeepo Fling",
+      "description": "In MegaMeepo form, Meepo flings the topmost meepo towards a target within a %AbilityCastRange% range, dealing damage and slowing their movement speed.",
+      "max_level": 1,
+      "cooldowns": [
+        0.5
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        900
+      ],
+      "cast_points": [
+        0.2,
+        0.2,
+        0.2,
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "fling_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            225
+          ]
+        },
+        {
+          "key": "fling_radius",
+          "heading": "",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "fling_movespeed",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "fling_slow_duration",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "movement_slow",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            -60
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Does not trigger spell reflect."
+      ],
+      "lore": "You go first!"
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:value} Strength"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Earthbind Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value}% Evasion"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_poof_damage} Poof Damage"
+    },
+    {
+      "slot": null,
+      "name": "Earthbind grants True Strike on Targets"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_health_steal_heroes} Ransack Health Steal"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Health"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_cast_duration}s Poof Cast Duration"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

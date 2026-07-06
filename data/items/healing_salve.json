@@ -1,0 +1,53 @@
+{
+  "id": 39,
+  "name": "Healing Salve",
+  "slug": "healing_salve",
+  "internal_key": "item_flask",
+  "cost": 100,
+  "neutral_tier": null,
+  "description": "<h1>Use: Salve</h1> Grants %health_regen% health regeneration to the target for %buff_duration% seconds.<br><br>If the unit is attacked by an enemy hero or Roshan, the effect is lost.<br><br>Heals for half the amount per second when cast on an ally.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    250
+  ],
+  "special_values": [
+    {
+      "key": "buff_duration",
+      "heading": "",
+      "values": [
+        13
+      ]
+    },
+    {
+      "key": "health_regen",
+      "heading": "",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "break_on_hero_damage",
+      "heading": "",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        250
+      ]
+    }
+  ],
+  "lore": "A magical salve that can quickly mend even the deepest of wounds.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

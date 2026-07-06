@@ -1,0 +1,579 @@
+{
+  "id": 60,
+  "name": "Night Stalker",
+  "slug": "night_stalker",
+  "npc_name": "npc_dota_hero_night_stalker",
+  "primary_attribute": "str",
+  "attack_type": "Melee",
+  "complexity": 1,
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Disabler",
+    "Durable",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 23,
+    "str_gain": 3,
+    "base_agi": 18,
+    "agi_gain": 2.2,
+    "base_int": 15,
+    "int_gain": 1.6,
+    "damage_min": 63,
+    "damage_max": 67,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 5,
+    "magic_resistance": 25,
+    "movement_speed": 295,
+    "turn_rate": 0.6,
+    "sight_range_day": 800,
+    "sight_range_night": 1800,
+    "max_health": 626,
+    "health_regen": 2.55,
+    "max_mana": 255,
+    "mana_regen": 1
+  },
+  "lore": "Of the Night Stalker, there is no history, only stories. There are ancient tales woven into the lore of every race and every culture, of an impossible time before sunlight and daytime, when night reigned alone and the world was covered with the creatures of darkness--creatures like Balanar the Night Stalker. \r\n\t\t\t\t<br><br>It is said that on the dawn of the First Day, all the night creatures perished. All, that is, save one. Evil's embodiment, Night Stalker delights in his malevolence. He created the primal role of the Night Terror, the Boogeyman, and as long as there have been younglings, his is the specter summoned to terrify them. This is a role he relishes; nor are these empty theatrics. He does indeed stalk the unwary, the defenseless, those who have strayed beyond the lighted paths or denied the warnings of their communities. Night Stalker serves as living proof that every child's worst nightmare....is true.",
+  "hype": "Once the sun goes down, Night Stalker's hunt begins. Charging through the shadowy forests, he snares prey in a <b>slowing void</b> as he tears them to shreds. Should sunrise threaten to end his terror, he can <b>darken the skies</b> to extend his onslaught.",
+  "abilities": [
+    {
+      "key": "night_stalker_void",
+      "name": "Void",
+      "description": "Creates a damaging void that slows an enemy unit and deals damage. At night, Void also mini-stuns, interrupting channeling abilities, and its effects lasts longer.",
+      "max_level": 4,
+      "cooldowns": [
+        11,
+        10,
+        9,
+        8
+      ],
+      "mana_costs": [
+        90,
+        95,
+        100,
+        105
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        525
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            80,
+            160,
+            240,
+            320
+          ]
+        },
+        {
+          "key": "duration_day",
+          "heading": "DAY DURATION:",
+          "values": [
+            1.25
+          ]
+        },
+        {
+          "key": "duration_night",
+          "heading": "NIGHT DURATION:",
+          "values": [
+            1.6,
+            2.2,
+            2.8,
+            3.4
+          ]
+        },
+        {
+          "key": "movespeed_slow",
+          "heading": "MOVE SLOW:",
+          "values": [
+            50,
+            50,
+            50,
+            50,
+            50
+          ]
+        },
+        {
+          "key": "attackspeed_slow",
+          "heading": "ATTACK SLOW:",
+          "values": [
+            50,
+            50,
+            50,
+            50,
+            50
+          ]
+        },
+        {
+          "key": "invisible_damage_pers",
+          "heading": "DAMAGE PER SECOND WHEN NOT VISIBLE:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "invisible_damage_tickrate",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "max_level",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "max_level_tooltip",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "cast_radius",
+          "heading": "RADIUS:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "cast_radius_tooltip",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            525
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            90,
+            95,
+            100,
+            105
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            11,
+            10,
+            9,
+            8
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Void now affects all units in a radius around the target.",
+      "notes": [
+        "Void does not ministun enemies during the day."
+      ],
+      "lore": "Balanar creates a vortex of infinite night, tearing opponents violently into the eternal darkness that once was."
+    },
+    {
+      "key": "night_stalker_crippling_fear",
+      "name": "Crippling Fear",
+      "description": "Night Stalker horrifies all nearby enemies, causing them to become silenced and take damage over time while near him.  The effect lasts longer at night.",
+      "max_level": 4,
+      "cooldowns": [
+        30,
+        25,
+        20,
+        15
+      ],
+      "mana_costs": [
+        50
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration_day",
+          "heading": "DAY DURATION:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "duration_night",
+          "heading": "NIGHT DURATION:",
+          "values": [
+            4.5,
+            5,
+            5.5,
+            6
+          ]
+        },
+        {
+          "key": "mana_interval",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "AURA RADIUS:",
+          "values": [
+            375
+          ]
+        },
+        {
+          "key": "dps",
+          "heading": "DAMAGE PER SECOND:",
+          "values": [
+            25,
+            30,
+            35,
+            40
+          ]
+        },
+        {
+          "key": "tick_rate",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            30,
+            25,
+            20,
+            15
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "A vision of the twisted maw of Balanar etches itself into the minds of the poor souls unlucky enough to cross his path."
+    },
+    {
+      "key": "night_stalker_midnight_feast",
+      "name": "Midnight Feast",
+      "description": "Night Stalker heals himself when attacking enemy units. At night, the ability can be activated to instantly destroy a non-ancient creep and restore a percentage of Night Stalker's maximum health and mana.",
+      "max_level": 4,
+      "cooldowns": [
+        39,
+        36,
+        33,
+        30
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        125
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "attack_heal",
+          "heading": "LIFESTEAL:",
+          "values": [
+            12,
+            16,
+            20,
+            24
+          ]
+        },
+        {
+          "key": "hp_restore",
+          "heading": "MAX HEALTH RESTORE:",
+          "values": [
+            10,
+            15,
+            20,
+            25
+          ]
+        },
+        {
+          "key": "mp_restore",
+          "heading": "MAX MANA RESTORE:",
+          "values": [
+            10,
+            12,
+            14,
+            16
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            125
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            39,
+            36,
+            33,
+            30
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Amount of health gained from attacking is affecting by Health Restoration and is decreased when attacking non-hero targets."
+      ],
+      "lore": null
+    },
+    {
+      "key": "night_stalker_hunter_in_the_night",
+      "name": "Hunter in the Night",
+      "description": "Night Stalker is in his element at night, attacking and moving with great swiftness.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bonus_movement_speed_pct_night",
+          "heading": "MOVE SPEED:",
+          "values": [
+            24
+          ]
+        },
+        {
+          "key": "bonus_attack_speed_night",
+          "heading": "ATTACK SPEED:",
+          "values": [
+            38
+          ]
+        },
+        {
+          "key": "reset_cooldowns",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "bonus_status_resist_night",
+          "heading": "",
+          "values": null
+        }
+      ],
+      "scepter_upgrade": "Increases bonus movement speed by %bonus_bonus_movement_speed_pct_night%%% and attack speed by %bonus_bonus_attack_speed_night%. Killing an enemy hero resets all basic ability cooldowns.",
+      "shard_upgrade": "Hunter in the Night may be cast on a creep, instantly killing it and restoring some of Night Stalker's maximum health and mana. Cannot target ancients during the daytime.",
+      "notes": null,
+      "lore": "The hunting prowess of Balanar improves as the night beckons."
+    },
+    {
+      "key": "night_stalker_darkness",
+      "name": "Dark Ascension",
+      "description": "Night Stalker smothers the sun and summons instant darkness, so that he might use his powers at their fullest. Night Stalker gains flight and bonus damage during this time. Has unobstructed vision.",
+      "max_level": 3,
+      "cooldowns": [
+        140,
+        135,
+        130
+      ],
+      "mana_costs": [
+        125,
+        175,
+        225
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "bonus_damage",
+          "heading": "BONUS DAMAGE:",
+          "values": [
+            50,
+            100,
+            150
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            125,
+            175,
+            225
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            140,
+            135,
+            130
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "It is a humbling sight to see when the mightiest of warriors become afraid of the dark."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Void Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_dps} Crippling Fear DPS"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_damage} Dark Ascension Damage"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_bonus_status_resist_night}% Hunter in the Night Status Resistance"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_radius} Crippling Fear Radius"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Strength"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_attack_heal} Midnight Feast Lifesteal"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Dark Ascension Cooldown"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

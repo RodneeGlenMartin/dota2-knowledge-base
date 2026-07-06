@@ -1,0 +1,765 @@
+{
+  "id": 22,
+  "name": "Zeus",
+  "slug": "zeus",
+  "npc_name": "npc_dota_hero_zuus",
+  "primary_attribute": "int",
+  "attack_type": "Ranged",
+  "complexity": 1,
+  "roles": [
+    "Carry",
+    "Nuker"
+  ],
+  "stats": {
+    "base_str": 21,
+    "str_gain": 2.1,
+    "base_agi": 11,
+    "agi_gain": 1.2,
+    "base_int": 23,
+    "int_gain": 3.3,
+    "damage_min": 53,
+    "damage_max": 63,
+    "attack_rate": 1.7,
+    "attack_range": 380,
+    "projectile_speed": 1100,
+    "armor": 2.8333335,
+    "magic_resistance": 25,
+    "movement_speed": 305,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 582,
+    "health_regen": 2.3500001,
+    "max_mana": 351,
+    "mana_regen": 1.15
+  },
+  "lore": "Lord of Heaven, father of gods, Zeus treats all the Heroes as if they are his rambunctious, rebellious children. After being caught unnumbered times in the midst of trysts with countless mortal women, his divine wife finally gave him an ultimatum: 'If you love mortals so much, go and become one. If you can prove yourself faithful, then return to me as my immortal husband. Otherwise, go and die among your creatures.' Zeus found her logic (and her magic) irrefutable, and agreed to her plan. He has been on his best behavior ever since, being somewhat fonder of immortality than he is of mortals. But to prove himself worthy of his eternal spouse, he must continue to pursue victory on the field of battle.",
+  "hype": "None can hide from Zeus, whether he's calling down a bolt to <b>reveal the surroundings</b>, sending an arc coursing through his nearest enemies, or summoning a <b>terrifying volley of lightning</b> upon all enemies. Wherever his foes are, Zeus will find them.",
+  "abilities": [
+    {
+      "key": "zuus_arc_lightning",
+      "name": "Arc Lightning",
+      "description": "Hurls a bolt of lightning that leaps through nearby enemy units that deal damage.",
+      "max_level": 4,
+      "cooldowns": [
+        1.6
+      ],
+      "mana_costs": [
+        85,
+        90,
+        95,
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        800
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "arc_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            105,
+            130,
+            155,
+            180
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "JUMP RADIUS:",
+          "values": [
+            450
+          ]
+        },
+        {
+          "key": "jump_count",
+          "heading": "JUMPS:",
+          "values": [
+            5,
+            7,
+            9,
+            11
+          ]
+        },
+        {
+          "key": "jump_delay",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            85,
+            90,
+            95,
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            1.6
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Arc Lightning is Zeus' favorite spell to use against puny mortals."
+    },
+    {
+      "key": "zuus_lightning_bolt",
+      "name": "Lightning Bolt",
+      "description": "Calls down a bolt of lightning to strike an enemy unit, causing damage and a mini-stun. When cast, Lightning Bolt briefly provides unobstructed vision and True Sight around the target in a %sight_radius_night% radius. Can be cast on the ground, affecting the closest enemy hero in %spread_aoe% range.",
+      "max_level": 4,
+      "cooldowns": [
+        6,
+        6,
+        6,
+        6
+      ],
+      "mana_costs": [
+        120,
+        125,
+        130,
+        135
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        700,
+        750,
+        800,
+        850
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            140,
+            220,
+            300,
+            380
+          ]
+        },
+        {
+          "key": "true_sight_radius",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "sight_radius_day",
+          "heading": "SIGHT RADIUS:",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "sight_radius_night",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "sight_duration",
+          "heading": "SIGHT DURATION:",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "spread_aoe",
+          "heading": "",
+          "values": [
+            325
+          ]
+        },
+        {
+          "key": "ministun_duration",
+          "heading": "MINISTUN DURATION:",
+          "values": [
+            0.35
+          ]
+        },
+        {
+          "key": "aoe_radius",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            700,
+            750,
+            800,
+            850
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            120,
+            125,
+            130,
+            135
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            6
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "You can interrupt channeling spells and items with this ability."
+      ],
+      "lore": "A shocking punishment for rebellious heathen."
+    },
+    {
+      "key": "zuus_heavenly_jump",
+      "name": "Heavenly Jump",
+      "description": "Zeus performs a Heavenly Jump, leaping forward and shocking the closest visible nearby enemy (prioritizing heroes), dealing damage as well as reducing their movement and attack speed. Zeus gets %vision_radius% unobstructed vision around him for 3 seconds.",
+      "max_level": 4,
+      "cooldowns": [
+        26,
+        22,
+        18,
+        14
+      ],
+      "mana_costs": [
+        50,
+        60,
+        70,
+        80
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            25,
+            50,
+            75,
+            100
+          ]
+        },
+        {
+          "key": "hop_distance",
+          "heading": "LEAP DISTANCE:",
+          "values": [
+            375,
+            450,
+            525,
+            600
+          ]
+        },
+        {
+          "key": "hop_duration",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "hop_height",
+          "heading": "",
+          "values": [
+            250
+          ]
+        },
+        {
+          "key": "range",
+          "heading": "SHOCK RANGE:",
+          "values": [
+            700,
+            800,
+            900,
+            1000
+          ]
+        },
+        {
+          "key": "vision_radius",
+          "heading": "VISION RADIUS:",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "vision_duration",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            1.4
+          ]
+        },
+        {
+          "key": "move_slow",
+          "heading": "MOVE SPEED SLOW:",
+          "values": [
+            80
+          ]
+        },
+        {
+          "key": "aspd_slow",
+          "heading": "ATTACK SPEED SLOW:",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "targets",
+          "heading": "TARGETS:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityCharges",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityChargeRestoreTime",
+          "heading": "",
+          "values": [
+            26,
+            22,
+            18,
+            14
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            50,
+            60,
+            70,
+            80
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            26,
+            22,
+            18,
+            14
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Though temporarily barred from the heavens, Zeus can still manage a measure of godly flight."
+    },
+    {
+      "key": "zuus_cloud",
+      "name": "Nimbus",
+      "description": "Creates a storm cloud anywhere on the map that automatically casts Lightning Bolt on nearby enemies.",
+      "max_level": 1,
+      "cooldowns": [
+        45
+      ],
+      "mana_costs": [
+        275
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "cloud_duration",
+          "heading": "DURATION:",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "cloud_bolt_interval",
+          "heading": "LIGHTNING BOLT BASE COOLDOWN:",
+          "values": [
+            2.5
+          ]
+        },
+        {
+          "key": "cloud_radius",
+          "heading": "RADIUS:",
+          "values": [
+            450
+          ]
+        },
+        {
+          "key": "hits_to_kill_tooltip",
+          "heading": "HITS TO DESTROY:",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "creep_hits_to_kill_tooltip",
+          "heading": "CREEP HITS TO DESTROY:",
+          "values": [
+            16
+          ]
+        },
+        {
+          "key": "cloud_bounty_tooltip",
+          "heading": "",
+          "values": [
+            125
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            275
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            45
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Grants %cloud_bounty_tooltip% gold if destroyed by an enemy hero.",
+        "Affects the closest enemy unit with strikes from Zeus's current level of Lightning Bolt.",
+        "Towers and creeps do half damage to the Nimbus."
+      ],
+      "lore": "Where the thunder god's ire grows, storm clouds quickly gather."
+    },
+    {
+      "key": "zuus_lightning_hands",
+      "name": "Lightning Hands",
+      "description": "Zeus gains bonus attack speed and his attacks create Arc Lightnings that deal a percentage of its damage. Can be toggled off to stop this effect.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "attack_speed_bonus",
+          "heading": "BONUS ATTACK SPEED:",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "arc_lightning_damage_pct",
+          "heading": "ARC LIGHTNING DAMAGE:",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "arc_lightning_damage_illusion_pct",
+          "heading": "",
+          "values": [
+            20
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "A helping hand from Aghanim lets the fallen Lord of Heaven tap into some of his old strengths."
+    },
+    {
+      "key": "zuus_thundergods_wrath",
+      "name": "Thundergod's Wrath",
+      "description": "Strikes all enemy heroes with a bolt of lightning, dealing damage no matter where they may be. Provides True Sight around each hero before they are struck.",
+      "max_level": 3,
+      "cooldowns": [
+        130
+      ],
+      "mana_costs": [
+        250,
+        375,
+        500
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.4,
+        0.4,
+        0.4,
+        0.4
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "sight_radius_day",
+          "heading": "TRUE SIGHT RADIUS:",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "sight_radius_night",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "sight_duration",
+          "heading": "DURATION:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            300,
+            475,
+            650
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            250,
+            375,
+            500
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            130
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "The Lord of Heaven smites all who oppose him, near or far."
+    },
+    {
+      "key": "zuus_static_field",
+      "name": "Static Field",
+      "description": "Zeus shocks any enemy that he attacks or is hit by his abilities, causing damage equal to a percentage of their current health.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage_health_pct",
+          "heading": "DAMAGE:",
+          "values": [
+            3.45
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "The air crackles with static when the Thundergod walks the world."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_targets} Heavenly Jump Target"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Health"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Thundergod's Wrath Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}% Arc Lightning Mana Cost / Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_arc_damage} Arc Lightning Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_ministun_duration}s Lightning Bolt Ministun"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_aoe_radius} AoE Lightning Bolt"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_AbilityCharges} Heavenly Jump Charges"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

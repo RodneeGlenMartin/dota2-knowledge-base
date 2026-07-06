@@ -1,0 +1,46 @@
+{
+  "id": 678,
+  "name": "Giant's Ring",
+  "slug": "giant_s_ring",
+  "internal_key": "item_giants_ring",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Giant's Foot</h1>Can path over any terrain and deals %pct_str_damage_per_second%%% of your strength per second to units you are standing ontop of.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "model_scale",
+      "heading": "+Model Scale",
+      "values": [
+        60
+      ]
+    },
+    {
+      "key": "pct_str_damage_per_second",
+      "heading": "",
+      "values": [
+        100
+      ]
+    },
+    {
+      "key": "damage_radius",
+      "heading": "",
+      "values": [
+        100
+      ]
+    }
+  ],
+  "lore": "Prized procurement of an otherwise unremarkable ruler of Elze who abdicated his position and vanished.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": 168,
+  "name": "Desolator",
+  "slug": "desolator",
+  "internal_key": "item_desolator",
+  "cost": 3500,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Corruption</h1> Your attacks reduce the target's armor by %corruption_armor% for %corruption_duration% seconds.\n\n<h1>Passive: Soul Stealer</h1> Desolator gains +%bonus_damage_per_kill% damage every time an enemy hero dies while affected by Corruption, to a maximum of %max_damage%.",
+  "notes": [
+    "Armor reduction works on buildings."
+  ],
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_damage",
+      "heading": "+$damage",
+      "values": [
+        55
+      ]
+    },
+    {
+      "key": "corruption_armor",
+      "heading": "",
+      "values": [
+        -6
+      ]
+    },
+    {
+      "key": "corruption_duration",
+      "heading": "",
+      "values": [
+        7
+      ]
+    },
+    {
+      "key": "bonus_damage_per_kill",
+      "heading": "",
+      "values": [
+        2
+      ]
+    },
+    {
+      "key": "bonus_damage_per_assist",
+      "heading": "",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "max_damage",
+      "heading": "",
+      "values": [
+        30
+      ]
+    }
+  ],
+  "lore": "A wicked weapon, used in torturing political criminals.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

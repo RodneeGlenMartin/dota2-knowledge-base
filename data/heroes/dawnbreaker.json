@@ -1,0 +1,852 @@
+{
+  "id": 135,
+  "name": "Dawnbreaker",
+  "slug": "dawnbreaker",
+  "npc_name": "npc_dota_hero_dawnbreaker",
+  "primary_attribute": "str",
+  "attack_type": "Melee",
+  "complexity": 1,
+  "roles": [
+    "Carry",
+    "Durable"
+  ],
+  "stats": {
+    "base_str": 25,
+    "str_gain": 3.4,
+    "base_agi": 14,
+    "agi_gain": 1.7,
+    "base_int": 20,
+    "int_gain": 2,
+    "damage_min": 55,
+    "damage_max": 59,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 4.3333335,
+    "magic_resistance": 25,
+    "movement_speed": 300,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 670,
+    "health_regen": 3,
+    "max_mana": 315,
+    "mana_regen": 1
+  },
+  "lore": "In the aeons after the Keeper's exodus birthed the age of light, some amongst the first sun's lineage began to align against the chaos their ancestor's maker left chasing in his wake. Calling themselves the Children of Light, they saw no one else as worthy of taking up the Keeper's abandoned mantle, and they yearned to beat back the onslaught of darkness, creating glorious armies built to purge the cosmos of all creatures of primordial night.<br><br>Valora, the Dawnbreaker, most prized warrior amongst the Children's ancient creations, is the shining herald of the majesty of order and light. Molded from the heart of a young metallic star, and charged by golden breath with new life, Valora was called to spread the glow of the Children's wisdom to the darkest reaches of the universe — setting fire to the heavens with each swing of her celestial hammer amidst an endless battle to keep chaos at bay.<br><br>In time, the Children also revealed another purpose for the Dawnbreaker. They had discovered a means of permeating the entirety of the cosmos with their inner light — to obliterate all aspects of darkness forever — and they sent Valora to seize a source of great power, the final piece of their ultimate plan. But for the first time, Valora and her hammer met with failure, and the price she and her masters paid was vast. The Children of Light's spark was utterly extinguished, and the Dawnbreaker was left adrift in a black expanse, lost for untold millennia before crashing on an unfamiliar world.<br><br>There she rested, dormant, until the presence of a wandering young star gave fuel to an ancient energy forge — a relic of the Children's that, like her, lay buried for countless ages beneath a blowing red waste. Now, with a small measure of her former powers restored by the forge, Valora wakes to a land beset by war and the unrelenting forces of chaos. She knows her gods may be gone, but the heft of the Dawnbreaker's hammer remains — matched only by her will to wield it justly in the name of goodness and light.",
+  "hype": "Dawnbreaker shines in the heart of battle, happily <b>crushing enemies with her celestial hammer</b> and <b>healing nearby allies</b>. She revels in hurling her hammer through multiple foes and then converging with it in a blazing wake, always waiting to tap her true cosmic power to <b>fly to the aid of her teammates</b> — eager to rout her enemies on the battlefield no matter where they are.",
+  "abilities": [
+    {
+      "key": "dawnbreaker_fire_wreath",
+      "name": "Starbreaker",
+      "description": "Dawnbreaker whirls her hammer around 3 times, damaging enemies with her attack plus bonus damage. On the final strike, she smashes her hammer down, stunning and damaging enemies in front of her.",
+      "max_level": 4,
+      "cooldowns": [
+        17,
+        15,
+        13,
+        11
+      ],
+      "mana_costs": [
+        110
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "COMBO DURATION:",
+          "values": [
+            1.1
+          ]
+        },
+        {
+          "key": "swipe_radius",
+          "heading": "SWIPE/SMASH RADIUS:",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "swipe_damage",
+          "heading": "SWIPE/SMASH BONUS DAMAGE:",
+          "values": [
+            25,
+            40,
+            55,
+            70
+          ]
+        },
+        {
+          "key": "smash_radius",
+          "heading": "",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "smash_damage",
+          "heading": "",
+          "values": [
+            25,
+            40,
+            55,
+            70
+          ]
+        },
+        {
+          "key": "movement_speed",
+          "heading": "",
+          "values": [
+            215
+          ]
+        },
+        {
+          "key": "total_attacks",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "smash_stun_duration",
+          "heading": "SMASH STUN DURATION:",
+          "values": [
+            0.6,
+            0.8,
+            1,
+            1.2
+          ]
+        },
+        {
+          "key": "sweep_stun_duration",
+          "heading": "",
+          "values": [
+            0.12
+          ]
+        },
+        {
+          "key": "self_stun_duration",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "swipe_slow",
+          "heading": "",
+          "values": [
+            -100
+          ]
+        },
+        {
+          "key": "smash_distance_from_hero",
+          "heading": "",
+          "values": [
+            120
+          ]
+        },
+        {
+          "key": "turn_rate",
+          "heading": "",
+          "values": [
+            90
+          ]
+        },
+        {
+          "key": "shard_cast_point",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "shard_movement_penalty",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "movespeed_bonus_radius",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "movespeed_bonus_self_max",
+          "heading": "BONUS ATTACK SPEED PER SWIPE:",
+          "values": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "key": "movespeed_bonus_ally_max",
+          "heading": "BONUS ATTACK SPEED PER SWIPE (ALLIES):",
+          "values": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "key": "movespeed_bonus_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "immunity_resist",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            110
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            17,
+            15,
+            13,
+            11
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Dawnbreaker gains debuff immunity with %immunity_resist%%% magic resistance and free movement during Starbreaker. Dawnbreaker is slowed by %shard_movement_penalty%%% down to a minimum of %movement_speed%.",
+      "notes": [
+        "Dawnbreaker travels at a rate of %movement_speed% for the duration of the ability and takes a brief %self_stun_duration%s to recover after the final strike.",
+        "Celestial Hammer or Solar Guardian cannot be cast during the combo.",
+        "Cleave does not work with this ability.",
+        "Can be self-cast to move forward.",
+        "The first two strikes will slow enemy movement speed by %swipe_slow%%% for %sweep_stun_duration%s."
+      ],
+      "lore": "Across the vast lineage of star progeny, there were multitudes unwilling to align with the aims of the Children of Light. To those who dared organize defiance, the Children would dispatch Valora and her hammer to show a measure of their power--to leave the rebels either shattered or set back to rights."
+    },
+    {
+      "key": "dawnbreaker_celestial_hammer",
+      "name": "Celestial Hammer",
+      "description": "Dawnbreaker hurls her weapon at a target, damaging enemies struck along the way. The hammer pauses for %pause_duration% seconds at the destination before flying back to her, leaving a trail of fire that slows enemies. Dawnbreaker can recall the hammer at any time, pulling her towards it so they meet in the middle.",
+      "max_level": 4,
+      "cooldowns": [
+        18,
+        16,
+        14,
+        12
+      ],
+      "mana_costs": [
+        100,
+        110,
+        120,
+        130
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "hammer_damage",
+          "heading": "HAMMER DAMAGE:",
+          "values": [
+            50,
+            80,
+            110,
+            140
+          ]
+        },
+        {
+          "key": "projectile_radius",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "projectile_speed",
+          "heading": "",
+          "values": [
+            1600
+          ]
+        },
+        {
+          "key": "flare_debuff_duration",
+          "heading": "FIRE TRAIL DURATION:",
+          "values": [
+            2.5,
+            3,
+            3.5,
+            4
+          ]
+        },
+        {
+          "key": "flare_radius",
+          "heading": "FIRE TRAIL RADIUS:",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "move_slow",
+          "heading": "FIRE TRAIL MOVEMENT SLOW:",
+          "values": [
+            24,
+            28,
+            32,
+            36
+          ]
+        },
+        {
+          "key": "targets_allies",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "burn_damage",
+          "heading": "FIRE TRAIL BURN DPS:",
+          "values": [
+            20,
+            30,
+            40,
+            50
+          ]
+        },
+        {
+          "key": "burn_interval",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "pause_duration",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "hammer_aoe_radius",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "travel_speed_pct",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "return_anim_distance_threshold",
+          "heading": "",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "range",
+          "heading": "CAST RANGE:",
+          "values": [
+            700,
+            900,
+            1100,
+            1300
+          ]
+        },
+        {
+          "key": "hammer_solar_guardian_radius",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "hammer_solar_guardian_effectiveness_pct",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            110,
+            120,
+            130
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            18,
+            16,
+            14,
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "The hammer damages enemies both when thrown and when returning to Dawnbreaker.",
+        "Dawnbreaker's Converge movement distance is capped at the ability's cast range.",
+        "Starbreaker cannot be cast while the Hammer is out."
+      ],
+      "lore": "The Brightmaul is Valora's oldest companion and sole remaining connection to the glow of her creators."
+    },
+    {
+      "key": "dawnbreaker_luminosity",
+      "name": "Luminosity",
+      "description": "After a number of attacks, Dawnbreaker powers up, charging her next attack with a critical hit that heals all allied heroes within %heal_radius% units around her for a portion of attack damage dealt. Creeps and neutral enemies provide less healing. Allies are healed for %allied_healing_pct%%% of the amount.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "attack_count",
+          "heading": "ATTACKS REQUIRED:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "heal_radius",
+          "heading": "",
+          "values": [
+            650
+          ]
+        },
+        {
+          "key": "heal_pct",
+          "heading": "HEALING FROM HEROES:",
+          "values": [
+            35,
+            40,
+            45,
+            50
+          ]
+        },
+        {
+          "key": "heal_from_creeps",
+          "heading": "CREEP HEAL PENALTY:",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "bonus_damage",
+          "heading": "CRITICAL STRIKE DAMAGE:",
+          "values": [
+            125,
+            150,
+            175,
+            200
+          ]
+        },
+        {
+          "key": "allied_healing_pct",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "cooldown_reduction",
+          "heading": "COOLDOWN REDUCTION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "triggered_by_celestial_hammer",
+          "heading": "",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": "Dawnbreaker gets <span class=\"GameplayVariable\">2</span> Luminosity attacks every time she powers up.",
+      "shard_upgrade": null,
+      "notes": [
+        "Luminosity Heal is increased by sources of Lifesteal Amplification.",
+        "Break disables the gaining of new stacks."
+      ],
+      "lore": "Diminished in power without access to the Children's replenishing light, Valora can still recharge herself and her allies by creating order from the chaos which resides within each fight."
+    },
+    {
+      "key": "dawnbreaker_break_of_dawn",
+      "name": "Break of Dawn",
+      "description": "Whenever the sun comes out, Dawnbreaker gains bonus base damage and vision that decreases throughout the course of the day. If Dawnbreaker causes the day these bonuses are at full power for the entirety of that daytime.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "day_threshold",
+          "heading": "",
+          "values": [
+            0.006
+          ]
+        },
+        {
+          "key": "max_dmg_pct",
+          "heading": "MAX DAMAGE INCREASE:",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "max_vision_pct",
+          "heading": "MAX VISION INCREASE:",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "current_dmg_tooltip",
+          "heading": "CURRENT DAMAGE INCREASE:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "current_vision_tooltip",
+          "heading": "CURRENT VISION INCREASE:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "heal_amp",
+          "heading": "",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": "Break of Dawn provides healing amplification equal to the current damage increase.",
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "dawnbreaker_solar_guardian",
+      "name": "Solar Guardian",
+      "description": "CHANNELED - Dawnbreaker creates a pulsing effect at a location within %max_offset_distance% units of an allied hero anywhere on the map and creates daylight for %daytime_duration%s. Each pulse damages enemies and heals allies.<br><br>After a short duration, she flies to the target location and deals additional damage and stuns enemies upon landing.<br><br>Once channeled, Dawnbreaker cannot stop the ability.",
+      "max_level": 3,
+      "cooldowns": [
+        110,
+        100,
+        90
+      ],
+      "mana_costs": [
+        150,
+        200,
+        250
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.1,
+        0.1,
+        0.1,
+        0.1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "scepter_aura_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "miss_rate",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "base_heal",
+          "heading": "HEAL PER PULSE:",
+          "values": [
+            45,
+            70,
+            95
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "LAND RADIUS:",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "base_damage",
+          "heading": "DAMAGE PER PULSE:",
+          "values": [
+            30,
+            50,
+            70
+          ]
+        },
+        {
+          "key": "pulse_interval",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "land_damage",
+          "heading": "LANDING DAMAGE:",
+          "values": [
+            130,
+            160,
+            190
+          ]
+        },
+        {
+          "key": "land_stun_duration",
+          "heading": "LANDING STUN DURATION:",
+          "values": [
+            1.2,
+            1.4,
+            1.6
+          ]
+        },
+        {
+          "key": "max_offset_distance",
+          "heading": "",
+          "values": [
+            350
+          ]
+        },
+        {
+          "key": "scepter_channel_time",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "airtime_scepter_bonus",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "airtime_scepter_movement_speed",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "airtime_duration",
+          "heading": "AIR TIME:",
+          "values": [
+            0.8
+          ]
+        },
+        {
+          "key": "daytime_duration",
+          "heading": "",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "AbilityChannelTime",
+          "heading": "",
+          "values": [
+            1.7
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            150,
+            200,
+            250
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            110,
+            100,
+            90
+          ]
+        }
+      ],
+      "scepter_upgrade": "Solar Guardian's aura follows Dawnbreaker for %scepter_aura_duration%s after landing.",
+      "shard_upgrade": null,
+      "notes": [
+        "Pulse interval is %pulse_interval%s.",
+        "Total flight duration is %abilitychanneltime% seconds of channel time + %airtime_duration% of flight time.",
+        "Cannot be cast without the Hammer."
+      ],
+      "lore": "Only in defense of an ally will Valora relent to call upon the last reserves of her old powers that still allow cosmic flight."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_damage}% Luminosity Critical Strike Damage"
+    },
+    {
+      "slot": null,
+      "name": "Celestial Hammer Trail Grants Movement Speed to Allies"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_hammer_damage}% Celestial Hammer Trail/Hammer Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Solar Guardian Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_radius} Solar Guardian Radius"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_attack_count} Luminosity Attacks Required"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Starbreaker Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_range}% Celestial Hammer Cast Range/Speed"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

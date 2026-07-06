@@ -1,0 +1,1928 @@
+{
+  "id": 74,
+  "name": "Invoker",
+  "slug": "invoker",
+  "npc_name": "npc_dota_hero_invoker",
+  "primary_attribute": "int",
+  "attack_type": "Ranged",
+  "complexity": 3,
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Disabler",
+    "Escape",
+    "Pusher"
+  ],
+  "stats": {
+    "base_str": 19,
+    "str_gain": 2.5,
+    "base_agi": 14,
+    "agi_gain": 2,
+    "base_int": 22,
+    "int_gain": 4,
+    "damage_min": 41,
+    "damage_max": 47,
+    "attack_rate": 1.7,
+    "attack_range": 600,
+    "projectile_speed": 900,
+    "armor": 1.3333335,
+    "magic_resistance": 25,
+    "movement_speed": 280,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 538,
+    "health_regen": 2.15,
+    "max_mana": 339,
+    "mana_regen": 1.1
+  },
+  "lore": "In its earliest, and some would say most potent form, magic was primarily the art of memory. It required no technology, no wands or appurtenances other than the mind of the magician. All the trappings of ritual were merely mnemonic devices, meant to allow the practitioner to recall in rich detail the specific mental formulae that unlocked a spell's power.\r\n\t\t\t\t<br><br>The greatest mages in those days were the ones blessed with the greatest memories, and yet so complex were the invocations that all wizards were forced to specialize. The most devoted might hope in a lifetime to have adequate recollection of three spells--four at most. Ordinary wizards were content to know two, and it was not uncommon for a village mage to know only one--with even that requiring him to consult grimoires as an aid against forgetfulness on the rare occasions when he might be called to use it.\r\n\t\t\t\t<br><br>But among these early practitioners there was one exception, a genius of vast intellect and prodigious memory who came to be known as the Invoker. In his youth, the precocious wizard mastered not four, not five, not even seven incantations: He could command no fewer than ten spells, and cast them instantly. Many more he learned but found useless, and would practice once then purge from his mind forever, to make room for more practical invocations. One such spell was the Sempiternal Cantrap--a longevity spell of such power that those who cast it in the world's first days are among us still (unless they have been crushed to atoms).\r\n\t\t\t\t<br><br>Most of these quasi-immortals live quietly, afraid to admit their secret: But Invoker is not one to keep his gifts hidden. He is ancient, learned beyond all others, and his mind somehow still has space to contain an immense sense of his own worth...as well as the Invocations with which he amuses himself through the long slow twilight of the world's dying days.",
+  "hype": "With an intricate arsenal of <b>spells</b> at his disposal, Invoker can adapt to any battle situation. Each configuration of his <b>three spell components</b> yields of one of ten spells, meaning he's never without a way to destroy or escape his enemies.",
+  "abilities": [
+    {
+      "key": "invoker_quas",
+      "name": "Quas",
+      "description": "Allows manipulation of ice elements. Active <font color='#7998b5'>Quas</font> instances imbue Invoker with bonus hp regeneration. Passively grants bonus strength per level of <font color='#7998b5'>Quas</font>.",
+      "max_level": 8,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "max_level",
+          "heading": "MAX LEVEL:",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "hp_regen_per_instance",
+          "heading": "HP REGEN PER INSTANCE:",
+          "values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "key": "upgrade_at_level",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "strength_bonus",
+          "heading": "BONUS STRENGTH PER LEVEL:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "scepter_bonus_levels",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "facet_bonus_levels",
+          "heading": "",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": "Grants %scepter_bonus_levels% current and max level.",
+      "shard_upgrade": null,
+      "notes": [
+        "Invoker can only have 3 of any instance.",
+        "Will not break invisibility and can be cast while channeling."
+      ],
+      "lore": "A quelling cold."
+    },
+    {
+      "key": "invoker_wex",
+      "name": "Wex",
+      "description": "Allows manipulation of storm elements. Active <font color='#d671a9'>Wex</font> instances imbue Invoker with bonus movement and attack speed. Passively grants bonus agility per level of <font color='#d671a9'>Wex</font>.",
+      "max_level": 8,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "max_level",
+          "heading": "MAX LEVEL:",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "move_speed_per_instance",
+          "heading": "MOVE SPEED PER INSTANCE:",
+          "values": [
+            0.6,
+            1.2,
+            1.8,
+            2.4,
+            3,
+            3.6,
+            4.2,
+            4.8,
+            5.4
+          ]
+        },
+        {
+          "key": "attack_speed_per_instance",
+          "heading": "ATTACK SPEED PER INSTANCE:",
+          "values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "key": "upgrade_at_level",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "agility_bonus",
+          "heading": "BONUS AGILITY PER LEVEL:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "scepter_bonus_levels",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "facet_bonus_levels",
+          "heading": "",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": "Grants %scepter_bonus_levels% current and max level.",
+      "shard_upgrade": null,
+      "notes": [
+        "Invoker can only have 3 of any instance.",
+        "Will not break invisibility and can be cast while channeling."
+      ],
+      "lore": "A withering wind."
+    },
+    {
+      "key": "invoker_exort",
+      "name": "Exort",
+      "description": "Allows manipulation of fire elements. Active <font color='#cabe68'>Exort</font> instances imbue Invoker with bonus attack damage. Passively grants bonus intelligence per level of <font color='#cabe68'>Exort</font>.",
+      "max_level": 8,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "max_level",
+          "heading": "MAX LEVEL:",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "bonus_damage_per_instance",
+          "heading": "ATTACK DAMAGE PER INSTANCE:",
+          "values": [
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            14,
+            16,
+            18
+          ]
+        },
+        {
+          "key": "upgrade_at_level",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "intelligence_bonus",
+          "heading": "BONUS INTELLIGENCE PER LEVEL:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "scepter_bonus_levels",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "facet_bonus_levels",
+          "heading": "",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": "Grants %scepter_bonus_levels% current and max level.",
+      "shard_upgrade": null,
+      "notes": [
+        "Invoker can only have 3 of any instance.",
+        "Will not break invisibility and can be cast while channeling."
+      ],
+      "lore": "An exacting flame."
+    },
+    {
+      "key": "invoker_invoke",
+      "name": "Invoke",
+      "description": "Combines the properties of the elements currently being manipulated to create a new spell for Invoker to use. Invoke cooldown is reduced by %cooldown_reduction_per_orb% seconds for each orb level.  Invoker gains a bonus ability point for his orbs at levels %first_ability_level%, %second_ability_level%, and %third_ability_level%.<br><br>Invoker's vast knowledge of magic allows him to choose from Multiple Aghanim's Scepter and Shard options.  The items must be activated before they can be used, and cannot be changed after they are chosen.<br><br> Click the help button to see the list of possible spells.",
+      "max_level": 1,
+      "cooldowns": [
+        7
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "max_invoked_spells",
+          "heading": "MAX SPELLS:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "cooldown_reduction_per_orb",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "first_ability_level",
+          "heading": "",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "second_ability_level",
+          "heading": "",
+          "values": [
+            12
+          ]
+        },
+        {
+          "key": "third_ability_level",
+          "heading": "",
+          "values": [
+            18
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            7
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "The arrangement of instances does not matter.",
+        "Invoke will not cost mana or go on cooldown if the only effect is to swap the positions of existing spells.",
+        "Invoke will not break invisibility and can be cast while channeling."
+      ],
+      "lore": "So begins a new age of knowledge."
+    },
+    {
+      "key": "invoker_cold_snap",
+      "name": "Cold Snap",
+      "description": "Invoker draws the heat from an enemy, chilling them to their very core for a duration based on the level of <font color='#7998b5'>Quas</font>. The enemy will take damage and be briefly frozen. Further damage taken in this state will freeze the enemy again, dealing bonus damage. The enemy can only be frozen so often, but the freeze cooldown decreases based on the level of <font color='#7998b5'>Quas</font>.",
+      "max_level": 1,
+      "cooldowns": [
+        18
+      ],
+      "mana_costs": [
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1000
+      ],
+      "cast_points": [
+        0.05
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "COLD SNAP DURATION (<font color='#7998b5'>QUAS</font>):\n",
+          "values": [
+            3,
+            3.4,
+            3.8,
+            4.2,
+            4.6,
+            5,
+            5.4,
+            5.8,
+            6.2
+          ]
+        },
+        {
+          "key": "freeze_duration",
+          "heading": "FREEZE DURATION:",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "freeze_cooldown",
+          "heading": "FREEZE COOLDOWN (<font color='#7998b5'>QUAS</font>):",
+          "values": [
+            0.8,
+            0.77,
+            0.74,
+            0.71,
+            0.68,
+            0.65,
+            0.62,
+            0.59,
+            0.56
+          ]
+        },
+        {
+          "key": "freeze_damage",
+          "heading": "FREEZE DAMAGE (<font color='#7998b5'>QUAS</font>):",
+          "values": [
+            28,
+            36,
+            44,
+            52,
+            60,
+            68,
+            76,
+            84,
+            92
+          ]
+        },
+        {
+          "key": "freeze_heal",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "damage_trigger",
+          "heading": "",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.05
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            18
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "The freeze stun only triggers on damage greater than %damage_trigger% after reductions."
+      ],
+      "lore": "Sadron's Protracted Frisson."
+    },
+    {
+      "key": "invoker_ghost_walk",
+      "name": "Ghost Walk",
+      "description": "Invoker manipulates the ice and electrical energies around him, rendering his body invisible and gaining health and mana regen. The elemental imbalance created as a consequence slows nearby enemies based on the level of <font color='#7998b5'>Quas</font>, and slows Invoker as well based on the level of <font color='#d671a9'>Wex</font>.",
+      "max_level": 1,
+      "cooldowns": [
+        40
+      ],
+      "mana_costs": [
+        175
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.05
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            60
+          ]
+        },
+        {
+          "key": "area_of_effect",
+          "heading": "SLOW RADIUS:",
+          "values": [
+            450
+          ]
+        },
+        {
+          "key": "enemy_slow",
+          "heading": "ENEMY SLOW (<font color='#7998b5'>QUAS</font>):\n",
+          "values": [
+            -20,
+            -25,
+            -30,
+            -35,
+            -40,
+            -45,
+            -50,
+            -55,
+            -60
+          ]
+        },
+        {
+          "key": "self_slow",
+          "heading": "SELF SPEED (<font color='#d671a9'>WEX</font>):\n",
+          "values": [
+            -20,
+            -15,
+            -10,
+            -5,
+            0,
+            5,
+            10,
+            15,
+            20
+          ]
+        },
+        {
+          "key": "aura_fade_time",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "health_regen",
+          "heading": "HEALTH REGENERATION (<font color='#7998b5'>QUAS</font>):",
+          "values": [
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            14,
+            16,
+            18
+          ]
+        },
+        {
+          "key": "mana_regen",
+          "heading": "MANA REGENERATION (<font color='#d671a9'>WEX</font>):\n",
+          "values": [
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            14,
+            16,
+            18
+          ]
+        },
+        {
+          "key": "apply_ice_wall_debuff",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.05
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            175
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            40
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Ghost Walk now also applies the Ice Wall Damage Per Second to enemies in a larger radius.",
+      "notes": [
+        "The slow effect does not work on Spell Immune enemies."
+      ],
+      "lore": "Myrault's Hinder-Gast."
+    },
+    {
+      "key": "invoker_tornado",
+      "name": "Tornado",
+      "description": "Unleashes a fast moving tornado that picks up enemy units in its path, suspending them helplessly in the air shortly before allowing them to plummet to their doom. Travels further based on the level of <font color='#d671a9'>Wex</font>. Holds enemies in the air for a duration based on the level of <font color='#7998b5'>Quas</font>. Deals base damage plus added damage based on levels in <font color='#d671a9'>Wex</font>.\n\nDISPEL TYPE: Basic Dispel",
+      "max_level": 1,
+      "cooldowns": [
+        27
+      ],
+      "mana_costs": [
+        140
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        2000
+      ],
+      "cast_points": [
+        0.05
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "travel_distance",
+          "heading": "TRAVEL DISTANCE (<font color='#d671a9'>WEX</font>):\n",
+          "values": [
+            1500,
+            1800,
+            2100,
+            2400,
+            2700,
+            3000,
+            3300,
+            3600,
+            3900
+          ]
+        },
+        {
+          "key": "travel_speed",
+          "heading": "",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "area_of_effect",
+          "heading": "RADIUS:",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "vision_distance",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "end_vision_duration",
+          "heading": "",
+          "values": [
+            1.75
+          ]
+        },
+        {
+          "key": "lift_duration",
+          "heading": "LIFT TIME (<font color='#7998b5'>QUAS</font>):\n",
+          "values": [
+            1.2,
+            1.4,
+            1.6,
+            1.8,
+            2,
+            2.2,
+            2.4,
+            2.6,
+            2.8
+          ]
+        },
+        {
+          "key": "base_damage",
+          "heading": "BASE DAMAGE:",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "wex_damage",
+          "heading": "ADDED DAMAGE (<font color='#d671a9'>WEX</font>):",
+          "values": [
+            45,
+            90,
+            135,
+            180,
+            225,
+            270,
+            315,
+            360,
+            405
+          ]
+        },
+        {
+          "key": "twister_distance_interval",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "twister_radius",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "twister_damage",
+          "heading": "TWISTER DAMAGE PER SECOND (<font color='#d671a9'>WEX</font>):",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "twister_duration",
+          "heading": "TWISTER DURATION (<font color='#7998b5'>QUAS</font>):",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "twister_tick_rate",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            2000
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.05
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            140
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            27
+          ]
+        }
+      ],
+      "scepter_upgrade": "Tornado spawns twisters along its path. They persist for Tornado's duration plus additional time based on <font color='#7998b5'>Quas</font>, dealing damage based on <font color='#d671a9'>Wex</font> in a %twister_radius% radius every %twister_tick_rate% seconds. (half damage to creeps.)",
+      "shard_upgrade": null,
+      "notes": [
+        "Units are invulnerable while affected by Tornado, and the damage is dealt when landing."
+      ],
+      "lore": "Claws of Tornarus."
+    },
+    {
+      "key": "invoker_emp",
+      "name": "E.M.P.",
+      "description": "Invoker builds up a charge of electromagnetic energy at a targeted location which automatically detonates after %delay% seconds. The detonation covers an area, draining mana based on the level of <font color='#d671a9'>Wex</font>. Deals damage for each point of mana drained.  If EMP drains mana from an enemy hero, Invoker gains %self_mana_restore_pct%%% of the mana drained.",
+      "max_level": 1,
+      "cooldowns": [
+        27
+      ],
+      "mana_costs": [
+        125
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        950
+      ],
+      "cast_points": [
+        0.05
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "delay",
+          "heading": "CHARGE TIME:",
+          "values": [
+            2.9
+          ]
+        },
+        {
+          "key": "area_of_effect",
+          "heading": "RADIUS:",
+          "values": [
+            675
+          ]
+        },
+        {
+          "key": "mana_burned",
+          "heading": "MAX MANA BURNED (<font color='#d671a9'>WEX</font>):\n",
+          "values": [
+            100,
+            175,
+            250,
+            325,
+            400,
+            475,
+            550,
+            625,
+            700
+          ]
+        },
+        {
+          "key": "damage_per_mana_pct",
+          "heading": "BURN DAMAGE:",
+          "values": [
+            60
+          ]
+        },
+        {
+          "key": "drag_speed",
+          "heading": "DRAG SPEED:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "self_mana_restore_pct",
+          "heading": "",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            950
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.05
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            125
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            27
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Increases damage for each point of mana drained by EMP and pulls enemy units into the EMP's center at %drag_speed% units per second.",
+      "notes": [
+        "Will not affect cycloned units (Tornado or Eul's Scepter of Divinity)."
+      ],
+      "lore": "Endoleon's Malevolent Perturbation."
+    },
+    {
+      "key": "invoker_alacrity",
+      "name": "Alacrity",
+      "description": "Invoker infuses an ally with an immense surge of energy, increasing their attack speed based on the level of <font color='#d671a9'>Wex</font> and their damage based on the level of <font color='#cabe68'>Exort</font>.",
+      "max_level": 1,
+      "cooldowns": [
+        15
+      ],
+      "mana_costs": [
+        75
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        700
+      ],
+      "cast_points": [
+        0.05
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bonus_attack_speed",
+          "heading": "BONUS ATTACK SPEED (<font color='#d671a9'>WEX</font>):\n",
+          "values": [
+            10,
+            22,
+            34,
+            46,
+            58,
+            70,
+            82,
+            94,
+            106
+          ]
+        },
+        {
+          "key": "bonus_damage",
+          "heading": "BONUS DAMAGE (<font color='#cabe68'>EXORT</font>):\n",
+          "values": [
+            10,
+            22,
+            34,
+            46,
+            58,
+            70,
+            82,
+            94,
+            106
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            9
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.05
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            15
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Gaster's Mandate of Impetuous Strife."
+    },
+    {
+      "key": "invoker_chaos_meteor",
+      "name": "Chaos Meteor",
+      "description": "Invoker pulls a flaming meteor from space onto the targeted location. Upon landing, the meteor rolls forward, constantly dealing damage based on the level of <font color='#cabe68'>Exort</font>, and rolling further based on the level of <font color='#d671a9'>Wex</font>. Units hit by the meteor will also be set on fire for a short time, receiving additional damage based on the level of <font color='#cabe68'>Exort</font>.",
+      "max_level": 1,
+      "cooldowns": [
+        50
+      ],
+      "mana_costs": [
+        200
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        700
+      ],
+      "cast_points": [
+        0.05
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "land_time",
+          "heading": "IMPACT DELAY:",
+          "values": [
+            1.3
+          ]
+        },
+        {
+          "key": "area_of_effect",
+          "heading": "RADIUS:",
+          "values": [
+            275
+          ]
+        },
+        {
+          "key": "travel_distance",
+          "heading": "TRAVEL DISTANCE (<font color='#d671a9'>WEX</font>):\n",
+          "values": [
+            465,
+            615,
+            780,
+            930,
+            1095,
+            1245,
+            1410,
+            1575,
+            1725
+          ]
+        },
+        {
+          "key": "travel_speed",
+          "heading": "",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "damage_interval",
+          "heading": "CONTACT DAMAGE TICK:",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "vision_distance",
+          "heading": "",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "end_vision_duration",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "main_damage",
+          "heading": "CONTACT DAMAGE (<font color='#cabe68'>EXORT</font>):\n",
+          "values": [
+            55,
+            75,
+            95,
+            115,
+            135,
+            155,
+            175,
+            195,
+            215
+          ]
+        },
+        {
+          "key": "burn_duration",
+          "heading": "BURN DURATION:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "burn_dps",
+          "heading": "BURN DAMAGE PER SECOND (<font color='#cabe68'>EXORT</font>):\n",
+          "values": [
+            10,
+            15,
+            20,
+            25,
+            30,
+            35,
+            40,
+            45,
+            50
+          ]
+        },
+        {
+          "key": "meteor_count",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.05
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            50
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Deals main damage to enemy units under meteor every %damage_interval% seconds and burns enemies for smaller damage over %burn_duration% seconds.",
+        "The meteor moves at a speed of %travel_speed%."
+      ],
+      "lore": "Tarak's Descent of Fire."
+    },
+    {
+      "key": "invoker_sun_strike",
+      "name": "Sun Strike",
+      "description": "Sends a catastrophic ray of fierce energy from the sun at any targeted location, incinerating all enemies standing beneath it once it reaches the earth. Deals damage based on the level of <font color='#cabe68'>Exort</font>, however this damage is spread evenly over all enemies hit.",
+      "max_level": 1,
+      "cooldowns": [
+        23
+      ],
+      "mana_costs": [
+        175
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.05
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "delay",
+          "heading": "DELAY:",
+          "values": [
+            1.7
+          ]
+        },
+        {
+          "key": "area_of_effect",
+          "heading": "RADIUS:",
+          "values": [
+            175
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE (<font color='#cabe68'>EXORT</font>):\n",
+          "values": [
+            175,
+            225,
+            275,
+            325,
+            375,
+            425,
+            475,
+            525,
+            575
+          ]
+        },
+        {
+          "key": "vision_distance",
+          "heading": "",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "vision_duration",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "cataclysm_count",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "cataclysm_cooldown",
+          "heading": "",
+          "values": [
+            90
+          ]
+        },
+        {
+          "key": "cataclysm_min_range",
+          "heading": "",
+          "values": [
+            90
+          ]
+        },
+        {
+          "key": "cataclysm_max_range",
+          "heading": "",
+          "values": [
+            180
+          ]
+        },
+        {
+          "key": "cataclysm_damage_pct",
+          "heading": "",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "create_forged_spirit_on_hero_damage",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.05
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            175
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            23
+          ]
+        }
+      ],
+      "scepter_upgrade": "Creates a Cataclysm when Sun Strike is double tapped. Puts it on a %cataclysm_cooldown% second cooldown. Creates %cataclysm_count% visible %cataclysm_damage_pct%%% damage Sun Strikes within %cataclysm_min_range%-%cataclysm_max_range% range of each enemy hero.",
+      "shard_upgrade": "If Sun Strike damages an enemy Hero, a Forge Spirit of current level is created at the location.",
+      "notes": [
+        "Gives vision of the target area before the strike.",
+        "Invoker gains experience with kills made from Sun Strike, even if made from outside of experience range."
+      ],
+      "lore": "Harlek's Incantation of Incineration."
+    },
+    {
+      "key": "invoker_forge_spirit",
+      "name": "Forge Spirit",
+      "description": "Invoker forges a spirit embodying the strength of fire and fortitude of ice. Damage and armor are based on the level of <font color='#cabe68'>Exort</font> while attack range, health, and duration are based on the level of <font color='#7998b5'>Quas</font>. The elemental's scorching attack is capable of melting the armor of enemy heroes. The number of spirits spawned is determined by the lower level of <font color='#7998b5'>Quas</font> and <font color='#cabe68'>Exort</font>.",
+      "max_level": 1,
+      "cooldowns": [
+        27
+      ],
+      "mana_costs": [
+        75
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.05
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "spirit_damage",
+          "heading": "DAMAGE (<font color='#cabe68'>EXORT</font>):\n",
+          "values": [
+            20,
+            30,
+            40,
+            50,
+            60,
+            70,
+            80,
+            90,
+            100
+          ]
+        },
+        {
+          "key": "spirit_mana",
+          "heading": "",
+          "values": [
+            100,
+            150,
+            200,
+            250,
+            300,
+            350,
+            400,
+            450,
+            500
+          ]
+        },
+        {
+          "key": "spirit_armor",
+          "heading": "ARMOR (<font color='#cabe68'>EXORT</font>):\n",
+          "values": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "key": "spirit_attack_range",
+          "heading": "ATTACK RANGE (<font color='#7998b5'>QUAS</font>):\n",
+          "values": [
+            305,
+            360,
+            415,
+            470,
+            525,
+            580,
+            635,
+            690,
+            745
+          ]
+        },
+        {
+          "key": "spirit_hp",
+          "heading": "HEALTH (<font color='#7998b5'>QUAS</font>):\n",
+          "values": [
+            300,
+            400,
+            500,
+            600,
+            700,
+            800,
+            900,
+            1000,
+            1100
+          ]
+        },
+        {
+          "key": "spirit_duration",
+          "heading": "DURATION (<font color='#7998b5'>QUAS</font>):\n",
+          "values": [
+            24,
+            30,
+            36,
+            42,
+            48,
+            54,
+            60,
+            66,
+            72
+          ]
+        },
+        {
+          "key": "armor_per_attack",
+          "heading": "",
+          "values": [
+            0.8,
+            0.9,
+            1,
+            1.1,
+            1.2,
+            1.3,
+            1.4,
+            1.5,
+            1.6
+          ]
+        },
+        {
+          "key": "extra_spirit_count_quas",
+          "heading": "SPIRIT COUNT (<font color='#7998b5'>QUAS</font>):\n",
+          "values": [
+            1,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "key": "extra_spirit_count_exort",
+          "heading": "SPIRIT COUNT (<font color='#cabe68'>EXORT</font>):\n",
+          "values": [
+            1,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.05
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            27
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Casting this ability will replace currently summoned Forged Spirits."
+      ],
+      "lore": "Culween's Most Cunning Fabrications."
+    },
+    {
+      "key": "invoker_ice_wall",
+      "name": "Ice Wall",
+      "description": "Generates a wall of solid ice directly in front of Invoker for a duration based on the level of <font color='#7998b5'>Quas</font>. The bitter cold emanating from it greatly slows nearby enemies based on the level of <font color='#7998b5'>Quas</font> and deals damage each second based on the level of <font color='#cabe68'>Exort</font>.",
+      "max_level": 1,
+      "cooldowns": [
+        23
+      ],
+      "mana_costs": [
+        125
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.05
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "WALL DURATION (<font color='#7998b5'>QUAS</font>):\n",
+          "values": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "key": "slow",
+          "heading": "MOVEMENT SLOW (<font color='#7998b5'>QUAS</font>):\n",
+          "values": [
+            -30,
+            -45,
+            -60,
+            -75,
+            -90,
+            -105,
+            -120,
+            -135,
+            -150
+          ]
+        },
+        {
+          "key": "slow_duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "damage_per_second",
+          "heading": "DAMAGE PER SECOND (<font color='#cabe68'>EXORT</font>):\n",
+          "values": [
+            30,
+            36,
+            42,
+            48,
+            54,
+            60,
+            66,
+            72,
+            78
+          ]
+        },
+        {
+          "key": "tick_interval",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "wall_place_distance",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "wall_total_length",
+          "heading": "WALL LENGTH:",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "wall_width",
+          "heading": "WALL WIDTH:",
+          "values": [
+            105
+          ]
+        },
+        {
+          "key": "vector_cast_range",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "glacier_formation_delay",
+          "heading": "",
+          "values": [
+            1.3
+          ]
+        },
+        {
+          "key": "glacier_formation_speed",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "root_delay",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "root_duration",
+          "heading": "ROOT DURATION (<font color='#7998b5'>QUAS</font>):",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "root_damage",
+          "heading": "ROOT DAMAGE (<font color='#7998b5'>QUAS</font>):",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.05
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            125
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            23
+          ]
+        }
+      ],
+      "scepter_upgrade": "Ice Wall becomes Ice Floe, Vector Targeted. After a delay, Ice Floe appears as a %wall_width% width Ice Wall. Enemy heroes in its area for longer than %root_delay% seconds become rooted and take magic damage based on <font color='#7998b5'>Quas</font>.",
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Killing Wall of Koryx."
+    },
+    {
+      "key": "invoker_deafening_blast",
+      "name": "Deafening Blast",
+      "description": "Invoker unleashes a mighty sonic wave in front of him, dealing damage to any enemy unit it collides with based on the level of <font color='#cabe68'>Exort</font>. The sheer impact from the blast is enough to knock those enemy units back for a duration based on the level of <font color='#7998b5'>Quas</font>, then disarm their attacks for a duration based on the level of <font color='#d671a9'>Wex</font>.",
+      "max_level": 1,
+      "cooldowns": [
+        36
+      ],
+      "mana_costs": [
+        250
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1000
+      ],
+      "cast_points": [
+        0.05
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "travel_distance",
+          "heading": "TRAVEL DISTANCE:",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "travel_speed",
+          "heading": "",
+          "values": [
+            1100
+          ]
+        },
+        {
+          "key": "radius_start",
+          "heading": "",
+          "values": [
+            175
+          ]
+        },
+        {
+          "key": "radius_end",
+          "heading": "",
+          "values": [
+            225
+          ]
+        },
+        {
+          "key": "end_vision_duration",
+          "heading": "",
+          "values": [
+            1.75
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE (<font color='#cabe68'>EXORT</font>):\n",
+          "values": [
+            70,
+            110,
+            150,
+            190,
+            230,
+            270,
+            310,
+            350,
+            390
+          ]
+        },
+        {
+          "key": "knockback_duration",
+          "heading": "KNOCKBACK DURATION (<font color='#7998b5'>QUAS</font>):\n",
+          "values": [
+            1.1,
+            1.2,
+            1.3,
+            1.4,
+            1.5,
+            1.6,
+            1.7,
+            1.8,
+            1.9
+          ]
+        },
+        {
+          "key": "disarm_duration",
+          "heading": "DISARM DURATION (<font color='#d671a9'>WEX</font>):\n",
+          "values": [
+            1.5,
+            2,
+            2.5,
+            3,
+            3.5,
+            4,
+            4.5,
+            5,
+            5.5
+          ]
+        },
+        {
+          "key": "radial_count",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.05
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            250
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            36
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Buluphont's Aureal Incapacitator."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_per_second} Ice Wall DPS"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Tornado Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_attack_speed} Alacrity Damage/Speed"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Cold Snap Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_meteor_count} Chaos Meteors"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_armor_removed}% Forged Spirit Armor Reduction"
+    },
+    {
+      "slot": null,
+      "name": "Radial Deafening Blast"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_move_speed_per_instance}x Quas/Wex/Exort Active Bonuses"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

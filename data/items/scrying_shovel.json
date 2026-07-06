@@ -1,0 +1,53 @@
+{
+  "id": 4301,
+  "name": "Scrying Shovel",
+  "slug": "scrying_shovel",
+  "internal_key": "item_ofrenda_shovel",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Dig</h1>Search the map for Offerings to the dead.",
+  "notes": null,
+  "cooldowns": [
+    8
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    250
+  ],
+  "special_values": [
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        250
+      ]
+    },
+    {
+      "key": "AbilityChannelTime",
+      "heading": "",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "AbilityCastPoint",
+      "heading": "",
+      "values": [
+        0.1
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        8
+      ]
+    }
+  ],
+  "lore": "You don't know where it came from, but it knows where you need to go. All you need to do is dig.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "id": 1806,
+  "name": "Parasma",
+  "slug": "parasma",
+  "internal_key": "item_devastator",
+  "cost": 5975,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Witch Blade</h1> Causes your next attack to have true strike, apply a poison for %slow_duration% seconds, slowing by %slow%%% and dealing %int_damage_multiplier%x your intelligence as damage every second.\n\n<h1>Passive: Magic Corruption</h1> Your attacks reduce the enemy's Magic resistance by %active_mres_reduction%%% for %passive_cooldown% seconds.",
+  "notes": null,
+  "cooldowns": [
+    7
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_intellect",
+      "heading": "+$int",
+      "values": [
+        40
+      ]
+    },
+    {
+      "key": "bonus_attack_speed",
+      "heading": "+$attack",
+      "values": [
+        40
+      ]
+    },
+    {
+      "key": "bonus_armor",
+      "heading": "+$armor",
+      "values": [
+        7
+      ]
+    },
+    {
+      "key": "bonus_mana_regen",
+      "heading": "+$mana_regen",
+      "values": [
+        1.5
+      ]
+    },
+    {
+      "key": "projectile_speed",
+      "heading": "+$projectile_speed",
+      "values": [
+        300
+      ]
+    },
+    {
+      "key": "int_damage_multiplier",
+      "heading": "",
+      "values": [
+        0.75
+      ]
+    },
+    {
+      "key": "slow",
+      "heading": "",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "slow_duration",
+      "heading": "",
+      "values": [
+        4
+      ]
+    },
+    {
+      "key": "active_mres_reduction",
+      "heading": "",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "passive_cooldown",
+      "heading": "",
+      "values": [
+        4
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        7
+      ]
+    }
+  ],
+  "lore": "Warning: There is no antidote if picked up by the wrong end.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

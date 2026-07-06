@@ -1,0 +1,60 @@
+{
+  "id": 220,
+  "name": "Boots of Travel 2",
+  "slug": "boots_of_travel_2",
+  "internal_key": "item_travel_boots_2",
+  "cost": 4500,
+  "neutral_tier": null,
+  "description": "<h1>Upgrade: Town Portal Scroll</h1>Upgrades your Town Portal Scroll, allowing it to target units and heroes, reduces cooldown, channel time and does not consume a charge on usage. \nMovement speed bonuses from multiple pairs of boots do not stack.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_movement_speed",
+      "heading": "+$move_speed",
+      "values": [
+        110
+      ]
+    },
+    {
+      "key": "maximum_distance",
+      "heading": "",
+      "values": [
+        800
+      ]
+    },
+    {
+      "key": "vision_radius",
+      "heading": "",
+      "values": [
+        200
+      ]
+    },
+    {
+      "key": "tp_cooldown",
+      "heading": "TOWN PORTAL SCROLL COOLDOWN:",
+      "values": [
+        40
+      ]
+    },
+    {
+      "key": "tp_channel_time",
+      "heading": "TOWN PORTAL SCROLL CHANNEL TIME:",
+      "values": [
+        2
+      ]
+    }
+  ],
+  "lore": "Winged boots that grant omnipresence.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": 990,
+  "name": "Eye of the Vizier",
+  "slug": "eye_of_the_vizier",
+  "internal_key": "item_eye_of_the_vizier",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "cast_range_bonus",
+      "heading": "+$cast_range",
+      "values": [
+        125,
+        135
+      ]
+    },
+    {
+      "key": "bonus_mana_regen",
+      "heading": "+$mana_regen",
+      "values": [
+        1,
+        1.5
+      ]
+    },
+    {
+      "key": "mana_reduction_pct",
+      "heading": "-<font color='#e03e2e'>Max Mana</font>",
+      "values": [
+        15
+      ]
+    }
+  ],
+  "lore": "The ring of a cunning court mage who imprisoned a cadre of enemies to serve as his personal mana reserve.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

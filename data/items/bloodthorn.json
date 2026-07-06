@@ -1,0 +1,130 @@
+{
+  "id": 250,
+  "name": "Bloodthorn",
+  "slug": "bloodthorn",
+  "internal_key": "item_bloodthorn",
+  "cost": 6400,
+  "neutral_tier": null,
+  "description": "<h1>Active: Soul Rend</h1> Silences a target for %silence_duration% seconds. At the end of the silence, an additional %silence_damage_percent%%% of all damage taken during the silence will be dealt to the target as magical damage.<br><br>All attacks on the silenced target will deal additional damage equal to %proc_damage_heroes% if the attacker is a hero, and %proc_damage_creeps%, if the attacker is a creep. Provides True Strike for your attacks and attacks from your controlled units against the silenced target.\n\n<h1>Passive: Pierce</h1>Grants each attack a %proc_chance%%% chance to pierce through evasion and deal %passive_proc_damage% bonus magical damage.",
+  "notes": null,
+  "cooldowns": [
+    15
+  ],
+  "mana_costs": [
+    150
+  ],
+  "cast_ranges": [
+    900
+  ],
+  "special_values": [
+    {
+      "key": "bonus_intellect",
+      "heading": "+$int",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "bonus_attack_speed",
+      "heading": "+$attack",
+      "values": [
+        70
+      ]
+    },
+    {
+      "key": "bonus_mana_regen",
+      "heading": "+$mana_regen",
+      "values": [
+        4
+      ]
+    },
+    {
+      "key": "silence_duration",
+      "heading": "",
+      "values": [
+        5
+      ]
+    },
+    {
+      "key": "silence_damage_percent",
+      "heading": "",
+      "values": [
+        60
+      ]
+    },
+    {
+      "key": "bonus_damage",
+      "heading": "+$damage",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        6
+      ]
+    },
+    {
+      "key": "spell_amp_debuff",
+      "heading": "",
+      "values": [
+        35
+      ]
+    },
+    {
+      "key": "proc_damage_heroes",
+      "heading": "",
+      "values": [
+        50
+      ]
+    },
+    {
+      "key": "proc_damage_creeps",
+      "heading": "",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "passive_proc_damage",
+      "heading": "",
+      "values": [
+        60
+      ]
+    },
+    {
+      "key": "proc_chance",
+      "heading": "",
+      "values": [
+        40
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        900
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        150
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        15
+      ]
+    }
+  ],
+  "lore": "A reviled blade that bites deeper with each wriggle of its victim's final throes.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,688 @@
+{
+  "id": 44,
+  "name": "Phantom Assassin",
+  "slug": "phantom_assassin",
+  "npc_name": "npc_dota_hero_phantom_assassin",
+  "primary_attribute": "agi",
+  "attack_type": "Melee",
+  "complexity": 1,
+  "roles": [
+    "Carry",
+    "Escape"
+  ],
+  "stats": {
+    "base_str": 19,
+    "str_gain": 2.2,
+    "base_agi": 22,
+    "agi_gain": 3.4,
+    "base_int": 15,
+    "int_gain": 1.7,
+    "damage_min": 57,
+    "damage_max": 59,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 4.666667,
+    "magic_resistance": 25,
+    "movement_speed": 310,
+    "turn_rate": 0.8,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 538,
+    "health_regen": 2.9,
+    "max_mana": 255,
+    "mana_regen": 0.75
+  },
+  "lore": "Through a process of divination, children are selected for upbringing by the Sisters of the Veil, an order that considers assassination a sacred part of the natural order.  The Veiled Sisters identify targets through meditation and oracular utterances.  They accept no contracts, and never seem to pursue targets for political or mercenary reasons. Their killings bear no relation to any recognizable agenda, and can seem to be completely random:  A figure of great power is no more likely to be eliminated than a peasant or a well digger. Whatever pattern the killings may contain, it is known only to them. They treat their victims as sacrifices, and death at their hand is considered an honor. Raised with no identity except that of their order, any Phantom Assassin can take the place of any other; their number is not known. Perhaps there are many, perhaps there are few. Nothing is known of what lies under the Phantom Veil. Except that this one, from time to time, when none are near enough to hear, is known to stir her veils with the forbidden whisper of her own name: Mortred.",
+  "hype": "The moment she finds her prey, Phantom Assassin strikes. Instantly closing in on a target, she effortlessly <b>dodges attacks</b> as she relentlessly cuts away at her foe. Without warning, any one of her attacks could prove suddenly and <b>brutally fatal.</b>",
+  "abilities": [
+    {
+      "key": "phantom_assassin_stifling_dagger",
+      "name": "Stifling Dagger",
+      "description": "Throws a dagger slowing the enemy unit's movement speed, dealing %base_damage%+%attack_factor_tooltip%%% of Phantom Assassin's attack damage as physical damage and applying attack effects from items and abilities.",
+      "max_level": 4,
+      "cooldowns": [
+        6
+      ],
+      "mana_costs": [
+        30
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        700,
+        850,
+        1000,
+        1150
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "move_slow",
+          "heading": "MOVE SLOW:",
+          "values": [
+            -50
+          ]
+        },
+        {
+          "key": "dagger_speed",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            2.1,
+            2.4,
+            2.7,
+            3
+          ]
+        },
+        {
+          "key": "base_damage",
+          "heading": "BASE DAMAGE:",
+          "values": [
+            65,
+            70,
+            75,
+            80
+          ]
+        },
+        {
+          "key": "attack_factor",
+          "heading": "",
+          "values": [
+            -70,
+            -55,
+            -40,
+            -25
+          ]
+        },
+        {
+          "key": "attack_factor_tooltip",
+          "heading": "ATTACK DAMAGE:",
+          "values": [
+            30,
+            45,
+            60,
+            75
+          ]
+        },
+        {
+          "key": "dagger_recast_time",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "dagger_secondary_reduce",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "extra_daggers",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            700,
+            850,
+            1000,
+            1150
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            6
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "If an attack effect is chance-based, the chance of its application will be the same as its chance to occur.",
+        "Spell-immune enemies are not affected by Stifling Dagger's slow.",
+        "Stifling Dagger grants vision around its location while it travels and upon impact."
+      ],
+      "lore": "The first skill learned by the Sisters of the Veil often signals an incoming hit."
+    },
+    {
+      "key": "phantom_assassin_phantom_strike",
+      "name": "Phantom Strike",
+      "description": "Teleports to a unit, friendly or enemy, and grants bonus attack speed while attacking if it's an enemy unit.",
+      "max_level": 4,
+      "cooldowns": [
+        0.1
+      ],
+      "mana_costs": [
+        35,
+        40,
+        45,
+        50
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        650,
+        750,
+        850,
+        950
+      ],
+      "cast_points": [
+        0.25
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bonus_attack_speed",
+          "heading": "BONUS ATTACK SPEED:",
+          "values": [
+            80,
+            120,
+            160,
+            200
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "creep_lifesteal_penalty",
+          "heading": "",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            650,
+            750,
+            850,
+            950
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "AbilityCharges",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "AbilityChargeRestoreTime",
+          "heading": "",
+          "values": [
+            21,
+            18,
+            15,
+            12
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            35,
+            40,
+            45,
+            50
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Mortred's silken veil is the last thing her unfortunate target sees."
+    },
+    {
+      "key": "phantom_assassin_blur",
+      "name": "Blur",
+      "description": "Phantom Assassin blurs her body, disjointing incoming projectiles, increasing her movement speed, causing her to be impossible to see until she comes near enemy heroes or towers.",
+      "max_level": 1,
+      "cooldowns": [
+        45
+      ],
+      "mana_costs": [
+        50
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        500
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "VANISH RADIUS:",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "fade_duration",
+          "heading": "VANISH BUFFER:",
+          "values": [
+            0.8
+          ]
+        },
+        {
+          "key": "active_movespeed_bonus",
+          "heading": "BONUS MOVEMENT SPEED:",
+          "values": [
+            9.5
+          ]
+        },
+        {
+          "key": "immediate_cast",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "purge_on_cast",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "cooldown_refund_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            45
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Decreases Cooldown. Any time Phantom Assassin gets a hero kill, her ability cooldowns advance %cooldown_refund_pct%%% of their max cooldown values.",
+      "notes": [
+        "Attacking Roshan with a regular attack will dispel Blur."
+      ],
+      "lore": "Meditation allows a Veiled Sister to carefully anticipate her opponents in combat."
+    },
+    {
+      "key": "phantom_assassin_fan_of_knives",
+      "name": "Fan of Knives",
+      "description": "Phantom Assassin releases sharp blades around her, dealing a percentage of each victim's max health on impact and applying Break.",
+      "max_level": 1,
+      "cooldowns": [
+        14
+      ],
+      "mana_costs": [
+        80
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.15
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "pct_health_damage_initial",
+          "heading": "MAX HEALTH DAMAGE:",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "pct_health_damage",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "degen",
+          "heading": "",
+          "values": [
+            -50
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "BREAK DURATION:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            550
+          ]
+        },
+        {
+          "key": "projectile_speed",
+          "heading": "",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "max_damage_initial",
+          "heading": "",
+          "values": [
+            -1
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.15
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            80
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            14
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "A sister is generally given a single name, but powerful names often have plentiful allies."
+    },
+    {
+      "key": "phantom_assassin_immaterial",
+      "name": "Immaterial",
+      "description": "Phantom Assassin focuses inward, increasing her ability to evade enemy attacks.\n\nStacks diminishingly with other sources of Evasion.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "evasion",
+          "heading": "BONUS EVASION:",
+          "values": [
+            25,
+            35,
+            45,
+            55
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "phantom_assassin_coup_de_grace",
+      "name": "Coup de Grace",
+      "description": "Phantom Assassin refines her combat abilities, acquiring a chance of gaining Deadly Focus with each attack. When attacking with Deadly Focus, Phantom Assassin will consume the buff and guarantee a critical hit. Stifling Dagger has a bonus chance to cause Deadly Focus.",
+      "max_level": 3,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "crit_chance",
+          "heading": "CHANCE OF DEADLY FOCUS:",
+          "values": [
+            17
+          ]
+        },
+        {
+          "key": "dagger_crit_chance",
+          "heading": "DAGGER CHANCE OF DEADLY FOCUS:",
+          "values": [
+            34
+          ]
+        },
+        {
+          "key": "crit_bonus",
+          "heading": "CRITICAL DAMAGE:",
+          "values": [
+            200,
+            325,
+            450
+          ]
+        },
+        {
+          "key": "attacks_to_proc",
+          "heading": "ATTACKS TO TRIGGER:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "attacks_to_proc_creeps",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DEADLY FOCUS DURATION:",
+          "values": [
+            6,
+            8,
+            10
+          ]
+        },
+        {
+          "key": "two_tooltip",
+          "heading": "",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "A divine strike, Mortred honors her opponent by choosing them for death."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_duration}s Phantom Strike Duration"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Stifling Dagger Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_evasion}% Immaterial Evasion"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_attack_factor}% Stifling Dagger Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_AbilityCastRange} Phantom Strike Cast Range"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_attack_speed} Phantom Strike Attack Speed"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_crit_chance}% Coup de Grace chance"
+    },
+    {
+      "slot": null,
+      "name": "Triple Strike Stifling Dagger"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,637 @@
+{
+  "id": 4,
+  "name": "Bloodseeker",
+  "slug": "bloodseeker",
+  "npc_name": "npc_dota_hero_bloodseeker",
+  "primary_attribute": "agi",
+  "attack_type": "Melee",
+  "complexity": 1,
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Disabler",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 24,
+    "str_gain": 2.7,
+    "base_agi": 24,
+    "agi_gain": 3.1,
+    "base_int": 17,
+    "int_gain": 2,
+    "damage_min": 59,
+    "damage_max": 65,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 6,
+    "magic_resistance": 25,
+    "movement_speed": 285,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 648,
+    "health_regen": 2.65,
+    "max_mana": 279,
+    "mana_regen": 0.85
+  },
+  "lore": "Strygwyr the Bloodseeker is a ritually sanctioned hunter, Hound of the Flayed Twins, sent down from the mist-shrouded peaks of Xhacatocatl in search of blood. The Flayed Ones require oceanic amounts of blood to keep them sated and placated, and would soon drain their mountain empire of its populace if the priests of the high plateaus did not appease them. Strygwyr therefore goes out in search of carnage. The vital energy of any blood he lets, flows immediately to the Twins through the sacred markings on his weapons and armor. Over the years, he has come to embody the energy of a vicious hound; in battle he is savage as a jackal. Beneath the Mask of the Bloodseeker, in the rush of bloody quenching, it is said that you can sometime see the features of the Flayers taking direct possession of their Hound.",
+  "hype": "Bloodseeker forces difficult decisions on his enemies. Able to drive his foes to a retreat by bathing a large area with a <b>damaging ritual</b>, his gruesome ultimate asks his opponents to <b>hold still, or die.</b>",
+  "abilities": [
+    {
+      "key": "bloodseeker_bloodrage",
+      "name": "Bloodrage",
+      "description": "Drives Bloodseeker into a bloodthirsty rage which causes him to attack faster and deal more spell damage at the cost of a percentage of his health per second.",
+      "max_level": 4,
+      "cooldowns": [
+        14,
+        12,
+        10,
+        8
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "attack_speed",
+          "heading": "ATTACK SPEED:",
+          "values": [
+            55,
+            80,
+            105,
+            130
+          ]
+        },
+        {
+          "key": "spell_amp",
+          "heading": "SPELL AMPLIFICATION:",
+          "values": [
+            15,
+            20,
+            25,
+            30
+          ]
+        },
+        {
+          "key": "damage_pct",
+          "heading": "MAX HEALTH DAMAGE PER SECOND:",
+          "values": [
+            1.2
+          ]
+        },
+        {
+          "key": "max_health_dmg_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "can_silence",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            14,
+            12,
+            10,
+            8
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Bloodseeker's Bloodrage attacks now deal %max_health_dmg_pct%%% of the target's max health as <font color=\"#d8ae53\">Pure</font> damage.",
+      "notes": [
+        "Damage dealt to Bloodseeker is non-lethal."
+      ],
+      "lore": "Strygwyr shares his animalistic thirst for bloodshed."
+    },
+    {
+      "key": "bloodseeker_blood_bath",
+      "name": "Blood Rite",
+      "description": "Bloodseeker baptizes an area in sacred blood. After %delay_plus_castpoint_tooltip% seconds the ritual completes, causing any enemies caught in the area to take damage and become silenced.",
+      "max_level": 4,
+      "cooldowns": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "mana_costs": [
+        90,
+        100,
+        110,
+        120
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1500
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RITUAL AREA:",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "silence_duration",
+          "heading": "SILENCE DURATION:",
+          "values": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            100,
+            155,
+            210,
+            265
+          ]
+        },
+        {
+          "key": "delay",
+          "heading": "",
+          "values": [
+            2.6
+          ]
+        },
+        {
+          "key": "delay_plus_castpoint_tooltip",
+          "heading": "",
+          "values": [
+            2.9
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1500
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            90,
+            100,
+            110,
+            120
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            15,
+            14,
+            13,
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Total time is a %delay% second delay plus a %abilitycastpoint% second cast time."
+      ],
+      "lore": "The Flayed Twins are ever willing to aid those who spill blood upon the field of battle."
+    },
+    {
+      "key": "bloodseeker_thirst",
+      "name": "Thirst",
+      "description": "Bloodseeker is invigorated by the wounds of his enemies, gaining bonus movement speed when an enemy hero's health falls below %min_bonus_pct%%%, with the bonuses increasing as their health falls further. If an enemy hero's health falls below %invis_threshold_pct%%%, he will also gain vision and True Sight of that hero. Bonuses stack per hero. Unlocks max movement speed for Bloodseeker.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "min_bonus_pct",
+          "heading": "THIRST HEALTH THRESHOLD:",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "bonus_movement_speed",
+          "heading": "MAX THIRST MOVE SPEED:",
+          "values": [
+            10,
+            20,
+            30,
+            40
+          ]
+        },
+        {
+          "key": "active_movement_speed",
+          "heading": "ACTIVE BONUS MOVE SPEED:",
+          "values": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "key": "active_duration",
+          "heading": "ACTIVE DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "inactive_penalty_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "sanguivore_multiplier",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "max_bonus_pct",
+          "heading": "",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "visibility_threshold_pct",
+          "heading": "VISIBILITY HEALTH THRESHOLD:",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "invis_threshold_pct",
+          "heading": "",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "linger_duration",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Not triggered by Illusions.",
+        "Max movement speed bonus occurs when an enemy's health is at or below %max_bonus_pct%%%.",
+        "Effects linger for %linger_duration% seconds if a target dies."
+      ],
+      "lore": "Strygwyr becomes frenzied when blood is spilled."
+    },
+    {
+      "key": "bloodseeker_sanguivore",
+      "name": "Sanguivore",
+      "description": "Bloodseeker restores some life when he kills a unit, equal to %base_heal% health plus a percentage of the units max health.<br><br>Restores for half values if an ally kills a nearby enemy hero.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "base_heal",
+          "heading": "",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "heal_hp_pct",
+          "heading": "MAX HEALTH HEAL:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "creep_lifesteal_reduction_pct",
+          "heading": "",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "half_bonus_aoe",
+          "heading": "HALF HEAL RADIUS:",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "barrier_decay_pct",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "max_shield_pct",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "pure_damage_lifesteal_pct",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Creeps lifesteal is reduced by %creep_lifesteal_reduction_pct%%%."
+      ],
+      "lore": null
+    },
+    {
+      "key": "bloodseeker_rupture",
+      "name": "Rupture",
+      "description": "Causes an enemy unit's skin to rupture, dealing initial damage based on its current health. If the unit moves, it takes damage based on the distance moved.",
+      "max_level": 3,
+      "cooldowns": [
+        75,
+        70,
+        65
+      ],
+      "mana_costs": [
+        125,
+        175,
+        225
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        800
+      ],
+      "cast_points": [
+        0.4
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "key": "movement_damage_pct",
+          "heading": "MOVE DAMAGE:",
+          "values": [
+            35,
+            45,
+            55
+          ]
+        },
+        {
+          "key": "hp_pct",
+          "heading": "HEALTH DAMAGE:",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "damage_cap_amount",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "knockback",
+          "heading": "PUSH DISTANCE:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "knockback_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "AbilityCharges",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            125,
+            175,
+            225
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            75,
+            70,
+            65
+          ]
+        }
+      ],
+      "scepter_upgrade": "Increases initial damage and grants %AbilityCharges% Rupture Charges.",
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "When the Bloodseeker hunts you, injuries become fatalities."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:value} Health"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_attack_speed} Bloodrage Attack Speed"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_damage_pct}% Bloodrage Max Health DPS"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Blood Rite Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_AbilityCastRange} Rupture Cast Range"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Agility"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_silence_duration}s Blood Rite Silence Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_movement_speed}% Max Thirst Move Speed"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

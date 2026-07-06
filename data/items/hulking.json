@@ -1,0 +1,46 @@
+{
+  "id": 1866,
+  "name": "Hulking",
+  "slug": "hulking",
+  "internal_key": "item_enhancement_hulking",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "max_health",
+      "heading": "+$health",
+      "values": [
+        5
+      ]
+    },
+    {
+      "key": "max_health_regen",
+      "heading": "+Max Health Regen",
+      "values": [
+        1.5
+      ]
+    },
+    {
+      "key": "attack_speed",
+      "heading": "-<font color='#e03e2e'>Attack Speed</font>",
+      "values": [
+        -30
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

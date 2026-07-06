@@ -1,0 +1,62 @@
+{
+  "id": 11,
+  "name": "Quelling Blade",
+  "slug": "quelling_blade",
+  "internal_key": "item_quelling_blade",
+  "cost": 100,
+  "neutral_tier": null,
+  "description": "<h1>Active: Chop Tree</h1> Destroy a target tree.  \n\n<h1>Passive: Quell</h1> Increases attack damage against non-hero units by %damage_bonus% for melee heroes, and %damage_bonus_ranged% for ranged.",
+  "notes": [
+    "Effects of multiple quelling blades do not stack."
+  ],
+  "cooldowns": [
+    4
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    350
+  ],
+  "special_values": [
+    {
+      "key": "damage_bonus",
+      "heading": "",
+      "values": [
+        8
+      ]
+    },
+    {
+      "key": "damage_bonus_ranged",
+      "heading": "",
+      "values": [
+        4
+      ]
+    },
+    {
+      "key": "quelling_range_tooltip",
+      "heading": "",
+      "values": [
+        350
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        350
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        4
+      ]
+    }
+  ],
+  "lore": "The axe of a fallen gnome, it allows you to effectively maneuver the forest.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

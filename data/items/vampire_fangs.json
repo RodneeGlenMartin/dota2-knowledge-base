@@ -1,0 +1,43 @@
+{
+  "id": 297,
+  "name": "Vampire Fangs",
+  "slug": "vampire_fangs",
+  "internal_key": "item_vampire_fangs",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "attack_lifesteal",
+      "heading": "+$lifesteal",
+      "values": [
+        12,
+        16,
+        20
+      ]
+    },
+    {
+      "key": "spell_lifesteal",
+      "heading": "+$spell_lifesteal",
+      "values": [
+        8,
+        12,
+        16
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

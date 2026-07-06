@@ -1,0 +1,39 @@
+{
+  "id": 309,
+  "name": "Mind Breaker",
+  "slug": "mind_breaker",
+  "internal_key": "item_mind_breaker",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Silence Strike</h1> The next attack silences the hit enemy for %duration% seconds.",
+  "notes": null,
+  "cooldowns": [
+    16
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        1.5
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        16
+      ]
+    }
+  ],
+  "lore": "A bewitching blade of indeterminate form capable of piercing the psyche of even the most willful foe.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

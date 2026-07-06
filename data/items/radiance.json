@@ -1,0 +1,74 @@
+{
+  "id": 137,
+  "name": "Radiance",
+  "slug": "radiance",
+  "internal_key": "item_radiance",
+  "cost": 4700,
+  "neutral_tier": null,
+  "description": "<h1>Toggle: Burn</h1> When active, scorches enemies for %aura_damage% magical damage per second. Illusions deal %aura_damage_illusions% magical damage per second.<br><br>Radius: %aura_radius%",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_damage",
+      "heading": "+$damage",
+      "values": [
+        55
+      ]
+    },
+    {
+      "key": "aura_damage",
+      "heading": "",
+      "values": [
+        60
+      ]
+    },
+    {
+      "key": "aura_damage_illusions",
+      "heading": "",
+      "values": [
+        35
+      ]
+    },
+    {
+      "key": "upgrade_day_vision",
+      "heading": "",
+      "values": [
+        250
+      ]
+    },
+    {
+      "key": "evasion",
+      "heading": "+$evasion",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "aura_radius",
+      "heading": "",
+      "values": [
+        650
+      ]
+    },
+    {
+      "key": "illusion_multiplier_pct",
+      "heading": "",
+      "values": [
+        100
+      ]
+    }
+  ],
+  "lore": "A divine weapon that causes damage and a bright burning effect that lays waste to nearby enemies.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

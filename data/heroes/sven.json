@@ -1,0 +1,555 @@
+{
+  "id": 18,
+  "name": "Sven",
+  "slug": "sven",
+  "npc_name": "npc_dota_hero_sven",
+  "primary_attribute": "str",
+  "attack_type": "Melee",
+  "complexity": 1,
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Disabler",
+    "Durable",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 24,
+    "str_gain": 3.5,
+    "base_agi": 18,
+    "agi_gain": 2.2,
+    "base_int": 16,
+    "int_gain": 1.5,
+    "damage_min": 61,
+    "damage_max": 63,
+    "attack_rate": 1.9,
+    "attack_range": 150,
+    "projectile_speed": 0,
+    "armor": 3,
+    "magic_resistance": 25,
+    "movement_speed": 325,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 648,
+    "health_regen": 3.15,
+    "max_mana": 267,
+    "mana_regen": 0.8
+  },
+  "lore": "Sven is the bastard son of a Vigil Knight, born of a Pallid Meranth, raised in the Shadeshore Ruins.  With his father executed for violating the Vigil Codex, and his mother shunned by her wild race, Sven believes that honor is to be found in no social order, but only in himself.  After tending his mother through a lingering death, he offered himself as a novice to the Vigil Knights, never revealing his identity.  For thirteen years he studied in his father's school, mastering the rigid code that declared his existence an abomination.  Then, on the day that should have been his In-Swearing, he seized the Outcast Blade, shattered the Sacred Helm, and burned the Codex in the Vigil's Holy Flame.  He strode from Vigil Keep, forever solitary, following his private code to the last strict rune. Still a knight, yes...but a Rogue Knight. He answers only to himself.",
+  "hype": "Sven is always eager to charge into a fight. He <b>stuns grouped enemies</b> as he wades into battle, and once he ignites his <b>damage-boosting ultimate</b>, a few swings of his massive sword are often more than enough to slay his foes.",
+  "abilities": [
+    {
+      "key": "sven_storm_bolt",
+      "name": "Storm Hammer",
+      "description": "Sven unleashes his magical gauntlet that deals damage and stuns enemy units in a small area around the target.",
+      "max_level": 4,
+      "cooldowns": [
+        21,
+        18,
+        15,
+        12
+      ],
+      "mana_costs": [
+        110
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        600
+      ],
+      "cast_points": [
+        0.2,
+        0.2,
+        0.2,
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        80,
+        160,
+        240,
+        320
+      ],
+      "special_values": [
+        {
+          "key": "bolt_speed",
+          "heading": "",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "bolt_stun_duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            1,
+            1.25,
+            1.5,
+            1.75
+          ]
+        },
+        {
+          "key": "bolt_aoe",
+          "heading": "RADIUS:",
+          "values": [
+            250,
+            270,
+            290,
+            310
+          ]
+        },
+        {
+          "key": "vision_radius",
+          "heading": "",
+          "values": [
+            225
+          ]
+        },
+        {
+          "key": "scepter_bonus_damage",
+          "heading": "",
+          "values": [
+            180
+          ]
+        },
+        {
+          "key": "bonus_damage_pct",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityDamage",
+          "heading": "",
+          "values": [
+            80,
+            160,
+            240,
+            320
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            110
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            21,
+            18,
+            15,
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": "Increases cast range and applies a basic dispel on the target. Affects invulnerable units. If alt-cast, it deals an additional %scepter_bonus_damage% damage and Sven travels with the Storm Hammer.",
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "The Rogue Knight's iron gauntlet, taken from the school of his father, strikes his foes to their core."
+    },
+    {
+      "key": "sven_great_cleave",
+      "name": "Great Cleave",
+      "description": "Sven strikes with great force, cleaving all nearby enemy units with his attack.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "cleave_starting_width",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "cleave_ending_width",
+          "heading": "",
+          "values": [
+            270,
+            300,
+            330,
+            360
+          ]
+        },
+        {
+          "key": "cleave_distance",
+          "heading": "CLEAVE DISTANCE:",
+          "values": [
+            400,
+            500,
+            600,
+            700
+          ]
+        },
+        {
+          "key": "great_cleave_damage",
+          "heading": "CLEAVE DAMAGE:",
+          "values": [
+            60,
+            70,
+            80,
+            90
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "The Vigil Knights still seek to reclaim the stolen Outcast Blade from Sven, a weapon capable of cutting wide swaths through lesser warriors."
+    },
+    {
+      "key": "sven_warcry",
+      "name": "Warcry",
+      "description": "Sven's Warcry heartens his allied heroes for battle, increasing their armor and movement speed. Lasts %duration% seconds.",
+      "max_level": 4,
+      "cooldowns": [
+        36,
+        32,
+        28,
+        24
+      ],
+      "mana_costs": [
+        30,
+        35,
+        40,
+        45
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "movespeed",
+          "heading": "BONUS SPEED:",
+          "values": [
+            6,
+            9,
+            12,
+            15
+          ]
+        },
+        {
+          "key": "bonus_armor",
+          "heading": "BONUS ARMOR:",
+          "values": [
+            5,
+            8,
+            11,
+            14
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "shard_passive_armor",
+          "heading": "PASSIVE BONUS ARMOR:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_passive_movespeed",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "undispellable",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_radius",
+          "heading": "PASSIVE RADIUS:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "base_barrier_amount",
+          "heading": "PHYSICAL BARRIER AMOUNT:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "barrier_per_strength",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            30,
+            35,
+            40,
+            45
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            36,
+            32,
+            28,
+            24
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Increases radius and bonus movement speed. Warcry is now undispellable and provides a %base_barrier_amount% physical damage barrier.",
+      "notes": null,
+      "lore": "Calling a few lines from the Vigil Codex fortifies Sven's obedience to his rogue code. So poetic!"
+    },
+    {
+      "key": "sven_gods_strength",
+      "name": "God's Strength",
+      "description": "Sven channels his rogue strength, granting bonus damage and slow resistance for %abilityduration% seconds.",
+      "max_level": 3,
+      "cooldowns": [
+        110,
+        105,
+        100
+      ],
+      "mana_costs": [
+        100,
+        125,
+        150
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        30
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "gods_strength_damage",
+          "heading": "BONUS DAMAGE:",
+          "values": [
+            110,
+            150,
+            190
+          ]
+        },
+        {
+          "key": "bonus_slow_resistance",
+          "heading": "SLOW RESISTANCE:",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            125,
+            150
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            110,
+            105,
+            100
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "The bonus damage is based on base damage and the primary attribute of Sven."
+      ],
+      "lore": "With the strength that shattered the Sacred Helm, the Rogue Knight stands unopposed in melee combat."
+    },
+    {
+      "key": "sven_wrath_of_god",
+      "name": "Wrath of God",
+      "description": "Sven gains additional attack damage from Strength.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bonus_damage_per_str",
+          "heading": "DAMAGE PER STRENGTH:",
+          "values": [
+            0.08
+          ]
+        },
+        {
+          "key": "current_bonus_damage_tooltip",
+          "heading": "CURRENT DAMAGE BONUS:",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_duration}s Warcry Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_slow_resistance}% God's Strength Slow Resistance"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s God's Strength Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_great_cleave_damage}% Great Cleave Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}% Storm Hammer Cooldown and Mana Cost"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_armor} Warcry Armor"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_gods_strength_damage}% God's Strength Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bolt_stun_duration}s Storm Hammer Stun Duration"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

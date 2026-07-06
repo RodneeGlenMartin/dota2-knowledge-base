@@ -1,0 +1,46 @@
+{
+  "id": 1859,
+  "name": "Spellslinger",
+  "slug": "spellslinger",
+  "internal_key": "item_spellslinger",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Salvo</h1>%mana_pct%%% of the mana used to cast abilities is recovered over %duration% seconds.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "mana_pct",
+      "heading": "",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "restore_tickrate",
+      "heading": "",
+      "values": [
+        2
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

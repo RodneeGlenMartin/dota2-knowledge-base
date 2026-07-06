@@ -1,0 +1,1169 @@
+{
+  "id": 145,
+  "name": "Kez",
+  "slug": "kez",
+  "npc_name": "npc_dota_hero_kez",
+  "primary_attribute": "agi",
+  "attack_type": "Melee",
+  "complexity": 3,
+  "roles": [
+    "Carry",
+    "Disabler",
+    "Escape"
+  ],
+  "stats": {
+    "base_str": 20,
+    "str_gain": 2.8,
+    "base_agi": 27,
+    "agi_gain": 3.5,
+    "base_int": 20,
+    "int_gain": 1.7,
+    "damage_min": 50,
+    "damage_max": 56,
+    "attack_rate": 1.9,
+    "attack_range": 225,
+    "projectile_speed": 900,
+    "armor": 5.5,
+    "magic_resistance": 25,
+    "movement_speed": 310,
+    "turn_rate": 1,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 560,
+    "health_regen": 3.5,
+    "max_mana": 315,
+    "mana_regen": 1.25
+  },
+  "lore": "\"I was born with a price on my head. As I got better at causing trouble, that price went up. Every time Queen Imperia raised the bounty, I knew I must have done something right. I think that's the worst part about being gone so long in Icewrack... I've got to get that price back up to a respectable number.\"",
+  "hype": "When it comes to strategy, Kez tends to wing it — he's able to <b>swap on the fly between his katana and sai</b> to <b>slash, dash, swoop, and parry</b> as the needs of the battlefield demand. But when he puts his mind to it, he can account for any eventuality, choosing the right tool to <b>attack, escape or simply outwit his enemies</b> with a little advance planning.",
+  "abilities": [
+    {
+      "key": "kez_echo_slash",
+      "name": "Echo Slash",
+      "description": "Kez slashes forward in a %katana_distance% distance line with his Katana, attacking enemies in an area and applying a brief %tag_slow%%% impact slow. After a short delay, the area is attacked again. Heroes take bonus damage.",
+      "max_level": 4,
+      "cooldowns": [
+        21,
+        18,
+        15,
+        12
+      ],
+      "mana_costs": [
+        75,
+        90,
+        105,
+        120
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "katana_echo_damage",
+          "heading": "ATTACK DAMAGE:",
+          "values": [
+            70,
+            80,
+            90,
+            100
+          ]
+        },
+        {
+          "key": "echo_hero_damage",
+          "heading": "BONUS HERO DAMAGE:",
+          "values": [
+            20,
+            40,
+            60,
+            80
+          ]
+        },
+        {
+          "key": "katana_strikes",
+          "heading": "ATTACKS:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "strike_interval",
+          "heading": "ECHO DELAY:",
+          "values": [
+            1.2
+          ]
+        },
+        {
+          "key": "katana_radius",
+          "heading": "SLASH RADIUS:",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "katana_distance",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "travel_distance",
+          "heading": "",
+          "values": [
+            250
+          ]
+        },
+        {
+          "key": "tag_slow",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "tag_slow_duration",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            75,
+            90,
+            105,
+            120
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            21,
+            18,
+            15,
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Destroys trees. Doesn't apply Cleave."
+      ],
+      "lore": "Kez and his master Kraw have worked tirelessly to train the Kazurai new ways to keep the flyers off balance by improving upon ancient techniques."
+    },
+    {
+      "key": "kez_grappling_claw",
+      "name": "Grappling Claw",
+      "description": "Kez swings on a grappling hook towards the target unit or tree.  When the grappling hook collides with the target, that unit has slowed movement speed. Upon reaching the enemy target, Kez lands an attack on them.",
+      "max_level": 4,
+      "cooldowns": [
+        13,
+        11,
+        9,
+        7
+      ],
+      "mana_costs": [
+        40
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        650,
+        750,
+        850,
+        950
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "land_distance",
+          "heading": "",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "projectile_speed",
+          "heading": "",
+          "values": [
+            3000
+          ]
+        },
+        {
+          "key": "grapple_speed",
+          "heading": "",
+          "values": [
+            1800
+          ]
+        },
+        {
+          "key": "max_distance_break",
+          "heading": "",
+          "values": [
+            2000
+          ]
+        },
+        {
+          "key": "debuff_duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            0.7,
+            0.8,
+            0.9,
+            1
+          ]
+        },
+        {
+          "key": "katana_ms_slow_pct",
+          "heading": "MOVE SLOW:",
+          "values": [
+            70,
+            80,
+            90,
+            100
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            650,
+            750,
+            850,
+            950
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            13,
+            11,
+            9,
+            7
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "The Kazurai have the speed and reach to drag even the highest flyers from the skies."
+    },
+    {
+      "key": "kez_kazurai_katana",
+      "name": "Kazurai Katana",
+      "description": "Katana attacks and abilities apply a stacking damage over time to enemies that deals a percentage of the original attack's damage as additional damage over time. <br><br>Kez may activate the ability to impale the target with his attack, preventing them from moving or turning. The target's Katana debuff bursts, causing some of the stacks to deal damage instantly.",
+      "max_level": 4,
+      "cooldowns": [
+        24,
+        18,
+        12,
+        6
+      ],
+      "mana_costs": [
+        40
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        200
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "katana_bleed_duration",
+          "heading": "DURATION:",
+          "values": [
+            7
+          ]
+        },
+        {
+          "key": "katana_bleed_attack_damage_pct",
+          "heading": "DAMAGE PER SECOND:",
+          "values": [
+            3,
+            6,
+            9,
+            12
+          ]
+        },
+        {
+          "key": "impale_duration",
+          "heading": "IMPALE DURATION:",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "bleed_as_rupture_pct",
+          "heading": "STACKS AS BURST DAMAGE:",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "lifesteal_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "creep_lifesteal_reduction_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "max_stacks",
+          "heading": "MAX BURST STACKS:",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "backstab_angle",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            24,
+            18,
+            12,
+            6
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Kez lifesteals %lifesteal_pct%%% from the impale. If the impale comes from behind the target, the target is stunned. Increases max burst stacks.",
+      "notes": null,
+      "lore": "To fight back against the reach of Imperia and her Queensguard, the Kazurai had to become skilled in the ways of attrition."
+    },
+    {
+      "key": "kez_switch_weapons",
+      "name": "Switch Discipline",
+      "description": "Kez switches between his Kazurai Katana and Shodo Sai.<br><br>He gains different attack capabilities and abilities based on the weapon equipped. The abilities level up together, and when an ability is used, the associated alternate weapon ability also goes on cooldown.<br><br>Kez deals extra damage on the first Katana hit or ability after switching to Katana, and gains bonus speed after switching to Sai.",
+      "max_level": 1,
+      "cooldowns": [
+        8
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "katana_attack_range",
+          "heading": "KATANA ATTACK RANGE:",
+          "values": [
+            225
+          ]
+        },
+        {
+          "key": "katana_base_attack_time",
+          "heading": "KATANA BASE ATTACK TIME:",
+          "values": [
+            1.9
+          ]
+        },
+        {
+          "key": "katana_agility_bonus_base_damage",
+          "heading": "KATANA BONUS AGILITY BASE DAMAGE:",
+          "values": [
+            12
+          ]
+        },
+        {
+          "key": "katana_swap_bonus_damage",
+          "heading": "KATANA SWAP BONUS DAMAGE:",
+          "values": [
+            12
+          ]
+        },
+        {
+          "key": "sai_attack_range",
+          "heading": "SAI ATTACK RANGE:",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "sai_base_attack_time",
+          "heading": "SAI BASE ATTACK TIME:",
+          "values": [
+            1.5
+          ]
+        },
+        {
+          "key": "sai_swap_bonus_movement_speed",
+          "heading": "SAI SWAP MOVEMENT SPEED:",
+          "values": [
+            12
+          ]
+        },
+        {
+          "key": "sai_swap_duration",
+          "heading": "SAI SWAP SPEED DURATION:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "scepter_cooldown_timer",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "COOLDOWN:",
+          "values": [
+            8
+          ]
+        }
+      ],
+      "scepter_upgrade": "Casting a weapon ability that would set its alternate weapon ability on cooldown does not do so if it's the first one used within %scepter_cooldown_timer% seconds after casting Switch Discipline or if it was already on cooldown.<br><br>Casting any weapon ability refreshes the cooldown of Switch Discipline.",
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "As former followers of the Shodo, the leaders of the Kazurai Order can switch effortlessly between twin disciplines of martial mastery over sai and blade."
+    },
+    {
+      "key": "kez_raptor_dance",
+      "name": "Raptor Dance",
+      "description": "Kez enters into an uncontrollable state for %AbilityCastPoint% second, becoming invulnerable for %invuln_period%s and receiving a basic dispel.<br><br>If the cast completes successfully, Kez performs a series of deadly radial slashes around him that deal damage based on the max health of the target and heal Kez for a percentage of all damage dealt.",
+      "max_level": 3,
+      "cooldowns": [
+        40,
+        35,
+        30
+      ],
+      "mana_costs": [
+        100,
+        125,
+        150
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "strike_interval",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "strikes",
+          "heading": "STRIKES:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            450
+          ]
+        },
+        {
+          "key": "base_damage",
+          "heading": "BASE DAMAGE:",
+          "values": [
+            40,
+            70,
+            100
+          ]
+        },
+        {
+          "key": "max_health_damage_pct",
+          "heading": "MAX HEALTH AS DAMAGE:",
+          "values": [
+            2.5
+          ]
+        },
+        {
+          "key": "lifesteal_pct",
+          "heading": "SLASH LIFESTEAL:",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "illusion_lifesteal_pct",
+          "heading": "",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "invuln_period",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "basic_dispel",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            125,
+            150
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            40,
+            35,
+            30
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Slash Lifesteal is reduced to %illusion_lifesteal_pct%%% when slashing a creep or an illusion."
+      ],
+      "lore": "Unleash the inner fury of the Flightless to feast on the essence of your foes."
+    },
+    {
+      "key": "kez_falcon_rush",
+      "name": "Falcon Rush",
+      "description": "Kez gains the ability to rush towards enemy targets to deliver echoing secondary attacks.  While in this state, Kez has phased collision and slow resistance.",
+      "max_level": 4,
+      "cooldowns": [
+        21,
+        18,
+        15,
+        12
+      ],
+      "mana_costs": [
+        85,
+        90,
+        95,
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "rush_range",
+          "heading": "RUSH RANGE:",
+          "values": [
+            525
+          ]
+        },
+        {
+          "key": "rush_speed",
+          "heading": "RUSH SPEED:",
+          "values": [
+            850
+          ]
+        },
+        {
+          "key": "base_echo_damage",
+          "heading": "ECHO ATTACK DAMAGE:",
+          "values": [
+            30,
+            35,
+            40,
+            45
+          ]
+        },
+        {
+          "key": "slow_resist",
+          "heading": "SLOW RESISTANCE:",
+          "values": [
+            15,
+            30,
+            45,
+            60
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            3.75,
+            4.5,
+            5.25,
+            6
+          ]
+        },
+        {
+          "key": "break_range",
+          "heading": "",
+          "values": [
+            825
+          ]
+        },
+        {
+          "key": "bonus_attack_speed",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "echo_proc_chance_reduction",
+          "heading": "ECHO PROC CHANCE REDUCTION:",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            85,
+            90,
+            95,
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            21,
+            18,
+            15,
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Does not work on buildings."
+      ],
+      "lore": "An ancient Shodo technique used to hunt faster aerial foes, stealing the advantage and delivering multiple attacks within a single flap of their prey's panicking wings."
+    },
+    {
+      "key": "kez_talon_toss",
+      "name": "Talon Toss",
+      "description": "Kez throws a Sai at the target unit, applying a fixed damage attack and silence.",
+      "max_level": 4,
+      "cooldowns": [
+        13,
+        11,
+        9,
+        7
+      ],
+      "mana_costs": [
+        60,
+        65,
+        70,
+        75
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        650,
+        750,
+        850,
+        950
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            60,
+            120,
+            180,
+            240
+          ]
+        },
+        {
+          "key": "speed",
+          "heading": "",
+          "values": [
+            2000
+          ]
+        },
+        {
+          "key": "silence_duration",
+          "heading": "SILENCE DURATION:",
+          "values": [
+            2,
+            2.25,
+            2.5,
+            2.75
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            650,
+            750,
+            850,
+            950
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            60,
+            65,
+            70,
+            75
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            13,
+            11,
+            9,
+            7
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "The fixed damage attack has True Strike."
+      ],
+      "lore": "The Shodo learned to rely upon distance and disorientation to survive against much stronger opposition."
+    },
+    {
+      "key": "kez_shodo_sai",
+      "name": "Shodo Sai",
+      "description": "Kez has a chance to critically strike the target when attacking with Sais.<br><br>Kez may activate the ability to disarm himself, lock his facing, and parry attacks and attack effects from the targeted direction for %parry_duration% seconds. If an attack is parried from an enemy Hero in this way, that Hero is stunned for %parry_stun_duration%s and gains a Mark.  When a Marked target is attacked by Kez, it will guarantee a critical strike and stun the target.<br><br>The sub-ability may be used to cancel the blocking early.",
+      "max_level": 4,
+      "cooldowns": [
+        24,
+        18,
+        12,
+        6
+      ],
+      "mana_costs": [
+        30,
+        20,
+        10,
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "sai_proc_vuln_chance",
+          "heading": "CRITICAL CHANCE:",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "base_crit_pct",
+          "heading": "CRITICAL DAMAGE:",
+          "values": [
+            125,
+            150,
+            175,
+            200
+          ]
+        },
+        {
+          "key": "stun_duration",
+          "heading": "MARK STUN DURATION:",
+          "values": [
+            0.5,
+            0.6,
+            0.7,
+            0.8
+          ]
+        },
+        {
+          "key": "vuln_duration",
+          "heading": "MARK DURATION:",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "forward_angle",
+          "heading": "",
+          "values": [
+            180
+          ]
+        },
+        {
+          "key": "speed_penalty",
+          "heading": "",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "parry_duration",
+          "heading": "",
+          "values": [
+            1.5
+          ]
+        },
+        {
+          "key": "parry_bonus_crit",
+          "heading": "PARRY BONUS CRITICAL STRIKE:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "parry_bonus_stun_duration",
+          "heading": "PARRY BONUS MARK STUN:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "parry_stun_duration",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            30,
+            20,
+            10,
+            0
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            24,
+            18,
+            12,
+            6
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Parrying creates a stronger Mark that deals additional stun and critical damage.",
+      "notes": null,
+      "lore": "The Shodo may have lost their way, but Kez and the Kazurai can still use Shodo knowledge for the good of the people."
+    },
+    {
+      "key": "kez_ravens_veil",
+      "name": "Raven's Veil",
+      "description": "Kez releases a wave of smoke that applies his Mark to nearby enemies, briefly reducing their vision. Kez receives a basic dispel and gains bonus movement speed and invisibility until he attacks or casts a spell.",
+      "max_level": 3,
+      "cooldowns": [
+        40,
+        35,
+        30
+      ],
+      "mana_costs": [
+        100,
+        125,
+        150
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "blast_radius",
+          "heading": "WAVE RADIUS:",
+          "values": [
+            1500
+          ]
+        },
+        {
+          "key": "blast_speed",
+          "heading": "WAVE SPEED:",
+          "values": [
+            1500
+          ]
+        },
+        {
+          "key": "buff_duration",
+          "heading": "BUFF DURATION:",
+          "values": [
+            8,
+            10,
+            12
+          ]
+        },
+        {
+          "key": "blind_duration",
+          "heading": "VISION DEBUFF DURATION:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "bonus_ms",
+          "heading": "BONUS MOVEMENT SPEED:",
+          "values": [
+            15,
+            25,
+            35
+          ]
+        },
+        {
+          "key": "basic_dispel",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "apply_parry_bonus",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            125,
+            150
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            40,
+            35,
+            30
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Eying either threat or opportunity, Shodo masters slip instantly into shadow to reset the terms of any engagement in their own favor."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_katana_swap_bonus_damage}% Switch Discipline Swap Bonuses"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_radius} Raptor Dance Radius"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_duration}s Falcon Rush Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_strikes} Raptor Dance Strike"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_katana_bleed_attack_damage_pct}% Kazurai Katana Damage Per Second"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_bonus_attack_speed} Bonus Attack Speed During Falcon Rush"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_base_crit_pct}% Shodo Sai Critical Strike"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_katana_strikes} Echo Slash Attack"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

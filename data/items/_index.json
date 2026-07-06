@@ -1,0 +1,3551 @@
+[
+  {
+    "id": 208,
+    "name": "Abyssal Blade",
+    "slug": "abyssal_blade",
+    "cost": 6250,
+    "neutral_tier": null
+  },
+  {
+    "id": 207,
+    "name": "Abyssal Blade Recipe",
+    "slug": "abyssal_blade_recipe",
+    "cost": 1275,
+    "neutral_tier": null
+  },
+  {
+    "id": 117,
+    "name": "Aegis of the Immortal",
+    "slug": "aegis_of_the_immortal",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 256,
+    "name": "Aeon Disk",
+    "slug": "aeon_disk",
+    "cost": 3000,
+    "neutral_tier": null
+  },
+  {
+    "id": 255,
+    "name": "Aeon Disk Recipe",
+    "slug": "aeon_disk_recipe",
+    "cost": 1200,
+    "neutral_tier": null
+  },
+  {
+    "id": 232,
+    "name": "Aether Lens",
+    "slug": "aether_lens",
+    "cost": 2275,
+    "neutral_tier": null
+  },
+  {
+    "id": 233,
+    "name": "Aether Lens Recipe",
+    "slug": "aether_lens_recipe",
+    "cost": 775,
+    "neutral_tier": null
+  },
+  {
+    "id": 271,
+    "name": "Aghanim's Blessing",
+    "slug": "aghanim_s_blessing",
+    "cost": 5800,
+    "neutral_tier": null
+  },
+  {
+    "id": 727,
+    "name": "Aghanim's Blessing - Roshan",
+    "slug": "aghanim_s_blessing_roshan",
+    "cost": 5800,
+    "neutral_tier": null
+  },
+  {
+    "id": 270,
+    "name": "Aghanim's Blessing Recipe",
+    "slug": "aghanim_s_blessing_recipe",
+    "cost": 1600,
+    "neutral_tier": null
+  },
+  {
+    "id": 108,
+    "name": "Aghanim's Scepter",
+    "slug": "aghanim_s_scepter",
+    "cost": 4200,
+    "neutral_tier": null
+  },
+  {
+    "id": 609,
+    "name": "Aghanim's Shard",
+    "slug": "aghanim_s_shard",
+    "cost": 1400,
+    "neutral_tier": null
+  },
+  {
+    "id": 725,
+    "name": "Aghanim's Shard - Consumable",
+    "slug": "aghanim_s_shard_consumable",
+    "cost": 1400,
+    "neutral_tier": null
+  },
+  {
+    "id": 1584,
+    "name": "Alert",
+    "slug": "alert",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1156,
+    "name": "Ancient Guardian",
+    "slug": "ancient_guardian",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 45,
+    "name": "Animal Courier",
+    "slug": "animal_courier",
+    "cost": 50,
+    "neutral_tier": null
+  },
+  {
+    "id": 366,
+    "name": "Apex",
+    "slug": "apex",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 604,
+    "name": "Arcane Blink",
+    "slug": "arcane_blink",
+    "cost": 6800,
+    "neutral_tier": null
+  },
+  {
+    "id": 606,
+    "name": "Arcane Blink Recipe",
+    "slug": "arcane_blink_recipe",
+    "cost": 1750,
+    "neutral_tier": null
+  },
+  {
+    "id": 180,
+    "name": "Arcane Boots",
+    "slug": "arcane_boots",
+    "cost": 1500,
+    "neutral_tier": null
+  },
+  {
+    "id": 179,
+    "name": "Arcane Boots Recipe",
+    "slug": "arcane_boots_recipe",
+    "cost": 325,
+    "neutral_tier": null
+  },
+  {
+    "id": 349,
+    "name": "Arcane Ring",
+    "slug": "arcane_ring",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 829,
+    "name": "Arcanist's Armor",
+    "slug": "arcanist_s_armor",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 151,
+    "name": "Armlet of Mordiggian",
+    "slug": "armlet_of_mordiggian",
+    "cost": 2500,
+    "neutral_tier": null
+  },
+  {
+    "id": 150,
+    "name": "Armlet of Mordiggian Recipe",
+    "slug": "armlet_of_mordiggian_recipe",
+    "cost": 625,
+    "neutral_tier": null
+  },
+  {
+    "id": 825,
+    "name": "Ascetic's Cap",
+    "slug": "ascetic_s_cap",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1717,
+    "name": "Ash Legion Shield",
+    "slug": "ash_legion_shield",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 112,
+    "name": "Assault Cuirass",
+    "slug": "assault_cuirass",
+    "cost": 5125,
+    "neutral_tier": null
+  },
+  {
+    "id": 111,
+    "name": "Assault Cuirass Recipe",
+    "slug": "assault_cuirass_recipe",
+    "cost": 1300,
+    "neutral_tier": null
+  },
+  {
+    "id": 1581,
+    "name": "Audacious",
+    "slug": "audacious",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1160,
+    "name": "Aviana's Feather",
+    "slug": "aviana_s_feather",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1652,
+    "name": "Bag of Gold",
+    "slug": "bag_of_gold",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 367,
+    "name": "Ballista",
+    "slug": "ballista",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 18,
+    "name": "Band of Elvenskin",
+    "slug": "band_of_elvenskin",
+    "cost": 450,
+    "neutral_tier": null
+  },
+  {
+    "id": 145,
+    "name": "Battle Fury",
+    "slug": "battle_fury",
+    "cost": 3900,
+    "neutral_tier": null
+  },
+  {
+    "id": 144,
+    "name": "Battle Fury Recipe",
+    "slug": "battle_fury_recipe",
+    "cost": 400,
+    "neutral_tier": null
+  },
+  {
+    "id": 4300,
+    "name": "Beloved Memory",
+    "slug": "beloved_memory",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 17,
+    "name": "Belt of Strength",
+    "slug": "belt_of_strength",
+    "cost": 450,
+    "neutral_tier": null
+  },
+  {
+    "id": 1440,
+    "name": "Black Grimoire\n(Warlock)",
+    "slug": "black_grimoire_warlock",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 116,
+    "name": "Black King Bar",
+    "slug": "black_king_bar",
+    "cost": 4050,
+    "neutral_tier": null
+  },
+  {
+    "id": 115,
+    "name": "Black King Bar Recipe",
+    "slug": "black_king_bar_recipe",
+    "cost": 1450,
+    "neutral_tier": null
+  },
+  {
+    "id": 127,
+    "name": "Blade Mail",
+    "slug": "blade_mail",
+    "cost": 2400,
+    "neutral_tier": null
+  },
+  {
+    "id": 126,
+    "name": "Blade Mail Recipe",
+    "slug": "blade_mail_recipe",
+    "cost": 450,
+    "neutral_tier": null
+  },
+  {
+    "id": 22,
+    "name": "Blade of Alacrity",
+    "slug": "blade_of_alacrity",
+    "cost": 1000,
+    "neutral_tier": null
+  },
+  {
+    "id": 2,
+    "name": "Blades of Attack",
+    "slug": "blades_of_attack",
+    "cost": 450,
+    "neutral_tier": null
+  },
+  {
+    "id": 834,
+    "name": "Blast Rig",
+    "slug": "blast_rig",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1,
+    "name": "Blink Dagger",
+    "slug": "blink_dagger",
+    "cost": 2250,
+    "neutral_tier": null
+  },
+  {
+    "id": 485,
+    "name": "Blitz Knuckles",
+    "slug": "blitz_knuckles",
+    "cost": 1000,
+    "neutral_tier": null
+  },
+  {
+    "id": 1154,
+    "name": "Block of Cheese",
+    "slug": "block_of_cheese",
+    "cost": 2,
+    "neutral_tier": null
+  },
+  {
+    "id": 1123,
+    "name": "Blood Grenade",
+    "slug": "blood_grenade",
+    "cost": 50,
+    "neutral_tier": null
+  },
+  {
+    "id": 121,
+    "name": "Bloodstone",
+    "slug": "bloodstone",
+    "cost": 4700,
+    "neutral_tier": null
+  },
+  {
+    "id": 120,
+    "name": "Bloodstone Recipe",
+    "slug": "bloodstone_recipe",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 250,
+    "name": "Bloodthorn",
+    "slug": "bloodthorn",
+    "cost": 6400,
+    "neutral_tier": null
+  },
+  {
+    "id": 245,
+    "name": "Bloodthorn Recipe",
+    "slug": "bloodthorn_recipe",
+    "cost": 600,
+    "neutral_tier": null
+  },
+  {
+    "id": 677,
+    "name": "Book of Shadows",
+    "slug": "book_of_shadows",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 370,
+    "name": "Book of the Dead",
+    "slug": "book_of_the_dead",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 931,
+    "name": "Boots of Bearing",
+    "slug": "boots_of_bearing",
+    "cost": 4225,
+    "neutral_tier": null
+  },
+  {
+    "id": 930,
+    "name": "Boots of Bearing Recipe",
+    "slug": "boots_of_bearing_recipe",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 29,
+    "name": "Boots of Speed",
+    "slug": "boots_of_speed",
+    "cost": 500,
+    "neutral_tier": null
+  },
+  {
+    "id": 48,
+    "name": "Boots of Travel",
+    "slug": "boots_of_travel",
+    "cost": 2500,
+    "neutral_tier": null
+  },
+  {
+    "id": 220,
+    "name": "Boots of Travel 2",
+    "slug": "boots_of_travel_2",
+    "cost": 4500,
+    "neutral_tier": null
+  },
+  {
+    "id": 47,
+    "name": "Boots of Travel Recipe",
+    "slug": "boots_of_travel_recipe",
+    "cost": 2000,
+    "neutral_tier": null
+  },
+  {
+    "id": 41,
+    "name": "Bottle",
+    "slug": "bottle",
+    "cost": 675,
+    "neutral_tier": null
+  },
+  {
+    "id": 1590,
+    "name": "Boundless",
+    "slug": "boundless",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 73,
+    "name": "Bracer",
+    "slug": "bracer",
+    "cost": 505,
+    "neutral_tier": null
+  },
+  {
+    "id": 72,
+    "name": "Bracer Recipe",
+    "slug": "bracer_recipe",
+    "cost": 210,
+    "neutral_tier": null
+  },
+  {
+    "id": 1585,
+    "name": "Brawny",
+    "slug": "brawny",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 828,
+    "name": "Brigand's Blade",
+    "slug": "brigand_s_blade",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 3,
+    "name": "Broadsword",
+    "slug": "broadsword",
+    "cost": 1000,
+    "neutral_tier": null
+  },
+  {
+    "id": 355,
+    "name": "Broom Handle",
+    "slug": "broom_handle",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 86,
+    "name": "Buckler",
+    "slug": "buckler",
+    "cost": 425,
+    "neutral_tier": null
+  },
+  {
+    "id": 85,
+    "name": "Buckler Recipe",
+    "slug": "buckler_recipe",
+    "cost": 250,
+    "neutral_tier": null
+  },
+  {
+    "id": 680,
+    "name": "Bullwhip",
+    "slug": "bullwhip",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 139,
+    "name": "Butterfly",
+    "slug": "butterfly",
+    "cost": 5450,
+    "neutral_tier": null
+  },
+  {
+    "id": 676,
+    "name": "Ceremonial Robe",
+    "slug": "ceremonial_robe",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 4,
+    "name": "Chainmail",
+    "slug": "chainmail",
+    "cost": 500,
+    "neutral_tier": null
+  },
+  {
+    "id": 1872,
+    "name": "Chasm Stone",
+    "slug": "chasm_stone",
+    "cost": 800,
+    "neutral_tier": null
+  },
+  {
+    "id": 33,
+    "name": "Cheese",
+    "slug": "cheese",
+    "cost": 1000,
+    "neutral_tier": null
+  },
+  {
+    "id": 565,
+    "name": "Chipped Vest",
+    "slug": "chipped_vest",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 20,
+    "name": "Circlet",
+    "slug": "circlet",
+    "cost": 155,
+    "neutral_tier": null
+  },
+  {
+    "id": 38,
+    "name": "Clarity",
+    "slug": "clarity",
+    "cost": 60,
+    "neutral_tier": null
+  },
+  {
+    "id": 5,
+    "name": "Claymore",
+    "slug": "claymore",
+    "cost": 1350,
+    "neutral_tier": null
+  },
+  {
+    "id": 31,
+    "name": "Cloak",
+    "slug": "cloak",
+    "cost": 900,
+    "neutral_tier": null
+  },
+  {
+    "id": 574,
+    "name": "Cloak of Flames",
+    "slug": "cloak_of_flames",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 360,
+    "name": "Clumsy Net",
+    "slug": "clumsy_net",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1864,
+    "name": "Conjurer's Catalyst",
+    "slug": "conjurer_s_catalyst",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1854,
+    "name": "Consecrated Wraps",
+    "slug": "consecrated_wraps",
+    "cost": 2600,
+    "neutral_tier": null
+  },
+  {
+    "id": 1853,
+    "name": "Consecrated Wraps Recipe",
+    "slug": "consecrated_wraps_recipe",
+    "cost": 700,
+    "neutral_tier": null
+  },
+  {
+    "id": 1125,
+    "name": "Cornucopia",
+    "slug": "cornucopia",
+    "cost": 1200,
+    "neutral_tier": null
+  },
+  {
+    "id": 298,
+    "name": "Craggy Coat",
+    "slug": "craggy_coat",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1856,
+    "name": "Crella's Crozier",
+    "slug": "crella_s_crozier",
+    "cost": 4800,
+    "neutral_tier": null
+  },
+  {
+    "id": 1855,
+    "name": "Crella's Crozier Recipe",
+    "slug": "crella_s_crozier_recipe",
+    "cost": 300,
+    "neutral_tier": null
+  },
+  {
+    "id": 242,
+    "name": "Crimson Guard",
+    "slug": "crimson_guard",
+    "cost": 3725,
+    "neutral_tier": null
+  },
+  {
+    "id": 243,
+    "name": "Crimson Guard Recipe",
+    "slug": "crimson_guard_recipe",
+    "cost": 1050,
+    "neutral_tier": null
+  },
+  {
+    "id": 1601,
+    "name": "Crippling Crossbow",
+    "slug": "crippling_crossbow",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 261,
+    "name": "Crown",
+    "slug": "crown",
+    "cost": 450,
+    "neutral_tier": null
+  },
+  {
+    "id": 1589,
+    "name": "Crude",
+    "slug": "crude",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 149,
+    "name": "Crystalys",
+    "slug": "crystalys",
+    "cost": 2000,
+    "neutral_tier": null
+  },
+  {
+    "id": 148,
+    "name": "Crystalys Recipe",
+    "slug": "crystalys_recipe",
+    "cost": 200,
+    "neutral_tier": null
+  },
+  {
+    "id": 141,
+    "name": "Daedalus",
+    "slug": "daedalus",
+    "cost": 5100,
+    "neutral_tier": null
+  },
+  {
+    "id": 140,
+    "name": "Daedalus Recipe",
+    "slug": "daedalus_recipe",
+    "cost": 900,
+    "neutral_tier": null
+  },
+  {
+    "id": 1077,
+    "name": "Dagger of Ristul",
+    "slug": "dagger_of_ristul",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 104,
+    "name": "Dagon",
+    "slug": "dagon",
+    "cost": 3000,
+    "neutral_tier": null
+  },
+  {
+    "id": 201,
+    "name": "Dagon",
+    "slug": "dagon_201",
+    "cost": 4100,
+    "neutral_tier": null
+  },
+  {
+    "id": 202,
+    "name": "Dagon",
+    "slug": "dagon_202",
+    "cost": 5200,
+    "neutral_tier": null
+  },
+  {
+    "id": 203,
+    "name": "Dagon",
+    "slug": "dagon_203",
+    "cost": 6300,
+    "neutral_tier": null
+  },
+  {
+    "id": 204,
+    "name": "Dagon",
+    "slug": "dagon_204",
+    "cost": 7400,
+    "neutral_tier": null
+  },
+  {
+    "id": 103,
+    "name": "Dagon Recipe",
+    "slug": "dagon_recipe",
+    "cost": 1100,
+    "neutral_tier": null
+  },
+  {
+    "id": 2190,
+    "name": "Dandelion Amulet",
+    "slug": "dandelion_amulet",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 950,
+    "name": "Defiant Shell",
+    "slug": "defiant_shell",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 51,
+    "name": "Demon Edge",
+    "slug": "demon_edge",
+    "cost": 2200,
+    "neutral_tier": null
+  },
+  {
+    "id": 168,
+    "name": "Desolator",
+    "slug": "desolator",
+    "cost": 3500,
+    "neutral_tier": null
+  },
+  {
+    "id": 1642,
+    "name": "Dezun Bloodrite",
+    "slug": "dezun_bloodrite",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1122,
+    "name": "Diadem",
+    "slug": "diadem",
+    "cost": 1000,
+    "neutral_tier": null
+  },
+  {
+    "id": 174,
+    "name": "Diffusal Blade",
+    "slug": "diffusal_blade",
+    "cost": 2500,
+    "neutral_tier": null
+  },
+  {
+    "id": 173,
+    "name": "Diffusal Blade Recipe",
+    "slug": "diffusal_blade_recipe",
+    "cost": 1050,
+    "neutral_tier": null
+  },
+  {
+    "id": 1645,
+    "name": "Disgraced Regalia",
+    "slug": "disgraced_regalia",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1097,
+    "name": "Disperser",
+    "slug": "disperser",
+    "cost": 6100,
+    "neutral_tier": null
+  },
+  {
+    "id": 1096,
+    "name": "Disperser Recipe",
+    "slug": "disperser_recipe",
+    "cost": 800,
+    "neutral_tier": null
+  },
+  {
+    "id": 133,
+    "name": "Divine Rapier",
+    "slug": "divine_rapier",
+    "cost": 5600,
+    "neutral_tier": null
+  },
+  {
+    "id": 132,
+    "name": "Divine Rapier Recipe",
+    "slug": "divine_rapier_recipe",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1644,
+    "name": "Divine Regalia",
+    "slug": "divine_regalia",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1648,
+    "name": "Dominant",
+    "slug": "dominant",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1638,
+    "name": "Dormant Curio",
+    "slug": "dormant_curio",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1803,
+    "name": "Doubloon",
+    "slug": "doubloon",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 236,
+    "name": "Dragon Lance",
+    "slug": "dragon_lance",
+    "cost": 1900,
+    "neutral_tier": null
+  },
+  {
+    "id": 234,
+    "name": "Dragon Lance Recipe",
+    "slug": "dragon_lance_recipe",
+    "cost": 450,
+    "neutral_tier": null
+  },
+  {
+    "id": 358,
+    "name": "Dragon Scale",
+    "slug": "dragon_scale",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 185,
+    "name": "Drum of Endurance",
+    "slug": "drum_of_endurance",
+    "cost": 1625,
+    "neutral_tier": null
+  },
+  {
+    "id": 184,
+    "name": "Drum of Endurance Recipe",
+    "slug": "drum_of_endurance_recipe",
+    "cost": 525,
+    "neutral_tier": null
+  },
+  {
+    "id": 2097,
+    "name": "Duelist Gloves",
+    "slug": "duelist_gloves",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 40,
+    "name": "Dust of Appearance",
+    "slug": "dust_of_appearance",
+    "cost": 80,
+    "neutral_tier": null
+  },
+  {
+    "id": 52,
+    "name": "Eaglesong",
+    "slug": "eaglesong",
+    "cost": 2800,
+    "neutral_tier": null
+  },
+  {
+    "id": 252,
+    "name": "Echo Sabre",
+    "slug": "echo_sabre",
+    "cost": 2700,
+    "neutral_tier": null
+  },
+  {
+    "id": 1850,
+    "name": "Eldwurm's Edda",
+    "slug": "eldwurm_s_edda",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 302,
+    "name": "Elixir",
+    "slug": "elixir",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 573,
+    "name": "Elven Tunic",
+    "slug": "elven_tunic",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 216,
+    "name": "Enchanted Mango",
+    "slug": "enchanted_mango",
+    "cost": 65,
+    "neutral_tier": null
+  },
+  {
+    "id": 361,
+    "name": "Enchanted Quiver",
+    "slug": "enchanted_quiver",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1862,
+    "name": "Enchanter's Bauble",
+    "slug": "enchanter_s_bauble",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 59,
+    "name": "Energy Booster",
+    "slug": "energy_booster",
+    "cost": 800,
+    "neutral_tier": null
+  },
+  {
+    "id": 1852,
+    "name": "Essence Distiller",
+    "slug": "essence_distiller",
+    "cost": 1775,
+    "neutral_tier": null
+  },
+  {
+    "id": 1851,
+    "name": "Essence Distiller Recipe",
+    "slug": "essence_distiller_recipe",
+    "cost": 200,
+    "neutral_tier": null
+  },
+  {
+    "id": 359,
+    "name": "Essence Ring",
+    "slug": "essence_ring",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 692,
+    "name": "Eternal Shroud",
+    "slug": "eternal_shroud",
+    "cost": 3900,
+    "neutral_tier": null
+  },
+  {
+    "id": 691,
+    "name": "Eternal Shroud Recipe",
+    "slug": "eternal_shroud_recipe",
+    "cost": 900,
+    "neutral_tier": null
+  },
+  {
+    "id": 176,
+    "name": "Ethereal Blade",
+    "slug": "ethereal_blade",
+    "cost": 5200,
+    "neutral_tier": null
+  },
+  {
+    "id": 175,
+    "name": "Ethereal Blade Recipe",
+    "slug": "ethereal_blade_recipe",
+    "cost": 900,
+    "neutral_tier": null
+  },
+  {
+    "id": 99,
+    "name": "Eul's Scepter Recipe",
+    "slug": "eul_s_scepter_recipe",
+    "cost": 675,
+    "neutral_tier": null
+  },
+  {
+    "id": 100,
+    "name": "Eul's Scepter of Divinity",
+    "slug": "eul_s_scepter_of_divinity",
+    "cost": 2600,
+    "neutral_tier": null
+  },
+  {
+    "id": 1596,
+    "name": "Evolved",
+    "slug": "evolved",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 374,
+    "name": "Ex Machina",
+    "slug": "ex_machina",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 160,
+    "name": "Eye of Skadi",
+    "slug": "eye_of_skadi",
+    "cost": 5900,
+    "neutral_tier": null
+  },
+  {
+    "id": 159,
+    "name": "Eye of Skadi Recipe",
+    "slug": "eye_of_skadi_recipe",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 990,
+    "name": "Eye of the Vizier",
+    "slug": "eye_of_the_vizier",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 375,
+    "name": "Faded Broach",
+    "slug": "faded_broach",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 835,
+    "name": "Fae Grenade",
+    "slug": "fae_grenade",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 237,
+    "name": "Faerie Fire",
+    "slug": "faerie_fire",
+    "cost": 65,
+    "neutral_tier": null
+  },
+  {
+    "id": 589,
+    "name": "Fairy's Trinket",
+    "slug": "fairy_s_trinket",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 596,
+    "name": "Falcon Blade",
+    "slug": "falcon_blade",
+    "cost": 1125,
+    "neutral_tier": null
+  },
+  {
+    "id": 599,
+    "name": "Falcon Blade Recipe",
+    "slug": "falcon_blade_recipe",
+    "cost": 250,
+    "neutral_tier": null
+  },
+  {
+    "id": 371,
+    "name": "Fallen Sky",
+    "slug": "fallen_sky",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1587,
+    "name": "Feverish",
+    "slug": "feverish",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1647,
+    "name": "Fierce",
+    "slug": "fierce",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1721,
+    "name": "Flayer's Bota",
+    "slug": "flayer_s_bota",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1588,
+    "name": "Fleetfooted",
+    "slug": "fleetfooted",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 335,
+    "name": "Flicker",
+    "slug": "flicker",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 593,
+    "name": "Fluffy Hat",
+    "slug": "fluffy_hat",
+    "cost": 250,
+    "neutral_tier": null
+  },
+  {
+    "id": 286,
+    "name": "Flying Courier",
+    "slug": "flying_courier",
+    "cost": 100,
+    "neutral_tier": null
+  },
+  {
+    "id": 1868,
+    "name": "Forager's Kit",
+    "slug": "forager_s_kit",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 291,
+    "name": "Force Boots",
+    "slug": "force_boots",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 102,
+    "name": "Force Staff",
+    "slug": "force_staff",
+    "cost": 2200,
+    "neutral_tier": null
+  },
+  {
+    "id": 101,
+    "name": "Force Staff Recipe",
+    "slug": "force_staff_recipe",
+    "cost": 950,
+    "neutral_tier": null
+  },
+  {
+    "id": 4302,
+    "name": "Forebearer's Fortune",
+    "slug": "forebearer_s_fortune",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 313,
+    "name": "Fusion Rune",
+    "slug": "fusion_rune",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1602,
+    "name": "Gale Guard",
+    "slug": "gale_guard",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 13,
+    "name": "Gauntlets of Strength",
+    "slug": "gauntlets_of_strength",
+    "cost": 140,
+    "neutral_tier": null
+  },
+  {
+    "id": 30,
+    "name": "Gem of True Sight",
+    "slug": "gem_of_true_sight",
+    "cost": 900,
+    "neutral_tier": null
+  },
+  {
+    "id": 37,
+    "name": "Ghost Scepter",
+    "slug": "ghost_scepter",
+    "cost": 1500,
+    "neutral_tier": null
+  },
+  {
+    "id": 1643,
+    "name": "Giant's Maul",
+    "slug": "giant_s_maul",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 678,
+    "name": "Giant's Ring",
+    "slug": "giant_s_ring",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1466,
+    "name": "Gleipnir",
+    "slug": "gleipnir",
+    "cost": 4650,
+    "neutral_tier": null
+  },
+  {
+    "id": 1565,
+    "name": "Gleipnir Recipe",
+    "slug": "gleipnir_recipe",
+    "cost": 400,
+    "neutral_tier": null
+  },
+  {
+    "id": 254,
+    "name": "Glimmer Cape",
+    "slug": "glimmer_cape",
+    "cost": 2150,
+    "neutral_tier": null
+  },
+  {
+    "id": 253,
+    "name": "Glimmer Cape Recipe",
+    "slug": "glimmer_cape_recipe",
+    "cost": 800,
+    "neutral_tier": null
+  },
+  {
+    "id": 25,
+    "name": "Gloves of Haste",
+    "slug": "gloves_of_haste",
+    "cost": 450,
+    "neutral_tier": null
+  },
+  {
+    "id": 2193,
+    "name": "Gossamer Cape",
+    "slug": "gossamer_cape",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 4205,
+    "name": "Great Healing Lotus",
+    "slug": "great_healing_lotus",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 299,
+    "name": "Greater Faerie Fire",
+    "slug": "greater_faerie_fire",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 4206,
+    "name": "Greater Healing Lotus",
+    "slug": "greater_healing_lotus",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1593,
+    "name": "Greedy",
+    "slug": "greedy",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1441,
+    "name": "Gris-Gris",
+    "slug": "gris_gris",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 288,
+    "name": "Grove Bow",
+    "slug": "grove_bow",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 231,
+    "name": "Guardian Greaves",
+    "slug": "guardian_greaves",
+    "cost": 4450,
+    "neutral_tier": null
+  },
+  {
+    "id": 230,
+    "name": "Guardian Greaves Recipe",
+    "slug": "guardian_greaves_recipe",
+    "cost": 1175,
+    "neutral_tier": null
+  },
+  {
+    "id": 1603,
+    "name": "Gunpowder Gauntlet",
+    "slug": "gunpowder_gauntlet",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 65,
+    "name": "Hand of Midas",
+    "slug": "hand_of_midas",
+    "cost": 2200,
+    "neutral_tier": null
+  },
+  {
+    "id": 64,
+    "name": "Hand of Midas Recipe",
+    "slug": "hand_of_midas_recipe",
+    "cost": 1750,
+    "neutral_tier": null
+  },
+  {
+    "id": 1863,
+    "name": "Harmonizer",
+    "slug": "harmonizer",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 939,
+    "name": "Harpoon",
+    "slug": "harpoon",
+    "cost": 4700,
+    "neutral_tier": null
+  },
+  {
+    "id": 1101,
+    "name": "Harpoon Recipe",
+    "slug": "harpoon_recipe",
+    "cost": 1000,
+    "neutral_tier": null
+  },
+  {
+    "id": 364,
+    "name": "Havoc Hammer",
+    "slug": "havoc_hammer",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 94,
+    "name": "Headdress",
+    "slug": "headdress",
+    "cost": 425,
+    "neutral_tier": null
+  },
+  {
+    "id": 93,
+    "name": "Headdress Recipe",
+    "slug": "headdress_recipe",
+    "cost": 250,
+    "neutral_tier": null
+  },
+  {
+    "id": 4204,
+    "name": "Healing Lotus",
+    "slug": "healing_lotus",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 39,
+    "name": "Healing Salve",
+    "slug": "healing_salve",
+    "cost": 100,
+    "neutral_tier": null
+  },
+  {
+    "id": 114,
+    "name": "Heart of Tarrasque",
+    "slug": "heart_of_tarrasque",
+    "cost": 5200,
+    "neutral_tier": null
+  },
+  {
+    "id": 113,
+    "name": "Heart of Tarrasque Recipe",
+    "slug": "heart_of_tarrasque_recipe",
+    "cost": 700,
+    "neutral_tier": null
+  },
+  {
+    "id": 210,
+    "name": "Heaven's Halberd",
+    "slug": "heaven_s_halberd",
+    "cost": 3400,
+    "neutral_tier": null
+  },
+  {
+    "id": 209,
+    "name": "Heaven's Halberd Recipe",
+    "slug": "heaven_s_halberd_recipe",
+    "cost": 450,
+    "neutral_tier": null
+  },
+  {
+    "id": 6,
+    "name": "Helm of Iron Will",
+    "slug": "helm_of_iron_will",
+    "cost": 975,
+    "neutral_tier": null
+  },
+  {
+    "id": 164,
+    "name": "Helm of the Dominator",
+    "slug": "helm_of_the_dominator",
+    "cost": 2550,
+    "neutral_tier": null
+  },
+  {
+    "id": 163,
+    "name": "Helm of the Dominator Recipe",
+    "slug": "helm_of_the_dominator_recipe",
+    "cost": 1125,
+    "neutral_tier": null
+  },
+  {
+    "id": 635,
+    "name": "Helm of the Overlord",
+    "slug": "helm_of_the_overlord",
+    "cost": 5650,
+    "neutral_tier": null
+  },
+  {
+    "id": 633,
+    "name": "Helm of the Overlord Recipe",
+    "slug": "helm_of_the_overlord_recipe",
+    "cost": 300,
+    "neutral_tier": null
+  },
+  {
+    "id": 327,
+    "name": "Helm of the Undying",
+    "slug": "helm_of_the_undying",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 269,
+    "name": "Holy Locket",
+    "slug": "holy_locket",
+    "cost": 2250,
+    "neutral_tier": null
+  },
+  {
+    "id": 268,
+    "name": "Holy Locket Recipe",
+    "slug": "holy_locket_recipe",
+    "cost": 1340,
+    "neutral_tier": null
+  },
+  {
+    "id": 131,
+    "name": "Hood of Defiance",
+    "slug": "hood_of_defiance",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1866,
+    "name": "Hulking",
+    "slug": "hulking",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 263,
+    "name": "Hurricane Pike",
+    "slug": "hurricane_pike",
+    "cost": 4450,
+    "neutral_tier": null
+  },
+  {
+    "id": 262,
+    "name": "Hurricane Pike Recipe",
+    "slug": "hurricane_pike_recipe",
+    "cost": 350,
+    "neutral_tier": null
+  },
+  {
+    "id": 1858,
+    "name": "Hydra's Breath",
+    "slug": "hydra_s_breath",
+    "cost": 5900,
+    "neutral_tier": null
+  },
+  {
+    "id": 55,
+    "name": "Hyperstone",
+    "slug": "hyperstone",
+    "cost": 2000,
+    "neutral_tier": null
+  },
+  {
+    "id": 1720,
+    "name": "Idol of Scree'auk",
+    "slug": "idol_of_scree_auk",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 363,
+    "name": "Illusionist's Cape",
+    "slug": "illusionist_s_cape",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 334,
+    "name": "Imp Claw",
+    "slug": "imp_claw",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 265,
+    "name": "Infused Raindrops",
+    "slug": "infused_raindrops",
+    "cost": 225,
+    "neutral_tier": null
+  },
+  {
+    "id": 16,
+    "name": "Iron Branch",
+    "slug": "iron_branch",
+    "cost": 55,
+    "neutral_tier": null
+  },
+  {
+    "id": 239,
+    "name": "Iron Talon",
+    "slug": "iron_talon",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 238,
+    "name": "Iron Talon Recipe",
+    "slug": "iron_talon_recipe",
+    "cost": 1,
+    "neutral_tier": null
+  },
+  {
+    "id": 1870,
+    "name": "Ironwood Nut",
+    "slug": "ironwood_nut",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 304,
+    "name": "Ironwood Tree",
+    "slug": "ironwood_tree",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 7,
+    "name": "Javelin",
+    "slug": "javelin",
+    "cost": 900,
+    "neutral_tier": null
+  },
+  {
+    "id": 1640,
+    "name": "Jidi Pollen Bag",
+    "slug": "jidi_pollen_bag",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 259,
+    "name": "Kaya",
+    "slug": "kaya",
+    "cost": 2100,
+    "neutral_tier": null
+  },
+  {
+    "id": 258,
+    "name": "Kaya Recipe",
+    "slug": "kaya_recipe",
+    "cost": 650,
+    "neutral_tier": null
+  },
+  {
+    "id": 273,
+    "name": "Kaya and Sange",
+    "slug": "kaya_and_sange",
+    "cost": 4200,
+    "neutral_tier": null
+  },
+  {
+    "id": 272,
+    "name": "Kaya and Sange Recipe",
+    "slug": "kaya_and_sange_recipe",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 287,
+    "name": "Keen Optic",
+    "slug": "keen_optic",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1595,
+    "name": "Keen-eyed",
+    "slug": "keen_eyed",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1808,
+    "name": "Khanda",
+    "slug": "khanda",
+    "cost": 5600,
+    "neutral_tier": null
+  },
+  {
+    "id": 1807,
+    "name": "Khanda Recipe",
+    "slug": "khanda_recipe",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1637,
+    "name": "Kobold Cup",
+    "slug": "kobold_cup",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 946,
+    "name": "Lance of Pursuit",
+    "slug": "lance_of_pursuit",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1875,
+    "name": "Leviathan's Fish",
+    "slug": "leviathan_s_fish",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1167,
+    "name": "Light Collector",
+    "slug": "light_collector",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 123,
+    "name": "Linken's Sphere",
+    "slug": "linken_s_sphere",
+    "cost": 4800,
+    "neutral_tier": null
+  },
+  {
+    "id": 122,
+    "name": "Linken's Sphere Recipe",
+    "slug": "linken_s_sphere_recipe",
+    "cost": 600,
+    "neutral_tier": null
+  },
+  {
+    "id": 226,
+    "name": "Lotus Orb",
+    "slug": "lotus_orb",
+    "cost": 3850,
+    "neutral_tier": null
+  },
+  {
+    "id": 221,
+    "name": "Lotus Orb Recipe",
+    "slug": "lotus_orb_recipe",
+    "cost": 250,
+    "neutral_tier": null
+  },
+  {
+    "id": 1609,
+    "name": "Madstone Bundle",
+    "slug": "madstone_bundle",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 166,
+    "name": "Maelstrom",
+    "slug": "maelstrom",
+    "cost": 2950,
+    "neutral_tier": null
+  },
+  {
+    "id": 165,
+    "name": "Maelstrom Recipe",
+    "slug": "maelstrom_recipe",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 598,
+    "name": "Mage Slayer",
+    "slug": "mage_slayer",
+    "cost": 3100,
+    "neutral_tier": null
+  },
+  {
+    "id": 597,
+    "name": "Mage Slayer Recipe",
+    "slug": "mage_slayer_recipe",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 365,
+    "name": "Magic Lamp",
+    "slug": "magic_lamp",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 34,
+    "name": "Magic Stick",
+    "slug": "magic_stick",
+    "cost": 200,
+    "neutral_tier": null
+  },
+  {
+    "id": 36,
+    "name": "Magic Wand",
+    "slug": "magic_wand",
+    "cost": 460,
+    "neutral_tier": null
+  },
+  {
+    "id": 35,
+    "name": "Magic Wand Recipe",
+    "slug": "magic_wand_recipe",
+    "cost": 150,
+    "neutral_tier": null
+  },
+  {
+    "id": 1607,
+    "name": "Magnifying Monocle",
+    "slug": "magnifying_monocle",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1599,
+    "name": "Mana Draught",
+    "slug": "mana_draught",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 328,
+    "name": "Mango Tree",
+    "slug": "mango_tree",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1867,
+    "name": "Manic",
+    "slug": "manic",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 147,
+    "name": "Manta Style",
+    "slug": "manta_style",
+    "cost": 4650,
+    "neutral_tier": null
+  },
+  {
+    "id": 146,
+    "name": "Manta Style Recipe",
+    "slug": "manta_style_recipe",
+    "cost": 1550,
+    "neutral_tier": null
+  },
+  {
+    "id": 15,
+    "name": "Mantle of Intelligence",
+    "slug": "mantle_of_intelligence",
+    "cost": 140,
+    "neutral_tier": null
+  },
+  {
+    "id": 2192,
+    "name": "Martyr's Plate",
+    "slug": "martyr_s_plate",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 172,
+    "name": "Mask of Madness",
+    "slug": "mask_of_madness",
+    "cost": 1900,
+    "neutral_tier": null
+  },
+  {
+    "id": 171,
+    "name": "Mask of Madness Recipe",
+    "slug": "mask_of_madness_recipe",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 187,
+    "name": "Medallion of Courage",
+    "slug": "medallion_of_courage",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 79,
+    "name": "Mekansm",
+    "slug": "mekansm",
+    "cost": 1775,
+    "neutral_tier": null
+  },
+  {
+    "id": 78,
+    "name": "Mekansm Recipe",
+    "slug": "mekansm_recipe",
+    "cost": 850,
+    "neutral_tier": null
+  },
+  {
+    "id": 1090,
+    "name": "Mercy & Grace",
+    "slug": "mercy_grace",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1719,
+    "name": "Metamorphic Mandible",
+    "slug": "metamorphic_mandible",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 223,
+    "name": "Meteor Hammer",
+    "slug": "meteor_hammer",
+    "cost": 2850,
+    "neutral_tier": null
+  },
+  {
+    "id": 222,
+    "name": "Meteor Hammer Recipe",
+    "slug": "meteor_hammer_recipe",
+    "cost": 300,
+    "neutral_tier": null
+  },
+  {
+    "id": 309,
+    "name": "Mind Breaker",
+    "slug": "mind_breaker",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 377,
+    "name": "Minotaur Horn",
+    "slug": "minotaur_horn",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 301,
+    "name": "Mirror Shield",
+    "slug": "mirror_shield",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 8,
+    "name": "Mithril Hammer",
+    "slug": "mithril_hammer",
+    "cost": 1600,
+    "neutral_tier": null
+  },
+  {
+    "id": 158,
+    "name": "Mjollnir",
+    "slug": "mjollnir",
+    "cost": 5500,
+    "neutral_tier": null
+  },
+  {
+    "id": 157,
+    "name": "Mjollnir Recipe",
+    "slug": "mjollnir_recipe",
+    "cost": 550,
+    "neutral_tier": null
+  },
+  {
+    "id": 135,
+    "name": "Monkey King Bar",
+    "slug": "monkey_king_bar",
+    "cost": 5000,
+    "neutral_tier": null
+  },
+  {
+    "id": 134,
+    "name": "Monkey King Bar Recipe",
+    "slug": "monkey_king_bar_recipe",
+    "cost": 900,
+    "neutral_tier": null
+  },
+  {
+    "id": 247,
+    "name": "Moon Shard",
+    "slug": "moon_shard",
+    "cost": 4000,
+    "neutral_tier": null
+  },
+  {
+    "id": 26,
+    "name": "Morbid Mask",
+    "slug": "morbid_mask",
+    "cost": 900,
+    "neutral_tier": null
+  },
+  {
+    "id": 58,
+    "name": "Mystic Staff",
+    "slug": "mystic_staff",
+    "cost": 2800,
+    "neutral_tier": null
+  },
+  {
+    "id": 1583,
+    "name": "Mystical",
+    "slug": "mystical",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 106,
+    "name": "Necronomicon",
+    "slug": "necronomicon",
+    "cost": 2050,
+    "neutral_tier": null
+  },
+  {
+    "id": 193,
+    "name": "Necronomicon",
+    "slug": "necronomicon_193",
+    "cost": 3300,
+    "neutral_tier": null
+  },
+  {
+    "id": 194,
+    "name": "Necronomicon",
+    "slug": "necronomicon_194",
+    "cost": 4550,
+    "neutral_tier": null
+  },
+  {
+    "id": 105,
+    "name": "Necronomicon Recipe",
+    "slug": "necronomicon_recipe",
+    "cost": 1250,
+    "neutral_tier": null
+  },
+  {
+    "id": 1159,
+    "name": "Nemesis Curse",
+    "slug": "nemesis_curse",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 357,
+    "name": "Nether Shawl",
+    "slug": "nether_shawl",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1874,
+    "name": "Nimble",
+    "slug": "nimble",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 362,
+    "name": "Ninja Gear",
+    "slug": "ninja_gear",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 77,
+    "name": "Null Talisman",
+    "slug": "null_talisman",
+    "cost": 505,
+    "neutral_tier": null
+  },
+  {
+    "id": 76,
+    "name": "Null Talisman Recipe",
+    "slug": "null_talisman_recipe",
+    "cost": 210,
+    "neutral_tier": null
+  },
+  {
+    "id": 225,
+    "name": "Nullifier",
+    "slug": "nullifier",
+    "cost": 4350,
+    "neutral_tier": null
+  },
+  {
+    "id": 224,
+    "name": "Nullifier Recipe",
+    "slug": "nullifier_recipe",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 67,
+    "name": "Oblivion Staff",
+    "slug": "oblivion_staff",
+    "cost": 1625,
+    "neutral_tier": null
+  },
+  {
+    "id": 42,
+    "name": "Observer Ward",
+    "slug": "observer_ward",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 218,
+    "name": "Observer and Sentry Wards",
+    "slug": "observer_and_sentry_wards",
+    "cost": 50,
+    "neutral_tier": null
+  },
+  {
+    "id": 947,
+    "name": "Occult Bracelet",
+    "slug": "occult_bracelet",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 354,
+    "name": "Ocean Heart",
+    "slug": "ocean_heart",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 235,
+    "name": "Octarine Core",
+    "slug": "octarine_core",
+    "cost": 4900,
+    "neutral_tier": null
+  },
+  {
+    "id": 228,
+    "name": "Octarine Core Recipe",
+    "slug": "octarine_core_recipe",
+    "cost": 200,
+    "neutral_tier": null
+  },
+  {
+    "id": 21,
+    "name": "Ogre Axe",
+    "slug": "ogre_axe",
+    "cost": 1000,
+    "neutral_tier": null
+  },
+  {
+    "id": 949,
+    "name": "Ogre Seal Totem",
+    "slug": "ogre_seal_totem",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 240,
+    "name": "Orb of Blight",
+    "slug": "orb_of_blight",
+    "cost": 300,
+    "neutral_tier": null
+  },
+  {
+    "id": 569,
+    "name": "Orb of Corrosion",
+    "slug": "orb_of_corrosion",
+    "cost": 1050,
+    "neutral_tier": null
+  },
+  {
+    "id": 640,
+    "name": "Orb of Corrosion Recipe",
+    "slug": "orb_of_corrosion_recipe",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 378,
+    "name": "Orb of Destruction",
+    "slug": "orb_of_destruction",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1575,
+    "name": "Orb of Frost",
+    "slug": "orb_of_frost",
+    "cost": 300,
+    "neutral_tier": null
+  },
+  {
+    "id": 181,
+    "name": "Orb of Venom",
+    "slug": "orb_of_venom",
+    "cost": 350,
+    "neutral_tier": null
+  },
+  {
+    "id": 98,
+    "name": "Orchid Malevolence",
+    "slug": "orchid_malevolence",
+    "cost": 3275,
+    "neutral_tier": null
+  },
+  {
+    "id": 97,
+    "name": "Orchid Malevolence Recipe",
+    "slug": "orchid_malevolence_recipe",
+    "cost": 300,
+    "neutral_tier": null
+  },
+  {
+    "id": 1641,
+    "name": "Outworld Staff",
+    "slug": "outworld_staff",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 600,
+    "name": "Overwhelming Blink",
+    "slug": "overwhelming_blink",
+    "cost": 6800,
+    "neutral_tier": null
+  },
+  {
+    "id": 608,
+    "name": "Overwhelming Blink Recipe",
+    "slug": "overwhelming_blink_recipe",
+    "cost": 1750,
+    "neutral_tier": null
+  },
+  {
+    "id": 376,
+    "name": "Paladin Sword",
+    "slug": "paladin_sword",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1806,
+    "name": "Parasma",
+    "slug": "parasma",
+    "cost": 5975,
+    "neutral_tier": null
+  },
+  {
+    "id": 1805,
+    "name": "Parasma Recipe",
+    "slug": "parasma_recipe",
+    "cost": 400,
+    "neutral_tier": null
+  },
+  {
+    "id": 1873,
+    "name": "Partisan's Brand",
+    "slug": "partisan_s_brand",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1128,
+    "name": "Pavise",
+    "slug": "pavise",
+    "cost": 1350,
+    "neutral_tier": null
+  },
+  {
+    "id": 1127,
+    "name": "Pavise Recipe",
+    "slug": "pavise_recipe",
+    "cost": 675,
+    "neutral_tier": null
+  },
+  {
+    "id": 638,
+    "name": "Penta-Edged Sword",
+    "slug": "penta_edged_sword",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 69,
+    "name": "Perseverance",
+    "slug": "perseverance",
+    "cost": 1400,
+    "neutral_tier": null
+  },
+  {
+    "id": 50,
+    "name": "Phase Boots",
+    "slug": "phase_boots",
+    "cost": 1450,
+    "neutral_tier": null
+  },
+  {
+    "id": 290,
+    "name": "Philosopher's Stone",
+    "slug": "philosopher_s_stone",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 293,
+    "name": "Phoenix Ash",
+    "slug": "phoenix_ash",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1107,
+    "name": "Phylactery",
+    "slug": "phylactery",
+    "cost": 2600,
+    "neutral_tier": null
+  },
+  {
+    "id": 1106,
+    "name": "Phylactery Recipe",
+    "slug": "phylactery_recipe",
+    "cost": 200,
+    "neutral_tier": null
+  },
+  {
+    "id": 838,
+    "name": "Pig Pole",
+    "slug": "pig_pole",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 90,
+    "name": "Pipe of Insight",
+    "slug": "pipe_of_insight",
+    "cost": 3725,
+    "neutral_tier": null
+  },
+  {
+    "id": 89,
+    "name": "Pipe of Insight Recipe",
+    "slug": "pipe_of_insight_recipe",
+    "cost": 675,
+    "neutral_tier": null
+  },
+  {
+    "id": 372,
+    "name": "Pirate Hat",
+    "slug": "pirate_hat",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 9,
+    "name": "Platemail",
+    "slug": "platemail",
+    "cost": 1400,
+    "neutral_tier": null
+  },
+  {
+    "id": 1032,
+    "name": "Pocket Roshan",
+    "slug": "pocket_roshan",
+    "cost": 1000,
+    "neutral_tier": null
+  },
+  {
+    "id": 1030,
+    "name": "Pocket Tower",
+    "slug": "pocket_tower",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 60,
+    "name": "Point Booster",
+    "slug": "point_booster",
+    "cost": 1200,
+    "neutral_tier": null
+  },
+  {
+    "id": 1606,
+    "name": "Pollywog Charm",
+    "slug": "pollywog_charm",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 71,
+    "name": "Poor Man's Shield",
+    "slug": "poor_man_s_shield",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 577,
+    "name": "Possessed Mask",
+    "slug": "possessed_mask",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 63,
+    "name": "Power Treads",
+    "slug": "power_treads",
+    "cost": 1400,
+    "neutral_tier": null
+  },
+  {
+    "id": 325,
+    "name": "Prince's Knife",
+    "slug": "prince_s_knife",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1860,
+    "name": "Prophet's Pendulum",
+    "slug": "prophet_s_pendulum",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 675,
+    "name": "Psychic Headband",
+    "slug": "psychic_headband",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 306,
+    "name": "Pupil's Gift",
+    "slug": "pupil_s_gift",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1608,
+    "name": "Pyrrhic Cloak",
+    "slug": "pyrrhic_cloak",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 10,
+    "name": "Quarterstaff",
+    "slug": "quarterstaff",
+    "cost": 875,
+    "neutral_tier": null
+  },
+  {
+    "id": 11,
+    "name": "Quelling Blade",
+    "slug": "quelling_blade",
+    "cost": 100,
+    "neutral_tier": null
+  },
+  {
+    "id": 1577,
+    "name": "Quickened",
+    "slug": "quickened",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 289,
+    "name": "Quickening Charm",
+    "slug": "quickening_charm",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 686,
+    "name": "Quicksilver Amulet",
+    "slug": "quicksilver_amulet",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 137,
+    "name": "Radiance",
+    "slug": "radiance",
+    "cost": 4700,
+    "neutral_tier": null
+  },
+  {
+    "id": 136,
+    "name": "Radiance Recipe",
+    "slug": "radiance_recipe",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1168,
+    "name": "Rattlecage",
+    "slug": "rattlecage",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 53,
+    "name": "Reaver",
+    "slug": "reaver",
+    "cost": 2800,
+    "neutral_tier": null
+  },
+  {
+    "id": 317,
+    "name": "Recipe: Fallen Sky",
+    "slug": "recipe_fallen_sky",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 110,
+    "name": "Refresher Orb",
+    "slug": "refresher_orb",
+    "cost": 5000,
+    "neutral_tier": null
+  },
+  {
+    "id": 109,
+    "name": "Refresher Orb Recipe",
+    "slug": "refresher_orb_recipe",
+    "cost": 1600,
+    "neutral_tier": null
+  },
+  {
+    "id": 260,
+    "name": "Refresher Shard",
+    "slug": "refresher_shard",
+    "cost": 1000,
+    "neutral_tier": null
+  },
+  {
+    "id": 308,
+    "name": "Repair Kit",
+    "slug": "repair_kit",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1649,
+    "name": "Restorative",
+    "slug": "restorative",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 911,
+    "name": "Revenant's Brooch",
+    "slug": "revenant_s_brooch",
+    "cost": 3300,
+    "neutral_tier": null
+  },
+  {
+    "id": 910,
+    "name": "Revenant's Brooch Recipe",
+    "slug": "revenant_s_brooch_recipe",
+    "cost": 650,
+    "neutral_tier": null
+  },
+  {
+    "id": 1718,
+    "name": "Riftshadow Prism",
+    "slug": "riftshadow_prism",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 212,
+    "name": "Ring of Aquila",
+    "slug": "ring_of_aquila",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 88,
+    "name": "Ring of Basilius",
+    "slug": "ring_of_basilius",
+    "cost": 425,
+    "neutral_tier": null
+  },
+  {
+    "id": 87,
+    "name": "Ring of Basilius Recipe",
+    "slug": "ring_of_basilius_recipe",
+    "cost": 250,
+    "neutral_tier": null
+  },
+  {
+    "id": 56,
+    "name": "Ring of Health",
+    "slug": "ring_of_health",
+    "cost": 700,
+    "neutral_tier": null
+  },
+  {
+    "id": 12,
+    "name": "Ring of Protection",
+    "slug": "ring_of_protection",
+    "cost": 175,
+    "neutral_tier": null
+  },
+  {
+    "id": 27,
+    "name": "Ring of Regen",
+    "slug": "ring_of_regen",
+    "cost": 175,
+    "neutral_tier": null
+  },
+  {
+    "id": 279,
+    "name": "Ring of Tarrasque",
+    "slug": "ring_of_tarrasque",
+    "cost": 1700,
+    "neutral_tier": null
+  },
+  {
+    "id": 1600,
+    "name": "Ripper's Lash",
+    "slug": "ripper_s_lash",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1027,
+    "name": "River Vial: Blood",
+    "slug": "river_vial_blood",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1021,
+    "name": "River Vial: Chrome",
+    "slug": "river_vial_chrome",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1022,
+    "name": "River Vial: Dry",
+    "slug": "river_vial_dry",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1025,
+    "name": "River Vial: Electrified",
+    "slug": "river_vial_electrified",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1024,
+    "name": "River Vial: Oil",
+    "slug": "river_vial_oil",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1026,
+    "name": "River Vial: Potion",
+    "slug": "river_vial_potion",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1023,
+    "name": "River Vial: Slime",
+    "slug": "river_vial_slime",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 19,
+    "name": "Robe of the Magi",
+    "slug": "robe_of_the_magi",
+    "cost": 450,
+    "neutral_tier": null
+  },
+  {
+    "id": 206,
+    "name": "Rod of Atos",
+    "slug": "rod_of_atos",
+    "cost": 2250,
+    "neutral_tier": null
+  },
+  {
+    "id": 205,
+    "name": "Rod of Atos Recipe",
+    "slug": "rod_of_atos_recipe",
+    "cost": 250,
+    "neutral_tier": null
+  },
+  {
+    "id": 1804,
+    "name": "Roshan's Banner",
+    "slug": "roshan_s_banner",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 305,
+    "name": "Royal Jelly",
+    "slug": "royal_jelly",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 54,
+    "name": "Sacred Relic",
+    "slug": "sacred_relic",
+    "cost": 3400,
+    "neutral_tier": null
+  },
+  {
+    "id": 1157,
+    "name": "Safety Bubble",
+    "slug": "safety_bubble",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 28,
+    "name": "Sage's Mask",
+    "slug": "sage_s_mask",
+    "cost": 175,
+    "neutral_tier": null
+  },
+  {
+    "id": 162,
+    "name": "Sange",
+    "slug": "sange",
+    "cost": 2100,
+    "neutral_tier": null
+  },
+  {
+    "id": 161,
+    "name": "Sange Recipe",
+    "slug": "sange_recipe",
+    "cost": 650,
+    "neutral_tier": null
+  },
+  {
+    "id": 154,
+    "name": "Sange and Yasha",
+    "slug": "sange_and_yasha",
+    "cost": 4200,
+    "neutral_tier": null
+  },
+  {
+    "id": 156,
+    "name": "Satanic",
+    "slug": "satanic",
+    "cost": 5050,
+    "neutral_tier": null
+  },
+  {
+    "id": 155,
+    "name": "Satanic Recipe",
+    "slug": "satanic_recipe",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 4301,
+    "name": "Scrying Shovel",
+    "slug": "scrying_shovel",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 96,
+    "name": "Scythe of Vyse",
+    "slug": "scythe_of_vyse",
+    "cost": 5200,
+    "neutral_tier": null
+  },
+  {
+    "id": 95,
+    "name": "Scythe of Vyse Recipe",
+    "slug": "scythe_of_vyse_recipe",
+    "cost": 700,
+    "neutral_tier": null
+  },
+  {
+    "id": 1604,
+    "name": "Searing Signet",
+    "slug": "searing_signet",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 945,
+    "name": "Seeds of Serenity",
+    "slug": "seeds_of_serenity",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 294,
+    "name": "Seer Stone",
+    "slug": "seer_stone",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 43,
+    "name": "Sentry Ward",
+    "slug": "sentry_ward",
+    "cost": 50,
+    "neutral_tier": null
+  },
+  {
+    "id": 1605,
+    "name": "Serrated Shiv",
+    "slug": "serrated_shiv",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 215,
+    "name": "Shadow Amulet",
+    "slug": "shadow_amulet",
+    "cost": 900,
+    "neutral_tier": null
+  },
+  {
+    "id": 152,
+    "name": "Shadow Blade",
+    "slug": "shadow_blade",
+    "cost": 3250,
+    "neutral_tier": null
+  },
+  {
+    "id": 1848,
+    "name": "Shawl",
+    "slug": "shawl",
+    "cost": 450,
+    "neutral_tier": null
+  },
+  {
+    "id": 119,
+    "name": "Shiva's Guard",
+    "slug": "shiva_s_guard",
+    "cost": 4500,
+    "neutral_tier": null
+  },
+  {
+    "id": 118,
+    "name": "Shiva's Guard Recipe",
+    "slug": "shiva_s_guard_recipe",
+    "cost": 1350,
+    "neutral_tier": null
+  },
+  {
+    "id": 249,
+    "name": "Silver Edge",
+    "slug": "silver_edge",
+    "cost": 5700,
+    "neutral_tier": null
+  },
+  {
+    "id": 248,
+    "name": "Silver Edge Recipe",
+    "slug": "silver_edge_recipe",
+    "cost": 250,
+    "neutral_tier": null
+  },
+  {
+    "id": 1639,
+    "name": "Sister's Shroud",
+    "slug": "sister_s_shroud",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 143,
+    "name": "Skull Basher",
+    "slug": "skull_basher",
+    "cost": 2875,
+    "neutral_tier": null
+  },
+  {
+    "id": 142,
+    "name": "Skull Basher Recipe",
+    "slug": "skull_basher_recipe",
+    "cost": 825,
+    "neutral_tier": null
+  },
+  {
+    "id": 14,
+    "name": "Slippers of Agility",
+    "slug": "slippers_of_agility",
+    "cost": 140,
+    "neutral_tier": null
+  },
+  {
+    "id": 188,
+    "name": "Smoke of Deceit",
+    "slug": "smoke_of_deceit",
+    "cost": 50,
+    "neutral_tier": null
+  },
+  {
+    "id": 229,
+    "name": "Solar Crest",
+    "slug": "solar_crest",
+    "cost": 2575,
+    "neutral_tier": null
+  },
+  {
+    "id": 227,
+    "name": "Solar Crest Recipe",
+    "slug": "solar_crest_recipe",
+    "cost": 500,
+    "neutral_tier": null
+  },
+  {
+    "id": 129,
+    "name": "Soul Booster",
+    "slug": "soul_booster",
+    "cost": 3000,
+    "neutral_tier": null
+  },
+  {
+    "id": 178,
+    "name": "Soul Ring",
+    "slug": "soul_ring",
+    "cost": 805,
+    "neutral_tier": null
+  },
+  {
+    "id": 177,
+    "name": "Soul Ring Recipe",
+    "slug": "soul_ring_recipe",
+    "cost": 350,
+    "neutral_tier": null
+  },
+  {
+    "id": 1124,
+    "name": "Spark of Courage",
+    "slug": "spark_of_courage",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1076,
+    "name": "Specialist's Array",
+    "slug": "specialist_s_array",
+    "cost": 2550,
+    "neutral_tier": null
+  },
+  {
+    "id": 311,
+    "name": "Spell Prism",
+    "slug": "spell_prism",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1859,
+    "name": "Spellslinger",
+    "slug": "spellslinger",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 326,
+    "name": "Spider Legs",
+    "slug": "spider_legs",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 267,
+    "name": "Spirit Vessel",
+    "slug": "spirit_vessel",
+    "cost": 2725,
+    "neutral_tier": null
+  },
+  {
+    "id": 266,
+    "name": "Spirit Vessel Recipe",
+    "slug": "spirit_vessel_recipe",
+    "cost": 900,
+    "neutral_tier": null
+  },
+  {
+    "id": 1847,
+    "name": "Splintmail",
+    "slug": "splintmail",
+    "cost": 950,
+    "neutral_tier": null
+  },
+  {
+    "id": 23,
+    "name": "Staff of Wizardry",
+    "slug": "staff_of_wizardry",
+    "cost": 1000,
+    "neutral_tier": null
+  },
+  {
+    "id": 1861,
+    "name": "Stonefeather Satchel",
+    "slug": "stonefeather_satchel",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 585,
+    "name": "Stormcrafter",
+    "slug": "stormcrafter",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 182,
+    "name": "Stout Shield",
+    "slug": "stout_shield",
+    "cost": 100,
+    "neutral_tier": null
+  },
+  {
+    "id": 292,
+    "name": "Stygian Desolator",
+    "slug": "stygian_desolator",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 603,
+    "name": "Swift Blink",
+    "slug": "swift_blink",
+    "cost": 6800,
+    "neutral_tier": null
+  },
+  {
+    "id": 607,
+    "name": "Swift Blink Recipe",
+    "slug": "swift_blink_recipe",
+    "cost": 1750,
+    "neutral_tier": null
+  },
+  {
+    "id": 32,
+    "name": "Talisman of Evasion",
+    "slug": "talisman_of_evasion",
+    "cost": 1300,
+    "neutral_tier": null
+  },
+  {
+    "id": 44,
+    "name": "Tango",
+    "slug": "tango",
+    "cost": 90,
+    "neutral_tier": null
+  },
+  {
+    "id": 241,
+    "name": "Tango (Shared)",
+    "slug": "tango_shared",
+    "cost": 30,
+    "neutral_tier": null
+  },
+  {
+    "id": 336,
+    "name": "Telescope",
+    "slug": "telescope",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 379,
+    "name": "The Leveller",
+    "slug": "the_leveller",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1650,
+    "name": "Thick",
+    "slug": "thick",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 310,
+    "name": "Third Eye",
+    "slug": "third_eye",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1802,
+    "name": "Tiara of Selemene",
+    "slug": "tiara_of_selemene",
+    "cost": 1700,
+    "neutral_tier": null
+  },
+  {
+    "id": 2091,
+    "name": "Tier 1 Token",
+    "slug": "tier_1_token",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 2092,
+    "name": "Tier 2 Token",
+    "slug": "tier_2_token",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 2093,
+    "name": "Tier 3 Token",
+    "slug": "tier_3_token",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 2094,
+    "name": "Tier 4 Token",
+    "slug": "tier_4_token",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 2095,
+    "name": "Tier 5 Token",
+    "slug": "tier_5_token",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1592,
+    "name": "Timeless",
+    "slug": "timeless",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 300,
+    "name": "Timeless Relic",
+    "slug": "timeless_relic",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 381,
+    "name": "Titan Sliver",
+    "slug": "titan_sliver",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1597,
+    "name": "Titanic",
+    "slug": "titanic",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1028,
+    "name": "Tombstone",
+    "slug": "tombstone",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 307,
+    "name": "Tome of Aghanim",
+    "slug": "tome_of_aghanim",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 257,
+    "name": "Tome of Knowledge",
+    "slug": "tome_of_knowledge",
+    "cost": 75,
+    "neutral_tier": null
+  },
+  {
+    "id": 1871,
+    "name": "Tomo'kan Ringcap",
+    "slug": "tomo_kan_ringcap",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1586,
+    "name": "Tough",
+    "slug": "tough",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 46,
+    "name": "Town Portal Scroll",
+    "slug": "town_portal_scroll",
+    "cost": 100,
+    "neutral_tier": null
+  },
+  {
+    "id": 214,
+    "name": "Tranquil Boots",
+    "slug": "tranquil_boots",
+    "cost": 900,
+    "neutral_tier": null
+  },
+  {
+    "id": 213,
+    "name": "Tranquil Boots Recipe",
+    "slug": "tranquil_boots_recipe",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 571,
+    "name": "Trickster Cloak",
+    "slug": "trickster_cloak",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 369,
+    "name": "Trident",
+    "slug": "trident",
+    "cost": 6301,
+    "neutral_tier": null
+  },
+  {
+    "id": 275,
+    "name": "Trident Recipe",
+    "slug": "trident_recipe",
+    "cost": 1,
+    "neutral_tier": null
+  },
+  {
+    "id": 356,
+    "name": "Trusty Shovel",
+    "slug": "trusty_shovel",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 840,
+    "name": "Tumbler's Toy",
+    "slug": "tumbler_s_toy",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 24,
+    "name": "Ultimate Orb",
+    "slug": "ultimate_orb",
+    "cost": 2800,
+    "neutral_tier": null
+  },
+  {
+    "id": 1651,
+    "name": "Unleashed",
+    "slug": "unleashed",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1598,
+    "name": "Unrelenting Eye",
+    "slug": "unrelenting_eye",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1161,
+    "name": "Unwavering Condition",
+    "slug": "unwavering_condition",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 92,
+    "name": "Urn of Shadows",
+    "slug": "urn_of_shadows",
+    "cost": 825,
+    "neutral_tier": null
+  },
+  {
+    "id": 91,
+    "name": "Urn of Shadows Recipe",
+    "slug": "urn_of_shadows_recipe",
+    "cost": 320,
+    "neutral_tier": null
+  },
+  {
+    "id": 331,
+    "name": "Vambrace",
+    "slug": "vambrace",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 297,
+    "name": "Vampire Fangs",
+    "slug": "vampire_fangs",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1594,
+    "name": "Vampiric",
+    "slug": "vampiric",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 125,
+    "name": "Vanguard",
+    "slug": "vanguard",
+    "cost": 1700,
+    "neutral_tier": null
+  },
+  {
+    "id": 1576,
+    "name": "Vast",
+    "slug": "vast",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 190,
+    "name": "Veil of Discord",
+    "slug": "veil_of_discord",
+    "cost": 1700,
+    "neutral_tier": null
+  },
+  {
+    "id": 189,
+    "name": "Veil of Discord Recipe",
+    "slug": "veil_of_discord_recipe",
+    "cost": 350,
+    "neutral_tier": null
+  },
+  {
+    "id": 2096,
+    "name": "Vindicator's Axe",
+    "slug": "vindicator_s_axe",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1865,
+    "name": "Vital",
+    "slug": "vital",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1869,
+    "name": "Vital Toadstool",
+    "slug": "vital_toadstool",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 61,
+    "name": "Vitality Booster",
+    "slug": "vitality_booster",
+    "cost": 1000,
+    "neutral_tier": null
+  },
+  {
+    "id": 81,
+    "name": "Vladmir's Offering",
+    "slug": "vladmir_s_offering",
+    "cost": 2200,
+    "neutral_tier": null
+  },
+  {
+    "id": 80,
+    "name": "Vladmir's Offering Recipe",
+    "slug": "vladmir_s_offering_recipe",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 57,
+    "name": "Void Stone",
+    "slug": "void_stone",
+    "cost": 700,
+    "neutral_tier": null
+  },
+  {
+    "id": 473,
+    "name": "Voodoo Mask",
+    "slug": "voodoo_mask",
+    "cost": 650,
+    "neutral_tier": null
+  },
+  {
+    "id": 1716,
+    "name": "Weighted Dice",
+    "slug": "weighted_dice",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1158,
+    "name": "Whisper of the Dread",
+    "slug": "whisper_of_the_dread",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 244,
+    "name": "Wind Lace",
+    "slug": "wind_lace",
+    "cost": 225,
+    "neutral_tier": null
+  },
+  {
+    "id": 610,
+    "name": "Wind Waker",
+    "slug": "wind_waker",
+    "cost": 6800,
+    "neutral_tier": null
+  },
+  {
+    "id": 612,
+    "name": "Wind Waker Recipe",
+    "slug": "wind_waker_recipe",
+    "cost": 1400,
+    "neutral_tier": null
+  },
+  {
+    "id": 1591,
+    "name": "Wise",
+    "slug": "wise",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 534,
+    "name": "Witch Blade",
+    "slug": "witch_blade",
+    "cost": 2775,
+    "neutral_tier": null
+  },
+  {
+    "id": 533,
+    "name": "Witch Blade Recipe",
+    "slug": "witch_blade_recipe",
+    "cost": 300,
+    "neutral_tier": null
+  },
+  {
+    "id": 837,
+    "name": "Witchbane",
+    "slug": "witchbane",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 330,
+    "name": "Witless Shako",
+    "slug": "witless_shako",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 1849,
+    "name": "Wizard Hat",
+    "slug": "wizard_hat",
+    "cost": 250,
+    "neutral_tier": null
+  },
+  {
+    "id": 368,
+    "name": "Woodland Striders",
+    "slug": "woodland_striders",
+    "cost": null,
+    "neutral_tier": null
+  },
+  {
+    "id": 75,
+    "name": "Wraith Band",
+    "slug": "wraith_band",
+    "cost": 505,
+    "neutral_tier": null
+  },
+  {
+    "id": 74,
+    "name": "Wraith Band Recipe",
+    "slug": "wraith_band_recipe",
+    "cost": 210,
+    "neutral_tier": null
+  },
+  {
+    "id": 908,
+    "name": "Wraith Pact",
+    "slug": "wraith_pact",
+    "cost": 3800,
+    "neutral_tier": null
+  },
+  {
+    "id": 170,
+    "name": "Yasha",
+    "slug": "yasha",
+    "cost": 2100,
+    "neutral_tier": null
+  },
+  {
+    "id": 169,
+    "name": "Yasha Recipe",
+    "slug": "yasha_recipe",
+    "cost": 650,
+    "neutral_tier": null
+  },
+  {
+    "id": 277,
+    "name": "Yasha and Kaya",
+    "slug": "yasha_and_kaya",
+    "cost": 4200,
+    "neutral_tier": null
+  },
+  {
+    "id": 274,
+    "name": "Yasha and Kaya Recipe",
+    "slug": "yasha_and_kaya_recipe",
+    "cost": null,
+    "neutral_tier": null
+  }
+]

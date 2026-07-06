@@ -1,0 +1,53 @@
+{
+  "id": 4300,
+  "name": "Beloved Memory",
+  "slug": "beloved_memory",
+  "internal_key": "item_ofrenda",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Honor the Dead</h1>Place this Offering on an Altar to honor the dead with a memory from those they left behind.",
+  "notes": null,
+  "cooldowns": [
+    3
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    600
+  ],
+  "special_values": [
+    {
+      "key": "speed",
+      "heading": "",
+      "values": [
+        1000
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        600
+      ]
+    },
+    {
+      "key": "AbilityCastPoint",
+      "heading": "",
+      "values": [
+        0.2
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        3
+      ]
+    }
+  ],
+  "lore": "Take joy in remembering those beloved who've passed now beyond the veil.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

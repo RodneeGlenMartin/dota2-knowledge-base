@@ -1,0 +1,46 @@
+{
+  "id": 67,
+  "name": "Oblivion Staff",
+  "slug": "oblivion_staff",
+  "internal_key": "item_oblivion_staff",
+  "cost": 1625,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_intellect",
+      "heading": "+$int",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "bonus_attack_speed",
+      "heading": "+$attack",
+      "values": [
+        35
+      ]
+    },
+    {
+      "key": "bonus_mana_regen",
+      "heading": "+$mana_regen",
+      "values": [
+        1.25
+      ]
+    }
+  ],
+  "lore": "Deceptively hidden as an ordinary staff, it is actually very powerful, much like the Eldritch who originally possessed it.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

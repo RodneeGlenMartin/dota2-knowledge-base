@@ -1,0 +1,32 @@
+{
+  "id": 23,
+  "name": "Staff of Wizardry",
+  "slug": "staff_of_wizardry",
+  "internal_key": "item_staff_of_wizardry",
+  "cost": 1000,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_intellect",
+      "heading": "+$int",
+      "values": [
+        10
+      ]
+    }
+  ],
+  "lore": "A staff of magical powers passed down from the eldest mages.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

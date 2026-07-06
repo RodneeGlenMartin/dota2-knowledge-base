@@ -1,0 +1,92 @@
+{
+  "id": 1854,
+  "name": "Consecrated Wraps",
+  "slug": "consecrated_wraps",
+  "internal_key": "item_consecrated_wraps",
+  "cost": 2600,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Hallowed</h1> Gain a charge every %AbilityChargeRestoreTime%s, up to a maximum of %AbilityCharges% charges. Upon gaining a charge, your movement speed is increased by %movement_speed_pct_on_stack_gain%%% for %duration%s.<br><br>Whenever you take damage from a player-controlled unit or Roshan, consume all charges to gain an all damage barrier for %duration%s that absorbs %barrier_per_stack% damage per charge (%max_barrier_tooltip% max).",
+  "notes": [
+    "Charges cannot be gained for %stack_gain_time%s after you take damage from a player-controlled unit or Roshan.",
+    "Self-damage and HP Loss damage cannot remove charges.",
+    "Movement speed buff does not stack."
+  ],
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_spell_resist",
+      "heading": "+$spell_resist",
+      "values": [
+        12
+      ]
+    },
+    {
+      "key": "bonus_all_stats",
+      "heading": "+$all",
+      "values": [
+        5
+      ]
+    },
+    {
+      "key": "bonus_health",
+      "heading": "+$health",
+      "values": [
+        250
+      ]
+    },
+    {
+      "key": "movement_speed_pct_on_stack_gain",
+      "heading": "",
+      "values": [
+        15
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        5
+      ]
+    },
+    {
+      "key": "barrier_per_stack",
+      "heading": "",
+      "values": [
+        120
+      ]
+    },
+    {
+      "key": "max_barrier_tooltip",
+      "heading": "",
+      "values": [
+        360
+      ]
+    },
+    {
+      "key": "AbilityCharges",
+      "heading": "",
+      "values": [
+        3
+      ]
+    },
+    {
+      "key": "AbilityChargeRestoreTime",
+      "heading": "",
+      "values": [
+        4
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

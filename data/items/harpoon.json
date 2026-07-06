@@ -1,0 +1,151 @@
+{
+  "id": 939,
+  "name": "Harpoon",
+  "slug": "harpoon",
+  "internal_key": "item_harpoon",
+  "cost": 4700,
+  "neutral_tier": null,
+  "description": "<h1>Active: Draw Forth</h1> When targeting an enemy, fire a harpoon at them, that pulls you and the target closer together, up to %pull_distance_pct%%% of the distance between you and your target. If the caster is melee, the hero and target are always pulled to within melee distance of each other. Targeting a tree always pulls you all the way to that tree.\n\n<h1>Passive: Echo Strike</h1> Causes melee attacks to attack twice in quick succession. The double attacks apply a %movement_slow%%% movement slow for %slow_duration% seconds on the first strike. Echo Strike cooldown: %passive_cooldown%s",
+  "notes": null,
+  "cooldowns": [
+    19
+  ],
+  "mana_costs": [
+    50
+  ],
+  "cast_ranges": [
+    700
+  ],
+  "special_values": [
+    {
+      "key": "bonus_damage",
+      "heading": "+$damage",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "bonus_strength",
+      "heading": "+$str",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "bonus_agility",
+      "heading": "+$agi",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "bonus_intellect",
+      "heading": "+$int",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "bonus_mana_regen",
+      "heading": "+$mana_regen",
+      "values": [
+        2
+      ]
+    },
+    {
+      "key": "passive_cooldown",
+      "heading": "",
+      "values": [
+        5
+      ]
+    },
+    {
+      "key": "movement_slow",
+      "heading": "",
+      "values": [
+        100
+      ]
+    },
+    {
+      "key": "slow_duration",
+      "heading": "",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "pull_duration",
+      "heading": "",
+      "values": [
+        0.3
+      ]
+    },
+    {
+      "key": "pull_distance_pct",
+      "heading": "",
+      "values": [
+        35
+      ]
+    },
+    {
+      "key": "min_distance",
+      "heading": "",
+      "values": [
+        100
+      ]
+    },
+    {
+      "key": "max_distance",
+      "heading": "",
+      "values": [
+        1000
+      ]
+    },
+    {
+      "key": "cast_range_enemy",
+      "heading": "",
+      "values": [
+        700
+      ]
+    },
+    {
+      "key": "push_length",
+      "heading": "",
+      "values": [
+        600
+      ]
+    },
+    {
+      "key": "projectile_speed",
+      "heading": "",
+      "values": [
+        2000
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        700
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        50
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        19
+      ]
+    }
+  ],
+  "lore": "A perfect solution for the flight of foes.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

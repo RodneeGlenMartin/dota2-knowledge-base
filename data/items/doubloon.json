@@ -1,0 +1,39 @@
+{
+  "id": 1803,
+  "name": "Doubloon",
+  "slug": "doubloon",
+  "internal_key": "item_doubloon",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Toggle: Flip</h1> Toggle to convert %conversion_pct%%% of your Max Health to Max Mana, or %conversion_pct%%% of your Max Mana to Max Health.",
+  "notes": null,
+  "cooldowns": [
+    5
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "conversion_pct",
+      "heading": "",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        5
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,597 @@
+{
+  "id": 59,
+  "name": "Huskar",
+  "slug": "huskar",
+  "npc_name": "npc_dota_hero_huskar",
+  "primary_attribute": "str",
+  "attack_type": "Ranged",
+  "complexity": 1,
+  "roles": [
+    "Carry",
+    "Durable",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 23,
+    "str_gain": 3.3,
+    "base_agi": 10,
+    "agi_gain": 1.5,
+    "base_int": 18,
+    "int_gain": 0,
+    "damage_min": 44,
+    "damage_max": 49,
+    "attack_rate": 1.6,
+    "attack_range": 400,
+    "projectile_speed": 1400,
+    "armor": 2.6666667,
+    "magic_resistance": 25,
+    "movement_speed": 290,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 626,
+    "health_regen": 2.3,
+    "max_mana": 216,
+    "mana_regen": 0.90000004
+  },
+  "lore": "Emerging from the throes of the sacred Nothl Realm, Huskar opened his eyes to see the prodigal shadow priest Dazzle working a deep incantation over him. Against the ancient rites of the Dezun Order, Huskar's spirit had been saved from eternity, but like all who encounter the Nothl he found himself irrevocably changed. No longer at the mercy of a mortal body, his very lifeblood became a source of incredible power; every drop spilled was returned tenfold with a fierce, burning energy. However this newfound gift infuriated Huskar, for in his rescue from the Nothl, Dazzle had denied him a place among the gods. He had been denied his own holy sacrifice.\r\n\t\t\t\t<br><br>In time the elders of the order sought to expand their influence and Huskar, they agreed, would be a formidable tool in their campaign. Yet becoming a mere weapon for the order that denied him his birthright only upset him further. As the first embers of war appeared on the horizon, he fled his ancestral home to find new allies, all the while seeking a cause worthy of unleashing the power his total sacrifice could bring.",
+  "hype": "As his health lowers, Huskar's ability to slay enemies grows considerably. Able to <b>instantly remove a portion of both his and an enemy's health</b> with his ultimate, when near death he is able to throw his burning spears with <b>devastating speed</b>.",
+  "abilities": [
+    {
+      "key": "huskar_inner_fire",
+      "name": "Inner Fire",
+      "description": "In a fiery rage, knocks all nearby enemies away from you to a fixed distance, dealing damage and silencing them.",
+      "max_level": 4,
+      "cooldowns": [
+        17,
+        15,
+        13,
+        11
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        500
+      ],
+      "cast_points": [
+        0.35
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "health_cost",
+          "heading": "HEALTH COST:",
+          "values": [
+            75,
+            100,
+            125,
+            150
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            110,
+            180,
+            250,
+            320
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "disarm_duration",
+          "heading": "DURATION:",
+          "values": [
+            1.5,
+            2,
+            2.5,
+            3
+          ]
+        },
+        {
+          "key": "knockback_distance",
+          "heading": "KNOCKBACK TO:",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "min_knockback_distance",
+          "heading": "",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "knockback_duration",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "min_knockback_duration",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.35
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            17,
+            15,
+            13,
+            11
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Not even Huskar's own flesh can contain the unending expansion of his life force."
+    },
+    {
+      "key": "huskar_burning_spear",
+      "name": "Burning Spear",
+      "description": "Huskar sets his spears aflame, dealing damage over time with his regular attack.  Multiple attacks will stack additional damage.  Each attack drains some of Huskar's health.",
+      "max_level": 4,
+      "cooldowns": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        450
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "max_health_cost",
+          "heading": "MAX HEALTH COST:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "burn_damage",
+          "heading": "BURN DAMAGE:",
+          "values": [
+            4,
+            8,
+            12,
+            16
+          ]
+        },
+        {
+          "key": "burn_damage_max_pct",
+          "heading": "MAX HEALTH BURN:",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            9
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            450
+          ]
+        }
+      ],
+      "scepter_upgrade": "Burning Spears launches an additional %multishot_targets% spears onto random enemies within Huskar's attack range.",
+      "shard_upgrade": null,
+      "notes": [
+        "Burning Spear stacks additively when used multiple times on one target.  There is no cap.",
+        "Huskar cannot kill himself with this skill.",
+        "Incendiary does not deal extra Max Health Burn Damage to Roshan."
+      ],
+      "lore": "The Sacred Warrior ignites his weaponry after marking it with his own blood - causing far greater pain than he himself feels."
+    },
+    {
+      "key": "huskar_berserkers_blood",
+      "name": "Berserker's Blood",
+      "description": "Huskar's injuries feed his power, giving increased attack speed, magic resistance and health regen based on missing health. Health regen is a percentage of your strength.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "maximum_attack_speed",
+          "heading": "MAX ATTACK SPEED:",
+          "values": [
+            170,
+            220,
+            270,
+            320
+          ]
+        },
+        {
+          "key": "maximum_health_regen",
+          "heading": "MAX STR REGEN:",
+          "values": [
+            25,
+            40,
+            55,
+            70
+          ]
+        },
+        {
+          "key": "maximum_magic_resist",
+          "heading": "MAX MAGIC RESIST:",
+          "values": [
+            15,
+            20,
+            25,
+            30
+          ]
+        },
+        {
+          "key": "hp_threshold_max",
+          "heading": "HP FOR MAX BONUS:",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "activatable",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "activation_healthcost_pct",
+          "heading": "CURRENT HP COST:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "activation_cooldown",
+          "heading": "COOLDOWN:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "activation_delay",
+          "heading": "CAUTERIZE DELAY:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "activation_heal_pct_per_debuff",
+          "heading": "MAX HP HEAL PER DEBUFF:",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Huskar can activate Berserker's Blood for a health cost to cauterize himself. Dispels Huskar, then after a delay, heals for the amount of health consumed plus an additional bonus per debuff dispelled.<br/><br/>DISPEL TYPE: Basic Dispel",
+      "notes": [
+        "Bonuses are provided linearly, no bonus at Full HP and full bonus at strictly less than %hp_threshold_max%%% HP."
+      ],
+      "lore": "After losing his birthright, Huskar gained a lethality in physical combat that is only heightened as his own blood is spilled."
+    },
+    {
+      "key": "huskar_blood_magic",
+      "name": "Blood Magic",
+      "description": "Huskar does not have mana. Mana costs of items are converted into health costs.<br/><br/>Huskar's Health Costs are Magical Damage and can be reduced by Magic Resist.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "huskar_life_break",
+      "name": "Life Break",
+      "description": "Huskar draws upon his health to break an enemy's life, leaping at a target to shatter a percentage of that hero's current health and slow both their movement and attack speed.  While leaping, Huskar is Debuff Immune with %immunity_resist%%% magic resistance.\n\nDISPEL TYPE: Basic Dispel",
+      "max_level": 3,
+      "cooldowns": [
+        16,
+        14,
+        12
+      ],
+      "mana_costs": [
+        0,
+        0,
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        550
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        3,
+        4,
+        5
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "health_cost_percent",
+          "heading": "",
+          "values": [
+            0.32,
+            0.38,
+            0.44
+          ]
+        },
+        {
+          "key": "health_damage",
+          "heading": "",
+          "values": [
+            0.32,
+            0.38,
+            0.44
+          ]
+        },
+        {
+          "key": "charge_speed",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "tooltip_health_damage",
+          "heading": "DAMAGE DEALT:",
+          "values": [
+            32,
+            38,
+            44
+          ]
+        },
+        {
+          "key": "tooltip_health_cost_percent",
+          "heading": "DAMAGE TAKEN:",
+          "values": [
+            32,
+            38,
+            44
+          ]
+        },
+        {
+          "key": "movespeed",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            -60
+          ]
+        },
+        {
+          "key": "attack_speed",
+          "heading": "ATTACK SPEED SLOW:",
+          "values": [
+            60,
+            100,
+            140
+          ]
+        },
+        {
+          "key": "slow_duration_tooltip",
+          "heading": "SLOW DURATION:",
+          "values": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "key": "taunt_duration",
+          "heading": "TAUNT DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "cast_range_bonus",
+          "heading": "CAST RANGE BONUS:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "immunity_resist",
+          "heading": "",
+          "values": [
+            60
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            550
+          ]
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "",
+          "values": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            16,
+            14,
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": "Forces the enemy target to attack Huskar and increases cast range.",
+      "shard_upgrade": null,
+      "notes": [
+        "If Huskar is disabled during the charge or the target moves more than 1400 units in 0.015 seconds, the charge stops.",
+        "Slow works on Spell Immune units.",
+        "Life Break cannot be disjointed."
+      ],
+      "lore": "No matter the danger, Huskar thrusts himself into melees that only he can survive."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_disarm_duration}s Inner Fire Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_slow_duration_tooltip}s Life Break Slow Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_burn_damage} Burning Spear Burn Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value}% Lifesteal"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_maximum_health_regen}% Berserker's Blood Regen"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Life Break Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_duration}s Burning Spear Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_tooltip_health_damage}% Life Break Damage"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

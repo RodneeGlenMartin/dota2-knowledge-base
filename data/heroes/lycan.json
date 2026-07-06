@@ -1,0 +1,664 @@
+{
+  "id": 77,
+  "name": "Lycan",
+  "slug": "lycan",
+  "npc_name": "npc_dota_hero_lycan",
+  "primary_attribute": "str",
+  "attack_type": "Melee",
+  "complexity": 2,
+  "roles": [
+    "Carry",
+    "Durable",
+    "Escape",
+    "Pusher"
+  ],
+  "stats": {
+    "base_str": 28,
+    "str_gain": 3.4,
+    "base_agi": 18,
+    "agi_gain": 1.7,
+    "base_int": 23,
+    "int_gain": 1.7,
+    "damage_min": 52,
+    "damage_max": 57,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 3,
+    "magic_resistance": 25,
+    "movement_speed": 305,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 736,
+    "health_regen": 3.05,
+    "max_mana": 351,
+    "mana_regen": 1.15
+  },
+  "lore": "Banehallow was noble-born to the house of Ambry, the greatest of the landed castes in the old kingdom of Slom. Before the Fall, as the King's wants grew strange, and his court grew crowded with sorcerers and charlatans, the house of Ambry was the first to rise against the avarice of the throne. No longer willing to pay homage and fealty, they instead sent six-thousand swords into the capital, where they were wiped out in the Massacre of the Apostates. And then came the teeth behind the old truth: When you strike a king's neck, you had better take his head.\r\n\t\t\t\t<br><br>Enraged by the betrayal, the king exterminated the vast Ambry bloodline, sparing only the lord of the house and his youngest son, Banehallow. Before all the royal court, with the disgraced lord chained to the ornate marble floor, the King bade his magicians transform the boy into a wolf so that he might tear out his own father's throat. \"Do this,\" the king said, \"so that Lord Ambry will understand the bite of betrayal.\" Powerful magic was invoked, and the child was transformed. But though his body was changed, his spirit remained intact, and instead of biting the exposed neck of his father, he attacked his handlers, tearing them to pieces. A dozen of the King's knights perished under the wolf's teeth before they managed to drive it off into the night. Lord Ambry laughed from his chains even as the King ran him through with a sword. Now the heir to the lost house of Ambry, Banehallow wanders the trail as the Lycan, part warrior, part wolf, in search of justice for all that he lost.",
+  "hype": "As a man or as a wolf, Lycan devastates enemies with sharp claws and deadly jaws. <b>Summoning stealthy wolves</b> to scout ahead or assault a foe, his wolf transformation grants him the <b>speed and strength</b> to run down his enemies, or escape an ambush.",
+  "abilities": [
+    {
+      "key": "lycan_summon_wolves",
+      "name": "Summon Wolves",
+      "description": "Summons %wolf_count% wolves to aid Lycan in battle. At level 3, wolves gain Permanent Invisibility, and at level 4 wolves gain Cripple that gives 20% chance to cripple the target, causing 8 damage per second and lose 60 attack speed for 4 seconds.",
+      "max_level": 4,
+      "cooldowns": [
+        30,
+        30,
+        30,
+        30
+      ],
+      "mana_costs": [
+        115,
+        120,
+        125,
+        130
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "wolf_index",
+          "heading": "",
+          "values": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "key": "wolf_duration",
+          "heading": "DURATION:",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "wolf_bat",
+          "heading": "BASE ATTACK TIME:",
+          "values": [
+            1.2,
+            1.1,
+            1,
+            0.9,
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "key": "wolf_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            22,
+            28,
+            34,
+            40,
+            46,
+            52
+          ]
+        },
+        {
+          "key": "wolf_hp",
+          "heading": "HP:",
+          "values": [
+            325,
+            375,
+            425,
+            475,
+            525,
+            575
+          ]
+        },
+        {
+          "key": "bonus_health",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "bonus_damage",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "bash_chance",
+          "heading": "",
+          "values": [
+            15
+          ]
+        },
+        {
+          "key": "bash_duration",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "wolf_count",
+          "heading": "WOLF COUNT:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "bonus_levels",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "give_wolves_hightail",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            115,
+            120,
+            125,
+            130
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            30
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Increases the number of wolves summoned. Grants all summoned wolves the ability Hightail, an active ability that gives them phased movement, evasion, movespeed, and attack speed.",
+      "notes": [
+        "Using this spell will replace currently active summoned Wolves."
+      ],
+      "lore": "The very enchantment that twisted his being also summons canine familiars."
+    },
+    {
+      "key": "lycan_howl",
+      "name": "Howl",
+      "description": "Strikes fear into enemies, reducing armor and attack damage of all enemies within %radius% range of Lycan and his wolves. At night, Howl's armor and attack damage reductions are global.",
+      "max_level": 4,
+      "cooldowns": [
+        22,
+        20,
+        18,
+        16
+      ],
+      "mana_costs": [
+        40
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "howl_duration",
+          "heading": "DURATION:",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "attack_damage_reduction",
+          "heading": "ATTACK DAMAGE REDUCTION:",
+          "values": [
+            25,
+            30,
+            35,
+            40
+          ]
+        },
+        {
+          "key": "total_attack_damage_reduction",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "armor",
+          "heading": "ARMOR REDUCTION:",
+          "values": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            2000
+          ]
+        },
+        {
+          "key": "max_level",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            22,
+            20,
+            18,
+            16
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Blood-curdling wolf cries signal to opponents that Banehallow is among them."
+    },
+    {
+      "key": "lycan_feral_impulse",
+      "name": "Feral Impulse",
+      "description": "Increases the HP regeneration and damage of Lycan and all units under his control.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bonus_damage",
+          "heading": "BONUS DAMAGE:",
+          "values": [
+            10,
+            20,
+            30,
+            40
+          ]
+        },
+        {
+          "key": "bonus_hp_regen",
+          "heading": "BONUS HP REGEN:",
+          "values": [
+            2,
+            4,
+            6,
+            8
+          ]
+        },
+        {
+          "key": "max_level",
+          "heading": "",
+          "values": [
+            4
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "His animalistic symbiosis with canine kind gives Banehallow enhanced reflexes and hunting capabilities."
+    },
+    {
+      "key": "lycan_wolf_bite",
+      "name": "Wolf Bite",
+      "description": "Lycan bites an allied hero or creep-hero, granting them Shapeshift properties. Lycan and the bitten target gain %lifesteal_percent%%% Lifesteal and share the healing effect of Lifesteal with each other as long as they are within %lifesteal_range% range of each other.",
+      "max_level": 3,
+      "cooldowns": [
+        110,
+        100,
+        90
+      ],
+      "mana_costs": [
+        150
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        300
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "lifesteal_percent",
+          "heading": "",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "lifesteal_range",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "attack_range",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            110,
+            100,
+            90
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Wolf Bite cooldown matches the cooldown of the current level of Shapeshift."
+      ],
+      "lore": "Does this bite look infected?"
+    },
+    {
+      "key": "lycan_apex_predator",
+      "name": "Apex Predator",
+      "description": "Lycan and units he controls deal extra damage to neutral creeps.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage_amp",
+          "heading": "EXTRA DAMAGE:",
+          "values": [
+            18
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "lycan_shapeshift",
+      "name": "Shapeshift",
+      "description": "Lycan assumes his lupine form, granting him critical strikes and added vision at night. During Shapeshift, Lycan moves at increased speed and cannot be slowed.  Movement and critical strike bonuses are also applied to all units under Lycan's control.",
+      "max_level": 3,
+      "cooldowns": [
+        105,
+        95,
+        85
+      ],
+      "mana_costs": [
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "speed",
+          "heading": "SHAPESHIFT MOVE SPEED:",
+          "values": [
+            550
+          ]
+        },
+        {
+          "key": "bonus_night_vision",
+          "heading": "BONUS NIGHT VISION:",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "transformation_time",
+          "heading": "TRANSFORM TIME:",
+          "values": [
+            1.1
+          ]
+        },
+        {
+          "key": "crit_chance",
+          "heading": "CRITICAL CHANCE:",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "crit_multiplier",
+          "heading": "CRITICAL DAMAGE:",
+          "values": [
+            160,
+            200,
+            240
+          ]
+        },
+        {
+          "key": "health_bonus",
+          "heading": "HEALTH BONUS:",
+          "values": [
+            225,
+            325,
+            425
+          ]
+        },
+        {
+          "key": "is_wolfpack",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            105,
+            95,
+            85
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Hex doesn't remove Lycan's movement speed."
+      ],
+      "lore": "Forever a slave to his lycanthropy, Banehallow has come to accept his curse, and embrace his own savagery."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_armor} Howl Armor Reduction"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_damage} Wolves Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_health} Summon Wolves Health"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Shapeshift Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_duration}s Shapeshift Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_damage}% Feral Impulse Damage"
+    },
+    {
+      "slot": null,
+      "name": "Howl Reduces Total Attack Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_wolf_bat}% Summon Wolves BAT"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

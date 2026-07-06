@@ -1,0 +1,69 @@
+{
+  "id": 1604,
+  "name": "Searing Signet",
+  "slug": "searing_signet",
+  "internal_key": "item_searing_signet",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Burn Through</h1> Instances of magic damage from spells over %damage_threshold% ignites enemies, causing them to take %burn_damage% magic damage over %burn_duration% seconds. Burn damage against non-hero targets is decreased by %creep_penalty%%%.",
+  "notes": [
+    "Will not ignite enemies that are more than %max_range% range away."
+  ],
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "damage_threshold",
+      "heading": "",
+      "values": [
+        60
+      ]
+    },
+    {
+      "key": "burn_damage",
+      "heading": "",
+      "values": [
+        80
+      ]
+    },
+    {
+      "key": "burn_duration",
+      "heading": "",
+      "values": [
+        6
+      ]
+    },
+    {
+      "key": "burn_tickrate",
+      "heading": "",
+      "values": [
+        0.25
+      ]
+    },
+    {
+      "key": "creep_penalty",
+      "heading": "",
+      "values": [
+        50
+      ]
+    },
+    {
+      "key": "max_range",
+      "heading": "",
+      "values": [
+        2000
+      ]
+    }
+  ],
+  "lore": "To torture a magic user, one must devise means far beyond the mundane.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

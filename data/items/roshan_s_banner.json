@@ -1,0 +1,108 @@
+{
+  "id": 1804,
+  "name": "Roshan's Banner",
+  "slug": "roshan_s_banner",
+  "internal_key": "item_roshans_banner",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Use: Place Banner</h1> Creates a banner at the target location. Lane creeps in the area of effect become damage immune while the Banner is up. Lasts %duration% seconds.<br><br> Can be destroyed. Melee hero attacks deal 2x damage to the banner.",
+  "notes": null,
+  "cooldowns": [
+    1
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    1200
+  ],
+  "special_values": [
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        120
+      ]
+    },
+    {
+      "key": "radius",
+      "heading": "EFFECT RADIUS:",
+      "values": [
+        600,
+        900,
+        1200
+      ]
+    },
+    {
+      "key": "health",
+      "heading": "",
+      "values": [
+        24,
+        32,
+        40
+      ]
+    },
+    {
+      "key": "health_tooltip",
+      "heading": "HITS TO KILL:",
+      "values": [
+        6,
+        8,
+        10
+      ]
+    },
+    {
+      "key": "hp_bonus",
+      "heading": "",
+      "values": [
+        75
+      ]
+    },
+    {
+      "key": "damage_bonus",
+      "heading": "",
+      "values": [
+        50
+      ]
+    },
+    {
+      "key": "model_scale",
+      "heading": "",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "buff_linger_duration",
+      "heading": "",
+      "values": [
+        0.1
+      ]
+    },
+    {
+      "key": "max_level",
+      "heading": "",
+      "values": [
+        3
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        1
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

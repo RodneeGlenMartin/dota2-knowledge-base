@@ -1,0 +1,24 @@
+{
+  "id": 233,
+  "name": "Aether Lens Recipe",
+  "slug": "aether_lens_recipe",
+  "internal_key": "item_recipe_aether_lens",
+  "cost": 775,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

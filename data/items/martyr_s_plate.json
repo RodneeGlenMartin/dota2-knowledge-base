@@ -1,0 +1,69 @@
+{
+  "id": 2192,
+  "name": "Martyr's Plate",
+  "slug": "martyr_s_plate",
+  "internal_key": "item_martyrs_plate",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Martyrdom</h1> Redirect %damage_redirection%%% of all magic damage dealt to your allied heroes within %aura_radius% radius towards you for %duration% seconds.",
+  "notes": [
+    "Damage done by this item is considered reflected damage. Reflected damage does not provide any lifesteal and cannot be reflected."
+  ],
+  "cooldowns": [
+    40
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "magic_resist",
+      "heading": "+$spell_resist",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "damage_redirection",
+      "heading": "",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "aura_radius",
+      "heading": "",
+      "values": [
+        900
+      ]
+    },
+    {
+      "key": "hp_regen",
+      "heading": "+$hp_regen",
+      "values": [
+        7
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        40
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

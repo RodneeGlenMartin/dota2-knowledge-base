@@ -1,0 +1,67 @@
+{
+  "id": 945,
+  "name": "Seeds of Serenity",
+  "slug": "seeds_of_serenity",
+  "internal_key": "item_seeds_of_serenity",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Verdurous Dale</h1>  Target the ground with a %radius% radius. Provides health regeneration to all allied units while they are in the area of effect equal to %aura_health_regen% + %aura_health_regen_pct%%% of the caster's health regeneration at the time of casting. Lasts %duration% seconds.",
+  "notes": null,
+  "cooldowns": [
+    35
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    350
+  ],
+  "special_values": [
+    {
+      "key": "aura_health_regen",
+      "heading": "",
+      "values": [
+        8
+      ]
+    },
+    {
+      "key": "aura_health_regen_pct",
+      "heading": "",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "radius",
+      "heading": "",
+      "values": [
+        400
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        8
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        350
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        35
+      ]
+    }
+  ],
+  "lore": "An evergreen sprout treasured by the woodkin and highly coveted by interlopers and their like.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

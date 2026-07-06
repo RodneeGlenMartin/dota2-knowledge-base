@@ -1,0 +1,820 @@
+{
+  "id": 114,
+  "name": "Monkey King",
+  "slug": "monkey_king",
+  "npc_name": "npc_dota_hero_monkey_king",
+  "primary_attribute": "agi",
+  "attack_type": "Melee",
+  "complexity": 2,
+  "roles": [
+    "Carry",
+    "Disabler",
+    "Escape",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 19,
+    "str_gain": 2.8,
+    "base_agi": 23,
+    "agi_gain": 3.7,
+    "base_int": 20,
+    "int_gain": 1.8,
+    "damage_min": 52,
+    "damage_max": 56,
+    "attack_rate": 1.6,
+    "attack_range": 300,
+    "projectile_speed": 900,
+    "armor": 4.8333335,
+    "magic_resistance": 25,
+    "movement_speed": 300,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 538,
+    "health_regen": 2.9,
+    "max_mana": 315,
+    "mana_regen": 1
+  },
+  "lore": "For 500 years the mountain pressed down upon him, only his head free from the crushing weight of the stonewrought prison the elder gods had summoned to halt his childish rebellion. Moss grew along the lines of his exposed face, tufts of grass sprouted from his ears; his vision was framed in wildflowers reaching from the soil around his cheeks. Most thought him long dead, tormented by the gods for waging war against the heavens until naught but his legend survived. But, as the stories go, the Monkey King cannot die.<br><br>So he waited. Until the gods came to offer a chance at absolution, he endured. And when they did come to name the price, Sun Wukong accepted their charge: he would accompany a young acolyte on a secret pilgrimage, protect him from demons and dangers of the road, and guide the man home in possession of a coveted relic. Do that, and humbly obey the human's commands in service to their holy mission, and Wukong would prove himself reformed.<br><br>For a change, Sun Wukong fulfilled his oath to the gods with honor, and atoned for the sins of past insurrections. The acolyte, much learned in hardships, was returned to his home temple, relic in hand; and Wukong-finding himself for the first time in proper standing with any gods of consequence-was content for a short while to give up his old thirst for adventure and glory. But the Monkey King was born for mischief...and offending the gods never gets old.",
+  "hype": "Always in search of a good fight, Monkey King travels atop the trees aiming to spring from leafy cover and surprise his enemies. Calling upon an <b>army of monkey soldiers</b> to overwhelm opponents, this <b>agile trickster</b> revels in the chaos of battle, ready to slam his legendary staff down on any hopes of escape.",
+  "abilities": [
+    {
+      "key": "monkey_king_boundless_strike",
+      "name": "Boundless Strike",
+      "description": "Monkey King enlarges his staff and slams it against the ground, stunning enemies in a line and damaging them with bonus damage and a critical hit based on his attack. Has True Strike.",
+      "max_level": 4,
+      "cooldowns": [
+        24,
+        21,
+        18,
+        15
+      ],
+      "mana_costs": [
+        85,
+        90,
+        95,
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1100
+      ],
+      "cast_points": [
+        0.4
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "stun_duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            0.7,
+            0.9,
+            1.1,
+            1.3
+          ]
+        },
+        {
+          "key": "strike_crit_mult",
+          "heading": "CRITICAL DAMAGE:",
+          "values": [
+            120,
+            140,
+            160,
+            180
+          ]
+        },
+        {
+          "key": "strike_flat_damage",
+          "heading": "BONUS DAMAGE:",
+          "values": [
+            20,
+            40,
+            60,
+            80
+          ]
+        },
+        {
+          "key": "strike_radius",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "strike_cast_range",
+          "heading": "DISTANCE:",
+          "values": [
+            1100
+          ]
+        },
+        {
+          "key": "acceleration_z",
+          "heading": "",
+          "values": [
+            5000
+          ]
+        },
+        {
+          "key": "min_height_above_lowest",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "min_height_above_highest",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "max_horizontal_acceleration",
+          "heading": "",
+          "values": [
+            30000
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "spring_channel_pct",
+          "heading": "",
+          "values": [
+            35
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1100
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            85,
+            90,
+            95,
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            24,
+            21,
+            18,
+            15
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Boundless Strike applies Primal Spring with %spring_channel_pct%%% of the max channeling duration power to enemies along the staff and at the end of the staff. When Boundless Strike is set to alt-cast, Monkey King leaps to the end of his staff.",
+      "notes": [
+        "Does not affect spell-immune enemies."
+      ],
+      "lore": "The legendary Jingu Bang grows to match its master's will, ensuring no enemy can escape the Monkey King's reach."
+    },
+    {
+      "key": "monkey_king_tree_dance",
+      "name": "Tree Dance",
+      "description": "Monkey King jumps to a tree and perches atop it. While perched, he gains the Primal Spring ability-a channeled leap attack. If Monkey King's tree is destroyed, he falls and is stunned for %unperched_stunned_duration%s. Taking damage while on the ground puts Tree Dance on cooldown.",
+      "max_level": 4,
+      "cooldowns": [
+        0.9,
+        0.6,
+        0.3,
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        900
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "leap_speed",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "spring_leap_speed",
+          "heading": "",
+          "values": [
+            1300
+          ]
+        },
+        {
+          "key": "give_up_distance",
+          "heading": "",
+          "values": [
+            1850
+          ]
+        },
+        {
+          "key": "ground_jump_distance",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "perched_jump_distance",
+          "heading": "DISTANCE:",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "jump_damage_cooldown",
+          "heading": "DAMAGE COOLDOWN:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "perched_day_vision",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "perched_night_vision",
+          "heading": "",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "perched_spot_height",
+          "heading": "",
+          "values": [
+            192
+          ]
+        },
+        {
+          "key": "unperched_stunned_duration",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "top_level_height",
+          "heading": "",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "impact_damage_tooltip",
+          "heading": "",
+          "values": [
+            140,
+            210,
+            280,
+            350
+          ]
+        },
+        {
+          "key": "impact_movement_slow_tooltip",
+          "heading": "",
+          "values": [
+            20,
+            40,
+            60,
+            80
+          ]
+        },
+        {
+          "key": "range",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "max_level",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "max_level_tooltip",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            0.9,
+            0.6,
+            0.3,
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Tree Dance cooldown starts upon landing.",
+        "Right-clicking the ground will have Monkey King drop from the tree.",
+        "Movement is interrupted if Monkey King is stunned, hexed or banished."
+      ],
+      "lore": "Sun Wukong dances nimbly along the treetop canopy, always just out of arm's reach."
+    },
+    {
+      "key": "monkey_king_jingu_mastery",
+      "name": "Jingu Mastery",
+      "description": "Monkey King's attacks awaken the Jingu Bang's power. Upon the fourth hit on the same enemy hero, Monkey King earns %charges% charged attacks that have bonus damage and lifesteal.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "required_hits",
+          "heading": "REQUIRED HITS:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "counter_duration",
+          "heading": "COUNTER DURATION:",
+          "values": [
+            5.5,
+            7,
+            8.5,
+            10
+          ]
+        },
+        {
+          "key": "charges",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "bonus_damage",
+          "heading": "BONUS DAMAGE:",
+          "values": [
+            30,
+            80,
+            130,
+            180
+          ]
+        },
+        {
+          "key": "lifesteal",
+          "heading": "BONUS LIFESTEAL:",
+          "values": [
+            20,
+            40,
+            60,
+            80
+          ]
+        },
+        {
+          "key": "max_duration",
+          "heading": "BUFF DURATION:",
+          "values": [
+            35
+          ]
+        },
+        {
+          "key": "buff_is_undispellable",
+          "heading": "",
+          "values": null
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Hitting an enemy with Boundless Strike adds to the hit counter.",
+        "Repeatedly hitting an enemy refreshes the Jingu Mastery debuff duration.",
+        "Hit charges on enemies cannot be dispelled.",
+        "Jingu Mastery buff on self can be dispelled.",
+        "Break disables the gaining of new stacks.",
+        "Break does not disable the bonuses from existing stacks."
+      ],
+      "lore": "Always sensitive to the moods of its master, the Jingu Bang radiates power when Sun Wukong's combat fervor is on full display."
+    },
+    {
+      "key": "monkey_king_mischief",
+      "name": "Mischief",
+      "description": "Changes Monkey King's shape to deceive opponents, using the environment nearby as inspiration for the disguise. Taking damage, attacking, or using any item or ability breaks Monkey King's disguise. Grants damage immunity for %invul_duration% seconds upon transforming.",
+      "max_level": 1,
+      "cooldowns": [
+        24.5
+      ],
+      "mana_costs": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "movespeed",
+          "heading": "BONUS MOVE SPEED:",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "reveal_radius",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "invul_duration",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "COOLDOWN:",
+          "values": [
+            24.5
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Watch out for that tree."
+    },
+    {
+      "key": "monkey_king_wukongs_command",
+      "name": "Wukong's Command",
+      "description": "Monkey King creates a circular formation of soldiers that spread out from his position. If Monkey King leaves the area his soldiers disperse. The soldiers have Monkey King's attack that attacks at a fixed rate of %attack_speed%s, and only targets enemy Heroes. Monkey King is granted bonus armor for the spell's duration.<br><br>Monkey King can transform into any one of his soldiers during Wukong's command, taking its place for a short duration, becoming indistinguishable from other soldiers, and leaving another soldier in his stead.",
+      "max_level": 3,
+      "cooldowns": [
+        100,
+        90,
+        80
+      ],
+      "mana_costs": [
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "first_radius",
+          "heading": "",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "second_radius",
+          "heading": "",
+          "values": [
+            750
+          ]
+        },
+        {
+          "key": "third_radius",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "num_first_soldiers",
+          "heading": "",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "num_second_soldiers",
+          "heading": "",
+          "values": [
+            9
+          ]
+        },
+        {
+          "key": "num_third_soldiers",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "move_speed",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "bonus_armor",
+          "heading": "BONUS ARMOR:",
+          "values": [
+            15,
+            20,
+            25
+          ]
+        },
+        {
+          "key": "attack_speed",
+          "heading": "",
+          "values": [
+            1.1
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            14
+          ]
+        },
+        {
+          "key": "leadership_time_buffer",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "cast_range",
+          "heading": "",
+          "values": [
+            625
+          ]
+        },
+        {
+          "key": "cast_range_scepter",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "cooldown_scepter",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "scepter_spawn_interval",
+          "heading": "SOLDIER SPAWN INTERVAL:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "scepter_spawn_duration",
+          "heading": "SOLDIER DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            100,
+            90,
+            80
+          ]
+        }
+      ],
+      "scepter_upgrade": "Spawns a monkey soldier near Monkey King at regular intervals. Soldiers do not spawn while invisible or on trees. Soldiers only attack buildings when Monkey King himself is nearby. Soldiers can now gain Jingu Mastery charges independently.",
+      "shard_upgrade": null,
+      "notes": [
+        "Soldiers do not receive Jingu Mastery bonuses.",
+        "Soldiers do not copy Basher or Abyssal."
+      ],
+      "lore": "Monkey King rips out a tuft of fur to blow at his enemies, charging each strand to transform into a copy of himself."
+    },
+    {
+      "key": "monkey_king_transfiguration",
+      "name": "Changing of the Guard",
+      "description": "Monkey King can transform into any one of his soldiers during Wukong's command, taking its place for a %transfiguration_duration%s, becoming indistinguishable from other soldiers, and leaving another soldier in his stead. While transformed, Monkey King is invulnerable, but cannot attack or cast spells",
+      "max_level": 1,
+      "cooldowns": [
+        5
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "transfiguration_duration",
+          "heading": "",
+          "values": [
+            1.5
+          ]
+        },
+        {
+          "key": "initial_cooldown",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            5
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_ground_jump_distance} Tree Dance Cast Range"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_stun_duration}s Boundless Strike Stun Duration"
+    },
+    {
+      "slot": null,
+      "name": "0 Cooldown Primal Spring"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_damage} Jingu Mastery Damage"
+    },
+    {
+      "slot": null,
+      "name": "Jingu Mastery Undispellable"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_strike_crit_mult}% Boundless Strike Critical Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_required_hits} Jingu Mastery Required Hits"
+    },
+    {
+      "slot": null,
+      "name": "Additional Wukong's Command Ring"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": 1643,
+  "name": "Giant's Maul",
+  "slug": "giant_s_maul",
+  "internal_key": "item_giant_maul",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Crushing Blow</h1> Empowers the next attack to be a critical hit dealing %crit_multiplier%%% damage. Hitting an enemy with an empowered attack temporarily decreases their movement speed by %movespeed_slow%%%, attack speed by %attack_slow%%%, and cast speed by %cast_slow%%% for %debuff_duration% seconds.",
+  "notes": null,
+  "cooldowns": [
+    15
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "crit_multiplier",
+      "heading": "",
+      "values": [
+        150
+      ]
+    },
+    {
+      "key": "movespeed_slow",
+      "heading": "",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "attack_slow",
+      "heading": "",
+      "values": [
+        15
+      ]
+    },
+    {
+      "key": "cast_slow",
+      "heading": "",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "debuff_duration",
+      "heading": "",
+      "values": [
+        3
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        15
+      ]
+    }
+  ],
+  "lore": "Crude but smashingly effective.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

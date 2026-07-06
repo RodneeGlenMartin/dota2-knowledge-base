@@ -1,0 +1,46 @@
+{
+  "id": 676,
+  "name": "Ceremonial Robe",
+  "slug": "ceremonial_robe",
+  "internal_key": "item_ceremonial_robe",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Ceremonial Aura</h1>Lowers enemy Status Resistance by %status_resistance%%% and Magic Resistance by %magic_resistance%%%.<br><br>Radius: %aura_radius%",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "aura_radius",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    },
+    {
+      "key": "status_resistance",
+      "heading": "",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "magic_resistance",
+      "heading": "",
+      "values": [
+        10
+      ]
+    }
+  ],
+  "lore": "One of many items lost in the looting of Zelenwyr's sacred reliquary.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

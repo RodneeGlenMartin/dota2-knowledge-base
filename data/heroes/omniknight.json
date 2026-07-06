@@ -1,0 +1,564 @@
+{
+  "id": 57,
+  "name": "Omniknight",
+  "slug": "omniknight",
+  "npc_name": "npc_dota_hero_omniknight",
+  "primary_attribute": "str",
+  "attack_type": "Melee",
+  "complexity": 1,
+  "roles": [
+    "Support",
+    "Nuker",
+    "Durable"
+  ],
+  "stats": {
+    "base_str": 22,
+    "str_gain": 3.1,
+    "base_agi": 15,
+    "agi_gain": 1.7,
+    "base_int": 18,
+    "int_gain": 2.1,
+    "damage_min": 53,
+    "damage_max": 63,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 4.5,
+    "magic_resistance": 25,
+    "movement_speed": 310,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 604,
+    "health_regen": 2.45,
+    "max_mana": 291,
+    "mana_regen": 0.90000004
+  },
+  "lore": "Purist Thunderwrath was a hard-fighting, road-worn, deeply committed knight, sworn to the order in which he had grown up as squire to elder knights of great reputation. He had spent his entire life in the service of the Omniscience, the All Seeing One. Theirs was a holy struggle, and so embedded was he in his duty that he never questioned it so long as he had the strength to fight and the impetuous valor that comes with youth. But over the long years of the crusade, as his elders passed away and were buried in sorry graves at the side of muddy tracks, as his bond-brothers fell in battle to uncouth creatures that refused to bow to the Omniscience, as his own squires were chewed away by ambush and plague and bad water, he began to question the meaning of his vows--the meaning of the whole crusade.\r\n\t\t\t\t<br><br>After deep meditation, he parted ways with his army and commenced a long trek back to the cave-riddled cliffs of Emauracus, and there he set a challenge to the priests of the Omniscience. No knight had ever questioned them before, and they tried to throw him into the pit of sacrifice, but Purist would not be moved. For as he faced them down, he began to glow with a holy light, and they saw that the Omniscience had chosen to reveal Itself to him. The Elder Hierophant led him on a journey of weeks down into the deepest chamber, the holy of holies, where waited not some abstract concept of wisdom and insight, not some carved relic requiring an injection of imagination to believe in, but the old one itself. It had not merely dwelt in those rocks for billions of aeons; no, It had created them.\r\n\t\t\t\t<br><br>The Omniscience had formed the immense mineral shell of the planet around itself, as a defense against the numerous terrors of space. Thus the All Seeing One claimed to have created the world, and given the other truths revealed to Purist on that day, the knight had no reason to refute the story. Perhaps the Omniscience is a liar, deep in its prison of stone, and not the world's creator at all, but Omniknight never again questioned his faith. His campaign had meaning at last. And there can be no question that the glorious powers that imbue him, and give his companions such strength in battle, are real beyond any doubt.",
+  "hype": "A guardian at the <b>front lines</b> of battle, Omniknight is always eager to join his team in battle. Whether <b>healing an ally</b> with a spell that also harms nearby foes, or battering an enemy with his <b>mighty hammer</b>, he protects his allies from harm. ",
+  "abilities": [
+    {
+      "key": "omniknight_purification",
+      "name": "Purification",
+      "description": "Instantly heals a friendly unit and damages all nearby enemy units.",
+      "max_level": 4,
+      "cooldowns": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "mana_costs": [
+        90,
+        105,
+        120,
+        135
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        700
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "heal",
+          "heading": "HEAL/DAMAGE:",
+          "values": [
+            90,
+            160,
+            230,
+            300
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "DAMAGE RADIUS:",
+          "values": [
+            260
+          ]
+        },
+        {
+          "key": "recast_delay",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "recast_effectiveness_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            90,
+            105,
+            120,
+            135
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            15,
+            14,
+            13,
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "After a %recast_delay%s delay, the target is Purified again with %recast_effectiveness_pct%%% effectiveness.",
+      "notes": null,
+      "lore": "Priests of the Omniscience are adept at removing impurities from fellow warriors."
+    },
+    {
+      "key": "omniknight_martyr",
+      "name": "Repel",
+      "description": "Grants Debuff Immunity with %magic_resist%%% magic resistance, as well as bonus HP Regen.",
+      "max_level": 4,
+      "cooldowns": [
+        40,
+        35,
+        30,
+        25
+      ],
+      "mana_costs": [
+        90,
+        105,
+        120,
+        135
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        700
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "base_hpregen",
+          "heading": "BONUS HP REGEN:",
+          "values": [
+            8,
+            12,
+            16,
+            20
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "magic_resist",
+          "heading": "MAGIC RESISTANCE:",
+          "values": [
+            60
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            90,
+            105,
+            120,
+            135
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            40,
+            35,
+            30,
+            25
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "The All Seeing One casts down his protection over those that Purist calls friend."
+    },
+    {
+      "key": "omniknight_hammer_of_purity",
+      "name": "Hammer of Purity",
+      "description": "Omniknight imbues his hammer with holy power, causing his attack to have increased range, deal pure damage based on a percentage of his base damage and slow his target for a short duration.<br><br> Omniknight heals for %heal_pct%%% of the damage dealt over %heal_duration%s.",
+      "max_level": 4,
+      "cooldowns": [
+        13,
+        10,
+        7,
+        4
+      ],
+      "mana_costs": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        150
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "base_damage",
+          "heading": "BONUS BASE DAMAGE:",
+          "values": [
+            30,
+            50,
+            70,
+            90
+          ]
+        },
+        {
+          "key": "bonus_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            25,
+            45,
+            65,
+            85
+          ]
+        },
+        {
+          "key": "heal_pct",
+          "heading": "",
+          "values": [
+            35
+          ]
+        },
+        {
+          "key": "heal_duration",
+          "heading": "",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "attack_cooldown",
+          "heading": "",
+          "values": [
+            -1
+          ]
+        },
+        {
+          "key": "attack_range_bonus",
+          "heading": "RANGE BONUS:",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "movement_slow",
+          "heading": "SLOW:",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            13,
+            10,
+            7,
+            4
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "The knight is merely a means to move the hammer."
+    },
+    {
+      "key": "omniknight_degen_aura",
+      "name": "Degen Aura",
+      "description": "Degenerates the movement capabilities of enemy units that stray too near, slowing their movement speed.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "speed_bonus",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            11
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            325
+          ]
+        },
+        {
+          "key": "linger_duration",
+          "heading": "",
+          "values": [
+            1
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Does not affect Debuff Immune units."
+      ],
+      "lore": "The holy embodiment of Purist Thunderwrath is enough to weaken those of lesser faith."
+    },
+    {
+      "key": "omniknight_guardian_angel",
+      "name": "Guardian Angel",
+      "description": "Omniknight calls upon a Guardian Angel that grants immunity from physical damage to all allied units near Omniknight.",
+      "max_level": 3,
+      "cooldowns": [
+        100,
+        90,
+        80
+      ],
+      "mana_costs": [
+        125,
+        175,
+        225
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.4
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            4,
+            4.75,
+            5.5
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "is_global",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "affects_buildings",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "heal_and_regen_amp",
+          "heading": "BONUS HEALTH RESTORATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "model_scale",
+          "heading": "",
+          "values": [
+            15
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            125,
+            175,
+            225
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            100,
+            90,
+            80
+          ]
+        }
+      ],
+      "scepter_upgrade": "Guardian Angel has global radius, affects buildings, and amplifies health restoration.",
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "The All Seeing One casts down his protection over those that Purist calls friend."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_AbilityCastRange} Repel Cast Range"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Base Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Hammer of Purity Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Guardian Angel Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_radius} Degen Aura Radius"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Purification Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_heal} Purification Damage/Heal"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_base_damage}% Hammer of Purity Bonus Base Damage"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

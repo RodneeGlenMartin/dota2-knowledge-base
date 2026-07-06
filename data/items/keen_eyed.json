@@ -1,0 +1,52 @@
+{
+  "id": 1595,
+  "name": "Keen-eyed",
+  "slug": "keen_eyed",
+  "internal_key": "item_enhancement_keen_eyed",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "cast_range_bonus",
+      "heading": "+$cast_range",
+      "values": [
+        125,
+        135,
+        145
+      ]
+    },
+    {
+      "key": "bonus_mana_regen",
+      "heading": "+$mana_regen",
+      "values": [
+        1,
+        1.5,
+        2
+      ]
+    },
+    {
+      "key": "mana_reduction_pct",
+      "heading": "-<font color='#e03e2e'>Max Mana</font>",
+      "values": [
+        10,
+        12,
+        14
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

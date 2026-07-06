@@ -1,0 +1,24 @@
+{
+  "id": 115,
+  "name": "Black King Bar Recipe",
+  "slug": "black_king_bar_recipe",
+  "internal_key": "item_recipe_black_king_bar",
+  "cost": 1450,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

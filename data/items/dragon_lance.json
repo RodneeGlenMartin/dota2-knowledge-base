@@ -1,0 +1,48 @@
+{
+  "id": 236,
+  "name": "Dragon Lance",
+  "slug": "dragon_lance",
+  "internal_key": "item_dragon_lance",
+  "cost": 1900,
+  "neutral_tier": null,
+  "description": "",
+  "notes": [
+    "Attack Range bonuses from Monkey King Bar and Dragon Lance and its upgrades do not stack."
+  ],
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_agility",
+      "heading": "+$agi",
+      "values": [
+        15
+      ]
+    },
+    {
+      "key": "bonus_strength",
+      "heading": "+$str",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "base_attack_range",
+      "heading": "+$attack_range",
+      "values": [
+        130
+      ]
+    }
+  ],
+  "lore": "The forward charge of the wyvern host grants no quarter.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

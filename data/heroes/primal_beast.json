@@ -1,0 +1,861 @@
+{
+  "id": 137,
+  "name": "Primal Beast",
+  "slug": "primal_beast",
+  "npc_name": "npc_dota_hero_primal_beast",
+  "primary_attribute": "str",
+  "attack_type": "Melee",
+  "complexity": 1,
+  "roles": [
+    "Disabler",
+    "Durable",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 26,
+    "str_gain": 4.3,
+    "base_agi": 15,
+    "agi_gain": 1,
+    "base_int": 16,
+    "int_gain": 1.7,
+    "damage_min": 62,
+    "damage_max": 64,
+    "attack_rate": 1.8,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 4.5,
+    "magic_resistance": 25,
+    "movement_speed": 305,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 692,
+    "health_regen": 2.8500001,
+    "max_mana": 267,
+    "mana_regen": 0.8
+  },
+  "lore": "Though the deterioration of the Mistwood and its evolution from idyllic expanse to death-filled tanglewild was a slow, wizard-fueled process, most scholars agree the true beginning of the end was marked by the interdimensional arrival of the Primal Beast.<br><br>A creature hatched into an existence devoid of all feeling but hunger and pain, aeons of carnage shaped the Primal Beast into the apex predator on a planet filled with violent terrors. Desperately banished by would-be masters with failed hopes to control him, the Beast was cast into a new world — one where he could ascend from mere hungry predator into an invasive killing machine with nothing able to stand in his way.<br><br>For thousands of years, the Mistwood served as massive stomping ground for the Beast's destructive play — and even the feared durana beasts made for tasty snacks. Indeed, there could be no rivals for the Beast's territory, only minor annoyances. Until one such tiny annoyance employed vile trickery to trap the unstoppable Beast in the Gleipnir.<br><br>There he might have remained subdued for eternity, were it not for the unpredictable powers of the Continuum Device. Now, freed from both Gleipnir and Vault, far afield from the Mistwood, and much closer to inhabited lands, the Beast sets his snout towards new slaughters and the delights of savage destruction — and the paltry fires of civilization will do little to keep this ageless monster at bay.",
+  "hype": "<b>Rushing savagely through enemies and allies</b> alike, Primal Beast <b>pounds into battle</b> as one born to raise a ruckus. An unavoidable threat amidst any fray, the Beast <b>can punish attackers</b> and relishes <b>grabbing prey to repeatedly slam them</b> against the ground until nothing but mush remains.",
+  "abilities": [
+    {
+      "key": "primal_beast_onslaught",
+      "name": "Onslaught",
+      "description": "Primal Beast charges up and then runs in the chosen direction, knocking back enemies and allies alike. Enemy units are damaged and stunned on impact. The longer the charge duration, the farther Primal Beast's momentum will carry him. \n\n Can be cancelled at any time with the Stop command.",
+      "max_level": 4,
+      "cooldowns": [
+        25,
+        22,
+        19,
+        16
+      ],
+      "mana_costs": [
+        120
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "charge_speed",
+          "heading": "RUN SPEED:",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "chargeup_time",
+          "heading": "",
+          "values": [
+            2.2
+          ]
+        },
+        {
+          "key": "knockback_radius",
+          "heading": "",
+          "values": [
+            190
+          ]
+        },
+        {
+          "key": "max_distance",
+          "heading": "MAX DISTANCE:",
+          "values": [
+            2000
+          ]
+        },
+        {
+          "key": "knockback_distance",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "knockback_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            75,
+            170,
+            265,
+            360
+          ]
+        },
+        {
+          "key": "knockback_duration",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "max_charge_time",
+          "heading": "TIME TO MAX CHARGE:",
+          "values": [
+            1.7
+          ]
+        },
+        {
+          "key": "turn_rate",
+          "heading": "",
+          "values": [
+            70
+          ]
+        },
+        {
+          "key": "base_power",
+          "heading": "",
+          "values": [
+            0.05
+          ]
+        },
+        {
+          "key": "movement_turn_rate",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "stun_duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            0.7,
+            1,
+            1.3,
+            1.6
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            120
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            25,
+            22,
+            19,
+            16
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "The Beast's single-minded focus on chosen prey leaves all other considerations scattered in his ruinous wake."
+    },
+    {
+      "key": "primal_beast_trample",
+      "name": "Trample",
+      "description": "Primal Beast stomps over everything. For every %step_distance% units traveled, all enemies around the Beast receive damage. Deals base damage plus a multiplier of Primal Beast's attack damage. Primal Beast is disarmed for the duration of the ability.",
+      "max_level": 4,
+      "cooldowns": [
+        30,
+        27,
+        24,
+        21
+      ],
+      "mana_costs": [
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "effect_radius",
+          "heading": "DAMAGE AOE:",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "step_distance",
+          "heading": "",
+          "values": [
+            140
+          ]
+        },
+        {
+          "key": "base_damage",
+          "heading": "BASE DAMAGE:",
+          "values": [
+            15,
+            30,
+            45,
+            60
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            5.5
+          ]
+        },
+        {
+          "key": "attack_damage",
+          "heading": "ATTACK DAMAGE MULTIPLIER:",
+          "values": [
+            35
+          ]
+        },
+        {
+          "key": "bonus_magic_resistance",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "unslowable",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            30,
+            27,
+            24,
+            21
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "As the only member of his species to arrive on this world, locals can only speculate on the Beast's size relative to his kin. Such observation would prove easier of course if the subject didn't eat everything it sees and destroy most of what it doesn't."
+    },
+    {
+      "key": "primal_beast_uproar",
+      "name": "Uproar",
+      "description": "The Beast's temper causes every instance of %damage_limit% hero damage or more to grant a stack of Uproar.  \n\n When activated, Primal Beast releases a roar that slows surrounding enemies and grants the Beast additional attack damage and armor for %roar_duration% seconds based on his current stacks of Uproar.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bonus_damage_per_stack",
+          "heading": "BONUS DAMAGE PER STACK:",
+          "values": [
+            10,
+            20,
+            30,
+            40
+          ]
+        },
+        {
+          "key": "stack_limit",
+          "heading": "MAX STACKS:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "damage_limit",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "stack_duration",
+          "heading": "",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "move_slow_per_stack",
+          "heading": "SLOW PER STACK:",
+          "values": [
+            4,
+            6,
+            8,
+            10
+          ]
+        },
+        {
+          "key": "slow_duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "damage_min",
+          "heading": "",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "damage_max",
+          "heading": "",
+          "values": [
+            2000
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "ROAR RADIUS:",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "roared_bonus_armor",
+          "heading": "ROAR ARMOR BONUS PER STACK:",
+          "values": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "key": "roar_duration",
+          "heading": "",
+          "values": [
+            7
+          ]
+        },
+        {
+          "key": "should_dispell",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "projectiles_per_stack",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "projectile_distance",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "projectile_width",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "projectile_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "projectile_speed",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "splinter_angle",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "max_split_amount",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "split_delay",
+          "heading": "SPLIT DELAY:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "projectile_break_duration",
+          "heading": "BREAK DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "projectile_waves",
+          "heading": "",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": "When Primal Beast activates Uproar, he releases %projectile_waves% waves of %projectiles_per_stack% projectiles per stack of uproar each in a circle around him. Projectiles deal damage and Break enemies hit. After a short delay, each projectile splinters in two.",
+      "shard_upgrade": null,
+      "notes": [
+        "Primal Beast cannot gain Uproar stacks from self damage.",
+        "Break disables the gaining of new stacks."
+      ],
+      "lore": "Already draped in a broken patchwork of barding and chains upon appearing in the mistwoods, the Beast tolerates no further attempts at subjugation."
+    },
+    {
+      "key": "primal_beast_rock_throw",
+      "name": "Rock Throw",
+      "description": "Primal Beast throws a rock at the target location that stuns and damages enemies. The rock cannot be thrown within a minimum range of Primal Beast. After landing, the rock splits into 3 additional fragments that land behind the initial target location.<br><br> Rock Throw increases stacks of Uproar for each hero hit.",
+      "max_level": 1,
+      "cooldowns": [
+        20
+      ],
+      "mana_costs": [
+        85
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1800
+      ],
+      "cast_points": [
+        0.25
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "base_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            325
+          ]
+        },
+        {
+          "key": "impact_radius",
+          "heading": "IMPACT RADIUS:",
+          "values": [
+            225
+          ]
+        },
+        {
+          "key": "min_range",
+          "heading": "MIN RANGE:",
+          "values": [
+            550
+          ]
+        },
+        {
+          "key": "min_travel_time",
+          "heading": "MIN TRAVEL TIME:",
+          "values": [
+            0.65
+          ]
+        },
+        {
+          "key": "max_travel_time",
+          "heading": "MAX TRAVEL TIME:",
+          "values": [
+            1.75
+          ]
+        },
+        {
+          "key": "bounce_travel_time",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "stun_duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            1.4
+          ]
+        },
+        {
+          "key": "fragment_impact_distance",
+          "heading": "FRAGMENT FLIGHT DISTANCE:",
+          "values": [
+            525
+          ]
+        },
+        {
+          "key": "fragment_impact_radius",
+          "heading": "FRAGMENT IMPACT RADIUS:",
+          "values": [
+            185
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1800
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            85
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            20
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "AGAIN WITH THE ROCKS!"
+    },
+    {
+      "key": "primal_beast_pulverize",
+      "name": "Pulverize",
+      "description": "CHANNELED - Primal Beast channels his rage, grabbing the target enemy and slamming them into the ground repeatedly, damaging and mini-stunning any enemies caught in the AoE. Each consecutive hit deals bonus damage. Lasts %channel_time% seconds.",
+      "max_level": 3,
+      "cooldowns": [
+        45,
+        40,
+        35
+      ],
+      "mana_costs": [
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        200
+      ],
+      "cast_points": [
+        0.25
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "splash_radius",
+          "heading": "AOE RADIUS:",
+          "values": [
+            575
+          ]
+        },
+        {
+          "key": "interval",
+          "heading": "HIT INTERVAL:",
+          "values": [
+            0.75
+          ]
+        },
+        {
+          "key": "ministun",
+          "heading": "STUN DURATION:",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "cast_range",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "animation_rate",
+          "heading": "",
+          "values": [
+            1.5
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "HIT DAMAGE:",
+          "values": [
+            100,
+            175,
+            250
+          ]
+        },
+        {
+          "key": "channel_time",
+          "heading": "",
+          "values": [
+            2.3
+          ]
+        },
+        {
+          "key": "bonus_damage_per_hit",
+          "heading": "BONUS DAMAGE PER HIT:",
+          "values": [
+            20,
+            40,
+            60
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            45,
+            40,
+            35
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Though none are certain whether his utterances have true meaning, most concede the Beast's powerful grip and tendency to smash his enemies into naught but pulp and pieces communicates his intent well enough."
+    },
+    {
+      "key": "primal_beast_colossal",
+      "name": "Colossal",
+      "description": "Primal Beast has %base_slow_resist%%% base Slow Resistance and gains %aoe_per_threshold%%% bonus Area of Effect and %slow_resistance_per_threshold%%% Slow Resistance for every %hp_per_threshold% Max Health.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "hp_per_threshold",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "base_slow_resist",
+          "heading": "",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "slow_resistance_per_threshold",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "aoe_per_threshold",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "current_slow_resistance",
+          "heading": "SLOW RESISTANCE:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "current_aoe",
+          "heading": "AREA OF EFFECT BONUS:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "trample_bonus",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "model_scale_per_stack",
+          "heading": "",
+          "values": [
+            1.1
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:value} Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_magic_resistance}% Magic Resistance During Trample"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Trample Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_roared_bonus_armor} Uproar Armor Per Stack"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_attack_damage}% Trample Attack Multiplier"
+    },
+    {
+      "slot": null,
+      "name": "Basic Self-Dispel on Uproar Cast"
+    },
+    {
+      "slot": null,
+      "name": "Colossal {s:bonus_trample_bonus}x Bonuses During Trample"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_channel_time}% Pulverize Duration"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": 1652,
+  "name": "Bag of Gold",
+  "slug": "bag_of_gold",
+  "internal_key": "item_furion_gold_bag",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "Contains gold",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    50
+  ],
+  "special_values": [
+    {
+      "key": "gold_bag_duration",
+      "heading": "",
+      "values": [
+        15
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        50
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

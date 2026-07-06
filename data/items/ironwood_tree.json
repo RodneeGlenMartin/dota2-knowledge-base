@@ -1,0 +1,53 @@
+{
+  "id": 304,
+  "name": "Ironwood Tree",
+  "slug": "ironwood_tree",
+  "internal_key": "item_ironwood_tree",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Use: Plant Tree</h1> Targets the ground to plant a happy little tree that lasts for %tree_duration% seconds.",
+  "notes": null,
+  "cooldowns": [
+    15
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    400
+  ],
+  "special_values": [
+    {
+      "key": "bonus_all_stats",
+      "heading": "+$all",
+      "values": [
+        5
+      ]
+    },
+    {
+      "key": "tree_duration",
+      "heading": "",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        400
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        15
+      ]
+    }
+  ],
+  "lore": "Precious. And hearty as a weed.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

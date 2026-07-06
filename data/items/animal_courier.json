@@ -1,0 +1,24 @@
+{
+  "id": 45,
+  "name": "Animal Courier",
+  "slug": "animal_courier",
+  "internal_key": "item_courier",
+  "cost": 50,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

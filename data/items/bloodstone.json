@@ -1,0 +1,90 @@
+{
+  "id": 121,
+  "name": "Bloodstone",
+  "slug": "bloodstone",
+  "internal_key": "item_bloodstone",
+  "cost": 4700,
+  "neutral_tier": null,
+  "description": "<h1>Active: Bloodpact</h1> Increases Bloodstone's Spell Lifesteal to %spell_lifesteal_while_active%%%. Lasts %buff_duration% seconds. \n\n<h1>Passive: Spell Weakness Aura</h1> Enemy units take %aura_spell_vulnerability%%% increased damage from spells. <br><br>Radius: %aura_radius%",
+  "notes": [
+    "Spell Weakness Aura does not stack with Veil of Discord's Spell Weakness."
+  ],
+  "cooldowns": [
+    35
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_health",
+      "heading": "+$health",
+      "values": [
+        625
+      ]
+    },
+    {
+      "key": "bonus_mana",
+      "heading": "+$mana",
+      "values": [
+        450
+      ]
+    },
+    {
+      "key": "bonus_intellect",
+      "heading": "+$int",
+      "values": [
+        15
+      ]
+    },
+    {
+      "key": "spell_lifesteal",
+      "heading": "+$spell_lifesteal",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "buff_duration",
+      "heading": "",
+      "values": [
+        5
+      ]
+    },
+    {
+      "key": "spell_lifesteal_while_active",
+      "heading": "",
+      "values": [
+        60
+      ]
+    },
+    {
+      "key": "aura_spell_vulnerability",
+      "heading": "",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "aura_radius",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        35
+      ]
+    }
+  ],
+  "lore": "The Bloodstone's bright ruby color is unmistakable on the battlefield, as the owner seems to have infinite vitality and spirit.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

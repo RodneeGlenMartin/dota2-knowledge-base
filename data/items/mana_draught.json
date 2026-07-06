@@ -1,0 +1,67 @@
+{
+  "id": 1599,
+  "name": "Mana Draught",
+  "slug": "mana_draught",
+  "internal_key": "item_mana_draught",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Bottoms Up</h1>Restores %mana_restore% + %mana_restore_pct%%% of the caster's maximum mana over %heal_duration% seconds. If the hero is attacked by an enemy hero or Roshan, the effect is lost.<br><br>Hold Control to use on an allied hero.\n\n<h1>Passive: Fill Up</h1>Cooldown Speed of Mana Draught is increased by %water_acceleration%%% while in water.",
+  "notes": null,
+  "cooldowns": [
+    60
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    650
+  ],
+  "special_values": [
+    {
+      "key": "mana_restore",
+      "heading": "",
+      "values": [
+        70
+      ]
+    },
+    {
+      "key": "mana_restore_pct",
+      "heading": "",
+      "values": [
+        3
+      ]
+    },
+    {
+      "key": "heal_duration",
+      "heading": "",
+      "values": [
+        6
+      ]
+    },
+    {
+      "key": "water_acceleration",
+      "heading": "",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        650
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        60
+      ]
+    }
+  ],
+  "lore": "A refreshing drink best shared with friends.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

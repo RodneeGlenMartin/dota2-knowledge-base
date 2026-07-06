@@ -1,0 +1,84 @@
+{
+  "id": 79,
+  "name": "Mekansm",
+  "slug": "mekansm",
+  "internal_key": "item_mekansm",
+  "cost": 1775,
+  "neutral_tier": null,
+  "description": "<h1>Active: Restore</h1>Restores %heal_amount% health to allied units in a %heal_radius% radius.\n\n<h1>Passive: Mekansm Aura</h1>Grants %aura_health_regen% health regeneration to allied units in a %aura_radius% radius.",
+  "notes": [
+    "Restore does not affect units that have been affected by Restore or Guardian Greaves Mend within Mekansm's cooldown.",
+    "Multiple instances of Mekansm Aura do not stack."
+  ],
+  "cooldowns": [
+    50
+  ],
+  "mana_costs": [
+    100
+  ],
+  "cast_ranges": [
+    1200
+  ],
+  "special_values": [
+    {
+      "key": "bonus_armor",
+      "heading": "+$armor",
+      "values": [
+        5
+      ]
+    },
+    {
+      "key": "aura_radius",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    },
+    {
+      "key": "aura_health_regen",
+      "heading": "",
+      "values": [
+        2.5
+      ]
+    },
+    {
+      "key": "heal_amount",
+      "heading": "",
+      "values": [
+        250
+      ]
+    },
+    {
+      "key": "heal_radius",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        100
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        50
+      ]
+    }
+  ],
+  "lore": "A glowing jewel formed out of assorted parts that somehow fit together perfectly.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

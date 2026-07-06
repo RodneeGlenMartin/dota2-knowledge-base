@@ -1,0 +1,67 @@
+{
+  "id": 585,
+  "name": "Stormcrafter",
+  "slug": "stormcrafter",
+  "internal_key": "item_stormcrafter",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Bottled Lightning</h1> Zaps %max_targets% enemy targets within %range% range, dealing %damage% damage and a %slow%%% slow for %slow_duration% seconds.",
+  "notes": null,
+  "cooldowns": [
+    6
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "range",
+      "heading": "",
+      "values": [
+        700
+      ]
+    },
+    {
+      "key": "damage",
+      "heading": "",
+      "values": [
+        70
+      ]
+    },
+    {
+      "key": "slow",
+      "heading": "",
+      "values": [
+        40
+      ]
+    },
+    {
+      "key": "slow_duration",
+      "heading": "",
+      "values": [
+        0.4
+      ]
+    },
+    {
+      "key": "max_targets",
+      "heading": "",
+      "values": [
+        2
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        6
+      ]
+    }
+  ],
+  "lore": "The accidental byproduct of a spell conjured to entrap a lesser god.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

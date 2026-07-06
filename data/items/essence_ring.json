@@ -1,0 +1,53 @@
+{
+  "id": 359,
+  "name": "Essence Ring",
+  "slug": "essence_ring",
+  "internal_key": "item_essence_ring",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Life Essence</h1> Increases your current and max health by %health_gain% for %health_gain_duration% seconds.",
+  "notes": null,
+  "cooldowns": [
+    25
+  ],
+  "mana_costs": [
+    160
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "health_gain",
+      "heading": "",
+      "values": [
+        240
+      ]
+    },
+    {
+      "key": "health_gain_duration",
+      "heading": "",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        160
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        25
+      ]
+    }
+  ],
+  "lore": "An ancient bauble blessed by the breath of Verodicia.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

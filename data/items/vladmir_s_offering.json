@@ -1,0 +1,90 @@
+{
+  "id": 81,
+  "name": "Vladmir's Offering",
+  "slug": "vladmir_s_offering",
+  "internal_key": "item_vladmir",
+  "cost": 2200,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Vladmir's Aura</h1>Grants %lifesteal_aura%%% lifesteal, %damage_aura%%% bonus damage, %mana_regen_aura% mana regeneration, and %armor_aura% armor to nearby allies.<br><br>Radius: %aura_radius%",
+  "notes": [
+    "Lifesteal on attacks against creeps is reduced to %lifesteal_creeps_tooltip%%%."
+  ],
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    1200
+  ],
+  "special_values": [
+    {
+      "key": "armor",
+      "heading": "+$armor",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "mana_regen",
+      "heading": "+$mana_regen",
+      "values": [
+        0.75
+      ]
+    },
+    {
+      "key": "armor_aura",
+      "heading": "",
+      "values": [
+        2
+      ]
+    },
+    {
+      "key": "mana_regen_aura",
+      "heading": "",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "lifesteal_aura",
+      "heading": "",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "damage_aura",
+      "heading": "",
+      "values": [
+        18
+      ]
+    },
+    {
+      "key": "aura_radius",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    },
+    {
+      "key": "lifesteal_creeps_tooltip",
+      "heading": "",
+      "values": [
+        12
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    }
+  ],
+  "lore": "An eerie mask that is haunted with the malice of a fallen vampire.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

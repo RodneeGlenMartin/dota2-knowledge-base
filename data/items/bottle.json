@@ -1,0 +1,84 @@
+{
+  "id": 41,
+  "name": "Bottle",
+  "slug": "bottle",
+  "internal_key": "item_bottle",
+  "cost": 675,
+  "neutral_tier": null,
+  "description": "<h1>Active: Regenerate</h1>Consumes a charge to restore %health_restore% health and %mana_restore% mana over %restore_time% seconds. If the hero is attacked by an enemy hero or Roshan, the effect is lost.<br><br>The Bottle automatically refills at the fountain.<br><br>Hold Control to use on an allied hero.\n\n<h1>Passive:  Store Rune</h1>Runes can be stored in the Bottle for later use by right-clicking them. Unused runes will automatically activate after 90 seconds.<br><br>Using a stored rune fully refills the Bottle.",
+  "notes": [
+    "Bottle is shareable. Stored runes cannot be shared.",
+    "Using a stored Bounty or Water rune fully refills the bottle if the bottle was full when the rune was stored; otherwise, it refills two charges."
+  ],
+  "cooldowns": [
+    0.5
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    350
+  ],
+  "special_values": [
+    {
+      "key": "health_restore",
+      "heading": "",
+      "values": [
+        110
+      ]
+    },
+    {
+      "key": "mana_restore",
+      "heading": "",
+      "values": [
+        60
+      ]
+    },
+    {
+      "key": "restore_time",
+      "heading": "",
+      "values": [
+        2.7
+      ]
+    },
+    {
+      "key": "max_charges",
+      "heading": "",
+      "values": [
+        3
+      ]
+    },
+    {
+      "key": "break_on_hero_damage",
+      "heading": "",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "rune_expire_time",
+      "heading": "",
+      "values": [
+        90
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        350
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        0.5
+      ]
+    }
+  ],
+  "lore": "An old bottle that survived the ages, the contents placed inside become enchanted.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

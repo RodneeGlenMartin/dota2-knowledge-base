@@ -1,0 +1,637 @@
+{
+  "id": 67,
+  "name": "Spectre",
+  "slug": "spectre",
+  "npc_name": "npc_dota_hero_spectre",
+  "primary_attribute": "agi",
+  "attack_type": "Melee",
+  "complexity": 2,
+  "roles": [
+    "Carry",
+    "Durable",
+    "Escape"
+  ],
+  "stats": {
+    "base_str": 22,
+    "str_gain": 2.3,
+    "base_agi": 29,
+    "agi_gain": 2.3,
+    "base_int": 16,
+    "int_gain": 1.7,
+    "damage_min": 52,
+    "damage_max": 56,
+    "attack_rate": 1.8,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 4.8333335,
+    "magic_resistance": 25,
+    "movement_speed": 295,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 604,
+    "health_regen": 3.7,
+    "max_mana": 267,
+    "mana_regen": 0.8
+  },
+  "lore": "Just as higher states of energy seek a lower level, the Spectre known as Mercurial is a being of intense and violent energy who finds herself irresistibly drawn to scenes of strife as they unfold in the physical world. While her normal spectral state transcends sensory limitations, each time she takes on a physical manifestation, she is stricken by a loss of self--though not of purpose. In the clash of combat, her identity shatters and reconfigures, and she begins to regain awareness. She grasps that she is Mercurial the Spectre--and that all of her Haunts are but shadows of the one true Spectre. Focus comes in the struggle for survival; her true mind reasserts itself; until in the final moments of victory or defeat, she transcends matter and is restored once more to her eternal form.",
+  "hype": "Spectre haunts her enemies wherever they may be. Able to <b>destroy lone prey</b> with ease, she spreads her presence throughout the battlefield to choose her target. Once she has gathered her strength, none can escape her terrible wrath.",
+  "abilities": [
+    {
+      "key": "spectre_spectral_dagger",
+      "name": "Spectral Dagger",
+      "description": "Spectre flings a dagger to draw a Shadow Path, dealing damage and slowing the movement speed of any enemies along the trail. Units hit by the dagger also trail a Shadow Path. While treading the path, Spectre moves faster and phases through otherwise impassable terrain.",
+      "max_level": 4,
+      "cooldowns": [
+        22,
+        20,
+        18,
+        16
+      ],
+      "mana_costs": [
+        100,
+        110,
+        120,
+        130
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1800
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            80,
+            120,
+            160,
+            200
+          ]
+        },
+        {
+          "key": "bonus_movespeed",
+          "heading": "MOVEMENT SPEED CHANGE:",
+          "values": [
+            14,
+            16,
+            18,
+            20
+          ]
+        },
+        {
+          "key": "dagger_path_duration",
+          "heading": "",
+          "values": [
+            12
+          ]
+        },
+        {
+          "key": "hero_path_duration",
+          "heading": "DURATION:",
+          "values": [
+            7
+          ]
+        },
+        {
+          "key": "buff_persistence",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "dagger_radius",
+          "heading": "",
+          "values": [
+            125
+          ]
+        },
+        {
+          "key": "path_radius",
+          "heading": "",
+          "values": [
+            175
+          ]
+        },
+        {
+          "key": "vision_radius",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "speed",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "dagger_grace_period",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1800
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            110,
+            120,
+            130
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            22,
+            20,
+            18,
+            16
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "There is a %dagger_grace_period% second grace period after leaving the path where no collision is preserved.",
+        "Does not trigger spell block or spell reflect."
+      ],
+      "lore": "Mercurial's dagger eclipses the physical plane in shadow, a state in which mortals cower, but spectres thrive."
+    },
+    {
+      "key": "spectre_shadow_step",
+      "name": "Shadow Step",
+      "description": "Sends an uncontrollable illusion at a target that follows and attacks the target.<br><br>The Reality sub-ability may be used to teleport to the illusion, destroying it.",
+      "max_level": 4,
+      "cooldowns": [
+        24,
+        21,
+        18,
+        15
+      ],
+      "mana_costs": [
+        60,
+        65,
+        70,
+        75
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1000
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            3.5,
+            4,
+            4.5,
+            5
+          ]
+        },
+        {
+          "key": "illusion_damage_incoming",
+          "heading": "",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "tooltip_illusion_total_damage_incoming",
+          "heading": "ILLUSION DAMAGE TAKEN:",
+          "values": [
+            175
+          ]
+        },
+        {
+          "key": "illusion_outgoing_damage",
+          "heading": "ILLUSION DAMAGE:",
+          "values": [
+            35,
+            40,
+            45,
+            50
+          ]
+        },
+        {
+          "key": "move_speed",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "bonus_move_speed_illusion_pct",
+          "heading": "",
+          "values": [
+            35
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            60,
+            65,
+            70,
+            75
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            24,
+            21,
+            18,
+            15
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "With great focus of will, Mercurial can sometimes limit the extent of her division."
+    },
+    {
+      "key": "spectre_dispersion",
+      "name": "Dispersion",
+      "description": "Spectre disperses part of the damage dealt to her, reflecting it to all nearby enemies. The effect lessens with distance.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage_reflection_pct",
+          "heading": "DAMAGE REFLECTED:",
+          "values": [
+            9,
+            12,
+            15,
+            18
+          ]
+        },
+        {
+          "key": "min_radius",
+          "heading": "MIN RADIUS:",
+          "values": [
+            350
+          ]
+        },
+        {
+          "key": "max_radius",
+          "heading": "MAX RADIUS:",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "activation_cooldown",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "activation_manacost",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "activation_bonus_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "activation_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Dispersion can be activated to increase the amount absorbed and reflected by Dispersion by %activation_bonus_pct%%% of its base values for %activation_duration%s. Cooldown %activation_cooldown%. Manacost %activation_manacost%.",
+      "notes": [
+        "The reflected damage is not dealt to Spectre.",
+        "Illusions don't get this ability.",
+        "Damage is reflected before reductions, and is returned as the same damage type.",
+        "Damage done by this ability is considered reflected damage. Reflected damage does not provide any lifesteal and cannot be reflected."
+      ],
+      "lore": "A daunting task lies before enemies of Mercurial - killing a shadow with blade and magic."
+    },
+    {
+      "key": "spectre_desolate",
+      "name": "Desolate",
+      "description": "Spectre and her illusions deal bonus Pure damage if attacking an enemy that does not have any allied units within a %radius% radius around them.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bonus_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            23
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            350
+          ]
+        },
+        {
+          "key": "illusion_damage_outgoing",
+          "heading": "",
+          "values": null
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Damage is dealt before Spectre's attack.",
+        "Spectre's illusions also have Desolate."
+      ],
+      "lore": "Often times, warriors find themselves alone with a vision of Mercurial - the fated question is if it is the true Spectre."
+    },
+    {
+      "key": "spectre_haunt",
+      "name": "Haunt",
+      "description": "Creates a spectral nemesis to haunt all enemy Heroes.<br><br>Haunt illusions are uncontrollable, take extra damage, and deal less damage than Spectre herself.  They ignore terrain.<br><br>The Reality sub-ability may be used to teleport to the illusion, destroying it.",
+      "max_level": 3,
+      "cooldowns": [
+        160,
+        150,
+        140
+      ],
+      "mana_costs": [
+        125,
+        175,
+        225
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "scepter_cooldown_reduction_tooltip",
+          "heading": "",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "HAUNT DURATION:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "illusion_damage_outgoing",
+          "heading": "",
+          "values": [
+            -70,
+            -50,
+            -30
+          ]
+        },
+        {
+          "key": "tooltip_outgoing",
+          "heading": "HAUNT DAMAGE:",
+          "values": [
+            30,
+            50,
+            70
+          ]
+        },
+        {
+          "key": "illusion_damage_incoming",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "tooltip_illusion_total_damage_incoming",
+          "heading": "HAUNT DAMAGE TAKEN:",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "destroy_if_target_is_dead",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "fear_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "fear_aoe",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "fear_movespeed_slow",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            125,
+            175,
+            225
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            160,
+            150,
+            140
+          ]
+        }
+      ],
+      "scepter_upgrade": "The first time Spectre uses Reality on a Haunt illusion, enemies in a %fear_aoe% area around the target are Feared away from Spectre for %fear_duration%s and have their movement speed slowed by %fear_movespeed_slow%%%.<br><br>Reduces cooldown by %scepter_cooldown_reduction_tooltip%s.",
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "At the height of combat, Mercurial's physical manifestation shatters, and the shadowy pieces haunt those who still cling to life."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Spectral Dagger Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_damage} Desolate Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_duration}s Shadow Step Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Spectral Dagger Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Health"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_movespeed}% Spectral Dagger Slow/Bonus"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_illusion_damage_outgoing}% All Spectre Illusion Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_reflection_pct}% Dispersion"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

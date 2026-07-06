@@ -1,0 +1,603 @@
+{
+  "id": 104,
+  "name": "Legion Commander",
+  "slug": "legion_commander",
+  "npc_name": "npc_dota_hero_legion_commander",
+  "primary_attribute": "str",
+  "attack_type": "Melee",
+  "complexity": 1,
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Disabler",
+    "Durable",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 24,
+    "str_gain": 3.1,
+    "base_agi": 18,
+    "agi_gain": 1.7,
+    "base_int": 20,
+    "int_gain": 2.2,
+    "damage_min": 57,
+    "damage_max": 61,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 2,
+    "magic_resistance": 25,
+    "movement_speed": 325,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 648,
+    "health_regen": 2.65,
+    "max_mana": 315,
+    "mana_regen": 1
+  },
+  "lore": "They came without warning. Within the city walls of Stonehall there came a rumble and a terrible sound, and from blackness unknown came a force of beasts numbering beyond count, wielding flame and foul sorcery, slaying and snatching mothers and sons to dark purpose. Of once-mighty Stonehall's military strength only the Bronze Legion, led by the indomitable Commander Tresdin, was near enough to answer the call of battle. They rode into their city, fighting through bloodstained alleyways and burning markets, cutting their way through the monstrous throng to the source of the sudden invasion: an ethereal rift within the city square, and at its precipice thundered their dreaded champion.\r\n\t\t\t\t<br><br>Enwrapped in a corrosive shimmer, the leader of the abyssal horde swung its massive blade, cleaving a legionnaire in two as his flesh began to spoil. Tresdin lifted her blood-stained sword and settled her sights on the beast. It turned, smiling at her through a maze of teeth. Heedless of the battle raging around them, they charged one another.\r\n\t\t\t\t<br><br>Deflecting blow after blow, the pair danced their deadly duel as the Bronze Legion met its end around them. Tresdin leapt forward as her foe swung its sword to meet her. The odds turned. The attack smashed into Tresdin suddenly, a brutal thrust from the side, but even as her balance slipped she rallied her strength for another stroke. Blade scraped on blade, beyond the hilt to the gnarled paw below, carving it in two in a fearsome spray of sparks and blood. The vile audience looked on in astonishment as she pressed the attack, driving her blade through her foe's flesh into the stampeding heart within. With a scream that split the clouds above, the beast erupted in a torrent of gore and anguish. The stygian portal wavered, the power sustaining the chasm beyond vanishing as suddenly as it had appeared. The remaining invaders fell quickly to Stonehall steel.\r\n\t\t\t\t<br><br>Though victorious, the survivors saw little to celebrate: the city lay in ruins, and survivors were few. Fires continued to spread. Unfurling her banners of war, Tresdin gathered what allies she could. Her anger smoldered as she pledged brutal vengeance upon the forces of the abyss, and damned be any who would dare stand in her way.",
+  "hype": "Marching across the battlefield, Legion Commander <b>challenges lone enemies in single combat</b>. Each duel she wins increases the power of her attacks, until at last she can become a relentless one-woman army.",
+  "abilities": [
+    {
+      "key": "legion_commander_overwhelming_odds",
+      "name": "Overwhelming Odds",
+      "description": "Turns the foes' numbers against them, dealing a %movement_slow%%% impact slow for %slow_duration%s and damage to all enemies in the area. Damage increases with each enemy unit or hero in the area, and grants Legion Commander bonus attack speed.",
+      "max_level": 4,
+      "cooldowns": [
+        18
+      ],
+      "mana_costs": [
+        90,
+        105,
+        120,
+        135
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "BASE DAMAGE:",
+          "values": [
+            40,
+            70,
+            100,
+            130
+          ]
+        },
+        {
+          "key": "damage_per_hero",
+          "heading": "DAMAGE PER HERO:",
+          "values": [
+            40,
+            70,
+            100,
+            130
+          ]
+        },
+        {
+          "key": "damage_per_unit",
+          "heading": "DAMAGE PER CREEP:",
+          "values": [
+            14,
+            16,
+            18,
+            20
+          ]
+        },
+        {
+          "key": "bonus_attack_speed",
+          "heading": "BONUS ATTACK SPEED:",
+          "values": [
+            50,
+            75,
+            100,
+            125
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "slow_duration",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "movement_slow",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "shield_per_damage_pct",
+          "heading": "DAMAGE TO BARRIER:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shield_duration",
+          "heading": "BARRIER DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            90,
+            105,
+            120,
+            135
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            18
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Overwhelming Odds has larger radius and grants an all damage barrier based on the damage it deals to enemy heroes.",
+      "notes": null,
+      "lore": "The archers of Stonehall are ready at Tresdin's command."
+    },
+    {
+      "key": "legion_commander_press_the_attack",
+      "name": "Press The Attack",
+      "description": "Removes debuffs and disables from the target friendly unit, and grants bonus movement speed and health regen for a short time.\n\nDISPEL TYPE: Strong Dispel",
+      "max_level": 4,
+      "cooldowns": [
+        16,
+        15,
+        14,
+        13
+      ],
+      "mana_costs": [
+        90
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        700
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "move_speed",
+          "heading": "BONUS MOVE SPEED:",
+          "values": [
+            13,
+            16,
+            19,
+            22
+          ]
+        },
+        {
+          "key": "hp_regen",
+          "heading": "HP REGEN:",
+          "values": [
+            24,
+            36,
+            48,
+            60
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "immunity_duration",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "immunity_resist",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            90
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            16,
+            15,
+            14,
+            13
+          ]
+        }
+      ],
+      "scepter_upgrade": "Increases movement speed and becomes an %radius% area of effect ability, and always affects Legion Commander when used.",
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "The rallying horn of the Bronze Legion is able to inspire any heart."
+    },
+    {
+      "key": "legion_commander_moment_of_courage",
+      "name": "Moment of Courage",
+      "description": "When attacked a number of times, Legion Commander will counter-attack her target with bonus lifesteal.",
+      "max_level": 4,
+      "cooldowns": [
+        0.3
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "trigger_attacks",
+          "heading": "ATTACKS TO TRIGGER:",
+          "values": [
+            7,
+            6,
+            5,
+            4
+          ]
+        },
+        {
+          "key": "buff_duration",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "secondary_attack_damage",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "hp_leech_percent",
+          "heading": "LIFESTEAL:",
+          "values": [
+            55,
+            65,
+            75,
+            85
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "The lifestealing strike is only triggered if being attacked."
+      ],
+      "lore": "Tresdin knows that an enemy's most vulnerable moment often follows their fiercest stroke."
+    },
+    {
+      "key": "legion_commander_outfight_them",
+      "name": "Outfight Them!",
+      "description": "When Legion Commander or an allied Hero within %radius% range casts an ability, they gain bonus armor for %duration%s; allies gain %ally_factor%%% of the value.  This bonus stacks independently.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "armor",
+          "heading": "ARMOR:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "ally_factor",
+          "heading": "",
+          "values": [
+            50
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "legion_commander_duel",
+      "name": "Duel",
+      "description": "Legion Commander and the target enemy hero are forced to attack each other for a short duration. Neither hero can use items, and the target enemy hero cannot use abilities. If either hero dies during the duration, the hero winning the Duel gains permanent bonus damage.",
+      "max_level": 3,
+      "cooldowns": [
+        60,
+        55,
+        50
+      ],
+      "mana_costs": [
+        80,
+        100,
+        120
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        200
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            4,
+            4.5,
+            5
+          ]
+        },
+        {
+          "key": "reward_damage",
+          "heading": "BONUS DAMAGE:",
+          "values": [
+            10,
+            20,
+            30
+          ]
+        },
+        {
+          "key": "trigger_pta_on_victory",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "duel_refresh_on_victory",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "team_duel",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "team_duel_damage_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "team_duel_radius",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            80,
+            100,
+            120
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            60,
+            55,
+            50
+          ]
+        }
+      ],
+      "scepter_upgrade": "When Legion Commander wins a duel, Press the Attack is automatically triggered around her.",
+      "shard_upgrade": null,
+      "notes": [
+        "Duels will end if the units are pushed 2000 units apart."
+      ],
+      "lore": "To face a soldier of Stonehall in single combat is a challenge few can resist."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Overwhelming Odds Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_armor} Outfight Them! Armor"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_hp_regen} Press The Attack HP Regen"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_per_hero} Overwhelming Odds Damage per Hero"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_duration}s Duel Duration"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_trigger_attacks} Moment of Courage Attacks To Trigger"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_hp_leech_percent}% Moment of Courage Lifesteal"
+    },
+    {
+      "slot": null,
+      "name": "Duel Refreshes Cooldown On Victory"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

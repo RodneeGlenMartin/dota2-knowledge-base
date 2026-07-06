@@ -1,0 +1,583 @@
+{
+  "id": 81,
+  "name": "Chaos Knight",
+  "slug": "chaos_knight",
+  "npc_name": "npc_dota_hero_chaos_knight",
+  "primary_attribute": "str",
+  "attack_type": "Melee",
+  "complexity": 1,
+  "roles": [
+    "Carry",
+    "Disabler",
+    "Durable",
+    "Pusher",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 24,
+    "str_gain": 3.1,
+    "base_agi": 18,
+    "agi_gain": 1.8,
+    "base_int": 18,
+    "int_gain": 1.2,
+    "damage_min": 56,
+    "damage_max": 76,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 5,
+    "magic_resistance": 25,
+    "movement_speed": 325,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 648,
+    "health_regen": 2.65,
+    "max_mana": 291,
+    "mana_regen": 0.90000004
+  },
+  "lore": "The veteran of countless battles on a thousand worlds, Chaos Knight hails from a far upstream plane where the fundamental laws of the universe have found sentient expression.  Of all the ancient Fundamentals, he is the oldest and most tireless, endlessly searching out a being he knows only as \"The Light.\"  Long ago the Light ventured out from the progenitor realm, in defiance of the first covenant.  Now Chaos Knight shifts from plane to plane, always on the hunt to extinguish the Light wherever he finds it.  A thousand times he has snuffed out the source, and always he slides into another plane to continue his search anew.  \r\n\t\t\t\t<br><br>Upon his steed Armageddon he rides, wading into battle with maniacal frenzy, drawing strength from the disorder of the universe.  A physical manifestation of chaos itself, in times of need he calls upon other versions of himself from other planes, and together these dark horsemen ride into battle, as unstoppable as any force of nature.  Only when the last Light of the world is scoured from existence will the search be ended.  Where rides the Chaos Knight, death soon follows.",
+  "hype": "Chaos Knight is an army unto himself. Able to <b>summon a cavalry of clones</b> to demolish enemy defenses, should an enemy present itself, he can rift reality to <b>pull</b> him and his phantasms close enough to rain brutal cudgel blows upon their head.",
+  "abilities": [
+    {
+      "key": "chaos_knight_chaos_bolt",
+      "name": "Chaos Bolt",
+      "description": "Throws a mysterious bolt of energy at the target unit. It stuns for a random duration and deals random damage.",
+      "max_level": 4,
+      "cooldowns": [
+        13,
+        12,
+        11,
+        10
+      ],
+      "mana_costs": [
+        110
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        600
+      ],
+      "cast_points": [
+        0.4,
+        0.4,
+        0.4,
+        0.4
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "chaos_bolt_speed",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "stun_min",
+          "heading": "MINIMUM STUN:",
+          "values": [
+            1.25,
+            1.5,
+            1.75,
+            2
+          ]
+        },
+        {
+          "key": "stun_max",
+          "heading": "MAXIMUM STUN:",
+          "values": [
+            1.75,
+            2.25,
+            2.75,
+            3.25
+          ]
+        },
+        {
+          "key": "damage_min",
+          "heading": "MINIMUM DAMAGE:",
+          "values": [
+            90,
+            120,
+            150,
+            180
+          ]
+        },
+        {
+          "key": "damage_max",
+          "heading": "MAXIMUM DAMAGE:",
+          "values": [
+            155,
+            240,
+            325,
+            410
+          ]
+        },
+        {
+          "key": "fake_bolt_distance",
+          "heading": "",
+          "values": [
+            675
+          ]
+        },
+        {
+          "key": "illusion_duration",
+          "heading": "ILLUSION DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "illusion_damage_reduction_pct",
+          "heading": "ILLUSION DAMAGE REDUCTION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            110
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            13,
+            12,
+            11,
+            10
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Causes Chaos Bolt to create a Phantasm illusion to attack the target. This illusion deals %illusion_damage_reduction_pct%%% less damage.",
+      "notes": [
+        "The stun duration and damage values dealt are inversely related.",
+        "Nearby illusions will mimic the cast animation."
+      ],
+      "lore": "Even Chaos Knight cannot predict this manifest of unholy energy."
+    },
+    {
+      "key": "chaos_knight_reality_rift",
+      "name": "Reality Rift",
+      "description": "Teleports Chaos Knight, any illusions he has, and the target unit to a point along the line between him and the target. The enemy unit has their armor reduced for %duration%s.",
+      "max_level": 4,
+      "cooldowns": [
+        15,
+        12,
+        9,
+        6
+      ],
+      "mana_costs": [
+        50
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        600,
+        650,
+        700,
+        750
+      ],
+      "cast_points": [
+        0.25
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "pull_distance",
+          "heading": "PULL DISTANCE:",
+          "values": [
+            300,
+            350,
+            400,
+            450
+          ]
+        },
+        {
+          "key": "armor_reduction",
+          "heading": "ARMOR REDUCTION:",
+          "values": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "pierces_immunity",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            600,
+            650,
+            700,
+            750
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            15,
+            12,
+            9,
+            6
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Allows Reality Rift to be cast on any enemy hero that is within 1200 range of you or one of your illusions. Gathers all of your illusions and your hero and teleports them to the target enemy.",
+      "notes": [
+        "Chaos Knight and the target unit are made to face each other, and Chaos Knight and his phantasms are issued an attack order against the target."
+      ],
+      "lore": "Armageddon rides between the planes, bringing Chaos Knight to his victim wherever he may hide."
+    },
+    {
+      "key": "chaos_knight_chaos_strike",
+      "name": "Chaos Strike",
+      "description": "Chaos Knight and his illusions' attacks have a chance to deal a critical strike of varying strength with bonus lifesteal. Lifesteal from creeps is reduced.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "chance",
+          "heading": "CHANCE:",
+          "values": [
+            33.33
+          ]
+        },
+        {
+          "key": "crit_min",
+          "heading": "CRITICAL MIN:",
+          "values": [
+            120
+          ]
+        },
+        {
+          "key": "crit_max",
+          "heading": "CRITICAL MAX:",
+          "values": [
+            150,
+            190,
+            230,
+            270
+          ]
+        },
+        {
+          "key": "lifesteal",
+          "heading": "CRITICAL LIFESTEAL:",
+          "values": [
+            30,
+            40,
+            50,
+            60
+          ]
+        },
+        {
+          "key": "creep_multiplier",
+          "heading": "",
+          "values": [
+            1
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Chaos Knight's unwieldy power bludgeons those who stand before him, crushing the thickest of armors."
+    },
+    {
+      "key": "chaos_knight_fundamental_forging",
+      "name": "Fundamental Forging",
+      "description": "Chaos Knight's Neutral Items get an additional random enchantment.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "The random enchantment can be any available enchantment in that tier except for enchantments with negative effects, including enchantments that are normally not available for Strength heroes.",
+        "The random enchantment cannot be the same as the chosen enchantment."
+      ],
+      "lore": null
+    },
+    {
+      "key": "chaos_knight_phantasm",
+      "name": "Phantasm",
+      "description": "Summons several phantasmal copies of the Chaos Knight from alternate dimensions. The phantasms are illusions that deal %outgoing_damage_tooltip%%% damage, but take %incoming_damage_tooltip%%% damage.\nDISPEL TYPE: Basic Dispel",
+      "max_level": 3,
+      "cooldowns": [
+        85,
+        80,
+        75
+      ],
+      "mana_costs": [
+        100,
+        200,
+        300
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.4,
+        0.4,
+        0.4
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "images_count",
+          "heading": "NUMBER OF PHANTASMS:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "illusion_duration",
+          "heading": "PHANTASM DURATION:",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "outgoing_damage",
+          "heading": "",
+          "values": [
+            -40,
+            -20,
+            0
+          ]
+        },
+        {
+          "key": "outgoing_damage_tooltip",
+          "heading": "PHANTASM DAMAGE:",
+          "values": [
+            60,
+            80,
+            100
+          ]
+        },
+        {
+          "key": "incoming_damage",
+          "heading": "",
+          "values": [
+            250
+          ]
+        },
+        {
+          "key": "incoming_damage_tooltip",
+          "heading": "PHANTASM DAMAGE TAKEN:",
+          "values": [
+            350
+          ]
+        },
+        {
+          "key": "invuln_duration",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "vision_radius",
+          "heading": "",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "bonus_illusion_chance",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "bonus_illusion_count",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            200,
+            300
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            85,
+            80,
+            75
+          ]
+        }
+      ],
+      "scepter_upgrade": "Gains a passive component.  When an illusion of Chaos Knight is created, there is a %bonus_illusion_chance%%% chance to create an additional illusion under Chaos Knight's control.<br><br>When Phantasm is activated, also creates an illusion of allied heroes globally.",
+      "shard_upgrade": null,
+      "notes": [
+        "Removes most negative buffs from Chaos Knight.",
+        "Chaos Knight is invulnerable for %invuln_duration% seconds when casting, allowing him to dodge stuns and damage."
+      ],
+      "lore": "Drawing on his battles fought across many worlds and many times, phantasms of the Chaos Knight rise up to quell all who oppose him."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_lifesteal}% Chaos Strike Lifesteal"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_pull_distance} Reality Rift Pull Distance"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Chaos Bolt Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Strength"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_stun_max} Min/Max Chaos Bolt Duration"
+    },
+    {
+      "slot": null,
+      "name": "Reality Rift Pierces Spell Immunity"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_chance}% Chaos Strike Chance"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_incoming_damage}% Phantasm Illusion Incoming Damage"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

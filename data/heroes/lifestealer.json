@@ -1,0 +1,611 @@
+{
+  "id": 54,
+  "name": "Lifestealer",
+  "slug": "lifestealer",
+  "npc_name": "npc_dota_hero_life_stealer",
+  "primary_attribute": "str",
+  "attack_type": "Melee",
+  "complexity": 2,
+  "roles": [
+    "Carry",
+    "Disabler",
+    "Durable",
+    "Escape"
+  ],
+  "stats": {
+    "base_str": 23,
+    "str_gain": 2.4,
+    "base_agi": 15,
+    "agi_gain": 1.9,
+    "base_int": 15,
+    "int_gain": 1.8,
+    "damage_min": 46,
+    "damage_max": 52,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 3.5,
+    "magic_resistance": 25,
+    "movement_speed": 320,
+    "turn_rate": 0.9,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 626,
+    "health_regen": 2.55,
+    "max_mana": 255,
+    "mana_regen": 0.75
+  },
+  "lore": "In the dungeons of Devarque, a vengeful wizard lay in shackles, plotting his escape. He shared his cell with a gibbering creature known as N'aix, a thief cursed by the Vile Council with longevity, so that its life-sentence for theft and cozening might be as punishing as possible. Over the years, its chains had corroded, along with its sanity; N'aix retained no memory of its former life and no longer dreamt of escape.\r\n\t\t\t\t<br><br>Seeing a perfect vessel for his plans, the wizard wove a spell of Infestation and cast his life-force into N'aix's body, intending to compel N'aix to sacrifice itself in a frenzy of violence while the mage returned to his body and crept away unnoticed. Instead, the wizard found his mind caught in a vortex of madness so powerful that it swept away his plans and shattered his will. Jarred to consciousness by the sudden infusion of fresh life, N'aix woke from its nightmare of madness and obeyed the disembodied voice that filled its skull, which had only the one thought: To escape.\r\n\t\t\t\t<br><br>In that moment Lifestealer was born. The creature cast its mind into dungeon guards and soldiers, compelling them to open locks and cut down their companions, opening an unobstructed path to freedom while feeding on their lives. Lifestealer still wears the broken shackles as a warning that none may hold him, but on the inside remains a prisoner. Two minds inhabit the single form--a nameless creature of malevolent cunning, and the Master whose voice he pretends to obey.",
+  "hype": "Should Lifestealer get close to his prey, there is little that can save them. Travelling within a creep or an allied hero, once he nears a foe he explodes from his host body, <b>surprising enemies</b> and tearing into them with his <b>claws.</b>",
+  "abilities": [
+    {
+      "key": "life_stealer_rage",
+      "name": "Rage",
+      "description": "Launch into a maddened rage, becoming Debuff Immune, increasing magic resistance and gaining movement speed.\n\nDISPEL TYPE: Basic Dispel",
+      "max_level": 4,
+      "cooldowns": [
+        20,
+        19,
+        18,
+        17
+      ],
+      "mana_costs": [
+        80,
+        100,
+        120,
+        140
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "key": "magic_resist",
+          "heading": "MAGIC RESISTANCE:",
+          "values": [
+            80
+          ]
+        },
+        {
+          "key": "debuff_immunity",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "movespeed_bonus",
+          "heading": "MOVESPEED BONUS:",
+          "values": [
+            6,
+            9,
+            12,
+            15
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            80,
+            100,
+            120,
+            140
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            20,
+            19,
+            18,
+            17
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "The madness and brutality of N'aix makes him a vicious and unrelenting foe in combat."
+    },
+    {
+      "key": "life_stealer_open_wounds",
+      "name": "Open Wounds",
+      "description": "Lifestealer rends an enemy unit, slowing the victim's movement speed and allowing all allies to regain health for a percentage of the damage they deal to that unit. The victim recovers movement speed over the duration.",
+      "max_level": 4,
+      "cooldowns": [
+        30,
+        25,
+        20,
+        15
+      ],
+      "mana_costs": [
+        90
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        300,
+        400,
+        500,
+        600
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            7
+          ]
+        },
+        {
+          "key": "slow_steps",
+          "heading": "",
+          "values": [
+            -50,
+            -50,
+            -40,
+            -30,
+            -20,
+            -10,
+            -10,
+            -10
+          ]
+        },
+        {
+          "key": "heal_percent",
+          "heading": "DAMAGE TO HEALING:",
+          "values": [
+            20,
+            30,
+            40,
+            50
+          ]
+        },
+        {
+          "key": "spread_radius",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "slow_step_pct_of_max",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "slow_tooltip",
+          "heading": "MAX SLOW:",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "attack_speed_on_target",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            300,
+            400,
+            500,
+            600
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            90
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            30,
+            25,
+            20,
+            15
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Open Wounds slows over 8 different steps: 50% / 50% / 40% / 30% / 20% / 10% / 10% / 10%, with the slow decreasing one step per second.",
+        "The amount healed is amplified by Lifestealer's Lifesteal Amplification."
+      ],
+      "lore": "Fresh wounds and the scent of blood often draw out the scavengers to finish the job."
+    },
+    {
+      "key": "life_stealer_feast",
+      "name": "Feast",
+      "description": "Lifestealer's attacks deal damage and provide heal for a percentage of his target's max health. He gains permanent max HP whenever he kills a unit.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "hp_leech_percent",
+          "heading": "HEAL FROM TARGET'S MAX HEALTH:",
+          "values": [
+            1.45,
+            2.05,
+            2.65,
+            3.25
+          ]
+        },
+        {
+          "key": "hp_damage_percent",
+          "heading": "MAX HEALTH DAMAGE:",
+          "values": [
+            1.45,
+            2.05,
+            2.65,
+            3.25
+          ]
+        },
+        {
+          "key": "creep_deny_percent",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "bonus_hp_per_hero",
+          "heading": "MAX HP PER HERO KILL:",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "bonus_hp_per_creep",
+          "heading": "MAX HP PER CREEP KILL:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "bonus_hp_total",
+          "heading": "PERMANENT MAX HP:",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Works on allies and enemies. Does not affect Roshan.",
+        "The heal is independent of the damage.",
+        "Break disables the gaining of new stacks.",
+        "Break does not disable the bonuses from existing stacks."
+      ],
+      "lore": "After escaping from his cell in Devarque, N'aix subsisted on flesh and bones of those unfortunate to cross his path."
+    },
+    {
+      "key": "life_stealer_ghoul_frenzy",
+      "name": "Ghoul Frenzy",
+      "description": "Passively grants Lifestealer Attack Speed.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "movement_speed_bonus",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "attack_speed_bonus",
+          "heading": "BONUS ATTACK SPEED:",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Distant memories of the Vile Council fuel one mind to plotting and the other to more immediate dark ends."
+    },
+    {
+      "key": "life_stealer_infest",
+      "name": "Infest",
+      "description": "Lifestealer infests the body of a target unit, becoming undetectable, and healing for a portion of his max hitpoints every second while inside. He can then explode from the host body, dealing damage to nearby enemies. If the infested unit is an enemy creep or a neutral creep, he can take control of the unit's ability to move and attack, and the creep loses a portion of their max hitpoints over time. Does not work on enemy heroes.\n\nDISPEL TYPE: Basic Dispel",
+      "max_level": 3,
+      "cooldowns": [
+        80,
+        65,
+        50
+      ],
+      "mana_costs": [
+        100,
+        125,
+        150
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        150
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "DAMAGE RADIUS:",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            150,
+            275,
+            400
+          ]
+        },
+        {
+          "key": "bonus_movement_speed",
+          "heading": "MOVEMENT SPEED:",
+          "values": [
+            15,
+            20,
+            25
+          ]
+        },
+        {
+          "key": "bonus_health",
+          "heading": "HEALTH BONUS:",
+          "values": [
+            400,
+            800,
+            1200
+          ]
+        },
+        {
+          "key": "self_regen",
+          "heading": "SELF MAX HP REGEN:",
+          "values": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "key": "infest_duration_enemy",
+          "heading": "ENEMY DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "attack_rate_enemy",
+          "heading": "ATTACK RATE:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "creep_max_hp_drain_pct_per_second",
+          "heading": "CREEP MAX HP LOSS / SEC:",
+          "values": [
+            1.5,
+            0.75,
+            0
+          ]
+        },
+        {
+          "key": "can_target_ancients",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "dot_damage_as_pct_of_damage_dealt",
+          "heading": "REMAINING HEALTH AS TOTAL DAMAGE:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "dot_duration",
+          "heading": "DAMAGE OVER TIME DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "dot_tick_interval",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            125,
+            150
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            80,
+            65,
+            50
+          ]
+        }
+      ],
+      "scepter_upgrade": "Increases cast range and reduces cooldown to %bonus_AbilityCooldown%s.  Infest may target enemy heroes for a short duration, attacking them from the inside while increasing Lifestealer's regeneration rate.",
+      "shard_upgrade": "Consuming a creep with Infest drenches enemies in blood which deals damage over time based on the host's remaining health.",
+      "notes": [
+        "Lifestealer gains experience while under the effects of Infest.",
+        "Creeps that are controlled while Infested gain Infest's movement speed bonus.",
+        "Does not trigger spell reflect.",
+        "Infest can be used on Ancient creeps."
+      ],
+      "lore": "With this infestation, N'aix consumes the life blood of the host, restoring him back to full unholy power."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:value} All Attributes"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Movement Speed"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Infest Damage"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_attack_speed_on_target} Attack Speed on Open Wounds Target"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_movement_speed}% Infest Target Movespeed/Health"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_heal_percent}% Open Wounds Lifesteal"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_hp_damage_percent}% Feast Heal and Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_duration}s Rage Duration"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

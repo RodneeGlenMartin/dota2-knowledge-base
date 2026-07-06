@@ -1,0 +1,24 @@
+{
+  "id": 95,
+  "name": "Scythe of Vyse Recipe",
+  "slug": "scythe_of_vyse_recipe",
+  "internal_key": "item_recipe_sheepstick",
+  "cost": 700,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

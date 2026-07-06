@@ -1,0 +1,55 @@
+{
+  "id": 1871,
+  "name": "Tomo'kan Ringcap",
+  "slug": "tomo_kan_ringcap",
+  "internal_key": "item_foragers_mana",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Use: Munch</h1>Instantly restores %replenish_amount% mana + %mana_pct%%% of the target's max mana when consumed",
+  "notes": [
+    "Hold Control to use on a nearby allied hero."
+  ],
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    400
+  ],
+  "special_values": [
+    {
+      "key": "bonus_int",
+      "heading": "+$int",
+      "values": [
+        2
+      ]
+    },
+    {
+      "key": "replenish_amount",
+      "heading": "",
+      "values": [
+        50
+      ]
+    },
+    {
+      "key": "mana_pct",
+      "heading": "",
+      "values": [
+        5
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        400
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

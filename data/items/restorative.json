@@ -1,0 +1,46 @@
+{
+  "id": 1649,
+  "name": "Restorative",
+  "slug": "restorative",
+  "internal_key": "item_enhancement_restorative",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_mana",
+      "heading": "+$mana",
+      "values": [
+        200
+      ]
+    },
+    {
+      "key": "bonus_hp_regen",
+      "heading": "+$hp_regen",
+      "values": [
+        8
+      ]
+    },
+    {
+      "key": "heal_amp",
+      "heading": "+$healing_amp",
+      "values": [
+        10
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

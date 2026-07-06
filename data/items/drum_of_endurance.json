@@ -1,0 +1,88 @@
+{
+  "id": 185,
+  "name": "Drum of Endurance",
+  "slug": "drum_of_endurance",
+  "internal_key": "item_ancient_janggo",
+  "cost": 1625,
+  "neutral_tier": null,
+  "description": "<h1>Active: Endurance</h1> Gives +%bonus_attack_speed_pct% attack speed and +%bonus_movement_speed_pct%%% movement speed to nearby allies for %duration% seconds.<br><br>Radius: %radius%  \n\n<h1>Passive: Swiftness Aura</h1>Grants %aura_movement_speed% movement speed and %aura_health_regen% health regeneration to allies.  <br><br>Radius: %radius%",
+  "notes": null,
+  "cooldowns": [
+    45
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "aura_movement_speed",
+      "heading": "",
+      "values": [
+        15
+      ]
+    },
+    {
+      "key": "aura_health_regen",
+      "heading": "",
+      "values": [
+        2.5
+      ]
+    },
+    {
+      "key": "bonus_str",
+      "heading": "+$str",
+      "values": [
+        8
+      ]
+    },
+    {
+      "key": "bonus_attack_speed_pct",
+      "heading": "",
+      "values": [
+        35
+      ]
+    },
+    {
+      "key": "bonus_movement_speed_pct",
+      "heading": "",
+      "values": [
+        13
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        6
+      ]
+    },
+    {
+      "key": "radius",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    },
+    {
+      "key": "charges_tooltip",
+      "heading": "",
+      "values": [
+        8
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        45
+      ]
+    }
+  ],
+  "lore": "A relic that enchants the bodies of those around it for swifter movement in times of crisis.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": 1869,
+  "name": "Vital Toadstool",
+  "slug": "vital_toadstool",
+  "internal_key": "item_foragers_health",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Use: Munch</h1> Grants %health_regen_pct%%% max health regeneration to the target for %buff_duration% seconds.<br><br>If the unit is attacked by an enemy hero or Roshan, the effect is lost.",
+  "notes": [
+    "Hold Control to use on a nearby allied hero."
+  ],
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    250
+  ],
+  "special_values": [
+    {
+      "key": "buff_duration",
+      "heading": "",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "health_regen_pct",
+      "heading": "",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "break_on_hero_damage",
+      "heading": "",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "bonus_damage",
+      "heading": "+$damage",
+      "values": [
+        2
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        250
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

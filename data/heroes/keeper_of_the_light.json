@@ -1,0 +1,865 @@
+{
+  "id": 90,
+  "name": "Keeper of the Light",
+  "slug": "keeper_of_the_light",
+  "npc_name": "npc_dota_hero_keeper_of_the_light",
+  "primary_attribute": "int",
+  "attack_type": "Ranged",
+  "complexity": 2,
+  "roles": [
+    "Support",
+    "Nuker",
+    "Disabler"
+  ],
+  "stats": {
+    "base_str": 18,
+    "str_gain": 2.3,
+    "base_agi": 15,
+    "agi_gain": 1.6,
+    "base_int": 24,
+    "int_gain": 3.3,
+    "damage_min": 44,
+    "damage_max": 51,
+    "attack_rate": 1.7,
+    "attack_range": 600,
+    "projectile_speed": 900,
+    "armor": 2.5,
+    "magic_resistance": 25,
+    "movement_speed": 310,
+    "turn_rate": 0.7,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 516,
+    "health_regen": 2.0500002,
+    "max_mana": 363,
+    "mana_regen": 1.2
+  },
+  "lore": "Upon a pale horse he rides, this spark of endless suns, this Keeper of the Light.  Ezalor long ago escaped the Fundamental plane, separating from the other ancient forces to which he was bound within the great Primordial harmony.  He is a power grown sentient in the dawn of the universe, and now rides forth in all planes at once, one step ahead of pursuing chaos, bearing his gift with him at the end of a radiant staff.  His majestic truth lies hidden beneath the outward appearance of a slightly doddering old man who barely stays in the saddle.  However, when faced with the challenge of chaos, or the forces of darkness, his primordial light bursts forth, and his full power is revealed, transforming him once again into a force to be reckoned with.",
+  "hype": "Keeper of the Light is a helpful addition to any team. <b>Manipulating the mana</b> of both his allies and enemies, he effortlessly destroys lesser foes with <b>waves of illumination</b>, then enters his spirit form to gather his team to press the assault.",
+  "abilities": [
+    {
+      "key": "keeper_of_the_light_illuminate",
+      "name": "Illuminate",
+      "description": "CHANNELED - Channels light energy, building power the longer it's channeled.  Once released, a wave is sent forth that deals damage and gives vision in its path.  The longer it is channeled, the more damage is dealt.",
+      "max_level": 4,
+      "cooldowns": [
+        13
+      ],
+      "mana_costs": [
+        100,
+        125,
+        150,
+        175
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1800
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "total_damage",
+          "heading": "MAX DAMAGE:",
+          "values": [
+            185,
+            290,
+            395,
+            500
+          ]
+        },
+        {
+          "key": "max_channel_time",
+          "heading": "MAX CHANNEL TIME:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "WIDTH:",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "range",
+          "heading": "RANGE:",
+          "values": [
+            1550
+          ]
+        },
+        {
+          "key": "speed",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "vision_radius",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "vision_duration",
+          "heading": "",
+          "values": [
+            3.34
+          ]
+        },
+        {
+          "key": "channel_vision_radius",
+          "heading": "",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "channel_vision_interval",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "channel_vision_duration",
+          "heading": "",
+          "values": [
+            10.34
+          ]
+        },
+        {
+          "key": "channel_vision_step",
+          "heading": "",
+          "values": [
+            150,
+            180,
+            210,
+            240
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1800
+          ]
+        },
+        {
+          "key": "AbilityChannelTime",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            125,
+            150,
+            175
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            13
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Gives increasing vision over the channeling time."
+      ],
+      "lore": "Ezalor's hidden light reveals itself in marvelous fashion."
+    },
+    {
+      "key": "keeper_of_the_light_blinding_light",
+      "name": "Blinding Light",
+      "description": "A blinding light flashes over the targeted area, knocking back units to the edge of the area and blinding them, causing them to miss some attacks. Minimum knockback distance is %knockback_distance% range over %knockback_duration% seconds.",
+      "max_level": 4,
+      "cooldowns": [
+        24,
+        21,
+        18,
+        15
+      ],
+      "mana_costs": [
+        120,
+        130,
+        140,
+        150
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        500,
+        575,
+        650,
+        725
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "miss_rate",
+          "heading": "MISS CHANCE:",
+          "values": [
+            45
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            425,
+            450,
+            475,
+            500
+          ]
+        },
+        {
+          "key": "knockback_duration",
+          "heading": "",
+          "values": [
+            0.6
+          ]
+        },
+        {
+          "key": "knockback_distance",
+          "heading": "",
+          "values": [
+            175
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            90,
+            140,
+            190,
+            240
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            500,
+            575,
+            650,
+            725
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            120,
+            130,
+            140,
+            150
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            24,
+            21,
+            18,
+            15
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Upon landing, units will destroy trees in a 150 radius."
+      ],
+      "lore": "The Primordial light turns the tides of battle in favor of Ezalor and his allies."
+    },
+    {
+      "key": "keeper_of_the_light_chakra_magic",
+      "name": "Chakra Magic",
+      "description": "Restores mana to the target unit and reduces cooldowns of all basic abilities currently on cooldown by a fixed amount. Is %self_bonus%%% more effective when used on himself.",
+      "max_level": 4,
+      "cooldowns": [
+        19,
+        16,
+        13,
+        10
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        900,
+        900,
+        900,
+        900
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "mana_restore",
+          "heading": "MANA RESTORE:",
+          "values": [
+            105,
+            170,
+            235,
+            300
+          ]
+        },
+        {
+          "key": "cooldown_reduction",
+          "heading": "COOLDOWN REDUCTION:",
+          "values": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "key": "mana_leak_pct",
+          "heading": "",
+          "values": [
+            4.5,
+            5,
+            5.5,
+            6
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "self_bonus",
+          "heading": "",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "strong_dispel",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            19,
+            16,
+            13,
+            10
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Chakra Magic does not reduce the cooldown of Ultimate abilities"
+      ],
+      "lore": "In the same vein, Ezalor bestows his harmony among others."
+    },
+    {
+      "key": "keeper_of_the_light_radiant_bind",
+      "name": "Solar Bind",
+      "description": "Weakens an enemy's magical resistance, and applies a slow that increases in strength the more the target moves.",
+      "max_level": 1,
+      "cooldowns": [
+        14
+      ],
+      "mana_costs": [
+        120
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        850
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "slow",
+          "heading": "SLOW PER 100 UNITS:",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "magic_resistance",
+          "heading": "MAGIC RESISTANCE REDUCTION:",
+          "values": [
+            20,
+            30,
+            40
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            850
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityCharges",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityChargeRestoreTime",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            120
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            14
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Grants %AbilityCharges% charges.",
+      "notes": null,
+      "lore": "Even a glimpse of the First Light is enough to rob enemies of their senses."
+    },
+    {
+      "key": "keeper_of_the_light_will_o_wisp",
+      "name": "Will-O-Wisp",
+      "description": "Summons Ignis Fatuus at the targeted area. Alternates on and off, drawing enemies closer with its mesmerising flicker.",
+      "max_level": 1,
+      "cooldowns": [
+        60
+      ],
+      "mana_costs": [
+        150
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        800
+      ],
+      "cast_points": [
+        0.1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "on_count",
+          "heading": "",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            725
+          ]
+        },
+        {
+          "key": "hit_count",
+          "heading": "HIT COUNT:",
+          "values": [
+            7
+          ]
+        },
+        {
+          "key": "wisp_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            85
+          ]
+        },
+        {
+          "key": "off_duration",
+          "heading": "",
+          "values": [
+            1.85
+          ]
+        },
+        {
+          "key": "on_duration",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "off_duration_initial",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "fixed_movement_speed",
+          "heading": "",
+          "values": [
+            60
+          ]
+        },
+        {
+          "key": "bounty",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            60
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Ignus Fatuus applies a non-interrupting pull towards it on all enemies within the radius."
+      ],
+      "lore": "Though he would not claim to 'know' them, Ezalor holds an uncanny influence over many powerful creatures always willing to come to his aid."
+    },
+    {
+      "key": "keeper_of_the_light_spirit_form",
+      "name": "Spirit Form",
+      "description": "Ezalor temporarily turns his body luminescent, gaining cast range, increasing the speed bonus from Bright Speed, and allows Illuminate to be channeled by a separate spirit and heal allies.",
+      "max_level": 3,
+      "cooldowns": [
+        85,
+        80,
+        75
+      ],
+      "mana_costs": [
+        75,
+        125,
+        175
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            40,
+            45,
+            50
+          ]
+        },
+        {
+          "key": "movement_speed",
+          "heading": "BRIGHT SPEED BONUS MOVEMENT:",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "cast_range",
+          "heading": "CAST RANGE BONUS:",
+          "values": [
+            100,
+            175,
+            250
+          ]
+        },
+        {
+          "key": "illuminate_heal",
+          "heading": "ILLUMINATE HEAL:",
+          "values": [
+            70
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            75,
+            125,
+            175
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            85,
+            80,
+            75
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Increases illuminate heal.",
+      "notes": null,
+      "lore": "In a flash of light, Ezalor reveals his true nature."
+    },
+    {
+      "key": "keeper_of_the_light_bright_speed",
+      "name": "Bright Speed",
+      "description": "Keeper of the Light gains <span class=\"GameplayVariable\">1</span> movement speed for every %intelligence_per_speed% Intelligence.<br><br>Whenever Keeper of the Light moves %movement_per_vision% distance, he leaves behind light that allows him to see %vision_radius% range for %vision_duration% seconds.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "intelligence_per_speed",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "movement_per_vision",
+          "heading": "",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "vision_radius",
+          "heading": "",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "vision_duration",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "current_speed",
+          "heading": "MOVEMENT SPEED:",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_miss_rate}% Blinding Light Miss"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Illuminate Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_movement_speed}% Spirit Form Bright Speed Bonus"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Blinding Light Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_duration}s Spirit Form Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_magic_resistance}% Solar Bind Magic Resistance Reduction"
+    },
+    {
+      "slot": null,
+      "name": "Chakra Magic Strong Dispels"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_total_damage} Illuminate Damage"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

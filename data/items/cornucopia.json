@@ -1,0 +1,46 @@
+{
+  "id": 1125,
+  "name": "Cornucopia",
+  "slug": "cornucopia",
+  "internal_key": "item_cornucopia",
+  "cost": 1200,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_health_regen",
+      "heading": "+$hp_regen",
+      "values": [
+        5
+      ]
+    },
+    {
+      "key": "bonus_mana_regen",
+      "heading": "+$mana_regen",
+      "values": [
+        2
+      ]
+    },
+    {
+      "key": "bonus_damage",
+      "heading": "+$damage",
+      "values": [
+        7
+      ]
+    }
+  ],
+  "lore": "A source of spiritual and physical nourishment.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,589 @@
+{
+  "id": 15,
+  "name": "Razor",
+  "slug": "razor",
+  "npc_name": "npc_dota_hero_razor",
+  "primary_attribute": "agi",
+  "attack_type": "Ranged",
+  "complexity": 1,
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Durable",
+    "Pusher"
+  ],
+  "stats": {
+    "base_str": 22,
+    "str_gain": 2.8,
+    "base_agi": 24,
+    "agi_gain": 2.8,
+    "base_int": 21,
+    "int_gain": 2.2,
+    "damage_min": 47,
+    "damage_max": 49,
+    "attack_rate": 1.7,
+    "attack_range": 475,
+    "projectile_speed": 2000,
+    "armor": 4,
+    "magic_resistance": 25,
+    "movement_speed": 280,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 604,
+    "health_regen": 3.2,
+    "max_mana": 327,
+    "mana_regen": 1.0500001
+  },
+  "lore": "Among the emblematic powers that populate the Underscape, Razor the Lightning Revenant is one of the most feared. With his whip of lightning, he patrols the Narrow Maze, that treacherous webwork of passages by which the souls of the dead are sorted according to their own innate intelligence, cunning and persistence. Drifting above the Maze, Razor looks down on the baffled souls below, and delivers jolts of scalding electricity that both punish and quicken the souls as they decide their own fates, hurrying on toward luminous exits or endlessly dark pits. Razor is the eternal embodiment of a dominating power, abstract and almost clinical in his application of power. Yet he has a lordly air that suggests he takes a sardonic satisfaction in his work.",
+  "hype": "With a deadly <b>lightning storm</b> at his command, Razor charges into battle. Deploying a <b>sweeping ring</b> of electrified plasma to fry his enemies, he links with foes to <b>drain</b> them of their power and use it against them.",
+  "abilities": [
+    {
+      "key": "razor_plasma_field",
+      "name": "Plasma Field",
+      "description": "Releases a wave of energetic plasma that grows in power as it expands, but also zaps on contraction, slowing and dealing damage to enemy units caught in its path. Damage and slow increases with distance from Razor. The Plasma Field hits each unit twice, once each direction.",
+      "max_level": 4,
+      "cooldowns": [
+        13,
+        12,
+        11,
+        10
+      ],
+      "mana_costs": [
+        125
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage_min",
+          "heading": "DAMAGE MIN:",
+          "values": [
+            35,
+            40,
+            45,
+            50
+          ]
+        },
+        {
+          "key": "damage_max",
+          "heading": "DAMAGE MAX:",
+          "values": [
+            80,
+            115,
+            150,
+            185
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "total_ability_time",
+          "heading": "",
+          "values": [
+            2.2
+          ]
+        },
+        {
+          "key": "slow_min",
+          "heading": "SLOW MIN:",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "slow_max",
+          "heading": "SLOW MAX:",
+          "values": [
+            25,
+            30,
+            35,
+            40
+          ]
+        },
+        {
+          "key": "slow_duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            1.5
+          ]
+        },
+        {
+          "key": "second_ring_delay",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "second_ring_reduction",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            125
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            13,
+            12,
+            11,
+            10
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "The Lightning Revenant rules the Underscape with plasmatic power."
+    },
+    {
+      "key": "razor_static_link",
+      "name": "Static Link",
+      "description": "Creates a charged link between Razor and an enemy Hero, stealing damage from the target and giving it to Razor. Allows Razor to attack while moving with the link active.",
+      "max_level": 4,
+      "cooldowns": [
+        44,
+        36,
+        28,
+        20
+      ],
+      "mana_costs": [
+        65
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        550
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "drain_length",
+          "heading": "LINK DURATION:",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "drain_duration",
+          "heading": "BUFF DURATION:",
+          "values": [
+            12,
+            14,
+            16,
+            18
+          ]
+        },
+        {
+          "key": "drain_rate",
+          "heading": "DAMAGE DRAIN RATE:",
+          "values": [
+            6,
+            12,
+            18,
+            24
+          ]
+        },
+        {
+          "key": "drain_range_buffer",
+          "heading": "",
+          "values": [
+            250
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "speed",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "vision_duration",
+          "heading": "",
+          "values": [
+            3.34
+          ]
+        },
+        {
+          "key": "attack_speed_factor",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            550
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            65
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            44,
+            36,
+            28,
+            20
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Increases Cast Range. Slows Razor's target by %move_speed_factor%x the amount of damage stolen while the link is active.",
+      "notes": [
+        "The link is broken when either unit dies or the distance between them becomes %drain_range_buffer% units greater than Static Link's cast range."
+      ],
+      "lore": "Razor's polarity channels electricity into his being, draining the power of his opposition."
+    },
+    {
+      "key": "razor_storm_surge",
+      "name": "Storm Surge",
+      "description": "There's a chance when attacked, and always when targeted with a spell, to release a forked lightning that strikes the target and other nearby enemies, prioritizing the unit type of the attacker, dealing damage and slowing movement speed.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "strike_pct_chance",
+          "heading": "CHANCE TO STRIKE:",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "strike_target_count",
+          "heading": "TARGETS HIT:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "strike_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            50,
+            90,
+            130,
+            170
+          ]
+        },
+        {
+          "key": "strike_move_slow_pct",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            25,
+            30,
+            35,
+            40
+          ]
+        },
+        {
+          "key": "strike_slow_duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "strike_search_radius",
+          "heading": "STRIKE SEARCH AREA:",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "strike_internal_cd",
+          "heading": "STRIKE COOLDOWN:",
+          "values": [
+            2.5
+          ]
+        },
+        {
+          "key": "strike_cd_reduction_during_storm",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "hit_targets_inside_eye_of_the_storm",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "eye_of_the_storm_chance_multiplier",
+          "heading": "",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "While Eye of the Storm is active, strike chance is %eye_of_the_storm_chance_multiplier%x as high, strike cooldown is reduced by %strike_cd_reduction_during_storm%s, and Lightning strikes all enemies within Eye of the Storm's radius. Does not apply to the same enemy twice from a single instance.",
+      "notes": [
+        "Damage done by this ability is considered reflected damage. Reflected damage does not provide any lifesteal and cannot be reflected."
+      ],
+      "lore": "Merely approaching the Lightning Revenant is rewarded with shock therapy."
+    },
+    {
+      "key": "razor_unstable_current",
+      "name": "Unstable Current",
+      "description": "Passively increases Razor's movement speed.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "movespeed_pct",
+          "heading": "MOVEMENT SPEED:",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "razor_eye_of_the_storm",
+      "name": "Eye of the Storm",
+      "description": "A powerful lightning storm strikes out at the enemy unit with the lowest health, dealing damage and reducing armor.",
+      "max_level": 3,
+      "cooldowns": [
+        80,
+        70,
+        60
+      ],
+      "mana_costs": [
+        100,
+        150,
+        200
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "strike_interval",
+          "heading": "STRIKE INTERVAL:",
+          "values": [
+            0.7,
+            0.6,
+            0.5
+          ]
+        },
+        {
+          "key": "armor_reduction",
+          "heading": "ARMOR REDUCTION:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            60,
+            75,
+            90
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            150,
+            200
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            80,
+            70,
+            60
+          ]
+        }
+      ],
+      "scepter_upgrade": "Causes Eye of the Storm to strike two different units instead of one and can damage structures. When striking buildings, it will only target towers, barracks, and the Ancient.",
+      "shard_upgrade": null,
+      "notes": [
+        "Each blast targets the lowest health enemy unit within range.",
+        "Eye of the Storm will prioritize striking static linked heroes.",
+        "Successive casts of Eye of the Storm will stack."
+      ],
+      "lore": "Ride the lightning."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_slow_duration}s Plasma Field Slow Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Armor"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_drain_rate} Static Link Damage Steal"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Strength"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_strike_move_slow_pct}% Storm Surge Slow and Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_strike_interval}s Eye of the Storm Strike Interval"
+    },
+    {
+      "slot": null,
+      "name": "Creates A Second Plasma Field Delayed By {s:bonus_second_ring_delay}s"
+    },
+    {
+      "slot": null,
+      "name": "Static Link Steals Attack Speed"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

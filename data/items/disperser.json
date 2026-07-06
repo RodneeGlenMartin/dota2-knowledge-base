@@ -1,0 +1,123 @@
+{
+  "id": 1097,
+  "name": "Disperser",
+  "slug": "disperser",
+  "internal_key": "item_disperser",
+  "cost": 6100,
+  "neutral_tier": null,
+  "description": "<h1>Active: Suppress</h1> Dispels both the wearer and the target. Enemy targets are slowed for %enemy_effect_duration% seconds. Allied targets gain bonus movespeed and %slow_resist%%% slow resistance for %ally_effect_duration% seconds. Caster is always granted the ally benefit on cast.<br><br>Both movement speed reduction and increase start at %phase_movement_speed%%% and gradually decrease to 0% over the course of the buff duration.<br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>\n\n<h1>Passive: Manabreak</h1>Each attack burns %feedback_mana_burn% mana from the target, and deals %damage_per_burn% physical damage per burned mana. <br><br>Illusions do not burn mana.",
+  "notes": null,
+  "cooldowns": [
+    15
+  ],
+  "mana_costs": [
+    75
+  ],
+  "cast_ranges": [
+    600
+  ],
+  "special_values": [
+    {
+      "key": "bonus_agility",
+      "heading": "+$agi",
+      "values": [
+        40
+      ]
+    },
+    {
+      "key": "bonus_intellect",
+      "heading": "+$int",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "feedback_mana_burn",
+      "heading": "",
+      "values": [
+        40
+      ]
+    },
+    {
+      "key": "purge_rate",
+      "heading": "",
+      "values": [
+        5
+      ]
+    },
+    {
+      "key": "purge_root_duration",
+      "heading": "",
+      "values": [
+        3
+      ]
+    },
+    {
+      "key": "damage_per_burn",
+      "heading": "",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "enemy_effect_duration",
+      "heading": "",
+      "values": [
+        4
+      ]
+    },
+    {
+      "key": "ally_effect_duration",
+      "heading": "",
+      "values": [
+        4
+      ]
+    },
+    {
+      "key": "movement_speed_buff_rate",
+      "heading": "",
+      "values": [
+        4
+      ]
+    },
+    {
+      "key": "phase_movement_speed",
+      "heading": "",
+      "values": [
+        100
+      ]
+    },
+    {
+      "key": "slow_resist",
+      "heading": "",
+      "values": [
+        40
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        600
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        75
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        15
+      ]
+    }
+  ],
+  "lore": "Once entrusted to an Apostle General of the Rumusque Faithful's expeditionary force.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

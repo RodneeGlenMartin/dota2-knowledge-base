@@ -1,0 +1,640 @@
+{
+  "id": 62,
+  "name": "Bounty Hunter",
+  "slug": "bounty_hunter",
+  "npc_name": "npc_dota_hero_bounty_hunter",
+  "primary_attribute": "agi",
+  "attack_type": "Melee",
+  "complexity": 1,
+  "roles": [
+    "Nuker",
+    "Escape"
+  ],
+  "stats": {
+    "base_str": 19,
+    "str_gain": 2.5,
+    "base_agi": 21,
+    "agi_gain": 2.6,
+    "base_int": 20,
+    "int_gain": 1.9,
+    "damage_min": 54,
+    "damage_max": 62,
+    "attack_rate": 1.5,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 8.5,
+    "magic_resistance": 25,
+    "movement_speed": 325,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 1000,
+    "max_health": 538,
+    "health_regen": 2.65,
+    "max_mana": 315,
+    "mana_regen": 1.5
+  },
+  "lore": "When the hunted tell tales of Gondar the Bounty Hunter, none are sure of which are true. In whispered tones they say he was abandoned as a kit, learning his skill in tracking as a matter of simple survival. Others hear he was an orphan of war, taken in by the great Soruq the Hunter to learn the master's skill with a blade as they plumbed the dark forests for big game. Still others believe he was a lowly street urchin raised among a guild of cutpurses and thieves, trained in the arts of stealth and misdirection. Around campfires in the wild countryside his quarry speaks the rumors of Gondar's work, growing ever more fearful: they say it was he who tracked down the tyrant King Goff years after the mad regent went into hiding, delivering his head and scepter as proof. That it was he who infiltrated the rebel camps at Highseat, finally bringing the legendary thief White Cape to be judged for his crimes. And that it was he who ended the career of Soruq the Hunter, condemned as a criminal for killing the Prince's prized hellkite. The tales of Gondar's incredible skill stretch on, with each daring feat more unbelievable than the last, each target more elusive. For the right price, the hunted know, anyone can be found. For the right price, even the mightiest may find fear in the shadows.",
+  "hype": "Sneaking <b>invisibly</b> at the heels of his enemies, Bounty Hunter is always keeping track of his foes. Whenever one of his targets falls in battle, he and his allies stand to <b>make quite a profit</b>.",
+  "abilities": [
+    {
+      "key": "bounty_hunter_shuriken_toss",
+      "name": "Shuriken Toss",
+      "description": "Hurls a deadly shuriken at an enemy unit, dealing damage and slowing the target's movement speed.  The shuriken will bounce to any Tracked units who are within a %bounce_aoe% radius of each other.",
+      "max_level": 4,
+      "cooldowns": [
+        5
+      ],
+      "mana_costs": [
+        75,
+        85,
+        95,
+        105
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        375,
+        425,
+        475,
+        525
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bonus_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            100,
+            170,
+            240,
+            310
+          ]
+        },
+        {
+          "key": "speed",
+          "heading": "",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "bounce_aoe",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "slow_duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            0.35
+          ]
+        },
+        {
+          "key": "scepter_cooldown",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "passthrough_width",
+          "heading": "",
+          "values": [
+            175
+          ]
+        },
+        {
+          "key": "cast_range",
+          "heading": "",
+          "values": [
+            375,
+            425,
+            475,
+            525
+          ]
+        },
+        {
+          "key": "slow",
+          "heading": "SLOW:",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "CAST RANGE:",
+          "values": [
+            375,
+            425,
+            475,
+            525
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            75,
+            85,
+            95,
+            105
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            5
+          ]
+        }
+      ],
+      "scepter_upgrade": "Increases cast range and applies Jinada on hit.",
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "While the shuriken may be small, Gondar's precise aim can cause critical damage."
+    },
+    {
+      "key": "bounty_hunter_jinada",
+      "name": "Jinada",
+      "description": "Bounty Hunter plans his next hit, dealing bonus damage and stealing some unreliable gold.",
+      "max_level": 4,
+      "cooldowns": [
+        9,
+        7,
+        5,
+        3
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        150
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bonus_damage",
+          "heading": "BONUS DAMAGE:",
+          "values": [
+            70,
+            105,
+            140,
+            175
+          ]
+        },
+        {
+          "key": "gold_steal",
+          "heading": "GOLD STEAL:",
+          "values": [
+            15,
+            22,
+            29,
+            36
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            9,
+            7,
+            5,
+            3
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Gondar's vast experience ensures he never walks away from a transaction empty-handed."
+    },
+    {
+      "key": "bounty_hunter_wind_walk",
+      "name": "Shadow Walk",
+      "description": "Bounty Hunter becomes invisible and gains bonus movement speed and the ability to move through other units until he attacks or casts a spell.  If he breaks the invisibility with an attack, that attack will stun the target for a short duration.",
+      "max_level": 4,
+      "cooldowns": [
+        18,
+        17,
+        16,
+        15
+      ],
+      "mana_costs": [
+        50
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "INVISIBILITY DURATION:",
+          "values": [
+            20,
+            25,
+            30,
+            35
+          ]
+        },
+        {
+          "key": "fade_time",
+          "heading": "FADE TIME:",
+          "values": [
+            1,
+            0.75,
+            0.5,
+            0.25
+          ]
+        },
+        {
+          "key": "stun_duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            1,
+            1.2,
+            1.4,
+            1.6
+          ]
+        },
+        {
+          "key": "ally_fade_time",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "damage_reduction_pct",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "bonus_move_speed_pct",
+          "heading": "BONUS SPEED:",
+          "values": [
+            11,
+            14,
+            17,
+            20
+          ]
+        },
+        {
+          "key": "AbilityChargeRestoreTime",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            18,
+            17,
+            16,
+            15
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Will not break most channeling of spells upon activation."
+      ],
+      "lore": "The court jesters present during King Goff's assassination can recount no other image than a dancing shadow."
+    },
+    {
+      "key": "bounty_hunter_wind_walk_ally",
+      "name": "Friendly Shadow",
+      "description": "Applies Shadow Walk and all of its bonuses to the target ally. Allied fade time is %fade_time%s. Does not break Bounty Hunter's invisibility when cast.",
+      "max_level": 1,
+      "cooldowns": [
+        15
+      ],
+      "mana_costs": [
+        50
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        650
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "fade_time",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            650
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            15
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Useful for the rare instances when a contested bounty is actually wanted alive."
+    },
+    {
+      "key": "bounty_hunter_big_game_hunter",
+      "name": "Big Game Hunter",
+      "description": "Bounty Hunter receives %kill_assist_gold_bonus_percent%%% more kill and assist gold if the dying enemy hero is Big Game. An enemy hero is considered Big Game if they are one of the top 3 net worth heroes on the enemy team.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "kill_assist_gold_bonus_percent",
+          "heading": "",
+          "values": [
+            20
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "bounty_hunter_track",
+      "name": "Track",
+      "description": "Tracks an enemy hero, granting True Sight of the target, increasing the damage they take and providing information on how much gold it is carrying. If the target dies, Bounty Hunter and nearby heroes collect a bonus bounty of gold. Casting Track does not take you out of invisibility.",
+      "max_level": 3,
+      "cooldowns": [
+        6,
+        5,
+        4
+      ],
+      "mana_costs": [
+        50
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1000
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "target_damage_amp",
+          "heading": "DAMAGE AMPLIFICATION:",
+          "values": [
+            8,
+            12,
+            16
+          ]
+        },
+        {
+          "key": "bonus_gold_radius",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "bonus_gold_self",
+          "heading": "SELF BONUS GOLD:",
+          "values": [
+            130,
+            225,
+            320
+          ]
+        },
+        {
+          "key": "bonus_gold",
+          "heading": "ALLIES BONUS GOLD:",
+          "values": [
+            50,
+            90,
+            130
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "gold_steal",
+          "heading": "",
+          "values": [
+            0.3,
+            0.4,
+            0.5
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            6,
+            5,
+            4
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Bounty Hunter will get the bonus gold if the target dies while Track is active, regardless of how it died.",
+        "Track's effect is only visible to allies.",
+        "You can see the amount of gold the target is carrying by mousing over the debuff icon above the target's ability bar.",
+        "Bonus gold is reliable gold."
+      ],
+      "lore": "Using his elevated senses of sight and smell, Gondar's hits have quite a good chance of success."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_slow_duration}s Shuriken Toss Slow"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_damage_reduction_pct}% Damage Taken in Shadow Walk"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_gold} Track Gold"
+    },
+    {
+      "slot": null,
+      "name": "Track Grants Shared Vision"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_gold_steal} Jinada Gold Steal"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_damage} Shuriken Toss Damage"
+    },
+    {
+      "slot": null,
+      "name": "No Cooldown on Jinada"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

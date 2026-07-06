@@ -1,0 +1,76 @@
+{
+  "id": 835,
+  "name": "Fae Grenade",
+  "slug": "fae_grenade",
+  "internal_key": "item_paintball",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Shadow Brand</h1>Throws a Mark towards an enemy within %abilitycastrange% range applying a debuff that deals %dps% damage every second and provides vision of the unit for %duration% seconds.",
+  "notes": [
+    "Does not trigger spell block or spell reflect."
+  ],
+  "cooldowns": [
+    20
+  ],
+  "mana_costs": [
+    25
+  ],
+  "cast_ranges": [
+    900
+  ],
+  "special_values": [
+    {
+      "key": "movespeed",
+      "heading": "+$move_speed",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "dps",
+      "heading": "",
+      "values": [
+        40
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        7
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        900
+      ]
+    },
+    {
+      "key": "AbilityCastPoint",
+      "heading": "",
+      "values": [
+        0.2
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        20
+      ]
+    }
+  ],
+  "lore": "Those marked for death by the fae shine brightly to all manner of creatures in the shadow realm.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

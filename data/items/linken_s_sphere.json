@@ -1,0 +1,83 @@
+{
+  "id": 123,
+  "name": "Linken's Sphere",
+  "slug": "linken_s_sphere",
+  "internal_key": "item_sphere",
+  "cost": 4800,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Spellblock</h1>Blocks most targeted spells once every %block_cooldown% seconds.\n\n<h1>Active: Transfer Spellblock</h1>Temporarily removes Spellblock from the item's owner and transfers it to an allied unit for %block_cooldown% seconds.",
+  "notes": [
+    "Targeted abilities from neutral items do not trigger Spellblock."
+  ],
+  "cooldowns": [
+    14
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    700
+  ],
+  "special_values": [
+    {
+      "key": "bonus_all_stats",
+      "heading": "+$all",
+      "values": [
+        16
+      ]
+    },
+    {
+      "key": "bonus_health_regen",
+      "heading": "+$hp_regen",
+      "values": [
+        6.5
+      ]
+    },
+    {
+      "key": "bonus_mana_regen",
+      "heading": "+$mana_regen",
+      "values": [
+        4.25
+      ]
+    },
+    {
+      "key": "block_cooldown",
+      "heading": "",
+      "values": [
+        14
+      ]
+    },
+    {
+      "key": "upgrade_absorb_duration",
+      "heading": "",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "damage_absorb",
+      "heading": "",
+      "values": [
+        300
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        700
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        14
+      ]
+    }
+  ],
+  "lore": "This magical sphere once protected one of the most famous heroes in history.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

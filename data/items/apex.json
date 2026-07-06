@@ -1,0 +1,41 @@
+{
+  "id": 366,
+  "name": "Apex",
+  "slug": "apex",
+  "internal_key": "item_apex",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "",
+  "notes": [
+    "Grants +%primary_stat_universal% to each attribute for Universal Heroes."
+  ],
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "primary_stat",
+      "heading": "+$primary_attribute",
+      "values": [
+        40
+      ]
+    },
+    {
+      "key": "primary_stat_universal",
+      "heading": "",
+      "values": [
+        24
+      ]
+    }
+  ],
+  "lore": "Three orbs of remarkable power bound within a single scepter.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": 111,
+  "name": "Assault Cuirass Recipe",
+  "slug": "assault_cuirass_recipe",
+  "internal_key": "item_recipe_assault",
+  "cost": 1300,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

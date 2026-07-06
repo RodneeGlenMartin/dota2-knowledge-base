@@ -1,0 +1,32 @@
+{
+  "id": 1875,
+  "name": "Leviathan's Fish",
+  "slug": "leviathan_s_fish",
+  "internal_key": "item_tidehunter_fish",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "Yummy Fish",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    20
+  ],
+  "special_values": [
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        20
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

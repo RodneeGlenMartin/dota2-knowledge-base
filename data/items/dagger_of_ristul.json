@@ -1,0 +1,53 @@
+{
+  "id": 1077,
+  "name": "Dagger of Ristul",
+  "slug": "dagger_of_ristul",
+  "internal_key": "item_dagger_of_ristul",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Imbrue</h1> Consume health to temporarily gain %bonus_damage% damage for %duration% seconds.",
+  "notes": null,
+  "cooldowns": [
+    30
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_damage",
+      "heading": "",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        8
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "AbilityHealthCost",
+      "heading": "",
+      "values": [
+        100
+      ]
+    }
+  ],
+  "lore": "A sinister shiv that grants favor to those willing to stain its blade with a sacrifice of their own blood.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

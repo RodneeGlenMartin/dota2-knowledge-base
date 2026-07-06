@@ -1,0 +1,74 @@
+{
+  "id": 156,
+  "name": "Satanic",
+  "slug": "satanic",
+  "internal_key": "item_satanic",
+  "cost": 5050,
+  "neutral_tier": null,
+  "description": "<h1>Active: Unholy Rage</h1>Increases Lifesteal percentage to %unholy_lifesteal_total_tooltip%%% for %unholy_duration% seconds. <br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span> \n\n<h1>Passive: Lifesteal</h1>Heals the attacker for a percentage of physical damage dealt.",
+  "notes": null,
+  "cooldowns": [
+    30
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_strength",
+      "heading": "+$str",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "bonus_damage",
+      "heading": "+$damage",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "lifesteal_percent",
+      "heading": "+$lifesteal",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "unholy_lifesteal_percent",
+      "heading": "",
+      "values": [
+        145
+      ]
+    },
+    {
+      "key": "unholy_lifesteal_total_tooltip",
+      "heading": "",
+      "values": [
+        175
+      ]
+    },
+    {
+      "key": "unholy_duration",
+      "heading": "",
+      "values": [
+        6
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        30
+      ]
+    }
+  ],
+  "lore": "Immense power at the cost of your soul.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

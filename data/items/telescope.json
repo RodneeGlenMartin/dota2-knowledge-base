@@ -1,0 +1,53 @@
+{
+  "id": 336,
+  "name": "Telescope",
+  "slug": "telescope",
+  "internal_key": "item_spy_gadget",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Prescient Aura</h1> Lowers Scan cooldown by %scan_cooldown_reduction%%% . Increases attack range (Ranged only) and cast range of allies in a %aura_range% unit radius.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "scan_cooldown_reduction",
+      "heading": "SCAN COOLDOWN REDUCTION:",
+      "values": [
+        50
+      ]
+    },
+    {
+      "key": "attack_range",
+      "heading": "AURA BONUS ATTACK RANGE (RANGED ONLY):",
+      "values": [
+        75
+      ]
+    },
+    {
+      "key": "cast_range",
+      "heading": "AURA BONUS CAST RANGE:",
+      "values": [
+        100
+      ]
+    },
+    {
+      "key": "aura_range",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    }
+  ],
+  "lore": "A handy tool that manages to make close what once was far.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

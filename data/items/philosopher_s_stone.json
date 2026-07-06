@@ -1,0 +1,49 @@
+{
+  "id": 290,
+  "name": "Philosopher's Stone",
+  "slug": "philosopher_s_stone",
+  "internal_key": "item_philosophers_stone",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_gpm",
+      "heading": "+GPM BONUS",
+      "values": [
+        75,
+        100
+      ]
+    },
+    {
+      "key": "bonus_mana",
+      "heading": "+$mana",
+      "values": [
+        200,
+        250
+      ]
+    },
+    {
+      "key": "bonus_damage",
+      "heading": "-<font color='#e03e2e'>Attack Damage</font>",
+      "values": [
+        -30,
+        -60
+      ]
+    }
+  ],
+  "lore": "A weightless charm created by an enchanter with a powerful scorn for brute force.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": 4,
+  "name": "Chainmail",
+  "slug": "chainmail",
+  "internal_key": "item_chainmail",
+  "cost": 500,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_armor",
+      "heading": "+$armor",
+      "values": [
+        4
+      ]
+    }
+  ],
+  "lore": "A medium weave of metal chains.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

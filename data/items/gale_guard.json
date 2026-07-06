@@ -1,0 +1,60 @@
+{
+  "id": 1602,
+  "name": "Gale Guard",
+  "slug": "gale_guard",
+  "internal_key": "item_gale_guard",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Cyclonic Shield</h1> Envelops the caster in an all damage barrier that absorbs %barrier_pct%%% of incoming damage up to a max of %barrier_amount%. Lasts for up to %barrier_duration% seconds and while the barrier is active you have %slow_resist%%% Slow Resistance.",
+  "notes": null,
+  "cooldowns": [
+    30
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "barrier_duration",
+      "heading": "",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "barrier_amount",
+      "heading": "",
+      "values": [
+        225
+      ]
+    },
+    {
+      "key": "barrier_pct",
+      "heading": "",
+      "values": [
+        75
+      ]
+    },
+    {
+      "key": "slow_resist",
+      "heading": "",
+      "values": [
+        50
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        30
+      ]
+    }
+  ],
+  "lore": "If one truly listens, they can always rely upon the wind to make its will known.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

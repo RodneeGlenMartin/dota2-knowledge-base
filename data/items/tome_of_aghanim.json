@@ -1,0 +1,39 @@
+{
+  "id": 307,
+  "name": "Tome of Aghanim",
+  "slug": "tome_of_aghanim",
+  "internal_key": "item_tome_of_aghanim",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Use: Consume</h1> Temporarily grants an allied target the Aghanim's Scepter buff for %duration_minutes% minutes.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    250
+  ],
+  "special_values": [
+    {
+      "key": "duration_minutes",
+      "heading": "",
+      "values": [
+        3
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        250
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

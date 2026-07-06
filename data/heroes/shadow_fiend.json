@@ -1,0 +1,692 @@
+{
+  "id": 11,
+  "name": "Shadow Fiend",
+  "slug": "shadow_fiend",
+  "npc_name": "npc_dota_hero_nevermore",
+  "primary_attribute": "agi",
+  "attack_type": "Ranged",
+  "complexity": 2,
+  "roles": [
+    "Carry",
+    "Nuker"
+  ],
+  "stats": {
+    "base_str": 19,
+    "str_gain": 2.7,
+    "base_agi": 25,
+    "agi_gain": 3.6,
+    "base_int": 18,
+    "int_gain": 2.2,
+    "damage_min": 41,
+    "damage_max": 47,
+    "attack_rate": 1.6,
+    "attack_range": 525,
+    "projectile_speed": 1200,
+    "armor": 4.166667,
+    "magic_resistance": 25,
+    "movement_speed": 305,
+    "turn_rate": 0.9,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 538,
+    "health_regen": 2.15,
+    "max_mana": 291,
+    "mana_regen": 1.2
+  },
+  "lore": "It is said that Nevermore the Shadow Fiend has the soul of a poet, and in fact he has thousands of them. Over the ages he has claimed the souls of poets, priests, emperors, beggars, slaves, philosophers, criminals and (naturally) heroes; no sort of soul escapes him. What he does with them is unknown. No one has ever peered into the Abysm whence Nevermore reaches out like an eel from among astral rocks. Does he devour them one after another? Does he mount them along the halls of an eldritch temple, or pickle the souls in necromantic brine? Is he merely a puppet, pushed through the dimensional rift by a demonic puppeteer? Such is his evil, so intense his aura of darkness, that no rational mind may penetrate it. Of course, if you really want to know where the stolen souls go, there's one sure way to find out: Add your soul to his collection. Or just wait for Nevermore.",
+  "hype": "<b>Capturing souls</b> from every kill he makes, Shadow Fiend is always gathering his power. Every assault, each carefully aimed raze that kills an enemy, brings him closer to <b>unleashing his gathered souls</b> in a deadly blast of scouring energy.",
+  "abilities": [
+    {
+      "key": "nevermore_shadowraze1",
+      "name": "Shadowraze",
+      "description": "Shadow Fiend razes the ground directly in front of him, dealing damage to enemy units in the area, dealing bonus damage based on his current Necromastery Soul amount. Adds a stacking damage amplifier on the target that causes the enemy to take bonus Shadowraze damage per stack.",
+      "max_level": 4,
+      "cooldowns": [
+        9
+      ],
+      "mana_costs": [
+        75
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.55
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "shadowraze_damage",
+          "heading": "BASE DAMAGE:",
+          "values": [
+            85,
+            150,
+            215,
+            280
+          ]
+        },
+        {
+          "key": "shadowraze_radius",
+          "heading": "",
+          "values": [
+            250
+          ]
+        },
+        {
+          "key": "shadowraze_range",
+          "heading": "RANGE:",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "shadowraze_cooldown",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "stack_bonus_damage",
+          "heading": "BONUS PER STACK:",
+          "values": [
+            35,
+            50,
+            65,
+            80
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "STACK DURATION:",
+          "values": [
+            7
+          ]
+        },
+        {
+          "key": "procs_attack",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "movement_speed_debuff",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "cooldown_reduction_on_hero_hit",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "damage_per_soul",
+          "heading": "BONUS DAMAGE PER SOUL:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.55
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            9
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Cooldown reduced by %cooldown_reduction_on_hero_hit%s per enemy hero hit. Applies a stacking %movement_speed_debuff%%% movement speed debuff on enemies hit.",
+      "notes": [
+        "Stack duration refreshes on stack gain."
+      ],
+      "lore": "Nevermore's trademark for harvesting souls."
+    },
+    {
+      "key": "nevermore_frenzy",
+      "name": "Feast of Souls",
+      "description": "Shadow Fiend gains Bonus Movement and Attack Speed for %duration% seconds. For the duration of the effect, every %soul_collection_interval%s he collects souls from %soul_collection_per_interval% enemies in a %soul_collection_radius% radius. After the effect is over, he loses the souls whose owners are still alive, retaining the rest for %linger_duration%s, after which souls that are over the Necromastery max stack count are also lost.\n\n Can only collect souls once from each individual enemy.",
+      "max_level": 4,
+      "cooldowns": [
+        21
+      ],
+      "mana_costs": [
+        60,
+        65,
+        70,
+        75
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bonus_attack_speed",
+          "heading": "BONUS ATTACK SPEED:",
+          "values": [
+            35,
+            50,
+            65,
+            80
+          ]
+        },
+        {
+          "key": "bonus_move_speed",
+          "heading": "BONUS MOVE SPEED:",
+          "values": [
+            4,
+            6,
+            8,
+            10
+          ]
+        },
+        {
+          "key": "cast_speed_pct",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "cast_speed_pct_tooltip",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "duration",
+          "heading": "",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "max_collection_count",
+          "heading": "MAX COLLECTION TARGETS:",
+          "values": [
+            4,
+            6,
+            8,
+            10
+          ]
+        },
+        {
+          "key": "soul_collection_per_interval",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "soul_collection_radius",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "soul_collection_interval",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "soul_collection_per_hero",
+          "heading": "SOULS PER HERO:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "soul_collection_per_creep",
+          "heading": "SOULS PER CREEP:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "linger_duration",
+          "heading": "",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            60,
+            65,
+            70,
+            75
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            21
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "For Nevermore, there's as much delight in the harvest as there is in the feast."
+    },
+    {
+      "key": "nevermore_dark_lord",
+      "name": "Presence of the Dark Lord",
+      "description": "Shadow Fiend's presence reduces the armor of nearby enemies.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1200
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "presence_armor_reduction",
+          "heading": "ARMOR REDUCTION:",
+          "values": [
+            -2.5,
+            -4,
+            -5.5,
+            -7
+          ]
+        },
+        {
+          "key": "presence_radius",
+          "heading": "RADIUS:",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Stacks fully with other armor reduction abilities and aura."
+      ],
+      "lore": "Even being near Nevermore eats away at one's soul."
+    },
+    {
+      "key": "nevermore_requiem",
+      "name": "Requiem of Souls",
+      "description": "Shadow Fiend gathers up to %max_soul_release% of his captured souls to release them as lines of demonic energy. Units near Shadow Fiend when the souls are released can be damaged by several lines of energy. Any unit damaged by Requiem of Souls will be feared and have its movement speed and magic resistance reduced for %requiem_slow_duration% seconds for each line hit up to a maximum of %requiem_slow_duration_max%. Lines of energy are created for every soul captured through Necromastery. <br><br> Requiem of Souls is automatically cast whenever Shadow Fiend dies, regardless of its cooldown.",
+      "max_level": 3,
+      "cooldowns": [
+        120,
+        110,
+        100
+      ],
+      "mana_costs": [
+        150,
+        175,
+        200
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        1.67,
+        1.67,
+        1.67
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        80,
+        120,
+        160
+      ],
+      "special_values": [
+        {
+          "key": "requiem_radius",
+          "heading": "",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "requiem_reduction_ms",
+          "heading": "MOVEMENT REDUCTION:",
+          "values": [
+            -20,
+            -25,
+            -30
+          ]
+        },
+        {
+          "key": "requiem_reduction_mres",
+          "heading": "MAGIC RESIST REDUCTION:",
+          "values": [
+            -5,
+            -10,
+            -15
+          ]
+        },
+        {
+          "key": "requiem_slow_duration",
+          "heading": "FEAR DURATION PER SOUL HIT:",
+          "values": [
+            0.6
+          ]
+        },
+        {
+          "key": "requiem_slow_duration_max",
+          "heading": "FEAR DURATION MAX:",
+          "values": [
+            2.15
+          ]
+        },
+        {
+          "key": "requiem_soul_conversion",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "requiem_line_width_start",
+          "heading": "",
+          "values": [
+            125
+          ]
+        },
+        {
+          "key": "requiem_line_width_end",
+          "heading": "",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "requiem_line_speed",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "soul_death_release",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "requiem_heal_pct_scepter",
+          "heading": "HEAL ON RETURN:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "requiem_damage_pct_scepter",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "max_soul_release",
+          "heading": "",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "AbilityDamage",
+          "heading": "",
+          "values": [
+            80,
+            120,
+            160
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "CAST DELAY:",
+          "values": [
+            1.67
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            150,
+            175,
+            200
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "COOLDOWN:",
+          "values": [
+            120,
+            110,
+            100
+          ]
+        }
+      ],
+      "scepter_upgrade": "Reduces cooldown and causes Requiem of Souls to return back to Shadow Fiend. The wave back to Shadow Fiend heals him for all the damage it dealt.",
+      "shard_upgrade": null,
+      "notes": [
+        "One line is generated from Shadow Fiend for every %requiem_soul_conversion% soul in his possession.",
+        "Fear and movement slow do not apply if the Requiem was released on death."
+      ],
+      "lore": "The captured souls of those past slain are released to ravage their former allies."
+    },
+    {
+      "key": "nevermore_necromastery",
+      "name": "Necromastery",
+      "description": "Shadow Fiend steals the soul from units he kills, gaining %necromastery_damage_per_soul% bonus damage per soul. Hero kills grant %souls_per_hero_kill% souls. On death, he releases %soul_release_tooltip%%% of them from bondage.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "necromastery_damage_per_soul",
+          "heading": "DAMAGE PER SOUL:",
+          "values": [
+            1.35
+          ]
+        },
+        {
+          "key": "necromastery_max_souls",
+          "heading": "BASE MAX SOULS:",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "souls_per_kill",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "souls_per_hero_kill",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "necromastery_soul_release",
+          "heading": "",
+          "values": [
+            0.7
+          ]
+        },
+        {
+          "key": "shard_souls_per_kill",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_crit_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_fear_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "soul_release_tooltip",
+          "heading": "",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "current_max_souls_tooltip",
+          "heading": "CURRENT MAX SOULS:",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": "Increases max souls.",
+      "shard_upgrade": null,
+      "notes": [
+        "Denies and neutral creeps also provide bonus damage through Necromastery.",
+        "Break disables the gaining of new stacks.",
+        "Break does not disable the bonuses from existing stacks."
+      ],
+      "lore": "Harvested souls swirl in and out of the Abysm, empowering the Shadow Fiend to increase the size of his collection."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_stack_bonus_damage} Shadowraze Stack Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_attack_speed} Feast of Souls Attack Speed"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_presence_armor_reduction} Presence Armor Reduction"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_soul_collection_per_hero} Feast of Souls Souls Collected Per Hero"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_necromastery_max_souls} Necromastery Max Souls"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_requiem_slow_duration}s Requiem Fear per line"
+    },
+    {
+      "slot": null,
+      "name": "Feast of Souls Grants +{s:bonus_cast_speed_pct}% Cast Speed"
+    },
+    {
+      "slot": null,
+      "name": "Shadowraze Applies Attack Damage"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

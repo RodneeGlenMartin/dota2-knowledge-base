@@ -1,0 +1,39 @@
+{
+  "id": 7,
+  "name": "Javelin",
+  "slug": "javelin",
+  "internal_key": "item_javelin",
+  "cost": 900,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Pierce</h1>Grants each attack a %bonus_chance%%% chance to pierce through evasion and deal %bonus_chance_damage% bonus magical damage.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_chance",
+      "heading": "",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "bonus_chance_damage",
+      "heading": "",
+      "values": [
+        60
+      ]
+    }
+  ],
+  "lore": "A rather typical spear that can sometimes pierce through an enemy's armor when used to attack.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

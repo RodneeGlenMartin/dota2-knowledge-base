@@ -1,0 +1,119 @@
+{
+  "id": 176,
+  "name": "Ethereal Blade",
+  "slug": "ethereal_blade",
+  "internal_key": "item_ethereal_blade",
+  "cost": 5200,
+  "neutral_tier": null,
+  "description": "<h1>Active: Ether Blast</h1>Converts the target unit to ethereal form, rendering them immune to physical damage, but unable to attack and %ethereal_damage_bonus%%% more vulnerable to magic damage.<br><br>  Enemy targets are also slowed by %blast_movement_slow%%%, and take %blast_stat_multiplier%x the sum of all your attributes + %blast_damage_base% as magical damage.<br>Duration: %duration% seconds",
+  "notes": [
+    "Shares cooldown with Ghost Scepter and its upgrades.",
+    "Ethereal units take %ethereal_damage_bonus%%% bonus magic damage."
+  ],
+  "cooldowns": [
+    22
+  ],
+  "mana_costs": [
+    100
+  ],
+  "cast_ranges": [
+    800
+  ],
+  "special_values": [
+    {
+      "key": "bonus_agility",
+      "heading": "+$all",
+      "values": [
+        24
+      ]
+    },
+    {
+      "key": "bonus_strength",
+      "heading": "",
+      "values": [
+        24
+      ]
+    },
+    {
+      "key": "bonus_intellect",
+      "heading": "",
+      "values": [
+        24
+      ]
+    },
+    {
+      "key": "blast_movement_slow",
+      "heading": "",
+      "values": [
+        -80
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        4
+      ]
+    },
+    {
+      "key": "blast_stat_multiplier",
+      "heading": "",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "blast_damage_base",
+      "heading": "",
+      "values": [
+        50
+      ]
+    },
+    {
+      "key": "duration_ally",
+      "heading": "",
+      "values": [
+        4
+      ]
+    },
+    {
+      "key": "ethereal_damage_bonus",
+      "heading": "",
+      "values": [
+        -30
+      ]
+    },
+    {
+      "key": "projectile_speed",
+      "heading": "",
+      "values": [
+        1400
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        800
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        100
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        22
+      ]
+    }
+  ],
+  "lore": "A flickering blade of a ghastly nature, it is capable of dealing damage in both magical and physical planes.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,565 @@
+{
+  "id": 102,
+  "name": "Abaddon",
+  "slug": "abaddon",
+  "npc_name": "npc_dota_hero_abaddon",
+  "primary_attribute": "universal",
+  "attack_type": "Melee",
+  "complexity": 1,
+  "roles": [
+    "Carry",
+    "Support",
+    "Durable"
+  ],
+  "stats": {
+    "base_str": 21,
+    "str_gain": 2.6,
+    "base_agi": 22,
+    "agi_gain": 1.5,
+    "base_int": 19,
+    "int_gain": 2,
+    "damage_min": 22,
+    "damage_max": 32,
+    "attack_rate": 1.5,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 2.6666667,
+    "magic_resistance": 25,
+    "movement_speed": 325,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 582,
+    "health_regen": 3.1000001,
+    "max_mana": 303,
+    "mana_regen": 0.95
+  },
+  "lore": "The Font of Avernus is the source of a family's strength, a crack in primal stones from which vapors of prophetic power have issued for generations. Each newborn of the cavernous House Avernus is bathed in the black mist, and by this baptism they are given an innate connection to the mystic energies of the land. They grow up believing themselves fierce protectors of their lineal traditions, the customs of the realm--but what they really are protecting is the Font itself. And the motives of the mist are unclear.\r\n\t\t\t\t<br><br>When the infant Abaddon was bathed in the Font, they say something went awry. In the child's eyes there flared a light of comprehension that startled all present and set the sacerdotes to whispering. He was raised with every expectation of following the path all scions of Avernus took--to train in war, that in times of need he might lead the family's army in defense of the ancestral lands. But Abaddon was always one apart. Where others trained with weapons, he bent himself to meditation in the presence of the mist. He drank deep from the vapors that welled from the Font, learning to blend his spirit with the potency that flowed from far beneath the House; he became a creature of the black mist.\r\n\t\t\t\t<br><br>There was bitterness within the House Avernus--elders and young alike accusing him of neglecting his responsibilities. But all such accusations stopped when Abaddon rode into battle, and they saw how the powers of the mist had given him mastery over life and death beyond those of any lord the House had ever known.",
+  "hype": "Able to transform enemy attacks into <b>self-healing</b>, Abaddon can survive almost any assault. <b>Shielding allies</b> and launching his <b>double-edged coil</b> at a friend or foe, he is always ready to ride into the thick of battle.",
+  "abilities": [
+    {
+      "key": "abaddon_death_coil",
+      "name": "Mist Coil",
+      "description": "Abaddon releases a coil of deathly mist that can damage an enemy unit or heal a friendly unit at the cost of some of Abaddon's health.",
+      "max_level": 4,
+      "cooldowns": [
+        8,
+        7,
+        6,
+        5
+      ],
+      "mana_costs": [
+        50,
+        55,
+        60,
+        65
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        625
+      ],
+      "cast_points": [
+        0.25
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "self_damage",
+          "heading": "SELF DAMAGE:",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "self_damage_enemy_target",
+          "heading": "",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "missile_speed",
+          "heading": "",
+          "values": [
+            1300
+          ]
+        },
+        {
+          "key": "damage_heal",
+          "heading": "DAMAGE/HEAL:",
+          "values": [
+            95,
+            170,
+            245,
+            320
+          ]
+        },
+        {
+          "key": "effect_radius",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "perform_attack",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "damage_percentage_on_perform_attack",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            625
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            50,
+            55,
+            60,
+            65
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            8,
+            7,
+            6,
+            5
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Abaddon can not kill himself with this skill."
+      ],
+      "lore": "A mysterious vapor from the Font of Avernus now infuses the breath of Abaddon, who releases it at will."
+    },
+    {
+      "key": "abaddon_aphotic_shield",
+      "name": "Aphotic Shield",
+      "description": "Summons dark energies around an ally unit, dispelling them and creating an all damage barrier that absorbs a set amount of damage before expiring. When the barrier is destroyed it will burst and deal damage equal to the amount it could absorb to an area around it.\n\nDISPEL TYPE: Strong Dispel",
+      "max_level": 4,
+      "cooldowns": [
+        12,
+        10,
+        8,
+        6
+      ],
+      "mana_costs": [
+        110,
+        120,
+        130,
+        140
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        550
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            12
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "BURST RADIUS:",
+          "values": [
+            675
+          ]
+        },
+        {
+          "key": "damage_absorb",
+          "heading": "DAMAGE BARRIER:",
+          "values": [
+            120,
+            150,
+            180,
+            210
+          ]
+        },
+        {
+          "key": "regen",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "absorb_to_damage",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "absorb_damage_aoe",
+          "heading": "RETURN DAMAGE RADIUS:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            550
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            110,
+            120,
+            130,
+            140
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            12,
+            10,
+            8,
+            6
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "%absorb_to_damage%%% of absorbed damage is dealt to nearby enemies.",
+      "notes": [
+        "The max damage is always dealt whether the barrier is destroyed by expiring or absorbing damage.",
+        "The explosion does not damage units hidden by the fog of war."
+      ],
+      "lore": "The powers of the black mist rise to absorb attacks like the black mist absorbs light."
+    },
+    {
+      "key": "abaddon_frostmourne",
+      "name": "Curse of Avernus",
+      "description": "Abaddon strikes an enemy, affecting them by a chilling curse, slowing them, causing them to take damage over time, and all attacks against them gain an attack speed boost. Damage over time component to buildings is reduced by %tower_dps_pct%%%.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "slow_duration",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "hit_count",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "curse_duration",
+          "heading": "DURATION:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "curse_slow",
+          "heading": "SLOW:",
+          "values": [
+            10,
+            15,
+            20,
+            25
+          ]
+        },
+        {
+          "key": "curse_attack_speed",
+          "heading": "ATTACK SPEED:",
+          "values": [
+            10,
+            20,
+            30,
+            40
+          ]
+        },
+        {
+          "key": "curse_dps",
+          "heading": "DPS:",
+          "values": [
+            15,
+            25,
+            35,
+            45
+          ]
+        },
+        {
+          "key": "tower_dps_pct",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "curse_interval",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "While the baptized draw strength from the Font, the gifts of Avernus are debilitating to the uninitiated."
+    },
+    {
+      "key": "abaddon_withering_mist",
+      "name": "Withering Mist",
+      "description": "Damaging enemies applies the Withering Mist debuff for %duration%s. Affected enemies have their Health Restoration reduced by %heal_reduction_pct%%% if they are below %hp_threshold_pct%%% HP.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "hp_threshold_pct",
+          "heading": "",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "heal_reduction_pct",
+          "heading": "HEALTH RESTORATION REDUCTION:",
+          "values": [
+            29.5
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "",
+          "values": [
+            5
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "abaddon_borrowed_time",
+      "name": "Borrowed Time",
+      "description": "When activated, dispels you and all damage dealt to you will heal instead of harm. If the ability is not on cooldown, it will automatically activate if your health falls below %hp_threshold%.\n\nDISPEL TYPE: Strong Dispel",
+      "max_level": 3,
+      "cooldowns": [
+        85,
+        75,
+        65
+      ],
+      "mana_costs": [
+        0,
+        0,
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "hp_threshold",
+          "heading": "HEALTH THRESHOLD:",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "key": "ally_threshold_scepter",
+          "heading": "DAMAGE THRESHOLD:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "immolate_damage",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "immolate_aoe",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "immolate_tick",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            85,
+            75,
+            65
+          ]
+        }
+      ],
+      "scepter_upgrade": "Increases duration. While Borrowed Time is active, anytime an ally takes more than %ally_threshold_scepter% damage while within Mist Coil's cast range of Abaddon, an individual Mist Coil will automatically fire towards that ally.",
+      "shard_upgrade": null,
+      "notes": [
+        "Borrowed Time can be manually activated while Abaddon is disabled, but not while silenced.  The passive activation can still occur while silenced.",
+        "Aphotic Shield does not block any damage to Abaddon when Borrowed Time is active, allowing him to heal.",
+        "Break prevents Borrowed Time from automatically activating."
+      ],
+      "lore": "The most unnatural of all the gifts of the Font of Avernus, this power defies mortal understanding.  What should hurt, instead heals; and what should kill gives strength anew."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_curse_dps} Curse of Avernus DPS"
+    },
+    {
+      "slot": null,
+      "name": "Aphotic Shield provides +{s:bonus_regen} HP Regen"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Borrowed Time Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_heal} Mist Coil Damage / Heal"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_absorb} Aphotic Shield Barrier Amount"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_immolate_damage} Borrowed Time Immolation DPS"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_curse_attack_speed} Curse of Avernus Attack Speed Bonus"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_effect_radius} AoE Mist Coil"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

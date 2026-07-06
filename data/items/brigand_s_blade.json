@@ -1,0 +1,39 @@
+{
+  "id": 828,
+  "name": "Brigand's Blade",
+  "slug": "brigand_s_blade",
+  "internal_key": "item_misericorde",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Dark Mercy</h1>Your attacks deal %bonus_damage% more damage to enemies for each %missing_hp%%% HP they are missing.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_damage",
+      "heading": "",
+      "values": [
+        3
+      ]
+    },
+    {
+      "key": "missing_hp",
+      "heading": "",
+      "values": [
+        7
+      ]
+    }
+  ],
+  "lore": "An infamous assassin's blade stolen and smuggled out of White Spire after its owner's mysterious demise.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,774 @@
+{
+  "id": 21,
+  "name": "Windranger",
+  "slug": "windranger",
+  "npc_name": "npc_dota_hero_windrunner",
+  "primary_attribute": "universal",
+  "attack_type": "Ranged",
+  "complexity": 2,
+  "roles": [
+    "Carry",
+    "Support",
+    "Nuker",
+    "Disabler",
+    "Escape"
+  ],
+  "stats": {
+    "base_str": 18,
+    "str_gain": 2.6,
+    "base_agi": 20,
+    "agi_gain": 2.1,
+    "base_int": 18,
+    "int_gain": 3.2,
+    "damage_min": 24,
+    "damage_max": 36,
+    "attack_rate": 1.5,
+    "attack_range": 600,
+    "projectile_speed": 1250,
+    "armor": 3.3333335,
+    "magic_resistance": 25,
+    "movement_speed": 285,
+    "turn_rate": 0.8,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 516,
+    "health_regen": 2.5500002,
+    "max_mana": 291,
+    "mana_regen": 1.1500001
+  },
+  "lore": "The western forests guard their secrets well. One of these is Lyralei, master archer of the wood, and favored godchild of the wind.  Known now as Windranger, Lyralei's family was killed in a storm on the night of her birth--their house blown down by the gale, contents scattered to the winds. Only the newborn survived among the debris field of death and destruction.  In the quiet after the storm, the wind itself took notice of the lucky infant crying in the grass. The wind pitied the child and so lifted her into the sky and deposited her on a doorstep in a neighboring village.  In the years that followed, the wind returned occasionally to the child's life, watching from a distance while she honed her skills.  Now, after many years of training, Windranger fires her arrows true to their targets.  She moves with blinding speed, as if hastened by a wind ever at her back.  With a flurry of arrows, she slaughters her enemies, having become, nearly, a force of nature herself.",
+  "hype": "<b>Evasive and swift</b>, the nimble Windranger is always seeking the right angle to attack. Whether she's clearing the way with a draw of her <b>deadly powershot</b>, or <b>shackling enemies together</b> to pepper them with arrows, she's always on the move.",
+  "abilities": [
+    {
+      "key": "windrunner_shackleshot",
+      "name": "Shackleshot",
+      "description": "Shackles the target to an enemy unit or tree in a line directly behind it.  If no unit or tree is present, the stun duration is reduced to %fail_stun_duration%.",
+      "max_level": 4,
+      "cooldowns": [
+        16,
+        14,
+        12,
+        10
+      ],
+      "mana_costs": [
+        70,
+        80,
+        90,
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        800
+      ],
+      "cast_points": [
+        0.15
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "fail_stun_duration",
+          "heading": "",
+          "values": [
+            0.6
+          ]
+        },
+        {
+          "key": "stun_duration",
+          "heading": "SHACKLE DURATION:",
+          "values": [
+            1.75,
+            2.25,
+            2.75,
+            3.25
+          ]
+        },
+        {
+          "key": "shackle_distance",
+          "heading": "",
+          "values": [
+            575
+          ]
+        },
+        {
+          "key": "arrow_speed",
+          "heading": "",
+          "values": [
+            1650
+          ]
+        },
+        {
+          "key": "shackle_count",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "shackle_angle",
+          "heading": "",
+          "values": [
+            23
+          ]
+        },
+        {
+          "key": "bonus_damage_per_hero",
+          "heading": "BONUS DAMAGE PER HERO:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "bonus_damage_per_other_pct",
+          "heading": "CREEP/TREE DAMAGE:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "damage_buff_duration",
+          "heading": "DAMAGE BUFF DURATION:",
+          "values": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.15
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            70,
+            80,
+            90,
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            16,
+            14,
+            12,
+            10
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "This spell can shackle two enemies together, stunning them both.",
+        "Can shackle the target to an enemy unit or tree at most %shackle_distance% behind the target.",
+        "Shackleshot can be disjointed."
+      ],
+      "lore": "Windranger's variety of bow skills includes an arrow with thick ropes attached to encumber any escaping target."
+    },
+    {
+      "key": "windrunner_powershot",
+      "name": "Powershot",
+      "description": "CHANNELED - Windranger charges her bow for up to %abilitychanneltime% second for a single powerful shot, which deals more damage the longer it is charged. The arrow damages and slows enemies' movement speed along its path. For each enemy that Powershot hits, its damage and slow is reduced.",
+      "max_level": 4,
+      "cooldowns": [
+        12,
+        11,
+        10,
+        9
+      ],
+      "mana_costs": [
+        90,
+        100,
+        110,
+        120
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        3000
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "powershot_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            170,
+            270,
+            370,
+            470
+          ]
+        },
+        {
+          "key": "slow",
+          "heading": "SLOW:",
+          "values": [
+            22,
+            28,
+            34,
+            40
+          ]
+        },
+        {
+          "key": "slow_duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "damage_reduction",
+          "heading": "REDUCTION PER UNIT:",
+          "values": [
+            15
+          ]
+        },
+        {
+          "key": "arrow_width",
+          "heading": "",
+          "values": [
+            125
+          ]
+        },
+        {
+          "key": "arrow_range",
+          "heading": "RANGE:",
+          "values": [
+            3000
+          ]
+        },
+        {
+          "key": "arrow_speed",
+          "heading": "",
+          "values": [
+            3000
+          ]
+        },
+        {
+          "key": "tree_width",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "vision_radius",
+          "heading": "",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "vision_duration",
+          "heading": "",
+          "values": [
+            3.34
+          ]
+        },
+        {
+          "key": "min_execute_threshold",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "max_execute_threshold",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            3000
+          ]
+        },
+        {
+          "key": "AbilityChannelTime",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            90,
+            100,
+            110,
+            120
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            12,
+            11,
+            10,
+            9
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Powershot will destroy trees in its area of effect."
+      ],
+      "lore": "During her early years of training, Lyralei learned to fire powerful arrows that cleaved even trees to reach their targets."
+    },
+    {
+      "key": "windrunner_windrun",
+      "name": "Windrun",
+      "description": "Increases movement speed and adds evasion from all physical attacks.",
+      "max_level": 4,
+      "cooldowns": [
+        14,
+        13,
+        12,
+        11
+      ],
+      "mana_costs": [
+        50
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "movespeed_bonus_pct",
+          "heading": "MOVE SPEED BONUS:",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "evasion_pct_tooltip",
+          "heading": "EVASION:",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "DURATION:",
+          "values": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            14,
+            13,
+            12,
+            11
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Activating Windrun will evade incoming projectiles."
+      ],
+      "lore": "Lyralei enchants gusts of winds to fight incoming attacks."
+    },
+    {
+      "key": "windrunner_gale_force",
+      "name": "Gale Force",
+      "description": "Vector Targeted. Summons a strong wind that pushes all enemies in the target area towards the target direction.",
+      "max_level": 1,
+      "cooldowns": [
+        25
+      ],
+      "mana_costs": [
+        125
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1200
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "wind_strength",
+          "heading": "WIND SPEED:",
+          "values": [
+            240
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            125
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            25
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "At last Lyralei has learned to call upon the might of her true birthright."
+    },
+    {
+      "key": "windrunner_focusfire",
+      "name": "Focus Fire",
+      "description": "Windranger channels the wind to gain %bonus_attack_speed% additional attack speed against a single enemy unit or structure, though with a reduction to her attack damage.  Extra damage from secondary item effects is not reduced.",
+      "max_level": 3,
+      "cooldowns": [
+        50,
+        40,
+        30
+      ],
+      "mana_costs": [
+        75,
+        100,
+        125
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        600
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        20,
+        20,
+        20
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bonus_attack_speed",
+          "heading": "BONUS ATTACK SPEED:",
+          "values": [
+            350,
+            425,
+            500
+          ]
+        },
+        {
+          "key": "attacks_per_second",
+          "heading": "ATTACKS PER SECOND:",
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "key": "focusfire_damage_reduction",
+          "heading": "DAMAGE REDUCTION:",
+          "values": [
+            -25
+          ]
+        },
+        {
+          "key": "focusfire_fire_on_the_move",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "process_procs",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "is_unfocused",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "cooldown_reduction_per_kill",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "bonus_range",
+          "heading": "BONUS ATTACK RANGE:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "unfocused_cancel_initial_cooldown",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "DURATION:",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            75,
+            100,
+            125
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            50,
+            40,
+            30
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Issuing a Hold Position command will pause Windranger's attacks.",
+        "Windranger can move while attacking."
+      ],
+      "lore": "Lyralei's ability to bombard opponents with a flurry of arrows is unparalleled - even at the expense of accuracy."
+    },
+    {
+      "key": "windrunner_tailwind",
+      "name": "Tailwind",
+      "description": "Using an ability conjures a stacking Tailwind that gives Windranger a brief burst of movement speed. Movement speed bonus gradually starts fading halfway through the Tailwind duration.\n\nPassively increases Windranger's max movement speed.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "movespeed_bonus",
+          "heading": "MOVE SPEED BONUS PER STACK:",
+          "values": [
+            35
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            2.5
+          ]
+        },
+        {
+          "key": "max_movespeed",
+          "heading": "MAX MOVESPEED:",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "applies_on_attack",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "undispellable",
+          "heading": "",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": "Attacks grant Tailwind. Tailwind lasts longer and is undispellable.",
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_slow_duration}s Powershot Slow Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_AbilityDuration}s Windrun Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_max_movespeed} Tailwind Max Movespeed"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_damage_reduction}% Powershot Reduction"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_stun_duration}s Shackleshot Duration"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_focusfire_damage_reduction}% Focus Fire Damage Reduction"
+    },
+    {
+      "slot": null,
+      "name": "Powershot Executes Enemy Heroes Under {s:bonus_max_execute_threshold}% Max HP"
+    },
+    {
+      "slot": null,
+      "name": "Focus Fire Kills Advance Cooldown by {s:bonus_cooldown_reduction_per_kill}s"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

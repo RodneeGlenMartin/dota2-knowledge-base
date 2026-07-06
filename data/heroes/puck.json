@@ -1,0 +1,706 @@
+{
+  "id": 13,
+  "name": "Puck",
+  "slug": "puck",
+  "npc_name": "npc_dota_hero_puck",
+  "primary_attribute": "int",
+  "attack_type": "Ranged",
+  "complexity": 2,
+  "roles": [
+    "Nuker",
+    "Disabler",
+    "Escape",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 17,
+    "str_gain": 2.4,
+    "base_agi": 14,
+    "agi_gain": 2.1,
+    "base_int": 23,
+    "int_gain": 3.8,
+    "damage_min": 45,
+    "damage_max": 53,
+    "attack_rate": 1.7,
+    "attack_range": 550,
+    "projectile_speed": 900,
+    "armor": 2.3333335,
+    "magic_resistance": 25,
+    "movement_speed": 290,
+    "turn_rate": 0.9,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 494,
+    "health_regen": 2.2,
+    "max_mana": 351,
+    "mana_regen": 1.65
+  },
+  "lore": "While Puck seems at first glance a mischievous, childish character, this quality masks an alien personality. The juvenile form of a Faerie Dragon, a creature that lives for eons, Puck spends countless millennia in its childish form. So while it is technically true that Puck is juvenile, it will continue to be so when the cities of the present age have sloughed away into dust. Its motives are therefore inscrutable, and what appears to be play may in fact hide a darker purpose. Its endless fondness for mischief is the true indicator of Puck's true nature.",
+  "hype": "Puck has a talent for confounding its enemies with playfully <b>elusive</b> mischief. By teleporting to its <b>damaging orb</b> in order to hop short distances, it attacks foes with bursts of <b>silencing dust</b>. By the time its enemies can react, Puck has long since escaped.",
+  "abilities": [
+    {
+      "key": "puck_illusory_orb",
+      "name": "Illusory Orb",
+      "description": "Vector Targeted. Puck launches a magic orb that travels along the path, damaging enemy units along the way. The orb deals an additional %damage_over_time_pct%%% of its impact damage every %damage_interval%s in its area of effect, but if it exceeds the max cast range it will be destroyed.\n\n At any point, Puck may teleport to the orb's location using Ethereal Jaunt.<br><br> Can be put on alt-cast to launch the Orb straight ahead.",
+      "max_level": 4,
+      "cooldowns": [
+        11,
+        10,
+        9,
+        8
+      ],
+      "mana_costs": [
+        90,
+        100,
+        110,
+        120
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1950
+      ],
+      "cast_points": [
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            225
+          ]
+        },
+        {
+          "key": "max_distance",
+          "heading": "MAX DISTANCE:",
+          "values": [
+            1950
+          ]
+        },
+        {
+          "key": "orb_speed",
+          "heading": "SPEED:",
+          "values": [
+            750
+          ]
+        },
+        {
+          "key": "orb_vision",
+          "heading": "",
+          "values": [
+            450
+          ]
+        },
+        {
+          "key": "vision_duration",
+          "heading": "",
+          "values": [
+            2.5
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "IMPACT DAMAGE:",
+          "values": [
+            70,
+            140,
+            210,
+            280
+          ]
+        },
+        {
+          "key": "warning_sound_time",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "curve_orb",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "curve_orb_duration_multiplier",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "curve_orb_max_acceleration",
+          "heading": "",
+          "values": [
+            0.0015
+          ]
+        },
+        {
+          "key": "curve_orb_pullback_bonus_launch_speed",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "curve_strength",
+          "heading": "",
+          "values": [
+            0.6
+          ]
+        },
+        {
+          "key": "vector_reticle_distance",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "damage_over_time_pct",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "damage_interval",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "max_orb_duration_tooltip",
+          "heading": "MAX ORB DURATION:",
+          "values": [
+            5.2
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1950
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            90,
+            100,
+            110,
+            120
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            11,
+            10,
+            9,
+            8
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "The Illusory Orb grants unobstructed vision around its location while it travels.",
+        "Jaunting to the Orb will disjoint projectiles."
+      ],
+      "lore": "The playful Faerie Dragon delights in confusing others, vanishing and reappearing where unexpected."
+    },
+    {
+      "key": "puck_waning_rift",
+      "name": "Waning Rift",
+      "description": "Puck teleports to the target location and releases a burst of faerie dust that deals damage and silences enemy units nearby.",
+      "max_level": 4,
+      "cooldowns": [
+        16,
+        15,
+        14,
+        13
+      ],
+      "mana_costs": [
+        100,
+        110,
+        120,
+        130
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "silence_duration",
+          "heading": "DURATION:",
+          "values": [
+            2,
+            2.5,
+            3,
+            3.5
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            60,
+            120,
+            180,
+            240
+          ]
+        },
+        {
+          "key": "max_distance",
+          "heading": "MAX DISTANCE:",
+          "values": [
+            350
+          ]
+        },
+        {
+          "key": "push_pull_enabled",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "knock_distance",
+          "heading": "PUSH/PULL DISTANCE:",
+          "values": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "key": "knock_duration",
+          "heading": "PUSH/PULL DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "pull_distance",
+          "heading": "",
+          "values": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "key": "pull_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            110,
+            120,
+            130
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            16,
+            15,
+            14,
+            13
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "With a mischievous grin, Puck spreads its enchanted powder which disrupts magical flow."
+    },
+    {
+      "key": "puck_phase_shift",
+      "name": "Phase Shift",
+      "description": "CHANNELED - Puck briefly shifts into another dimension where it is immune from harm.",
+      "max_level": 4,
+      "cooldowns": [
+        8,
+        7.5,
+        7,
+        6.5
+      ],
+      "mana_costs": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.01
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            1,
+            1.75,
+            2.5,
+            3.25
+          ]
+        },
+        {
+          "key": "shard_attack_range_bonus",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_bonus_damage",
+          "heading": "BONUS DAMAGE:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityChannelTime",
+          "heading": "",
+          "values": [
+            1,
+            1.75,
+            2.5,
+            3.25
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.01
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            8,
+            7.5,
+            7,
+            6.5
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Puck's attacks deal bonus magic damage. Puck attacks all enemies within its attack range every time it phase shifts.",
+      "notes": [
+        "Puck retains collision size while under the effects of Phase Shift.",
+        "Issuing any action will cancel Phase Shift.",
+        "Puck is invulnerable during Phase Shift."
+      ],
+      "lore": "With a quip and flash, Puck returns to the alien dimension from whence it came."
+    },
+    {
+      "key": "puck_puckish",
+      "name": "Puckish",
+      "description": "Whenever Puck disjoints an attack, it restores %mana_and_health_restore_pct%%% of its max health and mana. Dodging a targeted spell projectile restores %dodged_spell_multiplier%x that amount. Does not apply to attacks by Towers.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "mana_and_health_restore_pct",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "dodged_spell_multiplier",
+          "heading": "",
+          "values": [
+            3
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "puck_dream_coil",
+      "name": "Dream Coil",
+      "description": "Creates a coil of volatile magic that latches onto enemy Heroes, damaging and leashing them.  If the enemy hero stretches the coil by moving too far away, it snaps, stunning and dealing additional damage.",
+      "max_level": 3,
+      "cooldowns": [
+        75
+      ],
+      "mana_costs": [
+        125,
+        175,
+        225
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        750
+      ],
+      "cast_points": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "coil_duration",
+          "heading": "COIL DURATION:",
+          "values": [
+            5,
+            5.5,
+            6
+          ]
+        },
+        {
+          "key": "coil_break_radius",
+          "heading": "BREAK RADIUS:",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "stun_duration",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "coil_initial_damage",
+          "heading": "INITIAL DAMAGE:",
+          "values": [
+            175,
+            250,
+            325
+          ]
+        },
+        {
+          "key": "coil_stun_duration",
+          "heading": "BREAK STUN DURATION:",
+          "values": [
+            1.5,
+            2,
+            2.5
+          ]
+        },
+        {
+          "key": "coil_break_damage",
+          "heading": "BREAK DAMAGE:",
+          "values": [
+            200,
+            300,
+            400
+          ]
+        },
+        {
+          "key": "coil_radius",
+          "heading": "",
+          "values": [
+            375
+          ]
+        },
+        {
+          "key": "coil_rapid_fire_rate",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "coil_rapid_fire_z_offset",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "attack_rate_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            750
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            125,
+            175,
+            225
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            75
+          ]
+        }
+      ],
+      "scepter_upgrade": "All enemies affected by Dream Coil are attacked at a rate equal to %attack_rate_pct%%% of Puck's attack rate. The attacks continue while the target is stunned if they break the Dream Coil.",
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "The Faerie Dragon sows confusion by forcing its enemies to vividly dream about their own mortality."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Illusory Orb Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_silence_duration}s Waning Rift Silence Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_mana_and_health_restore_pct}% Puckish Health and Mana Restoration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Waning Rift Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Waning Rift Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_coil_break_damage} Initial/Break Dream Coil Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Dream Coil Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_radius} Waning Rift Radius/Max Distance"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

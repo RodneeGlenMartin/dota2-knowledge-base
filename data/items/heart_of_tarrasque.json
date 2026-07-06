@@ -1,0 +1,48 @@
+{
+  "id": 114,
+  "name": "Heart of Tarrasque",
+  "slug": "heart_of_tarrasque",
+  "internal_key": "item_heart",
+  "cost": 5200,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Behemoth's Blood</h1>Your health regeneration is increased by %missing_health_regen%%% of your missing health.",
+  "notes": [
+    "Multiple instances of Behemoth's Blood do not stack."
+  ],
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_strength",
+      "heading": "+$str",
+      "values": [
+        40
+      ]
+    },
+    {
+      "key": "hp_regen",
+      "heading": "+Max Health Regen",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "missing_health_regen",
+      "heading": "",
+      "values": [
+        1.5
+      ]
+    }
+  ],
+  "lore": "Preserved heart of an extinct monster, it bolsters the bearer's fortitude.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

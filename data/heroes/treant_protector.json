@@ -1,0 +1,753 @@
+{
+  "id": 83,
+  "name": "Treant Protector",
+  "slug": "treant_protector",
+  "npc_name": "npc_dota_hero_treant",
+  "primary_attribute": "str",
+  "attack_type": "Melee",
+  "complexity": 2,
+  "roles": [
+    "Support",
+    "Disabler",
+    "Durable",
+    "Escape",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 25,
+    "str_gain": 3.4,
+    "base_agi": 15,
+    "agi_gain": 1.8,
+    "base_int": 20,
+    "int_gain": 1.8,
+    "damage_min": 85,
+    "damage_max": 93,
+    "attack_rate": 1.9,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 3.5,
+    "magic_resistance": 25,
+    "movement_speed": 280,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 670,
+    "health_regen": 2.75,
+    "max_mana": 315,
+    "mana_regen": 1.25
+  },
+  "lore": "Far to the west, in the mountains beyond the Vale of Augury, lie the remains of an ancient power, a fount of eldritch energy nestled deep in the high woods. It is said that the things that grow here, grow strangely. To the forces of nature this is a sacred place, made to stay hidden and unknown. Many are the traps and dangers of this land.  There are all-consuming grasses, crossbred fauna and poisonous flowers, but none are so fierce as the mighty Treant Protectors.\r\n\t\t\t\t<br><br>These ageless, titanic beings, charged with keeping the peace in this dangerous land, ensure that none within encroach without reason, and none without poach their secrets. For time untold they tended to their holy ground, uninterrupted, only dimly aware of the changing world beyond. Yet inevitably the wider world grew aware of this untamed land, and with each passing winter the outsiders grew bolder. Soon they arrived with tools to cut and with flames to burn, and often the Treants would ponder: who are these fragile, industrious creatures? What now had become of the wild, green world? There came and went an age of questions and of doubts, a thousand summers of long traditions set to scrutiny, while more and more the outsiders died and fed their earth.\r\n\t\t\t\t<br><br>When all that bloomed had finally finished their say, curiosity had overcome caution. It was decided: a lone Protector would be sent into the wider world, and instructed to wander until the glaciers arose once more, to observe the changing land and its creatures, and to discover what unknown dangers could threaten their sacred ground.",
+  "hype": "Treant Protector is ever the benevolent ally, sprouting <b>regenerating armor</b> for his cohorts and their fortifications alike. Emerging unseen from among the trees, he <b>binds foes</b> with overgrowth as he <b>leeches health</b> from enemies and into nearby allies.",
+  "abilities": [
+    {
+      "key": "treant_natures_grasp",
+      "name": "Nature's Grasp",
+      "description": "Creates vines towards the target location. Vines slow down and deal damage to enemies that walk through. Does %creep_penalty%%% less damage to creeps.",
+      "max_level": 4,
+      "cooldowns": [
+        23,
+        21,
+        19,
+        17
+      ],
+      "mana_costs": [
+        90
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1500
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage_per_second",
+          "heading": "DAMAGE PER SECOND:",
+          "values": [
+            35,
+            50,
+            65,
+            80
+          ]
+        },
+        {
+          "key": "creep_penalty",
+          "heading": "",
+          "values": [
+            35
+          ]
+        },
+        {
+          "key": "movement_slow",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            25,
+            30,
+            35,
+            40
+          ]
+        },
+        {
+          "key": "vines_duration",
+          "heading": "VINE DURATION:",
+          "values": [
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "key": "creation_interval",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "initial_latch_delay",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "vine_spawn_interval",
+          "heading": "",
+          "values": [
+            175
+          ]
+        },
+        {
+          "key": "latch_range",
+          "heading": "",
+          "values": [
+            135
+          ]
+        },
+        {
+          "key": "latch_vision",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1500
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            90
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            23,
+            21,
+            19,
+            17
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "The tendrils of Rooftrellen's influence stretch to all corners of the forest."
+    },
+    {
+      "key": "treant_leech_seed",
+      "name": "Leech Seed",
+      "description": "Treant's attack plants a life-sapping seed in an enemy unit. That unit takes additional magic damage, is rooted and disarmed for a short duration, and emits %healing_pulse_count% healing pulses to up to %max_heal_units% nearby allies of Treant Protector based on the damage dealt by the attack.",
+      "max_level": 4,
+      "cooldowns": [
+        15,
+        12,
+        9,
+        6
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        150
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            0.9,
+            1.1,
+            1.3,
+            1.5
+          ]
+        },
+        {
+          "key": "flat_heal",
+          "heading": "",
+          "values": [
+            15,
+            25,
+            35,
+            45
+          ]
+        },
+        {
+          "key": "leech_heal",
+          "heading": "DAMAGE TO HEALING:",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "leech_damage",
+          "heading": "BONUS DAMAGE:",
+          "values": [
+            20,
+            40,
+            60,
+            80
+          ]
+        },
+        {
+          "key": "max_heal_units",
+          "heading": "",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "HEAL RADIUS:",
+          "values": [
+            650
+          ]
+        },
+        {
+          "key": "healing_pulse_count",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "projectile_speed",
+          "heading": "",
+          "values": [
+            450
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            15,
+            12,
+            9,
+            6
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Rooftrellen nurtures the beings under his stewardship, sustained by the lifeforce of trespassers into his sacred ground."
+    },
+    {
+      "key": "treant_living_armor",
+      "name": "Living Armor",
+      "description": "Infuses the target hero or structure with a protective coating which heals the target and blocks damage from player-controlled sources. Each time this spell blocks damage, the block amount is decreased. If the damage block is decreased to 0, the buff is removed early.",
+      "max_level": 4,
+      "cooldowns": [
+        24,
+        21,
+        18,
+        15
+      ],
+      "mana_costs": [
+        65,
+        70,
+        75,
+        80
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "heal_per_second",
+          "heading": "HEAL PER SECOND:",
+          "values": [
+            4,
+            7,
+            10,
+            13
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            12
+          ]
+        },
+        {
+          "key": "aoe_radius",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "damage_block_base",
+          "heading": "MAX DAMAGE BLOCKED:",
+          "values": [
+            60,
+            80,
+            100,
+            120
+          ]
+        },
+        {
+          "key": "passive_reset_cd",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "damage_block_loss",
+          "heading": "DAMAGE BLOCK DECREASE:",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "damage_block_threshold",
+          "heading": "",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            65,
+            70,
+            75,
+            80
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            24,
+            21,
+            18,
+            15
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Increases the Damage Blocked by Living Armor. Treant now also passively benefits from Living Armor, with the damage block resetting after not taking damage for %passive_reset_cd% seconds.",
+      "notes": [
+        "Instances of damage less than %damage_block_threshold% are ignored."
+      ],
+      "lore": "The roots and tendrils of the Treant Protectors are far-reaching, stimulating the growth and rejuvenation of all of nature."
+    },
+    {
+      "key": "treant_eyes_in_the_forest",
+      "name": "Eyes In The Forest",
+      "description": "Treant Protector enchants a tree, which grants him unobstructed vision in that location. The eyes last for %duration% seconds and are invisible, but are destroyed if their host tree is destroyed or if they are attacked directly.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        30
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        350
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "vision_aoe",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "hits_to_kill",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "",
+          "values": [
+            360
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            350
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityCharges",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "AbilityChargeRestoreTime",
+          "heading": "",
+          "values": [
+            135
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            30
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Being entangled by Overgrowth through enchanted trees from Eyes in the Forest does damage.",
+        "If the enemy has True Sight, they will be able to see which trees are enchanted."
+      ],
+      "lore": "One can never be too certain who, or what, might need protecting."
+    },
+    {
+      "key": "treant_natures_guise",
+      "name": "Nature's Guise",
+      "description": "Grants bonus movement speed when near trees. Treant Protector additionally has Tree Walking if he has not taken damage for %cooldown_time% seconds. While Tree Walking, Nature's Guise can be activated to grant Treant invisibility until he attacks or is no longer near a tree.",
+      "max_level": 1,
+      "cooldowns": [
+        36
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "grace_time",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "cooldown_time",
+          "heading": "",
+          "values": [
+            2.75
+          ]
+        },
+        {
+          "key": "movement_bonus",
+          "heading": "MOVEMENT SPEED BONUS:",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "COOLDOWN:",
+          "values": [
+            36
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "While affected by Nature's Guise, Treant can move unobstructed through other trees.",
+        "Vines from Nature's Grasp are considered trees for this ability.",
+        "While Tree Walking, taking damage does not disable the active ability or Tree Walking."
+      ],
+      "lore": "The Protectors don't often come into vision; their natural state being nestled within their leafy brethren."
+    },
+    {
+      "key": "treant_overgrowth",
+      "name": "Overgrowth",
+      "description": "Summons an overgrowth of vines and branches around Treant that deal damage to afflicted enemies and prevent them from moving, blinking, going invisible, or attacking.",
+      "max_level": 3,
+      "cooldowns": [
+        110,
+        100,
+        90
+      ],
+      "mana_costs": [
+        200,
+        250,
+        300
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE PER SECOND:",
+          "values": [
+            95
+          ]
+        },
+        {
+          "key": "bloom_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "strength_bonus",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "splash_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "splash_radius",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "movement_speed",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            200,
+            250,
+            300
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            110,
+            100,
+            90
+          ]
+        }
+      ],
+      "scepter_upgrade": "Decreases Cooldown to %AbilityCooldown% seconds. When casting Overgrowth, Treant Protector draws power from the soil, greatly increasing his size for %bloom_duration% seconds. While enlarged, he gains phased movement with a fixed speed of %movement_speed%, %strength_bonus%%% bonus Strength, and a splashing attack that deals %splash_pct%%% of his attack damage in a %splash_radius% unit radius.",
+      "shard_upgrade": null,
+      "notes": [
+        "Works on Debuff Immune units, but if units gain debuff immunity after the effect starts, they'll break free."
+      ],
+      "lore": "Rooftrellen calls the ancestral spirit of nature, releasing its power through all of his kin."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_heal_per_second} Living Armor Heal Per Second"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Base Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_leech_heal}% Leech Seed Damage to Healing"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_per_second} Nature's Grasp Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_block_base} Living Armor Damage Block"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_leech_damage} Leech Seed Bonus Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Leech Seed Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_aoe_radius} AoE Living Armor"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

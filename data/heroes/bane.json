@@ -1,0 +1,601 @@
+{
+  "id": 3,
+  "name": "Bane",
+  "slug": "bane",
+  "npc_name": "npc_dota_hero_bane",
+  "primary_attribute": "universal",
+  "attack_type": "Ranged",
+  "complexity": 2,
+  "roles": [
+    "Support",
+    "Nuker",
+    "Disabler",
+    "Durable"
+  ],
+  "stats": {
+    "base_str": 23,
+    "str_gain": 2.5,
+    "base_agi": 23,
+    "agi_gain": 2.5,
+    "base_int": 23,
+    "int_gain": 2.5,
+    "damage_min": 24,
+    "damage_max": 30,
+    "attack_rate": 1.7,
+    "attack_range": 425,
+    "projectile_speed": 900,
+    "armor": 4.8333335,
+    "magic_resistance": 25,
+    "movement_speed": 305,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 1200,
+    "max_health": 626,
+    "health_regen": 2.55,
+    "max_mana": 351,
+    "mana_regen": 1.15
+  },
+  "lore": "When the gods have nightmares, it is Bane Elemental who brings them.  Also known as Atropos, Bane was born from the midnight terrors of the goddess Nyctasha.  A force of terror too powerful to be contained by sleep, he surfaced from her slumbers, fed upon her immortality, and stole his vaporous form from her inky blood.  He is the essence of fear.  Mortals who hear his voice hear their darkest secrets whispered in their ear.  He calls to the hidden fear in every Hero's heart.  Wakefulness is no protection, for Bane's black blood, continuously dripping, is a tar that traps his enemies in nightmare.  In the presence of Bane, every Hero remembers to fear the dark.",
+  "hype": "Bane brings terror to his enemies with his arsenal of <b>disabling abilities</b>. Whether trapping a foe within a contagious nightmare, or gripping an enemy in place, he gives allies all the time they need to slay their enemy.",
+  "abilities": [
+    {
+      "key": "bane_enfeeble",
+      "name": "Enfeeble",
+      "description": "Deals damage every second and lowers the enemy's total attack damage and cast range.",
+      "max_level": 4,
+      "cooldowns": [
+        22,
+        17,
+        12,
+        7
+      ],
+      "mana_costs": [
+        100,
+        110,
+        120,
+        130
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        700,
+        800,
+        900,
+        1000
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage_reduction",
+          "heading": "ATTACK DAMAGE REDUCTION:",
+          "values": [
+            55,
+            60,
+            65,
+            70
+          ]
+        },
+        {
+          "key": "cast_reduction",
+          "heading": "CAST RANGE REDUCTION:",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            9
+          ]
+        },
+        {
+          "key": "enfeeble_tick_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            12,
+            18,
+            24,
+            30
+          ]
+        },
+        {
+          "key": "damage_tick_rate",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            700,
+            800,
+            900,
+            1000
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            110,
+            120,
+            130
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            22,
+            17,
+            12,
+            7
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Each tendril of fear that Atropos weaves increases the vulnerability of his victims to arcane and unknown arts."
+    },
+    {
+      "key": "bane_brain_sap",
+      "name": "Brain Sap",
+      "description": "Feasts on the vital energies of an enemy unit, healing Bane and dealing damage.",
+      "max_level": 4,
+      "cooldowns": [
+        17,
+        15,
+        13,
+        11
+      ],
+      "mana_costs": [
+        105,
+        120,
+        135,
+        150
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        625
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "brain_sap_damage",
+          "heading": "HEAL/DAMAGE:",
+          "values": [
+            90,
+            160,
+            230,
+            300
+          ]
+        },
+        {
+          "key": "shard_radius",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_secondary_target_heal_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            625
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            105,
+            120,
+            135,
+            150
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            17,
+            15,
+            13,
+            11
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Reduces cooldown by %bonus_AbilityCooldown%. Causes Brain Sap to become a %shard_radius% AoE spell. Secondary targets only heal for %shard_secondary_target_heal_pct%%%.",
+      "notes": null,
+      "lore": "Atropos finds no greater pleasure than to harvest the fear he creates."
+    },
+    {
+      "key": "bane_nightmare",
+      "name": "Nightmare",
+      "description": "Puts the target enemy or friendly Hero to sleep. Sleeping units walk in Bane's chosen direction and are awakened when damaged. If the target was directly attacked, the Nightmare passes to the attacking unit. Bane can attack and damage Nightmared targets freely.<br><br> Can be put on alt-cast to have the target stand still.",
+      "max_level": 4,
+      "cooldowns": [
+        25,
+        22,
+        19,
+        16
+      ],
+      "mana_costs": [
+        120,
+        130,
+        140,
+        150
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        550,
+        600,
+        650,
+        700
+      ],
+      "cast_points": [
+        0.4
+      ],
+      "durations": [
+        3.5,
+        4.5,
+        5.5,
+        6.5
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "nightmare_invuln_time",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "animation_rate",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "vector_render_radius",
+          "heading": "",
+          "values": [
+            120
+          ]
+        },
+        {
+          "key": "walk_speed",
+          "heading": "WALK SPEED:",
+          "values": [
+            110
+          ]
+        },
+        {
+          "key": "turn_rate",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            550,
+            600,
+            650,
+            700
+          ]
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "DURATION:",
+          "values": [
+            3.5,
+            4.5,
+            5.5,
+            6.5
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            120,
+            130,
+            140,
+            150
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            25,
+            22,
+            19,
+            16
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "In the first second of Nightmare, the unit is invulnerable.",
+        "Bane can wake himself from Nightmare.",
+        "On cast, replaced with Nightmare End: Ends all ongoing Nightmares on any affected units."
+      ],
+      "lore": "A stolen prowess from the goddess Nyctasha is to put his prey into forever sleep."
+    },
+    {
+      "key": "bane_fiends_grip",
+      "name": "Fiend's Grip",
+      "description": "CHANNELED - Grips an enemy unit, disabling it and causing heavy damage over time, while stealing mana every %fiend_grip_tick_interval% seconds based on the unit's maximum mana.",
+      "max_level": 3,
+      "cooldowns": [
+        120,
+        110,
+        100
+      ],
+      "mana_costs": [
+        200,
+        300,
+        400
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        625
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "fiend_grip_tick_interval",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "fiend_grip_mana_drain",
+          "heading": "MANA DRAIN PER SECOND:",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "fiend_grip_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            70,
+            110,
+            150
+          ]
+        },
+        {
+          "key": "illusion_count",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "scepter_incoming_illusion_damage",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            625
+          ]
+        },
+        {
+          "key": "AbilityChannelTime",
+          "heading": "DURATION:",
+          "values": [
+            4.75,
+            5.25,
+            5.75
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            200,
+            300,
+            400
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            120,
+            110,
+            100
+          ]
+        }
+      ],
+      "scepter_upgrade": "Reduces Fiend's Grip cooldown by %bonus_AbilityCooldown%. Fiend's Grip now creates two uncontrollable illusions that are also channeling Fiend's Grip on the target. Illusions take %scepter_incoming_illusion_damage%%% incoming damage and immediately die if they are interrupted. Damage does not stack.",
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Victims of Atropos are frequently torn apart by vivid conjurations of their own nightmares."
+    },
+    {
+      "key": "bane_ichor_of_nyctasha",
+      "name": "Ichor of Nyctasha",
+      "description": "Every time Bane kills an enemy hero or they die under the effect of Bane's debuff, they receive a Terror for the rest of the game that decreases their status resistance to Bane's subsequent debuffs.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage_tick_rate",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "max_terrors",
+          "heading": "MAX TERRORS PER HERO:",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "status_resistance",
+          "heading": "STATUS RESISTANCE PER TERROR:",
+          "values": [
+            5
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_AbilityCastRange} Brain Sap Cast Range"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_cast_reduction}% Enfeeble Cast Range Reduction"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_enfeeble_tick_damage} Enfeeble Damage Per Second"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_fiend_grip_mana_drain}% Fiend's Grip Max Mana Drain"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Nightmare Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Movement Speed"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_brain_sap_damage} Brain Sap Damage/Heal"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_AbilityChannelTime}s Fiend's Grip Duration"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

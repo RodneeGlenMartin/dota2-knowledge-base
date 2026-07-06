@@ -1,0 +1,39 @@
+{
+  "id": 328,
+  "name": "Mango Tree",
+  "slug": "mango_tree",
+  "internal_key": "item_mango_tree",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Use: Plant a Mango Tree</h1> Targets the ground to plant a mango tree that provides unlimited mango power. The tree generates Enchanted Mangoes every %seconds% seconds, and provides unobstructed vision in the area .",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    200
+  ],
+  "special_values": [
+    {
+      "key": "seconds",
+      "heading": "",
+      "values": [
+        60
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        200
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

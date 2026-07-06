@@ -1,0 +1,88 @@
+{
+  "id": 534,
+  "name": "Witch Blade",
+  "slug": "witch_blade",
+  "internal_key": "item_witch_blade",
+  "cost": 2775,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Witch Blade</h1>Causes your next attack to apply a poison for %slow_duration% seconds, slowing by %slow%%% and dealing %int_damage_multiplier%x your intelligence as damage every second. This attack has True Strike.",
+  "notes": null,
+  "cooldowns": [
+    9
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_attack_speed",
+      "heading": "+$attack",
+      "values": [
+        40
+      ]
+    },
+    {
+      "key": "bonus_intellect",
+      "heading": "+$int",
+      "values": [
+        12
+      ]
+    },
+    {
+      "key": "bonus_mana_regen",
+      "heading": "+$mana_regen",
+      "values": [
+        1.5
+      ]
+    },
+    {
+      "key": "bonus_armor",
+      "heading": "+$armor",
+      "values": [
+        5
+      ]
+    },
+    {
+      "key": "int_damage_multiplier",
+      "heading": "",
+      "values": [
+        0.75
+      ]
+    },
+    {
+      "key": "slow",
+      "heading": "",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "slow_duration",
+      "heading": "",
+      "values": [
+        4
+      ]
+    },
+    {
+      "key": "projectile_speed",
+      "heading": "+$projectile_speed",
+      "values": [
+        300
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        9
+      ]
+    }
+  ],
+  "lore": "A spiteful blade inadvertently possessed by the soul of its incautious creator.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

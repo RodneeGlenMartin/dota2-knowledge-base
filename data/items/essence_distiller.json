@@ -1,0 +1,143 @@
+{
+  "id": 1852,
+  "name": "Essence Distiller",
+  "slug": "essence_distiller",
+  "internal_key": "item_essence_distiller",
+  "cost": 1775,
+  "neutral_tier": null,
+  "description": "<h1>Active: Soul Release</h1> Provides %soul_heal_amount% health regeneration when cast on allies.<br><br>Can be ground targeted to lie dormant for up to %ground_duration%s and attach to the first enemy that comes within %latch_range% radius. When on enemies, deals %soul_damage_amount% damage per second and provides True Sight over them and shares their vision with the wearer's team.<br><br>Lasts %duration% seconds.<br><br>Gains charges every time an enemy hero dies within %soul_radius% units.",
+  "notes": [
+    "Empty distillers gain 2 charges.",
+    "Only the closest Essence Distiller to the dying hero will gain a charge.",
+    "If the allied unit is attacked by an enemy hero or Roshan, the effect is lost.",
+    "Does not trigger spell block or spell reflect.",
+    "While dormant, provides vision in %latch_vision% radius. Vision lingers for %linger_after_latch_duration%s after latching."
+  ],
+  "cooldowns": [
+    10
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    1000
+  ],
+  "special_values": [
+    {
+      "key": "mana_regen",
+      "heading": "+$mana_regen",
+      "values": [
+        1.75
+      ]
+    },
+    {
+      "key": "bonus_all_stats",
+      "heading": "+$all",
+      "values": [
+        3
+      ]
+    },
+    {
+      "key": "bonus_armor",
+      "heading": "+$armor",
+      "values": [
+        6
+      ]
+    },
+    {
+      "key": "bonus_mana",
+      "heading": "+$mana",
+      "values": [
+        150
+      ]
+    },
+    {
+      "key": "soul_radius",
+      "heading": "",
+      "values": [
+        1500
+      ]
+    },
+    {
+      "key": "soul_initial_charge",
+      "heading": "",
+      "values": [
+        2
+      ]
+    },
+    {
+      "key": "soul_additional_charges",
+      "heading": "",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "soul_heal_amount",
+      "heading": "",
+      "values": [
+        40
+      ]
+    },
+    {
+      "key": "soul_damage_amount",
+      "heading": "",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        8
+      ]
+    },
+    {
+      "key": "ground_duration",
+      "heading": "",
+      "values": [
+        15
+      ]
+    },
+    {
+      "key": "latch_range",
+      "heading": "",
+      "values": [
+        450
+      ]
+    },
+    {
+      "key": "latch_vision",
+      "heading": "",
+      "values": [
+        450
+      ]
+    },
+    {
+      "key": "linger_after_latch_duration",
+      "heading": "",
+      "values": [
+        0.5
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        1000
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        10
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,707 @@
+{
+  "id": 47,
+  "name": "Viper",
+  "slug": "viper",
+  "npc_name": "npc_dota_hero_viper",
+  "primary_attribute": "agi",
+  "attack_type": "Ranged",
+  "complexity": 1,
+  "roles": [
+    "Carry",
+    "Disabler",
+    "Durable",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 21,
+    "str_gain": 2.4,
+    "base_agi": 21,
+    "agi_gain": 2.9,
+    "base_int": 17,
+    "int_gain": 2,
+    "damage_min": 48,
+    "damage_max": 50,
+    "attack_rate": 1.7,
+    "attack_range": 575,
+    "projectile_speed": 1200,
+    "armor": 1.5,
+    "magic_resistance": 25,
+    "movement_speed": 275,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 582,
+    "health_regen": 2.3500001,
+    "max_mana": 279,
+    "mana_regen": 0.85
+  },
+  "lore": "The malevolent familiar of a sadistic wizard who captured and hoped to tame him, Viper was curiously glad to have been sprung from the sealed and unchanging subterranean Nether Reaches where his race had lived for millions of years, after tectonic slippage had sealed off the Netherdrakes in luminous caverns. Viper spent some time appearing to submit to the wizard's enchainments, hoping to learn what he could of the dark magics the mage practiced. But he soon realized that few spells were as deadly as the toxins that were his birthright. Exuding an acid that swiftly ate away the bars of his cage, the Netherdrake slipped free of his confines, spit poison in the old spellcaster's eyes, and soared out to let the world know that it had a new master.",
+  "hype": "Launching <b>deadly poison from a distance</b>, Viper poses a grave threat to whomever he targets. As his various toxins <b>eat away at an enemy's health</b> and <b>slow their movement</b>, Viper simply does what he does best: he keeps adding more poison.",
+  "abilities": [
+    {
+      "key": "viper_poison_attack",
+      "name": "Poison Attack",
+      "description": "Intensifies Viper's venom, adding an effect to his normal attack that applies a stacking movement speed slow and magic resistance deduction while dealing damage over time. Stacks up to %max_stacks% times.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        20
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        600
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE PER SECOND:",
+          "values": [
+            4,
+            8,
+            12,
+            16
+          ]
+        },
+        {
+          "key": "movement_speed",
+          "heading": "MOVE SLOW:",
+          "values": [
+            3,
+            6,
+            9,
+            12
+          ]
+        },
+        {
+          "key": "magic_resistance",
+          "heading": "MAGIC RESISTANCE:",
+          "values": [
+            4,
+            6,
+            8,
+            10
+          ]
+        },
+        {
+          "key": "max_stacks",
+          "heading": "MAX STACKS:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "bonus_range",
+          "heading": "",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "shard_armor_reduction",
+          "heading": "ARMOR REDUCTION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_building_dmg_pct",
+          "heading": "BUILDING DAMAGE:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            20
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Increases max stacks, and causes Poison Attack to lower armor per stack and to affect buildings for reduced damage.",
+      "notes": null,
+      "lore": "The Netherdrake's inborn toxic breath quickly drains the vitality of its afflicted."
+    },
+    {
+      "key": "viper_nethertoxin",
+      "name": "Nethertoxin",
+      "description": "Viper releases a Nethertoxin at the targeted area. Units in that area take an increasing damage over time based on how long they remain in it. Units in it have their attack speed slowed.",
+      "max_level": 4,
+      "cooldowns": [
+        14
+      ],
+      "mana_costs": [
+        70
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        900
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "min_damage",
+          "heading": "MIN DPS:",
+          "values": [
+            15,
+            25,
+            35,
+            45
+          ]
+        },
+        {
+          "key": "max_damage",
+          "heading": "MAX DPS:",
+          "values": [
+            35,
+            65,
+            95,
+            125
+          ]
+        },
+        {
+          "key": "max_duration",
+          "heading": "MAX DPS DURATION:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "attack_slow",
+          "heading": "ATTACK SPEED SLOW:",
+          "values": [
+            30,
+            40,
+            50,
+            60
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            6.5,
+            7,
+            7.5,
+            8
+          ]
+        },
+        {
+          "key": "projectile_speed",
+          "heading": "",
+          "values": [
+            2400
+          ]
+        },
+        {
+          "key": "radius_increase",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "expand_interval",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            70
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            14
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Multiple Nethertoxins do not stack."
+      ],
+      "lore": "Poison from the Nether Reaches turns wounds into fatalities, and fatigue into death."
+    },
+    {
+      "key": "viper_corrosive_skin",
+      "name": "Corrosive Skin",
+      "description": "Viper exudes an infectious toxin that damages and slows the attack speed of any enemy that damages it in a %max_range% radius. The acid exudate also increases Viper's resistance to magic.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "bonus_attack_speed",
+          "heading": "ATTACK SLOW:",
+          "values": [
+            9,
+            18,
+            27,
+            36
+          ]
+        },
+        {
+          "key": "bonus_magic_resistance",
+          "heading": "MAGIC RESISTANCE:",
+          "values": [
+            10,
+            15,
+            20,
+            25
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE PER SECOND:",
+          "values": [
+            10,
+            15,
+            20,
+            25
+          ]
+        },
+        {
+          "key": "max_range",
+          "heading": "MAX RANGE RADIUS:",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "effect_multiplier_distance",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "effect_multiplier",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "nethertoxin_bonus_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "nethertoxin_bonus_pct_max_duration_tooltip",
+          "heading": "",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": "Corrosive Skin applies %effect_multiplier%x the attack speed slow to enemies that are within %effect_multiplier_distance% distance of Viper.  Viper's Corrosive Skin Magic Resistance and Damage per Second are gradually increased while he is in Nethertoxin, up to %nethertoxin_bonus_pct%%% increased effect after %nethertoxin_bonus_pct_max_duration_tooltip%s.",
+      "shard_upgrade": null,
+      "notes": [
+        "Stacks multiplicatively with other magic damage resistance sources.",
+        "Break prevents the application of Corrosive Skin. Does not disable Corrosive Skin application from Nosedive.",
+        "Damage done by this ability is considered reflected damage. Reflected damage does not provide any lifesteal and cannot be reflected."
+      ],
+      "lore": "It is not unusual for sword and shield alike to corrode in the very hands of those who attack the Netherdrake."
+    },
+    {
+      "key": "viper_nose_dive",
+      "name": "Nosedive",
+      "description": "Viper slams into the ground, releasing a Nethertoxin and splattering each enemy in a %corrosive_radius% AoE for %effect_duration% seconds with the effect of Corrosive Skin.",
+      "max_level": 1,
+      "cooldowns": [
+        25
+      ],
+      "mana_costs": [
+        75
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        700
+      ],
+      "cast_points": [
+        0.1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "corrosive_radius",
+          "heading": "RADIUS:",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "effect_duration",
+          "heading": "EFFECT DURATION:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "dive_speed",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "start_height",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            25
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "It was thought that Netherdrake wings touch ground only in death, but some surmise that those who've witnessed more intentional landings merely haven't survived to tell the tale."
+    },
+    {
+      "key": "viper_predator",
+      "name": "Predator",
+      "description": "Viper's attacks deal an additional instance of physical damage per missing health percentage of the target hero.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            0.25
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "viper_viper_strike",
+      "name": "Viper Strike",
+      "description": "Viper slows the targeted enemy unit's movement and attack speed while also disabling their passives and dealing poison damage over time. The slowing effect reduces over the duration of the poison.",
+      "max_level": 3,
+      "cooldowns": [
+        50,
+        40,
+        30
+      ],
+      "mana_costs": [
+        100,
+        150,
+        200
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        750
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE PER SECOND:",
+          "values": [
+            70,
+            110,
+            150
+          ]
+        },
+        {
+          "key": "bonus_movement_speed",
+          "heading": "MOVE SLOW:",
+          "values": [
+            60,
+            70,
+            80
+          ]
+        },
+        {
+          "key": "bonus_attack_speed",
+          "heading": "ATTACK SLOW:",
+          "values": [
+            100,
+            140,
+            180
+          ]
+        },
+        {
+          "key": "projectile_speed",
+          "heading": "",
+          "values": [
+            1500
+          ]
+        },
+        {
+          "key": "max_charges",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "charge_restore_time",
+          "heading": "",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "does_break",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            750
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            150,
+            200
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            50,
+            40,
+            30
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Once used to slay his sadistic summoner, the most powerful of Netherdrake infections spreads through the veins of those foolish enough to cross Viper."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_duration}s Viper Strike Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Corrosive Skin Damage Per Second"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_min_damage}/{s:bonus_max_damage} Nethertoxin Min/Max Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage}% Poison Attack Slow / Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Viper Strike DPS"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Predator Damage Per Missing Health"
+    },
+    {
+      "slot": null,
+      "name": "Nethertoxin Radius increases by {s:bonus_radius_increase} every {s:bonus_expand_interval}s"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}% Viper Strike Mana Cost / Cooldown"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

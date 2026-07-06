@@ -1,0 +1,24 @@
+{
+  "id": 727,
+  "name": "Aghanim's Blessing - Roshan",
+  "slug": "aghanim_s_blessing_roshan",
+  "internal_key": "item_ultimate_scepter_roshan",
+  "cost": 5800,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Ability Upgrade</h1>Upgrades the ultimate, and some abilities, of all heroes.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [],
+  "lore": "The scepter of a wizard with demigod-like powers.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

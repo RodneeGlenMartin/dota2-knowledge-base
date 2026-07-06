@@ -1,0 +1,55 @@
+{
+  "id": 1586,
+  "name": "Tough",
+  "slug": "tough",
+  "internal_key": "item_enhancement_tough",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_damage",
+      "heading": "+$damage",
+      "values": [
+        6,
+        9,
+        12,
+        15
+      ]
+    },
+    {
+      "key": "armor",
+      "heading": "+$armor",
+      "values": [
+        0,
+        4,
+        6,
+        8
+      ]
+    },
+    {
+      "key": "knockback_resist",
+      "heading": "+Knockback Resistance",
+      "values": [
+        0,
+        0,
+        0,
+        40
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

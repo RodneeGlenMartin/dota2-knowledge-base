@@ -1,0 +1,53 @@
+{
+  "id": 1605,
+  "name": "Serrated Shiv",
+  "slug": "serrated_shiv",
+  "internal_key": "item_serrated_shiv",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Gut 'Em</h1> Attacks have a %proc_chance%%% chance to have True Strike and deal %hp_dmg%%% of the target's current health as bonus physical damage. Deals a flat bonus of %hp_dmg_rosh% against Roshan.",
+  "notes": null,
+  "cooldowns": [
+    1.5
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "proc_chance",
+      "heading": "",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "hp_dmg",
+      "heading": "",
+      "values": [
+        8
+      ]
+    },
+    {
+      "key": "hp_dmg_rosh",
+      "heading": "",
+      "values": [
+        200
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        1.5
+      ]
+    }
+  ],
+  "lore": "Too dangerous for taskwork, this blade's only purpose is vile murder.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": 1168,
+  "name": "Rattlecage",
+  "slug": "rattlecage",
+  "internal_key": "item_rattlecage",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Reverberate</h1> After taking %damage_threshold% damage from any source, the wearer fires a projectile at up to %target_count% random enemies in a %radius% radius, prioritizing heroes, that deal %projectile_damage% physical damage and slow the targets movement and attack speed by %slow%%% for %slow_duration%s. ",
+  "notes": [
+    "Damage done by this item is considered reflected damage. Reflected damage does not provide any lifesteal and cannot be reflected."
+  ],
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "radius",
+      "heading": "",
+      "values": [
+        600
+      ]
+    },
+    {
+      "key": "slow_duration",
+      "heading": "",
+      "values": [
+        0.2
+      ]
+    },
+    {
+      "key": "damage_reset_interval",
+      "heading": "",
+      "values": [
+        7
+      ]
+    },
+    {
+      "key": "damage_threshold",
+      "heading": "",
+      "values": [
+        220
+      ]
+    },
+    {
+      "key": "slow",
+      "heading": "",
+      "values": [
+        100
+      ]
+    },
+    {
+      "key": "projectile_speed",
+      "heading": "",
+      "values": [
+        1000
+      ]
+    },
+    {
+      "key": "projectile_damage",
+      "heading": "",
+      "values": [
+        90
+      ]
+    },
+    {
+      "key": "target_count",
+      "heading": "",
+      "values": [
+        2
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

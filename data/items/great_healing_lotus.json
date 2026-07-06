@@ -1,0 +1,48 @@
+{
+  "id": 4205,
+  "name": "Great Healing Lotus",
+  "slug": "great_healing_lotus",
+  "internal_key": "item_great_famango",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Use: Eat Lotus</h1> Instantly restores %replenish_amount% health and mana.",
+  "notes": [
+    "Hold Control to use on a nearby allied hero."
+  ],
+  "cooldowns": [
+    5
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    400
+  ],
+  "special_values": [
+    {
+      "key": "replenish_amount",
+      "heading": "",
+      "values": [
+        400
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        400
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        5
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

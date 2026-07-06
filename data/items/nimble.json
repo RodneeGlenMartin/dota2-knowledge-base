@@ -1,0 +1,52 @@
+{
+  "id": 1874,
+  "name": "Nimble",
+  "slug": "nimble",
+  "internal_key": "item_enhancement_nimble",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "movespeed_pct",
+      "heading": "+$move_speed",
+      "values": [
+        6,
+        8,
+        10
+      ]
+    },
+    {
+      "key": "bonus_damage",
+      "heading": "+$damage",
+      "values": [
+        10,
+        15,
+        20
+      ]
+    },
+    {
+      "key": "hp_regen_reduce",
+      "heading": "-<font color='#e03e2e'>Health Regeneration</font>",
+      "values": [
+        1.5,
+        2.25,
+        3
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

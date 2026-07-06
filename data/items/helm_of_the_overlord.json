@@ -1,0 +1,161 @@
+{
+  "id": 635,
+  "name": "Helm of the Overlord",
+  "slug": "helm_of_the_overlord",
+  "internal_key": "item_helm_of_the_overlord",
+  "cost": 5650,
+  "neutral_tier": null,
+  "description": "<h1>Active: Dominate</h1>Takes control of one neutral target unit and sets its movement speed to %speed_base% and max health to a minimum of %health_min%. Also provides the unit with +%creep_bonus_damage% base attack damage, +%creep_bonus_hp_regen% health regen, +%creep_bonus_mp_regen% mana regen, +%creep_bonus_armor% armor, and levels up some abilities of the target by 1 level. <br><br>Dominated units with a max health of greater than %health_min% retain their original max health. Grants the caster the gold and experience bounty of the dominated creep. Dominated unit's bounty is set to %bounty_gold% gold and it can no longer be killed by abilities that instantly kill creeps otherwise.<br><br>The Helm cannot be used for %creep_damage_taken_cooldown% seconds after the dominated creep takes damage from an enemy hero or Roshan.",
+  "notes": [
+    "Can also Dominate enemy lane creeps and summoned units.",
+    "Selling will cause dominated units to die."
+  ],
+  "cooldowns": [
+    40
+  ],
+  "mana_costs": [
+    50
+  ],
+  "cast_ranges": [
+    700
+  ],
+  "special_values": [
+    {
+      "key": "bonus_stats",
+      "heading": "+$all",
+      "values": [
+        21
+      ]
+    },
+    {
+      "key": "bonus_armor",
+      "heading": "+$armor",
+      "values": [
+        7
+      ]
+    },
+    {
+      "key": "bonus_regen",
+      "heading": "+$hp_regen",
+      "values": [
+        7
+      ]
+    },
+    {
+      "key": "health_min",
+      "heading": "",
+      "values": [
+        1900
+      ]
+    },
+    {
+      "key": "speed_base",
+      "heading": "",
+      "values": [
+        380
+      ]
+    },
+    {
+      "key": "bounty_gold",
+      "heading": "",
+      "values": [
+        250
+      ]
+    },
+    {
+      "key": "creep_bonus_damage",
+      "heading": "",
+      "values": [
+        70
+      ]
+    },
+    {
+      "key": "creep_bonus_hp_regen",
+      "heading": "",
+      "values": [
+        12
+      ]
+    },
+    {
+      "key": "creep_bonus_mp_regen",
+      "heading": "",
+      "values": [
+        4
+      ]
+    },
+    {
+      "key": "creep_bonus_armor",
+      "heading": "",
+      "values": [
+        7
+      ]
+    },
+    {
+      "key": "model_scale",
+      "heading": "",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "count_limit",
+      "heading": "",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "creep_ability_level_increase",
+      "heading": "",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "is_overlord",
+      "heading": "",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "creep_damage_taken_cooldown",
+      "heading": "",
+      "values": [
+        3
+      ]
+    },
+    {
+      "key": "bounty_pct",
+      "heading": "",
+      "values": [
+        100
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        700
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        50
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        40
+      ]
+    }
+  ],
+  "lore": "The powerful headpiece of an undead necromancer.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": 825,
+  "name": "Ascetic's Cap",
+  "slug": "ascetic_s_cap",
+  "internal_key": "item_ascetic_cap",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Endurance</h1>Whenever a debuff would be applied to the owner, grant %status_resistance%%% Status resistance and %slow_resistance%%% Slow Resistance for %duration% seconds.",
+  "notes": null,
+  "cooldowns": [
+    25
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        25
+      ]
+    }
+  ],
+  "lore": "An austere hat thought to be of Turstarkuri origin.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

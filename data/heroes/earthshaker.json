@@ -1,0 +1,663 @@
+{
+  "id": 7,
+  "name": "Earthshaker",
+  "slug": "earthshaker",
+  "npc_name": "npc_dota_hero_earthshaker",
+  "primary_attribute": "str",
+  "attack_type": "Melee",
+  "complexity": 2,
+  "roles": [
+    "Support",
+    "Nuker",
+    "Disabler",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 22,
+    "str_gain": 3.7,
+    "base_agi": 12,
+    "agi_gain": 1.4,
+    "base_int": 18,
+    "int_gain": 2.1,
+    "damage_min": 49,
+    "damage_max": 59,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 0,
+    "armor": 4,
+    "magic_resistance": 25,
+    "movement_speed": 315,
+    "turn_rate": 0.9,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 604,
+    "health_regen": 3.2,
+    "max_mana": 291,
+    "mana_regen": 1.1500001
+  },
+  "lore": "Like a golem or gargoyle, Earthshaker was one with the earth but now walks freely upon it. Unlike those other entities, he created himself through an act of will, and serves no other master. In restless slumbers, encased in a deep seam of stone, he became aware of the life drifting freely above him. He grew curious.\r\n\t\t\t\t<br><br>During a season of tremors, the peaks of Nishai shook themselves loose of avalanches, shifting the course of rivers and turning shallow valleys into bottomless chasms. When the land finally ceased quaking, Earthshaker stepped from the settling dust, tossing aside massive boulders as if throwing off a light blanket.\r\n\t\t\t\t<br><br>He had shaped himself in the image of a mortal beast, and named himself Raigor Stonehoof. He bleeds now, and breathes, and therefore he can die. But his spirit is still that of the earth; he carries its power in the magical totem that never leaves him. And on the day he returns to dust, the earth will greet him as a prodigal son.",
+  "hype": "Whether <b>blocking an enemy's escape</b>, dividing their forces, or <b>shattering the ground</b> beneath gathered foes, Earthshaker is at his best when he strikes without warning. Whatever survives the <b>aftershocks</b> still has a swing from his <b>mighty totem</b> to look forward to.",
+  "abilities": [
+    {
+      "key": "earthshaker_fissure",
+      "name": "Fissure",
+      "description": "Slams the ground with a mighty totem, creating an impassable ridge of stone while stunning and damaging enemy units along its line.",
+      "max_level": 4,
+      "cooldowns": [
+        18,
+        17,
+        16,
+        15
+      ],
+      "mana_costs": [
+        115,
+        120,
+        125,
+        130
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1600
+      ],
+      "cast_points": [
+        0.69,
+        0.69,
+        0.69,
+        0.69
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "fissure_duration",
+          "heading": "FISSURE DURATION:",
+          "values": [
+            6.5,
+            7,
+            7.5,
+            8
+          ]
+        },
+        {
+          "key": "fissure_radius",
+          "heading": "",
+          "values": [
+            225
+          ]
+        },
+        {
+          "key": "stun_duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            1,
+            1.2,
+            1.4,
+            1.6
+          ]
+        },
+        {
+          "key": "fissure_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            100,
+            160,
+            220,
+            280
+          ]
+        },
+        {
+          "key": "shard_aftershock_stun_duration_pct",
+          "heading": "AFTERSHOCK STUN PCT:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "free_pathing_linger_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "free_pathing_application_radius",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "fissure_max_distance_moved",
+          "heading": "",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "echoes_radius",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "echoes_damage_multiplier",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1600
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.69
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            115,
+            120,
+            125,
+            130
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "COOLDOWN:",
+          "values": [
+            18,
+            17,
+            16,
+            15
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Reduces Fissure cooldown and releases an Aftershock along its path that stuns for a shortened duration when Earthshaker casts another ability.",
+      "notes": [
+        "Creeps will wait for Fissure to disappear. They will not attempt to walk around it.",
+        "Fissure is not blocked by Linken's Sphere."
+      ],
+      "lore": "The Nishian totem splits the world to its core with tectonic force."
+    },
+    {
+      "key": "earthshaker_enchant_totem",
+      "name": "Enchant Totem",
+      "description": "Empowers Earthshaker's totem, causing it to deal extra damage and have %bonus_attack_range% bonus attack range on the next attack.",
+      "max_level": 4,
+      "cooldowns": [
+        5
+      ],
+      "mana_costs": [
+        45,
+        55,
+        65,
+        75
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.5
+      ],
+      "durations": [
+        14
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "totem_damage_percentage",
+          "heading": "BONUS:",
+          "values": [
+            100,
+            200,
+            300,
+            400
+          ]
+        },
+        {
+          "key": "distance_scepter",
+          "heading": "JUMP DISTANCE:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "scepter_height",
+          "heading": "",
+          "values": [
+            950
+          ]
+        },
+        {
+          "key": "scepter_height_arcbuffer",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "scepter_acceleration_z",
+          "heading": "",
+          "values": [
+            4000
+          ]
+        },
+        {
+          "key": "scepter_acceleration_horizontal",
+          "heading": "",
+          "values": [
+            3000
+          ]
+        },
+        {
+          "key": "scepter_leap_duration",
+          "heading": "",
+          "values": [
+            0.8
+          ]
+        },
+        {
+          "key": "scepter_cleave_pct",
+          "heading": "CLEAVE DAMAGE:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "scepter_cleave_starting_width",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "scepter_cleave_ending_width",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "scepter_cleave_distance",
+          "heading": "CLEAVE DISTANCE:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "bonus_attack_range",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "DURATION:",
+          "values": [
+            14
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            45,
+            55,
+            65,
+            75
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            5
+          ]
+        }
+      ],
+      "scepter_upgrade": "Enchant Totem becomes a ground target ability, causing Earthshaker to jump in the air and land at the target spot, casting Enchant Totem there.  Self-casting the ability will behave in the original form, without jumping. Grants Enchant Totem a cleaving attack.",
+      "shard_upgrade": null,
+      "notes": [
+        "Bonus damage is based on base damage and that given by primary attribute."
+      ],
+      "lore": "Raigor's gorilla strength can destroy mountains."
+    },
+    {
+      "key": "earthshaker_aftershock",
+      "name": "Aftershock",
+      "description": "Causes the earth to shake underfoot, adding additional damage and stuns to nearby enemy units when Earthshaker casts his abilities.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        1,
+        1.1,
+        1.2,
+        1.3
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "aftershock_range",
+          "heading": "RADIUS:",
+          "values": [
+            350
+          ]
+        },
+        {
+          "key": "aftershock_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            65,
+            90,
+            115,
+            140
+          ]
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "DURATION:",
+          "values": [
+            1,
+            1.1,
+            1.2,
+            1.3
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Using items does not trigger Aftershock."
+      ],
+      "lore": "The earth trembles beneath the mighty footsteps of Raigor."
+    },
+    {
+      "key": "earthshaker_echo_slam",
+      "name": "Echo Slam",
+      "description": "Shockwaves travel through the ground, damaging enemy units.  Each enemy hit causes an echo to damage nearby units. Real heroes cause two echoes.",
+      "max_level": 3,
+      "cooldowns": [
+        130,
+        120,
+        110
+      ],
+      "mana_costs": [
+        150,
+        200,
+        250
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "echo_slam_damage_range",
+          "heading": "RADIUS:",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "echo_slam_echo_search_range",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "echo_slam_echo_range",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "echo_slam_echo_damage",
+          "heading": "ECHO DAMAGE:",
+          "values": [
+            70,
+            90,
+            110
+          ]
+        },
+        {
+          "key": "echo_slam_initial_damage",
+          "heading": "INITIAL DAMAGE:",
+          "values": [
+            100,
+            140,
+            180
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            150,
+            200,
+            250
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            130,
+            120,
+            110
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Tectonic plates crack, mountains fold, and foes are crushed by the Echo Slam."
+    },
+    {
+      "key": "earthshaker_slugger",
+      "name": "Slugger",
+      "description": "Enemies killed with Enchant Totem or Earthshaker's other abilities are sent flying, dealing damage to enemies they hit.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "projectile_body_on_kill",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "projectile_body_initial_impact_radius",
+          "heading": "",
+          "values": [
+            225
+          ]
+        },
+        {
+          "key": "projectile_body_speed",
+          "heading": "SPEED:",
+          "values": [
+            1600
+          ]
+        },
+        {
+          "key": "projectile_body_distance",
+          "heading": "DISTANCE:",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "projectile_body_width_creep",
+          "heading": "",
+          "values": [
+            175
+          ]
+        },
+        {
+          "key": "projectile_body_width_hero",
+          "heading": "",
+          "values": [
+            175
+          ]
+        },
+        {
+          "key": "projectile_body_vision",
+          "heading": "",
+          "values": [
+            175
+          ]
+        },
+        {
+          "key": "projectile_body_damage_creep",
+          "heading": "DAMAGE (CREEPS):",
+          "values": [
+            27
+          ]
+        },
+        {
+          "key": "projectile_body_damage_hero",
+          "heading": "DAMAGE (HEROES):",
+          "values": [
+            135
+          ]
+        },
+        {
+          "key": "projectile_body_damage_additional_percent_health",
+          "heading": "FLYING ENEMY'S MAX HEALTH AS DAMAGE:",
+          "values": [
+            7
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:value} Base Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_fissure_damage} Fissure Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_AbilityCastRange} Fissure Range"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_aftershock_damage} Aftershock Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_echo_slam_echo_damage} Echo Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_totem_damage_percentage}% Enchant Totem Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}% Echo Slam Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Enchant Totem Cooldown"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,794 @@
+{
+  "id": 84,
+  "name": "Ogre Magi",
+  "slug": "ogre_magi",
+  "npc_name": "npc_dota_hero_ogre_magi",
+  "primary_attribute": "str",
+  "attack_type": "Melee",
+  "complexity": 1,
+  "roles": [
+    "Support",
+    "Nuker",
+    "Disabler",
+    "Durable",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 26,
+    "str_gain": 4,
+    "base_agi": 14,
+    "agi_gain": 1.5,
+    "base_int": 0,
+    "int_gain": 0,
+    "damage_min": 71,
+    "damage_max": 77,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 6.3333335,
+    "magic_resistance": 25,
+    "movement_speed": 290,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 692,
+    "health_regen": 4.1000004,
+    "max_mana": 120,
+    "mana_regen": 0
+  },
+  "lore": "The ordinary ogre is the creature for whom the phrase 'As dumb as a bag of rock hammers' was coined. In his natural state, an ogre is supremely incapable of doing or deciding anything. Clothed in dirt, he sometimes finds himself accidentally draped in animal skins after eating lanekill. Not an especially social creature, he is most often found affectionately consorting with the boulders or tree-stumps he has mistaken for kin (a factor that may explain the ogre's low rate of reproduction).  However, once every generation or so, the ogre race is blessed with the birth of a two-headed Ogre Magi, who is immediately given the traditional name of Aggron Stonebreak, the name of the first and perhaps only wise ogre in their line's history.\r\n\t\t\t\t<br><br>With two heads, Ogre Magi finds it possible to function at a level most other creatures manage with one. And while the Ogre Magi will win no debates (even with itself), it is graced with a divine quality known as Dumb Luck--a propensity for serendipitous strokes of fortune which have allowed the ogre race to flourish in spite of enemies, harsh weather, and an inability to feed itself.  It's as if the Goddess of Luck, filled with pity for the sadly inept species, has taken Ogre Magi under her wing. And who could blame her? Poor things.",
+  "hype": "With a chance to <b>multiply the outcome</b> of each spell they cast, a bit of <b>luck</b> is all Ogre Magi needs to burn enemies to cinder, or <b>boost the power of his allies</b>. Of course, luck can be difficult to rely upon...",
+  "abilities": [
+    {
+      "key": "ogre_magi_fireblast",
+      "name": "Fireblast",
+      "description": "Blasts an enemy unit with a wave of fire, dealing damage and stunning the target.",
+      "max_level": 4,
+      "cooldowns": [
+        11,
+        10,
+        9,
+        8
+      ],
+      "mana_costs": [
+        70,
+        85,
+        100,
+        115
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        525
+      ],
+      "cast_points": [
+        0.45
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "stun_duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            1.2
+          ]
+        },
+        {
+          "key": "multicast_delay",
+          "heading": "",
+          "values": [
+            0.6
+          ]
+        },
+        {
+          "key": "fireblast_damage",
+          "heading": "FIREBLAST DAMAGE:",
+          "values": [
+            70,
+            130,
+            190,
+            250
+          ]
+        },
+        {
+          "key": "fireblast_proc",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "bonus_cast_speed",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            525
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.45
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            70,
+            85,
+            100,
+            115
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            11,
+            10,
+            9,
+            8
+          ]
+        }
+      ],
+      "scepter_upgrade": "Fireblast is refined, reducing cooldown by %bonus_AbilityCooldown%s and increasing cast speed by %bonus_cast_speed%%%.",
+      "shard_upgrade": null,
+      "notes": [
+        "When Multicast, Fireblast hits the same target each time with a %multicast_delay% seconds interval."
+      ],
+      "lore": "The Ogre Magi is easily amused, entertained for hours by playing with fire."
+    },
+    {
+      "key": "ogre_magi_ignite",
+      "name": "Ignite",
+      "description": "Drenches the target and another random unit in volatile chemicals, causing it to burst into flames. The target is in immense pain, taking damage and moving more slowly.",
+      "max_level": 4,
+      "cooldowns": [
+        17
+      ],
+      "mana_costs": [
+        80,
+        90,
+        100,
+        110
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        700,
+        800,
+        900,
+        1000
+      ],
+      "cast_points": [
+        0.35
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "key": "burn_damage",
+          "heading": "BURN DAMAGE:",
+          "values": [
+            20,
+            30,
+            40,
+            50
+          ]
+        },
+        {
+          "key": "slow_movement_speed_pct",
+          "heading": "SLOW:",
+          "values": [
+            -25
+          ]
+        },
+        {
+          "key": "projectile_speed",
+          "heading": "",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "multicast_delay",
+          "heading": "",
+          "values": [
+            0.6
+          ]
+        },
+        {
+          "key": "ignite_multicast_aoe",
+          "heading": "",
+          "values": [
+            1400
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            700,
+            800,
+            900,
+            1000
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.35
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            80,
+            90,
+            100,
+            110
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            17
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Multicast makes this spell have a chance to cast multiple times at random enemy units in a %ignite_multicast_aoe% area of effect.",
+        "Ignite hitting an already affected unit adds to the burn duration."
+      ],
+      "lore": "Batter up!"
+    },
+    {
+      "key": "ogre_magi_bloodlust",
+      "name": "Bloodlust",
+      "description": "Incites a frenzy in a friendly unit, increasing its movement speed and attack speed. Gives bonus attack speed if cast on Ogre himself. Can be cast on towers.",
+      "max_level": 4,
+      "cooldowns": [
+        20,
+        18,
+        16,
+        14
+      ],
+      "mana_costs": [
+        40,
+        50,
+        60,
+        70
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        650
+      ],
+      "cast_points": [
+        0.45
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "modelscale",
+          "heading": "",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "bonus_movement_speed",
+          "heading": "BONUS MOVE SPEED:",
+          "values": [
+            6,
+            8,
+            10,
+            12
+          ]
+        },
+        {
+          "key": "bonus_attack_speed",
+          "heading": "BONUS ATTACK SPEED:",
+          "values": [
+            35,
+            50,
+            65,
+            80
+          ]
+        },
+        {
+          "key": "self_bonus",
+          "heading": "SELF BONUS ATTACK SPEED:",
+          "values": [
+            40,
+            60,
+            80,
+            100
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "multicast_bloodlust_aoe",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            650
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.45
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            40,
+            50,
+            60,
+            70
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            20,
+            18,
+            16,
+            14
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "When multicast, nearby allies will be selected randomly in an %multicast_bloodlust_aoe% area of effect to receive Bloodlust."
+      ],
+      "lore": "'Running's not as fun as hitting... Not one bit fun.'"
+    },
+    {
+      "key": "ogre_magi_unrefined_fireblast",
+      "name": "Unrefined Fireblast",
+      "description": "Blasts an enemy unit with a wave of fire, dealing %base_damage% + %str_multiplier%x Ogre's Strength in damage and stunning the target. Its mana cost is %scepter_mana%%% of Ogre Magi's current mana.",
+      "max_level": 1,
+      "cooldowns": [
+        7
+      ],
+      "mana_costs": [
+        400
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        525
+      ],
+      "cast_points": [
+        0.45
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "stun_duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            1.2
+          ]
+        },
+        {
+          "key": "multicast_delay",
+          "heading": "",
+          "values": [
+            0.6
+          ]
+        },
+        {
+          "key": "scepter_mana",
+          "heading": "",
+          "values": [
+            35
+          ]
+        },
+        {
+          "key": "base_damage",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "str_multiplier",
+          "heading": "",
+          "values": [
+            1.5
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            525
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.45
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            7
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "When Multicast, Unrefined Fireblast hits the same target each time with a %multicast_delay% seconds interval."
+      ],
+      "lore": "The 'who-casts-spell-first' argument between himself is solved simply by both casting at once."
+    },
+    {
+      "key": "ogre_magi_smash",
+      "name": "Fire Shield",
+      "description": "Creates a shield around the target ally, absorbing a percentage of the damage of next %attacks% attacks from enemy heroes. When damage is absorbed, a fireball is launched at the attacker. Can be cast on towers.",
+      "max_level": 1,
+      "cooldowns": [
+        15
+      ],
+      "mana_costs": [
+        50
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        600
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage",
+          "heading": "FIREBALL DAMAGE:",
+          "values": [
+            160
+          ]
+        },
+        {
+          "key": "attacks",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "SHIELD DURATION:",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "multicast_fireshield_aoe",
+          "heading": "",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "projectile_speed",
+          "heading": "",
+          "values": [
+            1400
+          ]
+        },
+        {
+          "key": "damage_absorb_pct",
+          "heading": "DAMAGE ABSORBED:",
+          "values": [
+            85
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            15
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "When multicast, nearby allies will be selected randomly in an %multicast_fireshield_aoe% area of effect to receive Fire Shield."
+      ],
+      "lore": "There is immense luck involved in Aggron not just setting friends on fire."
+    },
+    {
+      "key": "ogre_magi_dumb_luck",
+      "name": "Dumb Luck",
+      "description": "Ogre Magi's max Intelligence is 0. He receives mana and mana regeneration from Strength.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "mana_per_str",
+          "heading": "MAX MANA PER STRENGTH:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "mana_regen_per_str",
+          "heading": "MANA REGENERATION PER STRENGTH:",
+          "values": [
+            0.02
+          ]
+        },
+        {
+          "key": "level_one_ability_points",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "level_two_ability_points",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "required_level_reduction",
+          "heading": "",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "ogre_magi_multicast",
+      "name": "Multicast",
+      "description": "Enables Ogre Magi to cast his abilities and items multiple times with each use. Each point of Strength adds to Multicast chance. Every %strength_for_one_pct% Strength adds %one_tooltip%%%.",
+      "max_level": 3,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "multicast_2_times",
+          "heading": "2X CAST CHANCE:",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "multicast_3_times",
+          "heading": "3X CAST CHANCE:",
+          "values": [
+            0,
+            30,
+            30
+          ]
+        },
+        {
+          "key": "multicast_4_times",
+          "heading": "4X CAST CHANCE:",
+          "values": [
+            0,
+            0,
+            15
+          ]
+        },
+        {
+          "key": "strength_for_one_pct",
+          "heading": "",
+          "values": [
+            16
+          ]
+        },
+        {
+          "key": "one_tooltip",
+          "heading": "",
+          "values": [
+            1
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Only targeted abilities and items have a chance to be multicast.",
+        "Targeted abilities and items apply to additional enemies and neutrals in an AoE around Ogre. Fireblast and Unrefined Fireblast hit the same target multiple times."
+      ],
+      "lore": "Despite being largely incapacitated by his IQ, the Ogre Magi's success in battle is attributed to pure skill."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_burn_damage} Ignite Burn Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_mana_per_str}/{s:bonus_mana_regen_per_str} Dumb Luck Mana/Mana Regen Per Strength"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_attack_speed}/{s:bonus_self_bonus} Bloodlust / Self Attack Speed"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Strength"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_fireblast_damage} Fireblast Damage"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_fireblast_proc}% Fireblast chance on attack"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_multicast_2_times}% Multicast Chance"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

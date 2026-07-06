@@ -1,0 +1,62 @@
+{
+  "id": 1608,
+  "name": "Pyrrhic Cloak",
+  "slug": "pyrrhic_cloak",
+  "internal_key": "item_pyrrhic_cloak",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Retribution</h1> For the next %damage_time% seconds, %damage_pct%%% of damage taken by the caster is reflected to the target unit as physical damage if they are within %max_distance% units away.",
+  "notes": [
+    "Damage done by this item is considered reflected damage. Reflected damage does not provide any lifesteal and cannot be reflected."
+  ],
+  "cooldowns": [
+    40
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    800
+  ],
+  "special_values": [
+    {
+      "key": "damage_pct",
+      "heading": "",
+      "values": [
+        75
+      ]
+    },
+    {
+      "key": "max_distance",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    },
+    {
+      "key": "damage_time",
+      "heading": "",
+      "values": [
+        6
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        800
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        40
+      ]
+    }
+  ],
+  "lore": "There are generals that care far less about the survival of their troops than the destruction of their enemies.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

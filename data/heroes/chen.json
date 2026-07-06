@@ -1,0 +1,696 @@
+{
+  "id": 66,
+  "name": "Chen",
+  "slug": "chen",
+  "npc_name": "npc_dota_hero_chen",
+  "primary_attribute": "int",
+  "attack_type": "Ranged",
+  "complexity": 3,
+  "roles": [
+    "Support",
+    "Pusher"
+  ],
+  "stats": {
+    "base_str": 23,
+    "str_gain": 2,
+    "base_agi": 15,
+    "agi_gain": 2.1,
+    "base_int": 19,
+    "int_gain": 3.2,
+    "damage_min": 48,
+    "damage_max": 58,
+    "attack_rate": 1.7,
+    "attack_range": 650,
+    "projectile_speed": 1100,
+    "armor": 1.5,
+    "magic_resistance": 25,
+    "movement_speed": 305,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 626,
+    "health_regen": 2.55,
+    "max_mana": 303,
+    "mana_regen": 1.45
+  },
+  "lore": "Born in the godless Hazhadal Barrens, Chen came of age among the outlaw tribes who eked out an existence in the shimmering heat of the desert.  Using an ancient form of animal enthrallment, Chen's people husbanded the hardy desert locuthi, a stunted species of burrowing dragon that melted desert sands into tubes of glass where twice-a-year rains collected.  Always on the edge of starvation and thirst, fighting amongst their neighbors and each other, Chen's clan made the mistake, one fateful day, of ambushing the wrong caravan. \r\n\t\t\t\t<br><br>In the vicious battle that followed, Chen's clan was outmatched.  The armored Knights of the Fold made short work of the enthralled locuthi, who attacked and died in waves.  With their dragons dead, the tribesmen followed. Chen struggled, and slashed, and clawed, and perished--or would have. Defeated, on his knees, he faced his execution with humility, offering his neck to the blade. Moved by Chen's obvious courage, the executioner halted his sword. Instead of the blade, Chen was given a choice: death or conversion. Chen took to the faith with a ferocity. He joined the Fold and earned his armor one bloody conversion at a time. Now, with the fanaticism of a convert, and with his powers of animal enthrallment at their peak, he seeks out unbelievers and introduces them to their final reward.",
+  "hype": "Converting the creatures of the forest to his cause, Chen leads his <b>makeshift armies</b> to aid his team in battle. He assaults enemies with beasts while sending friends to safety. Then, when things seem darkest, he <b>heals his allies</b> wherever they may be.",
+  "abilities": [
+    {
+      "key": "chen_penitence",
+      "name": "Penitence",
+      "description": "Damages enemy unit, forces it to move slower and lets allies attack it more quickly.",
+      "max_level": 4,
+      "cooldowns": [
+        20,
+        17,
+        14,
+        11
+      ],
+      "mana_costs": [
+        80,
+        90,
+        100,
+        110
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        800
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "key": "speed",
+          "heading": "",
+          "values": [
+            1400
+          ]
+        },
+        {
+          "key": "bonus_movement_speed",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            -12,
+            -18,
+            -24,
+            -30
+          ]
+        },
+        {
+          "key": "bonus_attack_speed",
+          "heading": "BONUS ATTACK SPEED:",
+          "values": [
+            20,
+            40,
+            60,
+            80
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            50,
+            100,
+            150,
+            200
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            80,
+            90,
+            100,
+            110
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            20,
+            17,
+            14,
+            11
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Although Chen's brand of animal enthrallment isn't quite strong enough to control the minds of enemy heroes, it still tests their resolve in combat."
+    },
+    {
+      "key": "chen_holy_persuasion",
+      "name": "Holy Persuasion",
+      "description": "Chen takes control of an enemy or neutral creep and receives a percentage of its bounty. Its maximum health is set to %health_min%. Converted creeps will have increased movement speed and bonus damage. Chen may globally target his own creep if it has not taken damage in the last %unsummon_time% seconds to unsummon it.",
+      "max_level": 4,
+      "cooldowns": [
+        15
+      ],
+      "mana_costs": [
+        110,
+        130,
+        150,
+        170
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        600
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "max_units",
+          "heading": "MAX UNITS:",
+          "values": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "key": "level_req",
+          "heading": "CREEP MAX LEVEL:",
+          "values": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "key": "health_min",
+          "heading": "HEALTH MINIMUM:",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "gold_pct",
+          "heading": "PERCENTAGE OF BOUNTY:",
+          "values": [
+            25,
+            50,
+            75,
+            100
+          ]
+        },
+        {
+          "key": "movement_speed_bonus",
+          "heading": "MOVE SPEED BONUS:",
+          "values": [
+            5,
+            10,
+            20,
+            30
+          ]
+        },
+        {
+          "key": "damage_bonus",
+          "heading": "BONUS DAMAGE:",
+          "values": [
+            5,
+            10,
+            15,
+            20
+          ]
+        },
+        {
+          "key": "creep_ability_level",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "unsummon_time",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "unsummon_cooldown_reduction",
+          "heading": "",
+          "values": [
+            12
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            110,
+            130,
+            150,
+            170
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            15
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Allows Holy Persuasion to target Ancient creeps. Can control up to 1/2/3 Ancient creeps based on Hand of God's level. Additionally levels up some abilities of creeps by 1 level.",
+      "notes": [
+        "Persuading a new creep above max unit count causes the oldest persuaded creep to die.",
+        "Can target Ancient creeps when Chen has Aghanim's Shard.",
+        "The health of creeps already under Chen's control does not update to the new level upon leveling Holy Persuasion further.",
+        "Fully restores the creep's mana upon converting."
+      ],
+      "lore": "Although they may not be knights, Chen incorporates beasts into the Fold in the same way he himself was converted."
+    },
+    {
+      "key": "chen_divine_favor",
+      "name": "Divine Favor",
+      "description": "Passively provides an aura that grants increased health regeneration. Can be cast on allies to provide them with bonus armor and increasing the healing and health regeneration they receive.\n\nIf cast on Chen, all units controlled by Chen receive the buff.",
+      "max_level": 4,
+      "cooldowns": [
+        20,
+        18,
+        16,
+        14
+      ],
+      "mana_costs": [
+        75
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1200
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "heal_rate",
+          "heading": "REGEN PER SEC:",
+          "values": [
+            1.5,
+            3,
+            4.5,
+            6
+          ]
+        },
+        {
+          "key": "aura_radius",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "bonus_armor",
+          "heading": "ARMOR:",
+          "values": [
+            5,
+            10,
+            15,
+            20
+          ]
+        },
+        {
+          "key": "heal_amp",
+          "heading": "HEAL AMPLIFICATION:",
+          "values": [
+            5,
+            10,
+            15,
+            20
+          ]
+        },
+        {
+          "key": "creep_bonus",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            20,
+            18,
+            16,
+            14
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Chen's zeal is infectious, blessing his allies with vitality and compelling them to his side."
+    },
+    {
+      "key": "chen_zealot",
+      "name": "Zealot",
+      "description": "Whenever Chen respawns, he is joined by a Zealot, a melee warrior creep with the ability to sacrifice itself to heal or deal damage to an enemy.  The Zealot receives Holy Persuasion's benefits and scales up with other lane melee creeps as game time increases and gains extra base damage.  The Zealot respawns next to Chen after %zealot_respawn_time%s.<br><br>Zealot may be activated to teleport a unit under your control to Chen after a %teleport_delay% second delay.  If Chen is targeted, it will teleport all units you control. Taking damage from enemy heroes or their units will cancel the teleport.",
+      "max_level": 1,
+      "cooldowns": [
+        10
+      ],
+      "mana_costs": [
+        50
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "zealots",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "zealot_respawn_time",
+          "heading": "",
+          "values": [
+            60
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "BONUS BASE DAMAGE:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "bonus_hp",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "teleport_delay",
+          "heading": "",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            10
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "chen_hand_of_god",
+      "name": "Hand of God",
+      "description": "Heals all allied heroes on the map as well as all units under Chen's control. A large heal is applied at first and a slow heal over time is applied for %hot_duration% seconds afterwards.",
+      "max_level": 3,
+      "cooldowns": [
+        150,
+        130,
+        110
+      ],
+      "mana_costs": [
+        200,
+        300,
+        400
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "heal_amount",
+          "heading": "INITIAL HEAL:",
+          "values": [
+            200,
+            300,
+            400
+          ]
+        },
+        {
+          "key": "hot_duration",
+          "heading": "",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "heal_per_second",
+          "heading": "HEAL PER SECOND:",
+          "values": [
+            20,
+            30,
+            40
+          ]
+        },
+        {
+          "key": "ancient_creeps_scepter",
+          "heading": "SHARD HOLY PERSUASION ANCIENTS:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "does_purge",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "full_heal_on_chen_and_creeps",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "debuff_immune_radius",
+          "heading": "CHANNEL RADIUS:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "debuff_immune_resist",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "nearby_hot_boost",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityChannelTime",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            200,
+            300,
+            400
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            150,
+            130,
+            110
+          ]
+        }
+      ],
+      "scepter_upgrade": "Decreases the cooldown of Hand of God to %AbilityCooldown%s and it becomes a channelled spell that lasts for up to %AbilityChannelTime% seconds. The initial heal happens at the start of the channel, and while channeling other nearby allied units become debuff immune with %debuff_immune_resist%%% magic resistance and the power of the heal over time is increased by %nearby_hot_boost%%%.",
+      "shard_upgrade": null,
+      "notes": [
+        "Can heal invulnerable and hidden/banished allies."
+      ],
+      "lore": "Using the mental link with his thralls, Chen calls down restoration and well-being to those who share his fanaticism."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Penitence Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage}% Zealot Health/Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_bonus}% Holy Persuasion Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_movement_speed}% Penitence Slow"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_heal_amp}% Divine Favor Heal Amplification"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_health_min} Holy Persuasion Minimum Health"
+    },
+    {
+      "slot": null,
+      "name": "Hand of God applies a Strong Dispel"
+    },
+    {
+      "slot": null,
+      "name": "Hand of God Fully Heals Chen and His Creeps"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

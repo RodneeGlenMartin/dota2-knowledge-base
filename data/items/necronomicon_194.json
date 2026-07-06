@@ -1,0 +1,161 @@
+{
+  "id": 194,
+  "name": "Necronomicon",
+  "slug": "necronomicon_194",
+  "internal_key": "item_necronomicon_3",
+  "cost": 4550,
+  "neutral_tier": null,
+  "description": "<h1>Active: Demonic Summoning</h1>Summons a Warrior and an Archer to fight for you for %summon_duration% seconds.<br><br><h1>Warrior:</h1>Burns mana every hit, and deals magical damage to whoever kills it.  Gains True Sight at level 3.<br>Health: %warrior_health_tooltip%<br>Damage: %warrior_damage_tooltip%<br>Mana Break Damage: %warrior_mana_break_tooltip%<br>Last Will Damage: %explosion%<br><br><h1>Archer:</h1>Has a passive movement and attack speed aura. Gains Purge at Level 3.<br>Health: %archer_health_tooltip%<br>Damage: %archer_damage_tooltip%<br>Aura Move Speed: %archer_move_speed%<br>Aura Radius: %archer_aura_radius_tooltip%",
+  "notes": null,
+  "cooldowns": [
+    80
+  ],
+  "mana_costs": [
+    150
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_strength",
+      "heading": "+$str",
+      "values": [
+        6,
+        12,
+        18
+      ]
+    },
+    {
+      "key": "bonus_mana_regen",
+      "heading": "+$mana_regen",
+      "values": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "key": "summon_duration",
+      "heading": "",
+      "values": [
+        60
+      ]
+    },
+    {
+      "key": "warrior_health_tooltip",
+      "heading": "",
+      "values": [
+        800,
+        1200,
+        1600
+      ]
+    },
+    {
+      "key": "warrior_damage_tooltip",
+      "heading": "",
+      "values": [
+        25,
+        45,
+        65
+      ]
+    },
+    {
+      "key": "warrior_mana_feedback",
+      "heading": "",
+      "values": [
+        30,
+        40,
+        50
+      ]
+    },
+    {
+      "key": "warrior_mana_break_tooltip",
+      "heading": "",
+      "values": [
+        30,
+        40,
+        50
+      ]
+    },
+    {
+      "key": "explosion",
+      "heading": "",
+      "values": [
+        600,
+        700,
+        800
+      ]
+    },
+    {
+      "key": "warrior_truesight",
+      "heading": "",
+      "values": [
+        400,
+        800,
+        1200
+      ]
+    },
+    {
+      "key": "archer_health_tooltip",
+      "heading": "",
+      "values": [
+        800,
+        1200,
+        1600
+      ]
+    },
+    {
+      "key": "archer_damage_tooltip",
+      "heading": "",
+      "values": [
+        37,
+        57,
+        75
+      ]
+    },
+    {
+      "key": "archer_mana_burn",
+      "heading": "",
+      "values": [
+        125,
+        175,
+        225
+      ]
+    },
+    {
+      "key": "archer_aura_radius_tooltip",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    },
+    {
+      "key": "archer_move_speed",
+      "heading": "",
+      "values": [
+        5,
+        7,
+        9
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        150
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        80
+      ]
+    }
+  ],
+  "lore": "Considered the ultimate in necromancy and demonology, a powerful malefic force is locked within its pages.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": 216,
+  "name": "Enchanted Mango",
+  "slug": "enchanted_mango",
+  "internal_key": "item_enchanted_mango",
+  "cost": 65,
+  "neutral_tier": null,
+  "description": "<h1>Use: Eat Mango</h1> Instantly restores %replenish_amount% mana.",
+  "notes": [
+    "Hold Control to use on a nearby allied hero."
+  ],
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    400
+  ],
+  "special_values": [
+    {
+      "key": "hp_regen",
+      "heading": "+$hp_regen",
+      "values": [
+        0.4
+      ]
+    },
+    {
+      "key": "replenish_amount",
+      "heading": "",
+      "values": [
+        100
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        400
+      ]
+    }
+  ],
+  "lore": "The bittersweet flavors of Jidi Isle are irresistible to amphibians.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

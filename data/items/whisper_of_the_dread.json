@@ -1,0 +1,39 @@
+{
+  "id": 1158,
+  "name": "Whisper of the Dread",
+  "slug": "whisper_of_the_dread",
+  "internal_key": "item_whisper_of_the_dread",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Tunnel Vision</h1> Equipped Hero has their daytime vision reduced by %vision_penalty%%% but their Spell damage increased by %bonus_spell_damage%%%.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "vision_penalty",
+      "heading": "",
+      "values": [
+        15
+      ]
+    },
+    {
+      "key": "bonus_spell_damage",
+      "heading": "",
+      "values": [
+        10
+      ]
+    }
+  ],
+  "lore": "The air that passes through this amulet makes a dreadful sound.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

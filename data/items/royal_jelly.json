@@ -1,0 +1,95 @@
+{
+  "id": 305,
+  "name": "Royal Jelly",
+  "slug": "royal_jelly",
+  "internal_key": "item_royal_jelly",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Consume</h1> Consumes all charges and grants a target allied unit a buff that provides +%health_regen% Health Regen and +%mana_regen% Mana Regen per charge for %regen_duration%s. <br><br>If the unit is attacked by an enemy hero or Roshan, the effect is lost.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    300
+  ],
+  "special_values": [
+    {
+      "key": "bonus_health",
+      "heading": "+$health",
+      "values": [
+        50
+      ]
+    },
+    {
+      "key": "bonus_mana",
+      "heading": "+$mana",
+      "values": [
+        50
+      ]
+    },
+    {
+      "key": "max_charges",
+      "heading": "",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "use_cooldown",
+      "heading": "",
+      "values": [
+        12
+      ]
+    },
+    {
+      "key": "health_regen",
+      "heading": "",
+      "values": [
+        2.5
+      ]
+    },
+    {
+      "key": "mana_regen",
+      "heading": "",
+      "values": [
+        1.25
+      ]
+    },
+    {
+      "key": "regen_duration",
+      "heading": "",
+      "values": [
+        8
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        300
+      ]
+    },
+    {
+      "key": "AbilityCharges",
+      "heading": "",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "AbilityChargeRestoreTime",
+      "heading": "",
+      "values": [
+        8
+      ]
+    }
+  ],
+  "lore": "To those who harvest olgru jelly, success serves more than mere profit--it's often the means to survival--for only the jelly itself can cure the ravages that follow a sting from the vigilant denizens of the giant hives.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

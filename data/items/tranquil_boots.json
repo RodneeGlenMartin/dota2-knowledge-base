@@ -1,0 +1,95 @@
+{
+  "id": 214,
+  "name": "Tranquil Boots",
+  "slug": "tranquil_boots",
+  "internal_key": "item_tranquil_boots",
+  "cost": 900,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Break</h1> Whenever you attack a hero or are attacked by any unit, the bonus %bonus_health_regen% HP regen is lost and the movement speed bonus is reduced to %broken_movement_speed% for %break_time% seconds.\nMovement speed bonuses from multiple pairs of boots do not stack.",
+  "notes": null,
+  "cooldowns": [
+    13
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_movement_speed",
+      "heading": "+$move_speed",
+      "values": [
+        65
+      ]
+    },
+    {
+      "key": "bonus_health_regen",
+      "heading": "+$hp_regen",
+      "values": [
+        14
+      ]
+    },
+    {
+      "key": "heal_duration",
+      "heading": "",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "heal_amount",
+      "heading": "",
+      "values": [
+        250
+      ]
+    },
+    {
+      "key": "heal_interval",
+      "heading": "",
+      "values": [
+        0.334
+      ]
+    },
+    {
+      "key": "break_time",
+      "heading": "",
+      "values": [
+        13
+      ]
+    },
+    {
+      "key": "break_count",
+      "heading": "",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "break_threshold",
+      "heading": "",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "broken_movement_speed",
+      "heading": "",
+      "values": [
+        40
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        13
+      ]
+    }
+  ],
+  "lore": "While they increase the longevity of the wearer, this boot is not particularly reliable.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

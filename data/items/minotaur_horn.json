@@ -1,0 +1,53 @@
+{
+  "id": 377,
+  "name": "Minotaur Horn",
+  "slug": "minotaur_horn",
+  "internal_key": "item_minotaur_horn",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Lesser Avatar</h1>Applies a basic dispel. Grants %magic_resist%%% magic resistance and immunity to reflected and pure damage for %duration%s. For the duration of the effect, any negative effect from enemy spells has no effect.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>",
+  "notes": null,
+  "cooldowns": [
+    40
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        2
+      ]
+    },
+    {
+      "key": "magic_resist",
+      "heading": "",
+      "values": [
+        60
+      ]
+    },
+    {
+      "key": "model_scale",
+      "heading": "",
+      "values": [
+        40
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        40
+      ]
+    }
+  ],
+  "lore": "The trophy from a mighty beast ambushed and slain in the recesses of its own home.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

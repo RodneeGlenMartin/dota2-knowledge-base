@@ -1,0 +1,69 @@
+{
+  "id": 1640,
+  "name": "Jidi Pollen Bag",
+  "slug": "jidi_pollen_bag",
+  "internal_key": "item_jidi_pollen_bag",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Pollinate</h1>Spreads pollen on all enemy units in a %debuff_radius% unit radius for %debuff_duration% seconds, decreasing their health restoration by %health_regen_loss%%% and dealing damage per second, the total equal to %hp_damage%%% of their maximum health.",
+  "notes": [
+    "Damage is non-lethal and classified as HP Loss."
+  ],
+  "cooldowns": [
+    25
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "health_regen_loss",
+      "heading": "",
+      "values": [
+        50
+      ]
+    },
+    {
+      "key": "hp_damage",
+      "heading": "",
+      "values": [
+        9
+      ]
+    },
+    {
+      "key": "debuff_radius",
+      "heading": "",
+      "values": [
+        900
+      ]
+    },
+    {
+      "key": "debuff_duration",
+      "heading": "",
+      "values": [
+        9
+      ]
+    },
+    {
+      "key": "damage_interval",
+      "heading": "",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        25
+      ]
+    }
+  ],
+  "lore": "Very dangerous. Very difficult to obtain more.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

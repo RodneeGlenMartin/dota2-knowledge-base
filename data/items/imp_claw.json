@@ -1,0 +1,39 @@
+{
+  "id": 334,
+  "name": "Imp Claw",
+  "slug": "imp_claw",
+  "internal_key": "item_imp_claw",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Critical Strike</h1> Empowers your next attack, causing it to be a critical strike dealing %crit_multiplier%%% damage.",
+  "notes": null,
+  "cooldowns": [
+    5
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "crit_multiplier",
+      "heading": "",
+      "values": [
+        130
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        5
+      ]
+    }
+  ],
+  "lore": "Though their tasks are largely thankless, demon hunters can often turn a profit bartering parts in Weeping Rose.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

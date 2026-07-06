@@ -1,0 +1,1636 @@
+[
+  {
+    "id": 102,
+    "name": "Abaddon",
+    "slug": "abaddon",
+    "primary_attribute": "universal",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Support",
+      "Durable"
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Alchemist",
+    "slug": "alchemist",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Support",
+      "Nuker",
+      "Disabler",
+      "Durable",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Ancient Apparition",
+    "slug": "ancient_apparition",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Support",
+      "Nuker",
+      "Disabler"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Anti-Mage",
+    "slug": "anti_mage",
+    "primary_attribute": "agi",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Escape"
+    ]
+  },
+  {
+    "id": 113,
+    "name": "Arc Warden",
+    "slug": "arc_warden",
+    "primary_attribute": "universal",
+    "attack_type": "Ranged",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Escape"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Axe",
+    "slug": "axe",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Disabler",
+      "Durable",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Bane",
+    "slug": "bane",
+    "primary_attribute": "universal",
+    "attack_type": "Ranged",
+    "roles": [
+      "Support",
+      "Nuker",
+      "Disabler",
+      "Durable"
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Batrider",
+    "slug": "batrider",
+    "primary_attribute": "universal",
+    "attack_type": "Ranged",
+    "roles": [
+      "Disabler",
+      "Escape",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Beastmaster",
+    "slug": "beastmaster",
+    "primary_attribute": "universal",
+    "attack_type": "Melee",
+    "roles": [
+      "Nuker",
+      "Disabler",
+      "Durable",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Bloodseeker",
+    "slug": "bloodseeker",
+    "primary_attribute": "agi",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Disabler",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 62,
+    "name": "Bounty Hunter",
+    "slug": "bounty_hunter",
+    "primary_attribute": "agi",
+    "attack_type": "Melee",
+    "roles": [
+      "Nuker",
+      "Escape"
+    ]
+  },
+  {
+    "id": 78,
+    "name": "Brewmaster",
+    "slug": "brewmaster",
+    "primary_attribute": "universal",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Disabler",
+      "Durable",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 99,
+    "name": "Bristleback",
+    "slug": "bristleback",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Durable",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Broodmother",
+    "slug": "broodmother",
+    "primary_attribute": "agi",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Escape",
+      "Pusher"
+    ]
+  },
+  {
+    "id": 96,
+    "name": "Centaur Warrunner",
+    "slug": "centaur_warrunner",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Nuker",
+      "Disabler",
+      "Durable",
+      "Escape",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 81,
+    "name": "Chaos Knight",
+    "slug": "chaos_knight",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Disabler",
+      "Durable",
+      "Pusher",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Chen",
+    "slug": "chen",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Support",
+      "Pusher"
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Clinkz",
+    "slug": "clinkz",
+    "primary_attribute": "agi",
+    "attack_type": "Ranged",
+    "roles": [
+      "Carry",
+      "Escape",
+      "Pusher"
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Clockwerk",
+    "slug": "clockwerk",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Nuker",
+      "Disabler",
+      "Durable",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Crystal Maiden",
+    "slug": "crystal_maiden",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Support",
+      "Nuker",
+      "Disabler"
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Dark Seer",
+    "slug": "dark_seer",
+    "primary_attribute": "int",
+    "attack_type": "Melee",
+    "roles": [
+      "Disabler",
+      "Escape",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 119,
+    "name": "Dark Willow",
+    "slug": "dark_willow",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Support",
+      "Nuker",
+      "Disabler",
+      "Escape"
+    ]
+  },
+  {
+    "id": 135,
+    "name": "Dawnbreaker",
+    "slug": "dawnbreaker",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Durable"
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Dazzle",
+    "slug": "dazzle",
+    "primary_attribute": "universal",
+    "attack_type": "Ranged",
+    "roles": [
+      "Support",
+      "Nuker",
+      "Disabler"
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Death Prophet",
+    "slug": "death_prophet",
+    "primary_attribute": "universal",
+    "attack_type": "Ranged",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Disabler",
+      "Pusher"
+    ]
+  },
+  {
+    "id": 87,
+    "name": "Disruptor",
+    "slug": "disruptor",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Support",
+      "Nuker",
+      "Disabler",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Doom",
+    "slug": "doom",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Disabler",
+      "Durable",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Dragon Knight",
+    "slug": "dragon_knight",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Disabler",
+      "Durable",
+      "Pusher",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Drow Ranger",
+    "slug": "drow_ranger",
+    "primary_attribute": "agi",
+    "attack_type": "Ranged",
+    "roles": [
+      "Carry",
+      "Disabler",
+      "Pusher"
+    ]
+  },
+  {
+    "id": 107,
+    "name": "Earth Spirit",
+    "slug": "earth_spirit",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Nuker",
+      "Disabler",
+      "Durable",
+      "Escape",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Earthshaker",
+    "slug": "earthshaker",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Support",
+      "Nuker",
+      "Disabler",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 103,
+    "name": "Elder Titan",
+    "slug": "elder_titan",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Nuker",
+      "Disabler",
+      "Durable",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 106,
+    "name": "Ember Spirit",
+    "slug": "ember_spirit",
+    "primary_attribute": "agi",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Disabler",
+      "Escape",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Enchantress",
+    "slug": "enchantress",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Support",
+      "Disabler",
+      "Durable",
+      "Pusher"
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Enigma",
+    "slug": "enigma",
+    "primary_attribute": "universal",
+    "attack_type": "Ranged",
+    "roles": [
+      "Disabler",
+      "Pusher",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Faceless Void",
+    "slug": "faceless_void",
+    "primary_attribute": "agi",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Disabler",
+      "Durable",
+      "Escape",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 121,
+    "name": "Grimstroke",
+    "slug": "grimstroke",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Support",
+      "Nuker",
+      "Disabler",
+      "Escape"
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Gyrocopter",
+    "slug": "gyrocopter",
+    "primary_attribute": "agi",
+    "attack_type": "Ranged",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Disabler"
+    ]
+  },
+  {
+    "id": 123,
+    "name": "Hoodwink",
+    "slug": "hoodwink",
+    "primary_attribute": "agi",
+    "attack_type": "Ranged",
+    "roles": [
+      "Support",
+      "Nuker",
+      "Disabler",
+      "Escape"
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Huskar",
+    "slug": "huskar",
+    "primary_attribute": "str",
+    "attack_type": "Ranged",
+    "roles": [
+      "Carry",
+      "Durable",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 74,
+    "name": "Invoker",
+    "slug": "invoker",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Disabler",
+      "Escape",
+      "Pusher"
+    ]
+  },
+  {
+    "id": 91,
+    "name": "Io",
+    "slug": "io",
+    "primary_attribute": "universal",
+    "attack_type": "Ranged",
+    "roles": [
+      "Support",
+      "Nuker",
+      "Escape"
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Jakiro",
+    "slug": "jakiro",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Support",
+      "Nuker",
+      "Disabler",
+      "Pusher"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Juggernaut",
+    "slug": "juggernaut",
+    "primary_attribute": "agi",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Escape",
+      "Pusher"
+    ]
+  },
+  {
+    "id": 90,
+    "name": "Keeper of the Light",
+    "slug": "keeper_of_the_light",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Support",
+      "Nuker",
+      "Disabler"
+    ]
+  },
+  {
+    "id": 145,
+    "name": "Kez",
+    "slug": "kez",
+    "primary_attribute": "agi",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Disabler",
+      "Escape"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Kunkka",
+    "slug": "kunkka",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Support",
+      "Nuker",
+      "Disabler",
+      "Durable",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 155,
+    "name": "Largo",
+    "slug": "largo",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Support",
+      "Disabler",
+      "Durable"
+    ]
+  },
+  {
+    "id": 104,
+    "name": "Legion Commander",
+    "slug": "legion_commander",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Disabler",
+      "Durable",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Leshrac",
+    "slug": "leshrac",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Carry",
+      "Support",
+      "Nuker",
+      "Disabler",
+      "Pusher"
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Lich",
+    "slug": "lich",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Support",
+      "Nuker"
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Lifestealer",
+    "slug": "lifestealer",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Disabler",
+      "Durable",
+      "Escape"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Lina",
+    "slug": "lina",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Carry",
+      "Support",
+      "Nuker",
+      "Disabler"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Lion",
+    "slug": "lion",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Support",
+      "Nuker",
+      "Disabler",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 80,
+    "name": "Lone Druid",
+    "slug": "lone_druid",
+    "primary_attribute": "agi",
+    "attack_type": "Ranged",
+    "roles": [
+      "Carry",
+      "Durable",
+      "Pusher"
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Luna",
+    "slug": "luna",
+    "primary_attribute": "agi",
+    "attack_type": "Ranged",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Pusher"
+    ]
+  },
+  {
+    "id": 77,
+    "name": "Lycan",
+    "slug": "lycan",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Durable",
+      "Escape",
+      "Pusher"
+    ]
+  },
+  {
+    "id": 97,
+    "name": "Magnus",
+    "slug": "magnus",
+    "primary_attribute": "universal",
+    "attack_type": "Melee",
+    "roles": [
+      "Nuker",
+      "Disabler",
+      "Escape",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 136,
+    "name": "Marci",
+    "slug": "marci",
+    "primary_attribute": "universal",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Support",
+      "Disabler",
+      "Escape",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 129,
+    "name": "Mars",
+    "slug": "mars",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Disabler",
+      "Durable",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 94,
+    "name": "Medusa",
+    "slug": "medusa",
+    "primary_attribute": "agi",
+    "attack_type": "Ranged",
+    "roles": [
+      "Carry",
+      "Disabler",
+      "Durable"
+    ]
+  },
+  {
+    "id": 82,
+    "name": "Meepo",
+    "slug": "meepo",
+    "primary_attribute": "agi",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Disabler",
+      "Escape",
+      "Pusher",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Mirana",
+    "slug": "mirana",
+    "primary_attribute": "agi",
+    "attack_type": "Ranged",
+    "roles": [
+      "Carry",
+      "Support",
+      "Nuker",
+      "Disabler",
+      "Escape"
+    ]
+  },
+  {
+    "id": 114,
+    "name": "Monkey King",
+    "slug": "monkey_king",
+    "primary_attribute": "agi",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Disabler",
+      "Escape",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Morphling",
+    "slug": "morphling",
+    "primary_attribute": "agi",
+    "attack_type": "Ranged",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Disabler",
+      "Durable",
+      "Escape"
+    ]
+  },
+  {
+    "id": 138,
+    "name": "Muerta",
+    "slug": "muerta",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Disabler"
+    ]
+  },
+  {
+    "id": 89,
+    "name": "Naga Siren",
+    "slug": "naga_siren",
+    "primary_attribute": "agi",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Support",
+      "Disabler",
+      "Escape",
+      "Pusher",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Nature's Prophet",
+    "slug": "nature_s_prophet",
+    "primary_attribute": "universal",
+    "attack_type": "Ranged",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Escape",
+      "Pusher"
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Necrophos",
+    "slug": "necrophos",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Disabler",
+      "Durable"
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Night Stalker",
+    "slug": "night_stalker",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Disabler",
+      "Durable",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 88,
+    "name": "Nyx Assassin",
+    "slug": "nyx_assassin",
+    "primary_attribute": "universal",
+    "attack_type": "Melee",
+    "roles": [
+      "Nuker",
+      "Disabler",
+      "Escape",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 84,
+    "name": "Ogre Magi",
+    "slug": "ogre_magi",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Support",
+      "Nuker",
+      "Disabler",
+      "Durable",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Omniknight",
+    "slug": "omniknight",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Support",
+      "Nuker",
+      "Durable"
+    ]
+  },
+  {
+    "id": 111,
+    "name": "Oracle",
+    "slug": "oracle",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Support",
+      "Nuker",
+      "Disabler",
+      "Escape"
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Outworld Destroyer",
+    "slug": "outworld_destroyer",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Disabler"
+    ]
+  },
+  {
+    "id": 120,
+    "name": "Pangolier",
+    "slug": "pangolier",
+    "primary_attribute": "universal",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Disabler",
+      "Durable",
+      "Escape",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Phantom Assassin",
+    "slug": "phantom_assassin",
+    "primary_attribute": "agi",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Escape"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Phantom Lancer",
+    "slug": "phantom_lancer",
+    "primary_attribute": "agi",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Escape",
+      "Pusher"
+    ]
+  },
+  {
+    "id": 110,
+    "name": "Phoenix",
+    "slug": "phoenix",
+    "primary_attribute": "str",
+    "attack_type": "Ranged",
+    "roles": [
+      "Support",
+      "Nuker",
+      "Disabler",
+      "Escape",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 137,
+    "name": "Primal Beast",
+    "slug": "primal_beast",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Disabler",
+      "Durable",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Puck",
+    "slug": "puck",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Nuker",
+      "Disabler",
+      "Escape",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Pudge",
+    "slug": "pudge",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Nuker",
+      "Disabler",
+      "Durable",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Pugna",
+    "slug": "pugna",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Nuker",
+      "Pusher"
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Queen of Pain",
+    "slug": "queen_of_pain",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Escape"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Razor",
+    "slug": "razor",
+    "primary_attribute": "agi",
+    "attack_type": "Ranged",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Durable",
+      "Pusher"
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Riki",
+    "slug": "riki",
+    "primary_attribute": "agi",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Disabler",
+      "Escape"
+    ]
+  },
+  {
+    "id": 131,
+    "name": "Ringmaster",
+    "slug": "ringmaster",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Support",
+      "Nuker",
+      "Disabler",
+      "Escape"
+    ]
+  },
+  {
+    "id": 86,
+    "name": "Rubick",
+    "slug": "rubick",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Support",
+      "Nuker",
+      "Disabler"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Sand King",
+    "slug": "sand_king",
+    "primary_attribute": "universal",
+    "attack_type": "Melee",
+    "roles": [
+      "Support",
+      "Nuker",
+      "Disabler",
+      "Escape",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 79,
+    "name": "Shadow Demon",
+    "slug": "shadow_demon",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Support",
+      "Nuker",
+      "Disabler",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Shadow Fiend",
+    "slug": "shadow_fiend",
+    "primary_attribute": "agi",
+    "attack_type": "Ranged",
+    "roles": [
+      "Carry",
+      "Nuker"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Shadow Shaman",
+    "slug": "shadow_shaman",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Support",
+      "Nuker",
+      "Disabler",
+      "Pusher",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 75,
+    "name": "Silencer",
+    "slug": "silencer",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Carry",
+      "Support",
+      "Nuker",
+      "Disabler",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 101,
+    "name": "Skywrath Mage",
+    "slug": "skywrath_mage",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Support",
+      "Nuker",
+      "Disabler"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Slardar",
+    "slug": "slardar",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Disabler",
+      "Durable",
+      "Escape",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 93,
+    "name": "Slark",
+    "slug": "slark",
+    "primary_attribute": "agi",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Disabler",
+      "Escape"
+    ]
+  },
+  {
+    "id": 128,
+    "name": "Snapfire",
+    "slug": "snapfire",
+    "primary_attribute": "universal",
+    "attack_type": "Ranged",
+    "roles": [
+      "Support",
+      "Nuker",
+      "Disabler",
+      "Escape"
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Sniper",
+    "slug": "sniper",
+    "primary_attribute": "agi",
+    "attack_type": "Ranged",
+    "roles": [
+      "Carry",
+      "Nuker"
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Spectre",
+    "slug": "spectre",
+    "primary_attribute": "agi",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Durable",
+      "Escape"
+    ]
+  },
+  {
+    "id": 71,
+    "name": "Spirit Breaker",
+    "slug": "spirit_breaker",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Disabler",
+      "Durable",
+      "Escape",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Storm Spirit",
+    "slug": "storm_spirit",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Disabler",
+      "Escape",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Sven",
+    "slug": "sven",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Disabler",
+      "Durable",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 105,
+    "name": "Techies",
+    "slug": "techies",
+    "primary_attribute": "universal",
+    "attack_type": "Ranged",
+    "roles": [
+      "Nuker",
+      "Disabler"
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Templar Assassin",
+    "slug": "templar_assassin",
+    "primary_attribute": "agi",
+    "attack_type": "Ranged",
+    "roles": [
+      "Carry",
+      "Escape"
+    ]
+  },
+  {
+    "id": 109,
+    "name": "Terrorblade",
+    "slug": "terrorblade",
+    "primary_attribute": "agi",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Pusher"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Tidehunter",
+    "slug": "tidehunter",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Disabler",
+      "Durable",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 98,
+    "name": "Timbersaw",
+    "slug": "timbersaw",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Nuker",
+      "Durable",
+      "Escape"
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Tinker",
+    "slug": "tinker",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Pusher"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Tiny",
+    "slug": "tiny",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Disabler",
+      "Durable",
+      "Pusher",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 83,
+    "name": "Treant Protector",
+    "slug": "treant_protector",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Support",
+      "Disabler",
+      "Durable",
+      "Escape",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 95,
+    "name": "Troll Warlord",
+    "slug": "troll_warlord",
+    "primary_attribute": "agi",
+    "attack_type": "Ranged",
+    "roles": [
+      "Carry",
+      "Disabler",
+      "Durable",
+      "Pusher"
+    ]
+  },
+  {
+    "id": 100,
+    "name": "Tusk",
+    "slug": "tusk",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Nuker",
+      "Disabler",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 108,
+    "name": "Underlord",
+    "slug": "underlord",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Support",
+      "Nuker",
+      "Disabler",
+      "Durable",
+      "Escape"
+    ]
+  },
+  {
+    "id": 85,
+    "name": "Undying",
+    "slug": "undying",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Support",
+      "Nuker",
+      "Disabler",
+      "Durable"
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Ursa",
+    "slug": "ursa",
+    "primary_attribute": "agi",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Disabler",
+      "Durable"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Vengeful Spirit",
+    "slug": "vengeful_spirit",
+    "primary_attribute": "agi",
+    "attack_type": "Ranged",
+    "roles": [
+      "Support",
+      "Nuker",
+      "Disabler",
+      "Escape",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Venomancer",
+    "slug": "venomancer",
+    "primary_attribute": "universal",
+    "attack_type": "Ranged",
+    "roles": [
+      "Support",
+      "Nuker",
+      "Disabler",
+      "Pusher",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Viper",
+    "slug": "viper",
+    "primary_attribute": "agi",
+    "attack_type": "Ranged",
+    "roles": [
+      "Carry",
+      "Disabler",
+      "Durable",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 92,
+    "name": "Visage",
+    "slug": "visage",
+    "primary_attribute": "universal",
+    "attack_type": "Ranged",
+    "roles": [
+      "Support",
+      "Nuker",
+      "Disabler",
+      "Durable",
+      "Pusher"
+    ]
+  },
+  {
+    "id": 126,
+    "name": "Void Spirit",
+    "slug": "void_spirit",
+    "primary_attribute": "universal",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Nuker",
+      "Disabler",
+      "Escape"
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Warlock",
+    "slug": "warlock",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Support",
+      "Disabler",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 63,
+    "name": "Weaver",
+    "slug": "weaver",
+    "primary_attribute": "agi",
+    "attack_type": "Ranged",
+    "roles": [
+      "Carry",
+      "Escape"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Windranger",
+    "slug": "windranger",
+    "primary_attribute": "universal",
+    "attack_type": "Ranged",
+    "roles": [
+      "Carry",
+      "Support",
+      "Nuker",
+      "Disabler",
+      "Escape"
+    ]
+  },
+  {
+    "id": 112,
+    "name": "Winter Wyvern",
+    "slug": "winter_wyvern",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Support",
+      "Nuker",
+      "Disabler"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Witch Doctor",
+    "slug": "witch_doctor",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Support",
+      "Nuker",
+      "Disabler"
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Wraith King",
+    "slug": "wraith_king",
+    "primary_attribute": "str",
+    "attack_type": "Melee",
+    "roles": [
+      "Carry",
+      "Support",
+      "Disabler",
+      "Durable",
+      "Initiator"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Zeus",
+    "slug": "zeus",
+    "primary_attribute": "int",
+    "attack_type": "Ranged",
+    "roles": [
+      "Carry",
+      "Nuker"
+    ]
+  }
+]

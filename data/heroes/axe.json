@@ -1,0 +1,599 @@
+{
+  "id": 2,
+  "name": "Axe",
+  "slug": "axe",
+  "npc_name": "npc_dota_hero_axe",
+  "primary_attribute": "str",
+  "attack_type": "Melee",
+  "complexity": 1,
+  "roles": [
+    "Carry",
+    "Disabler",
+    "Durable",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 25,
+    "str_gain": 2.7,
+    "base_agi": 20,
+    "agi_gain": 1.7,
+    "base_int": 18,
+    "int_gain": 1.6,
+    "damage_min": 56,
+    "damage_max": 60,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 3.3333335,
+    "magic_resistance": 25,
+    "movement_speed": 315,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 670,
+    "health_regen": 4.5,
+    "max_mana": 291,
+    "mana_regen": 0.90000004
+  },
+  "lore": "As a grunt in the Army of Red Mist, Mogul Khan set his sights on the rank of Red Mist General. In battle after battle he proved his worth through gory deed. His rise through the ranks was helped by the fact that he never hesitated to decapitate a superior. Through the seven year Campaign of the Thousand Tarns, he distinguished himself in glorious carnage, his star of fame shining ever brighter, while the number of comrades in arms steadily dwindled. On the night of ultimate victory, Axe declared himself the new Red Mist General, and took on the ultimate title of 'Axe.' But his troops now numbered zero. Of course, many had died in battle, but a significant number had also fallen to Axe's blade. Needless to say, most soldiers now shun his leadership. But this matters not a whit to Axe, who knows that a one-man army is by far the best.",
+  "hype": "One after another, Axe cuts down his foes. Marching ahead of his team, he <b>locks his enemies in battle</b> then counters their blows with a <b>deadly spin</b> of his weapon. Slamming his <b>culling blade</b> through a weakened enemy, he is always charging onward.",
+  "abilities": [
+    {
+      "key": "axe_berserkers_call",
+      "name": "Berserker's Call",
+      "description": "Axe taunts nearby enemy units, forcing them to attack him while he gains bonus armor during the duration.",
+      "max_level": 4,
+      "cooldowns": [
+        18,
+        16,
+        14,
+        12
+      ],
+      "mana_costs": [
+        90,
+        100,
+        110,
+        120
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            315
+          ]
+        },
+        {
+          "key": "bonus_armor",
+          "heading": "BONUS ARMOR:",
+          "values": [
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            2.1,
+            2.4,
+            2.7,
+            3
+          ]
+        },
+        {
+          "key": "applies_battle_hunger",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            90,
+            100,
+            110,
+            120
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            18,
+            16,
+            14,
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Berserker's Call applies Battle Hunger to affected units.",
+      "notes": null,
+      "lore": "Mogul Khan's warcry taunts opponents into engaging in an unconquerable battle with the Axe."
+    },
+    {
+      "key": "axe_battle_hunger",
+      "name": "Battle Hunger",
+      "description": "Enrages an enemy unit, causing it to take damage over time until it kills another unit or the duration ends. The enemy is slowed as long as they are facing away from Axe.",
+      "max_level": 4,
+      "cooldowns": [
+        20,
+        15,
+        10,
+        5
+      ],
+      "mana_costs": [
+        50,
+        60,
+        70,
+        80
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        600,
+        700,
+        800,
+        900
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            12
+          ]
+        },
+        {
+          "key": "slow",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            18,
+            22,
+            26,
+            30
+          ]
+        },
+        {
+          "key": "damage_per_second",
+          "heading": "DAMAGE PER SECOND:",
+          "values": [
+            12,
+            18,
+            24,
+            30
+          ]
+        },
+        {
+          "key": "speed_bonus",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "should_stack",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            600,
+            700,
+            800,
+            900
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            50,
+            60,
+            70,
+            80
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            20,
+            15,
+            10,
+            5
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Multiple instances of Battle Hunger can stack on a single target.",
+      "notes": [
+        "Destroying buildings will also remove the debuff."
+      ],
+      "lore": "Ordinary heroes cannot withstand Mogul Khan's rage for battle, such that it injures them until it is satisfied."
+    },
+    {
+      "key": "axe_counter_helix",
+      "name": "Counter Helix",
+      "description": "After a set number of attacks, Axe will perform a helix counter attack, dealing pure damage to all nearby enemies.",
+      "max_level": 4,
+      "cooldowns": [
+        0.3
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            100,
+            120,
+            140,
+            160
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            275
+          ]
+        },
+        {
+          "key": "trigger_attacks",
+          "heading": "ATTACKS TO HELIX:",
+          "values": [
+            7,
+            6,
+            5,
+            4
+          ]
+        },
+        {
+          "key": "debuff_duration",
+          "heading": "DEBUFF DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "damage_reduction",
+          "heading": "ATTACK DAMAGE REDUCTION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "max_stacks",
+          "heading": "MAX STACKS:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "attacks_increase_counter",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "helix_lifesteal",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        }
+      ],
+      "scepter_upgrade": "Counter Helix now applies a stacking debuff to enemies hit by it that causes them to deal less total attack damage to Axe. Counter Helix no longer has a cooldown and its counter advances when Axe attacks.",
+      "shard_upgrade": null,
+      "notes": [
+        "Counter Helix triggers when the attack hits.",
+        "Illusions' counters don't increase when they attack when you have a Scepter."
+      ],
+      "lore": "Axe is the only reinforcement this army needs."
+    },
+    {
+      "key": "axe_culling_blade",
+      "name": "Culling Blade",
+      "description": "Axe spots a weakness and strikes, dealing pure damage. When an enemy hero is killed with Culling Blade, its cooldown is reset, and all nearby allied units gain bonus movement speed and armor.\n\nAxe permanently drenches his blade every time he kills an enemy Hero with Culling Blade, gaining bonus armor for each stack.",
+      "max_level": 3,
+      "cooldowns": [
+        80,
+        75,
+        70
+      ],
+      "mana_costs": [
+        100,
+        125,
+        150
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        175
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            275,
+            375,
+            475
+          ]
+        },
+        {
+          "key": "speed_bonus",
+          "heading": "KILL MOVE SPEED BONUS:",
+          "values": [
+            20,
+            25,
+            30
+          ]
+        },
+        {
+          "key": "armor_bonus",
+          "heading": "KILL ARMOR BONUS:",
+          "values": [
+            10,
+            15,
+            20
+          ]
+        },
+        {
+          "key": "speed_duration",
+          "heading": "KILL BUFF DURATION:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "speed_aoe",
+          "heading": "KILL BUFF RADIUS:",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "charge_speed",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "armor_per_stack",
+          "heading": "ARMOR PER STACK:",
+          "values": [
+            1,
+            1.5,
+            2
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            175
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            125,
+            150
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            80,
+            75,
+            70
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Culling Blade death cannot be prevented with other abilities like Shallow Grave."
+      ],
+      "lore": "Mogul Khan is the embodiment of battle and fury, launching into a gruesome fatality against those who dare engage the Axe in combat."
+    },
+    {
+      "key": "axe_one_man_army",
+      "name": "One Man Army",
+      "description": "Axe gains Strength based on %armor_pct_as_strength%%% of his Armor as long as there are no allied heroes within %radius% distance from Axe.  The effect fades over %bonus_linger_duration%s after approaching an ally.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "armor_pct_as_strength",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "current_max_str_bonus",
+          "heading": "MAX BONUS STRENGTH:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "bonus_linger_duration",
+          "heading": "",
+          "values": [
+            3
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_speed_duration}s Culling Blade Kill Buff Bonus Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_speed_bonus}% Movement Speed per active Battle Hunger"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_per_second} Battle Hunger Damage Per Second"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_armor} Berserker's Call Armor"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Strength"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Counter Helix Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_radius} Berserker's Call AoE"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Culling Blade Damage"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

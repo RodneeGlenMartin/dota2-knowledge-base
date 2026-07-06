@@ -1,0 +1,701 @@
+{
+  "id": 12,
+  "name": "Phantom Lancer",
+  "slug": "phantom_lancer",
+  "npc_name": "npc_dota_hero_phantom_lancer",
+  "primary_attribute": "agi",
+  "attack_type": "Melee",
+  "complexity": 2,
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Escape",
+    "Pusher"
+  ],
+  "stats": {
+    "base_str": 21,
+    "str_gain": 2.2,
+    "base_agi": 26,
+    "agi_gain": 3.4,
+    "base_int": 21,
+    "int_gain": 1.8,
+    "damage_min": 52,
+    "damage_max": 62,
+    "attack_rate": 1.7,
+    "attack_range": 225,
+    "projectile_speed": 900,
+    "armor": 4.3333335,
+    "magic_resistance": 25,
+    "movement_speed": 285,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 582,
+    "health_regen": 4.1000004,
+    "max_mana": 327,
+    "mana_regen": 1.0500001
+  },
+  "lore": "The remote village of Pole had no knowledge of the wars raging in the heart of the kingdom. For them, the quiet of spear fishing, and a family meal were all that a full life required. Yet war came for them nonetheless. Joining the able-bodied conscripts as they filed passed their homes, the humble lancer Azwraith vowed to bring peace to his kingdom, and in so doing, his people. Placed with his kin in the vanguard of the final assault against the Dread Magus Vorn, the cost to his fellows was absolute. As the charging force battled toward the fortress, Azwraith alone among his kind remained standing, and he alone was able to infiltrate the keep.\r\n\t\t\t\t<br><br>Focused and infuriated by the slaughter of his brothers, Azwraith bested each of the wizard's deadly traps and conjured guardians. Soon the simple fisherman arrived at Vorn's tower sanctum. The pair dueled through the night, pike to staff, as chaos raged below, and with a deafening cry Azwraith pierced his enemy. But the wizard did not simply expire; he exploded into uncountable shards of light, penetrating his killer with power. As the dust settled and the smoke of combat began to clear, Azwraith found himself standing among a throng of his kin. Each seemed to be dressed as he was, each seemed armed as he was, and he could sense that each thought as he did. Aware that his allies were approaching, he willed these phantoms to hide themselves, and one by one they began to vanish into nothingness. As the soldiers came upon the sanctum, they found the warrior that had bested the wizard. When they approached their champion, the lancer vanished. The pikeman who had stood before them was no more than another phantom.",
+  "hype": "Phantom Lancer storms enemy forces with an <b>endless supply of clones</b>. Leading his illusory army, he can cut foes apart in a breathtaking <b>flurry of attacks</b>, send clones to push into enemy territory, or use his doppelgangers to <b>mislead and elude foes</b> if cornered.",
+  "abilities": [
+    {
+      "key": "phantom_lancer_spirit_lance",
+      "name": "Spirit Lance",
+      "description": "Sends a magical spirit lance to a target enemy unit that damages and slows, while summoning an illusory phantom to attack the unit.",
+      "max_level": 4,
+      "cooldowns": [
+        10,
+        9,
+        8,
+        7
+      ],
+      "mana_costs": [
+        120
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        600,
+        650,
+        700,
+        750
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "lance_damage",
+          "heading": "LANCE DAMAGE:",
+          "values": [
+            100,
+            160,
+            220,
+            280
+          ]
+        },
+        {
+          "key": "lance_speed",
+          "heading": "",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "movement_speed_pct",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            -14,
+            -21,
+            -28,
+            -35
+          ]
+        },
+        {
+          "key": "illusion_duration",
+          "heading": "ILLUSION DURATION:",
+          "values": [
+            3.5,
+            5,
+            6.5,
+            8
+          ]
+        },
+        {
+          "key": "illusion_damage_out_pct",
+          "heading": "",
+          "values": [
+            -85
+          ]
+        },
+        {
+          "key": "tooltip_illusion_damage",
+          "heading": "ILLUSION DAMAGE:",
+          "values": [
+            15
+          ]
+        },
+        {
+          "key": "illusion_damage_in_pct",
+          "heading": "",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "tooltip_illusion_total_damage_in_pct",
+          "heading": "ILLUSION DAMAGE TAKEN:",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "fake_lance_distance",
+          "heading": "",
+          "values": [
+            675
+          ]
+        },
+        {
+          "key": "scepter_bounce_radius",
+          "heading": "BOUNCE RADIUS:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "scepter_bonus_illusion_damage",
+          "heading": "BONUS ILLUSION DAMAGE:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "scepter_total_hits",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "illusion_lance_damage_pct",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            600,
+            650,
+            700,
+            750
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            120
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            10,
+            9,
+            8,
+            7
+          ]
+        }
+      ],
+      "scepter_upgrade": "Spirit Lance bounces once on enemies, prioritizing Heroes. Increases Spirit Lance illusion damage.",
+      "shard_upgrade": null,
+      "notes": [
+        "Illusions within %fake_lance_distance% range of Phantom Lancer will mimic the cast animation."
+      ],
+      "lore": "Azwraith's proficiency at spearing his family's meal of fish is proving quite useful in the battlefield."
+    },
+    {
+      "key": "phantom_lancer_doppelwalk",
+      "name": "Doppelganger",
+      "description": "Phantom Lancer briefly vanishes from the battlefield. After %delay% second, Phantom Lancer and any of his nearby illusions reappear at a random position within the targeted location, along with two additional doppelgangers. Extends duration of all illusions. The two added doppelgangers have different properties: one takes normal damage and deals none, while the other takes %illusion_2_damage_in_pct%%% bonus damage and deals %illusion_2_damage_out_pct%%% less damage.\n\nDISPEL TYPE: Basic Dispel",
+      "max_level": 4,
+      "cooldowns": [
+        22,
+        18,
+        14,
+        10
+      ],
+      "mana_costs": [
+        70
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        575
+      ],
+      "cast_points": [
+        0.1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "illusion_1_damage_out_pct",
+          "heading": "",
+          "values": [
+            -100
+          ]
+        },
+        {
+          "key": "illusion_2_damage_out_pct",
+          "heading": "",
+          "values": [
+            -80
+          ]
+        },
+        {
+          "key": "illusion_2_damage_in_pct",
+          "heading": "",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "target_aoe",
+          "heading": "TARGET AREA SIZE:",
+          "values": [
+            325
+          ]
+        },
+        {
+          "key": "search_radius",
+          "heading": "ILLUSION GATHER RANGE:",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "delay",
+          "heading": "REAPPEAR DELAY:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "illusion_duration",
+          "heading": "DOPPELGANGER DURATION:",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "illusion_extended_duration",
+          "heading": "ILLUSION DURATION EXTENSION:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "illusion_2_amount",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "hp_missing_per_extra_illusion_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            575
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            70
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            22,
+            18,
+            14,
+            10
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "This ability can be used to dodge projectiles, and dispel debuffs.",
+        "Trees near a reappearing unit will be destroyed.",
+        "Phantom Lancer and his allies can see which illusion is the 100% damage illusion."
+      ],
+      "lore": "Dread Magus Vorn's death imbued the Phantom Lancer with the ability to bend and fracture all spectrums of light."
+    },
+    {
+      "key": "phantom_lancer_phantom_edge",
+      "name": "Phantom Rush",
+      "description": "When targeting an enemy for an attack, Phantom Lancer quickly charges into range, gaining increased movement speed and evasion.",
+      "max_level": 4,
+      "cooldowns": [
+        15,
+        11,
+        7,
+        3
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "min_distance",
+          "heading": "MIN RUSH DISTANCE:",
+          "values": [
+            275
+          ]
+        },
+        {
+          "key": "max_distance",
+          "heading": "MAX RUSH DISTANCE:",
+          "values": [
+            600,
+            675,
+            750,
+            825
+          ]
+        },
+        {
+          "key": "bonus_speed",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "illusion_spawn_radius",
+          "heading": "COLLISION RADIUS:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "illusion_spawn_travel_distance",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "evasion",
+          "heading": "EVASION:",
+          "values": [
+            20,
+            30,
+            40,
+            50
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            15,
+            11,
+            7,
+            3
+          ]
+        }
+      ],
+      "scepter_upgrade": "Increases Range. Whenever Phantom Lancer Rushes through enemies, he creates Juxtapose illusions that attack them. Additionally, every %illusion_spawn_travel_distance% units rushed creates a Juxtapose illusion that rushes to the target alongside Phantom Lancer.",
+      "shard_upgrade": null,
+      "notes": [
+        "If the attack order is cancelled, the movement speed bonus is lost.",
+        "Rush movement speed is %bonus_speed%."
+      ],
+      "lore": "Azwraith knows that on the field of battle, speed can mean everything."
+    },
+    {
+      "key": "phantom_lancer_illusory_armaments",
+      "name": "Illusory Armaments",
+      "description": "Whenever an illusion of Phantom Lancer is created, its outgoing damage cannot go below a fixed value for %duration% seconds.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "outgoing_floor",
+          "heading": "MIN DAMAGE:",
+          "values": [
+            17
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "",
+          "values": [
+            3
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "phantom_lancer_juxtapose",
+      "name": "Juxtapose",
+      "description": "Phantom Lancer has a chance to fracture his presence on an attack, creating an illusion of himself. Illusions also have a chance to fracture further. Illusions created from Phantom Lancer last for %illusion_duration% seconds, while illusions created from other illusions last %illusion_from_illusion_duration% seconds.",
+      "max_level": 3,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "max_illusions",
+          "heading": "MAX ILLUSIONS:",
+          "values": [
+            6,
+            8,
+            10
+          ]
+        },
+        {
+          "key": "proc_chance_pct",
+          "heading": "HERO TRIGGER CHANCE:",
+          "values": [
+            40,
+            45,
+            50
+          ]
+        },
+        {
+          "key": "illusion_proc_chance_pct",
+          "heading": "ILLUSION TRIGGER CHANCE:",
+          "values": [
+            9
+          ]
+        },
+        {
+          "key": "illusion_duration",
+          "heading": "",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "illusion_from_illusion_duration",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "illusion_damage_out_pct",
+          "heading": "",
+          "values": [
+            -85
+          ]
+        },
+        {
+          "key": "tooltip_illusion_damage",
+          "heading": "ILLUSION DAMAGE:",
+          "values": [
+            15
+          ]
+        },
+        {
+          "key": "illusion_damage_in_pct",
+          "heading": "",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "tooltip_total_illusion_damage_in_pct",
+          "heading": "ILLUSION DAMAGE TAKEN:",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "shard_bonus_illusions",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "invis_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "invis_movespeed",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "uncontrollable_illusions",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "new_target_radius",
+          "heading": "SEARCH RADIUS:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Adds an active ability to Juxtapose. Renders Phantom Lancer invisible for up to %invis_duration% seconds while generating a duplicate image to confuse enemies. His movement speed is increased by %invis_movespeed%%% during this invisibility.",
+      "notes": null,
+      "lore": "Each of Azwraith's lance attacks feels like two from a normal warrior; or three; or four..."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_duration}s Spirit Lance Slow Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_illusion_proc_chance_pct}% Juxtapose Illusion Trigger Chance"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_illusion_lance_damage_pct}% Illusion Spirit Lance Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_AbilityCastRange} Doppelganger Cast Range"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_lance_damage} Spirit Lance Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_illusion_damage_in_pct}% Juxtapose Illusion Damage Taken"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Doppelganger Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_duration}s Illusory Armaments Duration"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

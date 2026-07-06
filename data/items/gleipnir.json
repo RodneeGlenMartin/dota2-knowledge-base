@@ -1,0 +1,97 @@
+{
+  "id": 1466,
+  "name": "Gleipnir",
+  "slug": "gleipnir",
+  "internal_key": "item_gungir",
+  "cost": 4650,
+  "neutral_tier": null,
+  "description": "<h1>Active: Eternal Chains</h1>Roots all enemies in a %radius_tooltip% radius for %duration% seconds.",
+  "notes": [
+    "AoE bonuses from multiple Chasm Stones or its upgrades do not stack."
+  ],
+  "cooldowns": [
+    18
+  ],
+  "mana_costs": [
+    150
+  ],
+  "cast_ranges": [
+    1100
+  ],
+  "special_values": [
+    {
+      "key": "bonus_hp",
+      "heading": "+$health",
+      "values": [
+        450
+      ]
+    },
+    {
+      "key": "bonus_mana",
+      "heading": "+$mana",
+      "values": [
+        200
+      ]
+    },
+    {
+      "key": "bonus_intellect",
+      "heading": "+$int",
+      "values": [
+        12
+      ]
+    },
+    {
+      "key": "bonus_aoe",
+      "heading": "+$aoe_bonus",
+      "values": [
+        75
+      ]
+    },
+    {
+      "key": "radius",
+      "heading": "",
+      "values": [
+        325
+      ]
+    },
+    {
+      "key": "radius_tooltip",
+      "heading": "",
+      "values": [
+        400
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        2
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        1100
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        150
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        18
+      ]
+    }
+  ],
+  "lore": "Bindings forged by impossible means to leash an ancient evil.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

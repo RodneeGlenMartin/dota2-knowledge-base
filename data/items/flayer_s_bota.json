@@ -1,0 +1,60 @@
+{
+  "id": 1721,
+  "name": "Flayer's Bota",
+  "slug": "flayer_s_bota",
+  "internal_key": "item_flayers_bota",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Bloodthirst</h1> Gain %base_damage%%% base damage and %attack_speed% attack speed for %duration% seconds.\n\n<h1>Passive: Bloodrush</h1>Enemy heroes dying within %death_radius% units reset the cooldown of Bloodthirst.",
+  "notes": null,
+  "cooldowns": [
+    65
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        6
+      ]
+    },
+    {
+      "key": "base_damage",
+      "heading": "",
+      "values": [
+        15
+      ]
+    },
+    {
+      "key": "attack_speed",
+      "heading": "",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "death_radius",
+      "heading": "",
+      "values": [
+        1500
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        65
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

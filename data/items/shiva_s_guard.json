@@ -1,0 +1,107 @@
+{
+  "id": 119,
+  "name": "Shiva's Guard",
+  "slug": "shiva_s_guard",
+  "internal_key": "item_shivas_guard",
+  "cost": 4500,
+  "neutral_tier": null,
+  "description": "<h1>Active: Arctic Blast</h1> Emits a freezing wave that deals %blast_damage% magical damage to enemies and slows their movement by %blast_movement_speed%%% for %blast_debuff_duration% seconds.<br><br>Radius: %blast_radius%\n\n<h1>Passive: Freezing Aura</h1> Reduces the attack speed of all enemies by %aura_attack_speed%. <br><br>Radius: %aura_radius%",
+  "notes": [
+    "The wave extends at a speed of %blast_speed% to a max size of %blast_radius%.",
+    "The Arctic Blast follows its caster.",
+    "Multiple instances of Freezing Aura do not stack.",
+    "AoE bonuses from multiple Chasm Stones or its upgrades do not stack."
+  ],
+  "cooldowns": [
+    27
+  ],
+  "mana_costs": [
+    75
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_armor",
+      "heading": "+$armor",
+      "values": [
+        17
+      ]
+    },
+    {
+      "key": "bonus_aoe",
+      "heading": "+$aoe_bonus",
+      "values": [
+        75
+      ]
+    },
+    {
+      "key": "aura_radius",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    },
+    {
+      "key": "aura_attack_speed",
+      "heading": "",
+      "values": [
+        -40
+      ]
+    },
+    {
+      "key": "blast_damage",
+      "heading": "",
+      "values": [
+        260
+      ]
+    },
+    {
+      "key": "blast_movement_speed",
+      "heading": "",
+      "values": [
+        -40
+      ]
+    },
+    {
+      "key": "blast_debuff_duration",
+      "heading": "",
+      "values": [
+        4
+      ]
+    },
+    {
+      "key": "blast_radius",
+      "heading": "",
+      "values": [
+        825
+      ]
+    },
+    {
+      "key": "blast_speed",
+      "heading": "",
+      "values": [
+        400
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        75
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        27
+      ]
+    }
+  ],
+  "lore": "Said to have belonged to a goddess, today it retains much of its former power.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": 1609,
+  "name": "Madstone Bundle",
+  "slug": "madstone_bundle",
+  "internal_key": "item_madstone_bundle",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "Collect to craft new Neutral Items.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    100
+  ],
+  "special_values": [
+    {
+      "key": "madstone_primary",
+      "heading": "",
+      "values": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "key": "madstone_secondary",
+      "heading": "",
+      "values": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "key": "turbo_madstone_primary",
+      "heading": "",
+      "values": [
+        3,
+        4,
+        6
+      ]
+    },
+    {
+      "key": "turbo_madstone_secondary",
+      "heading": "",
+      "values": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "key": "die_time",
+      "heading": "",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        100
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

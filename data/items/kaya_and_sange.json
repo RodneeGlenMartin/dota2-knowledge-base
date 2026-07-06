@@ -1,0 +1,74 @@
+{
+  "id": 273,
+  "name": "Kaya and Sange",
+  "slug": "kaya_and_sange",
+  "internal_key": "item_kaya_and_sange",
+  "cost": 4200,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_strength",
+      "heading": "+$str",
+      "values": [
+        16
+      ]
+    },
+    {
+      "key": "bonus_intellect",
+      "heading": "+$int",
+      "values": [
+        16
+      ]
+    },
+    {
+      "key": "slow_resistance",
+      "heading": "+Slow Resistance",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "mana_regen_multiplier",
+      "heading": "+Mana Regen Amplification",
+      "values": [
+        40
+      ]
+    },
+    {
+      "key": "spell_amp",
+      "heading": "+Spell Amplification",
+      "values": [
+        12
+      ]
+    },
+    {
+      "key": "hp_regen_amp",
+      "heading": "+$restoration_amp",
+      "values": [
+        16
+      ]
+    },
+    {
+      "key": "manacost_reduction",
+      "heading": "+Mana Cost/Mana Loss Reduction",
+      "values": [
+        25
+      ]
+    }
+  ],
+  "lore": "Two of three known items of unimaginable power that many believe were crafted at the same enchanter's forge.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,688 @@
+{
+  "id": 85,
+  "name": "Undying",
+  "slug": "undying",
+  "npc_name": "npc_dota_hero_undying",
+  "primary_attribute": "str",
+  "attack_type": "Melee",
+  "complexity": 1,
+  "roles": [
+    "Support",
+    "Nuker",
+    "Disabler",
+    "Durable"
+  ],
+  "stats": {
+    "base_str": 22,
+    "str_gain": 2.4,
+    "base_agi": 13,
+    "agi_gain": 1.2,
+    "base_int": 27,
+    "int_gain": 2.8,
+    "damage_min": 55,
+    "damage_max": 63,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 2.1666667,
+    "magic_resistance": 25,
+    "movement_speed": 300,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 604,
+    "health_regen": 1.95,
+    "max_mana": 399,
+    "mana_regen": 1.85
+  },
+  "lore": "How long has it been since he lost his name? The torn ruin of his mind no longer knows.\r\n\t\t\t\t<br><br>Dimly he recalls armor and banners and grim-faced kin riding at his side. He remembers a battle: pain and fear as pale hands ripped him from his saddle. He remembers terror as they threw him into the yawning pit of the Dead God alongside his brothers, to hear the Dirge and be consumed into nothingness. In the darkness below, time left them. Thought left them. Sanity left them. Hunger, however, did not. They turned on each other with split fingernails and shattered teeth. Then it came: distant at first, a fragile note at the edge of perception, joined by another, then another, inescapable and unending. The chorus grew into a living wall of sound pulsing in his mind until no other thought survived. With the Dirge consuming him, he opened his arms to the Dead God and welcomed his obliteration. Yet destruction was not what he'd been chosen for. The Dead God demanded war. In the belly of the great nothing, he was granted a new purpose: to spread the Dirge across the land, to rally the sleepless dead against the living. He was to become the Undying, the herald of the Dead God, to rise and fall and rise again whenever his body failed him. To trudge on through death unending, that the Dirge might never end.",
+  "hype": "Shambling into battle, Undying forces enemies to decide whether to flee his wrath or be torn apart by it. He <b>drains strength</b> from his foes, and <b>summons a horde of clawing undead</b>. When he finally becomes a <b>hulking flesh golem</b>, his enemies may already be overwhelmed.",
+  "abilities": [
+    {
+      "key": "undying_decay",
+      "name": "Decay",
+      "description": "Undying steals strength from all enemy heroes in an area, dealing base damage as he claims the enemy's strength for himself. Deals %creep_damage_multiplier%x damage to creeps.",
+      "max_level": 4,
+      "cooldowns": [
+        13,
+        10,
+        7,
+        4
+      ],
+      "mana_costs": [
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        650
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        21,
+        24,
+        27,
+        30
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "decay_damage",
+          "heading": "BASE DAMAGE:",
+          "values": [
+            20,
+            60,
+            100,
+            140
+          ]
+        },
+        {
+          "key": "str_steal",
+          "heading": "STRENGTH STEAL:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "decay_duration",
+          "heading": "STEAL DURATION:",
+          "values": [
+            35
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            325
+          ]
+        },
+        {
+          "key": "str_scale_up",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "creep_damage_multiplier",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "shard_buff_duration",
+          "heading": "",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            650
+          ]
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "",
+          "values": [
+            21,
+            24,
+            27,
+            30
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            13,
+            10,
+            7,
+            4
+          ]
+        }
+      ],
+      "scepter_upgrade": "Increases strength steal.",
+      "shard_upgrade": null,
+      "notes": [
+        "The strength stolen stacks, but can't cause a hero to have strength below 1.",
+        "The strength steal takes effect before the damage is dealt.",
+        "Affects invisible units."
+      ],
+      "lore": "The strength of the living is simply borrowed from the strength of the dead."
+    },
+    {
+      "key": "undying_soul_rip",
+      "name": "Soul Rip",
+      "description": "Undying rips health away from all nearby units and uses it to heal an ally, or damage an enemy. Soul Rip can also be used to heal Tombstone.",
+      "max_level": 4,
+      "cooldowns": [
+        15,
+        12,
+        9,
+        6
+      ],
+      "mana_costs": [
+        80,
+        90,
+        100,
+        110
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        750
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage_per_unit",
+          "heading": "DAMAGE/HEAL PER UNIT:",
+          "values": [
+            14,
+            26,
+            38,
+            50
+          ]
+        },
+        {
+          "key": "max_units",
+          "heading": "MAX UNITS:",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RIP RADIUS:",
+          "values": [
+            1300
+          ]
+        },
+        {
+          "key": "tombstone_heal",
+          "heading": "TOMBSTONE HEAL:",
+          "values": [
+            4,
+            8,
+            12,
+            16
+          ]
+        },
+        {
+          "key": "strength_share_percent",
+          "heading": "STRENGTH GAIN:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "strength_share_duration",
+          "heading": "DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "strength_share_model_scale",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            750
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            80,
+            90,
+            100,
+            110
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            15,
+            12,
+            9,
+            6
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Can heal Tombstone, but can't heal or damage other buildings.",
+        "Does not rip from invisible units, invulnerable units, units in the fog of war, or spell immune enemies.",
+        "Does rip from spell immune allies, including zombies."
+      ],
+      "lore": "Even allies feel despair in Undying's presence."
+    },
+    {
+      "key": "undying_tombstone",
+      "name": "Tombstone",
+      "description": "Summons a tombstone at the target point.  Zombies will frequently spawn next to every enemy unit in the area around the Tombstone, and attack them.  Zombies have the Deathlust ability, which causes their attacks to slow the target, and if the target reaches below a certain amount of health, increases the attack and movement speed of the zombie.",
+      "max_level": 4,
+      "cooldowns": [
+        80
+      ],
+      "mana_costs": [
+        125,
+        150,
+        175,
+        200
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        500
+      ],
+      "cast_points": [
+        0.6
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "tombstone_health",
+          "heading": "",
+          "values": [
+            20,
+            24,
+            28,
+            32
+          ]
+        },
+        {
+          "key": "hits_to_destroy_tooltip",
+          "heading": "ATTACKS TO DESTROY:",
+          "values": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "TOMBSTONE DURATION:",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "ZOMBIE SPAWN RADIUS:",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "health_threshold_pct_tooltip",
+          "heading": "",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "zombie_interval",
+          "heading": "ZOMBIE SPAWN INTERVAL:",
+          "values": [
+            4,
+            3.6,
+            3.2,
+            2.8
+          ]
+        },
+        {
+          "key": "zombie_damage_tooltip",
+          "heading": "ZOMBIE ATTACK DAMAGE:",
+          "values": [
+            34
+          ]
+        },
+        {
+          "key": "zombie_bonus_damage",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "zombie_health",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "bunker_units",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "tombstone_grab_radius",
+          "heading": "",
+          "values": [
+            350
+          ]
+        },
+        {
+          "key": "tombstone_bunker_cd",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "tombstone_stun_penalty",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.6
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            125,
+            150,
+            175,
+            200
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            80
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Tombstone can be cast on an allied hero to bunker inside of the tombstone. Heroes that enter the Tombstone cannot leave for %tombstone_bunker_cd% seconds nor can they re-enter after leaving. If the tombstone is destroyed with a hero inside, that hero gets stunned for %tombstone_stun_penalty% seconds.",
+      "notes": [
+        "Tombstone is Spell Immune, but can be healed by Soul Rip.",
+        "Zombies and Tombstone are Spell Immune.",
+        "If their initial target dies or goes out of vision, the Zombie will die."
+      ],
+      "lore": "Dirge calls on his fallen brothers to fight for the Dead God."
+    },
+    {
+      "key": "undying_ceaseless_dirge",
+      "name": "Ceaseless Dirge",
+      "description": "When Undying dies he will instantly respawn in the fountain. Begins the game on cooldown. Cannot be refreshed.",
+      "max_level": 1,
+      "cooldowns": [
+        480
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "respawn_delay",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            480
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Only when the Dirge of the Dead God ceases will this soldier's march finally end."
+    },
+    {
+      "key": "undying_flesh_golem",
+      "name": "Flesh Golem",
+      "description": "Undying transforms into a horrifying flesh golem.  While in this state, he gains a percentage increase to strength, bonus movement speed, and causes attacks to slow, apply damage amplification, and spawn Tombstone zombies.",
+      "max_level": 3,
+      "cooldowns": [
+        140
+      ],
+      "mana_costs": [
+        100,
+        125,
+        150
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "slow",
+          "heading": "SLOW ON ATTACK:",
+          "values": [
+            30,
+            35,
+            40
+          ]
+        },
+        {
+          "key": "damage_amp",
+          "heading": "DAMAGE AMPLIFICATION:",
+          "values": [
+            25,
+            30,
+            35
+          ]
+        },
+        {
+          "key": "slow_duration",
+          "heading": "DAMAGE AMP DURATION:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "str_percentage",
+          "heading": "STRENGTH MULTIPLIER:",
+          "values": [
+            40,
+            50,
+            60
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "movement_bonus",
+          "heading": "BONUS MOVESPEED:",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "spawn_zombie_on_attack",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "zombie_duration",
+          "heading": "",
+          "values": [
+            15
+          ]
+        },
+        {
+          "key": "zombie_spawn_padding",
+          "heading": "",
+          "values": [
+            36
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            125,
+            150
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            140
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "The flesh of the recently dead add to the power of Dirge's plague."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_decay_damage} Decay Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Tombstone Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_per_unit} Soul Rip Damage/Heal"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_zombie_damage_tooltip} Zombie Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Decay Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_hits_to_destroy_tooltip} Tombstone Attacks to Destroy"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_str_percentage}% Flesh Golem Strength Bonus"
+    },
+    {
+      "slot": null,
+      "name": "Tombstone On Death"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

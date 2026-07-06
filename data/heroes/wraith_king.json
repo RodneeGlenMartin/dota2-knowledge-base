@@ -1,0 +1,632 @@
+{
+  "id": 42,
+  "name": "Wraith King",
+  "slug": "wraith_king",
+  "npc_name": "npc_dota_hero_skeleton_king",
+  "primary_attribute": "str",
+  "attack_type": "Melee",
+  "complexity": 1,
+  "roles": [
+    "Carry",
+    "Support",
+    "Disabler",
+    "Durable",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 22,
+    "str_gain": 2.8,
+    "base_agi": 16,
+    "agi_gain": 1.7,
+    "base_int": 16,
+    "int_gain": 1.4,
+    "damage_min": 62,
+    "damage_max": 64,
+    "attack_rate": 1.8,
+    "attack_range": 150,
+    "projectile_speed": 0,
+    "armor": 2.6666667,
+    "magic_resistance": 25,
+    "movement_speed": 310,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 604,
+    "health_regen": 2.7,
+    "max_mana": 267,
+    "mana_regen": 0.8
+  },
+  "lore": "For untold years, King Ostarion built a kingdom from the remains of his enemies. It was an obsessive's errand, done to pass the long eternities of a monarchy that seemed fated never to end. He believed that as long as he built up the towers of his palace, he could not die. But eventually he learned that he had been deluded... that bone itself could perish. Deeply mistrustful of flesh, he sought a more permanent way of extending his reign, and at last settled on pursuit of wraith energy, a form of pure spirit given off by certain dark souls at death. Should he infuse himself with Wraith Essence, he thought he might create a body as luminous and eternal as his ego. On the millennial solstice known as Wraith-Night, he submitted to a rite of transformation, compelling his subjects to harvest enough souls to fuel his ambition for immortality. No one knows how many of his champions died, for the only survivor who mattered was the Wraith King who rose with the sun on the following morn. Now he rarely spends a moment on his glowing throne--but strides out with sword drawn, demanding a fealty that extends far beyond death. ",
+  "hype": "Striding fearlessly toward his enemies, Wraith King <b>stuns his foes</b> and slashes them into submission. Should his enemies gain the upper hand, his <b>self-resurrecting ultimate</b> ensures he'll have another chance to swing his sword.",
+  "abilities": [
+    {
+      "key": "skeleton_king_hellfire_blast",
+      "name": "Wraithfire Blast",
+      "description": "Wraith King sears an enemy unit with spectral fire, dealing damage and stunning, then dealing damage over time and slowing the target.",
+      "max_level": 4,
+      "cooldowns": [
+        14,
+        12,
+        10,
+        8
+      ],
+      "mana_costs": [
+        95,
+        110,
+        125,
+        140
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        525
+      ],
+      "cast_points": [
+        0.35,
+        0.35,
+        0.35,
+        0.35
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "blast_speed",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "blast_stun_duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            1,
+            1.2,
+            1.4,
+            1.6
+          ]
+        },
+        {
+          "key": "blast_dot_duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "blast_slow",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            -20
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "IMPACT DAMAGE:",
+          "values": [
+            80,
+            100,
+            120,
+            140
+          ]
+        },
+        {
+          "key": "blast_dot_damage",
+          "heading": "DAMAGE PER SECOND:",
+          "values": [
+            20,
+            40,
+            60,
+            80
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            525
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.35
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            95,
+            110,
+            125,
+            140
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            14,
+            12,
+            10,
+            8
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Ostarion calls on his damned lineage, laying waste to his opponents."
+    },
+    {
+      "key": "skeleton_king_bone_guard",
+      "name": "Bone Guard",
+      "description": "Gains a Charge for every 2 creeps killed and 2 charges per hero killed. Activate to spend all charges, summoning skeletons that respawn once when killed. Skeletons benefit from Vampiric Spirit's lifesteal.",
+      "max_level": 4,
+      "cooldowns": [
+        42
+      ],
+      "mana_costs": [
+        70,
+        80,
+        90,
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "skeleton_duration",
+          "heading": "SKELETON DURATION:",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "max_skeleton_charges",
+          "heading": "MAX CHARGES:",
+          "values": [
+            2,
+            4,
+            6,
+            8
+          ]
+        },
+        {
+          "key": "min_skeleton_spawn",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "spawn_interval",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "reincarnate_time",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "gold_bounty",
+          "heading": "",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "xp_bounty",
+          "heading": "",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "skeleton_damage_tooltip",
+          "heading": "SKELETON DAMAGE:",
+          "values": [
+            34,
+            39,
+            43,
+            49
+          ]
+        },
+        {
+          "key": "talent_skeleton_damage",
+          "heading": "",
+          "values": [
+            0,
+            5,
+            10,
+            15
+          ]
+        },
+        {
+          "key": "skeleton_building_damage_reduction",
+          "heading": "SKELETON BUILDING DAMAGE REDUCTION:",
+          "values": [
+            35
+          ]
+        },
+        {
+          "key": "skeleton_bonus_hero_damage",
+          "heading": "SKELETON HERO BONUS DAMAGE:",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "skeleton_charges_per_hero_multiplier",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            70,
+            80,
+            90,
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            42
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Break disables the gaining of new stacks.",
+        "Casting Wraithfire Blast on an enemy causes the skeletons to attack that enemy."
+      ],
+      "lore": "Wraith King's blade drains his enemy's essence to feed his aura."
+    },
+    {
+      "key": "skeleton_king_mortal_strike",
+      "name": "Mortal Strike",
+      "description": "Wraith King passively deals bonus damage on an attack with a cooldown.",
+      "max_level": 4,
+      "cooldowns": [
+        5
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "crit_mult",
+          "heading": "CRITICAL DAMAGE:",
+          "values": [
+            160,
+            200,
+            240,
+            280
+          ]
+        },
+        {
+          "key": "wraith_cd_mult",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "curse_damage_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "curse_delay",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "curse_cooldown",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            5
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Mortal Strike hits curse their target, causing them to take %curse_damage_pct%%% of the initial attack damage again as <font color=\"#d8ae53\">Pure</font> damage after a %curse_delay% second delay. Vampiric Spirit's lifesteal applies to the curse damage.",
+      "notes": null,
+      "lore": "One blow to crush a foe."
+    },
+    {
+      "key": "skeleton_king_vampiric_spirit",
+      "name": "Vampiric Spirit",
+      "description": "Grants Wraith King Lifesteal. When slain Wraith King turns into a free pathing Wraith with Bonus Attack and Movement Speed for a short duration, delaying his death. Wraith King cannot reincarnate after being a Wraith.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "vampiric_aura",
+          "heading": "LIFESTEAL:",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "WRAITH DURATION:",
+          "values": [
+            4.25
+          ]
+        },
+        {
+          "key": "scepter_attack_speed",
+          "heading": "BONUS ATTACK SPEED:",
+          "values": [
+            55
+          ]
+        },
+        {
+          "key": "scepter_move_speed_pct",
+          "heading": "BONUS MOVE SPEED:",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "scepter_aura_radius",
+          "heading": "AURA RADIUS:",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": "Turns Vampiric Spirit into an aura, allowing allied heroes to turn into wraiths when slain. Extends wraith duration.",
+      "shard_upgrade": null,
+      "notes": [
+        "Credit for allies whose death was delayed will go to whoever struck the original killing blow.",
+        "Does not affect Reincarnate deaths.",
+        "Break only disables the passive lifesteal component.",
+        "Respawn timer is reduced by Wraith duration."
+      ],
+      "lore": null
+    },
+    {
+      "key": "skeleton_king_reincarnation",
+      "name": "Reincarnation",
+      "description": "Wraith King's form regroups after death, allowing him to resurrect when killed in battle.  Upon death, enemy units in a %slow_radius% radius are slowed. Skeletons spawn and attack each nearby enemy hero. Can be self-cast to kill Wraith King instantly.",
+      "max_level": 3,
+      "cooldowns": [
+        180,
+        150,
+        120
+      ],
+      "mana_costs": [
+        220,
+        110,
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "reincarnate_time",
+          "heading": "REINCARNATION TIME:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "slow_radius",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "movespeed",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            -75
+          ]
+        },
+        {
+          "key": "attackslow",
+          "heading": "ATTACK SPEED SLOW:",
+          "values": [
+            -75
+          ]
+        },
+        {
+          "key": "slow_duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "clear_curse",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_skeleton_count",
+          "heading": "SKELETON COUNT PER HERO:",
+          "values": [
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "key": "trigger_wraithfire_blast",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            220,
+            110,
+            0
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "COOLDOWN:",
+          "values": [
+            180,
+            150,
+            120
+          ]
+        }
+      ],
+      "scepter_upgrade": "Reduces cooldown.",
+      "shard_upgrade": null,
+      "notes": [
+        "Wraith King won't revive if he doesn't have enough mana.",
+        "If Wraith King has an Aegis and Reincarnation off cooldown, Reincarnation will trigger first.",
+        "Revives with full HP and Mana."
+      ],
+      "lore": "Conspirators against the Wraith King wonder why he never stays dead."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_vampiric_aura}% Vampiric Spirit Lifesteal"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_blast_dot_duration}s Wraithfire Blast Slow Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_blast_stun_duration}s Wraithfire Blast Stun Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Health"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Attack Speed"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_min_skeleton_spawn} Bone Guard Skeletons Spawned"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Mortal Strike Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "Reincarnation Casts Wraithfire Blast"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

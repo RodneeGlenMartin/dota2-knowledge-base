@@ -1,0 +1,46 @@
+{
+  "id": 355,
+  "name": "Broom Handle",
+  "slug": "broom_handle",
+  "internal_key": "item_broom_handle",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "melee_attack_range",
+      "heading": "+$attack_range_melee",
+      "values": [
+        50
+      ]
+    },
+    {
+      "key": "bonus_damage",
+      "heading": "+$damage",
+      "values": [
+        8
+      ]
+    },
+    {
+      "key": "bonus_armor",
+      "heading": "+$armor",
+      "values": [
+        4
+      ]
+    }
+  ],
+  "lore": "The surprisingly dangerous creation of an apprentice sorcerer with a strange fondness for brooms.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

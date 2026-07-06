@@ -1,0 +1,46 @@
+{
+  "id": 365,
+  "name": "Magic Lamp",
+  "slug": "magic_lamp",
+  "internal_key": "item_panic_button",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Rejuvenate</h1> When the wearer's health falls below %health_threshold%%%, they will receive a strong dispel and be healed for %heal% health.<br/><br/>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Strong Dispel</span>",
+  "notes": null,
+  "cooldowns": [
+    75
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "heal",
+      "heading": "",
+      "values": [
+        1500
+      ]
+    },
+    {
+      "key": "health_threshold",
+      "heading": "",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        75
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

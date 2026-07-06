@@ -1,0 +1,725 @@
+{
+  "id": 138,
+  "name": "Muerta",
+  "slug": "muerta",
+  "npc_name": "npc_dota_hero_muerta",
+  "primary_attribute": "int",
+  "attack_type": "Ranged",
+  "complexity": 1,
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Disabler"
+  ],
+  "stats": {
+    "base_str": 19,
+    "str_gain": 2,
+    "base_agi": 21,
+    "agi_gain": 2.7,
+    "base_int": 23,
+    "int_gain": 3.6,
+    "damage_min": 47,
+    "damage_max": 55,
+    "attack_rate": 1.7,
+    "attack_range": 575,
+    "projectile_speed": 3000,
+    "armor": 3.5,
+    "magic_resistance": 25,
+    "movement_speed": 295,
+    "turn_rate": 0.7,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 538,
+    "health_regen": 2.15,
+    "max_mana": 351,
+    "mana_regen": 1.15
+  },
+  "lore": "There are as many stories about Muerta as there are graves in the Carrion Fields of Gorm. Some tell their children ghost stories of a young peasant girl returned from the dead to punish the bandits who killed her family. Others, drunk in dark taverns, slur conspiracy theories about kidnappings and phantom guilds of killers.<br><br>One constant bleeds through every tale: of a woman so consumed by hate for those who killed her that she refused to die. And of Death, so impressed by whatever hate-filled engine that drove this woman that he gave her Mercy and Grace — twin ethereal pistols — and made her his second in command. Now she hunts down wayward souls whose last grains have tumbled from their hourglass, and drags them kicking and screaming to their eternal reward.",
+  "hype": "Muerta is a master of death who stalks the lands of life, corralling targets with <b>fearsome trickshots</b> and <b>summoning revenants</b> to smother her foes. Always ready to <b>pick off unwary targets</b> with her spare gunhand, Muerta is at her most menacing when she <b>crosses the veil of the dead</b> to strike her enemies with the ethereal fury of the damned.",
+  "abilities": [
+    {
+      "key": "muerta_dead_shot",
+      "name": "Dead Shot",
+      "description": "Muerta fires a ghostly trickshot at an enemy unit or tree. When the bullet strikes, it damages and briefly slows, then ricochets in the targeted direction.<br><br>The ricochet damages all units that it passes through, stopping when it hits a hero. Heroes hit by the ricochet are feared away from the impact.",
+      "max_level": 4,
+      "cooldowns": [
+        16,
+        14,
+        12,
+        10
+      ],
+      "mana_costs": [
+        100,
+        120,
+        140,
+        160
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1000
+      ],
+      "cast_points": [
+        0.15
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            100,
+            175,
+            250,
+            325
+          ]
+        },
+        {
+          "key": "speed",
+          "heading": "",
+          "values": [
+            2000
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "ricochet_radius_start",
+          "heading": "",
+          "values": [
+            115
+          ]
+        },
+        {
+          "key": "ricochet_radius_end",
+          "heading": "",
+          "values": [
+            115
+          ]
+        },
+        {
+          "key": "ricochet_radius_expansion_per_second",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "ricochet_distance_multiplier",
+          "heading": "",
+          "values": [
+            1.5
+          ]
+        },
+        {
+          "key": "ricochet_fear_duration",
+          "heading": "RICOCHET FEAR DURATION:",
+          "values": [
+            0.8,
+            0.95,
+            1.1,
+            1.25
+          ]
+        },
+        {
+          "key": "impact_slow_percent",
+          "heading": "IMPACT SLOW PERCENT:",
+          "values": [
+            -100
+          ]
+        },
+        {
+          "key": "impact_slow_duration",
+          "heading": "IMPACT SLOW DURATION:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "scepter_pierces",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.15
+          ]
+        },
+        {
+          "key": "AbilityCharges",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            120,
+            140,
+            160
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            16,
+            14,
+            12,
+            10
+          ]
+        }
+      ],
+      "scepter_upgrade": "Dead Shot damage is increased. Dead Shot expands after it ricochets and pierces through enemy heroes as it fears them.",
+      "shard_upgrade": null,
+      "notes": [
+        "Feared enemies are phased and unslowable.",
+        "The ricochet will travel %ricochet_distance_multiplier%x Dead Shot's cast range.",
+        "Can ricochet off of magic immune targets."
+      ],
+      "lore": "A steady gunhand and an eternity of practice produce trickshots that defy the mortal mind."
+    },
+    {
+      "key": "muerta_the_calling",
+      "name": "The Calling",
+      "description": "Summons a group of %num_revenants% revenants that slowly circle the targeted location. Enemies within the area are slowed. Revenants deal damage and silence enemies as they pass through them.",
+      "max_level": 4,
+      "cooldowns": [
+        30,
+        28,
+        26,
+        24
+      ],
+      "mana_costs": [
+        135,
+        150,
+        165,
+        180
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        600
+      ],
+      "cast_points": [
+        0.1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            45,
+            90,
+            135,
+            180
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "key": "hit_radius",
+          "heading": "",
+          "values": [
+            120
+          ]
+        },
+        {
+          "key": "dead_zone_distance",
+          "heading": "",
+          "values": [
+            340
+          ]
+        },
+        {
+          "key": "num_revenants",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "speed_initial",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "speed_max",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "acceleration",
+          "heading": "",
+          "values": [
+            0.75
+          ]
+        },
+        {
+          "key": "aura_movespeed_slow",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            -20
+          ]
+        },
+        {
+          "key": "silence_duration",
+          "heading": "SILENCE DURATION:",
+          "values": [
+            1.5,
+            2,
+            2.5,
+            3
+          ]
+        },
+        {
+          "key": "rotation_direction",
+          "heading": "",
+          "values": [
+            -1
+          ]
+        },
+        {
+          "key": "hp_regen_pct",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            135,
+            150,
+            165,
+            180
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            30,
+            28,
+            26,
+            24
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Muerta's family are forever beyond the spirit veil, but her deal with Death allows her to briefly call on them in times of want or need."
+    },
+    {
+      "key": "muerta_gunslinger",
+      "name": "Gunslinger",
+      "description": "Toggleable. When toggled on, Muerta's attacks have a chance to fire a second shot at another target.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "double_shot_chance",
+          "heading": "CHANCE:",
+          "values": [
+            18,
+            27,
+            36,
+            45
+          ]
+        },
+        {
+          "key": "target_search_bonus_range",
+          "heading": "",
+          "values": [
+            175
+          ]
+        },
+        {
+          "key": "bonus_damage",
+          "heading": "BONUS DAMAGE:",
+          "values": null
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "If no other units are in range, she fires both guns at the original target.",
+        "Secondary shots can hit units within Muerta's attack range plus %target_search_bonus_range%.",
+        "The secondary shot can trigger attack modifiers.",
+        "Prioritizes heroes, then non-hero units, then buildings."
+      ],
+      "lore": "Muerta offers all of her victims Mercy. Some are fortunate enough to also earn Grace."
+    },
+    {
+      "key": "muerta_spectral_slug",
+      "name": "Spectral Slug",
+      "description": "Muerta shoots a spectral bullet at an enemy, dealing damage, knocking them back, and turning them ethereal for %duration%s - rendering them immune to physical damage and unable to attack. The target is slowed and %bonus_spell_damage_pct%%% more vulnerable to magic damage. Enemies will not be knocked out of Muerta's attack range.",
+      "max_level": 1,
+      "cooldowns": [
+        12
+      ],
+      "mana_costs": [
+        75
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        500
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "projectile_speed",
+          "heading": "",
+          "values": [
+            2500
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            225
+          ]
+        },
+        {
+          "key": "knockback_distance",
+          "heading": "MAX KNOCKBACK DISTANCE:",
+          "values": [
+            250
+          ]
+        },
+        {
+          "key": "knockback_duration",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "slow_pct",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            -30
+          ]
+        },
+        {
+          "key": "bonus_spell_damage_pct",
+          "heading": "INCREASED MAGIC DAMAGE:",
+          "values": [
+            -20
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "muerta_pierce_the_veil",
+      "name": "Pierce the Veil",
+      "description": "Muerta transforms, becoming ethereal, gaining bonus base damage and phased movement.<br><br>Passively allows Muerta to always attack ethereal targets and attack when she is ethereal. When either she or her target is ethereal, all of her attack damage is dealt as magical damage and her physical lifesteal is treated as spell lifesteal.<br><br>DISPEL TYPE: Basic Dispel",
+      "max_level": 3,
+      "cooldowns": [
+        75,
+        60,
+        45
+      ],
+      "mana_costs": [
+        150,
+        250,
+        350
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "transform_duration",
+          "heading": "TRANSFORM DURATION:",
+          "values": [
+            0.35
+          ]
+        },
+        {
+          "key": "base_damage_percent",
+          "heading": "BASE DAMAGE BONUS:",
+          "values": [
+            70,
+            85,
+            100
+          ]
+        },
+        {
+          "key": "modelscale",
+          "heading": "",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            150,
+            250,
+            350
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            75,
+            60,
+            45
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Muerta gains %spell_lifesteal%%% Spell Lifesteal during Pierce the Veil.<br>While Pierce the Veil is active Muerta permanently gains %spell_amp_steal%%% spell amplification each time she kills an enemy Hero or they die in her vicinity. Bonus applies retroactively.",
+      "notes": [
+        "Muerta will dodge projectiles upon transformation.",
+        "Muerta cannot attack buildings while transformed."
+      ],
+      "lore": "Muerta sheds her corporeal form, crossing the spirit veil and striking her enemies with the fury of the damned."
+    },
+    {
+      "key": "muerta_supernatural",
+      "name": "Supernatural",
+      "description": "Whenever an enemy hero dies within %stack_collection_range% units of Muerta, she gains a stack of %spell_amp_per_stack%%% spell amplification. When Muerta dies she loses half the stacks, rounded down.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "stack_collection_range",
+          "heading": "COLLECTION RANGE:",
+          "values": [
+            925
+          ]
+        },
+        {
+          "key": "spell_amp_per_stack",
+          "heading": "SPELL AMP PER STACK:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "max_stacks",
+          "heading": "MAX AMP:",
+          "values": [
+            5
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_AbilityCastRange} Dead Shot Cast Range"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Attack Speed"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_hp_regen_pct}% Max HP Regen while inside The Calling"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Intelligence"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_duration}s Pierce the Veil Duration"
+    },
+    {
+      "slot": null,
+      "name": "The Calling summons {s:bonus_num_revenants} additional revenants"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_double_shot_chance}% Gunslinger chance"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_AbilityCharges} Dead Shot Charges"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": 310,
+  "name": "Third Eye",
+  "slug": "third_eye",
+  "internal_key": "item_third_eye",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: True Sight</h1> Grants the ability to see invisible units and wards to any allied vision within %truesight_radius% range of its carrier. \n<h1>Passive: Charge Loss</h1><font color='#e03e2e'>Loses a charge on death. After all charges are lost, the item disappears.</font>",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "truesight_radius",
+      "heading": "",
+      "values": [
+        500
+      ]
+    },
+    {
+      "key": "bonus_vision",
+      "heading": "+BONUS VISION",
+      "values": [
+        300
+      ]
+    },
+    {
+      "key": "bonus_all_stats",
+      "heading": "+$all",
+      "values": [
+        7
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

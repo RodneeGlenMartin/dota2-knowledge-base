@@ -1,0 +1,39 @@
+{
+  "id": 288,
+  "name": "Grove Bow",
+  "slug": "grove_bow",
+  "internal_key": "item_grove_bow",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Magic Amp</h1> Reduces magic resistance of the attacked enemy by %magic_resistance_reduction%%%.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "magic_resistance_reduction",
+      "heading": "",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "debuff_duration",
+      "heading": "",
+      "values": [
+        6
+      ]
+    }
+  ],
+  "lore": "A gift from the moon goddess to one of her prized disciples many memories ago.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

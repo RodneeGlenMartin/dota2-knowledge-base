@@ -1,0 +1,88 @@
+{
+  "id": 254,
+  "name": "Glimmer Cape",
+  "slug": "glimmer_cape",
+  "internal_key": "item_glimmer_cape",
+  "cost": 2150,
+  "neutral_tier": null,
+  "description": "<h1>Active: Glimmer</h1> After a %initial_fade_delay% second delay, grants invisibility, %active_movement_speed% movement speed and a magic damage barrier that absorbs up to %barrier_block% damage to you or a target allied unit for %duration% seconds.<br><br>Can be cast while channeling.",
+  "notes": null,
+  "cooldowns": [
+    15
+  ],
+  "mana_costs": [
+    125
+  ],
+  "cast_ranges": [
+    600
+  ],
+  "special_values": [
+    {
+      "key": "initial_fade_delay",
+      "heading": "",
+      "values": [
+        0.5
+      ]
+    },
+    {
+      "key": "secondary_fade_delay",
+      "heading": "",
+      "values": [
+        0.5
+      ]
+    },
+    {
+      "key": "active_movement_speed",
+      "heading": "",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        5
+      ]
+    },
+    {
+      "key": "bonus_magical_armor",
+      "heading": "+$spell_resist",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "barrier_block",
+      "heading": "",
+      "values": [
+        375
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        600
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        125
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        15
+      ]
+    }
+  ],
+  "lore": "The stolen cape of a master illusionist.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

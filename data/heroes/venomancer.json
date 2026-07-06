@@ -1,0 +1,681 @@
+{
+  "id": 40,
+  "name": "Venomancer",
+  "slug": "venomancer",
+  "npc_name": "npc_dota_hero_venomancer",
+  "primary_attribute": "universal",
+  "attack_type": "Ranged",
+  "complexity": 1,
+  "roles": [
+    "Support",
+    "Nuker",
+    "Disabler",
+    "Pusher",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 19,
+    "str_gain": 2.1,
+    "base_agi": 25,
+    "agi_gain": 2.8,
+    "base_int": 19,
+    "int_gain": 1.9,
+    "damage_min": 18,
+    "damage_max": 21,
+    "attack_rate": 1.7,
+    "attack_range": 450,
+    "projectile_speed": 900,
+    "armor": 4.166667,
+    "magic_resistance": 25,
+    "movement_speed": 280,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 538,
+    "health_regen": 2.15,
+    "max_mana": 303,
+    "mana_regen": 0.95
+  },
+  "lore": "In the Acid Jungles of Jidi Isle, poison runs in the veins and bubbles in the guts of every creature that scuttles, climbs or swoops between fluorescent vines dripping with caustic sap. Yet even in this toxic menagerie, Venomancer is acknowledged as the most venomous. Ages ago, an Herbalist named Lesale crossed the Bay of Fradj by coracle, searching for potent essences that might be extracted from bark and root, and found instead a nightmare transformation. Two leagues into Jidi's jungle, Lesale encountered a reptile camouflaged as an epiphyte, which stung him as he mistakenly plucked it. In desperation, he used his partial knowledge of the jungle's herbal bounty, mixing the venom of the (swiftly throttled) reptile with the nectar of an armored orchid, to compound an antidote. In the moments before a black paralysis claimed him completely, he injected himself by orchid-thorn, and instantly fell into a coma.\r\n\t\t\t\t<br><br>Seventeen years later, something stirred in the spot where he had fallen, throwing off the years' accumulation of humus: Venomancer. Lesale the Herbalist no longer--but Lesale the Deathbringer. His mind was all but erased, and his flesh had been consumed and replaced by a new type of matter--one fusing the venom of the reptile with the poisonous integument of the orchid. Jidi's Acid Jungles knew a new master, one before whom even the most vicious predators soon learned to bow or burrow for their lives. The lurid isle proved too confining, and some human hunger deep in the heart of the Venomancer drove Lesale out in search of new poisons--and new deaths to bring.",
+  "hype": "Venomancer brings slow death to his enemies. Sprouting an <b>endless army of toxin-spitting watchers</b> to defend his territory, should foes draw near he can release a massive <b>cloud of lingering poison</b> to weaken enemies.",
+  "abilities": [
+    {
+      "key": "venomancer_venomous_gale",
+      "name": "Venomous Gale",
+      "description": "Launches a ball of venom in a line, poisoning enemy units so that they take both initial damage and damage over time, as well as suffering slowed movement.  Venomous Gale deals damage every 3 seconds over its duration.",
+      "max_level": 4,
+      "cooldowns": [
+        21,
+        20,
+        19,
+        18
+      ],
+      "mana_costs": [
+        95,
+        105,
+        115,
+        125
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        800
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            15
+          ]
+        },
+        {
+          "key": "strike_damage",
+          "heading": "INITIAL DAMAGE:",
+          "values": [
+            25,
+            50,
+            75,
+            100
+          ]
+        },
+        {
+          "key": "tick_damage",
+          "heading": "DAMAGE PER TICK:",
+          "values": [
+            10,
+            40,
+            70,
+            100
+          ]
+        },
+        {
+          "key": "tick_interval",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "movement_slow",
+          "heading": "SLOW:",
+          "values": [
+            -35,
+            -40,
+            -45,
+            -50
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            125
+          ]
+        },
+        {
+          "key": "speed",
+          "heading": "PROJECTILE SPEED:",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "create_wards",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_travel_tooltip",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "num_created_wards_tooltip",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "ward_hp_dmg_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            95,
+            105,
+            115,
+            125
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            21,
+            20,
+            19,
+            18
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Increases cast range and projectile speed by %shard_travel_tooltip%%%. When Venomous Gale impacts enemy heroes, %num_created_wards_tooltip% Plague Wards are created around them.",
+      "notes": [
+        "Venomous Gale can be lethal.",
+        "Duration damage is dealt every %tick_interval% seconds.",
+        "Slow starts at %movement_slow%%%, and decreases as time passes."
+      ],
+      "lore": "A concoction of various stings, poisons, and toxins gathered from the jungles of Jidi Isle, victims surviving it are rare."
+    },
+    {
+      "key": "venomancer_snakebite",
+      "name": "Snakebite",
+      "description": "Venomancer summons a Spawn of Aktok to sink its fangs into a target, dealing magic damage and applying a toxin that does damage every second. When the target attacks while infected, they take the initial damage again.",
+      "max_level": 4,
+      "cooldowns": [
+        20,
+        18,
+        16,
+        14
+      ],
+      "mana_costs": [
+        70,
+        80,
+        90,
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        600
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "base_damage",
+          "heading": "INITIAL DAMAGE:",
+          "values": [
+            40,
+            60,
+            80,
+            100
+          ]
+        },
+        {
+          "key": "tick_damage",
+          "heading": "DAMAGE PER SECOND:",
+          "values": [
+            10,
+            20,
+            30,
+            40
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "damage_interval",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "undispellable",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            70,
+            80,
+            90,
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            20,
+            18,
+            16,
+            14
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "venomancer_plague_ward",
+      "name": "Plague Ward",
+      "description": "Summons a plague ward to attack enemy units and structures. The ward is immune to magic. Wards gain the Poison Sting level from Venomancer, dealing 50% of the full damage.",
+      "max_level": 4,
+      "cooldowns": [
+        5
+      ],
+      "mana_costs": [
+        24,
+        26,
+        28,
+        30
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        850
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "gold_bounty_pct",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "ward_multiplier",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "ward_model_scale",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "ward_hp_tooltip",
+          "heading": "WARD HP:",
+          "values": [
+            150,
+            250,
+            350,
+            450
+          ]
+        },
+        {
+          "key": "ward_damage_tooltip",
+          "heading": "WARD DAMAGE:",
+          "values": [
+            16,
+            24,
+            32,
+            40
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            850
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            24,
+            26,
+            28,
+            30
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            5
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "A mixture of his old herbalist talents and newfound toxic mastery creates a living embodiment of plague."
+    },
+    {
+      "key": "venomancer_poison_sting",
+      "name": "Poison Sting",
+      "description": "Venomancer's attacks slow enemies and deal damage over time.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            4.5
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE PER SECOND:",
+          "values": [
+            9
+          ]
+        },
+        {
+          "key": "movement_speed",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "hp_regen_reduction",
+          "heading": "",
+          "values": null
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Whenever Poison Sting is applied, it deals extra damage equal to %debuff_dmg%%% of the attacker's base damage for every debuff the enemy has from Venomancer or a unit he controls.",
+      "notes": [
+        "Poison Sting damage can be lethal.",
+        "Damage from Poison Sting does not interrupt healing from items, nor does it activate the cooldown on Blink Dagger."
+      ],
+      "lore": "The paralytic sting of the creature which caused his transformation now belongs to the Venomancer."
+    },
+    {
+      "key": "venomancer_noxious_plague",
+      "name": "Noxious Plague",
+      "description": "Infects an enemy with a plague that does damage on application then slows the target and deals damage over time based on their maximum health. When the debuff ends for any reason, all debuffs from Venomancer on the initial target and the plague are spread to nearby targets. Additional spreads beyond the first do not deal impact damage.",
+      "max_level": 3,
+      "cooldowns": [
+        100,
+        90,
+        80
+      ],
+      "mana_costs": [
+        200,
+        250,
+        300
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        900
+      ],
+      "cast_points": [
+        0.15
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "debuff_duration",
+          "heading": "DURATION:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "impact_damage",
+          "heading": "INITIAL DAMAGE:",
+          "values": [
+            150,
+            200,
+            250
+          ]
+        },
+        {
+          "key": "damage_per_second",
+          "heading": "MAX HEALTH DAMAGE:",
+          "values": [
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "key": "damage_tick_rate",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "debuff_time_transfer",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "movement_slow",
+          "heading": "SLOW:",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "debuff_radius",
+          "heading": "SPREAD RADIUS:",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "spread_count",
+          "heading": "SPREAD COUNT:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "mres_reduce",
+          "heading": "MAGIC RESIST REDUCTION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "impact_damage_reduce",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "projectile_speed",
+          "heading": "PROJECTILE SPEED:",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.15
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            200,
+            250,
+            300
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            100,
+            90,
+            80
+          ]
+        }
+      ],
+      "scepter_upgrade": "Decreases cooldown by %bonus_AbilityCooldown% seconds. Infected units have decreased magic resistance. Additional spreads from hero targets deal full impact damage.",
+      "shard_upgrade": null,
+      "notes": [
+        "Spread debuffs have fixed duration and are not modified by status resistance or debuff amplification."
+      ],
+      "lore": "Deep in the heart of the jungles of Jidi, the seeds of extermination freely grow."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Venomous Gale CD"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_hp_regen_reduction}% Poison Sting Health Regen Reduction"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_debuff_radius} Noxious Plague Spread Radius"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_movement_speed}% Poison Sting Slow"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_base_damage} Snakebite Initial Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Plague Ward Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "Snakebite Undispellable"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_ward_hp_tooltip}x Plague Ward HP/Damage"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

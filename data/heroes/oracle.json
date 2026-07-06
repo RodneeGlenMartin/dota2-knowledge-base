@@ -1,0 +1,628 @@
+{
+  "id": 111,
+  "name": "Oracle",
+  "slug": "oracle",
+  "npc_name": "npc_dota_hero_oracle",
+  "primary_attribute": "int",
+  "attack_type": "Ranged",
+  "complexity": 3,
+  "roles": [
+    "Support",
+    "Nuker",
+    "Disabler",
+    "Escape"
+  ],
+  "stats": {
+    "base_str": 20,
+    "str_gain": 2.2,
+    "base_agi": 15,
+    "agi_gain": 1.7,
+    "base_int": 26,
+    "int_gain": 3.6,
+    "damage_min": 39,
+    "damage_max": 45,
+    "attack_rate": 1.7,
+    "attack_range": 625,
+    "projectile_speed": 900,
+    "armor": 3.5,
+    "magic_resistance": 25,
+    "movement_speed": 295,
+    "turn_rate": 0.7,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 560,
+    "health_regen": 2.25,
+    "max_mana": 387,
+    "mana_regen": 1.8000001
+  },
+  "lore": "Ascendants to the Great Seat of Cymurri had for ages imported their Oracles exclusively from the Ivory Incubarium, high in the hollow peaks of the Zealot's Range, with a downpayment made at the time of the embryo's conception and the balance surrendered on delivery of a mature, well-trained prophet to the Gate of the Graven King.\r\n\t\t\t\t<br><br>Raised by same Pallid Sybils who bred and birthed them, all sanctioned Oracles were anchored by their physical form to the world we most of us share; meanwhile, their souls roamed far afield, barely bound by the airiest astral umbilicus. From such cosmic roamings the prophets would return, speaking words of fire with tongues of flesh. Their mystic utterances were analyzed by the Cymurri Advisors, who found in them visions of the future, diplomatic advice, all the supernatural ammunition the line of Graven Kings needed to secure victory in every campaign, whether in the court or on the battlefield. Thus it went for generations, the Graventome's pages filling with the names of triumphant kings and the new domains they had acquired. So it went, that is, until the particular Oracle named Nerif arrived to serve the very last of the stone-helmed kings. \r\n\t\t\t\t<br><br>From the first, Nerif's prophecies were unusual. They seemed not merely to portend the future, but to shape it. The weird soothsayer croaked out advice no one had requested, and suddenly the Cymurri found themselves immersed in conflicts with newfound enemies. The Advisors, sensing a threat to their power, were quick to pin these unwelcome developments on the latest Oracle. They demanded his removal, petitioning the Sybils to reclaim their defective prophet and replace him with a worthy substitute. But Nerif described an ominous dream of the Incubarium's destruction, and within hours came news of the ancient school's destruction in a catastrophic avalanche. Fearing the same fate as the Pallid Sybils, the Advisors withdrew to their counsel chambers, suddenly anxious to avoid the Oracle's notice. \r\n\t\t\t\t<br><br>The Graven King, however, was a creature of great practicality. He doubted the commitment of his overprudent Advisors. An Oracle of such rarity, he reasoned, ought be used as a weapon to enlarge his domain. He therefore demoted his timid counselors and stationed Nerif at his side. With only a blunt understanding of Nerif's talent, he boldly stated the outcomes he desired, and coaxed Nerif into uttering his wishes as prophecy. \r\n\t\t\t\t<br><br>At first, all was well. The Last Graven King boasted that by adopting Fate's pet, he had made a plaything of Fate itself. He should have taken it as a warning then when, on the eve of his invasion of the Unsated Satrap's realm, he attempted to coerce a prediction of certain victory from his Oracle, only to hear Nerif quietly mutter, \"It could go either way.\" No firmer statement could he force from Nerif's lips. Still, the King was confident in his army. The Satrapy was landlocked, poorly armed, and shut off from all possible allies. He took \"It could go either way\" to indicate that with tactical might on his side, there was little risk in his plan.\r\n\t\t\t\t<br><br>Of course, we now know that he should have taken the sayer's words more literally. Even with careful study of the Annotated Annals of If, what happened on the field before the Unsated Satrap's palace is almost impossible to visualize. It appears that in the midst of the carnage, the battle began to bifurcate. At each pivotal moment, reality calved and broke into bits. Soldiers who staggered and fell in battle also stood sure-footed, forging onward to fight. Their minds also split; the warriors found themselves both dead and alive, existent and non-existent. Victory and defeat were partitioned, so that each separate outcome was experienced in simultaneity by both armies. The universe became a hall of mirrors, with all the mirrors endlessly shattering.\r\n\t\t\t\t<br><br>The immediate effect on both parties was insanity. Unable to comprehend the state of being both triumphant and defeated, the Graven King's mind dispersed into motes of m",
+  "hype": "By carefully combining his <b>intricate abilities</b>, Oracle controls the destinies of both friend and foe. <b>Shrouding threatened allies</b> with his false promise, he can grant an ally a few precious moments of protection to destroy an enemy, or even <b>reverse a grisly fate.</b>",
+  "abilities": [
+    {
+      "key": "oracle_fortunes_end",
+      "name": "Fortune's End",
+      "description": "CHANNELED - Gathers Oracle's power into a bolt of scouring energy that, when released, damages, roots, and dispels enemies of buffs in an area around the target. If target is an ally it will only dispel debuffs. The root duration increases with channeling time.\n\nDISPEL TYPE: Basic Dispel",
+      "max_level": 4,
+      "cooldowns": [
+        18,
+        14,
+        10,
+        6
+      ],
+      "mana_costs": [
+        80
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        850
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "channel_time",
+          "heading": "MAX CHANNEL TIME:",
+          "values": [
+            2.5
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            100,
+            160,
+            220,
+            280
+          ]
+        },
+        {
+          "key": "bolt_speed",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "minimum_purge_duration",
+          "heading": "MIN ROOT DURATION:",
+          "values": [
+            0.75
+          ]
+        },
+        {
+          "key": "maximum_purge_duration",
+          "heading": "MAX ROOT DURATION:",
+          "values": [
+            2.75
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            350
+          ]
+        },
+        {
+          "key": "purge_constantly",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            850
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            80
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            18,
+            14,
+            10,
+            6
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Affects invulnerable units."
+      ],
+      "lore": "The astral orb crackles with power while raw energy lances out, temporarily disrupting an enemy's connection to their own body."
+    },
+    {
+      "key": "oracle_fates_edict",
+      "name": "Fate's Edict",
+      "description": "Oracle enraptures a target, disarming them and granting them %magic_damage_resistance_pct_tooltip%%% magic damage resistance.",
+      "max_level": 4,
+      "cooldowns": [
+        17,
+        14,
+        11,
+        8
+      ],
+      "mana_costs": [
+        70
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        700
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            3.5,
+            4,
+            4.5,
+            5
+          ]
+        },
+        {
+          "key": "magic_damage_resistance_pct_tooltip",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            70
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            17,
+            14,
+            11,
+            8
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "An unbreakable prophecy resounds: a chosen ally shall briefly suffer no magics.  Other kinds of suffering however..."
+    },
+    {
+      "key": "oracle_purifying_flames",
+      "name": "Purifying Flames",
+      "description": "Burns away impurities, dealing heavy magic damage to the target before causing them to regenerate health over time. The amount of health regenerated over its duration exceeds the amount of initial damage. Can be cast on enemies and allies.",
+      "max_level": 4,
+      "cooldowns": [
+        2.5
+      ],
+      "mana_costs": [
+        75
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        850
+      ],
+      "cast_points": [
+        0.1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            90,
+            180,
+            270,
+            360
+          ]
+        },
+        {
+          "key": "heal_per_second",
+          "heading": "HEAL PER SECOND:",
+          "values": [
+            15,
+            25,
+            35,
+            45
+          ]
+        },
+        {
+          "key": "total_heal_tooltip",
+          "heading": "TOTAL HEAL:",
+          "values": [
+            150,
+            250,
+            350,
+            450
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "tick_rate",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "damage_modifier",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            850
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            2.5
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "The healing from Purifying Flames can be stacked with itself.",
+        "The damage from Purifying Flames cannot be lethal to allies."
+      ],
+      "lore": "Like a hall of mirrors might amplify the light of a single candle, the shattered walls of the universe can transform the light of prophecy into a burning torch."
+    },
+    {
+      "key": "oracle_rain_of_destiny",
+      "name": "Rain of Destiny",
+      "description": "Brings forth rain to the target area. Enemies standing in the area receive damage and have reduced Heal Amplification. Allies in the area heal and have increased incoming Heal Amplification.",
+      "max_level": 1,
+      "cooldowns": [
+        40
+      ],
+      "mana_costs": [
+        150
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        650
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            650
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE/HEAL PER SECOND:",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "tick_rate",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "heal_amp",
+          "heading": "HEAL AMPLIFICATION:",
+          "values": [
+            15
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            650
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            40
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Through mixture of the astral and the atmospheric, Nerif bends a single reality into paradoxical alignment."
+    },
+    {
+      "key": "oracle_false_promise",
+      "name": "False Promise",
+      "description": "Temporarily alters an ally's destiny, delaying any healing or damage taken until False Promise ends. Any healing that is delayed by False Promise is amplified. Removes most negative status effects and disables on initial cast.\n\nDISPEL TYPE: Strong Dispel",
+      "max_level": 3,
+      "cooldowns": [
+        110,
+        85,
+        60
+      ],
+      "mana_costs": [
+        100,
+        150,
+        200
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        700,
+        800,
+        900
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            7,
+            8.5,
+            10
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "bonus_armor",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "heal_amp_pct",
+          "heading": "DELAYED HEAL AMPLIFICATION:",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            700,
+            800,
+            900
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            150,
+            200
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            110,
+            85,
+            60
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Delayed damage and healing will take armor and magic resistance reductions into account when received.",
+        "The delayed damage and healing takes effect as soon as the target becomes vulnerable."
+      ],
+      "lore": "Foes and false prophets oft make lies of men's fates."
+    },
+    {
+      "key": "oracle_prognosticate",
+      "name": "Prognosticate",
+      "description": "Oracle will predict and announce to allies, where the next power rune will spawn (top or bottom) as well as Roshan's exact respawn time.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_maximum_purge_duration}s Fortune's End Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_armor} Armor False Promise"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_radius} Fortune's End Radius"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_modifier}% Purifying Flames Enemy Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s False Promise Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Purifying Flames Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "Fortune's End constantly Dispels"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_duration}s False Promise Duration"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "id": 263,
+  "name": "Hurricane Pike",
+  "slug": "hurricane_pike",
+  "internal_key": "item_hurricane_pike",
+  "cost": 4450,
+  "neutral_tier": null,
+  "description": "<h1>Active: Hurricane Thrust</h1> Pushes you and target enemy %enemy_length% units away from each other, and for %range_duration% seconds, allows you to make %max_attacks% attacks against the target without range restrictions and with +%bonus_attack_speed% attack speed.<br><br>Can be cast on self or allies to push the target %push_length% units in the direction it is facing.<br>Enemy Range: %cast_range_enemy%",
+  "notes": [
+    "Self-cast will use Hurricane Pike on yourself.",
+    "Hurricane Pike doesn't interrupt the target's actions.",
+    "Will not work on a unit inside Chronosphere, Duel, or Black Hole.",
+    "Attack Range bonuses from Monkey King Bar and Dragon Lance and its upgrades do not stack."
+  ],
+  "cooldowns": [
+    19
+  ],
+  "mana_costs": [
+    150
+  ],
+  "cast_ranges": [
+    650
+  ],
+  "special_values": [
+    {
+      "key": "bonus_intellect",
+      "heading": "+$int",
+      "values": [
+        15
+      ]
+    },
+    {
+      "key": "bonus_health",
+      "heading": "+$health",
+      "values": [
+        200
+      ]
+    },
+    {
+      "key": "bonus_agility",
+      "heading": "+$agi",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "bonus_strength",
+      "heading": "+$str",
+      "values": [
+        15
+      ]
+    },
+    {
+      "key": "base_attack_range",
+      "heading": "+$attack_range",
+      "values": [
+        130
+      ]
+    },
+    {
+      "key": "push_length",
+      "heading": "",
+      "values": [
+        600
+      ]
+    },
+    {
+      "key": "enemy_length",
+      "heading": "",
+      "values": [
+        425
+      ]
+    },
+    {
+      "key": "range_duration",
+      "heading": "",
+      "values": [
+        6
+      ]
+    },
+    {
+      "key": "cast_range_enemy",
+      "heading": "",
+      "values": [
+        425
+      ]
+    },
+    {
+      "key": "max_attacks",
+      "heading": "",
+      "values": [
+        5
+      ]
+    },
+    {
+      "key": "bonus_attack_speed",
+      "heading": "",
+      "values": [
+        100
+      ]
+    },
+    {
+      "key": "push_time",
+      "heading": "",
+      "values": [
+        0.5
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        650
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        150
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        19
+      ]
+    }
+  ],
+  "lore": "A legendary pike once held as royal sigil of the ancient wyvern riders.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

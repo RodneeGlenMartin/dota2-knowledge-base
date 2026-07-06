@@ -1,0 +1,709 @@
+{
+  "id": 5,
+  "name": "Crystal Maiden",
+  "slug": "crystal_maiden",
+  "npc_name": "npc_dota_hero_crystal_maiden",
+  "primary_attribute": "int",
+  "attack_type": "Ranged",
+  "complexity": 1,
+  "roles": [
+    "Support",
+    "Nuker",
+    "Disabler"
+  ],
+  "stats": {
+    "base_str": 17,
+    "str_gain": 2.2,
+    "base_agi": 16,
+    "agi_gain": 1.8,
+    "base_int": 20,
+    "int_gain": 3.3,
+    "damage_min": 48,
+    "damage_max": 54,
+    "attack_rate": 1.7,
+    "attack_range": 600,
+    "projectile_speed": 900,
+    "armor": 2.6666667,
+    "magic_resistance": 25,
+    "movement_speed": 280,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 494,
+    "health_regen": 1.95,
+    "max_mana": 315,
+    "mana_regen": 1
+  },
+  "lore": "Born in a temperate realm, raised with her fiery older sister Lina, Rylai the Crystal Maiden soon found that her innate elemental affinity to ice created trouble for all those around her. Wellsprings and mountain rivers froze in moments if she stopped to rest nearby; ripening crops were bitten by frost, and fruiting orchards turned to mazes of ice and came crashing down, spoiled. When their exasperated parents packed Lina off to the equator, Rylai found herself banished to the cold northern realm of Icewrack, where she was taken in by an Ice Wizard who had carved himself a hermitage at the crown of the Blueheart Glacier. After long study, the wizard pronounced her ready for solitary practice and left her to take his place, descending into the glacier to hibernate for a thousand years. Her mastery of the Frozen Arts has only deepened since that time, and now her skills are unmatched.",
+  "hype": "Able to keep her <b>allies supplied with mana</b> as she <b>slows down enemies</b> to ensure a kill, Crystal Maiden is a helpful addition to any team. And, when the opportunity arises, she can unleash her <b>massive ultimate ability</b> to devastate her foes.",
+  "abilities": [
+    {
+      "key": "crystal_maiden_crystal_nova",
+      "name": "Crystal Nova",
+      "description": "A burst of damaging frost slows enemy movement in the targeted area.",
+      "max_level": 4,
+      "cooldowns": [
+        11,
+        10,
+        9,
+        8
+      ],
+      "mana_costs": [
+        115,
+        135,
+        155,
+        175
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        700
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            425
+          ]
+        },
+        {
+          "key": "movespeed_slow",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            -20,
+            -30,
+            -40,
+            -50
+          ]
+        },
+        {
+          "key": "attackspeed_slow",
+          "heading": "ATTACK SLOW:",
+          "values": [
+            -30,
+            -45,
+            -60,
+            -75
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "vision_duration",
+          "heading": "",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "nova_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            110,
+            160,
+            210,
+            260
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            115,
+            135,
+            155,
+            175
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            11,
+            10,
+            9,
+            8
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Crystal Nova provides vision in the targeted area for the duration."
+      ],
+      "lore": "The air temperature around Rylai drops rapidly, chilling all around her to the core."
+    },
+    {
+      "key": "crystal_maiden_frostbite",
+      "name": "Frostbite",
+      "description": "Encases an enemy unit in ice, prohibiting movement and attack, while dealing damage over time. Deals %creep_multiplier%x damage to non-ancient creeps.",
+      "max_level": 4,
+      "cooldowns": [
+        9,
+        8,
+        7,
+        6
+      ],
+      "mana_costs": [
+        125,
+        135,
+        145,
+        155
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        600
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage_per_second",
+          "heading": "DAMAGE PER SECOND:",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            1.5,
+            2,
+            2.5,
+            3
+          ]
+        },
+        {
+          "key": "creep_multiplier",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "tick_interval",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            125,
+            135,
+            145,
+            155
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            9,
+            8,
+            7,
+            6
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Frostbite is considered a root."
+      ],
+      "lore": "Rylai channels winds from the Blueheart Glacier, imprisoning attackers in thick blocks of ice."
+    },
+    {
+      "key": "crystal_maiden_brilliance_aura",
+      "name": "Arcane Aura",
+      "description": "Gives mana regeneration to all friendly units on the map. Allies within a %proximity_bonus_radius% radius of Crystal Maiden receive more mana regeneration.<br><br>Crystal Maiden passively gains mana regen amplification.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "base_mana_regen",
+          "heading": "MANA REGEN:",
+          "values": [
+            0.4,
+            0.6,
+            0.8,
+            1
+          ]
+        },
+        {
+          "key": "proximity_mana_regen_tooltip",
+          "heading": "CLOSE MANA REGEN:",
+          "values": [
+            1.2,
+            1.8,
+            2.4,
+            3
+          ]
+        },
+        {
+          "key": "mana_regen_amp",
+          "heading": "MANA REGEN AMPLIFICATION:",
+          "values": [
+            20,
+            40,
+            60,
+            80
+          ]
+        },
+        {
+          "key": "proximity_bonus_factor",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "proximity_bonus_radius",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Cold temperatures promote the essence of magic, causing Rylai's presence to allow spell usage in abundance."
+    },
+    {
+      "key": "crystal_maiden_crystal_clone",
+      "name": "Crystal Clone",
+      "description": "Slides in a direction, creating a crystal clone of herself in her place and disjointing incoming projectiles. If the clone takes enough damage or times out, it shatters, Frostbiting enemies in a %frostbite_radius% AoE around its place. The Clone can also be destroyed by Crystal Maiden's own spells.",
+      "max_level": 1,
+      "cooldowns": [
+        12
+      ],
+      "mana_costs": [
+        150
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        4294967295
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "hop_distance",
+          "heading": "DISTANCE:",
+          "values": [
+            275
+          ]
+        },
+        {
+          "key": "hop_duration",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "clone_duration",
+          "heading": "CLONE DURATION:",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "frostbite_radius",
+          "heading": "",
+          "values": [
+            450
+          ]
+        },
+        {
+          "key": "anim_delay",
+          "heading": "",
+          "values": [
+            0.02
+          ]
+        },
+        {
+          "key": "clone_health",
+          "heading": "CLONE HEALTH:",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            -1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "So convincing that some allies have spent minutes talking to the clone before they realized she wasn't speaking back."
+    },
+    {
+      "key": "crystal_maiden_glacial_guard",
+      "name": "Glacial Guard",
+      "description": "A portion of the mana Crystal Maiden spends on her abilities is converted into a physical barrier.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "mana_multiplier",
+          "heading": "MANA SPENT TO BARRIER:",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "barrier_duration",
+          "heading": "BARRIER DURATION:",
+          "values": [
+            8
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "crystal_maiden_freezing_field",
+      "name": "Freezing Field",
+      "description": "CHANNELED - Surrounds Crystal Maiden with 100 random icy explosions that slow enemies and deal massive damage. Lasts %abilitychanneltime% seconds.",
+      "max_level": 3,
+      "cooldowns": [
+        100,
+        95,
+        90
+      ],
+      "mana_costs": [
+        200,
+        400,
+        600
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        10
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            810
+          ]
+        },
+        {
+          "key": "explosion_radius",
+          "heading": "",
+          "values": [
+            320
+          ]
+        },
+        {
+          "key": "explosion_interval",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "movespeed_slow",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            -40
+          ]
+        },
+        {
+          "key": "attack_slow",
+          "heading": "ATTACK SLOW:",
+          "values": [
+            -80,
+            -120,
+            -160
+          ]
+        },
+        {
+          "key": "slow_duration",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "explosion_min_dist",
+          "heading": "",
+          "values": [
+            195
+          ]
+        },
+        {
+          "key": "explosion_max_dist",
+          "heading": "",
+          "values": [
+            785
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "EXPLOSION DAMAGE:",
+          "values": [
+            110,
+            180,
+            250
+          ]
+        },
+        {
+          "key": "frostbite_delay",
+          "heading": "",
+          "values": [
+            -1
+          ]
+        },
+        {
+          "key": "shard_bonus_explosion",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_self_movement_speed_slow_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "can_move",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityChannelTime",
+          "heading": "",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            200,
+            400,
+            600
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            100,
+            95,
+            90
+          ]
+        }
+      ],
+      "scepter_upgrade": "Allows you to move, cast and attack during Freezing Field. Can still be interrupted by enemies. You move %shard_self_movement_speed_slow_pct%%% slower during this. Increases total number of explosions by %shard_bonus_explosion%%%. Applies Frostbite to any unit that has been standing in the Freezing Field for over %frostbite_delay%s.",
+      "shard_upgrade": null,
+      "notes": [
+        "The slow is applied on all enemies in the radius, even if they aren't hit by an explosion (lasts %slow_duration% second).",
+        "Explosions occur every %explosion_interval% seconds."
+      ],
+      "lore": "Once the place of her exile, Icewrack has become an anchor for Rylai's frigid onslaught."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:value} Health"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Intelligence"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_AbilityCastRange} Frostbite Cast Range"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Crystal Nova Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_mana_multiplier}% Glacial Guard Mana Spent To Barrier"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Freezing Field Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_duration}s Frostbite Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_nova_damage} Crystal Nova Damage"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

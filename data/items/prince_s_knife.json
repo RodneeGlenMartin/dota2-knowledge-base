@@ -1,0 +1,53 @@
+{
+  "id": 325,
+  "name": "Prince's Knife",
+  "slug": "prince_s_knife",
+  "internal_key": "item_princes_knife",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Hex Strike</h1> The next attack hexes the hit enemy into a frog for %duration% seconds.",
+  "notes": null,
+  "cooldowns": [
+    10
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        1.5
+      ]
+    },
+    {
+      "key": "movespeed",
+      "heading": "",
+      "values": [
+        140
+      ]
+    },
+    {
+      "key": "projectile_bonus",
+      "heading": "+Attack Projectile Speed",
+      "values": [
+        60
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        10
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

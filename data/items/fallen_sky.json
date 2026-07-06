@@ -1,0 +1,116 @@
+{
+  "id": 371,
+  "name": "Fallen Sky",
+  "slug": "fallen_sky",
+  "internal_key": "item_fallen_sky",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Fallen Sky</h1> Transform into a meteor that strikes down at the target area after %land_time% seconds in a %impact_radius% AoE, stunning enemies for %stun_duration% seconds and dealing impact damage. Continues to deal damage every %burn_interval% seconds to enemy units and buildings for %burn_duration% seconds.<BR><BR>Building Impact Damage: %impact_damage_buildings% <BR>Building Over Time Damage: %burn_dps_buildings% <BR><BR>Non-Building Impact Damage: %impact_damage_units% <BR>Non-Building Over Time Damage: %burn_dps_units%<br><br>Fallen Sky cannot be used for %blink_damage_cooldown% seconds after taking damage from an enemy hero or Roshan.",
+  "notes": null,
+  "cooldowns": [
+    25
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    1200
+  ],
+  "special_values": [
+    {
+      "key": "burn_dps_buildings",
+      "heading": "",
+      "values": [
+        60
+      ]
+    },
+    {
+      "key": "burn_dps_units",
+      "heading": "",
+      "values": [
+        60
+      ]
+    },
+    {
+      "key": "burn_duration",
+      "heading": "",
+      "values": [
+        6
+      ]
+    },
+    {
+      "key": "stun_duration",
+      "heading": "",
+      "values": [
+        1.6
+      ]
+    },
+    {
+      "key": "burn_interval",
+      "heading": "",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "land_time",
+      "heading": "",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "impact_radius",
+      "heading": "",
+      "values": [
+        315
+      ]
+    },
+    {
+      "key": "max_duration",
+      "heading": "",
+      "values": [
+        2.5
+      ]
+    },
+    {
+      "key": "impact_damage_buildings",
+      "heading": "",
+      "values": [
+        110
+      ]
+    },
+    {
+      "key": "impact_damage_units",
+      "heading": "",
+      "values": [
+        150
+      ]
+    },
+    {
+      "key": "blink_damage_cooldown",
+      "heading": "",
+      "values": [
+        3
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        25
+      ]
+    }
+  ],
+  "lore": "One of the few surviving creations of the acolytes of the Wyrmforge.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

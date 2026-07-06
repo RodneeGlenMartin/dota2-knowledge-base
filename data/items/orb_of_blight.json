@@ -1,0 +1,41 @@
+{
+  "id": 240,
+  "name": "Orb of Blight",
+  "slug": "orb_of_blight",
+  "internal_key": "item_blight_stone",
+  "cost": 300,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Lesser Corruption</h1> Your attacks reduce the target's armor by %corruption_armor% for %corruption_duration% seconds.",
+  "notes": [
+    "Does not stack with its upgrades, Desolator, or Stygian Desolator."
+  ],
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "corruption_armor",
+      "heading": "",
+      "values": [
+        -2
+      ]
+    },
+    {
+      "key": "corruption_duration",
+      "heading": "",
+      "values": [
+        3
+      ]
+    }
+  ],
+  "lore": "An unnerving stone unearthed beneath the Fields of Endless Carnage.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

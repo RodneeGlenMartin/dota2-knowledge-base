@@ -1,0 +1,630 @@
+{
+  "id": 101,
+  "name": "Skywrath Mage",
+  "slug": "skywrath_mage",
+  "npc_name": "npc_dota_hero_skywrath_mage",
+  "primary_attribute": "int",
+  "attack_type": "Ranged",
+  "complexity": 1,
+  "roles": [
+    "Support",
+    "Nuker",
+    "Disabler"
+  ],
+  "stats": {
+    "base_str": 22,
+    "str_gain": 2,
+    "base_agi": 13,
+    "agi_gain": 0.8,
+    "base_int": 25,
+    "int_gain": 4.1,
+    "damage_min": 41,
+    "damage_max": 51,
+    "attack_rate": 1.7,
+    "attack_range": 625,
+    "projectile_speed": 1000,
+    "armor": 0.16666675,
+    "magic_resistance": 25,
+    "movement_speed": 325,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 604,
+    "health_regen": 2.45,
+    "max_mana": 375,
+    "mana_regen": 1.75
+  },
+  "lore": "A highly placed mage in the court of the Ghastly Eyrie, Dragonus lives a troubled existence. Sworn by birth to protect whoever sits within the Nest of Thorns, he hates the current Skywrath queen with all his soul. As a youth, high-born, he was a friend and companion to the eldest Skywrath princess, Shendelzare, first in line for the Nest. He had loved her warmly and unshakably, but as his studies took hold, his mind turned to arcane learning and the mastery of Skywrath sorcery.\r\n\t\t\t\t<br><br>Obsessed with matters aetherial, he missed the mundane signs of courtly treachery that hinted at a plot against Shendelzare, and lost his chance to foil it. When the court was shaken by a swift and violent coup, he emerged from his studies to discover his oldest and dearest friend had been lost to him. The Nest of Thorns now belonged to Shendelzare's ruthless younger sister, and Dragonus could do nothing. The magic of the Skywrath Mage serves only the sworn protector of the Skywrath scion, so to act against the Nest would render him helpless. He clings to his post, believing it to be the best hope of one day restoring his true love to her rightful place. Meanwhile, his secret is known only to the goddess Scree'Auk, whose magic it was transformed Shendelzare from a crippled physical creature into an embodiment of pure vengeful energy.\r\n\t\t\t\t<br><br>While he dreams of restoring his beloved queen to the Ghastly Eyrie, he dreams even more desperately of restoring Shendelzare herself to a fully healed physical form. The duplicity of his role at court tortures him, for he is a noble and good-hearted creature; but the worst torture of all is imagining the hatred that Vengeful Spirit must hold in her heart for him.",
+  "hype": "Deadly and fragile in equal measure, Skywrath Mage quickly destroys his enemies with a barrage of <b>powerful magic</b>. He <b>silences foes</b> while increasing their <b>vulnerability</b> to spells, meaning he has no trouble vaporizing any who stand against him.",
+  "abilities": [
+    {
+      "key": "skywrath_mage_arcane_bolt",
+      "name": "Arcane Bolt",
+      "description": "Skywrath Mage launches a slow-moving bolt of arcane magic, dealing damage to an enemy unit based on Skywrath Mage's intelligence.",
+      "max_level": 4,
+      "cooldowns": [
+        5,
+        4,
+        3,
+        2
+      ],
+      "mana_costs": [
+        70
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        875
+      ],
+      "cast_points": [
+        0.1,
+        0.1,
+        0.1,
+        0.1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "pierce_spell_immunity",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "bolt_speed",
+          "heading": "",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "bolt_vision",
+          "heading": "",
+          "values": [
+            325
+          ]
+        },
+        {
+          "key": "bolt_damage",
+          "heading": "BASE DAMAGE:",
+          "values": [
+            60,
+            90,
+            120,
+            150
+          ]
+        },
+        {
+          "key": "int_multiplier",
+          "heading": "INT DAMAGE MULTIPLIER:",
+          "values": [
+            1.5
+          ]
+        },
+        {
+          "key": "vision_duration",
+          "heading": "",
+          "values": [
+            3.34
+          ]
+        },
+        {
+          "key": "extra_bolt_search_radius",
+          "heading": "",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "total_bolt_count",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            875
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            70
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            5,
+            4,
+            3,
+            2
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "When Skywrath Mage casts Arcane Bolt, %total_bolt_count% bolts are created, one aimed at the original target, and two others aimed at random enemies within %extra_bolt_search_radius% range of the original target. Heroes will take priority.",
+      "notes": [
+        "The projectile moves very slowly (500 ms), providing 325 vision around it.  Upon impact, it will reveal the target area for 3.34 seconds.",
+        "Arcane Bolt cannot be disjointed."
+      ],
+      "lore": "Within the Ghastly Eyrie's endless intrigue, only the clever and calm can hope to survive."
+    },
+    {
+      "key": "skywrath_mage_concussive_shot",
+      "name": "Concussive Shot",
+      "description": "Skywrath Mage sets off a long range shot that hits the closest hero within a long range.  Upon impact, it deals damage and slows in an area of effect.",
+      "max_level": 4,
+      "cooldowns": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "mana_costs": [
+        80,
+        85,
+        90,
+        95
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1600
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "launch_radius",
+          "heading": "SHOT RANGE:",
+          "values": [
+            1600
+          ]
+        },
+        {
+          "key": "launch_global",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "slow_radius",
+          "heading": "DAMAGE RADIUS:",
+          "values": [
+            250
+          ]
+        },
+        {
+          "key": "speed",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            120,
+            180,
+            240,
+            300
+          ]
+        },
+        {
+          "key": "slow_duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "movement_speed_pct",
+          "heading": "SLOW:",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "shot_vision",
+          "heading": "",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "vision_duration",
+          "heading": "",
+          "values": [
+            3.34
+          ]
+        },
+        {
+          "key": "scepter_radius",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1600
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            80,
+            85,
+            90,
+            95
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            15,
+            14,
+            13,
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": "When Skywrath Mage casts Concussive Shot, a different random target within %scepter_radius% range of the original target will be hit with the same ability. Heroes will take priority.",
+      "shard_upgrade": null,
+      "notes": [
+        "If no enemy heroes are in range or they are in fog, Concussive Shot targets the nearest enemy creep.",
+        "Damages creeps around the impact area.",
+        "Provides 400 vision around the projectile, and reveals the target area for 3.34 seconds upon impact."
+      ],
+      "lore": "Those who serve the court of the Ghastly Eyrie are ever locked in covert war. One must always know where danger lurks nearest."
+    },
+    {
+      "key": "skywrath_mage_ancient_seal",
+      "name": "Ancient Seal",
+      "description": "Skywrath Mage seals the targeted unit with an ancient rune, silencing it and causing it to take additional damage from spells.",
+      "max_level": 4,
+      "cooldowns": [
+        14
+      ],
+      "mana_costs": [
+        80,
+        90,
+        100,
+        110
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        700,
+        750,
+        800,
+        850
+      ],
+      "cast_points": [
+        0.1,
+        0.1,
+        0.1,
+        0.1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "resist_debuff",
+          "heading": "INCREASED MAGIC DAMAGE:",
+          "values": [
+            -20,
+            -25,
+            -30,
+            -35
+          ]
+        },
+        {
+          "key": "seal_duration",
+          "heading": "DURATION:",
+          "values": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "key": "scepter_radius",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            700,
+            750,
+            800,
+            850
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            80,
+            90,
+            100,
+            110
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            14
+          ]
+        }
+      ],
+      "scepter_upgrade": "Anytime Skywrath Mage casts Ancient Seal, a different random target within %scepter_radius% range of the original target will be affected by the same ability. Heroes will take priority.",
+      "shard_upgrade": null,
+      "notes": [
+        "The magic damage resistance reduction doesn't affect creeps."
+      ],
+      "lore": "A holy incantation, whosoever finds themselves touched by Avilliva's sigil must suffer in penitent silence."
+    },
+    {
+      "key": "skywrath_mage_shield_of_the_scion",
+      "name": "Shield of the Scion",
+      "description": "Every time Skywrath Mage deals magical damage to an enemy hero with his abilities, he gains a small magic damage barrier. Each buff stacks independently.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "stack_duration",
+          "heading": "",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "damage_barrier",
+          "heading": "BARRIER:",
+          "values": [
+            13.5
+          ]
+        },
+        {
+          "key": "barrier_duration",
+          "heading": "DURATION:",
+          "values": [
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "The court mages of Skywrath may only deploy their magic in defense of the kingdom and the throne."
+    },
+    {
+      "key": "skywrath_mage_mystic_flare",
+      "name": "Mystic Flare",
+      "description": "Skywrath Mage uses his ultimate magical ability to conjure a precise and violent mystical field that lays waste to his adversaries. Deals massive damage distributed evenly among any Heroes in the area over %duration% seconds.",
+      "max_level": 3,
+      "cooldowns": [
+        55,
+        35,
+        15
+      ],
+      "mana_costs": [
+        300,
+        550,
+        800
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1200
+      ],
+      "cast_points": [
+        0.1,
+        0.1,
+        0.1,
+        0.1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            170
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            800,
+            1200,
+            1600
+          ]
+        },
+        {
+          "key": "damage_interval",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "scepter_radius",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            300,
+            550,
+            800
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            55,
+            35,
+            15
+          ]
+        }
+      ],
+      "scepter_upgrade": "When Skywrath Mage casts Mystic Flare, another Mystic Flare will be created on the position of a different random target enemy within %scepter_radius% range of the original target. Heroes will take priority.",
+      "shard_upgrade": null,
+      "notes": [
+        "Mystic Flare only affects Heroes. Mystic Flare does not damage creep heroes.",
+        "Spell immune enemies do not count toward the damage distribution.",
+        "Mystic Flare will damage enemy creeps if no enemy heroes are present.",
+        "Mystic Flare will immediately destroy illusions."
+      ],
+      "lore": "Only the most practiced of Skywrath sorcerers could hope to shape the skies into such a storm."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:value} Mana Regen"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_AbilityCastRange} Arcane Bolt Cast Range"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Ancient Seal Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_movement_speed_pct}% Concussive Shot Slow"
+    },
+    {
+      "slot": null,
+      "name": "Global Concussive Shot"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_resist_debuff}% Ancient Seal Increased Magic Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_int_multiplier}x Arcane Bolt Int Multiplier"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Mystic Flare Damage"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

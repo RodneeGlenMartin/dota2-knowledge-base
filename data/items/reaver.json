@@ -1,0 +1,32 @@
+{
+  "id": 53,
+  "name": "Reaver",
+  "slug": "reaver",
+  "internal_key": "item_reaver",
+  "cost": 2800,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_strength",
+      "heading": "+$str",
+      "values": [
+        25
+      ]
+    }
+  ],
+  "lore": "A massive axe capable of tearing whole mountains down.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

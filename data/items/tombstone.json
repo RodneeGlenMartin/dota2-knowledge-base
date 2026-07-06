@@ -1,0 +1,32 @@
+{
+  "id": 1028,
+  "name": "Tombstone",
+  "slug": "tombstone",
+  "internal_key": "item_mutation_tombstone",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    100
+  ],
+  "special_values": [
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        100
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

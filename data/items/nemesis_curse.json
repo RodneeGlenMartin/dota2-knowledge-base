@@ -1,0 +1,46 @@
+{
+  "id": 1159,
+  "name": "Nemesis Curse",
+  "slug": "nemesis_curse",
+  "internal_key": "item_nemesis_curse",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Glass Cannon</h1> Hero takes %debuff_self%%% more damage from all sources.\n<h1>Passive: Glassify</h1> When attacking a hero, apply a debuff increasing the damage received by that hero by %debuff_enemy%%% for %debuff_enemy_duration% seconds. Only one target can be affected by Glassify at the same time. ",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "debuff_self",
+      "heading": "",
+      "values": [
+        6
+      ]
+    },
+    {
+      "key": "debuff_enemy",
+      "heading": "",
+      "values": [
+        12
+      ]
+    },
+    {
+      "key": "debuff_enemy_duration",
+      "heading": "",
+      "values": [
+        5
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

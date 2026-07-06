@@ -1,0 +1,55 @@
+{
+  "id": 1583,
+  "name": "Mystical",
+  "slug": "mystical",
+  "internal_key": "item_enhancement_mystical",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "mana_regen",
+      "heading": "+$mana_regen",
+      "values": [
+        0.8,
+        1.6,
+        2.4,
+        3.2
+      ]
+    },
+    {
+      "key": "magic_res",
+      "heading": "+$spell_resist",
+      "values": [
+        0,
+        10,
+        13,
+        16
+      ]
+    },
+    {
+      "key": "manacost_reduction",
+      "heading": "+Mana Cost/Mana Loss Reduction",
+      "values": [
+        0,
+        0,
+        0,
+        15
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

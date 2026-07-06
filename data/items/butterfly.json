@@ -1,0 +1,55 @@
+{
+  "id": 139,
+  "name": "Butterfly",
+  "slug": "butterfly",
+  "internal_key": "item_butterfly",
+  "cost": 5450,
+  "neutral_tier": null,
+  "description": "",
+  "notes": [
+    "Stacks diminishingly with other sources of Evasion."
+  ],
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_agility",
+      "heading": "+$agi",
+      "values": [
+        35
+      ]
+    },
+    {
+      "key": "bonus_evasion",
+      "heading": "+$evasion",
+      "values": [
+        35
+      ]
+    },
+    {
+      "key": "bonus_attack_speed_pct",
+      "heading": "+$attack_pct",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "bonus_damage",
+      "heading": "+$damage",
+      "values": [
+        25
+      ]
+    }
+  ],
+  "lore": "Only the mightiest and most experienced of warriors can wield the Butterfly, but it provides incredible dexterity in combat.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

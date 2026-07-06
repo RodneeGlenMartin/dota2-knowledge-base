@@ -1,0 +1,90 @@
+{
+  "id": 603,
+  "name": "Swift Blink",
+  "slug": "swift_blink",
+  "internal_key": "item_swift_blink",
+  "cost": 6800,
+  "neutral_tier": null,
+  "description": "<h1>Active: Swift Blink</h1> Teleport to a target point up to %blink_range% units away.<br><br>After teleportation, you gain %bonus_movement%%% phased movement speed and +%bonus_agi_active% Agility for %duration% seconds. <br><br>Swift Blink cannot be used for %blink_damage_cooldown% seconds after taking damage from an enemy hero or Roshan.",
+  "notes": [
+    "Self-casting will cause you to teleport in the direction of your team's fountain."
+  ],
+  "cooldowns": [
+    15
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    1200
+  ],
+  "special_values": [
+    {
+      "key": "blink_range",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    },
+    {
+      "key": "blink_damage_cooldown",
+      "heading": "",
+      "values": [
+        3
+      ]
+    },
+    {
+      "key": "blink_range_clamp",
+      "heading": "",
+      "values": [
+        960
+      ]
+    },
+    {
+      "key": "bonus_agility",
+      "heading": "+$agi",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "bonus_movement",
+      "heading": "",
+      "values": [
+        40
+      ]
+    },
+    {
+      "key": "bonus_agi_active",
+      "heading": "",
+      "values": [
+        35
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        6
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        15
+      ]
+    }
+  ],
+  "lore": "A cunning blade able to anticipate and enable its bearer's movements.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": 225,
+  "name": "Nullifier",
+  "slug": "nullifier",
+  "internal_key": "item_nullifier",
+  "cost": 4350,
+  "neutral_tier": null,
+  "description": "<h1>Active: Nullify</h1> Dispels the target and applies a debuff for %mute_duration% seconds. Continuously dispels and slows the target.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>",
+  "notes": [
+    "Can be cast on invulnerable units."
+  ],
+  "cooldowns": [
+    10
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    900
+  ],
+  "special_values": [
+    {
+      "key": "bonus_damage",
+      "heading": "+$damage",
+      "values": [
+        75
+      ]
+    },
+    {
+      "key": "bonus_armor",
+      "heading": "+$armor",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "mute_duration",
+      "heading": "",
+      "values": [
+        4
+      ]
+    },
+    {
+      "key": "projectile_speed",
+      "heading": "",
+      "values": [
+        1800
+      ]
+    },
+    {
+      "key": "slow_pct",
+      "heading": "MOVEMENT SLOW:",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "slow_interval_duration",
+      "heading": "",
+      "values": [
+        0.5
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        900
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        10
+      ]
+    }
+  ],
+  "lore": "A dangerous weapon pilfered from an inverse dimension.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

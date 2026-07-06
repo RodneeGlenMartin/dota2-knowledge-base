@@ -1,0 +1,687 @@
+{
+  "id": 72,
+  "name": "Gyrocopter",
+  "slug": "gyrocopter",
+  "npc_name": "npc_dota_hero_gyrocopter",
+  "primary_attribute": "agi",
+  "attack_type": "Ranged",
+  "complexity": 1,
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Disabler"
+  ],
+  "stats": {
+    "base_str": 22,
+    "str_gain": 2.5,
+    "base_agi": 25,
+    "agi_gain": 3.4,
+    "base_int": 21,
+    "int_gain": 2.4,
+    "damage_min": 43,
+    "damage_max": 49,
+    "attack_rate": 1.7,
+    "attack_range": 365,
+    "projectile_speed": 3000,
+    "armor": 5.166667,
+    "magic_resistance": 25,
+    "movement_speed": 315,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 1000,
+    "max_health": 604,
+    "health_regen": 2.45,
+    "max_mana": 327,
+    "mana_regen": 1.0500001
+  },
+  "lore": "After serving through a lifetime of wars, upheaval, riots, and revolutions, the brass figured Aurel had seen enough. But in addition to a few trinkets and his considerable pension, the erstwhile engineer left with something far more interesting: a long-forgotten, incomplete schematic for a Gyrocopter, the world's first manned, non-magical flying device. Retiring to the tropical obscurity of the Ash Archipelago with little else but time and money, he set to work building the device.\r\n\t\t\t\t<br><br>As the years wore on and the remains of failed prototypes began to pile up, he began to wonder if mechanical flight was even possible. A decade and a day after his retirement, on a sunny afternoon with a southerly breeze, Aurel sat in his latest attempt bristling with indignation and expectant failure. With a grunt of effort he pulled the ignition cord and covered his head, waiting for the inevitable explosion. However to his great surprise he began to lift and, following a few panicked adjustments, stabilize. Within an hour, he was ducking and weaving with the breeze, level with the gulls, and Aurel found himself filled with the breathless wonder of flight.\r\n\t\t\t\t<br><br>As dusk settled in he set a course back to his workshop, but no sooner had he turned his craft when a cannonball tore through his tailfin. Disentangling himself from the wreckage, he swam toward the nearest piece of land in sight, and cursed to see the ship responsible for the cannonball collecting the debris. Days later, when Aurel returned to his workshop, he set to work on yet another gyrocopter, this one capable of carrying a much heavier, more dangerous payload.",
+  "hype": "With his arsenal of firepower at the ready, Gyrocopter soars into battle. Blasting all nearby enemies with shots from his <b>cannon</b> or hammering them with a <b>barrage of rockets</b>, if he is able to gather his full strength, he <b>demolishes foes with ease.</b>",
+  "abilities": [
+    {
+      "key": "gyrocopter_rocket_barrage",
+      "name": "Rocket Barrage",
+      "description": "Launches a salvo of rockets at nearby enemy units in a radius around the Gyrocopter. Lasts %barrage_duration% seconds.",
+      "max_level": 4,
+      "cooldowns": [
+        7,
+        6.5,
+        6,
+        5.5
+      ],
+      "mana_costs": [
+        85
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "rockets_per_second",
+          "heading": "ROCKETS PER SECOND:",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "rocket_interval",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "barrage_duration",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "rocket_damage",
+          "heading": "ROCKET DAMAGE:",
+          "values": [
+            8,
+            14,
+            20,
+            26
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            85
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            7,
+            6.5,
+            6,
+            5.5
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Rocket Barrage can't hit units Gyrocopter has no vision over.",
+        "Rocket Barrage fired from Homing Missiles do not trigger Afterburner."
+      ],
+      "lore": "Aurel's new craft has an increased payload for rockets, enhancing their rapid-fire capabilities."
+    },
+    {
+      "key": "gyrocopter_homing_missile",
+      "name": "Homing Missile",
+      "description": "Fires a homing missile to seek the targeted enemy unit. The missile gains speed over time, dealing damage and stunning when it impacts the target. Enemy units can destroy the missile before it reaches its target.",
+      "max_level": 4,
+      "cooldowns": [
+        30,
+        24,
+        18,
+        12
+      ],
+      "mana_costs": [
+        120,
+        130,
+        140,
+        150
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1050
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "hits_to_kill_tooltip",
+          "heading": "HITS TO DESTROY:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "tower_hits_to_kill_tooltip",
+          "heading": "TOWER HITS TO DESTROY:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "stun_duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            1.3,
+            1.7,
+            2.1,
+            2.5
+          ]
+        },
+        {
+          "key": "attack_speed_bonus_pct",
+          "heading": "",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "hit_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            90,
+            180,
+            270,
+            360
+          ]
+        },
+        {
+          "key": "max_distance",
+          "heading": "",
+          "values": [
+            1500
+          ]
+        },
+        {
+          "key": "pre_flight_time",
+          "heading": "",
+          "values": [
+            2.5
+          ]
+        },
+        {
+          "key": "hero_damage",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "speed",
+          "heading": "",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "acceleration",
+          "heading": "",
+          "values": [
+            15
+          ]
+        },
+        {
+          "key": "enemy_vision_time",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "shard_delay",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_radius",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1050
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            120,
+            130,
+            140,
+            150
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            30,
+            24,
+            18,
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Homing Missiles now constantly fires the current level of Rocket Barrage in a %shard_radius% area of effect after %shard_delay% second of being cast. This Rocket Barrage prioritizes the Homing Missile target.",
+      "notes": [
+        "Towers do half damage to the missile.",
+        "The crosshair effect is visible to allies only.",
+        "The missile will follow and hit invisible units."
+      ],
+      "lore": "The biggest missile Aurel could possibly attach to his craft, The Bomb has carefully calculated aerodynamics and explosives for maximum impact."
+    },
+    {
+      "key": "gyrocopter_flak_cannon",
+      "name": "Flak Cannon",
+      "description": "Gyrocopter's attacks hit all enemy units in an area around it for a limited number of attacks.  Only the main target of attacks will receive attack bonuses such as Critical Strike.  Lasts %abilityduration% seconds or until the attacks are used.",
+      "max_level": 4,
+      "cooldowns": [
+        25
+      ],
+      "mana_costs": [
+        50,
+        60,
+        70,
+        80
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        12
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            1250
+          ]
+        },
+        {
+          "key": "max_attacks",
+          "heading": "MAX ATTACKS:",
+          "values": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "key": "projectile_speed",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "bonus_damage",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "",
+          "values": [
+            12
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            50,
+            60,
+            70,
+            80
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            25
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Attack range for the primary attack is unchanged."
+      ],
+      "lore": "This newly revamped Gyrocopter has attached enough armaments to assault in a 360 degree radius."
+    },
+    {
+      "key": "gyrocopter_afterburner",
+      "name": "Afterburner",
+      "description": "Gyrocopter gains movement speed for a short duration after damaging an enemy with his attacks or abilities.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bonus_movespeed_duration",
+          "heading": "DURATION:",
+          "values": [
+            4.9
+          ]
+        },
+        {
+          "key": "bonus_movement_speed_per_hit",
+          "heading": "MOVESPEED (HEROES):",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "bonus_movement_speed_per_hit_creep",
+          "heading": "MOVESPEED (CREEPS):",
+          "values": [
+            0.5
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "gyrocopter_side_gunner_spawn_ability",
+      "name": "Side Gunner",
+      "description": "Gyrocopter gains a Side Gunner that attacks enemy units in a %AbilityCastRange% unit radius every %sidegunner_fire_rate%s with his attack. Prioritizes furthest unit away within its range.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        700
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "double_target",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "sidegunner_fire_rate",
+          "heading": "",
+          "values": [
+            1.3
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            700
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Side Gunner can attack even while Gyrocopter is disabled."
+      ],
+      "lore": null
+    },
+    {
+      "key": "gyrocopter_call_down",
+      "name": "Call Down",
+      "description": "Call down %total_strikes% aerial missile strikes that slow and damage enemy units in a target area. Each strike is %strike_separation% distance from the previous one.",
+      "max_level": 3,
+      "cooldowns": [
+        75,
+        65,
+        55
+      ],
+      "mana_costs": [
+        150,
+        200,
+        250
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1000
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "slow_duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "slow",
+          "heading": "MISSILE SLOW:",
+          "values": [
+            60
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "MISSILE DAMAGE:",
+          "values": [
+            200,
+            350,
+            500
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "missile_delay_tooltip",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "strike_delay",
+          "heading": "TIME BETWEEN STRIKES:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "total_strikes",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "strike_separation",
+          "heading": "",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "tracking_missile_damage",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            150,
+            200,
+            250
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            75,
+            65,
+            55
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "The visual indicator is visible to allies only."
+      ],
+      "lore": "'Bombs Away!'"
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_hit_damage}% Homing Missile Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Health"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_stun_duration}s Homing Missile Stun Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_damage} Flak Cannon Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_max_attacks} Flak Cannon Attacks"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_rocket_damage} Rocket Barrage Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Flak Cannon Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Call Down Cooldown"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

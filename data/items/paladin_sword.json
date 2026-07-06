@@ -1,0 +1,53 @@
+{
+  "id": 376,
+  "name": "Paladin Sword",
+  "slug": "paladin_sword",
+  "internal_key": "item_paladin_sword",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_damage",
+      "heading": "+$damage",
+      "values": [
+        16
+      ]
+    },
+    {
+      "key": "bonus_lifesteal",
+      "heading": "+$lifesteal",
+      "values": [
+        16
+      ]
+    },
+    {
+      "key": "bonus_spell_lifesteal",
+      "heading": "+$spell_lifesteal",
+      "values": [
+        8
+      ]
+    },
+    {
+      "key": "creep_lifesteal_reduction_pct",
+      "heading": "",
+      "values": [
+        40
+      ]
+    }
+  ],
+  "lore": "The sigil blade of the legendary Brother Yhols of Gausra, stripped from its scabbard on the day of his controversial excommunication.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

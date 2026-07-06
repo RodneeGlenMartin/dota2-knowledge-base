@@ -1,0 +1,46 @@
+{
+  "id": 16,
+  "name": "Iron Branch",
+  "slug": "iron_branch",
+  "internal_key": "item_branches",
+  "cost": 55,
+  "neutral_tier": null,
+  "description": "<h1>Use: Plant Tree</h1> Targets the ground to plant a happy little tree that lasts for %tree_duration% seconds.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    400
+  ],
+  "special_values": [
+    {
+      "key": "bonus_all_stats",
+      "heading": "+$all",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "tree_duration",
+      "heading": "",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        400
+      ]
+    }
+  ],
+  "lore": "A seemingly ordinary branch, its ironlike qualities are bestowed upon the bearer.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

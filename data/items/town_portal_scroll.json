@@ -1,0 +1,77 @@
+{
+  "id": 46,
+  "name": "Town Portal Scroll",
+  "slug": "town_portal_scroll",
+  "internal_key": "item_tpscroll",
+  "cost": 100,
+  "neutral_tier": null,
+  "description": "<h1>Use: Teleport</h1>After channeling for %tooltip_channel_time% seconds, teleports you to a target friendly building. <br><br>Double-click to teleport to your team's base fountain.",
+  "notes": [
+    "If multiple heroes teleport to the same location in succession, the channeling time will be increased for each successive hero.",
+    "Teleport can be prevented or canceled by Root abilities."
+  ],
+  "cooldowns": [
+    80
+  ],
+  "mana_costs": [
+    75
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "minimum_distance",
+      "heading": "",
+      "values": [
+        70
+      ]
+    },
+    {
+      "key": "maximum_distance",
+      "heading": "",
+      "values": [
+        800
+      ]
+    },
+    {
+      "key": "vision_radius",
+      "heading": "",
+      "values": [
+        200
+      ]
+    },
+    {
+      "key": "tooltip_channel_time",
+      "heading": "",
+      "values": [
+        3
+      ]
+    },
+    {
+      "key": "AbilityChannelTime",
+      "heading": "",
+      "values": [
+        3
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        75
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        80
+      ]
+    }
+  ],
+  "lore": "What a hero truly needs.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

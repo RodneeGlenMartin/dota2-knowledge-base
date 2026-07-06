@@ -1,0 +1,62 @@
+{
+  "id": 1,
+  "name": "Blink Dagger",
+  "slug": "blink_dagger",
+  "internal_key": "item_blink",
+  "cost": 2250,
+  "neutral_tier": null,
+  "description": "<h1>Active: Blink</h1> Teleport to a target point up to %blink_range% units away. <br><br>Blink Dagger cannot be used for %blink_damage_cooldown% seconds after taking damage from an enemy hero or Roshan.",
+  "notes": [
+    "Self-casting will cause you to teleport in the direction of your team's fountain."
+  ],
+  "cooldowns": [
+    15
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    1200
+  ],
+  "special_values": [
+    {
+      "key": "blink_range",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    },
+    {
+      "key": "blink_damage_cooldown",
+      "heading": "",
+      "values": [
+        3
+      ]
+    },
+    {
+      "key": "blink_range_clamp",
+      "heading": "",
+      "values": [
+        960
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        15
+      ]
+    }
+  ],
+  "lore": "The fabled dagger used by the fastest assassin ever to walk the lands.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

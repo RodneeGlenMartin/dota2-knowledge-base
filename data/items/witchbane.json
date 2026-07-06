@@ -1,0 +1,60 @@
+{
+  "id": 837,
+  "name": "Witchbane",
+  "slug": "witchbane",
+  "internal_key": "item_heavy_blade",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Cleanse</h1>Dispel all enemies and allies in a %radius% unit radius.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>\n\n<h1>Passive: Subjugate</h1>Your attacks deal bonus magical damage equal to %damage%%% of your target's Max Mana.",
+  "notes": null,
+  "cooldowns": [
+    40
+  ],
+  "mana_costs": [
+    50
+  ],
+  "cast_ranges": [
+    700
+  ],
+  "special_values": [
+    {
+      "key": "radius",
+      "heading": "",
+      "values": [
+        300
+      ]
+    },
+    {
+      "key": "damage",
+      "heading": "",
+      "values": [
+        4
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        700
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        50
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        40
+      ]
+    }
+  ],
+  "lore": "With ready access to test subjects, untold cruelties have been dreamed up and loosed upon the world from within the walls of the Tyler Estate.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

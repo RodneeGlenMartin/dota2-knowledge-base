@@ -1,0 +1,67 @@
+{
+  "id": 638,
+  "name": "Penta-Edged Sword",
+  "slug": "penta_edged_sword",
+  "internal_key": "item_penta_edged_sword",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Maim</h1>Each attack has a %maim_chance%%% chance to reduce enemy hero movement speed by %maim_slow_movement%%% and attack speed by %maim_slow_attack% for %maim_duration% seconds.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "damage",
+      "heading": "+$damage",
+      "values": [
+        45
+      ]
+    },
+    {
+      "key": "melee_attack_range",
+      "heading": "+$attack_range_melee",
+      "values": [
+        100
+      ]
+    },
+    {
+      "key": "maim_chance",
+      "heading": "",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "maim_slow_movement",
+      "heading": "",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "maim_slow_attack",
+      "heading": "",
+      "values": [
+        60
+      ]
+    },
+    {
+      "key": "maim_duration",
+      "heading": "",
+      "values": [
+        3
+      ]
+    }
+  ],
+  "lore": "The final, twisted work of a severely pious blacksmith, completed immediately before the taking of his own life. ",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

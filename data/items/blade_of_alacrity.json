@@ -1,0 +1,32 @@
+{
+  "id": 22,
+  "name": "Blade of Alacrity",
+  "slug": "blade_of_alacrity",
+  "internal_key": "item_blade_of_alacrity",
+  "cost": 1000,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_agility",
+      "heading": "+$agi",
+      "values": [
+        10
+      ]
+    }
+  ],
+  "lore": "A long blade imbued with time magic.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

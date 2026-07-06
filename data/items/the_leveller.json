@@ -1,0 +1,32 @@
+{
+  "id": 379,
+  "name": "The Leveller",
+  "slug": "the_leveller",
+  "internal_key": "item_the_leveller",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Level</h1> Attacks deal %demolish%%% more damage to buildings.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "demolish",
+      "heading": "",
+      "values": [
+        35
+      ]
+    }
+  ],
+  "lore": "A demonic blade that struck the final blow to crack the gates of the Sanctum of Solanas.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

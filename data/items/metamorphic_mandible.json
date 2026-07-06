@@ -1,0 +1,67 @@
+{
+  "id": 1719,
+  "name": "Metamorphic Mandible",
+  "slug": "metamorphic_mandible",
+  "internal_key": "item_metamorphic_mandible",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Pupate</h1> Enter into an insect form for %duration% seconds, increasing magic resistance by %bonus_magic_resistance%%% and movement speed by %bonus_movespeed%%%. While an insect, your size is decreased and your armor is reduced by %armor_decrease%%%.",
+  "notes": null,
+  "cooldowns": [
+    30
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        5
+      ]
+    },
+    {
+      "key": "bonus_magic_resistance",
+      "heading": "",
+      "values": [
+        50
+      ]
+    },
+    {
+      "key": "bonus_movespeed",
+      "heading": "",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "size_decrease",
+      "heading": "",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "armor_decrease",
+      "heading": "",
+      "values": [
+        45
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        30
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

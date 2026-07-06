@@ -1,0 +1,769 @@
+{
+  "id": 56,
+  "name": "Clinkz",
+  "slug": "clinkz",
+  "npc_name": "npc_dota_hero_clinkz",
+  "primary_attribute": "agi",
+  "attack_type": "Ranged",
+  "complexity": 2,
+  "roles": [
+    "Carry",
+    "Escape",
+    "Pusher"
+  ],
+  "stats": {
+    "base_str": 18,
+    "str_gain": 2,
+    "base_agi": 25,
+    "agi_gain": 2.7,
+    "base_int": 21,
+    "int_gain": 2.2,
+    "damage_min": 44,
+    "damage_max": 50,
+    "attack_rate": 1.7,
+    "attack_range": 600,
+    "projectile_speed": 900,
+    "armor": 4.166667,
+    "magic_resistance": 25,
+    "movement_speed": 285,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 516,
+    "health_regen": 2.0500002,
+    "max_mana": 327,
+    "mana_regen": 1.0500001
+  },
+  "lore": "At the base of the Bleeding Hills stretches a thousand-league wood, a place called The Hoven, where black pools gather the tarry blood of the uplands, and the king-mage Sutherex sits in benevolent rule. Once a sworn protector of the Hoven lands, Clinkz earned a reputation for his skill with a bow. In the three-hundredth year of the king-mage, the demon Maraxiform rose from sixth hell to lay claim to the forest. In response, the king-mage decreed an unbreakable spell: to any who slew the demon would be granted Life Without End.\r\n\t\t\t\t<br><br>Unaware of the spell, Clinkz waded into battle, defending his lands against the demon's fiery onslaught. Clinkz drove Maraxiform back to the gates of sixth-hell itself, where on that fiery threshold the two locked in a mortal conflict. Grievously wounded, the demon let out a blast of hellfire as Clinkz loosed his final arrow. The arrow struck the demon true as hellfire poured out across the land, lighting the black pools and burning Clinkz alive at the instant of the demon's death. Thus, the mage's spell took effect at the very moment of the archer's conflagration, preserving him in this unholy state, leaving him a being of bones and rage, caught in the very act of dying, carrying hell's breath with him on his journey into eternity.",
+  "hype": "When Clinkz stalks <b>invisibly</b> through the battlefield, none are safe from ambush. <b>Swift of foot and arrow</b>, he rains fiery death upon his foes, calling upon an army of blazing compatriots to <b>bolster his assault.</b>",
+  "abilities": [
+    {
+      "key": "clinkz_strafe",
+      "name": "Strafe",
+      "description": "Clinkz gains attack speed and has bonus attack range. Any current Skeleton Archers within a %strafe_skeleton_radius% radius of Clinkz also gain bonus attack range and %archer_attack_speed_pct%%% of the attack speed bonus. <br><br> Casting Strafe does not break Skeleton Walk invisibility.",
+      "max_level": 4,
+      "cooldowns": [
+        30,
+        25,
+        20,
+        15
+      ],
+      "mana_costs": [
+        60,
+        70,
+        80,
+        90
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1200
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "attack_speed_bonus",
+          "heading": "ATTACK SPEED BONUS:",
+          "values": [
+            120,
+            160,
+            200,
+            240
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            3.5
+          ]
+        },
+        {
+          "key": "attack_range_bonus",
+          "heading": "ATTACK RANGE BONUS:",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "strafe_skeleton_radius",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "archer_attack_speed_pct",
+          "heading": "",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "debuff_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "blind_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            60,
+            70,
+            80,
+            90
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            30,
+            25,
+            20,
+            15
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "The closest Clinkz can come to peace is knowing that this was the last thing Maraxiform ever saw."
+    },
+    {
+      "key": "clinkz_searing_arrows",
+      "name": "Searing Arrows",
+      "description": "Imbues Clinkz's arrows with fire for extra damage.<br><br>Skeleton Archers will fire Searing Arrows at targets Clinkz attacks for %skeleton_damage_pct%%% damage.",
+      "max_level": 4,
+      "cooldowns": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        10
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        600
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage_bonus",
+          "heading": "BONUS DAMAGE:",
+          "values": [
+            20,
+            35,
+            50,
+            65
+          ]
+        },
+        {
+          "key": "has_multishot",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "skeleton_damage_pct",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            10
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Searing Arrows deal damage to structures.",
+        "The damage is directly added to Clinkz' attack damage, as physical damage."
+      ],
+      "lore": "Clinkz simply lights his arrows from his flaming essence for quite the destructive effect."
+    },
+    {
+      "key": "clinkz_death_pact",
+      "name": "Death Pact",
+      "description": "Clinkz consumes the target enemy creep or friendly Skeleton Archer, healing and gaining max health. Does not take Clinkz out of Skeleton Walk.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        50
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        700
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            45
+          ]
+        },
+        {
+          "key": "health_gain",
+          "heading": "BONUS HEALTH:",
+          "values": [
+            175,
+            250,
+            325,
+            400
+          ]
+        },
+        {
+          "key": "spawn_skeleton_on_origin",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "creep_level",
+          "heading": "CREEP MAX LEVEL:",
+          "values": [
+            4,
+            5,
+            6,
+            6
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityCharges",
+          "heading": "",
+          "values": [
+            1,
+            1,
+            2,
+            2
+          ]
+        },
+        {
+          "key": "AbilityChargeRestoreTime",
+          "heading": "BASE CHARGE RESTORE TIME:",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            50
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "If the target is an enemy, Clinkz will gain the correct experience and gold.",
+        "Increases Clinkz' current and max HP.",
+        "When the duration ends, max HP returns to normal, but current HP stays the same."
+      ],
+      "lore": "Sutherex' bond of life and death has become a part of Clinkz, and his old bones are refreshed with repetition of the pact on lesser beings."
+    },
+    {
+      "key": "clinkz_burning_barrage",
+      "name": "Burning Barrage",
+      "description": "CHANNELED - Clinkz channels and shoots multiple piercing arrows in the target direction that hit all enemy units dealing a percentage of Clinkz' attack damage and applying attack modifiers.",
+      "max_level": 1,
+      "cooldowns": [
+        17
+      ],
+      "mana_costs": [
+        40
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "wave_count",
+          "heading": "ARROWS FIRED:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "range",
+          "heading": "RANGE:",
+          "values": [
+            850
+          ]
+        },
+        {
+          "key": "damage_pct",
+          "heading": "DAMAGE PER ARROW:",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "projectile_width",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "AbilityChannelTime",
+          "heading": "CHANNEL TIME:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            17
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Bonus Attack Range increases the length of Burning Barrage."
+      ],
+      "lore": "It's hard to say whether the blur around the Bone Fletcher is from his flaming heart or his speed with the quiver."
+    },
+    {
+      "key": "clinkz_burning_army",
+      "name": "Burning Army",
+      "description": "Summons a row of Burning Skeleton Archers in the target location.",
+      "max_level": 1,
+      "cooldowns": [
+        70
+      ],
+      "mana_costs": [
+        150
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        600
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "range",
+          "heading": "RANGE:",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "count",
+          "heading": "COUNT:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "spawn_interval",
+          "heading": "SPAWN INTERVAL:",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            70
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Existing on the brink of life and death, Clinkz has learned to temporarily bridge the gap between the two."
+    },
+    {
+      "key": "clinkz_wind_walk",
+      "name": "Skeleton Walk",
+      "description": "Clinkz moves invisibly through units until the moment he attacks or uses items. Leaving Skeleton Walk creates Skeleton Archers.<br><br>Skeleton Archers are immobile and die within multiple attacks from a hero or tower. Skeleton Archers deal a percentage of Clinkz' damage, and deal %skeleton_building_damage_reduction%%% less damage to buildings. Attack range is equal to Clinkz' attack range.",
+      "max_level": 3,
+      "cooldowns": [
+        24,
+        21,
+        18
+      ],
+      "mana_costs": [
+        80,
+        105,
+        130
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            35,
+            40,
+            45
+          ]
+        },
+        {
+          "key": "fade_time",
+          "heading": "",
+          "values": [
+            0.6
+          ]
+        },
+        {
+          "key": "move_speed_bonus_pct",
+          "heading": "BONUS MOVEMENT SPEED:",
+          "values": [
+            25,
+            35,
+            45
+          ]
+        },
+        {
+          "key": "skeleton_count",
+          "heading": "SKELETON ARCHER COUNT:",
+          "values": [
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "key": "skeleton_offset",
+          "heading": "",
+          "values": [
+            250
+          ]
+        },
+        {
+          "key": "skeleton_offset_min",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "skeleton_duration",
+          "heading": "SKELETON ARCHER DURATION:",
+          "values": [
+            20,
+            25,
+            30
+          ]
+        },
+        {
+          "key": "skeleton_health",
+          "heading": "",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "skeleton_health_tooltip",
+          "heading": "SKELETON ARCHER HITS TO KILL:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "skeleton_building_damage_reduction",
+          "heading": "",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "attack_rate",
+          "heading": "SKELETON ARCHER ATTACK RATE:",
+          "values": [
+            1.6
+          ]
+        },
+        {
+          "key": "damage_percent",
+          "heading": "SKELETON ARCHER DAMAGE:",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            80,
+            105,
+            130
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            24,
+            21,
+            18
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Has a fadetime of %fade_time% seconds."
+      ],
+      "lore": "With a burst of fire and puff of smoke, the Bone Fletcher was nowhere to be seen."
+    },
+    {
+      "key": "clinkz_infernal_shred",
+      "name": "Infernal Shred",
+      "description": "Clinkz and his skeletons apply a stacking debuff that causes their attacks to pierce up to %max_armor_piercing_pct%%% of the target's total physical armor (does not reduce their armor).  Clinkz applies %hero_stacks%%% per attack, and skeletons apply %skeleton_stacks%%%. <br><br>Lasts %duration% seconds.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "hero_stacks",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "skeleton_stacks",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "max_armor_piercing_pct",
+          "heading": "",
+          "values": [
+            20
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_duration}s Strafe Duration"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Skeleton Walk Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Attack Range"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityChargeRestoreTime}s Death Pact Charge Restore Time"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_attack_speed_bonus} Strafe Attack Speed"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_health_gain} Death Pact Bonus Health"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Strafe Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "Searing Arrows Multishot"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

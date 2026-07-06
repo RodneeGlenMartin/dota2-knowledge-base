@@ -1,0 +1,137 @@
+{
+  "id": 908,
+  "name": "Wraith Pact",
+  "slug": "wraith_pact",
+  "internal_key": "item_wraith_pact",
+  "cost": 3800,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    60
+  ],
+  "mana_costs": [
+    100
+  ],
+  "cast_ranges": [
+    350
+  ],
+  "special_values": [
+    {
+      "key": "bonus_health",
+      "heading": "",
+      "values": [
+        250
+      ]
+    },
+    {
+      "key": "bonus_mana",
+      "heading": "",
+      "values": [
+        250
+      ]
+    },
+    {
+      "key": "armor_aura",
+      "heading": "",
+      "values": [
+        3
+      ]
+    },
+    {
+      "key": "mana_regen_aura",
+      "heading": "",
+      "values": [
+        2
+      ]
+    },
+    {
+      "key": "lifesteal_aura",
+      "heading": "",
+      "values": [
+        24
+      ]
+    },
+    {
+      "key": "creep_lifesteal_reduction_pct",
+      "heading": "",
+      "values": [
+        50
+      ]
+    },
+    {
+      "key": "damage_aura",
+      "heading": "",
+      "values": [
+        18
+      ]
+    },
+    {
+      "key": "aura_radius",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    },
+    {
+      "key": "pact_aura_radius",
+      "heading": "",
+      "values": [
+        900
+      ]
+    },
+    {
+      "key": "damage_penalty_aura",
+      "heading": "",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "aura_dps",
+      "heading": "",
+      "values": [
+        45
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        350
+      ]
+    },
+    {
+      "key": "AbilityDuration",
+      "heading": "",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "AbilityCastPoint",
+      "heading": "",
+      "values": [
+        0.2
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        100
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        60
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

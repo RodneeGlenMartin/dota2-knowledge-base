@@ -1,0 +1,34 @@
+{
+  "id": 1873,
+  "name": "Partisan's Brand",
+  "slug": "partisan_s_brand",
+  "internal_key": "item_partisans_brand",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Brand</h1> Increases spell damage dealt to player controlled units by %bonus_damage_pct%%%.",
+  "notes": [
+    "Player controlled units includes heroes and any creep summoned or converted by them."
+  ],
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_damage_pct",
+      "heading": "",
+      "values": [
+        9
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

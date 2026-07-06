@@ -1,0 +1,32 @@
+{
+  "id": 5,
+  "name": "Claymore",
+  "slug": "claymore",
+  "internal_key": "item_claymore",
+  "cost": 1350,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_damage",
+      "heading": "+$damage",
+      "values": [
+        20
+      ]
+    }
+  ],
+  "lore": "A sword that can cut through armor, it's a commonly chosen first weapon for budding swordsmen.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

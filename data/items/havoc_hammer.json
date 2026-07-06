@@ -1,0 +1,102 @@
+{
+  "id": 364,
+  "name": "Havoc Hammer",
+  "slug": "havoc_hammer",
+  "internal_key": "item_havoc_hammer",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Havoc</h1> Pulls enemies in a %range% range around you, slowing them by %slow%%% for %slow_duration% seconds and dealing %nuke_base_dmg% + %nuke_str_dmg%x your str as magical damage.",
+  "notes": null,
+  "cooldowns": [
+    10
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_damage",
+      "heading": "+$damage",
+      "values": [
+        16
+      ]
+    },
+    {
+      "key": "bonus_strength",
+      "heading": "+$str",
+      "values": [
+        14
+      ]
+    },
+    {
+      "key": "range",
+      "heading": "",
+      "values": [
+        400
+      ]
+    },
+    {
+      "key": "slow",
+      "heading": "",
+      "values": [
+        50
+      ]
+    },
+    {
+      "key": "slow_duration",
+      "heading": "",
+      "values": [
+        3
+      ]
+    },
+    {
+      "key": "angle",
+      "heading": "",
+      "values": [
+        360
+      ]
+    },
+    {
+      "key": "knockback_duration",
+      "heading": "",
+      "values": [
+        0.2
+      ]
+    },
+    {
+      "key": "pull_distance",
+      "heading": "",
+      "values": [
+        100
+      ]
+    },
+    {
+      "key": "nuke_base_dmg",
+      "heading": "",
+      "values": [
+        175
+      ]
+    },
+    {
+      "key": "nuke_str_dmg",
+      "heading": "",
+      "values": [
+        1.5
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        10
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

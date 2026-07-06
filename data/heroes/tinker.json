@@ -1,0 +1,834 @@
+{
+  "id": 34,
+  "name": "Tinker",
+  "slug": "tinker",
+  "npc_name": "npc_dota_hero_tinker",
+  "primary_attribute": "int",
+  "attack_type": "Ranged",
+  "complexity": 2,
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Pusher"
+  ],
+  "stats": {
+    "base_str": 19,
+    "str_gain": 2.3,
+    "base_agi": 17,
+    "agi_gain": 1.4,
+    "base_int": 30,
+    "int_gain": 3.3,
+    "damage_min": 52,
+    "damage_max": 58,
+    "attack_rate": 1.7,
+    "attack_range": 500,
+    "projectile_speed": 900,
+    "armor": 4.8333335,
+    "magic_resistance": 25,
+    "movement_speed": 305,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 538,
+    "health_regen": 2.4,
+    "max_mana": 435,
+    "mana_regen": 2
+  },
+  "lore": "Boush the Tinker's diminutive race is known for its intelligence, its cunning, and its prickly relationship with magic. As a matter of pride, they survive by their wits, and use only those powers of nature that may be unlocked through rational methodologies. Even this forbearance has led to a great deal of trouble, as Boush can attest. Once a key investigator of natural law, Boush the Tinker led a vast intellectual investigation into the workings of nature, founding a subterranean laboratory in the rumored, mist-wreathed wastes of the Violet Plateau. While scorning mages for the dangers they visit upon the world, Boush and his Tinker associates haughtily wrenched open a portal to some realm beyond comprehension and ushered in some nightmares of their own. A black mist rose from the cavernous interior of the Violet Plateau, shrouding it in permanent darkness from which sounds of horror perpetually emanate. Boush escaped with only his wits and the contraptions he carried, the sole Tinker to survive the Violet Plateau Incident. ",
+  "hype": "Tinker demolishes foes with <b>swarms of machines</b> and a host of <b>deadly gadgets</b>. If he can gather the resources he needs, the power that instantly <b>refreshes his abilities</b> enables him to lead his team from every front.",
+  "abilities": [
+    {
+      "key": "tinker_laser",
+      "name": "Laser",
+      "description": "Fires an intense energy beam, damaging and blinding the target. Blinded targets miss all physical attacks.",
+      "max_level": 4,
+      "cooldowns": [
+        19,
+        18,
+        17,
+        16
+      ],
+      "mana_costs": [
+        95,
+        105,
+        115,
+        125
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        600
+      ],
+      "cast_points": [
+        0.4
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "miss_rate",
+          "heading": "BLIND MISS RATE:",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "BLIND DURATION:",
+          "values": [
+            3,
+            3.5,
+            4,
+            4.5
+          ]
+        },
+        {
+          "key": "laser_damage",
+          "heading": "LASER DAMAGE:",
+          "values": [
+            75,
+            150,
+            225,
+            300
+          ]
+        },
+        {
+          "key": "radius_explosion",
+          "heading": "RADIUS:",
+          "values": null
+        },
+        {
+          "key": "splash_pct",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "scepter_bonus_cast_range",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "scepter_reduction_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            95,
+            105,
+            115,
+            125
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            19,
+            18,
+            17,
+            16
+          ]
+        }
+      ],
+      "scepter_upgrade": "Upgrades Tinker's Laser into a Shrink Ray, reducing the main target's size, current health, and maximum health by %scepter_reduction_pct%%% (stacking). Does not pierce debuff immunity.",
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Boush perfected this rock cutting laser in his subterranean laboratory, never considering its combat utility."
+    },
+    {
+      "key": "tinker_march_of_the_machines",
+      "name": "March of the Machines",
+      "description": "Enlists an army of robotic minions to destroy enemy units in an area around Tinker.",
+      "max_level": 4,
+      "cooldowns": [
+        35,
+        33,
+        31,
+        29
+      ],
+      "mana_costs": [
+        100,
+        120,
+        140,
+        160
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        300
+      ],
+      "cast_points": [
+        0.53
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "collision_radius",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "splash_radius",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "speed",
+          "heading": "",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "machines_per_sec",
+          "heading": "",
+          "values": [
+            24
+          ]
+        },
+        {
+          "key": "distance",
+          "heading": "",
+          "values": [
+            1800
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            13,
+            22,
+            31,
+            40
+          ]
+        },
+        {
+          "key": "heal_per_second",
+          "heading": "HEAL PER SECOND:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "heal_duration",
+          "heading": "HEAL DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.53
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            120,
+            140,
+            160
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            35,
+            33,
+            31,
+            29
+          ]
+        }
+      ],
+      "scepter_upgrade": "March of the Machines applies a non-stacking heal over time when passing through allied heroes.",
+      "shard_upgrade": null,
+      "notes": [
+        "Robots spawn at a rate of %machines_per_sec% per second."
+      ],
+      "lore": "Even though the laboratory has since been sealed off, the ability to radio in robotic drones is still in working order."
+    },
+    {
+      "key": "tinker_deploy_turrets",
+      "name": "Deploy Turrets",
+      "description": "Deploys <b>3</b> uncontrollable turrets at the target location. Enemies hit by the impact take damage and are pushed away from the landing point. If Tinker is hit, he also gets pushed by the impact. Once deployed, the turret fires missiles in the direction of the nearest enemy hero.",
+      "max_level": 4,
+      "cooldowns": [
+        24,
+        22,
+        20,
+        18
+      ],
+      "mana_costs": [
+        100,
+        120,
+        140,
+        160
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        600
+      ],
+      "cast_points": [
+        0.1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "drop_aoe_radius",
+          "heading": "",
+          "values": [
+            250
+          ]
+        },
+        {
+          "key": "turret_placement_radius",
+          "heading": "",
+          "values": [
+            70
+          ]
+        },
+        {
+          "key": "drop_delay",
+          "heading": "CAST DELAY:",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "drop_knockback_duration",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "drop_knockback_duration_tinker",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "drop_knockback_distance",
+          "heading": "ENEMY KNOCKBACK:",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "drop_knockback_distance_tinker",
+          "heading": "TINKER KNOCKBACK:",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "drop_count",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "drop_interval",
+          "heading": "",
+          "values": [
+            0.22
+          ]
+        },
+        {
+          "key": "drop_spread_pct",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "turrets_per_drop",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "drop_damage",
+          "heading": "IMPACT DAMAGE:",
+          "values": [
+            40,
+            80,
+            120,
+            160
+          ]
+        },
+        {
+          "key": "missile_damage",
+          "heading": "MISSILE DAMAGE:",
+          "values": [
+            20,
+            40,
+            60,
+            80
+          ]
+        },
+        {
+          "key": "missile_speed",
+          "heading": "",
+          "values": [
+            1350
+          ]
+        },
+        {
+          "key": "turret_hp",
+          "heading": "TURRET HP:",
+          "values": [
+            40,
+            80,
+            120,
+            160
+          ]
+        },
+        {
+          "key": "missile_target_range",
+          "heading": "TURRET RANGE:",
+          "values": [
+            650,
+            700,
+            750,
+            800
+          ]
+        },
+        {
+          "key": "missile_range",
+          "heading": "",
+          "values": [
+            750,
+            800,
+            850,
+            900
+          ]
+        },
+        {
+          "key": "missile_width",
+          "heading": "",
+          "values": [
+            70
+          ]
+        },
+        {
+          "key": "turret_duration",
+          "heading": "TURRET DURATION:",
+          "values": [
+            4.5
+          ]
+        },
+        {
+          "key": "missile_spawn_interval",
+          "heading": "ATTACK INTERVAL:",
+          "values": [
+            1.5
+          ]
+        },
+        {
+          "key": "missile_attack_rate_tooltip",
+          "heading": "",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "radius_explosion",
+          "heading": "MISSILE SPLASH RADIUS:",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "splash_pct",
+          "heading": "MISSILE SPLASH DAMAGE:",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            120,
+            140,
+            160
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            24,
+            22,
+            20,
+            18
+          ]
+        }
+      ],
+      "scepter_upgrade": "Turrets fire missiles %missile_attack_rate_tooltip%%% faster.",
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "tinker_warp_grenade",
+      "name": "Warp Flare",
+      "description": "Throws a flare towards an enemy, dealing damage, teleporting them away, rooting them and reducing their Cast and Attack Range for %debuff_duration% seconds.<br><br>The target is teleported further the closer they are to Tinker.",
+      "max_level": 1,
+      "cooldowns": [
+        15
+      ],
+      "mana_costs": [
+        80
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        700
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "max_distance",
+          "heading": "",
+          "values": [
+            2000
+          ]
+        },
+        {
+          "key": "warp_distance_factor",
+          "heading": "",
+          "values": [
+            0.6
+          ]
+        },
+        {
+          "key": "warp_distance_pct_tooltip",
+          "heading": "",
+          "values": [
+            60
+          ]
+        },
+        {
+          "key": "range_reduction",
+          "heading": "CAST/ATTACK RANGE REDUCTION:",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "debuff_duration",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            80
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            15
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Max teleportation distance is %warp_distance_pct_tooltip%%% of Warp Flare's cast range, which decreases down to 0 at max cast range."
+      ],
+      "lore": "Tinker's deadliest weapon instantly turns an enemy into space dust. Research to resolve the annoying 'perfect copy' side effect... is ongoing."
+    },
+    {
+      "key": "tinker_rearm",
+      "name": "Rearm",
+      "description": "CHANNELED - Resets the cooldown on Tinker's abilities.",
+      "max_level": 3,
+      "cooldowns": [
+        5.5,
+        5,
+        4.5
+      ],
+      "mana_costs": [
+        100,
+        150,
+        200
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "AbilityChannelTime",
+          "heading": "TIME TO REARM:",
+          "values": [
+            2.75,
+            2,
+            1.25
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            150,
+            200
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            5.5,
+            5,
+            4.5
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "A new battery here, another set of rockets there, Boush continually improves on existing technology."
+    },
+    {
+      "key": "tinker_eureka",
+      "name": "Eureka!",
+      "description": "Tinker gains %one_percent_tooltip%%% item cooldown reduction per %int_per_one_cdr% Intelligence, up to a maximum of %max_cdr%%%.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "int_per_one_cdr",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "one_percent_tooltip",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "max_cdr",
+          "heading": "",
+          "values": [
+            60
+          ]
+        },
+        {
+          "key": "item_cooldown_tooltip",
+          "heading": "ITEM COOLDOWN REDUCTION:",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_duration}s March of the Machines Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value}% Manacost/Manaloss Reduction"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_drop_knockback_distance_tinker} Deploy Turrets Tinker Knockback"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_laser_damage} Laser Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_missile_damage} Deploy Turrets Missile Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityChannelTime}s Keen Conveyance Channel Time"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_radius_explosion} AoE Laser"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityChannelTime}s Time to Rearm"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

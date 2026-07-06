@@ -1,0 +1,60 @@
+{
+  "id": 135,
+  "name": "Monkey King Bar",
+  "slug": "monkey_king_bar",
+  "internal_key": "item_monkey_king_bar",
+  "cost": 5000,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Pierce</h1>Grants each attack a %bonus_chance%%% chance to pierce through evasion and deal %bonus_chance_damage% bonus magical damage.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_damage",
+      "heading": "+$damage",
+      "values": [
+        50
+      ]
+    },
+    {
+      "key": "bonus_attack_speed",
+      "heading": "+$attack",
+      "values": [
+        50
+      ]
+    },
+    {
+      "key": "bonus_chance",
+      "heading": "",
+      "values": [
+        80
+      ]
+    },
+    {
+      "key": "bonus_chance_damage",
+      "heading": "",
+      "values": [
+        70
+      ]
+    },
+    {
+      "key": "melee_attack_range",
+      "heading": "+$attack_range_melee",
+      "values": [
+        50
+      ]
+    }
+  ],
+  "lore": "A powerful staff used by a master warrior.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

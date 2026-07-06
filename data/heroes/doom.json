@@ -1,0 +1,635 @@
+{
+  "id": 69,
+  "name": "Doom",
+  "slug": "doom",
+  "npc_name": "npc_dota_hero_doom_bringer",
+  "primary_attribute": "str",
+  "attack_type": "Melee",
+  "complexity": 2,
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Disabler",
+    "Durable",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 24,
+    "str_gain": 3.6,
+    "base_agi": 15,
+    "agi_gain": 1.5,
+    "base_int": 15,
+    "int_gain": 2.1,
+    "damage_min": 56,
+    "damage_max": 66,
+    "attack_rate": 1.9,
+    "attack_range": 200,
+    "projectile_speed": 900,
+    "armor": 3.5,
+    "magic_resistance": 25,
+    "movement_speed": 290,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 648,
+    "health_regen": 3.0600002,
+    "max_mana": 255,
+    "mana_regen": 0.75
+  },
+  "lore": "He that burns and is not consumed, devours and is never sated, kills and is beyond all judgment--Lucifer brings doom to all who would stand against him. Bearing away souls on the tip of a fiery sword, he is the Fallen One, a once-favored general from the realm behind the light, cast out for the sin of defiance: he would not kneel. \r\n\t\t\t\t<br><br>Six times his name was tolled from the great bell of Vashundol. Six and sixty times his wings were branded, until only smoking stumps remained. Without wings, he slipped loose from the tethers that bound him within the light and he fell screaming to earth. A crater in the desert, Paradise lost.  Now he attacks without mercy, without motive, the only living being able to move freely between the seven dark dominions. Lashed by inescapable needs, twisted by unimaginable talents, Doom carries his own hell with him wherever he goes. Defiant to the last. Eventually, the world will belong to Doom.",
+  "hype": "One way or another, Doom <b>shuts down his enemies</b>. Devouring creeps to claim the various skills they had in life, he can place a <b>lingering silence</b> upon a foe's spells and items with his ultimate as he <b>torches his foes</b>.",
+  "abilities": [
+    {
+      "key": "doom_bringer_devour",
+      "name": "Devour",
+      "description": "Consumes an enemy or neutral creep, acquiring any special abilities that it possessed. If alt-cast is activated, Doom will not acquire the creep's abilities. Duration is equal to the cooldown.",
+      "max_level": 4,
+      "cooldowns": [
+        66
+      ],
+      "mana_costs": [
+        40,
+        50,
+        60,
+        70
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        300,
+        300,
+        300,
+        300
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bonus_gold",
+          "heading": "BONUS GOLD:",
+          "values": [
+            35,
+            70,
+            105,
+            140
+          ]
+        },
+        {
+          "key": "creep_level",
+          "heading": "CREEP MAX LEVEL:",
+          "values": [
+            4,
+            5,
+            6,
+            6
+          ]
+        },
+        {
+          "key": "hero_ability_steal_time",
+          "heading": "",
+          "values": [
+            99999
+          ]
+        },
+        {
+          "key": "can_target_ancient",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "bonus_aoe_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "bonus_spell_amp_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityCharges",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityChargeRestoreTime",
+          "heading": "BASE CHARGE RESTORE TIME:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            40,
+            50,
+            60,
+            70
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            66
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Devour has %AbilityCharges% charges and can target Ancients. Stolen creep abilities have %bonus_aoe_pct%%% increased AoE and %bonus_spell_amp_pct%%% increased spell amplification.",
+      "notes": [
+        "Gives Doom the original bounty of the creep, along with the bonus gold.",
+        "If you devour a creep without abilities, you'll keep the abilities you had previously."
+      ],
+      "lore": "Lucifer's appetite and greed are never sated."
+    },
+    {
+      "key": "doom_bringer_scorched_earth",
+      "name": "Scorched Earth",
+      "description": "Carpets the nearby earth in flames which damage enemies, while also granting Doom increased movement speed and health regeneration.",
+      "max_level": 4,
+      "cooldowns": [
+        41,
+        39,
+        37,
+        35
+      ],
+      "mana_costs": [
+        60,
+        70,
+        80,
+        90
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        666,
+        666,
+        666,
+        666
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage_per_second",
+          "heading": "DAMAGE:",
+          "values": [
+            20,
+            30,
+            40,
+            50
+          ]
+        },
+        {
+          "key": "bonus_health_regen",
+          "heading": "BONUS HP REGEN:",
+          "values": [
+            6.66
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            666
+          ]
+        },
+        {
+          "key": "bonus_movement_speed_pct",
+          "heading": "BONUS MOVE SPEED:",
+          "values": [
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            10,
+            12,
+            14,
+            16
+          ]
+        },
+        {
+          "key": "is_permanent",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            666
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            60,
+            70,
+            80,
+            90
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            41,
+            39,
+            37,
+            35
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Scorched Earth follows Doom, centered on his location."
+      ],
+      "lore": "The Fallen One spreads destruction in his wake, sparing none from the flame which sustains him."
+    },
+    {
+      "key": "doom_bringer_infernal_blade",
+      "name": "Infernal Blade",
+      "description": "Doom swings his burning sword, igniting the enemy. Stuns for %ministun_duration% seconds and applies a %burn_duration% second burn that deals a base damage plus a percentage of the target's Max HP as damage per second.",
+      "max_level": 4,
+      "cooldowns": [
+        13,
+        10,
+        7,
+        4
+      ],
+      "mana_costs": [
+        35
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        200
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "burn_damage",
+          "heading": "BASE BURN DAMAGE:",
+          "values": [
+            15,
+            30,
+            45,
+            60
+          ]
+        },
+        {
+          "key": "burn_damage_pct",
+          "heading": "MAX HP AS DAMAGE:",
+          "values": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "key": "burn_duration",
+          "heading": "BURN DURATION:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "ministun_duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            0.66
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            35
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            13,
+            10,
+            7,
+            4
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Interrupts channeling abilities."
+      ],
+      "lore": "Lucifer shares the fire branding bestowed upon him at the time of his exile."
+    },
+    {
+      "key": "doom_bringer_doom",
+      "name": "Doom",
+      "description": "Inflicts a curse that dispels an enemy and prevents them from casting spells or healing in any way, while taking damage over time.\n\nDISPEL TYPE: Basic Dispel",
+      "max_level": 3,
+      "cooldowns": [
+        140,
+        130,
+        120
+      ],
+      "mana_costs": [
+        150,
+        200,
+        250
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        400
+      ],
+      "cast_points": [
+        0.5
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            12,
+            14,
+            16
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE PER SECOND:",
+          "values": [
+            22,
+            44,
+            66
+          ]
+        },
+        {
+          "key": "deniable_pct",
+          "heading": "",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "does_break",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "does_mute",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "scepter_aura_radius",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "applies_dispel_to_self",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            150,
+            200,
+            250
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            140,
+            130,
+            120
+          ]
+        }
+      ],
+      "scepter_upgrade": "Doom applies Break to enemies. Allies in a %scepter_aura_radius% radius around the doomed target also suffer the effects of Doom. Allows Doom to be self-cast to affect enemies around himself with Doom.",
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "When a name is tolled from the bell of Vashundol, doom is sure to follow."
+    },
+    {
+      "key": "doom_bringer_lvl_pain",
+      "name": "Lvl ? Pain",
+      "description": "Doom's attacks curse enemy heroes. After %damage_debuff_duration%s, the cursed hero bursts with a pillar of fire, damaging itself and all units in a %spread_radius% AoE for %bonus_damage_pct_base%%% of the damage taken from Doom during the curse. The damage and radius of the curse is %bonus_at_level_pct%%% stronger if the enemy's level is a multiple of %level_multiplier%.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bonus_damage_pct_base",
+          "heading": "",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "damage_debuff_duration",
+          "heading": "",
+          "values": [
+            2.5
+          ]
+        },
+        {
+          "key": "spread_radius",
+          "heading": "",
+          "values": [
+            66
+          ]
+        },
+        {
+          "key": "level_multiplier",
+          "heading": "",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "bonus_at_level_pct",
+          "heading": "",
+          "values": [
+            66
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Also applies to all attacks when Doom is at max level."
+      ],
+      "lore": null
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:value}% Magic Resistance"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_ministun_duration}s Infernal Blade Stun Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_movement_speed_pct}% Scorched Earth Movement Speed"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_burn_damage_pct}% Infernal Blade Max HP As Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Doom Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Damage"
+    },
+    {
+      "slot": null,
+      "name": "Doom applies Mute"
+    },
+    {
+      "slot": null,
+      "name": "Permanent Scorched Earth"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

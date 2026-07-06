@@ -1,0 +1,24 @@
+{
+  "id": 2095,
+  "name": "Tier 5 Token",
+  "slug": "tier_5_token",
+  "internal_key": "item_tier5_token",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "Activate to redeem a Tier 5 Neutral Item. The resulting neutral item isn't shareable and a hero can only redeem a single token per tier.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

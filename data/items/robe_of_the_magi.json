@@ -1,0 +1,32 @@
+{
+  "id": 19,
+  "name": "Robe of the Magi",
+  "slug": "robe_of_the_magi",
+  "internal_key": "item_robe",
+  "cost": 450,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_intellect",
+      "heading": "+$int",
+      "values": [
+        6
+      ]
+    }
+  ],
+  "lore": "This robe corrupts the soul of the user, but provides wisdom in return.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

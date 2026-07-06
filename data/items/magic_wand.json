@@ -1,0 +1,63 @@
+{
+  "id": 36,
+  "name": "Magic Wand",
+  "slug": "magic_wand",
+  "internal_key": "item_magic_wand",
+  "cost": 460,
+  "neutral_tier": null,
+  "description": "<h1>Active: Energy Charge</h1>Instantly restores %restore_per_charge% health and mana per charge stored. <br><br>Max %max_charges% charges. Gains a charge whenever a visible enemy within %charge_radius% range uses an ability.",
+  "notes": [
+    "Gains charges for spells cast by visible enemies in 1200 range.",
+    "Certain abilities and item abilities will not add charges."
+  ],
+  "cooldowns": [
+    15
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "max_charges",
+      "heading": "",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "charge_radius",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    },
+    {
+      "key": "bonus_all_stats",
+      "heading": "+$all",
+      "values": [
+        3
+      ]
+    },
+    {
+      "key": "restore_per_charge",
+      "heading": "",
+      "values": [
+        15
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        15
+      ]
+    }
+  ],
+  "lore": "A simple wand used to channel magic energies, it is favored by apprentice wizards and great warlocks alike.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

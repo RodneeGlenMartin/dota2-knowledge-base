@@ -1,0 +1,50 @@
+{
+  "id": 1589,
+  "name": "Crude",
+  "slug": "crude",
+  "internal_key": "item_enhancement_crude",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "health_restoration",
+      "heading": "+Health Restoration",
+      "values": [
+        9,
+        12,
+        15
+      ]
+    },
+    {
+      "key": "bat_reduce",
+      "heading": "-Base Attack Time",
+      "values": [
+        6,
+        9,
+        12
+      ]
+    },
+    {
+      "key": "intelligence_pct",
+      "heading": "-<font color='#e03e2e'>Intelligence</font>",
+      "values": [
+        -9
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

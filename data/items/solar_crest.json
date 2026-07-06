@@ -1,0 +1,111 @@
+{
+  "id": 229,
+  "name": "Solar Crest",
+  "slug": "solar_crest",
+  "internal_key": "item_solar_crest",
+  "cost": 2575,
+  "neutral_tier": null,
+  "description": "<h1>Active: Shine</h1>When cast on an ally, grants them %target_armor% armor, %target_attack_speed% attack speed, %target_movement_speed%%% movement speed and a %absorb_amount% physical damage barrier. <br><br>Does not grant bonus armor, movement or attack speed if used on self. <br><br>Duration: %duration%",
+  "notes": [
+    "Shares cooldown with Pavise."
+  ],
+  "cooldowns": [
+    16
+  ],
+  "mana_costs": [
+    100
+  ],
+  "cast_ranges": [
+    1000
+  ],
+  "special_values": [
+    {
+      "key": "bonus_armor",
+      "heading": "+$armor",
+      "values": [
+        7
+      ]
+    },
+    {
+      "key": "self_movement_speed",
+      "heading": "+$move_speed",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "bonus_mana",
+      "heading": "+$mana",
+      "values": [
+        200
+      ]
+    },
+    {
+      "key": "bonus_health",
+      "heading": "+$health",
+      "values": [
+        200
+      ]
+    },
+    {
+      "key": "target_movement_speed",
+      "heading": "",
+      "values": [
+        15
+      ]
+    },
+    {
+      "key": "target_attack_speed",
+      "heading": "",
+      "values": [
+        60
+      ]
+    },
+    {
+      "key": "target_armor",
+      "heading": "",
+      "values": [
+        5
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        7
+      ]
+    },
+    {
+      "key": "absorb_amount",
+      "heading": "",
+      "values": [
+        350
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        1000
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        100
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        16
+      ]
+    }
+  ],
+  "lore": "A talisman forged to honor the daytime sky.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

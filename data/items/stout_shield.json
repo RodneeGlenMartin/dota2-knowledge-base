@@ -1,0 +1,48 @@
+{
+  "id": 182,
+  "name": "Stout Shield",
+  "slug": "stout_shield",
+  "internal_key": "item_stout_shield",
+  "cost": 100,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Damage Block</h1>Grants a %block_chance%%% chance to block %damage_block_melee% damage from incoming attacks on melee heroes, and %damage_block_ranged% damage on ranged.",
+  "notes": [
+    "Multiple sources of damage block do not stack."
+  ],
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "damage_block_melee",
+      "heading": "",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "damage_block_ranged",
+      "heading": "",
+      "values": [
+        8
+      ]
+    },
+    {
+      "key": "block_chance",
+      "heading": "",
+      "values": [
+        50
+      ]
+    }
+  ],
+  "lore": "One man's wine barrel bottom is another man's shield.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

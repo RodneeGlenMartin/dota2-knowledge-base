@@ -1,0 +1,32 @@
+{
+  "id": 57,
+  "name": "Void Stone",
+  "slug": "void_stone",
+  "internal_key": "item_void_stone",
+  "cost": 700,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_mana_regen",
+      "heading": "+$mana_regen",
+      "values": [
+        1.75
+      ]
+    }
+  ],
+  "lore": "Jewelry that was once used to channel nether realm magic, this ring pulses with energy.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

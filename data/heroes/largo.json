@@ -1,0 +1,923 @@
+{
+  "id": 155,
+  "name": "Largo",
+  "slug": "largo",
+  "npc_name": "npc_dota_hero_largo",
+  "primary_attribute": "str",
+  "attack_type": "Melee",
+  "complexity": 2,
+  "roles": [
+    "Support",
+    "Disabler",
+    "Durable"
+  ],
+  "stats": {
+    "base_str": 24,
+    "str_gain": 3.6,
+    "base_agi": 14,
+    "agi_gain": 1.3,
+    "base_int": 21,
+    "int_gain": 2.6,
+    "damage_min": 63,
+    "damage_max": 69,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 0,
+    "armor": 4.3333335,
+    "magic_resistance": 25,
+    "movement_speed": 290,
+    "turn_rate": 0.7,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 648,
+    "health_regen": 2.65,
+    "max_mana": 327,
+    "mana_regen": 1.0500001
+  },
+  "lore": "The exiled Murkroots of Velu’Mar discovered a living island so ancient it speaks only in song. Raised among the shamanic bards who learned to commune with it, Largo now roams the realms with a troupe of frogling disciples, looking for inspiration for new melodies to bring back and share with his island home.",
+  "hype": "With his slick-strumming fingers and sticky-whip tongue, Largo is always ready to <b>grant his team damage</b>, <b>healing</b>, <b>or speed</b> and <b>dispel friends or foes</b> using just the right lick.",
+  "abilities": [
+    {
+      "key": "largo_catchy_lick",
+      "name": "Catchy Lick",
+      "description": "Largo licks the targeted unit with his tongue, pulling it back a short distance, applying a basic dispel, and dealing damage if it's an enemy.\n\nKilling or dispelling an effect from a target grants Largo temporary health regeneration.\n\nDISPEL TYPE: Basic Dispel",
+      "max_level": 4,
+      "cooldowns": [
+        13,
+        11,
+        9,
+        7
+      ],
+      "mana_costs": [
+        80,
+        85,
+        90,
+        95
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        700
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            85,
+            170,
+            255,
+            340
+          ]
+        },
+        {
+          "key": "pull_distance",
+          "heading": "ENEMY PULL DISTANCE:",
+          "values": [
+            235,
+            265,
+            295,
+            325
+          ]
+        },
+        {
+          "key": "pull_distance_ally",
+          "heading": "ALLY PULL DISTANCE:",
+          "values": [
+            375
+          ]
+        },
+        {
+          "key": "pull_duration",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "dispel_hp_regen",
+          "heading": "BONUS HEALTH REGEN:",
+          "values": [
+            4,
+            7,
+            10,
+            13
+          ]
+        },
+        {
+          "key": "buff_duration",
+          "heading": "HEALTH REGEN DURATION:",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityCharges",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            80,
+            85,
+            90,
+            95
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            13,
+            11,
+            9,
+            7
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Can lick runes to pull them"
+      ],
+      "lore": "After generations spent living on the ancient isaloth Velu'Mar, the descendants of the Murkroot exiles have grown resilient, happily sampling toxins that would've struck their ancestors dead."
+    },
+    {
+      "key": "largo_frogstomp",
+      "name": "Frogstomp",
+      "description": "Largo tosses froglings to an area. They stomp the ground every %stomp_interval% second, dealing damage and ministuns, and enemies in the area have reduced movement speed.",
+      "max_level": 4,
+      "cooldowns": [
+        20,
+        18,
+        16,
+        14
+      ],
+      "mana_costs": [
+        85,
+        95,
+        105,
+        115
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        800
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage_per_stomp",
+          "heading": "DAMAGE PER STOMP:",
+          "values": [
+            36,
+            48,
+            60,
+            72
+          ]
+        },
+        {
+          "key": "total_ticks",
+          "heading": "NUMBER OF STOMPS:",
+          "values": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "key": "slow",
+          "heading": "SLOW:",
+          "values": [
+            12,
+            18,
+            24,
+            30
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            350
+          ]
+        },
+        {
+          "key": "stun_duration",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "stomp_interval",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "delay",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            85,
+            95,
+            105,
+            115
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            20,
+            18,
+            16,
+            14
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Most Bard Monks spend decades mastering the musical arts, but even the top frog Largo has to admit that his young disciples have already grown shockingly good at counting a proper beat."
+    },
+    {
+      "key": "largo_croak_of_genius",
+      "name": "Croak of Genius",
+      "description": "Largo strums a tune to a friendly hero. The hero's items and abilities have reduced mana cost and a percentage of their damage reverberates over the following %damage_duration% seconds.\n\nWhen an affected hero spends mana, the remaining buff duration is reduced by %duration_reduction%s. Duration is not reduced for Largo himself.",
+      "max_level": 4,
+      "cooldowns": [
+        25
+      ],
+      "mana_costs": [
+        40
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        800
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage_portion_pct",
+          "heading": "DAMAGE REVERB:",
+          "values": [
+            30,
+            35,
+            40,
+            45
+          ]
+        },
+        {
+          "key": "damage_duration",
+          "heading": "",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "damage_hp_pct",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "mana_cost_reduction",
+          "heading": "MANA COST REDUCTION:",
+          "values": [
+            15
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "BUFF DURATION:",
+          "values": [
+            15,
+            20,
+            25,
+            30
+          ]
+        },
+        {
+          "key": "duration_reduction",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "max_distance",
+          "heading": "",
+          "values": [
+            2000
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            25
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Only applies to damage sources affected by spell amplification.",
+        "Only applies to damage where the source and target are within %max_distance% units of each other."
+      ],
+      "lore": "Largo loves to help his friends find glory through the power of music, never missing a chance at a killer duet."
+    },
+    {
+      "key": "largo_encore",
+      "name": "Encore",
+      "description": "Buffs that Largo applies to himself or his team have extended duration.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "buff_amplification",
+          "heading": "BONUS DURATION:",
+          "values": [
+            15
+          ]
+        },
+        {
+          "key": "repeat_buff",
+          "heading": "",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Whenever Largo applies a Unit Target buff to a friendly hero, he also gets the buff.<br><br>If Largo targets himself, the buff is also applied to the nearest allied hero within the cast range of the targeted ability.",
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "largo_amphibian_rhapsody",
+      "name": "Amphibian Rhapsody",
+      "description": "Largo gets ready to groove. He is disarmed and his ability bar switches to 3 song abilities, each with different effects. Songs are only effective if strummed on the beat.\n\nEvery time he strums successfully, he gains a stack of Groovin'. Each stack gives him bonus armor and reduces the mana cost of every song, but he loses a stack if he misses a beat. Stacks linger for a short duration when Largo's song ends.",
+      "max_level": 3,
+      "cooldowns": [
+        2
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "rhythm_interval",
+          "heading": "BEAT INTERVAL:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "rhythm_grace_period",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "max_stacks",
+          "heading": "MAX STACKS:",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "armor_per_stack",
+          "heading": "ARMOR PER STACK:",
+          "values": [
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "key": "song_cost_reduction_per_stack_tooltip",
+          "heading": "SONG MANA COST REDUCTION PER STACK:",
+          "values": [
+            1,
+            1.5,
+            2
+          ]
+        },
+        {
+          "key": "stack_duration",
+          "heading": "STACK LINGER DURATION:",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "double_song",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "armor_ally_pct",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            2
+          ]
+        }
+      ],
+      "scepter_upgrade": "Largo can play two songs per beat by strumming both at the same time.",
+      "shard_upgrade": null,
+      "notes": [
+        "Items can be used while in this mode."
+      ],
+      "lore": "The very first Bard Monk played a song that summoned a living island and saved the Murkroot exiles from a salt-worn death."
+    },
+    {
+      "key": "largo_song_fight_song",
+      "name": "Bullbelly Blitz",
+      "description": "Largo plays a song that deals %burst_damage% magical damage to nearby enemies. The song also increases nearby allied heroes' spell amplification and grants their attacks additional magic damage.",
+      "max_level": 3,
+      "cooldowns": [
+        0.2
+      ],
+      "mana_costs": [
+        25,
+        35,
+        45
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "double_song",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "song_cost_reduction_per_stack",
+          "heading": "",
+          "values": [
+            1,
+            1.5,
+            2
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "burst_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            20,
+            30,
+            40
+          ]
+        },
+        {
+          "key": "damage_per_stack",
+          "heading": "DAMAGE PER STACK:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "magic_damage_bonus",
+          "heading": "ADDITIONAL MAGIC DAMAGE:",
+          "values": [
+            20,
+            25,
+            30
+          ]
+        },
+        {
+          "key": "spell_amp_bonus",
+          "heading": "SPELL AMP:",
+          "values": [
+            8,
+            12,
+            16
+          ]
+        },
+        {
+          "key": "battle_burst_duration",
+          "heading": "BUFF DURATION:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            25,
+            35,
+            45
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        }
+      ],
+      "scepter_upgrade": "Deals additional %damage_per_stack% magic damage per Groovin' stack when this song is used in double-strumming.",
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "'Hey, when a beach brawl breaks out, you gotta learn to throw your musical weight around or the party's over proper quick.'"
+    },
+    {
+      "key": "largo_song_double_time",
+      "name": "Hotfeet Hustle",
+      "description": "Largo plays a song that increases nearby friendly units' movement speed and grants a brief slow resistance.",
+      "max_level": 3,
+      "cooldowns": [
+        0.2
+      ],
+      "mana_costs": [
+        25,
+        35,
+        45
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "double_song",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "song_cost_reduction_per_stack",
+          "heading": "",
+          "values": [
+            1,
+            1.5,
+            2
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "movespeed_bonus_burst",
+          "heading": "MOVE SPEED:",
+          "values": [
+            16,
+            20,
+            24
+          ]
+        },
+        {
+          "key": "slow_resistance",
+          "heading": "SLOW RESISTANCE:",
+          "values": [
+            70,
+            75,
+            80
+          ]
+        },
+        {
+          "key": "movement_burst_duration",
+          "heading": "MOVEMENT DURATION:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "slow_resistance_burst_duration",
+          "heading": "SLOW RESISTANCE DURATION:",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            25,
+            35,
+            45
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "'It's like that old story about the scary swamp witch. You better watch just where you're jumping when you're trying to do it lickety-split.'"
+    },
+    {
+      "key": "largo_song_good_vibrations",
+      "name": "Island Elixir",
+      "description": "Largo plays a song that heals nearby friendly heroes.",
+      "max_level": 3,
+      "cooldowns": [
+        0.2
+      ],
+      "mana_costs": [
+        25,
+        35,
+        45
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "double_song",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "song_cost_reduction_per_stack",
+          "heading": "",
+          "values": [
+            1,
+            1.5,
+            2
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "heal_burst",
+          "heading": "HEAL:",
+          "values": [
+            34,
+            56,
+            78
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            25,
+            35,
+            45
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "'If this song can heal an ageless isaloth, it can handle a few cuts and bruises on the lot of you.'"
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_per_stomp} Frogstomp Damage"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_dispel_hp_regen}x Catchy Lick Health Regen"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_damage_hp_pct}% Croak of Genius Max Health DPS"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_AbilityCastRange} Catchy Lick Cast Range / +{s:bonus_pull_distance} Pull Distance"
+    },
+    {
+      "slot": null,
+      "name": "2 Catchy Lick Charges"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_armor_ally_pct}% Groovin' Armor Aura"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_heal_burst}% Amphibian Rhapsody Song Effects"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_total_ticks}x Frogstomp Stomps/Interval"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

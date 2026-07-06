@@ -1,0 +1,661 @@
+{
+  "id": 86,
+  "name": "Rubick",
+  "slug": "rubick",
+  "npc_name": "npc_dota_hero_rubick",
+  "primary_attribute": "int",
+  "attack_type": "Ranged",
+  "complexity": 3,
+  "roles": [
+    "Support",
+    "Nuker",
+    "Disabler"
+  ],
+  "stats": {
+    "base_str": 21,
+    "str_gain": 2,
+    "base_agi": 23,
+    "agi_gain": 2.2,
+    "base_int": 24,
+    "int_gain": 3.7,
+    "damage_min": 49,
+    "damage_max": 55,
+    "attack_rate": 1.7,
+    "attack_range": 550,
+    "projectile_speed": 1125,
+    "armor": 4.8333335,
+    "magic_resistance": 25,
+    "movement_speed": 290,
+    "turn_rate": 0.7,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 582,
+    "health_regen": 2.3500001,
+    "max_mana": 363,
+    "mana_regen": 1.7
+  },
+  "lore": "Any mage can cast a spell or two, and a few may even study long enough to become a wizard, but only the most talented are allowed to be recognized as a Magus. Yet as with any sorcerer's circle, a sense of community has never guaranteed competitive courtesy.\r\n\t\t\t\t<br><br>Already a renowned duelist and scholar of the grander world of sorcery, it had never occurred to Rubick that he might perhaps be Magus material until he was in the midst of his seventh assassination attempt. As he casually tossed the twelfth of a string of would-be killers from a high balcony, it dawned on him how utterly unimaginative the attempts on his life had become. Where once the interruption of a fingersnap or firehand might have put a cheerful spring in his step, it had all become so very predictable. He craved greater competition. Therefore, donning his combat mask, he did what any wizard seeking to ascend the ranks would do: he announced his intention to kill a Magus.\r\n\t\t\t\t<br><br>Rubick quickly discovered that to threaten one Magus is to threaten them all, and they fell upon him in force. Each antagonist's spell was an unstoppable torrent of energy, and every attack a calculated killing blow. But very soon something occurred that Rubick's foes found unexpected: their arts appeared to turn against them. Inside the magic maelstrom, Rubick chuckled, subtly reading and replicating the powers of one in order to cast it against another, sowing chaos among those who had allied against him. Accusations of betrayal began to fly, and soon the sorcerers turned one upon another without suspecting who was behind their undoing.\r\n\t\t\t\t<br><br>When the battle finally drew to a close, all were singed and frozen, soaked and cut and pierced. More than one lay dead by an ally's craft. Rubick stood apart, sore but delighted in the week's festivities. None had the strength to argue when he presented his petition of assumption to the Hidden Council, and the Insubstantial Eleven agreed as one to grant him the title of Grand Magus.",
+  "hype": "Always seeking a new <b>spell to steal</b>, Rubick is ever eager to turn an enemy's most unique advantage against them. <b>Snatching his enemies</b> into the air to fling them where he will, he has no trouble sowing chaos among careless foes.",
+  "abilities": [
+    {
+      "key": "rubick_telekinesis",
+      "name": "Telekinesis",
+      "description": "Rubick uses his telekinetic powers to lift the enemy into the air briefly and then hurls them back at the ground. The unit lands on the ground with such force that it stuns nearby enemies.",
+      "max_level": 4,
+      "cooldowns": [
+        22,
+        19,
+        16,
+        13
+      ],
+      "mana_costs": [
+        110
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        550,
+        575,
+        600,
+        625
+      ],
+      "cast_points": [
+        0.1,
+        0.1,
+        0.1,
+        0.1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "lift_duration",
+          "heading": "LIFT DURATION:",
+          "values": [
+            0.95,
+            1.2,
+            1.45,
+            1.7
+          ]
+        },
+        {
+          "key": "stun_duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            0.9,
+            1.1,
+            1.3,
+            1.5
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "IMPACT RADIUS:",
+          "values": [
+            300,
+            325,
+            350,
+            375
+          ]
+        },
+        {
+          "key": "max_land_distance",
+          "heading": "MAX THROW DISTANCE:",
+          "values": [
+            375
+          ]
+        },
+        {
+          "key": "fall_duration",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "shard_max_land_distance_bonus_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_cooldown_reduction_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_teammate_throw_delay",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "landing_damage",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            550,
+            575,
+            600,
+            625
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            110
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            22,
+            19,
+            16,
+            13
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Allows you to target yourself or allies with Telekinesis. Throw distance is increased to %max_land_distance% and throw delay is reduced to %shard_teammate_throw_delay% seconds.",
+      "notes": [
+        "While the target is in the air, Rubick may use a secondary ability to throw the enemy in a targeted direction.",
+        "When the unit lands, it isn't affected by the area of effect stun."
+      ],
+      "lore": "Even the Grandest Magus may use his powers for enjoyment."
+    },
+    {
+      "key": "rubick_fade_bolt",
+      "name": "Fade Bolt",
+      "description": "Rubick creates a powerful stream of arcane energy that travels between enemy units, dealing damage and reducing their attack and spell damage. Each jump deals less damage.",
+      "max_level": 4,
+      "cooldowns": [
+        16,
+        14,
+        12,
+        10
+      ],
+      "mana_costs": [
+        110,
+        125,
+        140,
+        155
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        800,
+        800,
+        800,
+        800
+      ],
+      "cast_points": [
+        0.1,
+        0.1,
+        0.1,
+        0.1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            85,
+            165,
+            245,
+            325
+          ]
+        },
+        {
+          "key": "jump_damage_reduction_pct",
+          "heading": "JUMP REDUCTION:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "damage_reduction",
+          "heading": "DAMAGE REDUCTION:",
+          "values": [
+            6,
+            12,
+            18,
+            24
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DEBUFF DURATION:",
+          "values": [
+            9
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            440
+          ]
+        },
+        {
+          "key": "jump_delay",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            110,
+            125,
+            140,
+            155
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            16,
+            14,
+            12,
+            10
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Rubick's favorite spell for dispatching would-be assassins is a rather simple conjuration."
+    },
+    {
+      "key": "rubick_arcane_supremacy",
+      "name": "Arcane Supremacy",
+      "description": "Rubick's mastery of the arcane allows him to have a larger cast range and bonus spell amplification.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "cast_range",
+          "heading": "CAST RANGE:",
+          "values": [
+            60,
+            120,
+            180,
+            240
+          ]
+        },
+        {
+          "key": "spell_amp",
+          "heading": "SPELL AMP:",
+          "values": [
+            11,
+            16,
+            21,
+            26
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Break disables the gaining of new Arcane Accumulation stacks.",
+        "Break does not disable the bonuses from existing Arcane Accumulation stacks."
+      ],
+      "lore": "Not every magus can be a Grand Magus..."
+    },
+    {
+      "key": "rubick_spell_steal",
+      "name": "Spell Steal",
+      "description": "Rubick studies the trace magical essence of one enemy hero, learning the secrets of the last spell the hero cast. Rubick can use this spell as his own for several minutes or until he dies.",
+      "max_level": 3,
+      "cooldowns": [
+        16,
+        10,
+        4
+      ],
+      "mana_costs": [
+        25,
+        25,
+        25
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1000,
+        1000,
+        1000
+      ],
+      "cast_points": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "cast_range_scepter",
+          "heading": "CAST RANGE:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "projectile_speed",
+          "heading": "",
+          "values": [
+            1500
+          ]
+        },
+        {
+          "key": "stolen_mana_reduction",
+          "heading": "STOLEN MANA COST REDUCTION:",
+          "values": null
+        },
+        {
+          "key": "stolen_spell_cooldown_percent",
+          "heading": "STOLEN SPELL COOLDOWN REDUCTION:",
+          "values": [
+            10,
+            20,
+            30
+          ]
+        },
+        {
+          "key": "spell_amp_percent",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            180,
+            240,
+            300
+          ]
+        },
+        {
+          "key": "curiosity_steal_factor",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            16,
+            10,
+            4
+          ]
+        }
+      ],
+      "scepter_upgrade": "Increases the number of spells that can be stolen to 2. Increases cast range, and upgrades stolen spells to their Scepter version.",
+      "shard_upgrade": "Upgrades stolen spells to their Shard version.",
+      "notes": [
+        "Cannot steal item abilities.",
+        "Rubick will steal the Aghanim's Shard version of the ability, if he himself has an Aghanim's Shard.",
+        "Does not trigger spell reflect."
+      ],
+      "lore": "...but even their lesser magics can be a source of much utility."
+    },
+    {
+      "key": "rubick_curiosity",
+      "name": "Curiosity",
+      "description": "Rubick gains %curiosity_per_level% stack of Curiosity per level that grants him %curiosity_attack_damage% base damage, %curiosity_modifier_amp%%% Buff/Debuff Duration, and %curiosity_aoe_bonus% AOE Bonus. <br><br>If Rubick sees an enemy Hero cast an ability within %charge_radius% distance of him, he gains %curiosity_per_spell_cast% Curiosity for %curiosity_duration% seconds.  If an enemy Hero dies while Rubick has Curiosity from them and he damaged them in the last %grace_period% seconds, he gains %curiosity_per_kill% Curiosity permanently.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "curiosity_per_spell_cast",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "curiosity_duration",
+          "heading": "",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "curiosity_per_level",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "curiosity_attack_damage",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "curiosity_modifier_amp",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "curiosity_aoe_bonus",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "curiosity_per_kill",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "grace_period",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "curiosity_factor",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "charge_radius",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "curiosity_permanent_gain",
+          "heading": "CURIOSITY GAINED:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "current_debuff_amp",
+          "heading": "BUFF/DEBUFF AMP:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "current_aoe_bonus",
+          "heading": "AREA OF EFFECT BONUS:",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Telekinesis Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Health"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_stolen_mana_reduction}% Stolen Spells Mana Cost"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Fade Bolt Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_reduction}% Fade Bolt Damage Reduction"
+    },
+    {
+      "slot": null,
+      "name": "Telekinesis Landing Deals {s:bonus_landing_damage} Damage"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_curiosity_factor}x Curiosity Bonuses"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_spell_amp_percent}% Spell Amp For Stolen Spells"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

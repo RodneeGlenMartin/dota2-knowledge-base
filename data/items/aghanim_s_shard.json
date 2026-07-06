@@ -1,0 +1,24 @@
+{
+  "id": 609,
+  "name": "Aghanim's Shard",
+  "slug": "aghanim_s_shard",
+  "internal_key": "item_aghanims_shard",
+  "cost": 1400,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Ability Upgrade</h1>Upgrades an existing ability or adds a new ability to your hero.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [],
+  "lore": "With origins known only to a single wizard, fragments of this impossible crystal are nearly as coveted as the renowned scepter itself.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

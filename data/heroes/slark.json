@@ -1,0 +1,687 @@
+{
+  "id": 93,
+  "name": "Slark",
+  "slug": "slark",
+  "npc_name": "npc_dota_hero_slark",
+  "primary_attribute": "agi",
+  "attack_type": "Melee",
+  "complexity": 2,
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Disabler",
+    "Escape"
+  ],
+  "stats": {
+    "base_str": 20,
+    "str_gain": 2.1,
+    "base_agi": 21,
+    "agi_gain": 1.5,
+    "base_int": 16,
+    "int_gain": 1.9,
+    "damage_min": 58,
+    "damage_max": 64,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 0,
+    "armor": 3.5,
+    "magic_resistance": 25,
+    "movement_speed": 300,
+    "turn_rate": 0.7,
+    "sight_range_day": 1800,
+    "sight_range_night": 1800,
+    "max_health": 560,
+    "health_regen": 2.25,
+    "max_mana": 267,
+    "mana_regen": 0.8
+  },
+  "lore": "Little known to the inhabitants of the dry world, Dark Reef is a sunken prison where the worst of the sea-bred are sent for crimes against their fellows. It is a razor barbed warren full of murderous slithereen, treacherous Deep Ones, sociopathic meranths. In this dim labyrinth, patrolled by eels and guarded by enormous anemones, only the vicious survive. Pitched into Dark Reef for crimes unknown, Slark spent half a lifetime without kin or kindness, trusting no one, surviving through a combination of stealth and ruthlessness, keeping his thoughts and his plans to himself. When the infamous Dark Reef Dozen plotted their ill-fated breakout, they kept their plans a perfect secret, murdering anyone who could have put the pieces together--but somehow Slark discovered their scheme and made a place for himself in it. Ten of the Dozen died in the escape attempt, and two were captured, hauled back to Dark Reef, then executed for the entertainment of their fellow inmates. But Slark, the unsung thirteenth, used the commotion as cover and slipped away, never to be caught. Now a furtive resident of the carnivorous mangrove scrub that grips the southern reach of Shadeshore, Slark remains the only successful escapee from Dark Reef.",
+  "hype": "Pouncing into danger then slipping back out is what Slark does best. He rushes at the chance to <b>pin or corner a lone foe</b>, steals their essence with each cut from his dagger, and is always ready to vanish should the tables turn.",
+  "abilities": [
+    {
+      "key": "slark_dark_pact",
+      "name": "Dark Pact",
+      "description": "After a short delay, Slark sacrifices some of his life blood, purging most negative debuffs and dealing damage to enemy units around him and to himself.  Slark only takes %self_damage_pct%%% of the damage.\n\nDISPEL TYPE: Strong Dispel",
+      "max_level": 4,
+      "cooldowns": [
+        9,
+        8,
+        7,
+        6
+      ],
+      "mana_costs": [
+        65
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.001,
+        0.001,
+        0.001,
+        0.001
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "delay",
+          "heading": "DELAY:",
+          "values": [
+            1.5
+          ]
+        },
+        {
+          "key": "pulse_duration",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            325
+          ]
+        },
+        {
+          "key": "total_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            75,
+            150,
+            225,
+            300
+          ]
+        },
+        {
+          "key": "total_pulses",
+          "heading": "",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "pulse_interval",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "self_damage_pct",
+          "heading": "",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.001
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            65
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            9,
+            8,
+            7,
+            6
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "%delay% seconds after cast, a series of %total_pulses% pulses separated by %pulse_interval% seconds deal the damage.",
+        "Each pulse also removes debuffs from Slark.",
+        "You can't kill yourself with this skill.",
+        "The pulses stop if Slark dies."
+      ],
+      "lore": "Slithereen are capable of quickly regrowing appendages, in case of critical injury, to save their own lives."
+    },
+    {
+      "key": "slark_pounce",
+      "name": "Pounce",
+      "description": "Slark leaps forward, leashing and applying Essence Shift stacks to the first hero he connects. That unit can only move a limited distance away from Slark's landing position.",
+      "max_level": 4,
+      "cooldowns": [
+        24,
+        20,
+        16,
+        12
+      ],
+      "mana_costs": [
+        75
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "pounce_distance",
+          "heading": "DISTANCE:",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "pounce_speed",
+          "heading": "",
+          "values": [
+            933.33
+          ]
+        },
+        {
+          "key": "pounce_acceleration",
+          "heading": "",
+          "values": [
+            7000
+          ]
+        },
+        {
+          "key": "pounce_radius",
+          "heading": "",
+          "values": [
+            120
+          ]
+        },
+        {
+          "key": "leash_duration",
+          "heading": "LEASH DURATION:",
+          "values": [
+            2.5,
+            2.75,
+            3,
+            3.25
+          ]
+        },
+        {
+          "key": "leash_radius",
+          "heading": "LEASH RADIUS:",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "max_charges",
+          "heading": "CHARGES:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "charge_restore_time",
+          "heading": "BASE CHARGE RESTORE TIME:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "pounce_distance_scepter",
+          "heading": "DISTANCE:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "essence_stacks",
+          "heading": "ESSENCE SHIFT STACKS:",
+          "values": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            24,
+            20,
+            16,
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": "Provides charges and increases range.",
+      "shard_upgrade": null,
+      "notes": [
+        "On cast, Slark leaps forward at a speed of %pounce_speed%, stopping when he latches onto an enemy hero or has traveled %pounce_distance% distance.",
+        "Debuff Immune units cannot be leashed.",
+        "Trees will be destroyed around Slark's landing location."
+      ],
+      "lore": "Time in the Dark Reef made Slark a dangerous assassin; aggressive and fearless."
+    },
+    {
+      "key": "slark_saltwater_shiv",
+      "name": "Saltwater Shiv",
+      "description": "Slark slices the target with his salty shiv, stealing a portion of the target's movement speed, Health Regen and Health Restoration.<br><br>These effects stack independently.",
+      "max_level": 4,
+      "cooldowns": [
+        12,
+        10.5,
+        9,
+        7.5
+      ],
+      "mana_costs": [
+        25,
+        30,
+        35,
+        40
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        150
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            12
+          ]
+        },
+        {
+          "key": "health_rest_steal",
+          "heading": "RESTORATION STEAL:",
+          "values": [
+            4,
+            8,
+            12,
+            16
+          ]
+        },
+        {
+          "key": "regen_steal",
+          "heading": "REGEN STEAL:",
+          "values": [
+            4,
+            8,
+            12,
+            16
+          ]
+        },
+        {
+          "key": "ms_steal",
+          "heading": "SPEED STEAL:",
+          "values": [
+            4,
+            8,
+            12,
+            16
+          ]
+        },
+        {
+          "key": "melee_range_buffer",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            25,
+            30,
+            35,
+            40
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            12,
+            10.5,
+            9,
+            7.5
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "slark_depth_shroud",
+      "name": "Depth Shroud",
+      "description": "Creates a cloud at the target location. All allies inside the radius are hidden and affected by Shadow Dance.",
+      "max_level": 1,
+      "cooldowns": [
+        75
+      ],
+      "mana_costs": [
+        75
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        400
+      ],
+      "cast_points": [
+        0.1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            225
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            75
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Nothing worse than a job going bad thanks to some clompy-footed friend."
+    },
+    {
+      "key": "slark_essence_shift",
+      "name": "Essence Shift",
+      "description": "Slark steals the life essence of enemy heroes with his attacks, draining %stat_loss% of each of their attributes and converting them to bonus %agi_gain% Agility. If Slark kills an affected enemy hero, he permanently steals %stat_loss% Agility.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "agi_gain",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "stat_loss",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "steal_radius",
+          "heading": "STEAL RADIUS:",
+          "values": [
+            300
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Attributes cannot be dropped below 1.",
+        "Essence Shifted stats are returned to normal on death. The stat return for Slark and for the affected hero are separate.",
+        "To permanently steal Agility, Slark doesn't need to land the killing blow, as long as the enemy hero is killed within Slark's Steal Radius while having the Essence Shift debuff.",
+        "Break disables the gaining of temporary stacks. Does not disable the gaining of permanent stacks.",
+        "Break does not disable the bonuses of existing stacks."
+      ],
+      "lore": "With each strike at his adversaries, Slark's knowledge of their weaknesses improves."
+    },
+    {
+      "key": "slark_shadow_dance",
+      "name": "Shadow Dance",
+      "description": "When not visible to the enemy team, Slark passively gains bonus movement speed and health regeneration.  If Slark is damaged by a neutral unit, the passive movement and health regeneration bonuses are lost for %neutral_disable% seconds.<br><br>When activated, Slark hides himself in a cloud of shadows, becoming immune to detection. Attacking, casting spells, and using items will not reveal Slark, but enemies can see the cloud itself.",
+      "max_level": 3,
+      "cooldowns": [
+        50,
+        40,
+        30
+      ],
+      "mana_costs": [
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bonus_movement_speed",
+          "heading": "BONUS MOVEMENT SPEED:",
+          "values": [
+            20,
+            30,
+            40
+          ]
+        },
+        {
+          "key": "bonus_regen",
+          "heading": "HEALTH GAINED PER SECOND:",
+          "values": [
+            60,
+            90,
+            120
+          ]
+        },
+        {
+          "key": "activation_delay",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "neutral_disable",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            4,
+            4.25,
+            4.5
+          ]
+        },
+        {
+          "key": "attack_speed",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            50,
+            40,
+            30
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "The hidden Thirteenth is a slippery foe."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Dark Pact Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_leash_duration}s Pounce Leash"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_total_damage} Dark Pact Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_regen} Shadow Dance Regen"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_duration}s Essence Shift Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_attack_speed} Shadow Dance Attack Speed"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_duration}s Shadow Dance Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_agi_gain} Agility gain/stolen per Essence Shift Stack"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": 181,
+  "name": "Orb of Venom",
+  "slug": "orb_of_venom",
+  "internal_key": "item_orb_of_venom",
+  "cost": 350,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Poison Attack</h1>Poisons the target, dealing %damage% magical damage per second. Lasts for %poison_duration% seconds.",
+  "notes": [
+    "Does not stack with its upgrades."
+  ],
+  "cooldowns": [
+    9
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "damage",
+      "heading": "",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "tick_interval",
+      "heading": "",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "poison_duration",
+      "heading": "",
+      "values": [
+        3
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        9
+      ]
+    }
+  ],
+  "lore": "Envenoms your veapon with the venom of a venomous viper.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": 596,
+  "name": "Falcon Blade",
+  "slug": "falcon_blade",
+  "internal_key": "item_falcon_blade",
+  "cost": 1125,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_health",
+      "heading": "+$health",
+      "values": [
+        200
+      ]
+    },
+    {
+      "key": "bonus_mana_regen",
+      "heading": "+$mana_regen",
+      "values": [
+        1.8
+      ]
+    },
+    {
+      "key": "bonus_damage",
+      "heading": "+$damage",
+      "values": [
+        14
+      ]
+    }
+  ],
+  "lore": "An enchanted blade that long ago raised a hopeless urchin from pauper to king.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

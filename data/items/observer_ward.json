@@ -1,0 +1,67 @@
+{
+  "id": 42,
+  "name": "Observer Ward",
+  "slug": "observer_ward",
+  "internal_key": "item_ward_observer",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Use: Plant</h1>Plants an Observer Ward, an invisible watcher that gives ground vision in a %vision_range_tooltip% radius to your team. Lasts %duration_minutes_tooltip% minutes.<br><br>Hold Control to give one Observer Ward to an allied hero.",
+  "notes": null,
+  "cooldowns": [
+    1
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    500
+  ],
+  "special_values": [
+    {
+      "key": "lifetime",
+      "heading": "",
+      "values": [
+        360
+      ]
+    },
+    {
+      "key": "vision_range_tooltip",
+      "heading": "",
+      "values": [
+        1600
+      ]
+    },
+    {
+      "key": "health",
+      "heading": "",
+      "values": [
+        200
+      ]
+    },
+    {
+      "key": "duration_minutes_tooltip",
+      "heading": "",
+      "values": [
+        6
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        500
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        1
+      ]
+    }
+  ],
+  "lore": "A form of half-sentient plant, often cultivated by apprentice wizards.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

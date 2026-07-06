@@ -1,0 +1,39 @@
+{
+  "id": 1441,
+  "name": "Gris-Gris",
+  "slug": "gris_gris",
+  "internal_key": "item_grisgris",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "This item that cannot be dropped or placed in the backpack but can be put into normal inventory slots. When the owner dies, %death_gold_lost_reduction_pct%%% of the gold lost from death is added to the item, and will be refunded when the item is consumed. Right-click to consume and permanently remove the item.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "death_gold_lost_reduction_pct",
+      "heading": "",
+      "values": [
+        100
+      ]
+    },
+    {
+      "key": "gold_tick_interval",
+      "heading": "",
+      "values": [
+        3
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

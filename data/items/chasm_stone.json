@@ -1,0 +1,34 @@
+{
+  "id": 1872,
+  "name": "Chasm Stone",
+  "slug": "chasm_stone",
+  "internal_key": "item_chasm_stone",
+  "cost": 800,
+  "neutral_tier": null,
+  "description": "",
+  "notes": [
+    "AoE bonuses from multiple Chasm Stones or its upgrades do not stack."
+  ],
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "aoe_bonus",
+      "heading": "+$aoe_bonus",
+      "values": [
+        40
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

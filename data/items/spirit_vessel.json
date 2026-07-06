@@ -1,0 +1,121 @@
+{
+  "id": 267,
+  "name": "Spirit Vessel",
+  "slug": "spirit_vessel",
+  "internal_key": "item_spirit_vessel",
+  "cost": 2725,
+  "neutral_tier": null,
+  "description": "<h1>Active: Soul Release</h1> When used against enemies, it reduces health by %enemy_hp_drain%%% of current health per second, and reduces Health Restoration by %restoration_reduction_enemy%%%. Deals %soul_damage_amount% damage per second. <br><br>When used on allies, it provides %soul_heal_amount% health regeneration per second. <br><br>Lasts %duration% seconds.<br><br>Gains charges every time an enemy hero dies within %soul_radius% units or the user dies.",
+  "notes": [
+    "Empty vessels gain 2 charges.",
+    "Only the closest Spirit Vessel to the dying hero will gain a charge.",
+    "If the allied unit is attacked by an enemy hero or Roshan, the effect is lost.",
+    "Does not trigger spell block or spell reflect."
+  ],
+  "cooldowns": [
+    10
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    750
+  ],
+  "special_values": [
+    {
+      "key": "bonus_mana_regen",
+      "heading": "+$mana_regen",
+      "values": [
+        1.75
+      ]
+    },
+    {
+      "key": "bonus_all_stats",
+      "heading": "+$all",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "bonus_armor",
+      "heading": "+$armor",
+      "values": [
+        2
+      ]
+    },
+    {
+      "key": "soul_radius",
+      "heading": "",
+      "values": [
+        1500
+      ]
+    },
+    {
+      "key": "soul_initial_charge",
+      "heading": "",
+      "values": [
+        2
+      ]
+    },
+    {
+      "key": "soul_additional_charges",
+      "heading": "",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "soul_heal_amount",
+      "heading": "",
+      "values": [
+        40
+      ]
+    },
+    {
+      "key": "soul_damage_amount",
+      "heading": "",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        8
+      ]
+    },
+    {
+      "key": "restoration_reduction_enemy",
+      "heading": "",
+      "values": [
+        70
+      ]
+    },
+    {
+      "key": "enemy_hp_drain",
+      "heading": "",
+      "values": [
+        4
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        750
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        10
+      ]
+    }
+  ],
+  "lore": "Forged by a god to entrap the soul of another.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

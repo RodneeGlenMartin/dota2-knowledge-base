@@ -1,0 +1,34 @@
+{
+  "id": 1638,
+  "name": "Dormant Curio",
+  "slug": "dormant_curio",
+  "internal_key": "item_dormant_curio",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Hidden Potential</h1>Neutral Artifacts you craft while holding a Dormant Curio have their potency increased by %item_potency%%%.",
+  "notes": [
+    "Certain stats on the next artifact will be amplified. Will not amplify cooldown, mana cost, or cast range."
+  ],
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "item_potency",
+      "heading": "",
+      "values": [
+        30
+      ]
+    }
+  ],
+  "lore": "Everyone has an idea, but no one has a clue.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,608 @@
+{
+  "id": 8,
+  "name": "Juggernaut",
+  "slug": "juggernaut",
+  "npc_name": "npc_dota_hero_juggernaut",
+  "primary_attribute": "agi",
+  "attack_type": "Melee",
+  "complexity": 1,
+  "roles": [
+    "Carry",
+    "Escape",
+    "Pusher"
+  ],
+  "stats": {
+    "base_str": 20,
+    "str_gain": 2,
+    "base_agi": 32,
+    "agi_gain": 2.8,
+    "base_int": 14,
+    "int_gain": 1.4,
+    "damage_min": 54,
+    "damage_max": 56,
+    "attack_rate": 1.4,
+    "attack_range": 150,
+    "projectile_speed": 0,
+    "armor": 5.3333335,
+    "magic_resistance": 25,
+    "movement_speed": 305,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 560,
+    "health_regen": 2.5,
+    "max_mana": 243,
+    "mana_regen": 0.7
+  },
+  "lore": "No one has ever seen the face hidden beneath the mask of Yurnero the Juggernaut. It is only speculation that he even has one. For defying a corrupt lord, Yurnero was exiled from the ancient Isle of Masks--a punishment that saved his life. The isle soon after vanished beneath the waves in a night of vengeful magic. He alone remains to carry on the Isle's long Juggernaut tradition, one of ritual and swordplay. The last practitioner of the art, Yurnero's confidence and courage are the result of endless practice; his inventive bladework proves that he has never stopped challenging himself. Still, his motives are as unreadable as his expression. For a hero who has lost everything twice over, he fights as if victory is a foregone conclusion. ",
+  "hype": "In a <b>flurry of slashes</b>, Juggernaut cuts down his foes. Sprinting and <b>spinning into battle</b> with reckless abandon, and nearly invincible once he is able to begin his assault, stopping Juggernaut can often be just as difficult as surviving him.",
+  "abilities": [
+    {
+      "key": "juggernaut_blade_fury",
+      "name": "Blade Fury",
+      "description": "Causes a bladestorm of destructive force around Juggernaut, rendering him debuff immune with %immunity_resist%%% magic resistance and dealing damage every %blade_fury_damage_tick%s to nearby enemy units. Applies a strong dispel at the end of the spin.",
+      "max_level": 4,
+      "cooldowns": [
+        30,
+        26,
+        22,
+        18
+      ],
+      "mana_costs": [
+        110
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "blade_fury_damage",
+          "heading": "DAMAGE PER SECOND:",
+          "values": [
+            85,
+            115,
+            145,
+            175
+          ]
+        },
+        {
+          "key": "blade_fury_damage_tick",
+          "heading": "DAMAGE RATE:",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "blade_fury_radius",
+          "heading": "RADIUS:",
+          "values": [
+            260
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "bonus_movespeed",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "immunity_resist",
+          "heading": "",
+          "values": [
+            80
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            110
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            30,
+            26,
+            22,
+            18
+          ]
+        }
+      ],
+      "scepter_upgrade": "Increases radius and slows enemies in the area of effect.<br><br> Juggernaut preforms an attack on affected enemies every %attack_interval%s.",
+      "shard_upgrade": null,
+      "notes": [
+        "You can use items during Blade Fury.",
+        "Juggernaut can still perform attacks while in Blade Fury. However, only units that are not affected by Blade Fury, such as wards or structures, will take damage from these attacks."
+      ],
+      "lore": "Yurnero's renowned katana techniques are feared by warriors and sorcerors alike."
+    },
+    {
+      "key": "juggernaut_healing_ward",
+      "name": "Healing Ward",
+      "description": "Summons a Healing Ward which heals all nearby allied units, based on their max health.  The Healing Ward moves at %healing_ward_movespeed_tooltip% movement speed after being summoned.  Lasts %abilityduration% seconds.",
+      "max_level": 4,
+      "cooldowns": [
+        60
+      ],
+      "mana_costs": [
+        120
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        350
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        18,
+        20,
+        22,
+        24
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "healing_ward_heal_amount",
+          "heading": "MAX HEALTH PER SECOND:",
+          "values": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "key": "healing_ward_aura_radius",
+          "heading": "RADIUS:",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "healing_ward_movespeed_tooltip",
+          "heading": "",
+          "values": [
+            325
+          ]
+        },
+        {
+          "key": "healing_ward_bonus_health",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "healing_ward_hits_to_kill_tooltip",
+          "heading": "HITS TO DESTROY:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            350
+          ]
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "",
+          "values": [
+            18,
+            20,
+            22,
+            24
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            120
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            60
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Increases ward healing and health.",
+      "notes": [
+        "The Healing Ward can be controlled.",
+        "Multiple Healing Wards do not stack."
+      ],
+      "lore": "Of the rituals learned at the Isle of Masks, tending wounds with a bit of voodoo magic has proven to be quite useful."
+    },
+    {
+      "key": "juggernaut_blade_dance",
+      "name": "Blade Dance",
+      "description": "Gives Juggernaut a chance to deal critical damage with Blade Fury and on each attack.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "blade_dance_crit_chance",
+          "heading": "CRITICAL CHANCE:",
+          "values": [
+            35
+          ]
+        },
+        {
+          "key": "blade_dance_crit_mult",
+          "heading": "CRITICAL DAMAGE:",
+          "values": [
+            140,
+            160,
+            180,
+            200
+          ]
+        },
+        {
+          "key": "blade_dance_lifesteal",
+          "heading": "",
+          "values": null
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "The last remnant of his heritage's commitment to bladework, Yurnero ensures that the style is remembered."
+    },
+    {
+      "key": "juggernaut_swift_slash",
+      "name": "Swiftslash",
+      "description": "Performs a short Omnislash for %duration% seconds.",
+      "max_level": 1,
+      "cooldowns": [
+        25
+      ],
+      "mana_costs": [
+        150
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        450
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            450
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            25
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "A briefer onslaught for those less deserving of the honor."
+    },
+    {
+      "key": "juggernaut_bladeform",
+      "name": "Bladeform",
+      "description": "Juggernaut gains a stack of Bladeform every %stack_gain_time%s that Juggernaut does not take damage. Each stack grants bonus base Agility and Movement Speed. Stacks fade after %linger_duration%s upon taking any damage.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "max_stacks",
+          "heading": "MAX STACKS:",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "stack_gain_time",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "agi_bonus_pct_per_stack",
+          "heading": "BASE AGILITY PER STACK:",
+          "values": [
+            2.5
+          ]
+        },
+        {
+          "key": "movement_speed_pct_per_stack",
+          "heading": "MOVEMENT SPEED PER STACK:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "linger_duration",
+          "heading": "LINGER DURATION:",
+          "values": [
+            2
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Break disables the gaining of new stacks.",
+        "Break does not disable the bonuses from existing stacks."
+      ],
+      "lore": null
+    },
+    {
+      "key": "juggernaut_omni_slash",
+      "name": "Omnislash",
+      "description": "Juggernaut leaps towards the target enemy units, and then slashes the target and other nearby enemy units at an increased attack rate. Juggernaut is invulnerable for the duration.\n\nDISPEL TYPE: Basic Dispel",
+      "max_level": 3,
+      "cooldowns": [
+        120
+      ],
+      "mana_costs": [
+        200,
+        275,
+        350
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        450
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "attack_rate_multiplier",
+          "heading": "SLASHES RATE MULTIPLIER:",
+          "values": [
+            1.4
+          ]
+        },
+        {
+          "key": "bonus_damage",
+          "heading": "BONUS DAMAGE:",
+          "values": [
+            25,
+            30,
+            35
+          ]
+        },
+        {
+          "key": "bonus_attack_speed",
+          "heading": "BONUS ATTACK SPEED:",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            3,
+            3.25,
+            3.5
+          ]
+        },
+        {
+          "key": "omni_slash_radius",
+          "heading": "SLASH JUMP RADIUS:",
+          "values": [
+            425
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            450
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            200,
+            275,
+            350
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            120
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "You can use items during Omnislash."
+      ],
+      "lore": "'The fruits of discipline; with practice comes strength.'"
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Healing Ward Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_stack_gain_time}s Bladeform Stack Gain Interval"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Omnislash Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_bonus_movespeed} Movement Speed During Blade Fury"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_blade_dance_crit_mult}% Blade Dance Crit Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_blade_fury_damage} Blade Fury Damage Per Second"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_duration}s Omnislash Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_blade_dance_lifesteal}% Blade Dance Lifesteal"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

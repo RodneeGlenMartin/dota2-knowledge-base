@@ -1,0 +1,756 @@
+{
+  "id": 98,
+  "name": "Timbersaw",
+  "slug": "timbersaw",
+  "npc_name": "npc_dota_hero_shredder",
+  "primary_attribute": "str",
+  "attack_type": "Melee",
+  "complexity": 2,
+  "roles": [
+    "Nuker",
+    "Durable",
+    "Escape"
+  ],
+  "stats": {
+    "base_str": 23,
+    "str_gain": 3.6,
+    "base_agi": 16,
+    "agi_gain": 1.6,
+    "base_int": 24,
+    "int_gain": 2.7,
+    "damage_min": 48,
+    "damage_max": 52,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 2.6666667,
+    "magic_resistance": 25,
+    "movement_speed": 280,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 626,
+    "health_regen": 2.55,
+    "max_mana": 363,
+    "mana_regen": 1.7
+  },
+  "lore": "Rizzrack could still hear the screams in his mind.  He worked, frantically turning wrenches, twisting screws, building and carving and forging.  Sleep eluded him; he only built.  Months had passed since he had shut himself in his uncle's workshop, and his deliverance was nearly complete.  He rubbed his back as his eyes drifted shut, and saw a blanket of flowers floating on the placid waves of Augury Bay before exploding into a cloud of pollen that silenced lives as it seized the lungs.  He woke with a choking start.  For hours the rhythmic sound of a whetstone filled the shop as he sharpened a set of massive blades, his mind filled with images of strangling vines garroting neighbors, enwrapping homes.  The flooding of Augury Bay had been nothing compared to the violent horrors the waters left to take root beyond the city walls.\r\n\t\t\t\t<br><br>But the saw-suit would make him strong and safe he thought, allowing himself this sliver of hope before the full might of his fear crashed into his fading mind.  Branches and bark and blood.  When the city fell, Rizzrack fled trees that walked, and fought, and killed.  Trees had shattered the gates and swarmed into the city.  Trees had crushed and thrashed and stomped the last that Augury Bay could muster in defense, and stalked the few fleeing refugees.  In addled silence Rizzrack unspooled the thick chain from the suit's arm, his hands quaking as he inspected each link and ran a trembling finger along the claw attached at its end.  The saw-suit was ready.\r\n\t\t\t\t<br><br>With his hand trembling he sparked the bladed machine to life.  Terror drove him, terror of what awaited him and of what he would have to face to have any hope of calming his mind.  As the saw-suit shuddered to life he knew he must face this fear, and he knew he wouldn't like it one bit.",
+  "hype": "Elusive and unpredictable, Timbersaw <b>chops through the forest</b> to face his foes. Unleashing an arsenal of <b>saw blades</b> to cut enemies to pieces, he rides his chain into nearby trees and batters foes along the way.",
+  "abilities": [
+    {
+      "key": "shredder_whirling_death",
+      "name": "Whirling Death",
+      "description": "Timbersaw whirls extremely sharp edges, damaging enemies and destroying trees around him in an area. If an enemy hero is affected, it loses some of its primary attribute for a short duration. Whirling Death will deal bonus damage per tree destroyed.",
+      "max_level": 4,
+      "cooldowns": [
+        7.5,
+        7,
+        6.5,
+        6
+      ],
+      "mana_costs": [
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "whirling_radius",
+          "heading": "RADIUS:",
+          "values": [
+            325
+          ]
+        },
+        {
+          "key": "whirling_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            60,
+            120,
+            180,
+            240
+          ]
+        },
+        {
+          "key": "tree_damage_scale",
+          "heading": "TREE BONUS DAMAGE:",
+          "values": [
+            9,
+            16,
+            23,
+            30
+          ]
+        },
+        {
+          "key": "whirling_tick",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "stat_loss_pct",
+          "heading": "STAT LOSS:",
+          "values": [
+            13
+          ]
+        },
+        {
+          "key": "stat_loss_univ",
+          "heading": "STAT LOSS (UNIVERSAL):",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "STAT LOSS DURATION:",
+          "values": [
+            7,
+            9,
+            11,
+            13
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            7.5,
+            7,
+            6.5,
+            6
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "In the case that Rizzrack gets surrounded by the vines and plants of his nightmares, he has an immediate chainsaw defense."
+    },
+    {
+      "key": "shredder_timber_chain",
+      "name": "Timber Chain",
+      "description": "Timbersaw fires a chain that embeds itself in the first tree it hits, pulling him towards it.  Any enemy in the path takes damage.",
+      "max_level": 4,
+      "cooldowns": [
+        4
+      ],
+      "mana_costs": [
+        60,
+        70,
+        80,
+        90
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        750,
+        900,
+        1050,
+        1200
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "chain_radius",
+          "heading": "",
+          "values": [
+            90
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            225
+          ]
+        },
+        {
+          "key": "speed",
+          "heading": "SPEED:",
+          "values": [
+            2200,
+            2400,
+            2600,
+            2800
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            45,
+            105,
+            165,
+            225
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            750,
+            900,
+            1050,
+            1200
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            60,
+            70,
+            80,
+            90
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            4
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "You never know when you might need to escape from malevolent saplings."
+    },
+    {
+      "key": "shredder_reactive_armor",
+      "name": "Reactive Armor",
+      "description": "Each time Timbersaw is attacked, he gains increased health regen and armor. Hero attacks are counted as %stacks_per_hero_attack%x the amount.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bonus_armor",
+          "heading": "BONUS ARMOR:",
+          "values": [
+            0.4,
+            0.5,
+            0.6,
+            0.7
+          ]
+        },
+        {
+          "key": "bonus_hp_regen",
+          "heading": "BONUS HP REGEN:",
+          "values": [
+            0.5,
+            0.6,
+            0.7,
+            0.8
+          ]
+        },
+        {
+          "key": "stack_limit",
+          "heading": "MAX STACKS:",
+          "values": [
+            10,
+            20,
+            30,
+            40
+          ]
+        },
+        {
+          "key": "stack_duration",
+          "heading": "STACK DURATION:",
+          "values": [
+            10,
+            12,
+            14,
+            16
+          ]
+        },
+        {
+          "key": "stacks_per_hero_attack",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "initial_shield",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shield_per_sec",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shield_per_sec_per_enemy",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "max_shield",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "explosion_radius",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "base_explosion",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": "Reactive Armor can now be activated to get max stacks and %initial_shield% damage barrier. Grants Timbersaw %shield_per_sec% + %shield_per_sec_per_enemy% barrier amount per second for each enemy hero within %radius% radius of Timbersaw up to a maximum of %max_shield%. After %duration% seconds, Timbersaw deals damage to every hero within %explosion_radius% radius equal to %base_explosion% + his remaining barrier amount and loses all of his barrier.",
+      "shard_upgrade": null,
+      "notes": [
+        "Break disables the gaining of new stacks.",
+        "Break does not disable the bonuses from existing stacks."
+      ],
+      "lore": "The saw-suit is equipped to react to the slightest touch with fortified defenses."
+    },
+    {
+      "key": "shredder_flamethrower",
+      "name": "Flamethrower",
+      "description": "Releases a flame in the direction Timbersaw is facing. Applies a debuff that deals damage per second and slows enemy movement speed. Affects buildings for reduced damage.",
+      "max_level": 1,
+      "cooldowns": [
+        20
+      ],
+      "mana_costs": [
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage_per_second",
+          "heading": "DAMAGE PER SECOND:",
+          "values": [
+            70
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "width",
+          "heading": "WIDTH:",
+          "values": [
+            275
+          ]
+        },
+        {
+          "key": "length",
+          "heading": "RANGE:",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "move_slow_pct",
+          "heading": "MOVE SLOW:",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "building_dmg_pct",
+          "heading": "BUILDING DAMAGE:",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "debuff_linger_duration",
+          "heading": "DEBUFF LINGER TIME:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            20
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "A single saw can only cut so much. A single spark can burn forever. "
+    },
+    {
+      "key": "shredder_chakram",
+      "name": "Chakram",
+      "description": "Fires Timbersaw's main saw blade at the target location where it will spin in place, dealing damage in an area around it.  Enemies caught in the saw blade will move more slowly for every %slow_health_percentage%%% of health missing. The blade deals damage and cuts down trees in its path when fired and retracted.  While active the ability costs mana, and Timbersaw loses the ability to attack.",
+      "max_level": 3,
+      "cooldowns": [
+        8,
+        8,
+        8
+      ],
+      "mana_costs": [
+        90,
+        120,
+        150
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1200,
+        1200,
+        1200
+      ],
+      "cast_points": [
+        0.15
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "speed",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "pass_damage",
+          "heading": "PASS DAMAGE:",
+          "values": [
+            75,
+            150,
+            225
+          ]
+        },
+        {
+          "key": "damage_per_second",
+          "heading": "DAMAGE PER SECOND:",
+          "values": [
+            50,
+            75,
+            100
+          ]
+        },
+        {
+          "key": "slow",
+          "heading": "SLOW:",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "damage_interval",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "break_distance",
+          "heading": "",
+          "values": [
+            2000
+          ]
+        },
+        {
+          "key": "mana_per_second",
+          "heading": "MANA COST PER SECOND:",
+          "values": [
+            10,
+            15,
+            20
+          ]
+        },
+        {
+          "key": "pass_slow_duration",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "slow_health_percentage",
+          "heading": "",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "castpoint_scepter",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.15
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            90,
+            120,
+            150
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            8
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "The Chakram will return if Timbersaw runs out of mana or moves over %break_distance% distance away."
+      ],
+      "lore": "The ultimate in anti-flora weaponry."
+    },
+    {
+      "key": "shredder_exposure_therapy",
+      "name": "Exposure Therapy",
+      "description": "Whenever Timbersaw destroys a tree, he gains mana.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "mana_restore",
+          "heading": "MANA RESTORE:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "health_restore",
+          "heading": "",
+          "values": null
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_hp_regen} Reactive Armor Regeneration Per Stack"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Mana Regen"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_stat_loss_pct}% Whirling Death Stat Loss"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_stack_limit} Max / +{s:bonus_stacks_per_hero_attack} Hero Attack Reactive Armor Stacks"
+    },
+    {
+      "slot": null,
+      "name": "Exposure Therapy Heals for {s:bonus_health_restore} HP Per Tree Destroyed"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_slow}% Chakram Slow"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_tree_damage_scale} Whirling Death Tree Bonus Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_AbilityCastRange}% Timber Chain Range/Projectile Speed"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

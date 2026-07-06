@@ -1,0 +1,55 @@
+{
+  "id": 675,
+  "name": "Psychic Headband",
+  "slug": "psychic_headband",
+  "internal_key": "item_psychic_headband",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Psychic Push</h1>Pushes the target unit away from you %push_length% distance.",
+  "notes": [
+    "Does not trigger spell block or spell reflect."
+  ],
+  "cooldowns": [
+    15
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    600
+  ],
+  "special_values": [
+    {
+      "key": "push_length",
+      "heading": "",
+      "values": [
+        400
+      ]
+    },
+    {
+      "key": "push_duration",
+      "heading": "",
+      "values": [
+        0.3
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        600
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        15
+      ]
+    }
+  ],
+  "lore": "A failed experiment in finer telekinetic control, still fit for other ends.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

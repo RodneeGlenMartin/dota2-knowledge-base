@@ -1,0 +1,24 @@
+{
+  "id": 286,
+  "name": "Flying Courier",
+  "slug": "flying_courier",
+  "internal_key": "item_flying_courier",
+  "cost": 100,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

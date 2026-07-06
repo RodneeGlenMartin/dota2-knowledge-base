@@ -1,0 +1,39 @@
+{
+  "id": 330,
+  "name": "Witless Shako",
+  "slug": "witless_shako",
+  "internal_key": "item_witless_shako",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "Increases the wearer's max health, while reducing their max mana.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "max_health",
+      "heading": "+Max Health Increase",
+      "values": [
+        1350
+      ]
+    },
+    {
+      "key": "max_mana",
+      "heading": "-<font color='#e03e2e'>Max Mana</font>",
+      "values": [
+        400
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

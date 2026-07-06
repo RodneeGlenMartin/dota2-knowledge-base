@@ -1,0 +1,32 @@
+{
+  "id": 2193,
+  "name": "Gossamer Cape",
+  "slug": "gossamer_cape",
+  "internal_key": "item_gossamer_cape",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Sixth Sense</h1> Automatically dodge an attack from an enemy hero.",
+  "notes": null,
+  "cooldowns": [
+    6
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        6
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

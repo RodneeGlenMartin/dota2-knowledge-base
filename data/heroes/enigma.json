@@ -1,0 +1,814 @@
+{
+  "id": 33,
+  "name": "Enigma",
+  "slug": "enigma",
+  "npc_name": "npc_dota_hero_enigma",
+  "primary_attribute": "universal",
+  "attack_type": "Ranged",
+  "complexity": 2,
+  "roles": [
+    "Disabler",
+    "Pusher",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 21,
+    "str_gain": 2.5,
+    "base_agi": 14,
+    "agi_gain": 1,
+    "base_int": 19,
+    "int_gain": 3.6,
+    "damage_min": 19,
+    "damage_max": 25,
+    "attack_rate": 1.7,
+    "attack_range": 500,
+    "projectile_speed": 900,
+    "armor": 3.3333335,
+    "magic_resistance": 25,
+    "movement_speed": 280,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 582,
+    "health_regen": 2.3500001,
+    "max_mana": 303,
+    "mana_regen": 1.45
+  },
+  "lore": "Nothing is known of Enigma's background. There are only stories and legends, most of them apocryphal, passed down through the ages. In truth, Enigma is a mystery for whom the only true biography is description: he is a universal force, a consumer of worlds. He is a being of the void, at times corporeal, other times ethereal. A beast between the planes. \r\n\t\t\t\t<br><br>There are stories that say he was once a great alchemist who tried to unlock the secrets of the universe and was cursed for his arrogance. Other legends tell that he is an ancient being of strange gravity, the abyss personified--a twisted voice from out the original darkness, before the first light in the universe. And there are older legends that say he is the first collapsed star, a black hole grown complicated and sentient--his motivations unknowable, his power inexorable, a force of destruction unleashed upon existence itself.",
+  "hype": "Widely feared for his ultimate ability, Enigma can <b>summon a black hole</b> capable of entrapping enemy forces, so that allies can then destroy them. An ever-present contingent of <b>eidolons at his side</b>, he pummels foes with ranged attacks.",
+  "abilities": [
+    {
+      "key": "enigma_malefice",
+      "name": "Malefice",
+      "description": "Focuses Enigma's power on a target, causing it to take damage and become repeatedly stunned for multiple instances.  An instance strikes every %tick_rate% seconds.",
+      "max_level": 4,
+      "cooldowns": [
+        20,
+        18,
+        16,
+        14
+      ],
+      "mana_costs": [
+        100,
+        110,
+        120,
+        130
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        450,
+        500,
+        550,
+        600
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "tick_rate",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "stun_duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            0.3,
+            0.5,
+            0.7,
+            0.9
+          ]
+        },
+        {
+          "key": "shard_bonus_stun_duration_tooltip",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE PER INSTANCE:",
+          "values": [
+            55,
+            70,
+            85,
+            100
+          ]
+        },
+        {
+          "key": "stun_instances",
+          "heading": "INSTANCES:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "eidolon_spawns_per_tick",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            450,
+            500,
+            550,
+            600
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            110,
+            120,
+            130
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            20,
+            18,
+            16,
+            14
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Increases Malefice stun duration by %shard_bonus_stun_duration_tooltip%s and creates an Eidolon next to the target every instance of Malefice stun. These Eidolons will not multiply further.",
+      "notes": null,
+      "lore": "Strange gravities pull at the core of those who would oppose you, holding them in place."
+    },
+    {
+      "key": "enigma_demonic_conversion",
+      "name": "Demonic Summoning",
+      "description": "Summons three fragments of Enigma himself at the cost of health.  The eidolons health is increased by %current_health_pct%%% of Enigma's current health. These eidolons are all under Enigma's control, and repeated successful attacks cause them to multiply.  When this happens, the eidolons have their health restored.",
+      "max_level": 4,
+      "cooldowns": [
+        45,
+        40,
+        35,
+        30
+      ],
+      "mana_costs": [
+        70,
+        80,
+        90,
+        100
+      ],
+      "health_costs": [
+        75,
+        100,
+        125,
+        150
+      ],
+      "cast_ranges": [
+        400
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        40
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "spawn_count",
+          "heading": "SPAWN COUNT:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "split_attack_count",
+          "heading": "ATTACKS TO MULTIPLY:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "eidelon_max_health",
+          "heading": "EIDOLON HP:",
+          "values": [
+            180,
+            200,
+            220,
+            240
+          ]
+        },
+        {
+          "key": "life_extension",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "eidelon_base_damage",
+          "heading": "EIDOLON DAMAGE:",
+          "values": [
+            16,
+            28,
+            40,
+            52
+          ]
+        },
+        {
+          "key": "eidolon_damage_spread",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "eidolon_bonus_damage",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "eidolon_bonus_attack_speed",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "eidelon_base_movespeed",
+          "heading": "",
+          "values": [
+            280,
+            310,
+            340,
+            370
+          ]
+        },
+        {
+          "key": "creep_max_level",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "eidolon_magic_resist",
+          "heading": "EIDOLON MAGIC RESISTANCE:",
+          "values": [
+            30,
+            40,
+            50,
+            60
+          ]
+        },
+        {
+          "key": "eidolon_attack_range",
+          "heading": "EIDOLON ATTACK RANGE:",
+          "values": [
+            425,
+            450,
+            475,
+            500
+          ]
+        },
+        {
+          "key": "allied_damage_pct",
+          "heading": "",
+          "values": [
+            45
+          ]
+        },
+        {
+          "key": "self_modelscale",
+          "heading": "",
+          "values": [
+            -40
+          ]
+        },
+        {
+          "key": "spawn_offset",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "current_health_pct",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "eidolon_xp_bounty",
+          "heading": "",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "eidolon_gold_bounty_min",
+          "heading": "",
+          "values": [
+            17
+          ]
+        },
+        {
+          "key": "eidolon_gold_bounty_max",
+          "heading": "",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "non_splitting_bounty_reduction",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "damage_threshold",
+          "heading": "",
+          "values": [
+            375
+          ]
+        },
+        {
+          "key": "damage_reset_interval",
+          "heading": "",
+          "values": [
+            7
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "DURATION:",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            70,
+            80,
+            90,
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            45,
+            40,
+            35,
+            30
+          ]
+        },
+        {
+          "key": "AbilityHealthCost",
+          "heading": "",
+          "values": [
+            75,
+            100,
+            125,
+            150
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Enigma is capable of drawing aspects of himself from other dimensions - the result is a trio of dark eidolons that hunt the corporeal plane."
+    },
+    {
+      "key": "enigma_midnight_pulse",
+      "name": "Midnight Pulse",
+      "description": "Steeps an area in dark resonance, dealing %base_damage% + a percentage of the enemies current HP as damage.",
+      "max_level": 4,
+      "cooldowns": [
+        40,
+        35,
+        30,
+        25
+      ],
+      "mana_costs": [
+        65,
+        90,
+        115,
+        140
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        700
+      ],
+      "cast_points": [
+        0.1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "base_damage",
+          "heading": "",
+          "values": [
+            5,
+            10,
+            15,
+            20
+          ]
+        },
+        {
+          "key": "damage_percent",
+          "heading": "CURRENT HEALTH AS DAMAGE:",
+          "values": [
+            4,
+            6,
+            8,
+            10
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "key": "tick_rate",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            65,
+            90,
+            115,
+            140
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            40,
+            35,
+            30,
+            25
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "This ability destroys trees in its area.",
+        "Multiple instances of Midnight Pulse do not stack."
+      ],
+      "lore": "A section of the world slowly descends into the void."
+    },
+    {
+      "key": "enigma_event_horizon",
+      "name": "Event Horizon",
+      "description": "Units in a %radius% radius moving away from Enigma have a movespeed penalty.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "speed_bonus",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "vision_cone",
+          "heading": "",
+          "values": [
+            0.08715
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "enigma_black_hole",
+      "name": "Black Hole",
+      "description": "CHANNELED - Summons a vortex that sucks in nearby enemy units.  Enemies affected by Black Hole cannot move, attack, or cast spells.",
+      "max_level": 3,
+      "cooldowns": [
+        180,
+        170,
+        160
+      ],
+      "mana_costs": [
+        300,
+        400,
+        500
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        275
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage",
+          "heading": "DAMAGE PER SECOND:",
+          "values": [
+            100,
+            150,
+            200
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            420
+          ]
+        },
+        {
+          "key": "pull_speed",
+          "heading": "",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "tick_rate",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "vision_radius",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "pull_rotate_speed",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "animation_rate",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "scepter_pct_damage",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "scepter_radius",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "scepter_drag_speed",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "scepter_pull_rotate_speed",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            275
+          ]
+        },
+        {
+          "key": "AbilityChannelTime",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            300,
+            400,
+            500
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            180,
+            170,
+            160
+          ]
+        }
+      ],
+      "scepter_upgrade": "Black Hole deals additional damage equivalent to %scepter_pct_damage%%% of the unit's Max Health per second and does a non-interrupting pull towards it in a %scepter_radius% AoE. Pulls at a rate of %scepter_drag_speed%.",
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "The ground trembles as Enigma channels his ultimate vortex of destruction, a singularity with the power to end worlds."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_eidolon_bonus_attack_speed} Eidolon Attack Speed"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Black Hole Damage Per Second"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Health"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_radius} Event Horizon Radius"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_radius} Midnight Pulse Radius"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_eidolon_bonus_damage} Eidolon Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_stun_instances} Malefice Instances"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_spawn_count} Demonic Summoning Eidolons"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

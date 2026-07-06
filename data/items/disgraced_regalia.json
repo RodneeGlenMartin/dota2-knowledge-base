@@ -1,0 +1,24 @@
+{
+  "id": 1645,
+  "name": "Disgraced Regalia",
+  "slug": "disgraced_regalia",
+  "internal_key": "item_divine_regalia_broken",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Fallen</h1> You have died and thus get nothing.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [],
+  "lore": "It cannot abide failure.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

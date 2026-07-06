@@ -1,0 +1,46 @@
+{
+  "id": 1862,
+  "name": "Enchanter's Bauble",
+  "slug": "enchanter_s_bauble",
+  "internal_key": "item_enchanters_bauble",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Enchant</h1> Increases the bonuses of the item's Neutral Enchantment by %enchantment_bonus_base%%%. Every time this item is crafted again the bonus is increased by %enchantment_bonus_growth%%%.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "enchantment_bonus_base",
+      "heading": "",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "enchantment_bonus_growth",
+      "heading": "",
+      "values": [
+        40
+      ]
+    },
+    {
+      "key": "current_bonus",
+      "heading": "CURRENT BONUS:",
+      "values": [
+        0
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

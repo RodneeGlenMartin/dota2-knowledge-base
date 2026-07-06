@@ -1,0 +1,668 @@
+{
+  "id": 46,
+  "name": "Templar Assassin",
+  "slug": "templar_assassin",
+  "npc_name": "npc_dota_hero_templar_assassin",
+  "primary_attribute": "agi",
+  "attack_type": "Ranged",
+  "complexity": 2,
+  "roles": [
+    "Carry",
+    "Escape"
+  ],
+  "stats": {
+    "base_str": 21,
+    "str_gain": 2.4,
+    "base_agi": 23,
+    "agi_gain": 3.4,
+    "base_int": 20,
+    "int_gain": 2,
+    "damage_min": 51,
+    "damage_max": 56,
+    "attack_rate": 1.6,
+    "attack_range": 250,
+    "projectile_speed": 1000,
+    "armor": 3.8333335,
+    "magic_resistance": 25,
+    "movement_speed": 315,
+    "turn_rate": 0.7,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 582,
+    "health_regen": 2.1000001,
+    "max_mana": 315,
+    "mana_regen": 1
+  },
+  "lore": "Lanaya, the Templar Assassin, came to her calling by a path of curious inquiry. Possessed of a scientific bent, she spent her early years engaged in meticulous study of nature's laws--peering into grimoires of magic and alchemy, recreating experiments from charred fragments of the Violet Archives, and memorizing observations of the Keen recordkeepers. Already quiet and secretive by nature, the difficulty of acquiring these objects further reinforced her skills of stealth. Had she been less retiring, she might have become notorious among the guilds as a thief-scholar. Instead her investigations led her into far more obscure corners.\r\n\t\t\t\t<br><br>As she devoted her furtive talents to unlocking the secrets of the universe, she instead unlocked a secret door that exists in nature itself: the entryway to the most Hidden Temple. The intelligences that waited beyond that portal, proved to be expecting her, and whatever mysteries they revealed in the moment of their discovery was nothing compared to the answers they held out to Lanaya should she continue in their service. She swore to protect the mysteries, but more to the point, in service to the Hidden Temple she satisfies her endless craving for understanding. In the eyes of each foe she expunges, a bit more of the mystery is revealed.",
+  "hype": "Peppering the battlefield with <b>slowing traps</b>, Templar Assassin <b>hides invisibly</b>, ready to ambush her prey. Once she springs her attack, she shreds enemies with piercing psionic blades, and <b>deflects counterattacks</b> with her refracting shield.",
+  "abilities": [
+    {
+      "key": "templar_assassin_refraction",
+      "name": "Refraction",
+      "description": "Templar Assassin becomes highly elusive, gaining a small barrier and bonus to her damage.  The damage and avoidance effects are separate, and have a limited number of instances. If a barrier is consumed, a new one is created as long as there are charges left. If an instance of damage would deal more damage than the remaining barrier, all of the damage is absorbed.",
+      "max_level": 4,
+      "cooldowns": [
+        14
+      ],
+      "mana_costs": [
+        95
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "instances",
+          "heading": "INSTANCES:",
+          "values": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "key": "shield_per_instance",
+          "heading": "BARRIER PER INSTANCE:",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "bonus_damage",
+          "heading": "BONUS DAMAGE:",
+          "values": [
+            15,
+            30,
+            45,
+            60
+          ]
+        },
+        {
+          "key": "bonus_damage_per_instance_burn",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            17
+          ]
+        },
+        {
+          "key": "cast_while_disabled",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "dispels",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            95
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            14
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Increases bonus damage. Refraction can be cast while disabled.",
+      "notes": [
+        "Damage as HP Removal bypasses Refraction (it won't reduce the charges)."
+      ],
+      "lore": "Manipulating her psionic veil, Lanaya bends nature's law to her will."
+    },
+    {
+      "key": "templar_assassin_meld",
+      "name": "Meld",
+      "description": "Templar Assassin conceals herself, becoming invisible as long as she remains still. If Meld's invisibility is broken by attacking an enemy, Lanaya's attack will deal bonus damage to the enemy and reduce their armor for %debuff_duration% seconds. Bonus damage and armor reductions are applied to all enemies in the Psi Blades split range.",
+      "max_level": 4,
+      "cooldowns": [
+        11,
+        9,
+        7,
+        5
+      ],
+      "mana_costs": [
+        35,
+        40,
+        45,
+        50
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bonus_damage",
+          "heading": "BONUS DAMAGE:",
+          "values": [
+            50,
+            100,
+            150,
+            200
+          ]
+        },
+        {
+          "key": "bonus_armor",
+          "heading": "ARMOR REDUCTION:",
+          "values": [
+            -2,
+            -4,
+            -6,
+            -8
+          ]
+        },
+        {
+          "key": "bash_duration",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "attack_range_bonus",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "debuff_duration",
+          "heading": "ARMOR REDUCTION DURATION:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            35,
+            40,
+            45,
+            50
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            11,
+            9,
+            7,
+            5
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Meld is broken by any action other than staying in position or channeling Psionic Projection.",
+        "Meld's armor reduction does not work against towers."
+      ],
+      "lore": "Lanaya is as elusive as her covenant with the Hidden Temple."
+    },
+    {
+      "key": "templar_assassin_psi_blades",
+      "name": "Psi Blades",
+      "description": "Templar Assassin's psi blades slice through the attacked unit, splitting and damaging enemy units directly behind it, while gaining bonus attack range. For each unit it damages, the split damage is reduced by a percentage.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bonus_attack_range",
+          "heading": "BONUS ATTACK RANGE:",
+          "values": [
+            50,
+            100,
+            150,
+            200
+          ]
+        },
+        {
+          "key": "attack_spill_range",
+          "heading": "PSI BLADE RANGE:",
+          "values": [
+            400,
+            500,
+            600,
+            700
+          ]
+        },
+        {
+          "key": "attack_spill_width",
+          "heading": "",
+          "values": [
+            90
+          ]
+        },
+        {
+          "key": "attack_spill_pct",
+          "heading": "SPLIT AMOUNT:",
+          "values": [
+            70,
+            80,
+            90,
+            100
+          ]
+        },
+        {
+          "key": "meld_strike_spills",
+          "heading": "",
+          "values": [
+            1
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Split damage hits invisible units.",
+        "Attack effects like Bash will only be applied to the main target."
+      ],
+      "lore": "Her blades pierce the skin as much as the mind, furthering her understanding of the mystery that is reality."
+    },
+    {
+      "key": "templar_assassin_trap_teleport",
+      "name": "Psionic Projection",
+      "description": "CHANNELED - Allows Templar Assassin to teleport to any Psionic Trap after channeling for %abilitychanneltime% seconds, detonating it upon arrival as if it was fully charged and instantly dealing %extra_damage% bonus damage. Channeling Psionic Projection does not break Meld.",
+      "max_level": 3,
+      "cooldowns": [
+        10
+      ],
+      "mana_costs": [
+        50
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "extra_damage",
+          "heading": "",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "AbilityChannelTime",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            10
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "In reward for her service, Lanaya has been granted access to secrets that unlock new techniques for her psionic gifts."
+    },
+    {
+      "key": "templar_assassin_psionic_trap",
+      "name": "Psionic Trap",
+      "description": "Templar Assassin places mystical traps that invisibly monitor enemy movement. When sprung at her command, they exert a slowing influence of %movement_speed_min%%% in a %trap_radius% radius. Trap movement slow charges up to %movement_speed_max%%% after %trap_max_charge_duration% seconds. Deals damage after %trap_max_charge_duration%s.",
+      "max_level": 3,
+      "cooldowns": [
+        11,
+        8,
+        5
+      ],
+      "mana_costs": [
+        15,
+        15,
+        15
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1800
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "trap_radius",
+          "heading": "",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "trap_duration",
+          "heading": "",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "max_traps",
+          "heading": "MAX TRAPS:",
+          "values": [
+            5,
+            8,
+            11
+          ]
+        },
+        {
+          "key": "trap_fade_time",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "movement_speed_min",
+          "heading": "MIN MOVEMENT SLOW:",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "movement_speed_max",
+          "heading": "MAX MOVEMENT SLOW:",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "trap_bonus_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            200,
+            300,
+            400
+          ]
+        },
+        {
+          "key": "extra_damage",
+          "heading": "",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "damage_tick_rate",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "trap_max_charge_duration",
+          "heading": "",
+          "values": [
+            3.5
+          ]
+        },
+        {
+          "key": "min_silence_duration",
+          "heading": "MIN SILENCE DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "max_silence_duration",
+          "heading": "MAX SILENCE DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "bonus_vision",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1800
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            15
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            11,
+            8,
+            5
+          ]
+        }
+      ],
+      "scepter_upgrade": "When activated, traps now silence affected enemies.",
+      "shard_upgrade": null,
+      "notes": [
+        "Traps last indefinitely.",
+        "They have invisibility that fades in over %trap_fade_time% seconds and spell immunity. They take 2 hits to kill by ranged heroes, 1 by melee heroes, and 4 by creeps.",
+        "Traps have 250/250 vision range and don't prevent neutral camps from spawning."
+      ],
+      "lore": "Calling upon the reach of the Hidden Temple, none escape the eye of the Templar."
+    },
+    {
+      "key": "templar_assassin_inner_peace",
+      "name": "Inner Peace",
+      "description": "When remaining stationary and not taking damage for %time_until_meditation%s, Templar Assassin begins meditating, gaining health and mana regeneration, reaching the maximum bonus after %time_until_max_bonus%s of meditating.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "max_hp_regen",
+          "heading": "MAX HEALTH REGEN:",
+          "values": [
+            2.7
+          ]
+        },
+        {
+          "key": "max_mana_regen",
+          "heading": "MAX MANA REGEN:",
+          "values": [
+            2.2
+          ]
+        },
+        {
+          "key": "time_until_meditation",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "time_until_max_bonus",
+          "heading": "MEDITATION TIME UNTIL MAX BONUS:",
+          "values": [
+            1.85
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_debuff_duration}s Meld Debuff Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_movement_speed_min}% Psionic Trap Slow"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_attack_range_bonus} Meld Attack Range"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_max_traps} Psionic Traps"
+    },
+    {
+      "slot": null,
+      "name": "Refraction Dispels"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_armor} Meld Armor Reduction"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_bash_duration}s Meld Hit Bash"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_instances} Refraction Instances"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

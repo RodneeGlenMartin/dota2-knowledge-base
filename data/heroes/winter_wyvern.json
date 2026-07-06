@@ -1,0 +1,699 @@
+{
+  "id": 112,
+  "name": "Winter Wyvern",
+  "slug": "winter_wyvern",
+  "npc_name": "npc_dota_hero_winter_wyvern",
+  "primary_attribute": "int",
+  "attack_type": "Ranged",
+  "complexity": 2,
+  "roles": [
+    "Support",
+    "Nuker",
+    "Disabler"
+  ],
+  "stats": {
+    "base_str": 22,
+    "str_gain": 2.5,
+    "base_agi": 16,
+    "agi_gain": 1.7,
+    "base_int": 26,
+    "int_gain": 3.6,
+    "damage_min": 42,
+    "damage_max": 49,
+    "attack_rate": 1.7,
+    "attack_range": 450,
+    "projectile_speed": 700,
+    "armor": 3.6666667,
+    "magic_resistance": 25,
+    "movement_speed": 285,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 1200,
+    "max_health": 604,
+    "health_regen": 2.45,
+    "max_mana": 387,
+    "mana_regen": 1.8000001
+  },
+  "lore": "Like many great poets, Auroth just wants time to write, but the Winter Wyvern's life is full of interruptions. The epics of the Eldwurms have a long and colorful history, but some fear that the remaining dragon scholars are not as prolific as they once were, with few lines added to the Eldwurm Eddas since the last age of greatness. Auroth laments: \"We forget that there is more to life than triumph and dominion over enemies. We must also live our lives in the pursuit of creative expression.\" She embarks on research expeditions, collecting books for inspiration. But all this research can be terribly distracting, and she spends less time writing than she should. Although she knows she should be lurking in her lair, adding to the Eddas, she finds herself engaged in epic battles against powerful enemies. She loots castles, raids ancient libraries ... and if she happens to heap glory on herself in the process, she tells herself that it's merely a side effect of her research. The fact is, while her skill and power on the battlefield are legendary, her scholarly travails have thus far hardly been the stuff of literary acclaim. But she is not content to stand as a protagonist of heroic lore. She wishes also to create it.",
+  "hype": "Winter Wyvern stalks the skies, <b>slowing foes</b> with burning cold as she soars over the battlefield. Should the enemy be foolish enough to gather, she <b>curses them</b> to attack one of their own as she blasts the gathering with <b>icy splinters.</b>",
+  "abilities": [
+    {
+      "key": "winter_wyvern_arctic_burn",
+      "name": "Arctic Burn",
+      "description": "Winter Wyvern soars upon an arctic wind, granting her unobstructed movement and allowing her to exhale a blistering chill into each attack. While soaring, her attacks travel further and faster, and slow enemies with a magical freeze that strips them of %percent_damage%%% of their current health each second.",
+      "max_level": 4,
+      "cooldowns": [
+        26,
+        24,
+        22,
+        20
+      ],
+      "mana_costs": [
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "FLIGHT DURATION:",
+          "values": [
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "key": "attack_range_bonus",
+          "heading": "BONUS ATTACK RANGE:",
+          "values": [
+            250,
+            275,
+            300,
+            325
+          ]
+        },
+        {
+          "key": "percent_damage",
+          "heading": "HEALTH BURN:",
+          "values": [
+            4,
+            6,
+            8,
+            10
+          ]
+        },
+        {
+          "key": "tick_rate",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "damage_duration",
+          "heading": "BURN DURATION:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "move_slow",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            15,
+            20,
+            25,
+            30
+          ]
+        },
+        {
+          "key": "projectile_speed_bonus",
+          "heading": "",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "tree_destruction_radius",
+          "heading": "",
+          "values": [
+            175
+          ]
+        },
+        {
+          "key": "attack_point",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "max_attacks",
+          "heading": "",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "mana_cost_scepter",
+          "heading": "MANA PER SECOND:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "movement_scepter",
+          "heading": "MOVEMENT SPEED:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            26,
+            24,
+            22,
+            20
+          ]
+        }
+      ],
+      "scepter_upgrade": "Causes Arctic Burn to be a toggle ability, draining mana every second when active. Increases Winter Wyvern's movement speed.",
+      "shard_upgrade": null,
+      "notes": [
+        "This ability does not affect Roshan.",
+        "Reduces Winter Wyvern's attack point to %attack_point%.",
+        "The damage and slow from Arctic Burn can be dispelled."
+      ],
+      "lore": "The same organ where some dragons stoke their inner flame is, in Auroth, a crucible of unimaginable cold. From deep within her frosty gullet, an exhalation sends enemies into burning agony."
+    },
+    {
+      "key": "winter_wyvern_splinter_blast",
+      "name": "Splinter Blast",
+      "description": "Launches a ball of brittle ice toward a unit. The ice shatters on impact, leaving the primary target completely unaffected, while hurling damaging splinters into nearby enemies in a %split_radius% base radius. Enemies struck by these splinters are slowed by %movespeed_slow_tooltip%%%.",
+      "max_level": 4,
+      "cooldowns": [
+        6
+      ],
+      "mana_costs": [
+        105,
+        115,
+        125,
+        135
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1150
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "projectile_speed",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "projectile_max_time",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "split_radius",
+          "heading": "SHATTER RADIUS:",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "bonus_movespeed",
+          "heading": "",
+          "values": [
+            -27,
+            -30,
+            -33,
+            -36
+          ]
+        },
+        {
+          "key": "movespeed_slow_tooltip",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            27,
+            30,
+            33,
+            36
+          ]
+        },
+        {
+          "key": "slow_duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "secondary_projectile_speed",
+          "heading": "",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            80,
+            160,
+            240,
+            320
+          ]
+        },
+        {
+          "key": "stun_duration",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1150
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            105,
+            115,
+            125,
+            135
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            6
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "The primary projectile moves at %projectile_speed% movement speed.",
+        "The primary projectile cannot be disjointed and cannot be targeted towards Winter Wyvern herself."
+      ],
+      "lore": "Produced slowly by specialized vesicles in her frozen gullet, Winter Wyvern blast shards of ice at her enemies."
+    },
+    {
+      "key": "winter_wyvern_cold_embrace",
+      "name": "Cold Embrace",
+      "description": "Encases an ally in an icy cocoon, freezing them solid while healing a base amount as well as a percentage of their maximum health each second. The cocoon blocks all physical damage.",
+      "max_level": 4,
+      "cooldowns": [
+        24,
+        21,
+        18,
+        15
+      ],
+      "mana_costs": [
+        50,
+        60,
+        70,
+        80
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        850,
+        900,
+        950,
+        1000
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "heal_additive",
+          "heading": "BASE HEAL PER SECOND:",
+          "values": [
+            40,
+            45,
+            50,
+            55
+          ]
+        },
+        {
+          "key": "heal_percentage",
+          "heading": "MAX HP HEAL PER SECOND:",
+          "values": [
+            2.25,
+            3,
+            3.75,
+            4.5
+          ]
+        },
+        {
+          "key": "shard_cooldown_reduction",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "tick_interval",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "can_target_buildings",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "damage_buff_pct",
+          "heading": "BONUS ATTACK DAMAGE:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "damage_buff_duration",
+          "heading": "DAMAGE BUFF DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            850,
+            900,
+            950,
+            1000
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            50,
+            60,
+            70,
+            80
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            24,
+            21,
+            18,
+            15
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Reduces cooldown by %shard_cooldown_reduction% seconds. Allied units gain bonus attack damage when emerging from the icy cocoon.",
+      "notes": null,
+      "lore": "From winter's heart comes a cold, healing embrace. The ice slows the blood and allows the spell to better work its curative magic."
+    },
+    {
+      "key": "winter_wyvern_eldwurms_edda",
+      "name": "Eldwurm's Edda",
+      "description": "Grants Winter Wyvern the item Eldwurm's Edda, which can be consumed to increase the current and maximum level of a basic ability by one and Winter Wyvern's base intelligence by %tooltip_int_pct%%% of its current value at the time of consumption.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "tooltip_seconds",
+          "heading": "",
+          "values": [
+            420
+          ]
+        },
+        {
+          "key": "tooltip_int_pct",
+          "heading": "",
+          "values": [
+            25
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "winter_wyvern_winters_curse",
+      "name": "Winter's Curse",
+      "description": "Winter Wyvern dispells then freezes an enemy in place while striking those nearby with a maddening curse which causes them to attack their frozen ally with increased attack speed. The frozen ally and those cursed to attack their ally are immune to all damage from their enemies with the exception of damage from Winter Wyvern or her controlled units. Enemy heroes which enter the cursed area after the cast add to the duration of the curse.",
+      "max_level": 3,
+      "cooldowns": [
+        100,
+        90,
+        80
+      ],
+      "mana_costs": [
+        150,
+        200,
+        250
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        800
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            525
+          ]
+        },
+        {
+          "key": "damage_reduction",
+          "heading": "DAMAGE REDUCTION:",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "bonus_attack_speed",
+          "heading": "ATTACK SPEED:",
+          "values": [
+            50,
+            65,
+            80
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "MINIMUM DURATION:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "max_duration",
+          "heading": "MAXIMUM DURATION:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "bonus_duration_per_hero",
+          "heading": "BONUS DURATION PER HERO:",
+          "values": [
+            1.5
+          ]
+        },
+        {
+          "key": "bonus_duration_per_creep",
+          "heading": "BONUS DURATION PER CREEP:",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            150,
+            200,
+            250
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            100,
+            90,
+            80
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "If the target dies to its allies, Winter Wyvern will receive credit for the kill.",
+        "Will only pierce the spell immunity of the primary target, not the target's surrounding allies."
+      ],
+      "lore": "The oldest of the bookwurm's spells, this curse lends truth to the old saw: sometimes the enemy of my enemy is my enemy still."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_heal_additive} Cold Embrace Base Heal Per Second"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_duration}s Arctic Burn Debuff Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_split_radius} Splinter Blast Shatter Radius"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_move_slow}% Arctic Burn Slow"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Splinter Blast Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_attack_speed} Winter's Curse Attack Speed "
+    },
+    {
+      "slot": null,
+      "name": "Splinter Blast {s:bonus_stun_duration}s Stun"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

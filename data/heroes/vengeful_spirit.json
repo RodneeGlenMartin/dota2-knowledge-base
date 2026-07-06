@@ -1,0 +1,562 @@
+{
+  "id": 20,
+  "name": "Vengeful Spirit",
+  "slug": "vengeful_spirit",
+  "npc_name": "npc_dota_hero_vengefulspirit",
+  "primary_attribute": "agi",
+  "attack_type": "Ranged",
+  "complexity": 1,
+  "roles": [
+    "Support",
+    "Nuker",
+    "Disabler",
+    "Escape",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 20,
+    "str_gain": 2.6,
+    "base_agi": 23,
+    "agi_gain": 3,
+    "base_int": 19,
+    "int_gain": 1.5,
+    "damage_min": 51,
+    "damage_max": 57,
+    "attack_rate": 1.5,
+    "attack_range": 400,
+    "projectile_speed": 1500,
+    "armor": 3.8333335,
+    "magic_resistance": 25,
+    "movement_speed": 300,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 560,
+    "health_regen": 2.75,
+    "max_mana": 303,
+    "mana_regen": 0.95
+  },
+  "lore": "Even the most contented Skywrath is an ill-tempered creature, naturally inclined to seek revenge for the slightest insult. But Vengeful Spirit is the essence of vengeance. Once a proud and savage Skywrath scion, Shendelzare was first in succession for the Ghastly Eyrie until a sister's treachery robbed her of her birthright. Snared in an assassin's net, Shendelzare tore free only at the cost of her wings, limping away in the ultimate humiliation: On foot. With her wings broken, she knew the Skywrath would never accept her as ruler; and in the highest roost of the Eyrie, inaccessible except by winged flight, her sister was untouchable. Unwilling to live as a flightless cripple, and desiring revenge far more than earthly power, the fallen princess drove a bargain with the goddess Scree'Auk: She surrendered her broken body for an imperishable form of spirit energy, driven by vengeance, capable of doing great damage in the material plane. She may spend eternity flightless, but she will have her revenge.",
+  "hype": "Vengeful Spirit's presence is felt at all times, whether she is alive or dead. Able to <b>swap positions</b> with any nearby hero, <b>stun enemies</b>, and reduce her killer's effectiveness if she falls, she constantly brings confusion and chaos to her foes.",
+  "abilities": [
+    {
+      "key": "vengefulspirit_magic_missile",
+      "name": "Magic Missile",
+      "description": "Fires a magic missile at an enemy unit, stunning and dealing damage.",
+      "max_level": 4,
+      "cooldowns": [
+        14,
+        13,
+        12,
+        11
+      ],
+      "mana_costs": [
+        90,
+        95,
+        100,
+        105
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        650
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "magic_missile_speed",
+          "heading": "",
+          "values": [
+            1350
+          ]
+        },
+        {
+          "key": "magic_missile_stun",
+          "heading": "STUN DURATION:",
+          "values": [
+            1.2,
+            1.4,
+            1.6,
+            1.8
+          ]
+        },
+        {
+          "key": "magic_missile_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            100,
+            180,
+            260,
+            340
+          ]
+        },
+        {
+          "key": "bounce_range_pct",
+          "heading": "",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "damage_per_lasthit",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            650
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            90,
+            95,
+            100,
+            105
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            14,
+            13,
+            12,
+            11
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Bounces once on an enemy, prioritizing heroes, within %bounce_range_pct%%% of Magic Missile's current cast range from the first target.",
+      "notes": null,
+      "lore": "A simple Skywrath technique, the magic missile is Shendel's primary tool for vengeance."
+    },
+    {
+      "key": "vengefulspirit_wave_of_terror",
+      "name": "Wave of Terror",
+      "description": "Vengeful Spirit lets loose a wicked cry, weakening the total attack damage and armor of enemies, and giving vision of the path ahead.",
+      "max_level": 4,
+      "cooldowns": [
+        16,
+        14,
+        12,
+        10
+      ],
+      "mana_costs": [
+        40
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1400
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        8
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            60,
+            80,
+            100,
+            120
+          ]
+        },
+        {
+          "key": "wave_speed",
+          "heading": "",
+          "values": [
+            2000
+          ]
+        },
+        {
+          "key": "wave_width",
+          "heading": "",
+          "values": [
+            325
+          ]
+        },
+        {
+          "key": "armor_reduction",
+          "heading": "ARMOR REDUCTION:",
+          "values": [
+            -3,
+            -4,
+            -5,
+            -6
+          ]
+        },
+        {
+          "key": "attack_reduction",
+          "heading": "ATTACK DAMAGE REDUCTION:",
+          "values": [
+            10,
+            15,
+            20,
+            25
+          ]
+        },
+        {
+          "key": "vision_aoe",
+          "heading": "",
+          "values": [
+            350
+          ]
+        },
+        {
+          "key": "vision_duration",
+          "heading": "VISION DURATION:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "steal_pct",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1400
+          ]
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "DEBUFF DURATION:",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            16,
+            14,
+            12,
+            10
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Shendel's haunting voice hints at her approaching vindication."
+    },
+    {
+      "key": "vengefulspirit_command_aura",
+      "name": "Vengeance Aura",
+      "description": "Vengeful Spirit's presence increases the damage of nearby friendly heroes. Vengeful Spirit herself receives %self_multiplier%%% extra bonus.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1200
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bonus_base_damage",
+          "heading": "BASE DAMAGE BONUS:",
+          "values": [
+            10,
+            15,
+            20,
+            25
+          ]
+        },
+        {
+          "key": "self_multiplier",
+          "heading": "SELF MULTIPLIER:",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "aura_radius",
+          "heading": "RADIUS:",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "scepter_illusion_damage_out_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "scepter_illusion_damage_in_pct",
+          "heading": "ILLUSION DAMAGE TAKEN:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "scepter_illusion_ms_bonus_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        }
+      ],
+      "scepter_upgrade": "Increases self multiplier. Upon death, creates a strong illusion of Vengeful Spirit that deals full damage, and can cast all of her spells.<br><br>If the illusion is alive when Vengeful Spirit respawn, she will take its place. XP earned by her illusion is given to her. Strong Illusions are not instantly killed by spells.",
+      "shard_upgrade": null,
+      "notes": [
+        "Break disables the damage aura."
+      ],
+      "lore": "Although they may not share her undying passion for revenge, allies do draw on her fanaticism in combat."
+    },
+    {
+      "key": "vengefulspirit_retribution",
+      "name": "Retribution",
+      "description": "Vengeful Spirit is considered both a ranged and a melee attacker to gain the respective bonuses.<br><br>When killed by an enemy hero, Vengeful Spirit deals %bonus_damage%%% bonus damage to her killer until their next death. Only one debuff can exist at a time.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bonus_damage",
+          "heading": "",
+          "values": [
+            20
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "vengefulspirit_nether_swap",
+      "name": "Nether Swap",
+      "description": "Instantaneously swaps positions with a target Hero, friend or enemy. Nether Swap interrupts channeling abilities on the target. Enemy Swapped units take damage. Vengeful Spirit and allied swapped units gain a barrier equal to the damage dealt.",
+      "max_level": 3,
+      "cooldowns": [
+        46,
+        38,
+        30
+      ],
+      "mana_costs": [
+        100,
+        150,
+        200
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        850,
+        975,
+        1100
+      ],
+      "cast_points": [
+        0.4
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage_reduction_duration",
+          "heading": "SHIELD DURATION:",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE/SHIELD:",
+          "values": [
+            150,
+            300,
+            450
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            850,
+            975,
+            1100
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            150,
+            200
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            46,
+            38,
+            30
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Works on Spell Immune units.",
+        "Trees near Vengeful Spirit and the target will be destroyed when the spell is cast.",
+        "Channeling spells are interrupted by Nether Swap."
+      ],
+      "lore": "Martyrdom is a small price to pay for vengeance."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Nether Swap Enemy Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_AbilityCastRange} Magic Missile Cast Range"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_armor_reduction} Wave of Terror Armor"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_magic_missile_stun}s Magic Missile Stun Duration"
+    },
+    {
+      "slot": null,
+      "name": "Wave Of Terror Steals {s:bonus_steal_pct}% Of Reduced Damage And Armor"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Magic Missile Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_base_damage}% Vengeance Aura Base Damage Bonus"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Nether Swap Cooldown"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

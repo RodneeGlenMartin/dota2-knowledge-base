@@ -1,0 +1,60 @@
+{
+  "id": 1717,
+  "name": "Ash Legion Shield",
+  "slug": "ash_legion_shield",
+  "internal_key": "item_ash_legion_shield",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Shield Wall</h1>Reduce your own movement speed by %slow% to provide a %block_amount% physical damage barrier to allied player controlled units in a %block_radius% unit radius. Lasts for %duration% seconds.",
+  "notes": null,
+  "cooldowns": [
+    40
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "slow",
+      "heading": "",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "block_amount",
+      "heading": "",
+      "values": [
+        160
+      ]
+    },
+    {
+      "key": "block_radius",
+      "heading": "",
+      "values": [
+        800
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        6
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        40
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": 686,
+  "name": "Quicksilver Amulet",
+  "slug": "quicksilver_amulet",
+  "internal_key": "item_quicksilver_amulet",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Quicksilver</h1>Grants you a bonus %bonus_movement%%% movement speed and %bonus_attack% attack speed anytime one of your abilities are on cooldown.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "base_movement",
+      "heading": "+$move_speed",
+      "values": [
+        4
+      ]
+    },
+    {
+      "key": "base_attack",
+      "heading": "+$attack",
+      "values": [
+        18
+      ]
+    },
+    {
+      "key": "bonus_movement",
+      "heading": "",
+      "values": [
+        5
+      ]
+    },
+    {
+      "key": "bonus_attack",
+      "heading": "",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "anim_increase",
+      "heading": "+Attack Animation Speed",
+      "values": [
+        40
+      ]
+    },
+    {
+      "key": "projectile_increase",
+      "heading": "+Attack Projectile Speed",
+      "values": [
+        40
+      ]
+    }
+  ],
+  "lore": "An enchanted talisman brimming with a mysterious substance.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

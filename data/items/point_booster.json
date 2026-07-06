@@ -1,0 +1,39 @@
+{
+  "id": 60,
+  "name": "Point Booster",
+  "slug": "point_booster",
+  "internal_key": "item_point_booster",
+  "cost": 1200,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_mana",
+      "heading": "+$mana",
+      "values": [
+        175
+      ]
+    },
+    {
+      "key": "bonus_health",
+      "heading": "+$health",
+      "values": [
+        175
+      ]
+    }
+  ],
+  "lore": "A perfectly formed amethyst that nourishes body and mind when held.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

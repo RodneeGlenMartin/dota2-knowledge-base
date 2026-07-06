@@ -1,0 +1,53 @@
+{
+  "id": 44,
+  "name": "Tango",
+  "slug": "tango",
+  "internal_key": "item_tango",
+  "cost": 90,
+  "neutral_tier": null,
+  "description": "<h1>Use: Devour</h1> Consumes a target tree to gain %health_regen% health regeneration for %buff_duration% seconds. Consuming an Ironwood Tree doubles the heal duration.<br><br>Comes with %tooltip_charges% charges.  Can be used on an allied hero to give them one Tango.<br><br>Tree Range: %abilitycastrange%",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    165
+  ],
+  "special_values": [
+    {
+      "key": "health_regen",
+      "heading": "",
+      "values": [
+        7
+      ]
+    },
+    {
+      "key": "buff_duration",
+      "heading": "",
+      "values": [
+        16
+      ]
+    },
+    {
+      "key": "tooltip_charges",
+      "heading": "",
+      "values": [
+        3
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        165
+      ]
+    }
+  ],
+  "lore": "Forage to survive on the battlefield.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

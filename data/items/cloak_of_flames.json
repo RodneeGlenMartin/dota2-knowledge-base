@@ -1,0 +1,46 @@
+{
+  "id": 574,
+  "name": "Cloak of Flames",
+  "slug": "cloak_of_flames",
+  "internal_key": "item_cloak_of_flames",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Immolate</h1>Burns enemy units in a %radius% unit radius for %damage% damage per second. Illusions deal %damage_illusions% damage per second.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "damage",
+      "heading": "",
+      "values": [
+        40
+      ]
+    },
+    {
+      "key": "radius",
+      "heading": "",
+      "values": [
+        375
+      ]
+    },
+    {
+      "key": "damage_illusions",
+      "heading": "",
+      "values": [
+        25
+      ]
+    }
+  ],
+  "lore": "A very fine cloak that plays host to an overly-protective living flame.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

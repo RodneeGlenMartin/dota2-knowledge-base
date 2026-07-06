@@ -1,0 +1,24 @@
+{
+  "id": 2091,
+  "name": "Tier 1 Token",
+  "slug": "tier_1_token",
+  "internal_key": "item_tier1_token",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "Activate to redeem a Tier 1 Neutral Item. The resulting neutral item isn't shareable and a hero can only redeem a single token per tier.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": 206,
+  "name": "Rod of Atos",
+  "slug": "rod_of_atos",
+  "internal_key": "item_rod_of_atos",
+  "cost": 2250,
+  "neutral_tier": null,
+  "description": "<h1>Active: Cripple</h1>Roots the target for %duration% seconds.",
+  "notes": null,
+  "cooldowns": [
+    18
+  ],
+  "mana_costs": [
+    100
+  ],
+  "cast_ranges": [
+    1100
+  ],
+  "special_values": [
+    {
+      "key": "bonus_intellect",
+      "heading": "+$int",
+      "values": [
+        12
+      ]
+    },
+    {
+      "key": "bonus_hp",
+      "heading": "+$health",
+      "values": [
+        275
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        2
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        1100
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        100
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        18
+      ]
+    }
+  ],
+  "lore": "Atos, the Lord of Blight, has his essence stored in this deceptively simple wand.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

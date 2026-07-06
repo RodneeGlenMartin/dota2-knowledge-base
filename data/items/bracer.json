@@ -1,0 +1,60 @@
+{
+  "id": 73,
+  "name": "Bracer",
+  "slug": "bracer",
+  "internal_key": "item_bracer",
+  "cost": 505,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_strength",
+      "heading": "+$str",
+      "values": [
+        5
+      ]
+    },
+    {
+      "key": "bonus_agility",
+      "heading": "+$agi",
+      "values": [
+        2
+      ]
+    },
+    {
+      "key": "bonus_intellect",
+      "heading": "+$int",
+      "values": [
+        2
+      ]
+    },
+    {
+      "key": "bonus_health_regen",
+      "heading": "+$hp_regen",
+      "values": [
+        0.75
+      ]
+    },
+    {
+      "key": "bonus_health",
+      "heading": "+$health",
+      "values": [
+        50
+      ]
+    }
+  ],
+  "lore": "The bracer is a common choice to toughen up defenses and increase longevity.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

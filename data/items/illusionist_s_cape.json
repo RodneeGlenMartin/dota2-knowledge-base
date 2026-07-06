@@ -1,0 +1,88 @@
+{
+  "id": 363,
+  "name": "Illusionist's Cape",
+  "slug": "illusionist_s_cape",
+  "internal_key": "item_illusionsts_cape",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Create Illusion</h1> Creates an image under your control. \n<h1>Passive: Illusion Mastery</h1>Increases outgoing damage of all units and illusions controlled by the hero by %attack_damage_aura%%%.",
+  "notes": null,
+  "cooldowns": [
+    30
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "attack_damage_aura",
+      "heading": "",
+      "values": [
+        6
+      ]
+    },
+    {
+      "key": "illusion_duration",
+      "heading": "IMAGE DURATION:",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "outgoing_damage",
+      "heading": "",
+      "values": [
+        -50
+      ]
+    },
+    {
+      "key": "outgoing_damage_tooltip",
+      "heading": "IMAGE DAMAGE:",
+      "values": [
+        50
+      ]
+    },
+    {
+      "key": "incoming_damage",
+      "heading": "",
+      "values": [
+        100
+      ]
+    },
+    {
+      "key": "tooltip_incoming_damage_total_pct",
+      "heading": "IMAGE DAMAGE TAKEN:",
+      "values": [
+        200
+      ]
+    },
+    {
+      "key": "bonus_agi",
+      "heading": "+$agi",
+      "values": [
+        14
+      ]
+    },
+    {
+      "key": "bonus_str",
+      "heading": "+$str",
+      "values": [
+        14
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        30
+      ]
+    }
+  ],
+  "lore": "A dashing cape whose creator insists on calling 'Cloak of Apparition' as opposed to his assistant's 'Illusion' drivel.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

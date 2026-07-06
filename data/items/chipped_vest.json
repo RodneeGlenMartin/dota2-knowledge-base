@@ -1,0 +1,41 @@
+{
+  "id": 565,
+  "name": "Chipped Vest",
+  "slug": "chipped_vest",
+  "internal_key": "item_chipped_vest",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Chipper</h1>Every time you are attacked, you return %damage_return_hero% damage to heroes and %damage_return_creep% damage to creeps.",
+  "notes": [
+    "Damage done by this item is considered reflected damage. Reflected damage does not provide any lifesteal and cannot be reflected."
+  ],
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "damage_return_hero",
+      "heading": "",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "damage_return_creep",
+      "heading": "",
+      "values": [
+        15
+      ]
+    }
+  ],
+  "lore": "It doesn't look like much, but it's oddly comfy.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": 1716,
+  "name": "Weighted Dice",
+  "slug": "weighted_dice",
+  "internal_key": "item_weighted_dice",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Loaded</h1>Increases your base damage maximum by %bonus_max_damage%. When calculating your base damage or creep bounty from last hits, the value is computed %roll_count% times and the highest value is taken.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "roll_count",
+      "heading": "",
+      "values": [
+        2
+      ]
+    },
+    {
+      "key": "bonus_max_damage",
+      "heading": "",
+      "values": [
+        6
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

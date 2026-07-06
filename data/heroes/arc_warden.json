@@ -1,0 +1,690 @@
+{
+  "id": 113,
+  "name": "Arc Warden",
+  "slug": "arc_warden",
+  "npc_name": "npc_dota_hero_arc_warden",
+  "primary_attribute": "universal",
+  "attack_type": "Ranged",
+  "complexity": 3,
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Escape"
+  ],
+  "stats": {
+    "base_str": 20,
+    "str_gain": 2.2,
+    "base_agi": 22,
+    "agi_gain": 2.7,
+    "base_int": 24,
+    "int_gain": 2.6,
+    "damage_min": 23,
+    "damage_max": 29,
+    "attack_rate": 1.7,
+    "attack_range": 625,
+    "projectile_speed": 900,
+    "armor": 3.6666667,
+    "magic_resistance": 25,
+    "movement_speed": 300,
+    "turn_rate": 0.7,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 560,
+    "health_regen": 2.25,
+    "max_mana": 363,
+    "mana_regen": 1.2
+  },
+  "lore": "Before the beginning of all, there existed a presence: a primordial mind, infinite, awesome, and set to inscrutable purpose. As the universe thundered into being, this mind was fragmented and scattered. Two among its greater fragments--who would come to be named Radiant and Dire--found themselves locked in vicious opposition, and began twisting all of creation to serve their conflict.\r\n\t\t\t\t<br><br>As war and cataclysm threatened the nascent cosmos, the will of a third fragment made itself known. Naming itself Zet, this intellect sought to resolve the disharmony and return all to perfect unity. Appalled by its kin's conflicting nature, Zet gathered the sum of its power. In a sudden flash, it overwhelmed its siblings, and fused the warring aspects into a stellar sphere before hurling them into the darkness to orbit a nondescript world. Harmony was restored, though only the barest fraction of Zet's strength remained. Setting its gaze on the prison, Zet chose to use its weakened power to serve as watchful warden until time's end. For uncounted aeons, this vigil stood.\r\n\t\t\t\t<br><br>Life flourished upon the world below, oblivious to the dangers imprisoned within the softly glowing moon, or of Zet's struggles to contain them. As the captives' eternal clash reverberated within, the surface of the prison shuddered, over time beginning to crack. Ultimately, Zet's depleted power proved insufficient to contain the breach, and at last the moon was shattered. The prison's ancient inhabitants had escaped to sow their conflict anew.\r\n\t\t\t\t<br><br>Flung to the farthest reaches by the prison's explosion, Zet was transformed by the dissonant energies of its former captives. No longer of single form and thought, its presence had become split among many--some lesser, some greater--each connected by a fleeting arc of consciousness. Struggling to suppress its own disunity, Zet sped toward the burgeoning conflict of its siblings, bending its fractured wills toward a singular conclusion: the aspects of the primordial mind must be made to reunite, or all must be destroyed lest the conflict spread further...",
+  "hype": "A splintered fragment of the same primordial power as the Ancients themselves, Zet the Arc Warden has pledged to see the clash between Radiant and Dire finally end. <b>Assault lone enemies</b> with fluxing energy, or distort space to generate a <b>protective field</b> around allies. <b>Summon a Spark Wraith</b> to patrol an area for enemies to infuse with harmful magic, then <b>create a double</b> of Zet, items and all, to overwhelm your foes.",
+  "abilities": [
+    {
+      "key": "arc_warden_flux",
+      "name": "Flux",
+      "description": "Infuses a lone enemy unit with swirling, volatile energy, dealing damage over time and slowing the target. The damage is not applied if another enemy unit is near the target.",
+      "max_level": 4,
+      "cooldowns": [
+        16
+      ],
+      "mana_costs": [
+        75
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        625,
+        700,
+        775,
+        850
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "search_radius",
+          "heading": "ALLY SEARCH RADIUS:",
+          "values": [
+            225
+          ]
+        },
+        {
+          "key": "think_interval",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "damage_per_second",
+          "heading": "DAMAGE PER SECOND:",
+          "values": [
+            15,
+            30,
+            45,
+            60
+          ]
+        },
+        {
+          "key": "move_speed_slow_pct",
+          "heading": "MOVEMENT SPEED SLOW:",
+          "values": [
+            20,
+            25,
+            30,
+            35
+          ]
+        },
+        {
+          "key": "applies_silence",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            625,
+            700,
+            775,
+            850
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            16
+          ]
+        }
+      ],
+      "scepter_upgrade": "Flux silences when the target is alone, deals more damage, and lasts longer.",
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "An infinitesimal fraction of the power which imprisoned the Ancients."
+    },
+    {
+      "key": "arc_warden_magnetic_field",
+      "name": "Magnetic Field",
+      "description": "Arc Warden generates a circular distortion field of magnetic energy. The Magnetic Field grants bonus attack speed and protects allied units within it by evading attacks coming from outside the field. The Magnetic Field pulls runes, and runes inside Magnetic Field automatically activate.",
+      "max_level": 4,
+      "cooldowns": [
+        20,
+        19,
+        18,
+        17
+      ],
+      "mana_costs": [
+        60,
+        70,
+        80,
+        90
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        900
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "key": "attack_speed_bonus",
+          "heading": "ATTACK SPEED BONUS:",
+          "values": [
+            30,
+            60,
+            90,
+            120
+          ]
+        },
+        {
+          "key": "evasion_chance",
+          "heading": "EVASION BONUS:",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "rune_pull_strength",
+          "heading": "RUNE PULL FORCE:",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "rune_pull_max_speed_as_multiplier_of_pull_strength",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "rune_pull_falloff_multiplier",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "rune_pull_radius",
+          "heading": "RUNE PULL RADIUS:",
+          "values": [
+            800,
+            1200,
+            1600,
+            2000
+          ]
+        },
+        {
+          "key": "rune_activate_radius_buffer",
+          "heading": "",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            60,
+            70,
+            80,
+            90
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            20,
+            19,
+            18,
+            17
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Time and space are of little consequence to one as old as Zet."
+    },
+    {
+      "key": "arc_warden_spark_wraith",
+      "name": "Spark Wraith",
+      "description": "Summons a Spark Wraith that slowly materializes and patrols a targeted area until an enemy comes within its range. Once a target has been found the wraith fuses with them, dealing magical damage and slowing the unit.",
+      "max_level": 4,
+      "cooldowns": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "mana_costs": [
+        80
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        2000
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "SEARCH RADIUS:",
+          "values": [
+            375
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            16
+          ]
+        },
+        {
+          "key": "move_speed_slow_pct",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "base_activation_delay",
+          "heading": "ACTIVATION DELAY:",
+          "values": [
+            1.5
+          ]
+        },
+        {
+          "key": "spark_damage_base",
+          "heading": "DAMAGE:",
+          "values": [
+            100,
+            170,
+            240,
+            310
+          ]
+        },
+        {
+          "key": "wraith_speed_base",
+          "heading": "WRAITH SPEED:",
+          "values": [
+            550
+          ]
+        },
+        {
+          "key": "ministun_duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            0.7,
+            0.8,
+            0.9,
+            1
+          ]
+        },
+        {
+          "key": "think_interval",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "wraith_vision_radius",
+          "heading": "",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "wraith_vision_duration",
+          "heading": "",
+          "values": [
+            3.34
+          ]
+        },
+        {
+          "key": "maximum_targets",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            2000
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            80
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            4
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Spark Wraiths can not be disjointed."
+      ],
+      "lore": "Lesser fragments of Zet's original self."
+    },
+    {
+      "key": "arc_warden_runic_infusion",
+      "name": "Runic Infusion",
+      "description": "Runes of Power fuse to the Self. Arc Warden gains +%all_attribute_bonus_per_stack% all attributes permanently whenever Arc Warden or the Tempest Double activates a Power Rune.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "water_bounty_rune_duration_pct",
+          "heading": "",
+          "values": [
+            67
+          ]
+        },
+        {
+          "key": "bonus_stacks_per_rune_pickup",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "all_attribute_bonus_per_stack",
+          "heading": "",
+          "values": [
+            1.5
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "arc_warden_tempest_double",
+      "name": "Tempest Double",
+      "description": "Briefly refocusing its fractured elements into a single form, the Arc Warden is able to create a perfect electrical duplication of itself. The duplicate can use all of Arc Warden's current items and spells, except most consumables and items that drop on death. The duplicate has separate item and ability cooldowns.<br><br>The Tempest Double loses its sense of self and fractures over time, becoming slower and less accurate.",
+      "max_level": 3,
+      "cooldowns": [
+        60,
+        55,
+        50
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        700
+      ],
+      "cast_points": [
+        0.15
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bounty",
+          "heading": "",
+          "values": [
+            180,
+            240,
+            300
+          ]
+        },
+        {
+          "key": "bounty_gold",
+          "heading": "BOUNTY:",
+          "values": [
+            70
+          ]
+        },
+        {
+          "key": "bounty_xp",
+          "heading": "",
+          "values": [
+            70
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            18,
+            21,
+            24
+          ]
+        },
+        {
+          "key": "max_blind_chance",
+          "heading": "MAX MISS CHANCE:",
+          "values": [
+            35
+          ]
+        },
+        {
+          "key": "max_slow",
+          "heading": "MAX SELF SLOW:",
+          "values": [
+            35
+          ]
+        },
+        {
+          "key": "has_debuff",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "rune_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "invis_rune",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "arcane_rune",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "haste_rune",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.15
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            60,
+            55,
+            50
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "The Tempest Double is infused with the bonuses of Arcane, Invisibility, and Haste Runes for %rune_duration%s when created.<br><br>Does not trigger Runic Infusion.",
+      "notes": [
+        "Tempest Double and Refresher Orb cannot be used by the duplicate."
+      ],
+      "lore": "Warped by the power of its peers, Arc Warden becomes what it despises most: disharmony."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_AbilityCastRange} Flux Cast Range"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Health"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_move_speed_slow_pct}% Flux Slow"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_attack_speed_bonus} Magnetic Field Attack Speed"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_duration}s Spark Wraith Duration"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Magnetic Field Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_all_attribute_bonus_per_stack} Runic Infusion All Attributes Bonus"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_spark_damage_base} Spark Wraith Damage"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

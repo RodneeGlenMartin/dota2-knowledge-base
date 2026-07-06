@@ -1,0 +1,92 @@
+{
+  "id": 151,
+  "name": "Armlet of Mordiggian",
+  "slug": "armlet_of_mordiggian",
+  "internal_key": "item_armlet",
+  "cost": 2500,
+  "neutral_tier": null,
+  "description": "<h1>Toggle: Unholy Strength</h1>When active, Unholy Strength grants +%unholy_bonus_damage% damage, +%unholy_bonus_strength% strength and +%unholy_bonus_armor% armor, but drains %unholy_health_drain_per_second% health per second.<br><br> You cannot die from the health drain when Unholy Strength is activated, nor from the strength loss when Unholy Strength is deactivated.",
+  "notes": [
+    "The strength change will affect both maximum and current HP, but you cannot die from the change.",
+    "The strength change occurs over 0.6 seconds.",
+    "Activating or deactivating Unholy Strength does not interrupt channeling."
+  ],
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_damage",
+      "heading": "+$damage",
+      "values": [
+        15
+      ]
+    },
+    {
+      "key": "bonus_attack_speed",
+      "heading": "+$attack",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "bonus_armor",
+      "heading": "+$armor",
+      "values": [
+        6
+      ]
+    },
+    {
+      "key": "bonus_health_regen",
+      "heading": "+$hp_regen",
+      "values": [
+        5
+      ]
+    },
+    {
+      "key": "unholy_bonus_damage",
+      "heading": "",
+      "values": [
+        35
+      ]
+    },
+    {
+      "key": "unholy_bonus_strength",
+      "heading": "",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "unholy_bonus_armor",
+      "heading": "",
+      "values": [
+        4
+      ]
+    },
+    {
+      "key": "unholy_health_drain_per_second",
+      "heading": "",
+      "values": [
+        45
+      ]
+    },
+    {
+      "key": "toggle_cooldown",
+      "heading": "",
+      "values": [
+        0.036
+      ]
+    }
+  ],
+  "lore": "Weapon of choice among brutes, the bearer sacrifices his life energy to gain immense strength and power.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

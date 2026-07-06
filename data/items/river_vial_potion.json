@@ -1,0 +1,39 @@
+{
+  "id": 1026,
+  "name": "River Vial: Potion",
+  "slug": "river_vial_potion",
+  "internal_key": "item_river_painter6",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    200
+  ],
+  "special_values": [
+    {
+      "key": "paint_duration",
+      "heading": "",
+      "values": [
+        900
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        200
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

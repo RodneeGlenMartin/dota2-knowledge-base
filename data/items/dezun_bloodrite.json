@@ -1,0 +1,39 @@
+{
+  "id": 1642,
+  "name": "Dezun Bloodrite",
+  "slug": "dezun_bloodrite",
+  "internal_key": "item_dezun_bloodrite",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Blood Invocation</h1> Spells have a %aoe_pct%%% larger Area of Effect, but now additionally cost health equal to %health_pct%%% of their mana cost.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "health_pct",
+      "heading": "",
+      "values": [
+        35
+      ]
+    },
+    {
+      "key": "aoe_pct",
+      "heading": "",
+      "values": [
+        20
+      ]
+    }
+  ],
+  "lore": "The gateway to a lost lineage of power, unlocked only with blood.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

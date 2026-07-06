@@ -1,0 +1,780 @@
+{
+  "id": 6,
+  "name": "Drow Ranger",
+  "slug": "drow_ranger",
+  "npc_name": "npc_dota_hero_drow_ranger",
+  "primary_attribute": "agi",
+  "attack_type": "Ranged",
+  "complexity": 1,
+  "roles": [
+    "Carry",
+    "Disabler",
+    "Pusher"
+  ],
+  "stats": {
+    "base_str": 16,
+    "str_gain": 1.9,
+    "base_agi": 24,
+    "agi_gain": 2.8,
+    "base_int": 15,
+    "int_gain": 1.4,
+    "damage_min": 51,
+    "damage_max": 58,
+    "attack_rate": 1.7,
+    "attack_range": 625,
+    "projectile_speed": 1250,
+    "armor": 4,
+    "magic_resistance": 25,
+    "movement_speed": 310,
+    "turn_rate": 0.7,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 472,
+    "health_regen": 1.85,
+    "max_mana": 255,
+    "mana_regen": 0.75
+  },
+  "lore": "Drow Ranger's given name is Traxex--a name well suited to the short, trollish, rather repulsive Drow people. But Traxex herself is not a Drow. Her parents were travelers in a caravan set upon by bandits, whose noisy slaughter of innocents roused the ire of the quiet Drow people.\r\n\t\t\t\t<br><br>After the battle settled, the Drow discovered a small girl-child hiding in the ruined wagons, and agreed she could not be abandoned. Even as child, Traxex showed herself naturally adept at the arts they prized: Stealth, silence, subtlety. In spirit, if not in physique, she might have been a Drow changeling, returned to her proper home. But as she grew, she towered above her family and came to think of herself as ugly. After all,  her features were smooth and symmetrical, entirely devoid of warts and coarse whiskers.\r\n\t\t\t\t<br><br>Estranged from her adopted tribe, she withdrew to live alone in the woods. Lost travelers who find their way from the forest sometimes speak of an impossibly beautiful Ranger who peered at them from deep among the trees, then vanished like a dream before they could approach. Lithe and stealthy, icy hot, she moves like mist in silence. That whispering you hear is her frozen arrows finding an enemy's heart. ",
+  "hype": "Not many can escape Drow Ranger once she's within range. After her foes have been <b>silenced</b> with a <b>chilling blast</b>, she finishes them off with a barrage of <b>slowing, ice-tipped arrows</b> that few can survive.",
+  "abilities": [
+    {
+      "key": "drow_ranger_frost_arrows",
+      "name": "Frost Arrows",
+      "description": "Adds a freezing effect to Drow's attacks, slowing enemy movement and dealing bonus damage.  Slow lasts %abilityduration% seconds.",
+      "max_level": 4,
+      "cooldowns": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        625
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        1.5
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "frost_arrows_movement_speed",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            -15,
+            -25,
+            -35,
+            -45
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "BONUS DAMAGE:",
+          "values": [
+            12,
+            18,
+            24,
+            30
+          ]
+        },
+        {
+          "key": "shard_regen_reduction_pct_per_stack",
+          "heading": "HEALTH RESTORATION LOSS PER STACK:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_bonus_damage_per_stack",
+          "heading": "BONUS DAMAGE PER STACK:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_stack_duration",
+          "heading": "STACK DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_burst_radius",
+          "heading": "BURST RADIUS:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_burst_damage_per_stack",
+          "heading": "BURST DAMAGE PER STACK:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_burst_move_slow_pct",
+          "heading": "BURST MOVEMENT SLOW:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_burst_slow_duration",
+          "heading": "BURST SLOW DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_max_stacks",
+          "heading": "MAX STACKS:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            625
+          ]
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "",
+          "values": [
+            1.5
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": "Frost Arrows now apply a Hypothermia stack to enemies, increasing damage from Frost Arrows and reducing their Health Restoration per stack. If an enemy dies with Hypothermia stacks, they burst and deal damage per stack and slow in an area around it.",
+      "shard_upgrade": null,
+      "notes": [
+        "The slow duration is refreshed on successive casts."
+      ],
+      "lore": "Ice-encased arrows pierce the silence, chilling their victims to the core."
+    },
+    {
+      "key": "drow_ranger_wave_of_silence",
+      "name": "Gust",
+      "description": "Releases a wave that silences and knocks back and reveals invisible enemy units. Knockback distance is relative to how close they are to Drow.",
+      "max_level": 4,
+      "cooldowns": [
+        19,
+        17,
+        15,
+        13
+      ],
+      "mana_costs": [
+        55
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        900
+      ],
+      "cast_points": [
+        0.25
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "wave_speed",
+          "heading": "",
+          "values": [
+            2000
+          ]
+        },
+        {
+          "key": "wave_width",
+          "heading": "WIDTH:",
+          "values": [
+            250
+          ]
+        },
+        {
+          "key": "silence_duration",
+          "heading": "SILENCE DURATION:",
+          "values": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "key": "knockback_distance_max",
+          "heading": "KNOCKBACK MAX:",
+          "values": [
+            450
+          ]
+        },
+        {
+          "key": "knockback_duration",
+          "heading": "KNOCKBACK DURATION:",
+          "values": [
+            0.6,
+            0.7,
+            0.8,
+            0.9
+          ]
+        },
+        {
+          "key": "knockback_duration_min",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "wave_length",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "bonus_movespeed",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "gust_reveals_invis",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            55
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            19,
+            17,
+            15,
+            13
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Traxex is rather fond of the tranquility of physical combat, calling on her Drow heritage to end the incantations of opposing magi."
+    },
+    {
+      "key": "drow_ranger_multishot",
+      "name": "Multishot",
+      "description": "CHANNELED - Drow releases a flurry of arrows in continuous salvos, hitting enemies for extra damage and applying Frost Arrows. Lasts up to %abilitychanneltime% seconds.<br><br>Drow can move slowly and use items while casting Multishot.",
+      "max_level": 4,
+      "cooldowns": [
+        24,
+        21,
+        18,
+        15
+      ],
+      "mana_costs": [
+        50,
+        70,
+        90,
+        110
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "wave_count",
+          "heading": "WAVE COUNT:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "arrow_count_per_wave",
+          "heading": "ARROWS PER WAVE:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "arrow_damage_pct",
+          "heading": "ARROW BASE DAMAGE BONUS:",
+          "values": [
+            100,
+            120,
+            140,
+            160
+          ]
+        },
+        {
+          "key": "arrow_width",
+          "heading": "",
+          "values": [
+            90
+          ]
+        },
+        {
+          "key": "arrow_speed",
+          "heading": "",
+          "values": [
+            1300
+          ]
+        },
+        {
+          "key": "arrow_range_multiplier",
+          "heading": "ARROW RANGE MULTIPLIER:",
+          "values": [
+            1.75
+          ]
+        },
+        {
+          "key": "arrow_angle",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "bypass_block",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "multishot_movespeed",
+          "heading": "MOVEMENT SPEED PENALTY:",
+          "values": [
+            35
+          ]
+        },
+        {
+          "key": "AbilityChannelTime",
+          "heading": "",
+          "values": [
+            1.75
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            50,
+            70,
+            90,
+            110
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            24,
+            21,
+            18,
+            15
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Arrow base damage pierces magic immunity.",
+        "Frost Arrows' damage and slow do not pierce magic immunity."
+      ],
+      "lore": "In the ranger's youth, learning to fire multiple arrows at once was considered a distracting frivolity. In the war of the Ancients, such technique has become strange necessity."
+    },
+    {
+      "key": "drow_ranger_glacier",
+      "name": "Glacier",
+      "description": "Drow creates a hill of ice beneath her, knocking away nearby enemies. Units on the hill gain flying vision and Drow and her ranged allies gain bonus attack range. Drow gains additional damage while on the Glacier and attacking targets below her.<br><br>The front of the hill obscures vision and cannot be moved through except by Drow. Does not interrupt Multishot when cast.",
+      "max_level": 1,
+      "cooldowns": [
+        25
+      ],
+      "mana_costs": [
+        50
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        400
+      ],
+      "cast_points": [
+        0.1,
+        0.1,
+        0.1,
+        0.1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "shard_width",
+          "heading": "",
+          "values": [
+            180
+          ]
+        },
+        {
+          "key": "shard_count",
+          "heading": "",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "shard_speed",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "shard_duration",
+          "heading": "DURATION:",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "shard_angle_step",
+          "heading": "",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "shard_distance",
+          "heading": "",
+          "values": [
+            155
+          ]
+        },
+        {
+          "key": "end_height",
+          "heading": "",
+          "values": [
+            128
+          ]
+        },
+        {
+          "key": "hilltop_offset",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "ramp_radius",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "attack_range_bonus",
+          "heading": "ATTACK RANGE BONUS:",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "knockback_duration",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "knockback_distance",
+          "heading": "",
+          "values": [
+            225
+          ]
+        },
+        {
+          "key": "knockback_height",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "z_speed_override",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "damage_bonus",
+          "heading": "HIGH GROUND DAMAGE BONUS:",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            25
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Traxex wasn't just adopted by the Drow, she was adopted by the lands they lived in."
+    },
+    {
+      "key": "drow_ranger_trueshot",
+      "name": "Precision Aura",
+      "description": "Grants Drow bonus agility based on Drow's current agility and level. Nearby ranged heroes received %trueshot_agi_bonus_allies_pct%%% of the bonus agility.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "trueshot_agi_bonus",
+          "heading": "AGILITY BONUS:",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "trueshot_agi_bonus_allies_pct",
+          "heading": "",
+          "values": [
+            50
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Traxex' time spent alone in the forests of her Drow home has allowed her to teach other archers how to improve their bow skills."
+    },
+    {
+      "key": "drow_ranger_marksmanship",
+      "name": "Marksmanship",
+      "description": "Drow's experiences in battle grant her a chance to launch arrows with incredible accuracy and effectiveness. Pierces through the enemy's defenses, ignoring their base armor. This ability is disabled if there is an enemy hero within %disable_range% range.",
+      "max_level": 3,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "chance",
+          "heading": "CHANCE:",
+          "values": [
+            30,
+            35,
+            40
+          ]
+        },
+        {
+          "key": "bonus_damage",
+          "heading": "BONUS PROC DAMAGE:",
+          "values": [
+            50,
+            70,
+            90
+          ]
+        },
+        {
+          "key": "disable_range",
+          "heading": "",
+          "values": [
+            300
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Marksmanship procs have true strike."
+      ],
+      "lore": "The Drow Ranger is the epitome of archery prowess."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityManaCost}% Frost Arrows Mana Cost"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_arrow_count_per_wave} Multishot Arrow Per Wave"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Attack Range"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Multishot Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_bonus_movespeed}% Gust Self Movement Speed"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_arrow_damage_pct}% Multishot Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_chance}% Marksmanship Chance"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_wave_count} Multishot Waves"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

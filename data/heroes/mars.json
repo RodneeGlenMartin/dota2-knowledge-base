@@ -1,0 +1,729 @@
+{
+  "id": 129,
+  "name": "Mars",
+  "slug": "mars",
+  "npc_name": "npc_dota_hero_mars",
+  "primary_attribute": "str",
+  "attack_type": "Melee",
+  "complexity": 1,
+  "roles": [
+    "Carry",
+    "Disabler",
+    "Durable",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 23,
+    "str_gain": 3.7,
+    "base_agi": 18,
+    "agi_gain": 1.7,
+    "base_int": 21,
+    "int_gain": 2.2,
+    "damage_min": 49,
+    "damage_max": 57,
+    "attack_rate": 1.8,
+    "attack_range": 250,
+    "projectile_speed": 900,
+    "armor": 2,
+    "magic_resistance": 25,
+    "movement_speed": 310,
+    "turn_rate": 0.8,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 626,
+    "health_regen": 2.55,
+    "max_mana": 327,
+    "mana_regen": 1.5500001
+  },
+  "lore": "Mars, first son of heaven, spent a long existence waging endless war, and saw countless more crusades waged beneath the banner of his old name. Wars of conquest and of vengeance. Just and unjust... Always cruel. So much like his father, Mars indulged his basest impulses--with inclinations much more monstrous than those of Zeus--and he inflicted suffering untold.<br><br>But as the epochs vanished behind him, the selfish ways of his father--the ways of many amongst his godly kin, they who judged <i>him</i> despicable--eventually began to ring hollow. War for its own sake was no longer enough to satisfy his desires. For the first time in his ageless days, the god of war began to question to what ends he swung his glorious spear.<br><br>As the Fates would have it, his solution came easily: he must wage war for a larger purpose, and inspire more than mere savagery and sorrow at the sight of his crest. He must at last lay claim to the mantle of leadership that is his birthright, for the time has come to burn down the pantheon of the old age and build a just new empire atop the ashes of his kin. Only then might he find satisfaction, and make the glory of Mars evident to all.",
+  "hype": "The warrior deity Mars thrives in the heart of strife, guarded by the bulk of a <b>deadly shield</b> as he skewers enemies with his <b>legendary spear</b>. He revels in facing opponents in an arena ringed with loyal spearmen—who guarantee that no one escapes and that whatever odds he's facing, the god of war can <b>dictate the terms of battle</b> knowing the crowd is forever on his side.",
+  "abilities": [
+    {
+      "key": "mars_spear",
+      "name": "Spear of Mars",
+      "description": "Mars throws his legendary Spear with deadly precision, damaging each enemy unit it strikes. The first enemy hero it hits is skewered on the spear, pushing it back. If a skewered hero hits a tree, building, or cliff, they will be impaled to it and stunned.",
+      "max_level": 4,
+      "cooldowns": [
+        14,
+        13,
+        12,
+        11
+      ],
+      "mana_costs": [
+        90,
+        100,
+        110,
+        120
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.25
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            100,
+            175,
+            250,
+            325
+          ]
+        },
+        {
+          "key": "spear_speed",
+          "heading": "",
+          "values": [
+            1400
+          ]
+        },
+        {
+          "key": "spear_width",
+          "heading": "",
+          "values": [
+            125
+          ]
+        },
+        {
+          "key": "spear_vision",
+          "heading": "",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "max_impale_targets",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "spear_range",
+          "heading": "CAST RANGE:",
+          "values": [
+            900,
+            1000,
+            1100,
+            1200
+          ]
+        },
+        {
+          "key": "activity_duration",
+          "heading": "",
+          "values": [
+            1.7
+          ]
+        },
+        {
+          "key": "stun_duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            1.3,
+            1.6,
+            1.9,
+            2.2
+          ]
+        },
+        {
+          "key": "knockback_duration",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "knockback_distance",
+          "heading": "",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "shard_trail_duration",
+          "heading": "TRAIL DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_trail_radius",
+          "heading": "TRAIL RADIUS:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_dps",
+          "heading": "DAMAGE PER SECOND:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_move_slow_pct",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_debuff_linger_duration",
+          "heading": "DEBUFF LINGER DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_interval",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            90,
+            100,
+            110,
+            120
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            14,
+            13,
+            12,
+            11
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Spear of Mars impales up to %max_impale_targets% heroes and leaves a fire trail behind that deals damage over time and slows movement speed.",
+      "notes": [
+        "Spear of Mars can hit invisible units and reveals them if they are stunned.",
+        "Spear of Mars will only pin a unit to cliffs onto elevated areas, otherwise it will push them off onto lower ground."
+      ],
+      "lore": "The legendary Spear of Mars still glows with the heat of the forge god's fires."
+    },
+    {
+      "key": "mars_gods_rebuke",
+      "name": "God's Rebuke",
+      "description": "Mars smashes enemies in front of him with his shield, knocking them back and damaging them with a critical hit based on his attack. Bonus damage is added when hitting heroes. Has True Strike.",
+      "max_level": 4,
+      "cooldowns": [
+        16,
+        14,
+        12,
+        10
+      ],
+      "mana_costs": [
+        90
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "crit_mult",
+          "heading": "CRITICAL DAMAGE:",
+          "values": [
+            150,
+            200,
+            250,
+            300
+          ]
+        },
+        {
+          "key": "angle",
+          "heading": "",
+          "values": [
+            140
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "DISTANCE:",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "knockback_duration",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "knockback_distance",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "knockback_slow",
+          "heading": "KNOCKBACK SLOW:",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "knockback_slow_duration",
+          "heading": "KNOCKBACK SLOW DURATION:",
+          "values": [
+            2.5
+          ]
+        },
+        {
+          "key": "activity_duration",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "bonus_damage_vs_heroes",
+          "heading": "BONUS DAMAGE VS HEROES:",
+          "values": [
+            5,
+            10,
+            15,
+            20
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            90
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            16,
+            14,
+            12,
+            10
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Attack modifiers have a chance to proc on God's Rebuke attacks."
+      ],
+      "lore": "There isn't a warrior alive who can stand unmoved by the sting of Mars' rebuke."
+    },
+    {
+      "key": "mars_bulwark",
+      "name": "Bulwark",
+      "description": "Mars wields his massive shield to block a portion of each physical attack when hit from the front or sides.<br><br> Can be toggled, granting phased movement, removing Mars's ability to attack, and locking the direction he is facing. When active, reduces movement speed and re-directs %redirect_chance%%% of the attack projectiles aimed at allies towards himself.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "physical_damage_reduction",
+          "heading": "FRONT REDUCTION:",
+          "values": [
+            40,
+            50,
+            60,
+            70
+          ]
+        },
+        {
+          "key": "forward_angle",
+          "heading": "",
+          "values": [
+            140
+          ]
+        },
+        {
+          "key": "physical_damage_reduction_side",
+          "heading": "SIDE REDUCTION:",
+          "values": [
+            20,
+            25,
+            30,
+            35
+          ]
+        },
+        {
+          "key": "side_angle",
+          "heading": "",
+          "values": [
+            240
+          ]
+        },
+        {
+          "key": "redirect_chance",
+          "heading": "",
+          "values": [
+            70
+          ]
+        },
+        {
+          "key": "redirect_range",
+          "heading": "ACTIVE REDIRECT RANGE:",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "redirect_speed_penatly",
+          "heading": "SPEED PENALTY WHEN ACTIVE:",
+          "values": [
+            18
+          ]
+        },
+        {
+          "key": "redirect_close_range",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "forced_movement_immunity",
+          "heading": "",
+          "values": null
+        }
+      ],
+      "scepter_upgrade": "Creates %soldier_count% invulnerable soldiers on both sides of Mars front while Bulwark is toggled on. Soldiers move alongside Mars, dealing his attacks that have bonus damage, knock back and slow approaching enemies. An enemy can only be attacked by one soldier at a time.",
+      "shard_upgrade": null,
+      "notes": [
+        "Redirect only works if the projectile targets are in a cone behind Mars or within 100 range of him.",
+        "Break disables the front and side damage reduction."
+      ],
+      "lore": "Only the very foolish dare to fight fair with the god of war."
+    },
+    {
+      "key": "mars_dauntless",
+      "name": "Dauntless",
+      "description": "Mars gets more HP Regen the more he is outnumbered by enemy heroes in %radius% radius.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "health_regen_per_enemy",
+          "heading": "HP REGEN PER EXTRA ENEMY:",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            900
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "mars_arena_of_blood",
+      "name": "Arena Of Blood",
+      "description": "After a short formation time, Mars summons an arena lined with the undead warriors of the Ash Legion, who block enemy attacks and movement. Enemy heroes near the inside edge of the arena will be attacked by spears, dealing damage and knocking them back.",
+      "max_level": 3,
+      "cooldowns": [
+        100,
+        95,
+        90
+      ],
+      "mana_costs": [
+        150,
+        200,
+        250
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        400
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            5.5
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            550
+          ]
+        },
+        {
+          "key": "width",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "spear_damage",
+          "heading": "SPEAR DAMAGE:",
+          "values": [
+            80,
+            170,
+            260
+          ]
+        },
+        {
+          "key": "formation_time",
+          "heading": "FORMATION TIME:",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "spear_distance_from_wall",
+          "heading": "",
+          "values": [
+            160
+          ]
+        },
+        {
+          "key": "spear_attack_interval",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "warrior_count",
+          "heading": "",
+          "values": [
+            14
+          ]
+        },
+        {
+          "key": "warrior_fade_min_dist",
+          "heading": "",
+          "values": [
+            350
+          ]
+        },
+        {
+          "key": "warrior_fade_max_dist",
+          "heading": "",
+          "values": [
+            450
+          ]
+        },
+        {
+          "key": "arena_kill_buff_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "arena_kill_buff_damage_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "arena_kill_buff_heal_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "allied_reduction_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "health_regen",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            150,
+            200,
+            250
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            100,
+            95,
+            90
+          ]
+        }
+      ],
+      "scepter_upgrade": "Lowers cooldown by %bonus_AbilityCooldown%s and increases duration. If an enemy is killed in the Arena, Mars and all of his allies inside the Arena restore %arena_kill_buff_heal_pct%%  of their max health and mana and get a %arena_kill_buff_damage_pct%%  attack damage buff for %arena_kill_buff_duration%s. This effect stacks.",
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "The long-dead members of the Ash Legion, assembled from the finest warriors to ever test the might of Mars, still revel in the thrill of combat, gladly beholden to the hand that fell them for as long as he so commands."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_radius} God's Rebuke Distance"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Mana Regen"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s God's Rebuke Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Spear Of Mars Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_spear_damage} Arena Of Blood Spear Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_stun_duration}s Spear of Mars Stun"
+    },
+    {
+      "slot": null,
+      "name": "God's Rebuke +{s:bonus_crit_mult}% Crit"
+    },
+    {
+      "slot": null,
+      "name": "Arena Of Blood Grants Team +{s:bonus_health_regen} HP Regen"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

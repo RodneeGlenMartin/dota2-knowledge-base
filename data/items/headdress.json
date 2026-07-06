@@ -1,0 +1,53 @@
+{
+  "id": 94,
+  "name": "Headdress",
+  "slug": "headdress",
+  "internal_key": "item_headdress",
+  "cost": 425,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Regeneration Aura</h1>Grants %aura_health_regen% health regeneration to allies.<br><br>Radius: %aura_radius%",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    1200
+  ],
+  "special_values": [
+    {
+      "key": "health_regen",
+      "heading": "+$hp_regen",
+      "values": [
+        0.5
+      ]
+    },
+    {
+      "key": "aura_health_regen",
+      "heading": "",
+      "values": [
+        2
+      ]
+    },
+    {
+      "key": "aura_radius",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    }
+  ],
+  "lore": "Creates a soothing aura that restores allies in battle.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

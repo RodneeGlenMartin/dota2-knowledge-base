@@ -1,0 +1,88 @@
+{
+  "id": 1076,
+  "name": "Specialist's Array",
+  "slug": "specialist_s_array",
+  "internal_key": "item_specialists_array",
+  "cost": 2550,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Splitshot</h1>Ranged attacks have a %proc_chance%%% chance to fire additional projectiles at up to %count% nearby enemies with %secondary_target_range_bonus% extra range and within a %secondary_target_angle% degree angle in front of the attacker. The additional projectiles deal %base_proc_dmg% + %proc_dmg_pct%%% damage of a normal attack and do not trigger on hit effects. The primary attack deals %base_proc_dmg% + %proc_dmg_pct_primary_tooltip%%% damage of a normal attack.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "agility",
+      "heading": "+$agi",
+      "values": [
+        15
+      ]
+    },
+    {
+      "key": "damage",
+      "heading": "+$damage",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "count",
+      "heading": "",
+      "values": [
+        2
+      ]
+    },
+    {
+      "key": "secondary_target_range_bonus",
+      "heading": "",
+      "values": [
+        150
+      ]
+    },
+    {
+      "key": "secondary_target_angle",
+      "heading": "",
+      "values": [
+        120
+      ]
+    },
+    {
+      "key": "proc_chance",
+      "heading": "",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "base_proc_dmg",
+      "heading": "",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "proc_dmg_pct",
+      "heading": "",
+      "values": [
+        75
+      ]
+    },
+    {
+      "key": "proc_dmg_pct_primary_tooltip",
+      "heading": "",
+      "values": [
+        100
+      ]
+    }
+  ],
+  "lore": "An impressive kit of trigger enhancements born in an aging assassin's idle mind.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

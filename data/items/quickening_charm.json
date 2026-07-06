@@ -1,0 +1,39 @@
+{
+  "id": 289,
+  "name": "Quickening Charm",
+  "slug": "quickening_charm",
+  "internal_key": "item_quickening_charm",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Cooldown Reduction</h1>Reduces the cooldown time of all spells and items.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_cooldown",
+      "heading": "+$cooldown_reduction",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "bonus_health_regen",
+      "heading": "+$hp_regen",
+      "values": [
+        10
+      ]
+    }
+  ],
+  "lore": "An evergreen amulet of druidic origins.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

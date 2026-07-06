@@ -1,0 +1,567 @@
+{
+  "id": 28,
+  "name": "Slardar",
+  "slug": "slardar",
+  "npc_name": "npc_dota_hero_slardar",
+  "primary_attribute": "str",
+  "attack_type": "Melee",
+  "complexity": 1,
+  "roles": [
+    "Carry",
+    "Disabler",
+    "Durable",
+    "Escape",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 21,
+    "str_gain": 3.4,
+    "base_agi": 17,
+    "agi_gain": 2.1,
+    "base_int": 15,
+    "int_gain": 1.5,
+    "damage_min": 51,
+    "damage_max": 59,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 0,
+    "armor": 4.8333335,
+    "magic_resistance": 25,
+    "movement_speed": 300,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 582,
+    "health_regen": 2.6000001,
+    "max_mana": 255,
+    "mana_regen": 0.75
+  },
+  "lore": "Slardar is a Slithereen, one of the Deep Ones, guardian of a vast network of sunken cities and the ancient riches buried within them. In the lightless gulf of the deepest ocean abysses, the Slithereen Guard patrols secret treasure rooms, ever vigilant against the subaqueous thieves sent into the deeps by covetous dryland sorcerers. He is utterly loyal, and his taciturn nature hides deep knowledge of the most secret places of the sea. He rises to the shallows in spite of the pain caused him by brightness, to commit reconnaissance, to make sure no one is conspiring against the depths, and sometimes in relentless pursuit of the rare few who manage to steal off with an item from the Sunken Treasury. Because he has spent his whole life at great pressure, under tremendous weight of the sea, Slardar the Slithereen Guard is a creature of immense power.",
+  "hype": "Ready to find and demolish his foes, Slardar quickly slithers into battle. After <b>exposing an enemy's position</b> and shattering their defenses, he closes the distance to lock them in place with crushing blows and powerful bashes from his trident.",
+  "abilities": [
+    {
+      "key": "slardar_sprint",
+      "name": "Guardian Sprint",
+      "description": "Slardar slithers ahead, moving significantly faster and passing through units. Slardar has %slow_resistance_tooltip%%% slow resistance for the first %speed_burst_max_duration%s. The slow resistance gradually fades over the remaining sprint duration.",
+      "max_level": 4,
+      "cooldowns": [
+        33,
+        28,
+        23,
+        18
+      ],
+      "mana_costs": [
+        25
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bonus_speed",
+          "heading": "BONUS MOVE SPEED:",
+          "values": [
+            10,
+            18,
+            26,
+            34
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "speed_burst_max_duration",
+          "heading": "",
+          "values": [
+            2.5
+          ]
+        },
+        {
+          "key": "slow_resistance_tooltip",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            33,
+            28,
+            23,
+            18
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Activating this skill doesn't interrupt channeling abilities."
+      ],
+      "lore": "As Slardar has made the transition from the Deeps, it has been necessary to use his powerful tail for sprinting instead of swimming."
+    },
+    {
+      "key": "slardar_slithereen_crush",
+      "name": "Slithereen Crush",
+      "description": "Slams the ground, leaving a puddle of water, and stunning and damaging nearby enemy units.  After the stun, the affected units are slowed.",
+      "max_level": 4,
+      "cooldowns": [
+        8.5,
+        8,
+        7.5,
+        7
+      ],
+      "mana_costs": [
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.25
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "crush_radius",
+          "heading": "RADIUS:",
+          "values": [
+            325
+          ]
+        },
+        {
+          "key": "crush_extra_slow",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            -20,
+            -25,
+            -30,
+            -35
+          ]
+        },
+        {
+          "key": "crush_attack_slow_tooltip",
+          "heading": "ATTACK SLOW:",
+          "values": [
+            -20,
+            -25,
+            -30,
+            -35
+          ]
+        },
+        {
+          "key": "crush_extra_slow_duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "key": "stun_duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            0.8
+          ]
+        },
+        {
+          "key": "puddle_duration",
+          "heading": "PUDDLE DURATION:",
+          "values": [
+            7
+          ]
+        },
+        {
+          "key": "puddle_radius",
+          "heading": "PUDDLE RADIUS:",
+          "values": [
+            325
+          ]
+        },
+        {
+          "key": "crush_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            75,
+            150,
+            225,
+            300
+          ]
+        },
+        {
+          "key": "shard_amp_duration",
+          "heading": "HAZE DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_bonus_radius",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            8.5,
+            8,
+            7.5,
+            7
+          ]
+        }
+      ],
+      "scepter_upgrade": "Increases Slithereen Crush puddle radius and duration.",
+      "shard_upgrade": "Slithereen Crush now applies Corrosive Haze for a short time to units affected.",
+      "notes": null,
+      "lore": "A swift crush of might and water breaks even the toughest of defenses."
+    },
+    {
+      "key": "slardar_bash",
+      "name": "Bash of the Deep",
+      "description": "After %attack_count% attacks, your next attack will bash the target.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bonus_damage",
+          "heading": "BONUS DAMAGE:",
+          "values": [
+            35,
+            90,
+            145,
+            200
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "BASH DURATION:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "attack_count",
+          "heading": "",
+          "values": [
+            3
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Does not stack with Skull Basher."
+      ],
+      "lore": "Thieves of the wealth of the Deep Ones meet the brutality of the Slithereen Guard in melee combat."
+    },
+    {
+      "key": "slardar_seaborn_sentinel",
+      "name": "Seaborn Sentinel",
+      "description": "Slardar gains bonus movement speed, health regeneration, attack damage, and armor while in a puddle, trail, or river.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "river_speed",
+          "heading": "BONUS MOVE SPEED:",
+          "values": [
+            18
+          ]
+        },
+        {
+          "key": "puddle_regen",
+          "heading": "HP REGEN:",
+          "values": [
+            1.75
+          ]
+        },
+        {
+          "key": "puddle_armor",
+          "heading": "BONUS ARMOR:",
+          "values": [
+            1.8
+          ]
+        },
+        {
+          "key": "puddle_status_resistance",
+          "heading": "STATUS RESISTANCE:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "river_damage_pct",
+          "heading": "BONUS ATTACK DAMAGE:",
+          "values": [
+            11.4
+          ]
+        },
+        {
+          "key": "scepter_puddle_radius_tooltip",
+          "heading": "",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "scepter_puddle_duration_increase_tooltip",
+          "heading": "",
+          "values": [
+            5
+          ]
+        }
+      ],
+      "scepter_upgrade": "Provides additional HP Regen, Armor and Status Resistance while in a puddle, trail, or river. Increases puddle/trail radius by %scepter_puddle_radius_tooltip%%% and puddle/trail duration by %scepter_puddle_duration_increase_tooltip%s.",
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "slardar_amplify_damage",
+      "name": "Corrosive Haze",
+      "description": "Reduces enemy armor to amplify physical damage and provides True Sight and vision of the targeted unit, revealing invisibility. The enemy unit leaves a trail of water behind it.",
+      "max_level": 3,
+      "cooldowns": [
+        5
+      ],
+      "mana_costs": [
+        25
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        900
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "armor_reduction",
+          "heading": "ARMOR REDUCTION:",
+          "values": [
+            -8,
+            -14,
+            -20
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            18
+          ]
+        },
+        {
+          "key": "undispellable",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "puddle_radius",
+          "heading": "TRAIL RADIUS:",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "puddle_duration",
+          "heading": "TRAIL DURATION:",
+          "values": [
+            7
+          ]
+        },
+        {
+          "key": "has_self_buff",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "armor_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            5
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Even the strongest armor counts for little when left to the brine of the sea."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_duration}s Guardian Sprint Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_damage} Bash of the Deep Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Health"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_armor_reduction} Corrosive Haze Armor"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_crush_damage} Slithereen Crush Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_river_damage_pct}% Seaborn Sentinel Bonus Attack Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Slithereen Crush Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "Corrosive Haze Undispellable"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

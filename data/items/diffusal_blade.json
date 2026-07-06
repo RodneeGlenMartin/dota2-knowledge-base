@@ -1,0 +1,97 @@
+{
+  "id": 174,
+  "name": "Diffusal Blade",
+  "slug": "diffusal_blade",
+  "internal_key": "item_diffusal_blade",
+  "cost": 2500,
+  "neutral_tier": null,
+  "description": "<h1>Active: Inhibit</h1> Targets an enemy, slowing it for %purge_slow_duration% seconds.\n\n<h1>Passive: Manabreak</h1>Each attack burns %feedback_mana_burn% mana from the target, and deals %damage_per_burn% physical damage per burned mana. <br><br>Illusions do not burn mana.",
+  "notes": [
+    "Does not stack with other diffusal blades."
+  ],
+  "cooldowns": [
+    15
+  ],
+  "mana_costs": [
+    25
+  ],
+  "cast_ranges": [
+    600
+  ],
+  "special_values": [
+    {
+      "key": "bonus_agility",
+      "heading": "+$agi",
+      "values": [
+        15
+      ]
+    },
+    {
+      "key": "bonus_intellect",
+      "heading": "+$int",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "feedback_mana_burn",
+      "heading": "",
+      "values": [
+        40
+      ]
+    },
+    {
+      "key": "purge_rate",
+      "heading": "",
+      "values": [
+        5
+      ]
+    },
+    {
+      "key": "purge_root_duration",
+      "heading": "",
+      "values": [
+        3
+      ]
+    },
+    {
+      "key": "purge_slow_duration",
+      "heading": "",
+      "values": [
+        4
+      ]
+    },
+    {
+      "key": "damage_per_burn",
+      "heading": "",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        600
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        15
+      ]
+    }
+  ],
+  "lore": "An enchanted blade that allows the user to cut straight into the enemy's soul.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

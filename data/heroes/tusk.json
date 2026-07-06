@@ -1,0 +1,857 @@
+{
+  "id": 100,
+  "name": "Tusk",
+  "slug": "tusk",
+  "npc_name": "npc_dota_hero_tusk",
+  "primary_attribute": "str",
+  "attack_type": "Melee",
+  "complexity": 1,
+  "roles": [
+    "Nuker",
+    "Disabler",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 23,
+    "str_gain": 3.9,
+    "base_agi": 23,
+    "agi_gain": 1.9,
+    "base_int": 18,
+    "int_gain": 1.7,
+    "damage_min": 50,
+    "damage_max": 54,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 4.8333335,
+    "magic_resistance": 25,
+    "movement_speed": 310,
+    "turn_rate": 0.7,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 626,
+    "health_regen": 3.3,
+    "max_mana": 291,
+    "mana_regen": 1.4000001
+  },
+  "lore": "It had been a brawl to remember. There stood Ymir, the Tusk, the Terror from the Barrier, the Snowball from Cobalt, the only fighter to have bested the Bristled Bruiser in a fair fight, and now the last man standing in Wolfsden Tavern. What started as a simple bar bet of supremacy ended with four regulars, a blacksmith, and six of the Frost Brigade's best soldiers writhing against the shards and splinters of almost every bottle, mug, and chair in the building. The Tusk boasted and toasted his victory as he emptied his brew.\r\n\t\t\t\t<br><br>No sooner had the defeated regained consciousness than the cries for double-or-nothing rang out. The Tusk was pleased at the prospect, but none could think of a bet bigger than the one he just conquered. Horrified at the damage to his tavern and desperate to avoid another brawl, the barkeep had an idea. As skilled as he was, Ymir had never taken part in a real battle, never tested himself against the indiscriminate death and chaos of war. He proposed a wager to the fighter: seek out the biggest battle he could find, survive, and win it for whichever side he chose. The stakes? The next round of drinks.",
+  "hype": "Tusk is always eager to start a fight. Able to instantly corner an enemy with a <b>wall of ice shards</b>, he gathers with his allies and rolls into enemies inside of a <b>massive snowball</b>, bringing him in range to land his signature <b>knockout punch.</b>",
+  "abilities": [
+    {
+      "key": "tusk_ice_shards",
+      "name": "Ice Shards",
+      "description": "Tusk compresses shards of ice into a ball of frozen energy that damages all enemies it comes in contact with. When the ball reaches its target destination the shards are released, creating a barrier that lasts for %shard_duration% seconds.",
+      "max_level": 4,
+      "cooldowns": [
+        23,
+        20,
+        17,
+        14
+      ],
+      "mana_costs": [
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1400
+      ],
+      "cast_points": [
+        0.1,
+        0.1,
+        0.1,
+        0.1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "shard_width",
+          "heading": "RADIUS:",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "shard_damage",
+          "heading": "SHARD DAMAGE:",
+          "values": [
+            75,
+            150,
+            225,
+            300
+          ]
+        },
+        {
+          "key": "shard_count",
+          "heading": "",
+          "values": [
+            7
+          ]
+        },
+        {
+          "key": "shard_speed",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "shard_duration",
+          "heading": "SHARD DURATION:",
+          "values": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "key": "shard_angle_step",
+          "heading": "",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "shard_distance",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "aghs_shard_move_slow",
+          "heading": "MOVE SLOW:",
+          "values": null
+        },
+        {
+          "key": "aghs_shard_damage",
+          "heading": "DAMAGE PER SECOND:",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1400
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            23,
+            20,
+            17,
+            14
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Creates an impassable barrier."
+      ],
+      "lore": "In the frozen tundra near the Barrier, after the last sun of autumn has set, ice can form with alarming speed."
+    },
+    {
+      "key": "tusk_snowball",
+      "name": "Snowball",
+      "description": "Tusk begins rolling into a snowball. Allies within a %snowball_grab_radius% radius can also be added to the snowball by right-clicking on them, even while the snowball is moving. Once launched, any enemies caught in the snowball's path will be stunned and take damage. Each allied Hero in the snowball will add to its damage and stun duration.",
+      "max_level": 4,
+      "cooldowns": [
+        21,
+        19,
+        17,
+        15
+      ],
+      "mana_costs": [
+        75,
+        75,
+        75,
+        75
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1150
+      ],
+      "cast_points": [
+        0.1,
+        0.1,
+        0.1,
+        0.1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "snowball_damage",
+          "heading": "BASE DAMAGE:",
+          "values": [
+            80,
+            140,
+            200,
+            260
+          ]
+        },
+        {
+          "key": "snowball_speed",
+          "heading": "SNOWBALL SPEED:",
+          "values": [
+            575,
+            600,
+            625,
+            650
+          ]
+        },
+        {
+          "key": "snowball_damage_bonus",
+          "heading": "BONUS DAMAGE PER ALLY:",
+          "values": [
+            40,
+            65,
+            90,
+            115
+          ]
+        },
+        {
+          "key": "stun_duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            0.6,
+            0.8,
+            1,
+            1.2
+          ]
+        },
+        {
+          "key": "stun_duration_bonus",
+          "heading": "STUN DURATION PER ALLY:",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "snowball_windup_radius",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "snowball_duration",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "snowball_radius",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "snowball_grow_rate",
+          "heading": "",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "snowball_windup",
+          "heading": "LAUNCH TIME:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "snowball_grab_radius",
+          "heading": "GATHER RADIUS:",
+          "values": [
+            325
+          ]
+        },
+        {
+          "key": "snowball_speed_bonus",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1150
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            21,
+            19,
+            17,
+            15
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "The snowball will break apart a maximum of 3 seconds after launch.",
+        "The snowball can be launched early by pressing using the Launch Snowball ability.",
+        "Doesn't carry illusions, but will carry Meepo clones and other units that Tusk controls.",
+        "Each Meepo clone added to the snowball will add its own bonus damage.",
+        "Allies can click on a snowball to add themselves to it."
+      ],
+      "lore": "Tales are still told of the wild feat that ended the grand brawl at White Fields."
+    },
+    {
+      "key": "tusk_tag_team",
+      "name": "Tag Team",
+      "description": "Activate to temporarily apply a negative debuff aura around you, causing enemies that are attacked under it to take bonus physical damage and reduced movement speed. Lasts %debuff_duration% seconds.",
+      "max_level": 4,
+      "cooldowns": [
+        24,
+        21,
+        18,
+        15
+      ],
+      "mana_costs": [
+        70
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bonus_damage",
+          "heading": "BONUS DAMAGE:",
+          "values": [
+            25,
+            50,
+            75,
+            100
+          ]
+        },
+        {
+          "key": "movement_slow",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "slow_duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "debuff_duration",
+          "heading": "DEBUFF DURATION:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            350
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            70
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            24,
+            21,
+            18,
+            15
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Affects attacks from allied heroes, Tusk or any of his units."
+      ],
+      "lore": "Even far from Cobalt, Tusk carries the 'Barrier Chill' in his very bones."
+    },
+    {
+      "key": "tusk_drinking_buddies",
+      "name": "Drinking Buddies",
+      "description": "Tusk reaches out to tag an allied unit, pulling them closer. Once tagged, both Tusk and his tagged ally gain movement speed and armor.",
+      "max_level": 1,
+      "cooldowns": [
+        14
+      ],
+      "mana_costs": [
+        80
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1000
+      ],
+      "cast_points": [
+        0.1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "alt_cast_castrange_pct",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "buff_duration",
+          "heading": "BUFF DURATION:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "pull_duration",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "min_distance",
+          "heading": "",
+          "values": [
+            250
+          ]
+        },
+        {
+          "key": "max_distance",
+          "heading": "",
+          "values": [
+            1300
+          ]
+        },
+        {
+          "key": "movespeed_bonus",
+          "heading": "BONUS MOVEMENT SPEED:",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "armor_bonus",
+          "heading": "BONUS ARMOR:",
+          "values": [
+            7
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            80
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            14
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Doesn't pull Tusk or targeted ally if they are within %min_distance% range of each other.",
+        "Cannot be used during Snowball."
+      ],
+      "lore": "The only thing better than finding a good drinking buddy is finding an equally good enemy the two of you can punch. "
+    },
+    {
+      "key": "tusk_walrus_kick",
+      "name": "Walrus Kick",
+      "description": "Kicks the closest enemy unit in the drawn direction, stunning, damaging, and slowing them. Also deals damage to all heroes within %search_radius% radius of its landing area. Cooldown is reduced by %creep_cooldown_reduction_pct%%% if kicking a creep.",
+      "max_level": 1,
+      "cooldowns": [
+        12
+      ],
+      "mana_costs": [
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        250
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "air_time",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "push_length",
+          "heading": "KICK PUSH DISTANCE:",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "move_slow",
+          "heading": "MOVE SLOW:",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "slow_duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            550
+          ]
+        },
+        {
+          "key": "search_radius",
+          "heading": "",
+          "values": [
+            250
+          ]
+        },
+        {
+          "key": "creep_cooldown_reduction_pct",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            250
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Tusk may have made his name with his fists, but the wise enemy is wary of any and all limbs."
+    },
+    {
+      "key": "tusk_walrus_punch",
+      "name": "Walrus PUNCH!",
+      "description": "Tusk connects with his mighty Walrus Punch, a critical strike with bonus damage so powerful it launches its victim into the air.",
+      "max_level": 3,
+      "cooldowns": [
+        16,
+        13,
+        10
+      ],
+      "mana_costs": [
+        75
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        150
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bonus_damage",
+          "heading": "BONUS DAMAGE:",
+          "values": [
+            60,
+            90,
+            120
+          ]
+        },
+        {
+          "key": "crit_multiplier",
+          "heading": "CRITICAL DAMAGE:",
+          "values": [
+            200,
+            250,
+            300
+          ]
+        },
+        {
+          "key": "air_time",
+          "heading": "AIR TIME:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "push_length",
+          "heading": "",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "proc_chance",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            16,
+            13,
+            10
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Walrus PUNCH has true strike."
+      ],
+      "lore": "It never matters who throws the first punch, only who throws the last."
+    },
+    {
+      "key": "tusk_bitter_chill",
+      "name": "Bitter Chill",
+      "description": "Passively slows the attack speed of all enemy heroes within a %radius% unit radius.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            350
+          ]
+        },
+        {
+          "key": "attack_speed_slow",
+          "heading": "ATTACK SLOW:",
+          "values": [
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_debuff_duration}s Tag Team Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_air_time}s Walrus Punch Stun Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Health"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_snowball_damage} Snowball Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Snowball Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_crit_multiplier}% Walrus Punch Crit"
+    },
+    {
+      "slot": null,
+      "name": "Ice Shards slow by {s:bonus_aghs_shard_move_slow}% and deal {s:bonus_aghs_shard_damage} DPS"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_proc_chance}% Chance Walrus Punch"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": 24,
+  "name": "Ultimate Orb",
+  "slug": "ultimate_orb",
+  "internal_key": "item_ultimate_orb",
+  "cost": 2800,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_all_stats",
+      "heading": "+$all",
+      "values": [
+        15
+      ]
+    }
+  ],
+  "lore": "A mystical orb containing the essence of life.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

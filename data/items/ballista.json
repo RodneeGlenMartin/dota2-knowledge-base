@@ -1,0 +1,53 @@
+{
+  "id": 367,
+  "name": "Ballista",
+  "slug": "ballista",
+  "internal_key": "item_ballista",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Knockback</h1> Knocks back enemies %knockback_distance% distance and deals %bonus_damage% pure damage with every attack.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "attack_range_bonus",
+      "heading": "+$attack_range",
+      "values": [
+        250
+      ]
+    },
+    {
+      "key": "knockback_distance",
+      "heading": "",
+      "values": [
+        50
+      ]
+    },
+    {
+      "key": "knockback_duration",
+      "heading": "",
+      "values": [
+        0.2
+      ]
+    },
+    {
+      "key": "bonus_damage",
+      "heading": "",
+      "values": [
+        50
+      ]
+    }
+  ],
+  "lore": "A simple design much improved by a master smith's loving hand.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

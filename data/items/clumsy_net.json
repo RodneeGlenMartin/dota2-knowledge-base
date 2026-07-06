@@ -1,0 +1,46 @@
+{
+  "id": 360,
+  "name": "Clumsy Net",
+  "slug": "clumsy_net",
+  "internal_key": "item_clumsy_net",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Ensnare</h1> Ensnares the target enemy and yourself for %duration% seconds.",
+  "notes": null,
+  "cooldowns": [
+    25
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    600
+  ],
+  "special_values": [
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        1.75
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        600
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        25
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

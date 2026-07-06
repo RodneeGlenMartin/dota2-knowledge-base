@@ -1,0 +1,24 @@
+{
+  "id": 213,
+  "name": "Tranquil Boots Recipe",
+  "slug": "tranquil_boots_recipe",
+  "internal_key": "item_recipe_tranquil_boots",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

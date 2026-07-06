@@ -1,0 +1,862 @@
+{
+  "id": 23,
+  "name": "Kunkka",
+  "slug": "kunkka",
+  "npc_name": "npc_dota_hero_kunkka",
+  "primary_attribute": "str",
+  "attack_type": "Melee",
+  "complexity": 2,
+  "roles": [
+    "Carry",
+    "Support",
+    "Nuker",
+    "Disabler",
+    "Durable",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 24,
+    "str_gain": 3.6,
+    "base_agi": 14,
+    "agi_gain": 1.6,
+    "base_int": 18,
+    "int_gain": 1.8,
+    "damage_min": 54,
+    "damage_max": 60,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 4.3333335,
+    "magic_resistance": 25,
+    "movement_speed": 315,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 648,
+    "health_regen": 3.15,
+    "max_mana": 291,
+    "mana_regen": 0.90000004
+  },
+  "lore": "As The Admiral of the mighty Claddish Navy, Kunkka was charged with protecting the isles of his homeland when the demons of the Cataract made a concerted grab at the lands of men. After years of small sorties, and increasingly bold and devastating attacks, the demon fleet flung all its carnivorous ships at the Trembling Isle. Desperate, the Suicide-Mages of Cladd committed their ultimate rite, summoning a host of ancestral spirits to protect the fleet. Against the demons, this was just barely enough to turn the tide.\r\n\t\t\t\t<br><br>As Kunkka watched the demons take his ships down one by one, he had the satisfaction of wearing away their fleet with his ancestral magic. But at the battle's peak, something in the clash of demons, men and atavistic spirits must have stirred a fourth power that had been slumbering in the depths. The waves rose up in towering spouts around the few remaining ships, and Maelrawn the Tentacular appeared amid the fray. His tendrils wove among the ships, drawing demon and human craft together, churning the water and wind into a raging chaos.\r\n\t\t\t\t<br><br>What happened in the crucible of that storm, none may truly say. The Cataract roars off into the void, deserted by its former denizens. Kunkka is now The Admiral of but one ship, a ghostly rig which endlessly replays the final seconds of its destruction. Whether he died in that crash is anyone's guess. Not even Tidehunter, who summoned Maelrawn, knows for sure.",
+  "hype": "Kunkka is always predicting where his enemies will go next. Able to attack a location with a <b>geyser of water</b> or a <b>ghostly shipwreck</b>, should his aim prove true, he and his allies will have no trouble cleaning up whatever is left.",
+  "abilities": [
+    {
+      "key": "kunkka_torrent",
+      "name": "Torrent",
+      "description": "Summons a rising torrent that, after a short delay, hurls enemy units into the sky, stunning, dealing damage and slowing movement speed.",
+      "max_level": 4,
+      "cooldowns": [
+        16,
+        14,
+        12,
+        10
+      ],
+      "mana_costs": [
+        90
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1300
+      ],
+      "cast_points": [
+        0.4
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            250
+          ]
+        },
+        {
+          "key": "movespeed_bonus",
+          "heading": "MOVE SLOW:",
+          "values": [
+            -40
+          ]
+        },
+        {
+          "key": "slow_duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "key": "stun_duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            1.4
+          ]
+        },
+        {
+          "key": "delay",
+          "heading": "DELAY:",
+          "values": [
+            1.6
+          ]
+        },
+        {
+          "key": "torrent_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            110,
+            180,
+            250,
+            320
+          ]
+        },
+        {
+          "key": "damage_tick_interval",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1300
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            90
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            16,
+            14,
+            12,
+            10
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "The initial bubble effect is only visible to allies and provides vision in fog of war.",
+        "Units tossed in the air will be stunned and still able to be attacked."
+      ],
+      "lore": "An ancestral rush of water explodes from the center of the world, called upon by the Admiral."
+    },
+    {
+      "key": "kunkka_tidebringer",
+      "name": "Tidebringer",
+      "description": "Kunkka's legendary sword grants increased damage and cleaves a large area of effect in front of him for a single strike.",
+      "max_level": 4,
+      "cooldowns": [
+        13,
+        10,
+        7,
+        4
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        150
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "cleave_starting_width",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "cleave_ending_width",
+          "heading": "",
+          "values": [
+            500,
+            550,
+            600,
+            650
+          ]
+        },
+        {
+          "key": "cleave_distance",
+          "heading": "CLEAVE RANGE:",
+          "values": [
+            650,
+            775,
+            900,
+            1025
+          ]
+        },
+        {
+          "key": "damage_bonus",
+          "heading": "DAMAGE BONUS:",
+          "values": [
+            35,
+            70,
+            105,
+            140
+          ]
+        },
+        {
+          "key": "cleave_damage",
+          "heading": "CLEAVE DAMAGE:",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "movespeed_slow",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "movespeed_slow_duration",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "pierces_armor",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "AbilityCharges",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityChargeRestoreTime",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            13,
+            10,
+            7,
+            4
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "A lost Claddish soul inhabits Kunkka's trusty Tidebringer, empowering it to destroy demons of the Cataract."
+    },
+    {
+      "key": "kunkka_x_marks_the_spot",
+      "name": "X Marks the Spot",
+      "description": "Targets a friendly or enemy Hero, marks their position with an X, and returns them to it after several seconds.  Kunkka can trigger the return at any time during the duration. Lasts twice as long on allied heroes.",
+      "max_level": 4,
+      "cooldowns": [
+        24,
+        20,
+        16,
+        12
+      ],
+      "mana_costs": [
+        50
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        550,
+        700,
+        850,
+        1000
+      ],
+      "cast_points": [
+        0.4,
+        0.4,
+        0.4,
+        0.4
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "ENEMY DELAY:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "allied_duration",
+          "heading": "ALLIED DELAY:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "fow_range",
+          "heading": "",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "fow_duration",
+          "heading": "",
+          "values": [
+            5.94
+          ]
+        },
+        {
+          "key": "rum_allies_radius",
+          "heading": "RUM SPLASH RADIUS:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "buff_duration",
+          "heading": "RUM DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "movespeed_bonus",
+          "heading": "",
+          "values": [
+            15
+          ]
+        },
+        {
+          "key": "ghostship_absorb",
+          "heading": "",
+          "values": [
+            35
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            550,
+            700,
+            850,
+            1000
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            24,
+            20,
+            16,
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "The Admiral's set of arcane abilities includes some that can be used for battle as well as entertainment."
+    },
+    {
+      "key": "kunkka_admirals_rum",
+      "name": "Admiral's Rum",
+      "description": "Damage from enemy heroes, buildings, or Roshan that would reduce Kunkka below %damage_threshold%%% threshold causes him to douse himself with The Admiral's Rum, receiving bonus movement speed and a delayed reaction to %ghostship_absorb%%% of incoming damage for %buff_duration%s.",
+      "max_level": 1,
+      "cooldowns": [
+        50.5
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage_threshold",
+          "heading": "",
+          "values": [
+            65
+          ]
+        },
+        {
+          "key": "ghostship_absorb",
+          "heading": "",
+          "values": [
+            18
+          ]
+        },
+        {
+          "key": "buff_duration",
+          "heading": "",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "movespeed_bonus",
+          "heading": "BONUS MOVESPEED:",
+          "values": [
+            7.75
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "COOLDOWN:",
+          "values": [
+            50.5
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Damage dealt after Rum wears off is non-lethal and can never kill a hero."
+      ],
+      "lore": "Deleterious to landlubbers, no one holds their rum like a sailor."
+    },
+    {
+      "key": "kunkka_tidal_wave",
+      "name": "Tidal Wave",
+      "description": "Releases a Tidal Wave that spawns behind Kunkka. Deals damage and drags enemies along it. Enemies cannot attack while being dragged.",
+      "max_level": 1,
+      "cooldowns": [
+        12
+      ],
+      "mana_costs": [
+        75
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1050
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "speed",
+          "heading": "SPEED:",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            750
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            180
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DRAG DURATION:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "wave_distance_tooltip",
+          "heading": "WAVE DISTANCE:",
+          "values": [
+            1800
+          ]
+        },
+        {
+          "key": "knockback_distance",
+          "heading": "KNOCKBACK DISTANCE:",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1050
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "A good sailor knows the timing of the tides like the back of his hand."
+    },
+    {
+      "key": "kunkka_ghostship",
+      "name": "Ghostship",
+      "description": "Summons a ghostly ship that sails through the battle before smashing apart, damaging and stunning all enemies caught near the wreckage.<br><br>Allied heroes touched by the Ghostship are given a %rum_factor%x strong swig of The Admiral's Rum.",
+      "max_level": 3,
+      "cooldowns": [
+        90,
+        80,
+        70
+      ],
+      "mana_costs": [
+        125,
+        175,
+        225
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1000
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        350,
+        475,
+        600
+      ],
+      "special_values": [
+        {
+          "key": "tooltip_delay",
+          "heading": "IMPACT DELAY:",
+          "values": [
+            3.1
+          ]
+        },
+        {
+          "key": "ghostship_distance",
+          "heading": "RANGE:",
+          "values": [
+            2000
+          ]
+        },
+        {
+          "key": "ghostship_width",
+          "heading": "WIDTH:",
+          "values": [
+            450
+          ]
+        },
+        {
+          "key": "stun_duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            1.2
+          ]
+        },
+        {
+          "key": "ghostship_speed",
+          "heading": "",
+          "values": [
+            650
+          ]
+        },
+        {
+          "key": "rum_factor",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "fleet_interval",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "fleet_count",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "fire_cannons",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "cannon_ball_damage_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "cannon_ball_distance",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "cannon_ball_speed",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "cannon_count",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "cannon_ball_radius",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "num_cannon_volleys",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "cannon_fire_interval",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "base_cannon_rotation",
+          "heading": "",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "rotation_per_cannon",
+          "heading": "",
+          "values": [
+            12
+          ]
+        },
+        {
+          "key": "initial_cannon_offset",
+          "heading": "",
+          "values": [
+            -150
+          ]
+        },
+        {
+          "key": "distance_between_cannons",
+          "heading": "",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "AbilityDamage",
+          "heading": "",
+          "values": [
+            350,
+            475,
+            600
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            125,
+            175,
+            225
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            90,
+            80,
+            70
+          ]
+        }
+      ],
+      "scepter_upgrade": "Ghostship creates a fleet of %fleet_count% ships at the target point on a %fleet_interval% second interval. Each ship now also fires %num_cannon_volleys% waves of cannonballs from the port and starboard side that deal %cannon_ball_damage_pct%%% of Ghostship's damage as they pass through enemies.",
+      "shard_upgrade": null,
+      "notes": [
+        "Actual area of effect of ship's collision is larger than the boat itself.",
+        "The boat has a movement speed of %ghostship_speed%."
+      ],
+      "lore": "The final ship of the Claddish Navy is nothing but a phantom, but it is all too real to the enemies of the Admiral."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_buff_duration}s Admiral's Rum Buff Duration"
+    },
+    {
+      "slot": null,
+      "name": "Tidebringer applies {s:bonus_movespeed_slow}% slow for {s:bonus_movespeed_slow_duration}s"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_stun_duration}% Torrent Damage/Knock Up Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_bonus} Tidebringer Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Torrent Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_cleave_damage}% Tidebringer Cleave Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Spell Area of Effect"
+    },
+    {
+      "slot": null,
+      "name": "Tidebringer Ignores {s:bonus_pierces_armor}% Armor"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

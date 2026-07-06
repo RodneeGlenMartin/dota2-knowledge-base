@@ -1,0 +1,50 @@
+{
+  "id": 1597,
+  "name": "Titanic",
+  "slug": "titanic",
+  "internal_key": "item_enhancement_titanic",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "base_attack_damage",
+      "heading": "+Base Attack Damage",
+      "values": [
+        8,
+        12,
+        16
+      ]
+    },
+    {
+      "key": "status_resistance",
+      "heading": "+$status_resist",
+      "values": [
+        10,
+        12,
+        14
+      ]
+    },
+    {
+      "key": "attack_speed",
+      "heading": "-<font color='#e03e2e'>Attack Speed</font>",
+      "values": [
+        -9
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

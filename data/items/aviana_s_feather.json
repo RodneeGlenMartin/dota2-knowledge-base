@@ -1,0 +1,46 @@
+{
+  "id": 1160,
+  "name": "Aviana's Feather",
+  "slug": "aviana_s_feather",
+  "internal_key": "item_avianas_feather",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Free Bird</h1> When equipped hero is below %flight_threshold%%% HP, they gain flying movement.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "evasion",
+      "heading": "+$evasion",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "move_speed",
+      "heading": "+$move_speed",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "flight_threshold",
+      "heading": "",
+      "values": [
+        30
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

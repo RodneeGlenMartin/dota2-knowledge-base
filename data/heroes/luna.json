@@ -1,0 +1,596 @@
+{
+  "id": 48,
+  "name": "Luna",
+  "slug": "luna",
+  "npc_name": "npc_dota_hero_luna",
+  "primary_attribute": "agi",
+  "attack_type": "Ranged",
+  "complexity": 1,
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Pusher"
+  ],
+  "stats": {
+    "base_str": 21,
+    "str_gain": 2.2,
+    "base_agi": 24,
+    "agi_gain": 3.4,
+    "base_int": 23,
+    "int_gain": 1.9,
+    "damage_min": 50,
+    "damage_max": 56,
+    "attack_rate": 1.7,
+    "attack_range": 330,
+    "projectile_speed": 900,
+    "armor": 6,
+    "magic_resistance": 25,
+    "movement_speed": 325,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 582,
+    "health_regen": 2.6000001,
+    "max_mana": 351,
+    "mana_regen": 1.15
+  },
+  "lore": "How had she been reduced to this?  She was once the Scourge of the Plains, a merciless leader of men and beasts, and able to sow terror wherever she dared.  Now she was far from her homeland, driven half mad from starvation and months of wandering, her army long dead or worse.  As she stood at the edge of an ancient forest, a pair of glowing eyes spied on from an elder branch.  Something beautiful and deadly sought a meal in the wilting dusk.  Without a sound, it turned and left.  Fury overtook her.  Clutching a rust-eaten dagger, she charged after the beast determined to reclaim even a shred of her past glory, but her quarry would not be caught.  Three times she cornered the creature among the rocks and trees, and three times she pounced only to witness its fading shadow darting further into the woods.  Yet the full moon shone brightly, and the creature's trail was easy to follow.\r\n\t\t\t\t<br><br>Arriving in a clearing atop a high hill, the beast's massive feline form sat in the open, attentive and waiting.  When the woman brandished her dagger, the creature reared and roared and charged.  Death, it seemed, had come for her at long last in this strange place.  She stood, calm and ready.  A flash of movement, and the beast snatched the dagger from her hand before vanishing into the forest.  Stillness.  Hooded figures approached. In reverent tones they revealed that Selemene, Goddess of the Moon, had chosen her, had guided her, had tested her. Unwittingly she had endured the sacred rites of the Dark Moon, warriors of the Nightsilver Woods.\r\n\t\t\t\t<br><br>She was offered a choice: join the Dark Moon and pledge herself to the service of Selemene, or leave and never return. She did not hesitate. Embracing her absolution, she renounced her bloody past, and took up a new mantle as Luna of the Dark Moon, the dreaded Moon Rider, ruthless and ever-loyal guardian of the Nightsilver Woods.",
+  "hype": "<b>Riding swiftly</b> into battle, Luna tears into her enemies with attacks able to <b>bounce between targets</b>. When foes threaten, she calls down <b>the power of the moon</b> as a single searing beam or as a <b>lunar barrage</b>, crushing those who stand against her.",
+  "abilities": [
+    {
+      "key": "luna_lucent_beam",
+      "name": "Lucent Beam",
+      "description": "Calls a beam of lunar energy down upon an enemy, damaging and briefly stunning them.",
+      "max_level": 4,
+      "cooldowns": [
+        9,
+        8,
+        7,
+        6
+      ],
+      "mana_costs": [
+        90,
+        100,
+        110,
+        120
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        800
+      ],
+      "cast_points": [
+        0.4
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "beam_damage",
+          "heading": "BEAM DAMAGE:",
+          "values": [
+            75,
+            150,
+            225,
+            300
+          ]
+        },
+        {
+          "key": "glaives_fired",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "glaives_attack_radius",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "stun_duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            0.6
+          ]
+        },
+        {
+          "key": "damage_buff_duration",
+          "heading": "DAMAGE BUFF DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "damage_buff_per_beam",
+          "heading": "DAMAGE BUFF PER BEAM:",
+          "values": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "key": "lucent_beam_bounce_range",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "damage_buff_from_eclipse_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            90,
+            100,
+            110,
+            120
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            9,
+            8,
+            7,
+            6
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Grants Luna an attack damage bonus buff every time an enemy hero is hit by Lucent Beam. Lucent Beams created by Eclipse grant %damage_buff_from_eclipse_pct%%% of the damage amount.",
+      "notes": null,
+      "lore": "Selemene smites those who encroach upon the Nightsilver Woods."
+    },
+    {
+      "key": "luna_lunar_orbit",
+      "name": "Lunar Orbit",
+      "description": "Creates %rotating_glaives% glaives that rotate %rotating_glaives_movement_radius% radius around Luna. Any enemy unit that collides with a glaive will take a percentage of Luna's Attack Damage.",
+      "max_level": 4,
+      "cooldowns": [
+        40,
+        35,
+        30,
+        25
+      ],
+      "mana_costs": [
+        65,
+        70,
+        75,
+        80
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "rotating_glaives_duration",
+          "heading": "DURATION:",
+          "values": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "key": "rotating_glaives",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "rotating_glaives_movement_radius",
+          "heading": "",
+          "values": [
+            225
+          ]
+        },
+        {
+          "key": "rotating_glaives_movement_radius_expand_speed_scale",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "rotating_glaives_hit_radius",
+          "heading": "COLLISION RADIUS:",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "rotating_glaives_collision_damage",
+          "heading": "COLLISION DAMAGE:",
+          "values": [
+            28,
+            32,
+            36,
+            40
+          ]
+        },
+        {
+          "key": "rotating_glaives_speed",
+          "heading": "",
+          "values": [
+            160
+          ]
+        },
+        {
+          "key": "rotating_glaive_collision_speed_damage_tooltip",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "rotating_glaives_damage_reduction",
+          "heading": "DAMAGE REDUCTION:",
+          "values": [
+            8,
+            12,
+            16,
+            20
+          ]
+        },
+        {
+          "key": "bonus_movement_speed",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            65,
+            70,
+            75,
+            80
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            40,
+            35,
+            30,
+            25
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Increases damage reduction. While active, Luna gains %bonus_movement_speed%%% bonus movement speed.",
+      "notes": null,
+      "lore": "None may approach Selemene's chosen without favor from the goddess herself."
+    },
+    {
+      "key": "luna_moon_glaive",
+      "name": "Moon Glaives",
+      "description": "Empowers Luna's glaives, causing her attacks to bounce between enemy units. Deals less damage with each bounce.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "range",
+          "heading": "BOUNCE RADIUS:",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "bounces",
+          "heading": "BOUNCES:",
+          "values": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "key": "damage_reduction_percent",
+          "heading": "DAMAGE REDUCTION PER BOUNCE:",
+          "values": [
+            50,
+            45,
+            40,
+            35
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Moon Glaives do not proc any attack modifier except Critical Strikes."
+      ],
+      "lore": "Carefully sharpened, Luna's boomerang-like weapon cuts a wide swath through enemy numbers."
+    },
+    {
+      "key": "luna_lunar_blessing",
+      "name": "Lunar Blessing",
+      "description": "Grants attack damage to Luna and nearby allied heroes within %radius% range, with Luna receiving double the attack damage bonuses. At night, Lunar Blessing is global, and Luna is blessed with bonus night vision.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "bonus_damage",
+          "heading": "BONUS DAMAGE (ALLIES):",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "self_bonus_damage",
+          "heading": "BONUS DAMAGE (SELF):",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "bonus_night_vision",
+          "heading": "BONUS NIGHT VISION:",
+          "values": [
+            225
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "The Goddess of the Moon smiles upon her kin."
+    },
+    {
+      "key": "luna_eclipse",
+      "name": "Eclipse",
+      "description": "Showers random nearby enemies with strikes from Luna's current level of Lucent Beam. These beams do not stun their targets, and there is a maximum number of times that a single target can be struck. Also turns day into night for a short time.",
+      "max_level": 3,
+      "cooldowns": [
+        105
+      ],
+      "mana_costs": [
+        150,
+        200,
+        250
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.5
+      ],
+      "durations": [
+        2.4,
+        4.2,
+        6
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "beams",
+          "heading": "TOTAL BEAMS:",
+          "values": [
+            6,
+            9,
+            12
+          ]
+        },
+        {
+          "key": "beam_interval",
+          "heading": "",
+          "values": [
+            0.6
+          ]
+        },
+        {
+          "key": "beam_interval_scepter",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            675
+          ]
+        },
+        {
+          "key": "hit_count",
+          "heading": "MAX BEAMS PER UNIT:",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "night_duration",
+          "heading": "NIGHT DURATION:",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "ECLIPSE DURATION:",
+          "values": [
+            2.4,
+            4.2,
+            6
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            150,
+            200,
+            250
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            105
+          ]
+        }
+      ],
+      "scepter_upgrade": "Allows Luna to cast Eclipse on an allied unit or herself and have its effects follow them, or cast it on an area. Increases total beams, reduces duration, removes the limit on beams per unit, and makes the beams appear twice as fast.",
+      "shard_upgrade": null,
+      "notes": [
+        "Eclipse doesn't work if Luna doesn't have any points in Lucent Beam.",
+        "Beams will stop if Luna is killed.",
+        "Will not hit invisible units.",
+        "There is a %beam_interval% seconds gap between beams, %beam_interval_scepter% seconds with scepter."
+      ],
+      "lore": "In times of great need, Selemene herself descends into the world, blocking out the light and hope of the opposed."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "-{s:bonus_damage_reduction_percent}% Moon Glaives Damage Reduction"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_stun_duration}s Lucent Beam Ministun"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_rotating_glaives} Lunar Orbit Glaive"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_beam_damage} Lucent Beam Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Eclipse Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_rotating_glaive_collision_speed_damage_tooltip}x Lunar Orbit Damage / Speed"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_damage}/{s:bonus_self_bonus_damage} Lunar Blessing Allied/Self Damage"
+    },
+    {
+      "slot": null,
+      "name": "Lucent Beam Hits An Additional Target"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

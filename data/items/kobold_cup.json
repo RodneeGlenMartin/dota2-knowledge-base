@@ -1,0 +1,60 @@
+{
+  "id": 1637,
+  "name": "Kobold Cup",
+  "slug": "kobold_cup",
+  "internal_key": "item_kobold_cup",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: One for the Road</h1>Increases movement speed of all allied units by %movespeed_pct%%% in a %buff_radius% unit radius around the caster for %buff_duration% seconds.",
+  "notes": null,
+  "cooldowns": [
+    40
+  ],
+  "mana_costs": [
+    40
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "movespeed_pct",
+      "heading": "",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "buff_radius",
+      "heading": "",
+      "values": [
+        1000
+      ]
+    },
+    {
+      "key": "buff_duration",
+      "heading": "",
+      "values": [
+        6
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        40
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        40
+      ]
+    }
+  ],
+  "lore": "The Kobold King will sip when he damn well pleases.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

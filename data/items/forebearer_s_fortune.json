@@ -1,0 +1,60 @@
+{
+  "id": 4302,
+  "name": "Forebearer's Fortune",
+  "slug": "forebearer_s_fortune",
+  "internal_key": "item_ofrenda_pledge",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Undying Promise</h1>Signal to the spirits of the other realm your commitment to honoring them. If everyone in the battle makes an Undying Promise before the fight begins, the dead might be willing to listen.",
+  "notes": null,
+  "cooldowns": [
+    0.5
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    1200
+  ],
+  "special_values": [
+    {
+      "key": "radius",
+      "heading": "",
+      "values": [
+        600
+      ]
+    },
+    {
+      "key": "speed",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    },
+    {
+      "key": "linger_duration",
+      "heading": "",
+      "values": [
+        5
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        0.5
+      ]
+    }
+  ],
+  "lore": "This item seems unstable. Like it might just disappear.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

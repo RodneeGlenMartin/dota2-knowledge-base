@@ -1,0 +1,761 @@
+{
+  "id": 29,
+  "name": "Tidehunter",
+  "slug": "tidehunter",
+  "npc_name": "npc_dota_hero_tidehunter",
+  "primary_attribute": "str",
+  "attack_type": "Melee",
+  "complexity": 1,
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Disabler",
+    "Durable",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 25,
+    "str_gain": 3.7,
+    "base_agi": 15,
+    "agi_gain": 1.5,
+    "base_int": 20,
+    "int_gain": 1.7,
+    "damage_min": 50,
+    "damage_max": 56,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 2.5,
+    "magic_resistance": 25,
+    "movement_speed": 300,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 670,
+    "health_regen": 2.75,
+    "max_mana": 315,
+    "mana_regen": 1
+  },
+  "lore": "The Tidehunter known as Leviathan was once the champion of the Sunken Isles, but his motives are as mysterious as those of his people. We all know the importance of the Drylanders' shipping lanes, how empires may rise and fall according to who controls the open water. Far less is known of the submarine lanes, and how the warring tribes of the Meranthic Diaspora have carved out habitations through endless undersea skirmishes. In the fragile treaties between the Mer and Men, we can glimpse the extent of the drowned empires, but their politics appear complex and opaque. It would seem that Leviathan tired of such petty strife, and set off on his own, loyal only to his abyssal god, Maelrawn the Tentacular. He stalks the shallows now in search of men or meranths who stray into his path, and with a particular loathing for Admiral Kunkka, who has long been his nemesis for reasons lost in the deepest trenches of the sea.",
+  "hype": "Stalking ahead of his team, Tidehunter is always on the lookout for the <b>right time to strike</b>. When the moment comes, he unleashes his massive and devastating ultimate, paving the way for his allies to slay their <b>stunned enemies.</b>",
+  "abilities": [
+    {
+      "key": "tidehunter_gush",
+      "name": "Gush",
+      "description": "Summons a gush of water to damage an enemy unit, reducing their movement speed and armor.",
+      "max_level": 4,
+      "cooldowns": [
+        12
+      ],
+      "mana_costs": [
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        700
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        4.5
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "gush_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            100,
+            160,
+            220,
+            280
+          ]
+        },
+        {
+          "key": "projectile_speed",
+          "heading": "",
+          "values": [
+            2500
+          ]
+        },
+        {
+          "key": "movement_speed",
+          "heading": "SLOW:",
+          "values": [
+            -40
+          ]
+        },
+        {
+          "key": "negative_armor",
+          "heading": "ARMOR REDUCTION:",
+          "values": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "key": "speed_scepter",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "aoe_scepter",
+          "heading": "RADIUS:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "cooldown_scepter",
+          "heading": "COOLDOWN:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "cast_range_scepter",
+          "heading": "RANGE:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "DEBUFF DURATION:",
+          "values": [
+            4.5
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": "Gush becomes a ground targeted wave ability that affects enemy units in a line.  Decreases cooldown.",
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "During his championship of the Sunken Isles, Leviathan gained mastery over the open sea."
+    },
+    {
+      "key": "tidehunter_kraken_shell",
+      "name": "Kraken Shell",
+      "description": "Thickens Tidehunter's hide to passively block a portion of any incoming physical attack damage. Reduced block amount versus creeps. The hide also removes negative status effects if the damage taken crosses a threshold.\n\nCan be activated to double the block amount at the cost of %active_move_speed_penalty_pct%%% movement speed. Lasts %active_duration%s.\n\nDISPEL TYPE: Strong Dispel",
+      "max_level": 4,
+      "cooldowns": [
+        30
+      ],
+      "mana_costs": [
+        45
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage_reduction",
+          "heading": "DAMAGE BLOCK:",
+          "values": [
+            15,
+            35,
+            55,
+            75
+          ]
+        },
+        {
+          "key": "bonus_reduction_per_kill",
+          "heading": "DAMAGE BLOCK PER KILL:",
+          "values": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "key": "creep_reduction_penalty_pct",
+          "heading": "CREEP PENALTY:",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "active_pct_effectiveness",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "active_move_speed_penalty_pct",
+          "heading": "",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "active_duration",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "damage_cleanse",
+          "heading": "DAMAGE CLEANSE THRESHOLD:",
+          "values": [
+            600,
+            550,
+            500,
+            450
+          ]
+        },
+        {
+          "key": "damage_reset_interval",
+          "heading": "DAMAGE RESET INTERVAL:",
+          "values": [
+            7
+          ]
+        },
+        {
+          "key": "smash_on_purge",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            45
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            30
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Claddish navymen tell tales of a mighty sea-faring beast that suffered spear and sword but continued to lay waste to the fleet."
+    },
+    {
+      "key": "tidehunter_anchor_smash",
+      "name": "Anchor Smash",
+      "description": "Tidehunter swings his mighty anchor to attack and deal bonus damage to nearby enemies and reduce their attack damage. The radius of Anchor Smash is Tidehunter's attack range plus %additional_range% units.",
+      "max_level": 4,
+      "cooldowns": [
+        7,
+        6,
+        5,
+        4
+      ],
+      "mana_costs": [
+        40,
+        45,
+        50,
+        55
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.4
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "attack_damage",
+          "heading": "ATTACK BONUS DAMAGE:",
+          "values": [
+            50,
+            100,
+            150,
+            200
+          ]
+        },
+        {
+          "key": "damage_reduction",
+          "heading": "DAMAGE REDUCTION:",
+          "values": [
+            -25,
+            -30,
+            -35,
+            -40
+          ]
+        },
+        {
+          "key": "reduction_duration",
+          "heading": "DURATION:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "targets_buildings",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "building_pct_damage",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "smash_on_attack",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "additional_range",
+          "heading": "",
+          "values": [
+            225
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            40,
+            45,
+            50,
+            55
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            7,
+            6,
+            5,
+            4
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Anchor Smash works on all Ancient creeps except for Roshan.",
+        "Damage done by Anchor Smashes triggered by Kraken Shell Cleanse is considered reflected damage. Reflected damage does not provide any lifesteal and cannot be reflected."
+      ],
+      "lore": "Stolen from one of Admiral Kunkka's flagships, Leviathan's heavy anchor proves useful as a melee weapon."
+    },
+    {
+      "key": "tidehunter_dead_in_the_water",
+      "name": "Dead in the Water",
+      "description": "Tidehunter attaches a heavy anchor to an enemy hero. The hero is leashed while attached to the anchor. Attempting to move more than %chain_length% units away from the anchor forces the hero to %max_movement_speed% move speed, dragging the anchor behind them. The anchor can be destroyed with %attacks_to_destroy% hero attacks.",
+      "max_level": 1,
+      "cooldowns": [
+        35
+      ],
+      "mana_costs": [
+        110
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        350
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0
+      ],
+      "special_values": [
+        {
+          "key": "attacks_to_destroy",
+          "heading": "ATTACKS TO DESTROY:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "max_movement_speed",
+          "heading": "ANCHOR DRAG SPEED:",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "chain_length",
+          "heading": "CHAIN LENGTH:",
+          "values": [
+            350
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "ANCHOR DURATION:",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "projectile_speed",
+          "heading": "",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            350
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            110
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            35
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Anchors Aweigh!"
+    },
+    {
+      "key": "tidehunter_ravage",
+      "name": "Ravage",
+      "description": "Slams the ground, causing tentacles to erupt in all directions, damaging and stunning all nearby enemy units.",
+      "max_level": 3,
+      "cooldowns": [
+        150,
+        145,
+        140
+      ],
+      "mana_costs": [
+        125,
+        225,
+        325
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        275,
+        375,
+        475
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            1250
+          ]
+        },
+        {
+          "key": "speed",
+          "heading": "",
+          "values": [
+            725
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            2,
+            2.2,
+            2.4
+          ]
+        },
+        {
+          "key": "AbilityDamage",
+          "heading": "",
+          "values": [
+            275,
+            375,
+            475
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            125,
+            225,
+            325
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            150,
+            145,
+            140
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Ravage will hit invisible units.",
+        "Ravage waves move outwards at a speed of %speed%."
+      ],
+      "lore": "Calling to the abyssal god Maelrawn has resulted in entire armadas being lost at sea."
+    },
+    {
+      "key": "tidehunter_leviathans_catch",
+      "name": "Leviathan's Catch",
+      "description": "Whenever an enemy hero is killed by Tidehunter or dies under his debuffs, a fish appears in their place; Tidehunter can eat the fish to permanently gain %fish_health_bonus% Health, %fish_attack_range% Attack Range, and %fish_damage_block% Bonus Damage Block.<br><br>Tidehunter eats a free fish every time he reaches an even hero level.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "fish_duration",
+          "heading": "",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "fish_attack_range",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "fish_damage_block",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "fish_health_bonus",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "fish_model_scale",
+          "heading": "",
+          "values": [
+            1.1
+          ]
+        },
+        {
+          "key": "max_fish_spawn_distance",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "health_bar_offset_base",
+          "heading": "",
+          "values": [
+            160
+          ]
+        },
+        {
+          "key": "health_bar_offset_per_level",
+          "heading": "",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "permanent_health_gain",
+          "heading": "HEALTH GAINED:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "permanent_attack_range_gain",
+          "heading": "ATTACK RANGE GAINED:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "permanent_damage_block_gain",
+          "heading": "BONUS DAMAGE BLOCK GAINED:",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Enemies can destroy the fish.",
+        "Bonus Damage Block only applies if another source of Damage Block will be affecting the incoming physical attack."
+      ],
+      "lore": null
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_reduction}% Anchor Smash Damage Reduction"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_movement_speed}% Gush Slow"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_gush_damage} Gush Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Ravage Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "Kraken Shell Cleanse triggers Anchor Smash"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_negative_armor} Gush Armor"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_duration}s Ravage Stun Duration"
+    },
+    {
+      "slot": null,
+      "name": "Anchor Smash affects buildings"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

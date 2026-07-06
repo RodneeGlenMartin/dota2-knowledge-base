@@ -1,0 +1,81 @@
+{
+  "id": 1128,
+  "name": "Pavise",
+  "slug": "pavise",
+  "internal_key": "item_pavise",
+  "cost": 1350,
+  "neutral_tier": null,
+  "description": "<h1>Active: Protect</h1> When cast on an ally, grants them a physical damage barrier that absorbs %absorb_amount% damage. Duration: %duration%s.",
+  "notes": null,
+  "cooldowns": [
+    16
+  ],
+  "mana_costs": [
+    60
+  ],
+  "cast_ranges": [
+    1000
+  ],
+  "special_values": [
+    {
+      "key": "bonus_armor",
+      "heading": "+$armor",
+      "values": [
+        3
+      ]
+    },
+    {
+      "key": "bonus_mana",
+      "heading": "+$mana",
+      "values": [
+        175
+      ]
+    },
+    {
+      "key": "bonus_health",
+      "heading": "+$health",
+      "values": [
+        175
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        7
+      ]
+    },
+    {
+      "key": "absorb_amount",
+      "heading": "",
+      "values": [
+        250
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        1000
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        60
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        16
+      ]
+    }
+  ],
+  "lore": "Devised by a wizard who made one too many enemies.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

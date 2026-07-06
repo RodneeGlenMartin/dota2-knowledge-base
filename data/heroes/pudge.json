@@ -1,0 +1,583 @@
+{
+  "id": 14,
+  "name": "Pudge",
+  "slug": "pudge",
+  "npc_name": "npc_dota_hero_pudge",
+  "primary_attribute": "str",
+  "attack_type": "Melee",
+  "complexity": 2,
+  "roles": [
+    "Nuker",
+    "Disabler",
+    "Durable",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 25,
+    "str_gain": 3,
+    "base_agi": 13,
+    "agi_gain": 1.4,
+    "base_int": 16,
+    "int_gain": 1.8,
+    "damage_min": 70,
+    "damage_max": 76,
+    "attack_rate": 1.7,
+    "attack_range": 175,
+    "projectile_speed": 0,
+    "armor": 2.1666667,
+    "magic_resistance": 25,
+    "movement_speed": 280,
+    "turn_rate": 0.7,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 670,
+    "health_regen": 5,
+    "max_mana": 267,
+    "mana_regen": 0.8
+  },
+  "lore": "In the Fields of Endless Carnage, far to the south of Quoidge, a corpulent figure works tirelessly through the night--dismembering, disembowelling, piling up the limbs and viscera of the fallen that the battlefield might be clear by dawn. In this cursed realm, nothing can decay or decompose; no corpse may ever return to the earth from which it sprang, no matter how deep you dig the grave. Flocked by carrion birds who need him to cut their meals into beak-sized chunks, Pudge the Butcher hones his skills with blades that grow sharper the longer he uses them. Swish, swish, thunk. Flesh falls from the bone; tendons and ligaments part like wet paper. And while he always had a taste for the butchery, over the ages, Pudge has developed a taste for its byproduct as well. Starting with a gobbet of muscle here, a sip of blood there...before long he was thrusting his jaws deep into the toughest of torsos, like a dog gnawing at rags. Even those who are beyond fearing the Reaper, fear the Butcher.",
+  "hype": "Each carefully aimed throw of Pudge's <b>signature hook</b> strikes fear into his foes. <b>Pulling</b> his enemies near to carve them with his cleavers, he gains <b>additional health and damage</b> with every kill, and soon becomes an unstoppable killer.",
+  "abilities": [
+    {
+      "key": "pudge_meat_hook",
+      "name": "Meat Hook",
+      "description": "Launches a bloody hook toward a unit or location. The hook will snag the first unit it encounters, dragging the unit back to Pudge, killing it if it's a non-ancient creep and dealing damage if it is an enemy otherwise.",
+      "max_level": 4,
+      "cooldowns": [
+        18,
+        16,
+        14,
+        12
+      ],
+      "mana_costs": [
+        120
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1300
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            150,
+            220,
+            290,
+            360
+          ]
+        },
+        {
+          "key": "hook_speed",
+          "heading": "",
+          "values": [
+            1600
+          ]
+        },
+        {
+          "key": "hook_width",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "vision_radius",
+          "heading": "",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "vision_duration",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "distance_to_damage",
+          "heading": "DISTANCE AS DAMAGE:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "min_distance_damage",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "cooldown_reduction_pct_allied_hook",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "self_stun_duration_percent",
+          "heading": "",
+          "values": [
+            65
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "CAST RANGE:",
+          "values": [
+            1300
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            120
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            18,
+            16,
+            14,
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "When Meat Hook hits an enemy, it deals bonus damage based on the distance pulled.<br><br>When Meat Hook hits an ally, Meat Hook's cooldown is reduced by %cooldown_reduction_pct_allied_hook%%%.",
+      "notes": [
+        "Interrupts channeling spells of the primary target if it's an enemy.",
+        "Meat Hook hits invisible units.",
+        "Meat Hook can go through trees, cliffs, buildings, ancient units and Roshan.",
+        "Meat Hook can drag friendly units, but they won't be damaged.",
+        "Meat Hook can hit and drag runes to Pudge, refunding the Hook's mana cost."
+      ],
+      "lore": "The Butcher's hook is a symbolic nightmare, its curved blade a frightening reminder of his slaughterous intent."
+    },
+    {
+      "key": "pudge_rot",
+      "name": "Rot",
+      "description": "A toxic cloud that deals intense damage and slows movement--harming not only enemy units but Pudge himself.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "rot_radius",
+          "heading": "RADIUS:",
+          "values": [
+            250
+          ]
+        },
+        {
+          "key": "rot_tick",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "rot_slow",
+          "heading": "MOVE SLOW:",
+          "values": [
+            -14,
+            -20,
+            -26,
+            -32
+          ]
+        },
+        {
+          "key": "rot_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            30,
+            60,
+            90,
+            120
+          ]
+        },
+        {
+          "key": "scepter_rot_regen_reduction_pct",
+          "heading": "HEALTH RESTORATION LOSS:",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": "Increases Rot radius by %bonus_rot_radius%, damage by %bonus_rot_damage%, and causes it to reduce enemy Health Restoration by %scepter_rot_regen_reduction_pct%%%.",
+      "shard_upgrade": null,
+      "notes": [
+        "Using Rot doesn't interrupt channeling.",
+        "Rot hits invisible units.",
+        "If Pudge is silenced, he can't deactivate Rot if it's activated.",
+        "Rot self-damage is non-lethal."
+      ],
+      "lore": "A foul odor precedes a toxic, choking gas, emanating from the Butcher's putrid, ever-swelling mass."
+    },
+    {
+      "key": "pudge_flesh_heap",
+      "name": "Meat Shield",
+      "description": "Pudge covers himself with a layer of flesh that blocks damage of any type taken from any source.",
+      "max_level": 4,
+      "cooldowns": [
+        20,
+        19,
+        18,
+        17
+      ],
+      "mana_costs": [
+        65,
+        70,
+        75,
+        80
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage_block",
+          "heading": "DAMAGE BLOCK:",
+          "values": [
+            8,
+            14,
+            20,
+            26
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            65,
+            70,
+            75,
+            80
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            20,
+            19,
+            18,
+            17
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "The Butcher gives new meaning to the words 'meat shield.'"
+    },
+    {
+      "key": "pudge_innate_graft_flesh",
+      "name": "Flesh Heap",
+      "description": "Pudge's skin thickens permanently every time he kills an enemy Hero, gaining %flesh_heap_strength_buff_amount% bonus Strength for each stack.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "flesh_heap_strength_buff_amount",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "flesh_heap_range",
+          "heading": "",
+          "values": [
+            450
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Enemy Heroes that die within %flesh_heap_range% of Pudge grant a stack regardless of its killer."
+      ],
+      "lore": null
+    },
+    {
+      "key": "pudge_dismember",
+      "name": "Dismember",
+      "description": "CHANNELED - Pudge chows down on an enemy unit, disabling it and dealing damage over time. Damage is increased by Pudge's Strength and heals him for the total amount. Pudge pulls the unit at a rate of %pull_units_per_second% units, up to a minimum of %pull_distance_limit% range.",
+      "max_level": 3,
+      "cooldowns": [
+        30,
+        25,
+        20
+      ],
+      "mana_costs": [
+        100,
+        130,
+        170
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        200
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "dismember_damage",
+          "heading": "DAMAGE PER SECOND:",
+          "values": [
+            80,
+            100,
+            120
+          ]
+        },
+        {
+          "key": "strength_damage",
+          "heading": "STRENGTH MULTIPLIER:",
+          "values": [
+            0.3,
+            0.6,
+            0.9
+          ]
+        },
+        {
+          "key": "ticks",
+          "heading": "",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "pull_units_per_second",
+          "heading": "",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "pull_distance_limit",
+          "heading": "",
+          "values": [
+            125
+          ]
+        },
+        {
+          "key": "animation_rate",
+          "heading": "",
+          "values": [
+            1.5
+          ]
+        },
+        {
+          "key": "shard_regen_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "order_lock_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_cast_range",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "AbilityChannelTime",
+          "heading": "DURATION:",
+          "values": [
+            2.75
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            130,
+            170
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "COOLDOWN:",
+          "values": [
+            30,
+            25,
+            20
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "If a unit becomes invisible while Dismembered, it will still be under the effects of Dismember."
+      ],
+      "lore": "'When I'm through with these vermin, they'll be fit for a pie!'"
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:value} Armor"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_rot_slow}% Rot Slow"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value}% Spell Lifesteal"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Meat Hook Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_AbilityChannelTime}s Dismember Duration"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Meat Hook Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_dismember_damage}x Dismember Damage/Heal"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_flesh_heap_strength_buff_amount}x Flesh Heap and Meat Shield bonuses"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

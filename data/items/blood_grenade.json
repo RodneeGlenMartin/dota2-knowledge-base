@@ -1,0 +1,109 @@
+{
+  "id": 1123,
+  "name": "Blood Grenade",
+  "slug": "blood_grenade",
+  "internal_key": "item_blood_grenade",
+  "cost": 50,
+  "neutral_tier": null,
+  "description": "<h1>Use: Throw Grenade</h1> Throw a grenade at the target area. Enemies in the area will take %impact_damage% damage on impact, and be slowed by %movespeed_slow%%% and take %damage_over_time% damage every %tick_rate%s for %debuff_duration% seconds. Radius %radius%. ",
+  "notes": null,
+  "cooldowns": [
+    10
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    900
+  ],
+  "special_values": [
+    {
+      "key": "speed",
+      "heading": "",
+      "values": [
+        1100
+      ]
+    },
+    {
+      "key": "radius",
+      "heading": "",
+      "values": [
+        300
+      ]
+    },
+    {
+      "key": "movespeed_slow",
+      "heading": "",
+      "values": [
+        -15
+      ]
+    },
+    {
+      "key": "bonus_health",
+      "heading": "+$health",
+      "values": [
+        50
+      ]
+    },
+    {
+      "key": "damage_over_time",
+      "heading": "",
+      "values": [
+        15
+      ]
+    },
+    {
+      "key": "impact_damage",
+      "heading": "",
+      "values": [
+        50
+      ]
+    },
+    {
+      "key": "tick_rate",
+      "heading": "",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "debuff_duration",
+      "heading": "",
+      "values": [
+        5
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        900
+      ]
+    },
+    {
+      "key": "AbilityCastPoint",
+      "heading": "",
+      "values": [
+        0.2
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "AbilityHealthCost",
+      "heading": "",
+      "values": [
+        75
+      ]
+    }
+  ],
+  "lore": "Both the hunter and the hunted must pay the blood price.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": 143,
+  "name": "Skull Basher",
+  "slug": "skull_basher",
+  "internal_key": "item_basher",
+  "cost": 2875,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Bash</h1> Grants melee heroes a %bash_chance_melee%%% chance on hit to stun the target for %bash_duration% seconds and deal %bonus_chance_damage% bonus physical damage.  Bash chance for ranged heroes is %bash_chance_ranged%%%.",
+  "notes": [
+    "Does not stack with other sources of Bash.",
+    "The following heroes cannot trigger Bash on this item: Spirit Breaker, Faceless Void, Slardar, and Kez while in Sai mode.",
+    "Does not grant Bash to Clones and Tempest Doubles."
+  ],
+  "cooldowns": [
+    2.3
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_damage",
+      "heading": "+$damage",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "bonus_strength",
+      "heading": "+$str",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "bash_chance_melee",
+      "heading": "",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "bash_chance_ranged",
+      "heading": "",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "bash_duration",
+      "heading": "",
+      "values": [
+        1.2
+      ]
+    },
+    {
+      "key": "bash_cooldown",
+      "heading": "",
+      "values": [
+        2.3
+      ]
+    },
+    {
+      "key": "bonus_chance_damage",
+      "heading": "",
+      "values": [
+        100
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        2.3
+      ]
+    }
+  ],
+  "lore": "A feared weapon in the right hands, this maul's ability to shatter the defenses of its opponents should not be underestimated.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

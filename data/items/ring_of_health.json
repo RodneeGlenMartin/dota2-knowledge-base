@@ -1,0 +1,32 @@
+{
+  "id": 56,
+  "name": "Ring of Health",
+  "slug": "ring_of_health",
+  "internal_key": "item_ring_of_health",
+  "cost": 700,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_health_regen",
+      "heading": "+$hp_regen",
+      "values": [
+        4.5
+      ]
+    }
+  ],
+  "lore": "A shiny ring found beneath a fat halfling's corpse.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

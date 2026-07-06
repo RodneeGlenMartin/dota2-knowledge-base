@@ -1,0 +1,39 @@
+{
+  "id": 1440,
+  "name": "Black Grimoire\n(Warlock)",
+  "slug": "black_grimoire_warlock",
+  "internal_key": "item_black_grimoire",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Use: Profane Knowledge</h1>Hero kills and assists empower the Black Grimoire, granting it charges. Right-click to consume and grant %xp_per_charge% experience per charge. Starts on cooldown. <br><font color='#e03e2e'>This item cannot be dropped.</font>",
+  "notes": null,
+  "cooldowns": [
+    420
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "xp_per_charge",
+      "heading": "",
+      "values": [
+        200
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        420
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

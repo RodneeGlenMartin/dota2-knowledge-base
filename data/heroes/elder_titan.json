@@ -1,0 +1,665 @@
+{
+  "id": 103,
+  "name": "Elder Titan",
+  "slug": "elder_titan",
+  "npc_name": "npc_dota_hero_elder_titan",
+  "primary_attribute": "str",
+  "attack_type": "Melee",
+  "complexity": 2,
+  "roles": [
+    "Nuker",
+    "Disabler",
+    "Durable",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 26,
+    "str_gain": 3,
+    "base_agi": 16,
+    "agi_gain": 1.8,
+    "base_int": 23,
+    "int_gain": 1.6,
+    "damage_min": 49,
+    "damage_max": 59,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 2.6666667,
+    "magic_resistance": 25,
+    "movement_speed": 305,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 692,
+    "health_regen": 3.3500001,
+    "max_mana": 351,
+    "mana_regen": 1.4
+  },
+  "lore": "Well may you ask, \"How did this world take its form?\" Why of all the worlds in creation, has this one its strange properties, its diverse and motley collection of creatures, cultures and lore? \"The answer,\" One whispers, \"lies with the Titans.\"\r\n\t\t\t\t<br><br>These original progenitors were there near the Beginning--if not actual witnesses to the creation, then born with it still echoing in their ears. Stamped with the earliest energies of the universe, they wished nothing more than to continue as creators themselves. Thus they bent to the task of shaping matter to their will: hammering and heating, bending and blasting. And when matter proved less challenging than they liked, they turned their tools upon themselves, reshaping their minds and reforging their spirits until they had become beings of great endurance. Reality itself became the ultimate object of their smithing. Yet, along the way, they sometimes erred. In cases of great ambition, mistakes are unavoidable.\r\n\t\t\t\t<br><br>The one we know as the Elder Titan was a great innovator, one who studied at the forge of creation. In honing his skills, he shattered something that could never be repaired, only thrown aside. He fell into his own broken world, a shattered soul himself. There he dwelt among the jagged shards and fissured planes, along with other lost fragments that had sifted down through the cracks in the early universe. And this is why the world we know resembles an isle of castaways, survivors of a wreck now long forgotten. Forgotten, that is, by all but the One who blames himself. He spends his time forever seeking a way to accomplish the repairs, that he might rejoin the parts of his broken soul, that we and the world alike might all be mended. This is the One we know as Elder Titan.",
+  "hype": "Scouting the way with his <b>astral spirit</b>, Elder Titan can strike from any direction. <b>Halting foes</b> with a stomp of his hoof while his presence <b>eats away at their defenses</b>, he splits the earth itself to bring his enemies low.",
+  "abilities": [
+    {
+      "key": "elder_titan_echo_stomp",
+      "name": "Echo Stomp",
+      "description": "CHANNELED - Elder Titan and his Astral Spirit both stomp the ground, damaging and knocking nearby enemy units unconscious around their locations.  The Elder Titan stomp deals physical damage, while the Spirit stomp deals magical damage.",
+      "max_level": 4,
+      "cooldowns": [
+        14,
+        13,
+        12,
+        11
+      ],
+      "mana_costs": [
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        500
+      ],
+      "cast_points": [
+        0.4
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "cast_time",
+          "heading": "CAST TIME:",
+          "values": [
+            1.7
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            475
+          ]
+        },
+        {
+          "key": "sleep_duration",
+          "heading": "SLEEP DURATION:",
+          "values": [
+            2,
+            2.8,
+            3.6,
+            4.4
+          ]
+        },
+        {
+          "key": "stomp_damage",
+          "heading": "STOMP DAMAGE:",
+          "values": [
+            65,
+            110,
+            155,
+            200
+          ]
+        },
+        {
+          "key": "initial_stun_duration",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "wake_damage_limit",
+          "heading": "WAKEUP DAMAGE THRESHOLD:",
+          "values": [
+            100,
+            150,
+            200,
+            250
+          ]
+        },
+        {
+          "key": "can_swap_places",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "AbilityChannelTime",
+          "heading": "",
+          "values": [
+            1.3
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "COOLDOWN:",
+          "values": [
+            14,
+            13,
+            12,
+            11
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Lowers Cooldown. Echo Stomp may be placed on alt-cast to allow Elder Titan to take the place of the Astral Spirit as it completes its stomp.",
+      "notes": [
+        "If a unit is hit by Astral Spirit and Elder Titan, they will take both instances of damage."
+      ],
+      "lore": "The force of creation still echoes in the stomp of the Titan."
+    },
+    {
+      "key": "elder_titan_ancestral_spirit",
+      "name": "Astral Spirit",
+      "description": "Elder Titan sends forth his Astral Spirit, damaging any units it passes through.  When the spirit rejoins the Titan, it grants bonus damage and movement speed for each unit it passed through.\n\nThe Astral Spirit possesses the Echo Stomp, Return Spirit, and Natural Order abilities.",
+      "max_level": 4,
+      "cooldowns": [
+        23,
+        21,
+        19,
+        17
+      ],
+      "mana_costs": [
+        80,
+        90,
+        100,
+        110
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1200
+      ],
+      "cast_points": [
+        0.4,
+        0.4,
+        0.4,
+        0.4
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            275
+          ]
+        },
+        {
+          "key": "pass_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "spirit_duration",
+          "heading": "DURATION:",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "buff_duration",
+          "heading": "BUFF DURATION:",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "speed",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "controllable",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "move_pct_creeps",
+          "heading": "BONUS SPEED (CREEPS):",
+          "values": [
+            1.5
+          ]
+        },
+        {
+          "key": "move_pct_heroes",
+          "heading": "BONUS SPEED (HEROES):",
+          "values": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "key": "damage_creeps",
+          "heading": "BONUS DAMAGE (CREEPS):",
+          "values": [
+            3,
+            7,
+            11,
+            15
+          ]
+        },
+        {
+          "key": "damage_heroes",
+          "heading": "BONUS DAMAGE (HEROES):",
+          "values": [
+            17,
+            38,
+            59,
+            80
+          ]
+        },
+        {
+          "key": "move_pct_cap",
+          "heading": "",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "scepter_magic_immune_per_hero",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "immunity_resist",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            80,
+            90,
+            100,
+            110
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            23,
+            21,
+            19,
+            17
+          ]
+        }
+      ],
+      "scepter_upgrade": "Causes Elder Titan to become debuff immune and gain %immunity_resist%%% magic resistance for %scepter_magic_immune_per_hero% seconds per affected enemy Hero when the spirit returns.",
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Like the four fundamentals, Elder Titan exists across all planes at once and can draw other aspects of himself to assist in times of need."
+    },
+    {
+      "key": "elder_titan_natural_order",
+      "name": "Natural Order",
+      "description": "Reduces all elements to their basic levels, removing base armor and magic damage resistance from nearby enemy units. The armor reduction is centered around the hero, while the magic armor reduction is centered around Astral Spirit.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            375
+          ]
+        },
+        {
+          "key": "armor_reduction_pct",
+          "heading": "BASE ARMOR REDUCTION:",
+          "values": [
+            40,
+            60,
+            80,
+            100
+          ]
+        },
+        {
+          "key": "magic_resistance_pct",
+          "heading": "BASE RESIST REDUCTION:",
+          "values": [
+            40,
+            60,
+            80,
+            100
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Every %tick_rate%s that enemy heroes stay under the effect of Natural Order, their armor is reduced by %armor_per_tick%, and magic resistance is reduced by %magic_resistance_per_tick%%%. Stacks up to %max_stacks% times.",
+      "notes": [
+        "When the Astral Spirit isn't present, both the armor and magic armor reduction is centered around Elder Titan."
+      ],
+      "lore": "As it was at the beginning, Elder Titan makes it so again."
+    },
+    {
+      "key": "elder_titan_momentum",
+      "name": "Momentum",
+      "description": "Elder Titan gains armor equal to a percentage of his bonus movement speed.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "armor_from_movespeed",
+          "heading": "BONUS SPEED TO ARMOR:",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "attack_speed_from_movespeed",
+          "heading": "",
+          "values": null
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Bonus movement speed is any movement speed above his base movement speed.",
+        "Momentum does not reduce Elder Titan's Armor if he is slowed below his base movement speed."
+      ],
+      "lore": null
+    },
+    {
+      "key": "elder_titan_earth_splitter",
+      "name": "Earth Splitter",
+      "description": "Sends forth a jagged crack in front of Elder Titan. After 3 seconds, the crack implodes, slowing movement while dealing damage to each enemy based on their maximum life. Half of the damage dealt is Magical damage, while the other half is Physical damage.",
+      "max_level": 3,
+      "cooldowns": [
+        100,
+        95,
+        90
+      ],
+      "mana_costs": [
+        125,
+        175,
+        225
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        2400
+      ],
+      "cast_points": [
+        0.4,
+        0.4,
+        0.4
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "crack_time",
+          "heading": "IMPLODE DELAY:",
+          "values": [
+            2.7182
+          ]
+        },
+        {
+          "key": "crack_width",
+          "heading": "CRACK WIDTH:",
+          "values": [
+            315
+          ]
+        },
+        {
+          "key": "crack_distance",
+          "heading": "CRACK LENGTH:",
+          "values": [
+            2400
+          ]
+        },
+        {
+          "key": "slow_pct",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            40,
+            45,
+            50
+          ]
+        },
+        {
+          "key": "slow_duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "key": "speed",
+          "heading": "",
+          "values": [
+            1100
+          ]
+        },
+        {
+          "key": "damage_pct",
+          "heading": "MAX HP AS DAMAGE:",
+          "values": [
+            34,
+            42,
+            50
+          ]
+        },
+        {
+          "key": "vision_width",
+          "heading": "",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "vision_interval",
+          "heading": "",
+          "values": [
+            0.22
+          ]
+        },
+        {
+          "key": "vision_duration",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "vision_step",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "total_steps",
+          "heading": "",
+          "values": [
+            12
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            2400
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            125,
+            175,
+            225
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            100,
+            95,
+            90
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "That which he created, the titan tears asunder."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_move_pct_heroes}% Astral Spirit Bonus Move Speed Per Hero"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_wake_damage_limit} Echo Stomp Wake Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_stomp_damage} Echo Stomp Damage"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_attack_speed_from_movespeed}% of Bonus Movement Speed as Attack Speed"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_heroes} Astral Spirit Bonus Damage per Hero"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_radius} Natural Order Radius"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Earth Splitter Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value}% Cleave"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

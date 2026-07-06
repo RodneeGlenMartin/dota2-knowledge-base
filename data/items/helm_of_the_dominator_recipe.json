@@ -1,0 +1,24 @@
+{
+  "id": 163,
+  "name": "Helm of the Dominator Recipe",
+  "slug": "helm_of_the_dominator_recipe",
+  "internal_key": "item_recipe_helm_of_the_dominator",
+  "cost": 1125,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

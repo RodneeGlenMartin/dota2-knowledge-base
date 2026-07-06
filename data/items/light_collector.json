@@ -1,0 +1,88 @@
+{
+  "id": 1167,
+  "name": "Light Collector",
+  "slug": "light_collector",
+  "internal_key": "item_light_collector",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Lightbreak</h1> Produce a brilliant flash of light that destroys trees in a %tree_destruction_radius% AoE. \n\n<h1>Passive: Unclouded</h1> Provides wearer with health regeneration during the day and mana regeneration during the night. When within a %radius% distance of any trees, health and mana regeneration are decreased by %penalty%%%.",
+  "notes": null,
+  "cooldowns": [
+    30
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "health_regen",
+      "heading": "DAY HP REGEN:",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "mana_regen",
+      "heading": "NIGHT MANA REGEN:",
+      "values": [
+        6
+      ]
+    },
+    {
+      "key": "penalty",
+      "heading": "",
+      "values": [
+        75
+      ]
+    },
+    {
+      "key": "movespeed_pct",
+      "heading": "+$move_speed",
+      "values": [
+        5
+      ]
+    },
+    {
+      "key": "radius",
+      "heading": "",
+      "values": [
+        200
+      ]
+    },
+    {
+      "key": "tree_destruction_radius",
+      "heading": "",
+      "values": [
+        325
+      ]
+    },
+    {
+      "key": "miss_rate",
+      "heading": "",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        2.5
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        30
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

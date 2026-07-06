@@ -1,0 +1,111 @@
+{
+  "id": 218,
+  "name": "Observer and Sentry Wards",
+  "slug": "observer_and_sentry_wards",
+  "internal_key": "item_ward_dispenser",
+  "cost": 50,
+  "neutral_tier": null,
+  "description": "<h1>Use: Plant</h1> Plant the currently active ward.  Double-Click to switch the currently active ward.",
+  "notes": [
+    "Hold Control to give one ward to an allied hero."
+  ],
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    500
+  ],
+  "special_values": [
+    {
+      "key": "bonus_health",
+      "heading": "",
+      "values": [
+        75
+      ]
+    },
+    {
+      "key": "observer_cost",
+      "heading": "",
+      "values": [
+        75
+      ]
+    },
+    {
+      "key": "sentry_cost",
+      "heading": "",
+      "values": [
+        100
+      ]
+    },
+    {
+      "key": "lifetime_observer",
+      "heading": "",
+      "values": [
+        360
+      ]
+    },
+    {
+      "key": "lifetime_sentry",
+      "heading": "",
+      "values": [
+        420
+      ]
+    },
+    {
+      "key": "observer_vision_range_tooltip",
+      "heading": "OBSERVER VISION RANGE:",
+      "values": [
+        1600
+      ]
+    },
+    {
+      "key": "observer_duration_minutes_tooltip",
+      "heading": "OBSERVER DURATION (MINUTES):",
+      "values": [
+        6
+      ]
+    },
+    {
+      "key": "sentry_duration_minutes_tooltip",
+      "heading": "SENTRY DURATION (MINUTES):",
+      "values": [
+        8
+      ]
+    },
+    {
+      "key": "true_sight_range",
+      "heading": "SENTRY TRUE SIGHT RANGE:",
+      "values": [
+        1050
+      ]
+    },
+    {
+      "key": "cast_range_observer",
+      "heading": "",
+      "values": [
+        500
+      ]
+    },
+    {
+      "key": "cast_range_sentry",
+      "heading": "",
+      "values": [
+        500
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        500
+      ]
+    }
+  ],
+  "lore": "Advancements in stacking efficiency have made wards easier to carry than ever.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": 15,
+  "name": "Mantle of Intelligence",
+  "slug": "mantle_of_intelligence",
+  "internal_key": "item_mantle",
+  "cost": 140,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_intellect",
+      "heading": "+$int",
+      "values": [
+        3
+      ]
+    }
+  ],
+  "lore": "A beautiful sapphire mantle worn by generations of queens.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

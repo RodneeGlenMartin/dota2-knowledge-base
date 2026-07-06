@@ -1,0 +1,67 @@
+{
+  "id": 308,
+  "name": "Repair Kit",
+  "slug": "repair_kit",
+  "internal_key": "item_repair_kit",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Use: Building Repair</h1> Targets a building, restoring %heal_percent%%% of it's health over %duration% seconds. Also grants +%armor_bonus% armor during this period.",
+  "notes": null,
+  "cooldowns": [
+    60
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    600
+  ],
+  "special_values": [
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "heal_percent",
+      "heading": "",
+      "values": [
+        40
+      ]
+    },
+    {
+      "key": "armor_bonus",
+      "heading": "",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "hp_regen",
+      "heading": "+$hp_regen",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        600
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        60
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

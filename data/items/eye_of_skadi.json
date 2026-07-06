@@ -1,0 +1,74 @@
+{
+  "id": 160,
+  "name": "Eye of Skadi",
+  "slug": "eye_of_skadi",
+  "internal_key": "item_skadi",
+  "cost": 5900,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Cold Attack</h1> Attacks lower enemy movement by %cold_slow_melee%%% if they are melee and %cold_slow_ranged%%% if they are ranged. Attacks also lower enemy attack speed by %cold_attack_slow_melee%%% and Health Restoration by %restoration_reduction%%%. Lasts for %cold_duration% seconds.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_all_stats",
+      "heading": "+$all",
+      "values": [
+        35
+      ]
+    },
+    {
+      "key": "cold_slow_melee",
+      "heading": "",
+      "values": [
+        -25
+      ]
+    },
+    {
+      "key": "cold_attack_slow_melee",
+      "heading": "",
+      "values": [
+        -20
+      ]
+    },
+    {
+      "key": "cold_slow_ranged",
+      "heading": "",
+      "values": [
+        -50
+      ]
+    },
+    {
+      "key": "cold_attack_slow_ranged",
+      "heading": "",
+      "values": [
+        -20
+      ]
+    },
+    {
+      "key": "cold_duration",
+      "heading": "",
+      "values": [
+        3
+      ]
+    },
+    {
+      "key": "restoration_reduction",
+      "heading": "",
+      "values": [
+        50
+      ]
+    }
+  ],
+  "lore": "Extremely rare artifact, guarded by the azure dragons.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

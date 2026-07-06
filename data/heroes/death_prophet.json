@@ -1,0 +1,632 @@
+{
+  "id": 43,
+  "name": "Death Prophet",
+  "slug": "death_prophet",
+  "npc_name": "npc_dota_hero_death_prophet",
+  "primary_attribute": "universal",
+  "attack_type": "Ranged",
+  "complexity": 1,
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Disabler",
+    "Pusher"
+  ],
+  "stats": {
+    "base_str": 21,
+    "str_gain": 2.9,
+    "base_agi": 17,
+    "agi_gain": 2,
+    "base_int": 24,
+    "int_gain": 3,
+    "damage_min": 22,
+    "damage_max": 32,
+    "attack_rate": 1.7,
+    "attack_range": 600,
+    "projectile_speed": 1000,
+    "armor": 3.8333335,
+    "magic_resistance": 25,
+    "movement_speed": 290,
+    "turn_rate": 0.8,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 582,
+    "health_regen": 2.3500001,
+    "max_mana": 363,
+    "mana_regen": 1.7
+  },
+  "lore": "Krobelus was a Death Prophet--which is one way of saying she told fortunes for the wealthiest of those who wished to look beyond the veil. But after years of inquiring on behalf of others, she began to seek clues on her own fate. When death refused to yield its secrets, she tried to buy them with her life. But the ultimate price proved insufficient.\r\n\t\t\t\t<br><br>Death disgorged her again and again, always holding back its deepest mysteries. Her jealousy grew. Others could die for eternity--why not she? Why must she alone be cast back on the shores of life with such tiresome regularity? Why was she not worthy of the one thing all other living creatures took for granted? Still, she would not be discouraged.\r\n\t\t\t\t<br><br>Each time she returned from the grave, she brought a bit of death back with her. Wraiths followed her like fragments of her shattered soul; her blood grew thin and ectoplasmic; the feasting creatures of twilight took her for their kin.. She gave a little of her life with every demise, and it began to seem as if her end was in sight. With her dedication to death redoubled, and no client other than herself, Krobelus threw herself ever more fervently into death's abyss, intent on fulfilling the one prophecy that eluded her: That someday the Death Prophet would return from death no more.",
+  "hype": "When she unleashes her <b>army of ghosts</b>, Death Prophet excels at <b>demolishing enemies</b> and their defenses alike. Leading her team's forces toward the enemy base with wave after damaging wave from her <b>swarm</b>, her onslaught can seem unstoppable.",
+  "abilities": [
+    {
+      "key": "death_prophet_carrion_swarm",
+      "name": "Crypt Swarm",
+      "description": "Sends a swarm of winged beasts to savage enemy units in front of Death Prophet.",
+      "max_level": 4,
+      "cooldowns": [
+        9,
+        8,
+        7,
+        6
+      ],
+      "mana_costs": [
+        80,
+        90,
+        100,
+        110
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        900
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            100,
+            175,
+            250,
+            325
+          ]
+        },
+        {
+          "key": "start_radius",
+          "heading": "",
+          "values": [
+            110
+          ]
+        },
+        {
+          "key": "end_radius",
+          "heading": "",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "range",
+          "heading": "CAST RANGE:",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "speed",
+          "heading": "",
+          "values": [
+            1100
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            80,
+            90,
+            100,
+            110
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            9,
+            8,
+            7,
+            6
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Can hit units up to 1110 range away.",
+        "Does not trigger spell block or spell reflect."
+      ],
+      "lore": "Krobelus' many trips to the grave gather a flock of the damned."
+    },
+    {
+      "key": "death_prophet_silence",
+      "name": "Silence",
+      "description": "Fires a projectile that prevents enemy units in a target area from casting spells.",
+      "max_level": 4,
+      "cooldowns": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "mana_costs": [
+        80,
+        90,
+        100,
+        110
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        900
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        3.5,
+        4,
+        4.5,
+        5
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            450
+          ]
+        },
+        {
+          "key": "projectile_speed",
+          "heading": "",
+          "values": [
+            1750
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "DURATION:",
+          "values": [
+            3.5,
+            4,
+            4.5,
+            5
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            80,
+            90,
+            100,
+            110
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            15,
+            14,
+            13,
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Doesn't prevent usage of items."
+      ],
+      "lore": "Peering into the veil of her opponent's demise, Krobelus sees a silent future."
+    },
+    {
+      "key": "death_prophet_spirit_siphon",
+      "name": "Spirit Siphon",
+      "description": "Creates a spirit link between Death Prophet and an enemy unit, draining health from the enemy.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        60
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        500
+      ],
+      "cast_points": [
+        0.1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            25,
+            50,
+            75,
+            100
+          ]
+        },
+        {
+          "key": "haunt_duration",
+          "heading": "DURATION:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "siphon_buffer",
+          "heading": "",
+          "values": [
+            250
+          ]
+        },
+        {
+          "key": "shard_bonus_charges",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_fear_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_consecutive_siphon_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityCharges",
+          "heading": "",
+          "values": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "key": "AbilityChargeRestoreTime",
+          "heading": "",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            60
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Increases Spirit Siphon charges by %shard_bonus_charges% and causes enemies to be feared for %shard_fear_duration% seconds if they are siphoned for %shard_consecutive_siphon_duration% seconds consecutively.",
+      "notes": [
+        "Cannot cast multiple on same target."
+      ],
+      "lore": "Krobelus willingly shows others the path she alone cannot follow."
+    },
+    {
+      "key": "death_prophet_witchcraft",
+      "name": "Witchcraft",
+      "description": "Death Prophet's occult knowledge deepens with experience, gaining movement speed and spell cooldown reduction.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "movement_speed_pct",
+          "heading": "MOVEMENT SPEED:",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "cooldown_reduction_pct",
+          "heading": "COOLDOWN REDUCTION:",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "death_prophet_exorcism",
+      "name": "Exorcism",
+      "description": "Unleashes evil spirits to drain the life of nearby enemy units and structures. Spirits need to return back to Death Prophet in order to attack again. At the end of the spell's duration, Death Prophet is healed in proportion to the damage dealt. Deals 50% damage to buildings. Lasts %abilityduration% seconds.",
+      "max_level": 3,
+      "cooldowns": [
+        150
+      ],
+      "mana_costs": [
+        200,
+        300,
+        400
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "durations": [
+        40
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "spirits",
+          "heading": "SPIRITS:",
+          "values": [
+            10,
+            18,
+            26
+          ]
+        },
+        {
+          "key": "spirit_speed",
+          "heading": "",
+          "values": [
+            525
+          ]
+        },
+        {
+          "key": "max_distance",
+          "heading": "",
+          "values": [
+            2000
+          ]
+        },
+        {
+          "key": "give_up_distance",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "min_damage",
+          "heading": "",
+          "values": [
+            62,
+            65,
+            68
+          ]
+        },
+        {
+          "key": "max_damage",
+          "heading": "",
+          "values": [
+            68,
+            71,
+            74
+          ]
+        },
+        {
+          "key": "heal_percent",
+          "heading": "LIFE DRAIN:",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "average_damage",
+          "heading": "SPIRIT DAMAGE:",
+          "values": [
+            65,
+            68,
+            71
+          ]
+        },
+        {
+          "key": "ghost_spawn_rate",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "scepter_spirit_life_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "scepter_spirit_bonus_damage",
+          "heading": "SPIRIT BONUS DAMAGE:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "duration_increase_per_kill",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            200,
+            300,
+            400
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            150
+          ]
+        }
+      ],
+      "scepter_upgrade": "Whenever an enemy is affected by Death Prophet's spells or when she attacks an enemy, a ghost will fly out and hit the enemy for an increased bonus of its usual damage then return to her with life.",
+      "shard_upgrade": null,
+      "notes": [
+        "Radius represents the area in which the spirits will acquire targets around Death Prophet.",
+        "Spirit damage isn't reduced by damage block abilities."
+      ],
+      "lore": "Over time, the banshee remnants of her previous lives return to haunt the present."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_radius} Silence AoE"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Health"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Attack Speed"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Crypt Swarm Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_spirits} Exorcism Spirits"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Spirit Siphon Damage/Heal"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityChargeRestoreTime}s Spirit Siphon Replenish Time"
+    },
+    {
+      "slot": null,
+      "name": "Deaths During Exorcism Extend Duration By +{s:bonus_duration_increase_per_kill}s"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

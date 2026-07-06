@@ -1,0 +1,76 @@
+{
+  "id": 131,
+  "name": "Hood of Defiance",
+  "slug": "hood_of_defiance",
+  "internal_key": "item_hood_of_defiance",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Barrier</h1> Creates a spell shield that absorbs up to %barrier_block% magical damage.  Lasts %barrier_duration% seconds.",
+  "notes": [
+    "Stacks multiplicatively with other sources of magic resistance."
+  ],
+  "cooldowns": [
+    60
+  ],
+  "mana_costs": [
+    50
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_spell_resist",
+      "heading": "",
+      "values": [
+        18
+      ]
+    },
+    {
+      "key": "bonus_health_regen",
+      "heading": "+$hp_regen",
+      "values": [
+        8.5
+      ]
+    },
+    {
+      "key": "tooltip_resist",
+      "heading": "+$spell_resist",
+      "values": [
+        18
+      ]
+    },
+    {
+      "key": "barrier_block",
+      "heading": "",
+      "values": [
+        350
+      ]
+    },
+    {
+      "key": "barrier_duration",
+      "heading": "",
+      "values": [
+        12
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        50
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        60
+      ]
+    }
+  ],
+  "lore": "A furred, magic resistant headpiece that is feared by wizards.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

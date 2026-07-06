@@ -1,0 +1,118 @@
+{
+  "id": 1858,
+  "name": "Hydra's Breath",
+  "slug": "hydra_s_breath",
+  "internal_key": "item_hydras_breath",
+  "cost": 5900,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Miasma</h1>Attacks poison enemies, dealing %poison_damage_per_second%%% of the target's Max HP as Magical Damage per second for %poison_duration% seconds.\n\n<h1>Passive: Polycephaly</h1>Ranged attacks have a %proc_chance%%% chance to fire additional projectiles at up to %count% nearby enemies with %secondary_target_range_bonus% extra range and within a %secondary_target_angle% degree angle in front of the attacker. The additional projectiles deal %base_proc_dmg% + %proc_dmg_pct%%% damage of a normal attack and do not trigger on hit effects except for Miasma. The primary attack deals %base_proc_dmg% + %proc_dmg_pct_primary_tooltip%%% damage of a normal attack.",
+  "notes": [
+    "Attack Range bonuses from Monkey King Bar and Dragon Lance and its upgrades do not stack."
+  ],
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "strength",
+      "heading": "+$str",
+      "values": [
+        15
+      ]
+    },
+    {
+      "key": "agility",
+      "heading": "+$agi",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "damage",
+      "heading": "+$damage",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "count",
+      "heading": "",
+      "values": [
+        3
+      ]
+    },
+    {
+      "key": "secondary_target_range_bonus",
+      "heading": "",
+      "values": [
+        150
+      ]
+    },
+    {
+      "key": "secondary_target_angle",
+      "heading": "",
+      "values": [
+        120
+      ]
+    },
+    {
+      "key": "proc_chance",
+      "heading": "",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "proc_dmg_pct",
+      "heading": "",
+      "values": [
+        75
+      ]
+    },
+    {
+      "key": "proc_dmg_pct_primary_tooltip",
+      "heading": "",
+      "values": [
+        100
+      ]
+    },
+    {
+      "key": "base_proc_dmg",
+      "heading": "",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "base_attack_range",
+      "heading": "+$attack_range",
+      "values": [
+        150
+      ]
+    },
+    {
+      "key": "poison_duration",
+      "heading": "",
+      "values": [
+        3
+      ]
+    },
+    {
+      "key": "poison_damage_per_second",
+      "heading": "",
+      "values": [
+        2.5
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

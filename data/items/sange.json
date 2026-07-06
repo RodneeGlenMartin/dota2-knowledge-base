@@ -1,0 +1,46 @@
+{
+  "id": 162,
+  "name": "Sange",
+  "slug": "sange",
+  "internal_key": "item_sange",
+  "cost": 2100,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_strength",
+      "heading": "+$str",
+      "values": [
+        16
+      ]
+    },
+    {
+      "key": "slow_resistance",
+      "heading": "+Slow Resistance",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "hp_regen_amp",
+      "heading": "+$restoration_amp",
+      "values": [
+        12
+      ]
+    }
+  ],
+  "lore": "Sange is an unusually accurate weapon, seeking weak points automatically.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

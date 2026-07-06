@@ -1,0 +1,625 @@
+{
+  "id": 39,
+  "name": "Queen of Pain",
+  "slug": "queen_of_pain",
+  "npc_name": "npc_dota_hero_queenofpain",
+  "primary_attribute": "int",
+  "attack_type": "Ranged",
+  "complexity": 2,
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Escape"
+  ],
+  "stats": {
+    "base_str": 20,
+    "str_gain": 2.4,
+    "base_agi": 20,
+    "agi_gain": 2.5,
+    "base_int": 25,
+    "int_gain": 3.4,
+    "damage_min": 51,
+    "damage_max": 57,
+    "attack_rate": 1.5,
+    "attack_range": 550,
+    "projectile_speed": 1500,
+    "armor": 3.3333335,
+    "magic_resistance": 25,
+    "movement_speed": 290,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 560,
+    "health_regen": 2.25,
+    "max_mana": 375,
+    "mana_regen": 1.25
+  },
+  "lore": "The Ecclesiast-King of Elze nursed a desire for pain--forbidden pain. In a less prominent political figure, such desires might be considered unwise, but in a monarch of his stature, to satisfy such thirsts would have threatened the virtue of the Divine Throne itself. Therefore he turned to his dungeon full of demonologists, promising freedom to whoever could summon a personal succubus of torment and bind it entirely to his service. The creature who arrived, Akasha by name, visited upon him such exquisite torments that he named her his Secret Queen, and he began to spend all his spare moments submitting to her clever torments--eventually abdicating all his responsibilities in his pursuit of the painful pleasures that only she could bring. Queen of Pain could bring him to the brink of death, but she was rune-bound to keep him alive. At last the King's neglect of state brought on an uprising. He was dragged from his chamber and hurled from the Tower of Invocations, and at the moment of death, Queen of Pain was let loose into the world, freed from servitude--freed to visit her sufferings on anyone she deigned to notice.",
+  "hype": "Queen of Pain strikes without warning, destroying gathered foes with <b>deafening screams</b>. Should an enemy survive her onslaught, she <b>slows</b> their escape with a <b>throw of her dagger</b> before finishing them off.",
+  "abilities": [
+    {
+      "key": "queenofpain_shadow_strike",
+      "name": "Shadow Strike",
+      "description": "Hurls a poisoned dagger which deals large initial damage, and then deals damage over time. The poisoned unit has its movement speed slowed for %duration% seconds.  An instance of damage is dealt every %damage_interval% seconds.",
+      "max_level": 4,
+      "cooldowns": [
+        11,
+        9,
+        7,
+        5
+      ],
+      "mana_costs": [
+        100,
+        110,
+        120,
+        130
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        450,
+        500,
+        550,
+        600
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "strike_damage",
+          "heading": "INITIAL DAMAGE:",
+          "values": [
+            50,
+            80,
+            110,
+            140
+          ]
+        },
+        {
+          "key": "duration_damage",
+          "heading": "DAMAGE PER TICK:",
+          "values": [
+            20,
+            40,
+            60,
+            80
+          ]
+        },
+        {
+          "key": "movement_slow",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            -25,
+            -35,
+            -45,
+            -55
+          ]
+        },
+        {
+          "key": "projectile_speed",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "attack_speed",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "damage_interval",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "generate_scream",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "aoe_radius",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            16
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            450,
+            500,
+            550,
+            600
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            110,
+            120,
+            130
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            11,
+            9,
+            7,
+            5
+          ]
+        }
+      ],
+      "scepter_upgrade": "Causes Shadow Strike to become a %aoe_radius% AoE Spell. When Shadow Strike ends or is re-applied to an enemy Hero, the target emits a Scream of Pain, hitting any nearby enemies.",
+      "shard_upgrade": null,
+      "notes": [
+        "The affected unit slowly regains its original movement speed every second during the duration.",
+        "Units afflicted by Shadow Strike can be denied by their allies when their HP drops below 25% of their maximum health."
+      ],
+      "lore": "Akasha's envenomed dagger allows her to delight in the drawn out suffering of her victims."
+    },
+    {
+      "key": "queenofpain_blink",
+      "name": "Blink",
+      "description": "Short distance teleportation that allows Queen of Pain to move in and out of combat.",
+      "max_level": 4,
+      "cooldowns": [
+        12,
+        10,
+        8,
+        6
+      ],
+      "mana_costs": [
+        65
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1075,
+        1150,
+        1225,
+        1300
+      ],
+      "cast_points": [
+        0.33,
+        0.33,
+        0.33,
+        0.33
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "min_blink_range",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "shard_damage",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_aoe",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1075,
+            1150,
+            1225,
+            1300
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.33
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            65
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            12,
+            10,
+            8,
+            6
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Releases a sonic boom when Queen of Pain blinks, at both her starting and ending locations. Deals %shard_damage% damage in a %shard_aoe% AoE and silences the target for %shard_duration% seconds.",
+      "notes": [
+        "You can use Blink to dodge incoming projectiles."
+      ],
+      "lore": "The Secret Queen lives up to her title, making her pain impossible to escape."
+    },
+    {
+      "key": "queenofpain_scream_of_pain",
+      "name": "Scream Of Pain",
+      "description": "The Queen of Pain lets loose a piercing scream around her, damaging nearby enemies.<br><br>%damage_reflected_to_self%%% of the damage dealt to heroes is reflected back to her.",
+      "max_level": 4,
+      "cooldowns": [
+        7.5,
+        7,
+        6.5,
+        6
+      ],
+      "mana_costs": [
+        120
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "area_of_effect",
+          "heading": "RADIUS:",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "projectile_speed",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            90,
+            175,
+            260,
+            345
+          ]
+        },
+        {
+          "key": "damage_reflected_to_self",
+          "heading": "",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            120
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            7.5,
+            7,
+            6.5,
+            6
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Scream Of Pain will hit invisible units.",
+        "Scream Of Pain cannot be disjointed.",
+        "Damage to illusions is not reflected. Damage reflected is before reduction and non-lethal.",
+        "Reflected damage does not provide any lifesteal and cannot be reflected."
+      ],
+      "lore": "The sultry voice of Akasha beckons her opponents while stealing their souls."
+    },
+    {
+      "key": "queenofpain_succubus",
+      "name": "Succubus",
+      "description": "All sources of Spell Lifesteal also apply to Pure Damage. Queen of Pain gains Spell Lifesteal that increases with proximity to her enemies. Lifesteal is at its maximum when the enemy is %close_radius% units or closer to her and at its minimum when the enemy is %max_radius% units or further from her.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "spell_lifesteal",
+          "heading": "MINIMUM LIFESTEAL:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "close_radius",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "max_radius",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "spell_lifesteal_close",
+          "heading": "MAXIMUM LIFESTEAL:",
+          "values": [
+            14
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "queenofpain_sonic_wave",
+      "name": "Sonic Wave",
+      "description": "Creates a gigantic wave of sound in front of Queen of Pain, dealing heavy damage to all enemy units in its wake and pushing them back.",
+      "max_level": 3,
+      "cooldowns": [
+        110,
+        95,
+        80
+      ],
+      "mana_costs": [
+        250,
+        400,
+        550
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        700
+      ],
+      "cast_points": [
+        0.452,
+        0.452,
+        0.452
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "starting_aoe",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "distance",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "final_aoe",
+          "heading": "WAVE MAX RADIUS:",
+          "values": [
+            450
+          ]
+        },
+        {
+          "key": "speed",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            325,
+            475,
+            625
+          ]
+        },
+        {
+          "key": "tick_rate",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "knockback_distance",
+          "heading": "KNOCKBACK DISTANCE:",
+          "values": [
+            350
+          ]
+        },
+        {
+          "key": "knockback_duration",
+          "heading": "",
+          "values": [
+            1.4
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.452
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            250,
+            400,
+            550
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            110,
+            95,
+            80
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Sonic Wave can hit units up to 1150 units away."
+      ],
+      "lore": "Her most exquisite of all of torments, Akasha's Sonic Wave puts her poor foes out of their misery."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_attack_speed} Attack Speed against Shadow Striked units"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Strength"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_damage_interval}s Shadow Strike Damage Interval"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Scream of Pain Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Sonic Wave Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Blink Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Sonic Wave Damage"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

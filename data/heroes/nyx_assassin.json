@@ -1,0 +1,664 @@
+{
+  "id": 88,
+  "name": "Nyx Assassin",
+  "slug": "nyx_assassin",
+  "npc_name": "npc_dota_hero_nyx_assassin",
+  "primary_attribute": "universal",
+  "attack_type": "Melee",
+  "complexity": 2,
+  "roles": [
+    "Nuker",
+    "Disabler",
+    "Escape",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 17,
+    "str_gain": 2.7,
+    "base_agi": 18,
+    "agi_gain": 2.9,
+    "base_int": 21,
+    "int_gain": 2.6,
+    "damage_min": 26,
+    "damage_max": 30,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 4,
+    "magic_resistance": 25,
+    "movement_speed": 310,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 494,
+    "health_regen": 3.7,
+    "max_mana": 327,
+    "mana_regen": 1.0500001
+  },
+  "lore": "Deep in the Archive of Ultimyr, shelved between scholarly treatises on dragon cladistics and books of untranslatable spells, there is an ancient tome of entomological curiosities.  Compiled by scholars, the book describes the telepathic talents of the zealot scarab, a strange species of social insect with abilities unique to all the seven planes.    \r\n\t\t\t\t<br><br>Unlike most grubs of his colony, Nyx Assassin did not arise from metamorphosis with the plodding thoughts and blunted appendages common to the worker caste of his kind. For his was a special transformation, guided by the grace of Nyx.  He was the chosen one, selected from the many and anointed with an extract of the queen goddess herself.  Not all survive the dark blessing of the queen's chamber, but he emerged with a penetrating mind, and dagger-like claws--his razor sharp mandibles raking the air while his thoughts projected directly into the minds of those around him.  Of all zealot scarabs, he alone was selected for the highest calling.  After his metamorphosis, he was reborn, by grace of Nyx, with abilities which shaped him for one thing and one thing only: to kill in the name of his goddess.",
+  "hype": "Nyx Assassin is always hunting for fragile targets. Sneaking <b>invisibly</b> through the forest, when he spots his prey, he swipes them with his deadly claws and impales them on <b>stunning spikes</b>, then reverses any counterattack with his <b>reflecting carapace.</b>",
+  "abilities": [
+    {
+      "key": "nyx_assassin_impale",
+      "name": "Impale",
+      "description": "Rock spikes burst from the earth along a straight path. Enemy units take damage, then are hurled into the air and stunned.",
+      "max_level": 4,
+      "cooldowns": [
+        17,
+        15,
+        13,
+        11
+      ],
+      "mana_costs": [
+        90,
+        100,
+        110,
+        120
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        750
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "width",
+          "heading": "",
+          "values": [
+            140
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            1.1,
+            1.4,
+            1.7,
+            2
+          ]
+        },
+        {
+          "key": "length",
+          "heading": "",
+          "values": [
+            750
+          ]
+        },
+        {
+          "key": "speed",
+          "heading": "",
+          "values": [
+            1600
+          ]
+        },
+        {
+          "key": "impale_damage",
+          "heading": "IMPALE DAMAGE:",
+          "values": [
+            100,
+            160,
+            220,
+            280
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            750
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            90,
+            100,
+            110,
+            120
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            17,
+            15,
+            13,
+            11
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "The spikes move at %speed% units per second, over %length% range.",
+        "Impale cannot be blocked by Linken's Sphere."
+      ],
+      "lore": "All zealot scarabs possess intimate knowledge of underground pathways, using them to their advantage."
+    },
+    {
+      "key": "nyx_assassin_jolt",
+      "name": "Mind Flare",
+      "description": "Deals damage equal to a percentage of the target's Max Mana and burns part of it away. Deals additional damage equal to a percentage of the damage the target has taken from Nyx Assassin in the last %damage_echo_duration%s. Resets accumulated damage before applying damage.",
+      "max_level": 4,
+      "cooldowns": [
+        11,
+        9.5,
+        8,
+        6.5
+      ],
+      "mana_costs": [
+        100,
+        105,
+        110,
+        115
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        800
+      ],
+      "cast_points": [
+        0.4,
+        0.4,
+        0.4,
+        0.4
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "max_mana_as_damage_pct",
+          "heading": "MAX MANA AS DAMAGE:",
+          "values": [
+            25,
+            30,
+            35,
+            40
+          ]
+        },
+        {
+          "key": "mana_burn_pct",
+          "heading": "MANA BURNT:",
+          "values": [
+            9,
+            12,
+            15,
+            18
+          ]
+        },
+        {
+          "key": "aoe",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "damage_echo_duration",
+          "heading": "",
+          "values": [
+            15
+          ]
+        },
+        {
+          "key": "damage_echo_pct",
+          "heading": "BONUS DAMAGE:",
+          "values": [
+            15
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            105,
+            110,
+            115
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            11,
+            9.5,
+            8,
+            6.5
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Only those raised by the queen can use their minds to touch the world around them."
+    },
+    {
+      "key": "nyx_assassin_spiked_carapace",
+      "name": "Spiked Carapace",
+      "description": "When activated while above ground, Spiked Carapace reflects and negates damage dealt to Nyx Assassin (max once from each source), as well as stunning the source of the damage. Activating Spiked Carapace will not break Vendetta invisibility.\n\nWhile Burrowed, Spiked Carapace instantly stuns nearby enemies when cast.",
+      "max_level": 4,
+      "cooldowns": [
+        20,
+        16,
+        12,
+        8
+      ],
+      "mana_costs": [
+        40,
+        40,
+        40,
+        40
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "reflect_duration",
+          "heading": "REFLECT DURATION:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "stun_duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            0.7,
+            1,
+            1.3,
+            1.6
+          ]
+        },
+        {
+          "key": "damage_reflect_pct",
+          "heading": "DAMAGE REFLECTED:",
+          "values": [
+            140
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            20,
+            16,
+            12,
+            8
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "The damage is calculated after all reductions.",
+        "Spiked Carapace will only trigger on damage from other player controlled units.",
+        "The damage reflected will have the same damage type as it had when it was dealt to Nyx Assassin.",
+        "Damage done by this ability is considered reflected damage. Reflected damage does not provide any lifesteal and cannot be reflected."
+      ],
+      "lore": "While their carapace is relatively thin, it's guarded by a retractable field of razor-sharp spikes."
+    },
+    {
+      "key": "nyx_assassin_burrow",
+      "name": "Burrow",
+      "description": "Nyx Assassin buries himself beneath the battlefield over a short duration. Once burrowed, Spiked Carapace instantly stuns nearby enemies when cast, the range of Mind Flare and Impale is increased, and Impale's cooldown is decreased. While burrowed, Nyx Assassin is stationary, unable to attack, and invisible. Nyx Assassin gains damage reduction from all damage sources.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        1.5
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "health_regen_rate",
+          "heading": "MAX HP REGEN:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "mana_regen_rate",
+          "heading": "MAX MANA REGEN:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "damage_reduction",
+          "heading": "BURROW DAMAGE REDUCTION:",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "cast_range",
+          "heading": "BURROW BONUS CAST RANGE:",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "cooldown_reduction",
+          "heading": "BURROW BONUS COOLDOWN REDUCTION:",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "carapace_radius",
+          "heading": "BURROW SPIKED CARAPACE RANGE:",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            1.5
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Casting Vendetta will cancel burrow."
+      ],
+      "lore": "Some castes of zealot scarab are known to create small burrows to lie in wait, ready to ambush their prey."
+    },
+    {
+      "key": "nyx_assassin_neuro_sting",
+      "name": "Mana Burn",
+      "description": "Nyx Assassin's damage on enemies also burns mana as a percentage of the damage dealt.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "mana_burn_pct",
+          "heading": "MANA BURN:",
+          "values": [
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "nyx_assassin_vendetta",
+      "name": "Vendetta",
+      "description": "Nyx Assassin becomes invisible and gains a speed bonus. If Nyx Assassin attacks to break the invisibility, massive bonus damage is dealt with the attack that applies a break to the target. Nyx Assassin has %attack_range_bonus% additional attack range and a %attack_animation_bonus%%% faster attack animation for this attack.",
+      "max_level": 3,
+      "cooldowns": [
+        80,
+        70,
+        60
+      ],
+      "mana_costs": [
+        180,
+        240,
+        300
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            45,
+            50,
+            55
+          ]
+        },
+        {
+          "key": "movement_speed",
+          "heading": "MOVEMENT SPEED:",
+          "values": [
+            16,
+            18,
+            20
+          ]
+        },
+        {
+          "key": "bonus_damage",
+          "heading": "BONUS DAMAGE:",
+          "values": [
+            300,
+            400,
+            500
+          ]
+        },
+        {
+          "key": "health_regen_rate_scepter",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "mana_regen_rate_scepter",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "break_duration",
+          "heading": "BREAK DURATION:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "free_pathing_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "free_pathing_movement_speed_bonus",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "attack_animation_bonus",
+          "heading": "",
+          "values": [
+            70
+          ]
+        },
+        {
+          "key": "attack_range_bonus",
+          "heading": "",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            180,
+            240,
+            300
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            80,
+            70,
+            60
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Decreases cooldown by %bonus_AbilityCooldown%s. For the first %free_pathing_duration%s of Vendetta, Nyx is hasted and has unobstructed pathing.",
+      "notes": [
+        "Has a %fade_time% second fadetime.",
+        "If a spell is used to break the invisibility, or the invisibility expires, the bonus damage is lost.",
+        "With Aghanim's Shard, the Break is applied before the bonus damage."
+      ],
+      "lore": "The scarab kills for the glory of his queen."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_reflect_pct}% Spiked Carapace Damage Reflect"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_duration}s Impale Stun Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_damage} Vendetta Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Mind Flare Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_stun_duration}s Spiked Carapace Stun Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_impale_damage} Impale Damage"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_aoe} Mind Flare Radius"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Agility"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

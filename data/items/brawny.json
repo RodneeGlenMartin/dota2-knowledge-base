@@ -1,0 +1,55 @@
+{
+  "id": 1585,
+  "name": "Brawny",
+  "slug": "brawny",
+  "internal_key": "item_enhancement_brawny",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "health_bonus",
+      "heading": "+$health",
+      "values": [
+        110,
+        150,
+        190,
+        230
+      ]
+    },
+    {
+      "key": "health_regen",
+      "heading": "+$hp_regen",
+      "values": [
+        0,
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "key": "slow_resist",
+      "heading": "+$slow_resistance",
+      "values": [
+        0,
+        0,
+        0,
+        25
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,783 @@
+{
+  "id": 94,
+  "name": "Medusa",
+  "slug": "medusa",
+  "npc_name": "npc_dota_hero_medusa",
+  "primary_attribute": "agi",
+  "attack_type": "Ranged",
+  "complexity": 1,
+  "roles": [
+    "Carry",
+    "Disabler",
+    "Durable"
+  ],
+  "stats": {
+    "base_str": 0,
+    "str_gain": 0,
+    "base_agi": 22,
+    "agi_gain": 3.6,
+    "base_int": 25,
+    "int_gain": 3.6,
+    "damage_min": 48,
+    "damage_max": 54,
+    "attack_rate": 1.7,
+    "attack_range": 600,
+    "projectile_speed": 1200,
+    "armor": 2.6666667,
+    "magic_resistance": 25,
+    "movement_speed": 275,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 120,
+    "health_regen": 0.25,
+    "max_mana": 375,
+    "mana_regen": 1.25
+  },
+  "lore": "Beauty is power. This thought comforted Medusa--the youngest and loveliest of three beautiful Gorgon sisters, born to a sea goddess--because she alone of the sisters was mortal. It comforted her, that is, until the day masked assailants invaded the Gorgon realm and tore the two immortal sisters from their home, unmoved by their beauty or by their tears. One of the invaders seized Medusa as well, but then cast her aside with a disgusted look: 'This one has the mortal stink upon her. We have no use for that which dies.' Humiliated, enraged, Medusa fled to the temple of her mother and cast herself before the goddess, crying, 'You denied me eternal life--therefore I beg you, give me power! Power, so I can dedicate what life I have to rescuing my sisters and avenging this injustice!' After long thought, the goddess granted her daughter's request, allowing Medusa to trade her legendary beauty for a face and form of terrifying strength. Never for a moment has Medusa regretted her choice. She understands that power is the only beauty worth possessing--for only power can change the world.",
+  "hype": "Constant attack is the key to Medusa's success. Using her <b>mana shield</b> to stave off assault, she employs <b>split shots</b> to mow down waves of enemies. Once she gathers her full strength, she becomes a force powerful enough to stop anyone in their tracks.",
+  "abilities": [
+    {
+      "key": "medusa_split_shot",
+      "name": "Split Shot",
+      "description": "Medusa magically splits her shot into several arrows. These arrows deal a lower percent of her normal damage.<br/><br/>The extra targets will not receive other attack effects (such as critical strike).",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.4,
+        0.4,
+        0.4,
+        0.4
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage_modifier",
+          "heading": "",
+          "values": [
+            -50,
+            -40,
+            -30,
+            -20
+          ]
+        },
+        {
+          "key": "damage_modifier_tooltip",
+          "heading": "OUTGOING DAMAGE:",
+          "values": [
+            50,
+            60,
+            70,
+            80
+          ]
+        },
+        {
+          "key": "arrow_count",
+          "heading": "EXTRA TARGETS:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "process_procs",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "split_shot_bonus_range",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        }
+      ],
+      "scepter_upgrade": "Allows on-hit effects to apply to the secondary attacks from Split Shot. Increases arrow count.",
+      "shard_upgrade": null,
+      "notes": [
+        "Secondary targets will be the closest enemy units excluding the primary target.",
+        "If illusions of Medusa are created while Split Shot is active, they will also have this ability."
+      ],
+      "lore": "All who encounter the cursed Gorgon will feel her rage."
+    },
+    {
+      "key": "medusa_mystic_snake",
+      "name": "Mystic Snake",
+      "description": "A mystic snake made of energy jumps from target to target dealing damage. Damage and speed increases with each jump. After it reaches its last target, it returns to Medusa to replenish her with mana. The snake returns a percentage of the targets' total mana.",
+      "max_level": 4,
+      "cooldowns": [
+        15,
+        14,
+        13,
+        12
+      ],
+      "mana_costs": [
+        80,
+        100,
+        120,
+        140
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        750
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "JUMP RADIUS:",
+          "values": [
+            450
+          ]
+        },
+        {
+          "key": "snake_jumps",
+          "heading": "JUMPS:",
+          "values": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "key": "jump_delay",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "snake_damage",
+          "heading": "BASE DAMAGE:",
+          "values": [
+            90,
+            140,
+            190,
+            240
+          ]
+        },
+        {
+          "key": "snake_mana_steal",
+          "heading": "MANA GAIN:",
+          "values": [
+            15
+          ]
+        },
+        {
+          "key": "snake_scale",
+          "heading": "DAMAGE/SPEED INCREASE PER JUMP:",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "initial_speed",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "return_speed",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "stone_form_scepter_base",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "stone_form_scepter_increment",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "movement_slow",
+          "heading": "",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "max_attacks",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "mana_per_damage",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "attack_buff_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            750
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            80,
+            100,
+            120,
+            140
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            15,
+            14,
+            13,
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Mystic Snake cannot be disjointed."
+      ],
+      "lore": "The Gorgon's curse is her greatest strength."
+    },
+    {
+      "key": "medusa_gorgon_grasp",
+      "name": "Gorgon's Grasp",
+      "description": "Medusa fires arrows in a line that land in %volley_count% groups, with each grouping larger than the previous. Enemies struck by a volley of arrows take an initial burst of damage and then are rooted, cannot turn, are revealed to the enemy, and take damage per second.",
+      "max_level": 4,
+      "cooldowns": [
+        30,
+        26,
+        22,
+        18
+      ],
+      "mana_costs": [
+        65,
+        85,
+        105,
+        125
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        625
+      ],
+      "cast_points": [
+        0.4
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "INITIAL RADIUS:",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "radius_grow",
+          "heading": "RADIUS GROWTH:",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "delay",
+          "heading": "DELAY:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "volley_interval",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "volley_spread_pct",
+          "heading": "",
+          "values": [
+            170
+          ]
+        },
+        {
+          "key": "volley_count",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            0.8,
+            1.2,
+            1.6,
+            2
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            30,
+            70,
+            110,
+            150
+          ]
+        },
+        {
+          "key": "damage_pers",
+          "heading": "DAMAGE PER SECOND:",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "damage_interval",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            625
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            65,
+            85,
+            105,
+            125
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            30,
+            26,
+            22,
+            18
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "The best predators don't even need to pounce."
+    },
+    {
+      "key": "medusa_cold_blooded",
+      "name": "Cold Blooded",
+      "description": "When Medusa is targeted with a spell, a single-target Mystic Snake is sent back towards the enemy that turns them into stone for %stone_form_scepter_base_tooltip%s.",
+      "max_level": 1,
+      "cooldowns": [
+        12
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "stone_form_scepter_base_tooltip",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Point your gaze at her if you dare."
+    },
+    {
+      "key": "medusa_mana_shield",
+      "name": "Mana Shield",
+      "description": "Creates a shield that absorbs %absorption_pct%%% of incoming damage in exchange for Medusa's mana. Illusions absorb %illusion_percentage%%% less damage per point of mana.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage_per_mana",
+          "heading": "DAMAGE PER MANA:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "illusion_percentage",
+          "heading": "",
+          "values": [
+            60
+          ]
+        },
+        {
+          "key": "absorption_pct",
+          "heading": "",
+          "values": [
+            98
+          ]
+        },
+        {
+          "key": "aspd_increase_smoothness",
+          "heading": "",
+          "values": [
+            0.015
+          ]
+        },
+        {
+          "key": "aspd_increase_rate_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "aspd_increase_max_tooltip",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "aspd_increase_buff_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "aspd_increase_mana_cost_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "aspd_increase_max_aspd_time",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "attack_buff_cooldown",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "min_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Absorbs damage before any damage reduction takes place, meaning that armor will not reduce the amount of mana needed to absorb damage."
+      ],
+      "lore": "While Medusa was not gifted with eternal life upon birth, her curse bestowed her with impressive defensive powers."
+    },
+    {
+      "key": "medusa_stone_gaze",
+      "name": "Stone Gaze",
+      "description": "Any enemy units looking at Medusa will have their movement and attack speed slowed.  If %face_duration% seconds of total time is accumulated looking at Medusa while Stone Gaze is active, that unit will turn to stone.  Petrified units are stunned, and take bonus physical attack damage.",
+      "max_level": 3,
+      "cooldowns": [
+        90
+      ],
+      "mana_costs": [
+        250
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1200
+      ],
+      "cast_points": [
+        0.4
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            5,
+            5.5,
+            6
+          ]
+        },
+        {
+          "key": "slow",
+          "heading": "SLOW:",
+          "values": [
+            35
+          ]
+        },
+        {
+          "key": "stone_duration",
+          "heading": "STONE DURATION:",
+          "values": [
+            2,
+            2.2,
+            2.4
+          ]
+        },
+        {
+          "key": "face_duration",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "vision_cone",
+          "heading": "",
+          "values": [
+            0.08715
+          ]
+        },
+        {
+          "key": "bonus_physical_damage",
+          "heading": "BONUS PHYSICAL ATTACK DAMAGE:",
+          "values": [
+            35,
+            45,
+            55
+          ]
+        },
+        {
+          "key": "speed_boost",
+          "heading": "SPEED BOOST:",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            250
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            90
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Regardless of when a unit receives the Stone Gaze buff while the ability is active on Medusa, it will still receive the full debuff duration."
+      ],
+      "lore": "The beauty of Medusa is legendary."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_radius}% Gorgon's Grasp Radius"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_physical_damage}% Stone Gaze Bonus Physical Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_volley_count} Gorgon's Grasp Volley"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Mystic Snake Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_snake_damage}% Mystic Snake Damage / Mana Gain"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_modifier}% Split Shot Outgoing Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_duration}s Stone Gaze Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Intelligence"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": 187,
+  "name": "Medallion of Courage",
+  "slug": "medallion_of_courage",
+  "internal_key": "item_medallion_of_courage",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Valor</h1>Increases armor by %ally_armor% or decreases armor by %enemy_armor% for %duration%s depending on if cast on an ally or enemy. Cannot be cast on self.",
+  "notes": null,
+  "cooldowns": [
+    18
+  ],
+  "mana_costs": [
+    30
+  ],
+  "cast_ranges": [
+    1000
+  ],
+  "special_values": [
+    {
+      "key": "ally_armor",
+      "heading": "",
+      "values": [
+        7
+      ]
+    },
+    {
+      "key": "enemy_armor",
+      "heading": "",
+      "values": [
+        -4
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        8
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        1000
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        18
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

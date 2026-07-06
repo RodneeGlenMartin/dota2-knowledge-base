@@ -1,0 +1,673 @@
+{
+  "id": 17,
+  "name": "Storm Spirit",
+  "slug": "storm_spirit",
+  "npc_name": "npc_dota_hero_storm_spirit",
+  "primary_attribute": "int",
+  "attack_type": "Ranged",
+  "complexity": 2,
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Disabler",
+    "Escape",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 21,
+    "str_gain": 2,
+    "base_agi": 22,
+    "agi_gain": 2.6,
+    "base_int": 23,
+    "int_gain": 3.7,
+    "damage_min": 47,
+    "damage_max": 57,
+    "attack_rate": 1.6,
+    "attack_range": 480,
+    "projectile_speed": 1100,
+    "armor": 4.666667,
+    "magic_resistance": 25,
+    "movement_speed": 285,
+    "turn_rate": 0.8,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 582,
+    "health_regen": 2.6000001,
+    "max_mana": 351,
+    "mana_regen": 1.15
+  },
+  "lore": "Storm Spirit is literally a force of nature--the wild power of wind and weather, bottled in human form. And a boisterous, jovial, irrepressible form it is! As jolly as a favorite uncle, he injects every scene with crackling energy. But it was not always thus, and there was tragedy in his creation. Generations ago, in the plains beyond the Wailing Mountains, a good people lay starving in drought and famine. A simple elementalist, Thunderkeg by name, used a forbidden spell to summon the spirit of the storm, asking for rain. Enraged at this mortal's presumption, the Storm Celestial known as Raijin lay waste to the land, scouring it bare with winds and flood. Thunderkeg was no match for the Celestial--at least until he cast a suicidal spell that forged their fates into one: he captured the Celestial in the cage of his own body. Trapped together, Thunderkeg's boundless good humor fused with Raijin's crazed energy, creating the jovial Raijin Thunderkeg, a Celestial who walks the world in physical form. ",
+  "hype": "Storm Spirit is never one to miss a fight. <b>Zipping</b> from across the battlefield in a bolt of lightning, he strikes enemies from every direction with <b>exploding remnants</b> and <b>charged attacks</b>, then disappears while his enemies are still scrambling to react.",
+  "abilities": [
+    {
+      "key": "storm_spirit_static_remnant",
+      "name": "Static Remnant",
+      "description": "Creates an explosively charged image of Storm Spirit that walks to the target position and lasts for %abilityduration% seconds. Will detonate and deal damage if an enemy unit comes near it.",
+      "max_level": 4,
+      "cooldowns": [
+        3.5
+      ],
+      "mana_costs": [
+        70,
+        80,
+        90,
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        800
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        12
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "static_remnant_radius",
+          "heading": "",
+          "values": [
+            235
+          ]
+        },
+        {
+          "key": "static_remnant_damage_radius",
+          "heading": "RADIUS:",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "static_remnant_delay",
+          "heading": "",
+          "values": [
+            0.75
+          ]
+        },
+        {
+          "key": "static_remnant_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            100,
+            160,
+            220,
+            280
+          ]
+        },
+        {
+          "key": "is_point_targeted",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "static_remnant_travel_speed",
+          "heading": "REMNANT SPEED:",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "static_remnant_vision_radius_day",
+          "heading": "VISION RADIUS:",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "static_remnant_vision_radius_night",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "",
+          "values": [
+            12
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            70,
+            80,
+            90,
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            3.5
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Remnants take %static_remnant_delay% second to materialize after the spell is cast.",
+        "Remnants grant unobstructed vision for their duration.",
+        "The explosion actually hits units in a %static_remnant_damage_radius% radius, but will only be triggered in %static_remnant_radius%.",
+        "Can be self-cast to cast in place."
+      ],
+      "lore": "Raijin Thunderkeg's duality allows him to admire himself in shocking fashion."
+    },
+    {
+      "key": "storm_spirit_electric_vortex",
+      "name": "Electric Vortex",
+      "description": "A vortex that pulls an enemy unit to Storm Spirit's location.",
+      "max_level": 4,
+      "cooldowns": [
+        20,
+        18,
+        16,
+        14
+      ],
+      "mana_costs": [
+        60,
+        70,
+        80,
+        90
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        300
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        1.1,
+        1.4,
+        1.7,
+        2
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "electric_vortex_pull_distance",
+          "heading": "PULL DISTANCE:",
+          "values": [
+            180,
+            220,
+            260,
+            300
+          ]
+        },
+        {
+          "key": "electric_vortex_pull_tether_range",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "electric_vortex_self_slow",
+          "heading": "",
+          "values": [
+            -50
+          ]
+        },
+        {
+          "key": "electric_vortex_self_slow_duration",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "radius_scepter",
+          "heading": "RADIUS:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "DURATION:",
+          "values": [
+            1.1,
+            1.4,
+            1.7,
+            2
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            60,
+            70,
+            80,
+            90
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            20,
+            18,
+            16,
+            14
+          ]
+        }
+      ],
+      "scepter_upgrade": "Electric Vortex affects all enemies within a radius around Storm Spirit.",
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Raijin's thunderous, boisterous energy often draws others into an electrifying situation."
+    },
+    {
+      "key": "storm_spirit_overload",
+      "name": "Overload",
+      "description": "Casting a spell creates an electrical charge, which is released in a burst on Storm's next attack, dealing damage and slowing nearby enemies.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0.8
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "overload_aoe",
+          "heading": "RADIUS:",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "overload_move_slow",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            -80
+          ]
+        },
+        {
+          "key": "overload_attack_slow",
+          "heading": "ATTACK SLOW:",
+          "values": [
+            -90
+          ]
+        },
+        {
+          "key": "overload_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            25,
+            50,
+            75,
+            100
+          ]
+        },
+        {
+          "key": "shard_activation_radius",
+          "heading": "ACTIVATION RADIUS:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_activation_charges",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_activation_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_manacost",
+          "heading": "MANA COST:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_cooldown",
+          "heading": "COOLDOWN:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_attack_speed_bonus",
+          "heading": "ATTACK SPEED BONUS:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "overload_bounces",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "overload_damage_pct",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "DURATION:",
+          "values": [
+            0.8
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Can be activated to grant Storm Spirit and nearby allied heroes %shard_activation_charges% Overload charges. Provides bonus Attack Speed. Lasts up to %shard_activation_duration% seconds or until the charges are depleted.",
+      "notes": [
+        "Using items doesn't trigger Overload.",
+        "Overload charges do not stack."
+      ],
+      "lore": "Pow!  Zip!  Zap!"
+    },
+    {
+      "key": "storm_spirit_ball_lightning",
+      "name": "Ball Lightning",
+      "description": "Storm Spirit becomes volatile electricity, charging across the battlefield until he depletes his mana or reaches his target. The activation mana cost is %ball_lightning_initial_mana_base%+%ball_lightning_initial_mana_percentage%%% of his total mana pool, and the cost per 100 units traveled is %ball_lightning_travel_cost_base%+%ball_lightning_travel_cost_percent%%% of his total mana pool.  Damage is expressed in damage per 100 units traveled.",
+      "max_level": 3,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        30
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        6,
+        10,
+        14
+      ],
+      "special_values": [
+        {
+          "key": "ball_lightning_initial_mana_percentage",
+          "heading": "",
+          "values": [
+            7.5
+          ]
+        },
+        {
+          "key": "ball_lightning_initial_mana_base",
+          "heading": "",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "ball_lightning_move_speed",
+          "heading": "SPEED:",
+          "values": [
+            1400,
+            1850,
+            2300
+          ]
+        },
+        {
+          "key": "ball_lightning_aoe",
+          "heading": "RADIUS:",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "ball_lightning_travel_cost_base",
+          "heading": "",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "ball_lightning_travel_cost_percent",
+          "heading": "MANA DRAIN PER 100 UNITS:",
+          "values": [
+            0.65
+          ]
+        },
+        {
+          "key": "ball_lightning_vision_radius",
+          "heading": "",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "blocker_duration",
+          "heading": "",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "scepter_remnant_interval",
+          "heading": "",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "auto_remnant_interval",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityDamage",
+          "heading": "",
+          "values": [
+            6,
+            10,
+            14
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            30
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Abilities and items can be used while traveling.",
+        "This ability will destroy trees.",
+        "Storm Spirit is invulnerable during Ball Lightning."
+      ],
+      "lore": "The Storm is coming in."
+    },
+    {
+      "key": "storm_spirit_galvanized",
+      "name": "Galvanized",
+      "description": "Storm Spirit gains a charge of %mp_per_kill% mana regeneration per kill, and a charge every %level_divisor% levels. Loses %charges_per_death% charges per death. Additionally every time he gains a charge he also gains %perma_mp_per_kill% Mana Regen permanently.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "perma_mp_per_kill",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "mp_per_kill",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "aoe",
+          "heading": "RADIUS:",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "charges_per_death",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "level_divisor",
+          "heading": "",
+          "values": [
+            3
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Break disables the gaining of new stacks from kills."
+      ],
+      "lore": null
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_overload_move_slow}/{s:bonus_overload_move_slow}% Overload Attack/Movement Speed Slow"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Mana Regen"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Health"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_static_remnant_damage} Static Remnant Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_AbilityDuration}s Electric Vortex Duration"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Static Remnant Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_overload_bounces}x Overload Attack Bounce"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_auto_remnant_interval} Distance Auto Remnant in Ball Lightning"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

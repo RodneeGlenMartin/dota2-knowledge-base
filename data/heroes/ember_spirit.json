@@ -1,0 +1,721 @@
+{
+  "id": 106,
+  "name": "Ember Spirit",
+  "slug": "ember_spirit",
+  "npc_name": "npc_dota_hero_ember_spirit",
+  "primary_attribute": "agi",
+  "attack_type": "Melee",
+  "complexity": 2,
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Disabler",
+    "Escape",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 21,
+    "str_gain": 2.5,
+    "base_agi": 22,
+    "agi_gain": 3.2,
+    "base_int": 20,
+    "int_gain": 2.2,
+    "damage_min": 52,
+    "damage_max": 56,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 3.6666667,
+    "magic_resistance": 25,
+    "movement_speed": 300,
+    "turn_rate": 0.8,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 582,
+    "health_regen": 2.6000001,
+    "max_mana": 315,
+    "mana_regen": 1
+  },
+  "lore": "Lost within the Wailing Mountains, the Fortress of Flares lay abandoned, its training halls empty, its courtyard covered in leaves and dust. Upon a dais in its sealed temple rests a topaz cauldron filled with ancient ash, remnants of a pyre for the warrior-poet Xin. For three generations, Xin taught his acolytes the Bonds of the Guardian Flame, a series of mantras to train the mind and body for the harsh realities beyond the fortress walls.\r\n\t\t\t\t<br><br>However, in teaching a warrior's way he earned a warrior's rivals, and in his autumn Xin was bested and slain. His followers spread to the wind. Yet as years turned to centuries and followers to descendants, his teachings endured by subtle whisper and deed. Touched by the teacher's lasting legacy, the Burning Celestial, inquisitive aspect of fire, cast himself to the Fortress of Flares and reignited the pyre ash. From these glowing embers emerged an image of Xin, wreathed in flame, his thoughtful countenance prepared to train and to teach, and to spread the fires of knowledge to all who seek guidance.",
+  "hype": "<b>Swift and elusive</b>, Ember Spirit strikes all nearby enemies in <b>rapid succession</b>, and ties them up with <b>burning chains</b>. Quickly rushing across the battlefield to arrive at one of his <b>exploding remnants</b>, few can avoid, or capture, his flame.",
+  "abilities": [
+    {
+      "key": "ember_spirit_searing_chains",
+      "name": "Searing Chains",
+      "description": "Ember Spirit unleashes fiery bolas that wrap around nearby enemies, anchoring them in place and dealing damage each second.",
+      "max_level": 4,
+      "cooldowns": [
+        13,
+        12,
+        11,
+        10
+      ],
+      "mana_costs": [
+        80,
+        90,
+        100,
+        110
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        400
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            1.25,
+            1.75,
+            2.25,
+            2.75
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "damage_per_second",
+          "heading": "DAMAGE PER SECOND:",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "tick_interval",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "unit_count",
+          "heading": "UNIT COUNT:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            80,
+            90,
+            100,
+            110
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            13,
+            12,
+            11,
+            10
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Targets are chosen randomly around Xin.",
+        "Does not affect Debuff Immune or invisible units."
+      ],
+      "lore": "Xin's harshest lessons often employed the use of red-hot chains."
+    },
+    {
+      "key": "ember_spirit_sleight_of_fist",
+      "name": "Sleight of Fist",
+      "description": "Ember Spirit dashes around with blazing speed, attacking all enemies in the targeted area of effect, then returning to his start location.  Deals bonus damage to heroes.",
+      "max_level": 4,
+      "cooldowns": [
+        13,
+        11,
+        9,
+        7
+      ],
+      "mana_costs": [
+        75
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        650
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            250,
+            350,
+            450,
+            550
+          ]
+        },
+        {
+          "key": "bonus_hero_damage",
+          "heading": "BONUS HERO DAMAGE:",
+          "values": [
+            40,
+            80,
+            120,
+            160
+          ]
+        },
+        {
+          "key": "attack_interval",
+          "heading": "ATTACK INTERVAL:",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            650
+          ]
+        },
+        {
+          "key": "AbilityCharges",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityChargeRestoreTime",
+          "heading": "",
+          "values": [
+            13,
+            11,
+            9,
+            7
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            13,
+            11,
+            9,
+            7
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Targets are determined when the spell is cast.",
+        "A regular attack is done to each target every %attack_interval% seconds.",
+        "Any attack modifier that Xin has (such as Critical Strike, Bash, Cleave, or Orb effects) will be applied normally on these attacks.",
+        "Abilities and items can be used while Sleight of Fist is active."
+      ],
+      "lore": "The studied warrior must whip and weave through its enemies, burning each without pause."
+    },
+    {
+      "key": "ember_spirit_flame_guard",
+      "name": "Flame Guard",
+      "description": "Ember Spirit surrounds himself with a ring of fire that consumes incoming magic damage, absorbing a percentage of the damage taken. Flame Guard deals damage per second in an area around Ember Spirit while Flame Guard is active. If the shield is broken, the damage is also lost.",
+      "max_level": 4,
+      "cooldowns": [
+        32
+      ],
+      "mana_costs": [
+        65,
+        80,
+        95,
+        110
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        400
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            12,
+            14,
+            16,
+            18
+          ]
+        },
+        {
+          "key": "passive_radius",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "tick_interval",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "damage_per_second",
+          "heading": "DAMAGE PER SECOND:",
+          "values": [
+            20,
+            30,
+            40,
+            50
+          ]
+        },
+        {
+          "key": "linger_duration",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "shield_pct_absorb",
+          "heading": "PERCENTAGE ABSORBED:",
+          "values": [
+            70
+          ]
+        },
+        {
+          "key": "absorb_amount",
+          "heading": "MAGIC BARRIER:",
+          "values": [
+            60,
+            140,
+            220,
+            300
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            65,
+            80,
+            95,
+            110
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            32
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Magic damage reduction is calculated before any reductions.",
+        "The damage lingers for an additional %linger_duration% seconds after application."
+      ],
+      "lore": "An enemy should never be allowed to approach without difficulty."
+    },
+    {
+      "key": "ember_spirit_activate_fire_remnant",
+      "name": "Activate Fire Remnant",
+      "description": "Select the Fire Remnant to arrive at.",
+      "max_level": 3,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        100,
+        125,
+        150
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        99999
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "speed_multiplier",
+          "heading": "",
+          "values": [
+            250
+          ]
+        },
+        {
+          "key": "max_charges",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "charge_restore_time",
+          "heading": "",
+          "values": [
+            35
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "",
+          "values": [
+            100,
+            200,
+            300
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            450
+          ]
+        },
+        {
+          "key": "speed",
+          "heading": "",
+          "values": [
+            1300
+          ]
+        },
+        {
+          "key": "scepter_mana_cost",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            99999
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            125,
+            150
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "With blazing speed does a spirit fly!"
+    },
+    {
+      "key": "ember_spirit_immolation",
+      "name": "Immolation",
+      "description": "Ember Spirit is continuously burning, dealing damage per second to all nearby enemies at all times.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "tick_interval",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE PER SECOND:",
+          "values": [
+            10
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Grants Fire Remnants the current level of Immolation, and increases the damage per second and radius.",
+      "notes": [
+        "Break does not disable Immolation for Fire Remnants when upgraded with Aghanim's Shard."
+      ],
+      "lore": null
+    },
+    {
+      "key": "ember_spirit_fire_remnant",
+      "name": "Fire Remnant",
+      "description": "Sends a Fire Remnant that runs to the target location at %speed_multiplier%%% Ember Spirit's speed. Using Activate Fire Remnant, Ember Spirit will dash out to all active Fire Remnants, destroying them and dealing damage in an area and then moving to the nearest Remnant.  Ember Spirit will end at the Remnant closest to the targeted location.",
+      "max_level": 3,
+      "cooldowns": [
+        0.5
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1400
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "speed_multiplier",
+          "heading": "",
+          "values": [
+            250
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            100,
+            200,
+            300
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            450
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            45
+          ]
+        },
+        {
+          "key": "scepter_range",
+          "heading": "RANGE:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "scepter_speed_multiplier",
+          "heading": "SPEED MULTIPLIER:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "scepter_max_charges",
+          "heading": "MAX CHARGES:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_charge_radius",
+          "heading": "CHARGE RADIUS:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "apply_immolation_to_remnant",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1400
+          ]
+        },
+        {
+          "key": "AbilityCharges",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "AbilityChargeRestoreTime",
+          "heading": "",
+          "values": [
+            35
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        }
+      ],
+      "scepter_upgrade": "Increases cast range, initial remnant speed, and maximum charges.",
+      "shard_upgrade": "If an enemy hero dies near Ember Spirit, a Fire Remnant charge will be replenished. Additionally, when Ember Spirit dies a Fire Remnant is spawned at his location.",
+      "notes": [
+        "Starts with 3 charges (maximum)."
+      ],
+      "lore": "By the spirit's power are Xin's teachings spread anew."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:value} Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_absorb_amount} Flame Guard Barrier Amount"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_per_second}% Flame Guard Damage Per Second"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_duration}s Searing Chains Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_hero_damage} Sleight of Fist Hero Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_per_second} Searing Chains Damage"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_AbilityCharges} Sleight of Fist Charges"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityChargeRestoreTime}s Remnant Charge Restore Time"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,1463 @@
+{
+  "id": 131,
+  "name": "Ringmaster",
+  "slug": "ringmaster",
+  "npc_name": "npc_dota_hero_ringmaster",
+  "primary_attribute": "int",
+  "attack_type": "Ranged",
+  "complexity": 2,
+  "roles": [
+    "Support",
+    "Nuker",
+    "Disabler",
+    "Escape"
+  ],
+  "stats": {
+    "base_str": 21,
+    "str_gain": 2.1,
+    "base_agi": 11,
+    "agi_gain": 1.6,
+    "base_int": 25,
+    "int_gain": 3,
+    "damage_min": 48,
+    "damage_max": 58,
+    "attack_rate": 1.7,
+    "attack_range": 575,
+    "projectile_speed": 1200,
+    "armor": 2.8333335,
+    "magic_resistance": 25,
+    "movement_speed": 310,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 582,
+    "health_regen": 2.3500001,
+    "max_mana": 375,
+    "mana_regen": 1.25
+  },
+  "lore": "Welcome, welcome, one and all — to a stage-lit extravaganza for the ages! Prepare to have your senses shattered! Your expectations demolished! Your Ancients smashed to ruins!<br><br>Witness the impossible feats and derring-do of the one and only clockwork marvel, the Great Cogliostro Kettle — Ringmaster, torture artist, genius in his own time — here now for the sole agony and entertainment of any hero bold enough to draw back the crimson carnival curtain and behold what mysteries await inside.<br><br>The mistake most maestros make is waiting for the public to come to them. The Ringmaster knows you need to go out and <i>find</i> your audience! <i>Drag</i> them to you. And <i>make</i> them watch.",
+  "hype": "All the battlefield's a stage, and Ringmaster is a gleeful director. <b>Controlling fights</b> with a showman's flair, Ringmaster <b>tames enemies</b> with his fearsome whip and endless knives, <b>ushers allies away from danger</b> with his cunning escape act, and <b>always draws a crowd</b> to unwillingly witness the wonders of his mesmerizing wheel.",
+  "abilities": [
+    {
+      "key": "ringmaster_tame_the_beasts",
+      "name": "Tame the Beasts",
+      "description": "CHANNELED - Ringmaster twirls his whip for up to %abilitychanneltime% second then cracks it. Whipped enemies are damaged and flee in fear from Ringmaster. Channel time exponentially increases damage and extends the fear duration, but reduces the radius.",
+      "max_level": 4,
+      "cooldowns": [
+        16,
+        14,
+        12,
+        10
+      ],
+      "mana_costs": [
+        90,
+        105,
+        120,
+        135
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        700
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "start_width",
+          "heading": "RADIUS START:",
+          "values": [
+            450
+          ]
+        },
+        {
+          "key": "end_width",
+          "heading": "RADIUS END:",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "damage_min",
+          "heading": "MIN DAMAGE:",
+          "values": [
+            50,
+            75,
+            100,
+            125
+          ]
+        },
+        {
+          "key": "damage_max",
+          "heading": "MAX DAMAGE:",
+          "values": [
+            180,
+            280,
+            380,
+            480
+          ]
+        },
+        {
+          "key": "crack_duration",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "max_multiplier",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "magic_resist",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "has_debuff_immunity",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "fear_duration_min",
+          "heading": "MIN FEAR DURATION:",
+          "values": [
+            0.1,
+            0.2,
+            0.3,
+            0.4
+          ]
+        },
+        {
+          "key": "fear_duration_max",
+          "heading": "MAX FEAR DURATION:",
+          "values": [
+            0.6,
+            0.8,
+            1,
+            1.2
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "AbilityChannelTime",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            90,
+            105,
+            120,
+            135
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            16,
+            14,
+            12,
+            10
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "From unhappy crowds to unruly acts, nothing persuades a pack of animals quite like the crack of the Ringmaster's whip."
+    },
+    {
+      "key": "ringmaster_the_box",
+      "name": "Escape Act",
+      "description": "Ringmaster packs himself or an allied hero into a mobile, extradimensional box. Boxed units gain phased movement, slow resistance, bonus magic resistance, and bonus movement speed. They are also untargetable, muted, silenced, and disarmed. The box will pop open after the effect expires or it moves out of the initial area.",
+      "max_level": 4,
+      "cooldowns": [
+        38,
+        32,
+        26,
+        20
+      ],
+      "mana_costs": [
+        120
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        600
+      ],
+      "cast_points": [
+        0.4
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "leash_radius",
+          "heading": "RADIUS:",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "invis_duration",
+          "heading": "DURATION:",
+          "values": [
+            2,
+            2.4,
+            2.8,
+            3.2
+          ]
+        },
+        {
+          "key": "move_speed",
+          "heading": "BONUS MOVEMENT SPEED:",
+          "values": [
+            0,
+            8,
+            16,
+            24
+          ]
+        },
+        {
+          "key": "magic_resist",
+          "heading": "BONUS MAGIC RESISTANCE:",
+          "values": [
+            50,
+            60,
+            70,
+            80
+          ]
+        },
+        {
+          "key": "slow_resist",
+          "heading": "SLOW RESISTANCE:",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "transform_time",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "model_scale_time",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "leap_distance",
+          "heading": "",
+          "values": [
+            250
+          ]
+        },
+        {
+          "key": "leap_speed",
+          "heading": "",
+          "values": [
+            1300
+          ]
+        },
+        {
+          "key": "leap_acceleration",
+          "heading": "",
+          "values": [
+            20000
+          ]
+        },
+        {
+          "key": "strong_dispel",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "grant_flying",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "max_charges",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "launch_daggers_count",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "launch_daggers_range",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "explosion_radius",
+          "heading": "EXPLOSION RADIUS:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "explosion_damage",
+          "heading": "EXPLOSION DAMAGE:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "AbilityChargeRestoreTime",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            120
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            38,
+            32,
+            26,
+            20
+          ]
+        }
+      ],
+      "scepter_upgrade": "Escape Act has %max_charges% charges. When the box pops open, Impalement Art daggers are thrown in all directions, and all enemies around it take damage.",
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "An adept assistant has nothing to fear within the confines of The Box. An amateur has...much darker prospects indeed."
+    },
+    {
+      "key": "ringmaster_impalement",
+      "name": "Impalement Arts",
+      "description": "Ringmaster throws one of his daggers to a precise point of his choosing. If he strikes an enemy, the dagger deals impact damage, briefly slows the unit hit, and causes them to bleed. The bleeding deals a percentage of the victim's maximum health in damage every second to heroes and flat damage per second to creeps.",
+      "max_level": 4,
+      "cooldowns": [
+        1
+      ],
+      "mana_costs": [
+        50
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        2400
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage_impact",
+          "heading": "IMPACT DAMAGE:",
+          "values": [
+            20,
+            35,
+            50,
+            65
+          ]
+        },
+        {
+          "key": "bleed_health_pct",
+          "heading": "MAX HEALTH DAMAGE PER SECOND (HEROES):",
+          "values": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "key": "bleed_creep_dps",
+          "heading": "DAMAGE PER SECOND (CREEPS):",
+          "values": [
+            85,
+            90,
+            95,
+            100
+          ]
+        },
+        {
+          "key": "bleed_duration",
+          "heading": "DURATION:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "slow_percent",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "slow_duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            0.5,
+            0.6,
+            0.7,
+            0.8
+          ]
+        },
+        {
+          "key": "dagger_speed",
+          "heading": "",
+          "values": [
+            1350
+          ]
+        },
+        {
+          "key": "dagger_width",
+          "heading": "",
+          "values": [
+            130
+          ]
+        },
+        {
+          "key": "dagger_vision",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "tick_interval",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "dagger_pass_through",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            2400
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityCharges",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "AbilityChargeRestoreTime",
+          "heading": "",
+          "values": [
+            17
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            1
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Passed down through generations, it simply wouldn't be a Kettle Circus without the Great Cogliostro's signature trick."
+    },
+    {
+      "key": "ringmaster_spotlight",
+      "name": "Spotlight",
+      "description": "Ringmaster shines %spotlight_count% spotlights that sweep over an area. Enemies in the light have a chance to miss their attacks and are revealed if invisible. Illusions hit by the beam fade away, losing a percentage of their maximum health each second. These effects linger for %linger_duration% seconds after leaving the light.",
+      "max_level": 1,
+      "cooldowns": [
+        30
+      ],
+      "mana_costs": [
+        50
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1500
+      ],
+      "cast_points": [
+        0.5
+      ],
+      "durations": [
+        8
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            275
+          ]
+        },
+        {
+          "key": "illusion_percent_damage",
+          "heading": "ILLUSION MAX HEALTH LOSS:",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "pulse_interval",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "miss_chance",
+          "heading": "MISS CHANCE:",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "initial_speed",
+          "heading": "",
+          "values": [
+            3000
+          ]
+        },
+        {
+          "key": "sweep_speed",
+          "heading": "",
+          "values": [
+            0.785
+          ]
+        },
+        {
+          "key": "sweep_radius",
+          "heading": "",
+          "values": [
+            450
+          ]
+        },
+        {
+          "key": "linger_duration",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "spotlight_count",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1500
+          ]
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "DURATION:",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            30
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Are you ready for your fifteen seconds? The limelight draws no distinction between infamy and fame."
+    },
+    {
+      "key": "ringmaster_wheel",
+      "name": "Wheel of Wonder",
+      "description": "Ringmaster rolls the Wheel of Wonder to the targeted location, knocking aside enemies along the way. After it reaches its target, enemies in range of the wheel take damage over time and are slowed by %aura_slow%%%.<br><br>Enemy heroes who face the wheel for more than %face_duration% seconds are mesmerized and drawn towards it. The first enemy to be mesmerized triggers a timer for the wheel to explode. If the timer is not triggered, it will automatically explode after %trap_duration% seconds.",
+      "max_level": 3,
+      "cooldowns": [
+        90,
+        80,
+        70
+      ],
+      "mana_costs": [
+        150,
+        225,
+        300
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1400
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "min_range",
+          "heading": "MINIMUM RANGE:",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "mesmerize_radius",
+          "heading": "RADIUS:",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "projectile_speed",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "trap_duration",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "wheel_stun",
+          "heading": "TIMER DURATION:",
+          "values": [
+            2.5,
+            2.75,
+            3
+          ]
+        },
+        {
+          "key": "face_duration",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "aura_tick_interval",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "aura_damage",
+          "heading": "AURA DAMAGE PER SECOND:",
+          "values": [
+            50,
+            75,
+            100
+          ]
+        },
+        {
+          "key": "aura_slow",
+          "heading": "",
+          "values": [
+            -50
+          ]
+        },
+        {
+          "key": "explosion_damage",
+          "heading": "EXPLOSION DAMAGE:",
+          "values": [
+            300,
+            450,
+            600
+          ]
+        },
+        {
+          "key": "vision_radius",
+          "heading": "",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "tick_rate",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "vision_cone",
+          "heading": "",
+          "values": [
+            0.08715
+          ]
+        },
+        {
+          "key": "knockback_radius",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "knockback_duration",
+          "heading": "",
+          "values": [
+            0.35
+          ]
+        },
+        {
+          "key": "knockback_distance",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "knockback_height",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1400
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            150,
+            225,
+            300
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            90,
+            80,
+            70
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "No, brave friends, illusions are for charlatans and card sharks. What you witness today is the power of true magic. But only if you dare set your gaze upon...the mesmerizing wheel."
+    },
+    {
+      "key": "ringmaster_dark_carnival_souvenirs",
+      "name": "Dark Carnival Barker",
+      "description": "Ringmaster receives a random single-use Dark Carnival Souvenir whenever an enemy hero dies within %souvenir_collection_range% units of him. Additional Souvenirs are held as charges.<br><br>If Ringmaster does not have a Souvenir when he dies he will be granted one.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "souvenir_collection_range",
+          "heading": "",
+          "values": [
+            925
+          ]
+        },
+        {
+          "key": "use_souvenir_set_1",
+          "heading": "",
+          "values": [
+            1
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "ringmaster_funhouse_mirror",
+      "name": "Funhouse Mirror",
+      "description": "<h1>Use: Proportion Distortion</h1>Creates %images_count% imperfect image of your hero that lasts %illusion_duration% seconds. Your illusion deals %tooltip_damage_outgoing_ranged%%% and takes  %tooltip_damage_incoming_total_pct%%% damage.",
+      "max_level": 1,
+      "cooldowns": [
+        3
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "images_count",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "illusion_duration",
+          "heading": "",
+          "values": [
+            18
+          ]
+        },
+        {
+          "key": "images_do_damage_percent_melee",
+          "heading": "",
+          "values": [
+            -67
+          ]
+        },
+        {
+          "key": "tooltip_damage_outgoing_melee",
+          "heading": "",
+          "values": [
+            33
+          ]
+        },
+        {
+          "key": "images_take_damage_percent",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "tooltip_damage_incoming_total_pct",
+          "heading": "",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "tooltip_damage_outgoing_ranged",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "invuln_duration",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "vision_radius",
+          "heading": "",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "num_scale_sets",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "model_scale_animate_time",
+          "heading": "",
+          "values": [
+            0.05
+          ]
+        },
+        {
+          "key": "illusion_model_scale_3",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "health_bar_offset_1",
+          "heading": "",
+          "values": [
+            180
+          ]
+        },
+        {
+          "key": "health_bar_offset_2",
+          "heading": "",
+          "values": [
+            220
+          ]
+        },
+        {
+          "key": "health_bar_offset_3",
+          "heading": "",
+          "values": [
+            280
+          ]
+        },
+        {
+          "key": "AbilityCharges",
+          "heading": "",
+          "values": [
+            99
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            3
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Has a %invuln_duration% second cast time during which you are invulnerable."
+      ],
+      "lore": null
+    },
+    {
+      "key": "ringmaster_strongman_tonic",
+      "name": "Strongman Tonic",
+      "description": "<h1>Use: Forcefully Imbibe</h1>Temporarily increases an allied hero's Strength by %strength_bonus_base% plus %strength_bonus_per_level% per Ringmaster's level for %duration% seconds. The effect holds for %effect_strength_max_duration% seconds and then deteriorates over the duration.",
+      "max_level": 1,
+      "cooldowns": [
+        3
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        750
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "projectile_speed",
+          "heading": "",
+          "values": [
+            1400
+          ]
+        },
+        {
+          "key": "strength_bonus_base",
+          "heading": "",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "strength_bonus_per_level",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "model_scale",
+          "heading": "",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "model_scale_animate_time",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "effect_strength_max_duration",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            750
+          ]
+        },
+        {
+          "key": "AbilityCharges",
+          "heading": "",
+          "values": [
+            99
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            3
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "ringmaster_whoopee_cushion",
+      "name": "Whoopee Cushion",
+      "description": "<h1>Use: Whoopsie</h1>Propels your hero forward %leap_distance% units. Leaves a %fart_cloud_radius% radius stink cloud behind for %fart_cloud_duration% seconds that slows enemies by %fart_cloud_slow%%%.",
+      "max_level": 1,
+      "cooldowns": [
+        3
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "leap_distance",
+          "heading": "",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "leap_speed",
+          "heading": "",
+          "values": [
+            1300
+          ]
+        },
+        {
+          "key": "leap_acceleration",
+          "heading": "",
+          "values": [
+            10000
+          ]
+        },
+        {
+          "key": "fart_cloud_duration",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "fart_cloud_slow",
+          "heading": "",
+          "values": [
+            -30
+          ]
+        },
+        {
+          "key": "fart_cloud_aura_linger_duration",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "fart_cloud_radius",
+          "heading": "",
+          "values": [
+            250
+          ]
+        },
+        {
+          "key": "AbilityCharges",
+          "heading": "",
+          "values": [
+            99
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            3
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "ringmaster_summon_unicycle",
+      "name": "Unicycle",
+      "description": "<h1>Use: Saddle Up</h1>Summons a speedy unicycle to ride around on for %mount_duration% seconds. %damage_grace_period%s after mounting the unicycle, taking damage from enemy hero sources greater than %damage_threshold% dismounts the rider. Crashing into trees destroys them and slows the unicycle. Attacking, using channeled abilities, or crashing into units and other obstacles also dismounts the rider.",
+      "max_level": 1,
+      "cooldowns": [
+        3
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.5
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "mount_cast_point",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "mount_duration",
+          "heading": "",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "tree_impact_speed_divisor",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "max_speed",
+          "heading": "",
+          "values": [
+            750
+          ]
+        },
+        {
+          "key": "acceleration",
+          "heading": "",
+          "values": [
+            350
+          ]
+        },
+        {
+          "key": "turn_rate_min",
+          "heading": "",
+          "values": [
+            90
+          ]
+        },
+        {
+          "key": "turn_rate_max",
+          "heading": "",
+          "values": [
+            130
+          ]
+        },
+        {
+          "key": "impact_radius",
+          "heading": "",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "knockback_distance",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "damage_grace_period",
+          "heading": "",
+          "values": [
+            1.5
+          ]
+        },
+        {
+          "key": "damage_threshold",
+          "heading": "",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "AbilityCharges",
+          "heading": "",
+          "values": [
+            99
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            3
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_AbilityCharges} Impalement Arts Charge"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_start_width} Tame the Beasts Radius"
+    },
+    {
+      "slot": null,
+      "name": "Impalement Arts Penetrates One Target"
+    },
+    {
+      "slot": null,
+      "name": "Debuff Immunity While Channeling Tame the Beasts"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bleed_duration}s Impalement Arts Bleed and Slow Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_min}/+{s:bonus_damage_max} Tame the Beasts Min/Max Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_mesmerize_radius} Wheel of Wonder Radius and Range"
+    },
+    {
+      "slot": null,
+      "name": "Escape Act Grants Strong Dispel and Flying"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

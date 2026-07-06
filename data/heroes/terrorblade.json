@@ -1,0 +1,783 @@
+{
+  "id": 109,
+  "name": "Terrorblade",
+  "slug": "terrorblade",
+  "npc_name": "npc_dota_hero_terrorblade",
+  "primary_attribute": "agi",
+  "attack_type": "Melee",
+  "complexity": 2,
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Pusher"
+  ],
+  "stats": {
+    "base_str": 18,
+    "str_gain": 2,
+    "base_agi": 23,
+    "agi_gain": 4,
+    "base_int": 19,
+    "int_gain": 1.6,
+    "damage_min": 49,
+    "damage_max": 55,
+    "attack_rate": 1.5,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 9.833334,
+    "magic_resistance": 25,
+    "movement_speed": 315,
+    "turn_rate": 0.8,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 516,
+    "health_regen": 2.3000002,
+    "max_mana": 303,
+    "mana_regen": 0.95
+  },
+  "lore": "Terrorblade is the demon marauder--an outlaw hellion whom even other demons fear. A cosmic iconoclast, he stole from the Demon Lords, ignored the codified rites that should have bound his behavior, and broke every law of the seven Infernal Regions. For his crimes, he was taught this lesson: even Hell has a hell. A short, brutal trial ensued, with many dead on all sides, and he was finally incarcerated in Foulfell, a hidden dimension where demonkind imprison their own.\r\n\t\t\t\t<br><br>But Foulfell is no normal prison. In this dark mirror of reality, demons are sentenced to gaze eternally into the twisted reflection of their own souls. But instead of suffering, Terrorblade made himself master of his own reflected worst self--a raging, thieving demon of unimaginable power. With his inner beast under sway, he destroyed the fractal prison walls and burst free to turn his terror loose upon all creation.",
+  "hype": "With Terrorblade, nothing is as it seems. Conjuring <b>powerful illusions</b> to confuse enemies and break their defenses, the demon marauder can <b>exchange health with foes and friends</b> to stave off death or weaken his enemies.",
+  "abilities": [
+    {
+      "key": "terrorblade_reflection",
+      "name": "Reflection",
+      "description": "Terrorblade brings forth an invulnerable dark reflection of all enemy heroes in a target area. Affected enemy heroes have movement and attack speeds slowed and attacked by their reflection.",
+      "max_level": 4,
+      "cooldowns": [
+        23,
+        20,
+        17,
+        14
+      ],
+      "mana_costs": [
+        60,
+        65,
+        70,
+        75
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        700
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "illusion_duration",
+          "heading": "REFLECTION DURATION:",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "illusion_outgoing_damage",
+          "heading": "",
+          "values": [
+            -70,
+            -55,
+            -40,
+            -25
+          ]
+        },
+        {
+          "key": "illusion_outgoing_tooltip",
+          "heading": "REFLECTION DAMAGE:",
+          "values": [
+            30,
+            45,
+            60,
+            75
+          ]
+        },
+        {
+          "key": "move_slow",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            15,
+            20,
+            25,
+            30
+          ]
+        },
+        {
+          "key": "attack_slow",
+          "heading": "ATTACK SPEED SLOW:",
+          "values": [
+            15,
+            20,
+            25,
+            30
+          ]
+        },
+        {
+          "key": "range",
+          "heading": "RADIUS:",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            60,
+            65,
+            70,
+            75
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            23,
+            20,
+            17,
+            14
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Reflections are untargetable, invulnerable illusions, that will be destroyed if the slow debuff is removed.",
+        "Reflections can only attack their source."
+      ],
+      "lore": "In the fractal prison of Foulfell, Terrorblade learned the truth of this old tale: you are your own worst enemy.  Now it is a lesson he teaches others."
+    },
+    {
+      "key": "terrorblade_conjure_image",
+      "name": "Conjure Image",
+      "description": "Creates an illusion of Terrorblade that deals damage.",
+      "max_level": 4,
+      "cooldowns": [
+        16
+      ],
+      "mana_costs": [
+        50,
+        60,
+        70,
+        80
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.15
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "illusion_duration",
+          "heading": "ILLUSION DURATION:",
+          "values": [
+            34
+          ]
+        },
+        {
+          "key": "illusion_outgoing_damage",
+          "heading": "",
+          "values": [
+            -75,
+            -70,
+            -65,
+            -60
+          ]
+        },
+        {
+          "key": "illusion_outgoing_tooltip",
+          "heading": "ILLUSION DAMAGE:",
+          "values": [
+            25,
+            30,
+            35,
+            40
+          ]
+        },
+        {
+          "key": "illusion_incoming_damage",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "illusion_incoming_damage_total_tooltip",
+          "heading": "ILLUSION DAMAGE TAKEN:",
+          "values": [
+            250
+          ]
+        },
+        {
+          "key": "show_particle_effect",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "appear_as_illusion",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "hp_cost_perc",
+          "heading": "CURRENT HP COST:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "illusions_spawn_with_full_hp",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.15
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            50,
+            60,
+            70,
+            80
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            16
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Illusions created by Conjure Image are visually different for enemies."
+      ],
+      "lore": "There's only one thing more dangerous than facing Terrorblade.  Facing MORE Terrorblades!"
+    },
+    {
+      "key": "terrorblade_metamorphosis",
+      "name": "Metamorphosis",
+      "description": "Terrorblade transforms into a powerful demon with a ranged attack. Any of Terrorblade's illusions that are within %metamorph_aura_tooltip% range will also be transformed by Metamorphosis.",
+      "max_level": 4,
+      "cooldowns": [
+        145,
+        140,
+        135,
+        130
+      ],
+      "mana_costs": [
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            35,
+            40,
+            45,
+            50
+          ]
+        },
+        {
+          "key": "transformation_time",
+          "heading": "TRANSFORMATION TIME:",
+          "values": [
+            0.35
+          ]
+        },
+        {
+          "key": "base_attack_time",
+          "heading": "BASE ATTACK TIME:",
+          "values": [
+            1.5
+          ]
+        },
+        {
+          "key": "bonus_range",
+          "heading": "",
+          "values": [
+            300,
+            350,
+            400,
+            450
+          ]
+        },
+        {
+          "key": "tooltip_attack_range",
+          "heading": "ATTACK RANGE:",
+          "values": [
+            450,
+            500,
+            550,
+            600
+          ]
+        },
+        {
+          "key": "bonus_damage",
+          "heading": "BONUS DAMAGE:",
+          "values": [
+            20,
+            40,
+            60,
+            80
+          ]
+        },
+        {
+          "key": "metamorph_aura_tooltip",
+          "heading": "ILLUSION AURA RADIUS:",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            145,
+            140,
+            135,
+            130
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Cooldowns of items that are different for ranged and melee units will be based on which form Terrorblade was in when the item was used."
+      ],
+      "lore": "Temper, temper. The rage rises up and takes control.  Meet Terrorblade's own worst self."
+    },
+    {
+      "key": "terrorblade_demon_zeal",
+      "name": "Demon Zeal",
+      "description": "Costs part of Terrorblade's current HP to cast, providing Terrorblade and nearby illusions bonus movement, HP Regen and attack speed. Does not affect Reflection illusions. Can't be cast while in Metamorphosis and Metamorphosis will remove Demon Zeal.",
+      "max_level": 1,
+      "cooldowns": [
+        45
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "berserk_bonus_attack_speed",
+          "heading": "BONUS ATTACK SPEED:",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "berserk_bonus_movement_speed",
+          "heading": "BONUS MOVEMENT SPEED:",
+          "values": [
+            60
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "hp_regen",
+          "heading": "BONUS HEALTH REGEN:",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "health_cost_pct",
+          "heading": "CURRENT HEALTH COST:",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            45
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Fear is fueled by confusion when Terrorblade's enemies see that the first cut he makes is one to embolden himself."
+    },
+    {
+      "key": "terrorblade_terror_wave",
+      "name": "Terror Wave",
+      "description": "Causes a wave to travel outwards in all directions forcing enemy heroes to become Feared upon impact and dealing damage, and grants Terrorblade Metamorphosis for a short time.",
+      "max_level": 1,
+      "cooldowns": [
+        90
+      ],
+      "mana_costs": [
+        75
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "fear_duration",
+          "heading": "FEAR DURATION:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "scepter_radius",
+          "heading": "RADIUS:",
+          "values": [
+            1600
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "scepter_speed",
+          "heading": "",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "scepter_spawn_delay",
+          "heading": "",
+          "values": [
+            0.6
+          ]
+        },
+        {
+          "key": "scepter_meta_duration",
+          "heading": "METAMORPHOSIS DURATION:",
+          "values": [
+            15
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            90
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "A shockwave of power strong enough to break the walls of Foulfell itself."
+    },
+    {
+      "key": "terrorblade_sunder",
+      "name": "Sunder",
+      "description": "Severs the life from both Terrorblade and a target hero, exchanging a percentage of both units' current health. Some health points must remain.",
+      "max_level": 3,
+      "cooldowns": [
+        110,
+        75,
+        40
+      ],
+      "mana_costs": [
+        100,
+        75,
+        50
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        475
+      ],
+      "cast_points": [
+        0.35
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "hit_point_minimum_pct",
+          "heading": "MINIMUM HP SWAP:",
+          "values": [
+            35,
+            30,
+            25
+          ]
+        },
+        {
+          "key": "ignore_minimum_pct_for_enemies",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "ignore_minimum_pct_for_enemies_tooltip",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            475
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.35
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            75,
+            50
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            110,
+            75,
+            40
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Debuff Immune enemies don't get their HP modified."
+      ],
+      "lore": "You didn't need that life, did you?  The demon marauder steals that which you hold most dear."
+    },
+    {
+      "key": "terrorblade_dark_unity",
+      "name": "Dark Unity",
+      "description": "Nearby Illusions created by Terrorblade have bonus attack damage.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "inside_radius_bonus_damage_pct",
+          "heading": "DAMAGE BONUS:",
+          "values": [
+            60
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Reflection Illusions are also affected."
+      ],
+      "lore": null
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_illusion_duration}s Reflection Duration"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Conjure Image Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Metamorphosis Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_hit_point_minimum_pct}% Sunder Minimum HP Swap"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} All Attributes"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_illusion_duration}s Conjure Image Duration"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Sunder Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_duration}s Metamorphosis Duration"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

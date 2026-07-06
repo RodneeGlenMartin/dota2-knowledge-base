@@ -1,0 +1,62 @@
+{
+  "id": 215,
+  "name": "Shadow Amulet",
+  "slug": "shadow_amulet",
+  "internal_key": "item_shadow_amulet",
+  "cost": 900,
+  "neutral_tier": null,
+  "description": "<h1>Active: Fade</h1>Grants invisibility to you or a target allied hero for %fade_duration%s. Movement speed during the invisibility is reduced by %movement_speed_reduction%%%.",
+  "notes": [
+    "Takes %fade_time%s of the %fade_duration%s for the hero to fully fade into invisibility."
+  ],
+  "cooldowns": [
+    18
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    600
+  ],
+  "special_values": [
+    {
+      "key": "fade_time",
+      "heading": "FADE TIME:",
+      "values": [
+        1.25
+      ]
+    },
+    {
+      "key": "movement_speed_reduction",
+      "heading": "",
+      "values": [
+        35
+      ]
+    },
+    {
+      "key": "fade_duration",
+      "heading": "",
+      "values": [
+        3.5
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        600
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        18
+      ]
+    }
+  ],
+  "lore": "A small talisman that clouds the senses of one's enemies when held perfectly still.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

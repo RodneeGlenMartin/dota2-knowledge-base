@@ -1,0 +1,46 @@
+{
+  "id": 838,
+  "name": "Pig Pole",
+  "slug": "pig_pole",
+  "internal_key": "item_unstable_wand",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Pig, Out!</h1>Turns your hero into a critter for %duration% seconds and gives them +%active_movespeed_pct%%% Movement Speed.",
+  "notes": null,
+  "cooldowns": [
+    20
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        3
+      ]
+    },
+    {
+      "key": "active_movespeed_pct",
+      "heading": "",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        20
+      ]
+    }
+  ],
+  "lore": "A makeshift charm misplaced by a peace-loving, addlebrained enchanter.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

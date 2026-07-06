@@ -1,0 +1,39 @@
+{
+  "id": 358,
+  "name": "Dragon Scale",
+  "slug": "dragon_scale",
+  "internal_key": "item_dragon_scale",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Afterburn</h1> Causes attacks to burn the enemy, dealing %damage_per_sec% damage per second for %duration% seconds. Affects buildings.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "damage_per_sec",
+      "heading": "",
+      "values": [
+        22
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        3
+      ]
+    }
+  ],
+  "lore": "The remains of a dragon always outvalue the wealth of even the most prodigious hoard.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

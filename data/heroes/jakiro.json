@@ -1,0 +1,782 @@
+{
+  "id": 64,
+  "name": "Jakiro",
+  "slug": "jakiro",
+  "npc_name": "npc_dota_hero_jakiro",
+  "primary_attribute": "int",
+  "attack_type": "Ranged",
+  "complexity": 1,
+  "roles": [
+    "Support",
+    "Nuker",
+    "Disabler",
+    "Pusher"
+  ],
+  "stats": {
+    "base_str": 25,
+    "str_gain": 2.6,
+    "base_agi": 15,
+    "agi_gain": 1.2,
+    "base_int": 26,
+    "int_gain": 3,
+    "damage_min": 53,
+    "damage_max": 61,
+    "attack_rate": 1.7,
+    "attack_range": 400,
+    "projectile_speed": 1100,
+    "armor": 3.5,
+    "magic_resistance": 25,
+    "movement_speed": 290,
+    "turn_rate": 0.8,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 670,
+    "health_regen": 2.75,
+    "max_mana": 387,
+    "mana_regen": 1.3000001
+  },
+  "lore": "Even among magical beasts, a twin-headed dragon is a freak. Equal parts ice and fire, cunning and rage, the creature known as Jakiro glides over charred and ice-bound battlefields, laying waste to any who would bear arms against it. Pyrexae dragon clutches always contain two fledglings. Famous for their viciousness even from the first moments of life, newly hatched dragons of this species will try to kill their sibling while still in the nest. Only the strongest survive. In this way is the strength of the Pyrexae line ensured. By some accident of nature, the freak Jakiro hatched from a single egg, combining in a single individual the full range of abilities found within the diverse Pyrexae species. Trapped within the armature of its monstrous body, the powers of ice and fire combine, and now no enemy is safe.",
+  "hype": "Jakiro is their own best friend. Not content to merely punish enemies with <b>fire</b>, the twins <b>freeze them in place</b> to force them to stand there and burn. With foes aflame, they turn to <b>inflicting massive damage</b> on enemy structures with their liquid fire.",
+  "abilities": [
+    {
+      "key": "jakiro_dual_breath",
+      "name": "Dual Breath",
+      "description": "An icy blast followed by a wave of fire launches out in a path in front of Jakiro. The ice slows enemies, while the fire delivers damage over time.",
+      "max_level": 4,
+      "cooldowns": [
+        12,
+        11,
+        10,
+        9
+      ],
+      "mana_costs": [
+        135,
+        150,
+        165,
+        180
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        850
+      ],
+      "cast_points": [
+        0.35
+      ],
+      "durations": [
+        5
+      ],
+      "damages": [
+        0
+      ],
+      "special_values": [
+        {
+          "key": "start_radius",
+          "heading": "START RADIUS:",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "end_radius",
+          "heading": "END RADIUS:",
+          "values": [
+            275
+          ]
+        },
+        {
+          "key": "speed",
+          "heading": "",
+          "values": [
+            1050
+          ]
+        },
+        {
+          "key": "fire_delay",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "burn_damage",
+          "heading": "BURN DAMAGE:",
+          "values": [
+            20,
+            40,
+            60,
+            80
+          ]
+        },
+        {
+          "key": "slow_movement_speed_pct",
+          "heading": "MOVE SLOW:",
+          "values": [
+            -25,
+            -30,
+            -35,
+            -40
+          ]
+        },
+        {
+          "key": "slow_attack_speed_pct",
+          "heading": "ATTACK SLOW:",
+          "values": [
+            -25,
+            -30,
+            -35,
+            -40
+          ]
+        },
+        {
+          "key": "speed_fire",
+          "heading": "",
+          "values": [
+            1050
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            850
+          ]
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "DURATION:",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.35
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            135,
+            150,
+            165,
+            180
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            12,
+            11,
+            10,
+            9
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Can hit units up to 1025 range away.",
+        "Has a %fire_delay% second interval between each breath.",
+        "Does not trigger spell block or spell reflect."
+      ],
+      "lore": "Pyrexae dragons have tremendously dangerous breath for each branch of the species; combining them is unimaginable."
+    },
+    {
+      "key": "jakiro_ice_path",
+      "name": "Ice Path",
+      "description": "Creates a path of ice that stuns and damages enemies that touch it.",
+      "max_level": 4,
+      "cooldowns": [
+        20,
+        17,
+        14,
+        11
+      ],
+      "mana_costs": [
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1100
+      ],
+      "cast_points": [
+        0.65
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0
+      ],
+      "special_values": [
+        {
+          "key": "path_delay",
+          "heading": "FORMATION DELAY:",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "stun_duration",
+          "heading": "MAX STUN DURATION:",
+          "values": [
+            1.25,
+            1.5,
+            1.75,
+            2
+          ]
+        },
+        {
+          "key": "path_duration",
+          "heading": "PATH DURATION:",
+          "values": [
+            3,
+            3.5,
+            4,
+            4.5
+          ]
+        },
+        {
+          "key": "path_radius",
+          "heading": "RADIUS:",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1100
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.65
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            20,
+            17,
+            14,
+            11
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "It takes %path_delay% seconds for the path to reach its full extent.",
+        "The stun is removed once Ice Path is destroyed."
+      ],
+      "lore": "Jakiro's cunning right head calls upon its frozen heritage, glazing the earth with blistering cold."
+    },
+    {
+      "key": "jakiro_liquid_fire",
+      "name": "Liquid Fire",
+      "description": "Jakiro burns his enemies in an area of effect with fire added to his attack, while slowing their attacks. Shares a cooldown with Liquid Frost.",
+      "max_level": 4,
+      "cooldowns": [
+        13,
+        10,
+        7,
+        4
+      ],
+      "mana_costs": [
+        20
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        600
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        5
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "slow_attack_speed_pct",
+          "heading": "ATTACK SLOW:",
+          "values": [
+            -30,
+            -40,
+            -50,
+            -60
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "BURN DAMAGE:",
+          "values": [
+            12,
+            24,
+            36,
+            48
+          ]
+        },
+        {
+          "key": "pct_health_damage",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "tick_rate",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "building_dmg_pct",
+          "heading": "BUILDING DAMAGE:",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "shares_cooldown",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "DURATION:",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            13,
+            10,
+            7,
+            4
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Jakiro's Liquid Fire has no mana cost and no longer shares a cooldown with Liquid Frost.",
+      "notes": [
+        "Works on both units and buildings."
+      ],
+      "lore": "The left maw of Jakiro opens, laying waste to any in its path."
+    },
+    {
+      "key": "jakiro_liquid_ice",
+      "name": "Liquid Frost",
+      "description": "Jakiro chill his enemies with ice added to his attack, slowing movement for %duration% seconds and increasing damage taken from Jakiro's attacks and abilities. This effect does not apply to buildings. Shares a cooldown with Liquid Fire.",
+      "max_level": 4,
+      "cooldowns": [
+        13,
+        10,
+        7,
+        4
+      ],
+      "mana_costs": [
+        20
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        600
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "movement_slow",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            15,
+            20,
+            25,
+            30
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "IMPACT DAMAGE:",
+          "values": [
+            8,
+            16,
+            24,
+            32
+          ]
+        },
+        {
+          "key": "bonus_instance_damage_from_other_abilities",
+          "heading": "BONUS DAMAGE:",
+          "values": [
+            8,
+            16,
+            24,
+            32
+          ]
+        },
+        {
+          "key": "pct_health_damage",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "tick_rate",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "shares_cooldown",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            13,
+            10,
+            7,
+            4
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Jakiro's Liquid Frost has no mana cost and no longer shares a cooldown with Liquid Fire.",
+      "notes": null,
+      "lore": "The right maw of Jakiro opens, punishing all with bitter frost."
+    },
+    {
+      "key": "jakiro_double_trouble",
+      "name": "Double Trouble",
+      "description": "Jakiro's attacks launch an attack from each head, but deal less damage each.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "second_attack_delay",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "attack_damage_reduction",
+          "heading": "ATTACK DAMAGE REDUCTION:",
+          "values": [
+            51
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "The second attack ignores Damage Block."
+      ],
+      "lore": null
+    },
+    {
+      "key": "jakiro_macropyre",
+      "name": "Macropyre",
+      "description": "Jakiro exhales a wide line of lasting flames, which deals damage per second to any enemy units caught in the fire.",
+      "max_level": 3,
+      "cooldowns": [
+        90,
+        80,
+        70
+      ],
+      "mana_costs": [
+        225,
+        325,
+        425
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1400
+      ],
+      "cast_points": [
+        0.4
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage",
+          "heading": "DAMAGE PER SECOND:",
+          "values": [
+            100,
+            150,
+            200
+          ]
+        },
+        {
+          "key": "path_width",
+          "heading": "FLAME WIDTH:",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "burn_interval",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "linger_duration",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "pure_damage_type",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "pierces_magic_immunity",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "ice_edge_path_radius",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "ice_edge_path_offset",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "ice_edge_linger_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "ice_edge_movement_slow",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1400
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            225,
+            325,
+            425
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            90,
+            80,
+            70
+          ]
+        }
+      ],
+      "scepter_upgrade": "Increases Macropyre duration and causes it to deal Pure damage. Jakiro emits two walls of ice along the edges of the Macropyre that slow any enemies trying to cross them by %ice_edge_movement_slow%%%.",
+      "shard_upgrade": null,
+      "notes": [
+        "Units hit by Macropyre will continue to be affected after they leave the area for %linger_duration% additional seconds."
+      ],
+      "lore": "Ice and fire combine to rip the battlefield to shreds with extreme temperatures."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_slow_attack_speed_pct} Liquid Fire Attack Speed Slow"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Ice Path Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Attack Range"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Dual Breath Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_stun_duration}s Ice Path Stun Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Macropyre Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_AbilityCastRange}% Dual Breath Damage and Range"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_pct_health_damage}% Liquid Frost and Fire Max Health Damage"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": 327,
+  "name": "Helm of the Undying",
+  "slug": "helm_of_the_undying",
+  "internal_key": "item_helm_of_the_undying",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Death Delay</h1> Survive for an extra %duration% seconds after receiving a killing blow. If any enemy heroes dies within %kill_radius% units, the death delay effect is extended by %bonus_kill_duration% seconds. The hero cannot attack buildings during Death Delay.",
+  "notes": null,
+  "cooldowns": [
+    100
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        6
+      ]
+    },
+    {
+      "key": "bonus_kill_duration",
+      "heading": "",
+      "values": [
+        5
+      ]
+    },
+    {
+      "key": "kill_radius",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        100
+      ]
+    }
+  ],
+  "lore": "The price for wearing it is paid in the afterlife.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

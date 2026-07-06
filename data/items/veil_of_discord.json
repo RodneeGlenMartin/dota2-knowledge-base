@@ -1,0 +1,90 @@
+{
+  "id": 190,
+  "name": "Veil of Discord",
+  "slug": "veil_of_discord",
+  "internal_key": "item_veil_of_discord",
+  "cost": 1700,
+  "neutral_tier": null,
+  "description": "<h1>Active: Spell Weakness</h1> Cast a %debuff_radius% radius blast that causes enemy heroes to take %spell_amp%%% increased damage from spells.<br><br>Can be cast while channeling.<br><br>Duration: %resist_debuff_duration% seconds.",
+  "notes": [
+    "Spell Weakness does not stack with Bloodstone's Spell Weakness Aura."
+  ],
+  "cooldowns": [
+    16
+  ],
+  "mana_costs": [
+    50
+  ],
+  "cast_ranges": [
+    900
+  ],
+  "special_values": [
+    {
+      "key": "bonus_health",
+      "heading": "+$health",
+      "values": [
+        175
+      ]
+    },
+    {
+      "key": "bonus_intellect",
+      "heading": "+$int",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "spell_lifesteal",
+      "heading": "+$spell_lifesteal",
+      "values": [
+        18
+      ]
+    },
+    {
+      "key": "spell_amp",
+      "heading": "",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "debuff_radius",
+      "heading": "",
+      "values": [
+        900
+      ]
+    },
+    {
+      "key": "resist_debuff_duration",
+      "heading": "",
+      "values": [
+        16
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        900
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        50
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        16
+      ]
+    }
+  ],
+  "lore": "The headwear of corrupt magi.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

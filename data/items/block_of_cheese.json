@@ -1,0 +1,74 @@
+{
+  "id": 1154,
+  "name": "Block of Cheese",
+  "slug": "block_of_cheese",
+  "internal_key": "item_royale_with_cheese",
+  "cost": 2,
+  "neutral_tier": null,
+  "description": "<h1>Use: Scrumptious</h1>Try me!",
+  "notes": null,
+  "cooldowns": [
+    40
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "shield",
+      "heading": "",
+      "values": [
+        500
+      ]
+    },
+    {
+      "key": "regen",
+      "heading": "",
+      "values": [
+        100
+      ]
+    },
+    {
+      "key": "idle",
+      "heading": "",
+      "values": [
+        5
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        5
+      ]
+    },
+    {
+      "key": "health_restore",
+      "heading": "",
+      "values": [
+        3000
+      ]
+    },
+    {
+      "key": "mana_restore",
+      "heading": "",
+      "values": [
+        2000
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        40
+      ]
+    }
+  ],
+  "lore": "First there was the Belt of Strength. Then there were the Boots of Travel. Now, at long last, the Block of Cheese.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

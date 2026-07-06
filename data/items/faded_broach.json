@@ -1,0 +1,39 @@
+{
+  "id": 375,
+  "name": "Faded Broach",
+  "slug": "faded_broach",
+  "internal_key": "item_faded_broach",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_mana",
+      "heading": "+$mana",
+      "values": [
+        150
+      ]
+    },
+    {
+      "key": "bonus_movement_speed",
+      "heading": "+$move_speed",
+      "values": [
+        15
+      ]
+    }
+  ],
+  "lore": "A life-saving jewel bestowed upon a young queen by a kindly vizier. ",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

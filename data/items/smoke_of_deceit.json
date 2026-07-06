@@ -1,0 +1,81 @@
+{
+  "id": 188,
+  "name": "Smoke of Deceit",
+  "slug": "smoke_of_deceit",
+  "internal_key": "item_smoke_of_deceit",
+  "cost": 50,
+  "neutral_tier": null,
+  "description": "<h1>Use: Disguise</h1> Turns the caster and all allied player-controlled units in a %application_radius% radius invisible, and grants %bonus_movement_speed%%% bonus movement speed for %duration% seconds. <br><br> While the caster is still disguised, any allies that come within %secondary_application_radius% range of them will also get the buff applied to them. Each smoke can only be applied once to allies. <br><br>Attacking or moving within %visibility_radius% range of an enemy hero or tower, will break the invisibility. <br><br>Disguise grants invisibility that is immune to True Sight. <br><br>Smoke of Deceit is usable from the backpack and has no cooldown when swapped into the main inventory.",
+  "notes": null,
+  "cooldowns": [
+    1
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    1200
+  ],
+  "special_values": [
+    {
+      "key": "application_radius",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    },
+    {
+      "key": "visibility_radius",
+      "heading": "",
+      "values": [
+        1025
+      ]
+    },
+    {
+      "key": "bonus_movement_speed",
+      "heading": "",
+      "values": [
+        15
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        45
+      ]
+    },
+    {
+      "key": "second_cast_cooldown",
+      "heading": "",
+      "values": [
+        2
+      ]
+    },
+    {
+      "key": "secondary_application_radius",
+      "heading": "",
+      "values": [
+        300
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        1
+      ]
+    }
+  ],
+  "lore": "The charlatan wizard Myrddin's only true contribution to the arcane arts.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

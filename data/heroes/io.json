@@ -1,0 +1,720 @@
+{
+  "id": 91,
+  "name": "Io",
+  "slug": "io",
+  "npc_name": "npc_dota_hero_wisp",
+  "primary_attribute": "universal",
+  "attack_type": "Ranged",
+  "complexity": 3,
+  "roles": [
+    "Support",
+    "Nuker",
+    "Escape"
+  ],
+  "stats": {
+    "base_str": 19,
+    "str_gain": 3,
+    "base_agi": 14,
+    "agi_gain": 1.6,
+    "base_int": 21,
+    "int_gain": 1.7,
+    "damage_min": 21,
+    "damage_max": 27,
+    "attack_rate": 1.7,
+    "attack_range": 500,
+    "projectile_speed": 1200,
+    "armor": 3.3333335,
+    "magic_resistance": 25,
+    "movement_speed": 320,
+    "turn_rate": 0.7,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 538,
+    "health_regen": 2.15,
+    "max_mana": 327,
+    "mana_regen": 1.0500001
+  },
+  "lore": "Io is everywhere, and in all things.  Denounced by enemies as the great unmaker, worshiped by scholars as the twinkling of a divine eye, this strange Wisp of life-force occupies all planes at once, the merest fraction of its being crossing into physical existence at any one moment.  \r\n\t\t\t\t<br><br>Like the great twin riders Dark and Light, and yet another ancient traveler whose true history is lost to the ages, Io the Wisp is a Fundamental of the universe, a force older than time, a wanderer from realms far beyond mortal understanding. Io is nothing less than the sum of all attractive and repulsive forces within the material field, a sentient manifestation of the charge that bind existence together. It is only in the controlled warping of these electrical waylines that Io's presence can be experienced on the physical plane. A benevolent, cooperative force, Io bonds its strange magnetism to others so that the power of allies might be enhanced.  Its motives inscrutable, its strength unimaginable, Io moves through the physical plane, the perfect expression of the mysteries of the universe.",
+  "hype": "Io has a talent for <b>making allies more effective</b>. A powerful companion, the wisp's tether <b>speeds allies and stops enemies</b>. Capable of linking to and <b>teleporting</b> across the battlefield with an ally, Io can make a dangerous ally even deadlier.",
+  "abilities": [
+    {
+      "key": "wisp_tether",
+      "name": "Tether",
+      "description": "Tethers Io to an allied unit, granting bonus movement speed to both. When Io restores health or mana, the tethered unit gains a portion of that amount. The tether breaks when the allied unit moves too far away, or Io cancels the tether. Tether slows enemies touching it.",
+      "max_level": 4,
+      "cooldowns": [
+        12
+      ],
+      "mana_costs": [
+        40,
+        40,
+        40,
+        40
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1600
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "MAX TETHER DISTANCE:",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "movespeed",
+          "heading": "MOVEMENT SPEED BONUS:",
+          "values": [
+            6,
+            8,
+            10,
+            12
+          ]
+        },
+        {
+          "key": "latch_distance",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "latch_speed",
+          "heading": "",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "tether_heal_amp",
+          "heading": "HP/MANA TRANSFER:",
+          "values": [
+            55,
+            75,
+            95,
+            115
+          ]
+        },
+        {
+          "key": "tether_mana_amp",
+          "heading": "",
+          "values": [
+            55,
+            75,
+            95,
+            115
+          ]
+        },
+        {
+          "key": "slow",
+          "heading": "ENEMY MOVE/ATTACK SLOW:",
+          "values": [
+            15,
+            30,
+            45,
+            60
+          ]
+        },
+        {
+          "key": "slow_duration",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE PER SECOND:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "damage_to_heal",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "tick_rate",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "tether_attack_damage_pct",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1600
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Tether damages enemies touching it. Io is healed for %damage_to_heal%%% of the damage done.",
+      "notes": [
+        "If you try to tether a unit that is 700 distance or further away from Io, he will latch on and pull himself closer to the tethered unit (to a distance of 300).",
+        "The tethered unit will heal faster and will heal even if Io is at full health.",
+        "Io's movement speed matches the tethered unit's."
+      ],
+      "lore": "The benevolent touch of Io brings strength from between the planes."
+    },
+    {
+      "key": "wisp_spirits",
+      "name": "Spirits",
+      "description": "Summon five particle spirits that dance in a circle around Io. If a particle collides with an enemy hero, it explodes, damaging all enemy units in an area around it.  Creeps take minor damage from touching a particle spirit, but do not cause them to explode.  When its duration ends, any remaining Spirits explode.",
+      "max_level": 4,
+      "cooldowns": [
+        15
+      ],
+      "mana_costs": [
+        90,
+        100,
+        110,
+        120
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        15
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "creep_damage",
+          "heading": "CREEP DAMAGE:",
+          "values": [
+            12,
+            18,
+            24,
+            30
+          ]
+        },
+        {
+          "key": "hero_damage",
+          "heading": "HERO DAMAGE:",
+          "values": [
+            30,
+            50,
+            70,
+            90
+          ]
+        },
+        {
+          "key": "revolution_time",
+          "heading": "",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "min_range",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "default_radius",
+          "heading": "",
+          "values": [
+            425
+          ]
+        },
+        {
+          "key": "max_range",
+          "heading": "OSCILLATION RADIUS:",
+          "values": [
+            650
+          ]
+        },
+        {
+          "key": "hero_hit_radius",
+          "heading": "",
+          "values": [
+            110
+          ]
+        },
+        {
+          "key": "explode_radius",
+          "heading": "EXPLOSION RADIUS:",
+          "values": [
+            360
+          ]
+        },
+        {
+          "key": "hit_radius",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "spirit_movement_rate",
+          "heading": "",
+          "values": [
+            250
+          ]
+        },
+        {
+          "key": "spirit_duration",
+          "heading": "DURATION:",
+          "values": [
+            15
+          ]
+        },
+        {
+          "key": "spirit_amount",
+          "heading": "",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "scepter_slow_pct",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "scepter_slow_duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "spirit_spawn_time",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "",
+          "values": [
+            15
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            90,
+            100,
+            110,
+            120
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            15
+          ]
+        }
+      ],
+      "scepter_upgrade": "Spirits now passively spawn around Io constantly every second up to the max. Spirits colliding with enemy Heroes slows them briefly. Can be activated to explode spirits.",
+      "shard_upgrade": null,
+      "notes": [
+        "After summoning, Io can call the spirits in and out."
+      ],
+      "lore": "Io twists the particles of the universe with its unimaginable capabilities."
+    },
+    {
+      "key": "wisp_overcharge",
+      "name": "Overcharge",
+      "description": "Io gains attack speed, spell amplification, and health regeneration based on max health. If Io is Tethered to an ally, that unit also gains any bonuses granted by Overcharge.",
+      "max_level": 4,
+      "cooldowns": [
+        25,
+        22,
+        19,
+        16
+      ],
+      "mana_costs": [
+        40,
+        60,
+        80,
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bonus_attack_speed",
+          "heading": "BONUS ATTACK SPEED:",
+          "values": [
+            35,
+            60,
+            85,
+            110
+          ]
+        },
+        {
+          "key": "bonus_spell_amp",
+          "heading": "BONUS SPELL AMP:",
+          "values": [
+            8,
+            10,
+            12,
+            14
+          ]
+        },
+        {
+          "key": "hp_regen",
+          "heading": "MAX HEALTH REGEN:",
+          "values": [
+            0.5,
+            0.6,
+            0.7,
+            0.8
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "unslowable",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            40,
+            60,
+            80,
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            25,
+            22,
+            19,
+            16
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Drawing on the energy of matter from all worlds, Io begins the unravelling of time."
+    },
+    {
+      "key": "wisp_spirits_in",
+      "name": "Spirits In",
+      "description": "Sends the spirits closer to you. Can be toggled on and off.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "wisp_spirits_out",
+      "name": "Spirits Out",
+      "description": "Sends the spirits farther away from you. Can be toggled on and off.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "wisp_relocate",
+      "name": "Relocate",
+      "description": "Teleports Io and a tethered ally to any location. After the spell expires, Io and the tethered ally will return to their original location. Double-click to teleport to your team's base fountain.",
+      "max_level": 3,
+      "cooldowns": [
+        90,
+        80,
+        70
+      ],
+      "mana_costs": [
+        175
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "cast_delay",
+          "heading": "CAST TIME:",
+          "values": [
+            3.5,
+            3.25,
+            3
+          ]
+        },
+        {
+          "key": "return_time",
+          "heading": "RETURN TIME:",
+          "values": [
+            12
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            175
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            90,
+            80,
+            70
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Enemies receive a visual indicator in the world and on the minimap of the target location during the cast delay.",
+        "If Io is disabled during the cast delay, Relocate is cancelled.",
+        "If an allied hero is Tethered, that hero will teleport along with you. You can break the tether at any time to prevent that hero from teleporting with you.",
+        "Only heroes, creep heroes, and illusions can be relocated."
+      ],
+      "lore": "Io is the embodiment of the mystery of the universe."
+    },
+    {
+      "key": "wisp_equilibrium",
+      "name": "Equilibrium",
+      "description": "Io gains outgoing damage amplification the closer it is to full health, and Health Restoration and Healing Amplification the closer it is to zero health.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage_amplification",
+          "heading": "MAX DAMAGE AMP:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "heal_amplification",
+          "heading": "MAX HEAL AMP:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "current_damage_amp",
+          "heading": "CURRENT DAMAGE AMP:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "current_heal_amp",
+          "heading": "CURRENT HEAL AMP:",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_duration}s Overcharge Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Strength"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_movespeed}% Tether Movement Speed"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_hero_damage}% Spirits Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_hp_regen}% Overcharge Max HP Regen Bonus"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Relocate Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_cast_delay}s Relocate Cast Delay"
+    },
+    {
+      "slot": null,
+      "name": "Attack Tethered Ally's Target ({s:bonus_tether_attack_damage_pct}% damage)"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

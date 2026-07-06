@@ -1,0 +1,48 @@
+{
+  "id": 1870,
+  "name": "Ironwood Nut",
+  "slug": "ironwood_nut",
+  "internal_key": "item_foragers_stats",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Use: Munch</h1> Grants %bonus_stat% permanent primary attribute.",
+  "notes": [
+    "Universal heroes get %bonus_stat_uni% bonus to all attributes."
+  ],
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_stat",
+      "heading": "",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "bonus_stat_uni",
+      "heading": "",
+      "values": [
+        0.4
+      ]
+    },
+    {
+      "key": "bonus_move_speed",
+      "heading": "+$move_speed",
+      "values": [
+        3
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

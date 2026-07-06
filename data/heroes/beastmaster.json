@@ -1,0 +1,863 @@
+{
+  "id": 38,
+  "name": "Beastmaster",
+  "slug": "beastmaster",
+  "npc_name": "npc_dota_hero_beastmaster",
+  "primary_attribute": "universal",
+  "attack_type": "Melee",
+  "complexity": 2,
+  "roles": [
+    "Nuker",
+    "Disabler",
+    "Durable",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 24,
+    "str_gain": 2.9,
+    "base_agi": 19,
+    "agi_gain": 2,
+    "base_int": 16,
+    "int_gain": 1.9,
+    "damage_min": 23,
+    "damage_max": 27,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 0,
+    "armor": 2.1666667,
+    "magic_resistance": 25,
+    "movement_speed": 305,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 648,
+    "health_regen": 2.65,
+    "max_mana": 267,
+    "mana_regen": 0.8
+  },
+  "lore": "Karroch was born a child of the stocks. His mother died in childbirth; his father, a farrier for the Last King of Slom, was trampled to death when he was five. Afterward Karroch was indentured to the king's menagerie, where he grew up among all the beasts of the royal court: lions, apes, fell-deer, and things less known, things barely believed in. When the lad was seven, an explorer brought in a beast like none before seen. Dragged before the King in chains, the beast spoke, though its mouth moved not. Its words: a plea for freedom. The King only laughed and ordered the beast perform for his amusement; and when it refused, struck it with the Mad Scepter and ordered it dragged to the stocks. \r\n\t\t\t\t<br><br>Over the coming months, the boy Karroch sneaked food and medicinal draughts to the wounded creature, but only managed to slow its deterioration. Wordlessly, the beast spoke to the boy, and over time their bond strengthened until the boy found he could hold up his end of a conversation.  He could, in fact, speak now to all the creatures of the King's menagerie. On the night the beast died, a rage came over the boy.  He incited the animals of the court to rebel and threw open their cages to set them amok on the palace grounds.  The Last King was mauled in the mayhem. In the chaos, one regal stag bowed to the boy who had freed him; and with Beastmaster astride him, leapt the high walls of the estate, and escaped. Now a man, Karroch the Beastmaster has not lost his ability to converse with wild creatures. He has grown into a warrior at one with nature's savagery.",
+  "hype": "Summoning a <b>poison-spitting boar</b> and a <b>scouting hawk</b> to aid his hunt, Beastmaster never stalks the battlefield unprepared. Chopping through the forest with his axes, his <b>stunning roar</b> opens the way for his allies to devastate enemies.",
+  "abilities": [
+    {
+      "key": "beastmaster_wild_axes",
+      "name": "Wild Axes",
+      "description": "Beastmaster sends his axes flying and calls them home again, slicing through enemy units and trees along their path.  Each axe can hit an enemy once, and amplifies subsequent damage from Beastmaster and his units.",
+      "max_level": 4,
+      "cooldowns": [
+        8
+      ],
+      "mana_costs": [
+        65
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1500
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            175
+          ]
+        },
+        {
+          "key": "spread",
+          "heading": "",
+          "values": [
+            450
+          ]
+        },
+        {
+          "key": "range",
+          "heading": "CAST RANGE:",
+          "values": [
+            1500
+          ]
+        },
+        {
+          "key": "axe_damage",
+          "heading": "DAMAGE PER AXE:",
+          "values": [
+            40,
+            80,
+            120,
+            160
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DEBUFF DURATION:",
+          "values": [
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "key": "damage_amp",
+          "heading": "DAMAGE AMP PER STACK:",
+          "values": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "key": "min_throw_duration",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "max_throw_duration",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "apply_debuff_on_attack",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1500
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            65
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            8
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Beastmaster's attacks on enemy heroes also apply the Wild Axes debuff of its corresponding level.",
+      "notes": [
+        "This ability destroys trees."
+      ],
+      "lore": "While learning to maneuver in nature alone, the Beastmaster also mastered the use of a pair of tomahawks, adept at cutting down trees as well as adversaries."
+    },
+    {
+      "key": "beastmaster_summon_razorback",
+      "name": "Summon Razorback",
+      "description": "Beastmaster calls forth a Boar to aid in the battlefield. The Boar has a passive poison attack that slows attack and movement speeds.",
+      "max_level": 4,
+      "cooldowns": [
+        30
+      ],
+      "mana_costs": [
+        60
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "SUMMON DURATION:",
+          "values": [
+            60
+          ]
+        },
+        {
+          "key": "boar_base_max_health",
+          "heading": "BOAR BASE HEALTH:",
+          "values": [
+            300,
+            450,
+            600,
+            750
+          ]
+        },
+        {
+          "key": "boar_base_damage",
+          "heading": "",
+          "values": [
+            24,
+            41,
+            58,
+            75
+          ]
+        },
+        {
+          "key": "boar_total_damage_tooltip",
+          "heading": "BOAR ATTACK DAMAGE:",
+          "values": [
+            24,
+            41,
+            58,
+            75
+          ]
+        },
+        {
+          "key": "boar_bonus_damage",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "boar_base_xp_bounty",
+          "heading": "",
+          "values": [
+            60,
+            70,
+            80,
+            90
+          ]
+        },
+        {
+          "key": "boar_base_movespeed",
+          "heading": "",
+          "values": [
+            320,
+            330,
+            340,
+            350
+          ]
+        },
+        {
+          "key": "boar_moveslow_tooltip",
+          "heading": "BOAR SLOW:",
+          "values": [
+            10,
+            18,
+            26,
+            34
+          ]
+        },
+        {
+          "key": "boar_poison_duration_tooltip",
+          "heading": "BOAR POISON DURATION:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            60
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            30
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "After befriending the strange beast of his childhood, Beastmaster has learned to call to animals in times of need."
+    },
+    {
+      "key": "beastmaster_summon_raptor",
+      "name": "Summon Raptors",
+      "description": "Beastmaster summons %hawk_count% hawks that circle around Beastmaster and dive-bombs at enemies with a base attack rate of every %hawk_base_attack_interval%s, damaging and rooting them. Attack rate increases with the Hawk's attack speed. Prioritizes heroes. ",
+      "max_level": 4,
+      "cooldowns": [
+        30
+      ],
+      "mana_costs": [
+        50
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "SUMMON DURATION:",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "hawk_spawn_interval",
+          "heading": "",
+          "values": [
+            0.75
+          ]
+        },
+        {
+          "key": "hawk_base_max_health",
+          "heading": "HAWK BASE HEALTH:",
+          "values": [
+            200,
+            325,
+            450,
+            625
+          ]
+        },
+        {
+          "key": "hawk_base_gold_bounty",
+          "heading": "",
+          "values": [
+            30,
+            40,
+            50,
+            60
+          ]
+        },
+        {
+          "key": "hawk_base_vision_range",
+          "heading": "",
+          "values": [
+            600,
+            650,
+            700,
+            750
+          ]
+        },
+        {
+          "key": "hawk_base_xp_bounty",
+          "heading": "",
+          "values": [
+            40,
+            50,
+            60,
+            70
+          ]
+        },
+        {
+          "key": "hawk_base_magic_resist",
+          "heading": "HAWK BASE MAGIC RESISTANCE:",
+          "values": [
+            30,
+            40,
+            50,
+            60
+          ]
+        },
+        {
+          "key": "attack_radius",
+          "heading": "",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "hawk_count",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "dive_damage",
+          "heading": "DIVE DAMAGE:",
+          "values": [
+            60,
+            95,
+            130,
+            165
+          ]
+        },
+        {
+          "key": "dive_root_duration",
+          "heading": "ROOT DURATION:",
+          "values": [
+            0.4,
+            0.6,
+            0.8,
+            1
+          ]
+        },
+        {
+          "key": "roaming_radius",
+          "heading": "",
+          "values": [
+            280
+          ]
+        },
+        {
+          "key": "roaming_seconds_per_rotation",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "hawk_base_attack_interval",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "min_move_speed",
+          "heading": "",
+          "values": [
+            455
+          ]
+        },
+        {
+          "key": "max_move_speed",
+          "heading": "",
+          "values": [
+            1100
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            30
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Increases Hawk duration by %bonus_duration%s and summons an additional Hawk.",
+      "notes": null,
+      "lore": "After befriending the strange beast of his childhood, Beastmaster has learned to call to animals in times of need."
+    },
+    {
+      "key": "beastmaster_inner_beast",
+      "name": "Inner Beast",
+      "description": "Untaps the inner fury of Beastmaster and units he controls, passively increasing their attack speed.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "bonus_attack_speed",
+          "heading": "BONUS ATTACK SPEED:",
+          "values": [
+            7
+          ]
+        },
+        {
+          "key": "bonus_damage",
+          "heading": "",
+          "values": null
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Break disables the passive attack speed bonus."
+      ],
+      "lore": "Beastmaster's ability to incite the innate strength of animals was seen in the mauling of the king of Slom."
+    },
+    {
+      "key": "beastmaster_drums_of_slom",
+      "name": "Drums of Slom",
+      "description": "Attacks from Beastmaster or a nearby unit he controls will cause him bang his drum, dealing damage to nearby units and healing Beastmaster and units under his control for a portion of the damage dealt. Every attack decreases the interval between drum hits down to a minimum of %min_drum_hit_interval%s between hits after %max_stacks% attacks. If no attacks are made, the intervals gradually increase.<br><br>Using Primal Roar counts as %primal_roar_stacks% attacks.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "DAMAGE RADIUS:",
+          "values": [
+            525
+          ]
+        },
+        {
+          "key": "max_stacks",
+          "heading": "ATTACKS FOR SHORTEST INTERVAL:",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "stack_decay_time",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "min_drum_hit_interval",
+          "heading": "SHORTEST DRUM INTERVAL:",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "max_drum_hit_interval",
+          "heading": "LONGEST DRUM INTERVAL:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "base_damage",
+          "heading": "DRUM HIT DAMAGE:",
+          "values": [
+            70
+          ]
+        },
+        {
+          "key": "heal_pct",
+          "heading": "HEAL FROM HEROES:",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "creep_damage_pct",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "creep_heal_pct",
+          "heading": "HEAL FROM CREEPS:",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "aura_radius",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "primal_roar_stacks",
+          "heading": "",
+          "values": [
+            10
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Nature's rage is timeless, and for those who know the secrets, it's easy to stir the echoes of ire that rejoiced in the downfall of Slom."
+    },
+    {
+      "key": "beastmaster_primal_roar",
+      "name": "Primal Roar",
+      "description": "Beastmaster lets loose a deafening roar that stuns, and shoves open a path to its target. All units in the path of the roar are damaged, while units shoved aside by the roar have their movement and attack speed slowed. Additionally, Beastmaster and his units gain %movement_speed%%% movement speed for %movement_speed_duration% seconds.",
+      "max_level": 3,
+      "cooldowns": [
+        90,
+        75,
+        60
+      ],
+      "mana_costs": [
+        100,
+        125,
+        150
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        600
+      ],
+      "cast_points": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            3,
+            3.5,
+            4
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            150,
+            225,
+            300
+          ]
+        },
+        {
+          "key": "side_damage",
+          "heading": "",
+          "values": [
+            150,
+            225,
+            300
+          ]
+        },
+        {
+          "key": "damage_radius",
+          "heading": "SHOUT WIDTH:",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "slow_movement_speed_pct",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            -60
+          ]
+        },
+        {
+          "key": "slow_attack_speed_pct",
+          "heading": "ATTACK SLOW:",
+          "values": [
+            -60
+          ]
+        },
+        {
+          "key": "push_distance",
+          "heading": "",
+          "values": [
+            450
+          ]
+        },
+        {
+          "key": "push_duration",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "slow_duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            3,
+            3.5,
+            4
+          ]
+        },
+        {
+          "key": "movement_speed",
+          "heading": "",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "movement_speed_duration",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            125,
+            150
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            90,
+            75,
+            60
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "The Beastmaster has learned to channel his primal instincts into an animalistic roar, causing devastation in the ranks of enemies."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:value} Armor"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_amp}% Wild Axes Damage Amp Per Stack"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_ms} Movespeed to Beastmaster and his summons"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_AbilityCastRange} Primal Roar Cast Range"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_boar_bonus_damage} Damage to Beastmaster and his summons"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_hp} Health to Beastmaster and his summons"
+    },
+    {
+      "slot": null,
+      "name": "No Wild Axes Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Primal Roar Cooldown"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

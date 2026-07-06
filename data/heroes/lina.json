@@ -1,0 +1,643 @@
+{
+  "id": 25,
+  "name": "Lina",
+  "slug": "lina",
+  "npc_name": "npc_dota_hero_lina",
+  "primary_attribute": "int",
+  "attack_type": "Ranged",
+  "complexity": 1,
+  "roles": [
+    "Carry",
+    "Support",
+    "Nuker",
+    "Disabler"
+  ],
+  "stats": {
+    "base_str": 20,
+    "str_gain": 2.4,
+    "base_agi": 23,
+    "agi_gain": 2.4,
+    "base_int": 30,
+    "int_gain": 4,
+    "damage_min": 51,
+    "damage_max": 59,
+    "attack_rate": 1.6,
+    "attack_range": 670,
+    "projectile_speed": 1000,
+    "armor": 3.8333335,
+    "magic_resistance": 25,
+    "movement_speed": 290,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 560,
+    "health_regen": 2.25,
+    "max_mana": 435,
+    "mana_regen": 1.5
+  },
+  "lore": "The sibling rivalries between Lina the Slayer, and her younger sister Rylai, the Crystal Maiden, were the stuff of legend in the temperate region where they spent their quarrelsome childhoods together. Lina always had the advantage, however, for while Crystal was guileless and naive, Lina's fiery ardor was tempered by cleverness and conniving. The exasperated parents of these incompatible offspring went through half a dozen homesteads, losing one to fire, the next to ice, before they realized life would be simpler if the children were separated. As the oldest, Lina was sent far south to live with a patient aunt in the blazing Desert of Misrule, a climate that proved more than comfortable for the fiery Slayer. Her arrival made quite an impression on the somnolent locals, and more than one would-be suitor scorched his fingers or went away with singed eyebrows, his advances spurned. Lina is proud and confident, and nothing can dampen her flame.",
+  "hype": "As deadly as she is fragile, Lina effortlessly strikes down any foe foolish enough to be caught alone. Gaining <b>attack speed</b> with each spell she casts, she scours enemies with <b>flame and heat lightning</b>, ensuring few can survive her assaults.",
+  "abilities": [
+    {
+      "key": "lina_dragon_slave",
+      "name": "Dragon Slave",
+      "description": "Lina channels the breath of a dragon, sending out a wave of fire that scorches every enemy in its path.",
+      "max_level": 4,
+      "cooldowns": [
+        11,
+        10,
+        9,
+        8
+      ],
+      "mana_costs": [
+        90,
+        100,
+        110,
+        120
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1075
+      ],
+      "cast_points": [
+        0.35
+      ],
+      "durations": [
+        0.6875,
+        0.6875,
+        0.6875,
+        0.6875
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "dragon_slave_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            65,
+            125,
+            185,
+            245
+          ]
+        },
+        {
+          "key": "dragon_slave_speed",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "dragon_slave_width_initial",
+          "heading": "",
+          "values": [
+            275
+          ]
+        },
+        {
+          "key": "dragon_slave_width_end",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "dragon_slave_distance",
+          "heading": "",
+          "values": [
+            1075
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1075
+          ]
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "",
+          "values": [
+            0.6875
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.35
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            90,
+            100,
+            110,
+            120
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            11,
+            10,
+            9,
+            8
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Dragon Slave can hit units up to 1225 units away.",
+        "Does not trigger spell block or spell reflect."
+      ],
+      "lore": "In the scorched barren of Misrule, Lina learned to manipulate the fiery breath of the Desert Wyrm as a form of entertainment."
+    },
+    {
+      "key": "lina_light_strike_array",
+      "name": "Light Strike Array",
+      "description": "Summons a column of flames that damages and stuns enemies.",
+      "max_level": 4,
+      "cooldowns": [
+        13,
+        11,
+        9,
+        7
+      ],
+      "mana_costs": [
+        100,
+        110,
+        120,
+        130
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        700
+      ],
+      "cast_points": [
+        0.45,
+        0.45,
+        0.45,
+        0.45
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "light_strike_array_aoe",
+          "heading": "RADIUS:",
+          "values": [
+            250
+          ]
+        },
+        {
+          "key": "light_strike_array_delay_time",
+          "heading": "CAST DELAY:",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "light_strike_array_stun_duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            1.2,
+            1.6,
+            2,
+            2.4
+          ]
+        },
+        {
+          "key": "light_strike_array_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            80,
+            125,
+            170,
+            215
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.45
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            110,
+            120,
+            130
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            13,
+            11,
+            9,
+            7
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Light Strike Array will destroy trees in its area of effect."
+      ],
+      "lore": "Lina's essence allows her to focus the sun's energies, causing air to combust at will."
+    },
+    {
+      "key": "lina_fiery_soul",
+      "name": "Fiery Soul",
+      "description": "Grants bonus attack and movement speed each time Lina hits an enemy with a spell. Stacks with itself. Lasts %fiery_soul_stack_duration% seconds.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "fiery_soul_attack_speed_bonus",
+          "heading": "ATTACK SPEED BONUS:",
+          "values": [
+            8,
+            16,
+            24,
+            32
+          ]
+        },
+        {
+          "key": "fiery_soul_move_speed_bonus",
+          "heading": "MOVE SPEED BONUS:",
+          "values": [
+            1,
+            1.5,
+            2,
+            2.5
+          ]
+        },
+        {
+          "key": "fiery_soul_magic_resist",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "fiery_soul_max_stacks",
+          "heading": "MAX STACKS:",
+          "values": [
+            7
+          ]
+        },
+        {
+          "key": "fiery_soul_stack_duration",
+          "heading": "DURATION:",
+          "values": [
+            18
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Duration refreshes each time an opponent is hit with a spell.",
+        "Using items does not trigger Fiery Soul."
+      ],
+      "lore": "Dancing flames embody Lina's playful nature, bringing out her true blazing self."
+    },
+    {
+      "key": "lina_flame_cloak",
+      "name": "Flame Cloak",
+      "description": "Grants Lina unobstructed movement and increases her spell damage and magic resistance. Grants max fiery soul stacks on activation.",
+      "max_level": 1,
+      "cooldowns": [
+        25
+      ],
+      "mana_costs": [
+        50
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "flame_cloak_duration",
+          "heading": "DURATION:",
+          "values": [
+            7
+          ]
+        },
+        {
+          "key": "magic_resistance",
+          "heading": "MAGIC RESISTANCE:",
+          "values": [
+            35
+          ]
+        },
+        {
+          "key": "spell_amp",
+          "heading": "SPELL AMP:",
+          "values": [
+            35
+          ]
+        },
+        {
+          "key": "visualzdelta",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "zchangespeed",
+          "heading": "",
+          "values": [
+            350
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            25
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "A natural defense equally suited to keeping anything from unwanted sisters to snarling hellbeasts at bay."
+    },
+    {
+      "key": "lina_slow_burn",
+      "name": "Slow Burn",
+      "description": "Lina's abilities deal an additional %burn_damage_pct%%% damage as burn damage over %burn_duration%s.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "impact_damage_pct",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "burn_damage_pct",
+          "heading": "",
+          "values": [
+            64
+          ]
+        },
+        {
+          "key": "burn_duration",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "additional_tick_total_damage_tooltip",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "target_crit_multiplier",
+          "heading": "",
+          "values": null
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "lina_laguna_blade",
+      "name": "Laguna Blade",
+      "description": "Fires off a bolt of lightning at a single enemy unit, dealing massive damage.",
+      "max_level": 3,
+      "cooldowns": [
+        70,
+        60,
+        50
+      ],
+      "mana_costs": [
+        150,
+        300,
+        450
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        750
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            400,
+            580,
+            760
+          ]
+        },
+        {
+          "key": "damage_delay",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "supercharge_duration",
+          "heading": "SUPERCHARGE DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "supercharge_stacks",
+          "heading": "SUPERCHARGE STACKS:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            750
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            150,
+            300,
+            450
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            70,
+            60,
+            50
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Casting Laguna Blade temporarily supercharges Lina, granting her stacks of Fiery Soul.",
+      "notes": [
+        "Laguna Blade has a %damage_delay% delay before the damage is applied after the spell is cast, allowing certain abilities to avoid the damage."
+      ],
+      "lore": "The air around Lina becomes so intensely torrid that it scorches a foe that comes too close with white-hot lightning."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:value} Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Dragon Slave Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_fiery_soul_magic_resist}% Fiery Soul Magic Resist Per Stack"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_light_strike_array_damage} Light Strike Array Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Laguna Blade Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_fiery_soul_attack_speed_bonus}/{s:bonus_fiery_soul_move_speed_bonus}% Fiery Soul Per Stack"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_burn_duration}s Slow Burn Duration"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_target_crit_multiplier}% Attack Crit On Targets Affected By Slow Burn"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

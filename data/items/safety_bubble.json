@@ -1,0 +1,39 @@
+{
+  "id": 1157,
+  "name": "Safety Bubble",
+  "slug": "safety_bubble",
+  "internal_key": "item_safety_bubble",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Bubbled Up</h1> Equipped Hero has a %shield% HP Barrier against enemy damage. Barrier fully regenerates after not receiving damage for %restore_time% seconds. Self-inflicted damage bypasses the barrier.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "shield",
+      "heading": "",
+      "values": [
+        100
+      ]
+    },
+    {
+      "key": "restore_time",
+      "heading": "",
+      "values": [
+        8
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

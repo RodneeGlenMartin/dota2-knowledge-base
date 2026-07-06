@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Armor",
+    "file": "armor.json",
+    "url": "https://liquipedia.net/dota2/Armor"
+  },
+  {
+    "title": "Attack Damage",
+    "file": "attack_damage.json",
+    "url": "https://liquipedia.net/dota2/Attack_Damage"
+  },
+  {
+    "title": "Attack Speed",
+    "file": "attack_speed.json",
+    "url": "https://liquipedia.net/dota2/Attack_Speed"
+  },
+  {
+    "title": "Attributes",
+    "file": "attributes.json",
+    "url": "https://liquipedia.net/dota2/Attributes"
+  },
+  {
+    "title": "Creep control techniques",
+    "file": "creep_control_techniques.json",
+    "url": "https://liquipedia.net/dota2/Creep_control_techniques"
+  },
+  {
+    "title": "Evasion",
+    "file": "evasion.json",
+    "url": "https://liquipedia.net/dota2/Evasion"
+  },
+  {
+    "title": "Health Regeneration",
+    "file": "health_regeneration.json",
+    "url": "https://liquipedia.net/dota2/Health_Regeneration"
+  },
+  {
+    "title": "Illusions",
+    "file": "illusions.json",
+    "url": "https://liquipedia.net/dota2/Illusions"
+  },
+  {
+    "title": "Magic Resistance",
+    "file": "magic_resistance.json",
+    "url": "https://liquipedia.net/dota2/Magic_Resistance"
+  },
+  {
+    "title": "Mana",
+    "file": "mana.json",
+    "url": "https://liquipedia.net/dota2/Mana"
+  },
+  {
+    "title": "Mechanics",
+    "file": "mechanics.json",
+    "url": "https://liquipedia.net/dota2/Mechanics"
+  },
+  {
+    "title": "Movement Speed",
+    "file": "movement_speed.json",
+    "url": "https://liquipedia.net/dota2/Movement_Speed"
+  },
+  {
+    "title": "Spell Damage",
+    "file": "spell_damage.json",
+    "url": "https://liquipedia.net/dota2/Spell_Damage"
+  },
+  {
+    "title": "Status Resistance",
+    "file": "status_resistance.json",
+    "url": "https://liquipedia.net/dota2/Status_Resistance"
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "id": 2097,
+  "name": "Duelist Gloves",
+  "slug": "duelist_gloves",
+  "internal_key": "item_duelist_gloves",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Boldness</h1> Grants %bonus_attack_speed% attack speed as long as there are enemy heroes within %radius% units.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_attack_speed",
+      "heading": "",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "radius",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

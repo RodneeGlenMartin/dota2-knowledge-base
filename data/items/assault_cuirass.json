@@ -1,0 +1,74 @@
+{
+  "id": 112,
+  "name": "Assault Cuirass",
+  "slug": "assault_cuirass",
+  "internal_key": "item_assault",
+  "cost": 5125,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Assault Aura</h1> Grants %aura_attack_speed% attack speed and %aura_positive_armor% armor to nearby allied units and structures, and decreases nearby enemy unit and structure armor by %aura_negative_armor%.<br><br>Radius: %aura_radius%",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    1200
+  ],
+  "special_values": [
+    {
+      "key": "bonus_attack_speed",
+      "heading": "+$attack",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "bonus_armor",
+      "heading": "+$armor",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "aura_radius",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    },
+    {
+      "key": "aura_attack_speed",
+      "heading": "",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "aura_positive_armor",
+      "heading": "",
+      "values": [
+        5
+      ]
+    },
+    {
+      "key": "aura_negative_armor",
+      "heading": "",
+      "values": [
+        -5
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    }
+  ],
+  "lore": "Forged in the depths of the nether reaches, this hellish mail provides an army with increased armor and attack speed.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

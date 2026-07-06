@@ -1,0 +1,711 @@
+{
+  "id": 73,
+  "name": "Alchemist",
+  "slug": "alchemist",
+  "npc_name": "npc_dota_hero_alchemist",
+  "primary_attribute": "str",
+  "attack_type": "Melee",
+  "complexity": 1,
+  "roles": [
+    "Carry",
+    "Support",
+    "Nuker",
+    "Disabler",
+    "Durable",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 23,
+    "str_gain": 2.7,
+    "base_agi": 19,
+    "agi_gain": 1.5,
+    "base_int": 25,
+    "int_gain": 1.8,
+    "damage_min": 50,
+    "damage_max": 56,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 3.1666667,
+    "magic_resistance": 25,
+    "movement_speed": 290,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 626,
+    "health_regen": 2.55,
+    "max_mana": 375,
+    "mana_regen": 1.25
+  },
+  "lore": "The sacred science of Chymistry was a Darkbrew family tradition, but no Darkbrew had ever shown the kind of creativity, ambition, and recklessness of young Razzil. However, when adulthood came calling he pushed aside the family trade to try his hand at manufacturing gold through Alchemy.\r\n\t\t\t\t<br><br>In an act of audacity befitting his reputation, Razzil announced he would transmute an entire mountain into gold. Following two decades of research and spending and preparation, he failed spectacularly, quickly finding himself imprisoned for the widespread destruction his experiment wrought. Yet Razzil was never one to take a setback lightly, and sought escape to continue his research.\r\n\t\t\t\t<br><br>When his new cellmate turned out to be a fierce ogre, he found just the opportunity he needed. After convincing the ogre not to eat him, Razzil set about carefully concocting a tincture for it to drink, made from the moulds and mosses growing in the prison stone work. In a week's time, it seemed ready. When the ogre drank the potion, it flew into an unstoppable berserker rage, destroying the cell bars and exploding through walls and guards alike.\r\n\t\t\t\t<br><br>They soon found themselves lost somewhere in the forest surrounding the city with a trail of wreckage in their wake and no signs of pursuit.  In the tonic's afterglow, the ogre seemed serene, happy, and even eager. Resolving to work together, the pair set off to collect the materials needed to attempt Razzil's Alchemic transmutation once more.",
+  "hype": "Synthesizing <b>extra resources</b> from each and every kill, Alchemist has no trouble gathering the tools needed to destroy his foes. Ambushing enemies with <b>corrosive acid</b> and a host of <b>unstable chemicals</b>, he battles to ensure his greedy escapades can remain uninterrupted.",
+  "abilities": [
+    {
+      "key": "alchemist_acid_spray",
+      "name": "Acid Spray",
+      "description": "Sprays high-pressure acid across a target area. Enemy units who step across the contaminated terrain take damage per second and have their armor reduced.",
+      "max_level": 4,
+      "cooldowns": [
+        21
+      ],
+      "mana_costs": [
+        120
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        900
+      ],
+      "cast_points": [
+        0.1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            350,
+            400,
+            450,
+            500
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            15
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE PER SECOND:",
+          "values": [
+            25,
+            30,
+            35,
+            40
+          ]
+        },
+        {
+          "key": "armor_reduction",
+          "heading": "ARMOR REDUCTION:",
+          "values": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "key": "armor_allies",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "tick_rate",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            120
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            21
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Using traditional Alchemy from the Darkbrew family, Razzil concocts an acid that dissolves even the toughest metals."
+    },
+    {
+      "key": "alchemist_unstable_concoction",
+      "name": "Unstable Concoction",
+      "description": "Alchemist brews up an unstable concoction that he can throw at an enemy hero, to stun and deal damage in an area around the explosion. The longer the concoction brews, the more damage it deals and the longer the stun. Alchemist is faster while charging the concoction. After %brew_time% seconds, the brew reaches its maximum damage and stun time. However, after %brew_explosion% seconds, the concoction will explode on Alchemist himself if not thrown.",
+      "max_level": 4,
+      "cooldowns": [
+        17
+      ],
+      "mana_costs": [
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        775
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "brew_time",
+          "heading": "",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "brew_explosion",
+          "heading": "",
+          "values": [
+            5.5
+          ]
+        },
+        {
+          "key": "min_stun",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "max_stun",
+          "heading": "MAX STUN:",
+          "values": [
+            1.7,
+            2.2,
+            2.7,
+            3.2
+          ]
+        },
+        {
+          "key": "max_damage",
+          "heading": "MAX DAMAGE:",
+          "values": [
+            150,
+            220,
+            290,
+            360
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "EXPLOSION RADIUS:",
+          "values": [
+            250
+          ]
+        },
+        {
+          "key": "move_speed",
+          "heading": "MOVE SPEED BONUS:",
+          "values": [
+            4,
+            8,
+            12,
+            16
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            775
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            17
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "While brewing, this ability is replaced by Unstable Concoction Throw.  Alchemist can move and act normally while brewing.",
+        "A timer above Alchemist's head will indicate the remaining brew time. This timer is visible to enemies.",
+        "You can deny yourself with this skill.",
+        "Unstable Concoction cannot be disjointed and once thrown Unstable Concoction stops brewing.",
+        "Unstable Concoction explosion damages heroes and creeps."
+      ],
+      "lore": "A silver lining to the failure of turning a mountain into gold, this volatile solution has destructive potential."
+    },
+    {
+      "key": "alchemist_corrosive_weaponry",
+      "name": "Corrosive Weaponry",
+      "description": "Alchemist coats his weapons and empowers his spells with an acid that applies a stacking slow and base attack damage reduction to enemies hit.\n\nAttacks apply %stacks_per_attack% stacks. Unstable Concoction applies %one_tooltip% stack per second of brew time.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "max_stacks",
+          "heading": "MAX STACKS:",
+          "values": [
+            7,
+            10,
+            13,
+            16
+          ]
+        },
+        {
+          "key": "debuff_duration",
+          "heading": "DEBUFF DURATION:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "slow_per_stack",
+          "heading": "MOVEMENT SLOW PER STACK:",
+          "values": [
+            2.5,
+            3,
+            3.5,
+            4
+          ]
+        },
+        {
+          "key": "attack_dmg_per_stack",
+          "heading": "BASE ATTACK DAMAGE REDUCTION PER STACK:",
+          "values": [
+            2.5,
+            3,
+            3.5,
+            4
+          ]
+        },
+        {
+          "key": "stacks_per_attack",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "one_tooltip",
+          "heading": "",
+          "values": [
+            1
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "A powerful solvent that turned out to work all too well."
+    },
+    {
+      "key": "alchemist_berserk_potion",
+      "name": "Berserk Potion",
+      "description": "Alchemist throws a potion at an ally, applying a basic dispel and giving them attack speed, movement speed and HP regen.<br><br>DISPEL TYPE: Basic Dispel",
+      "max_level": 1,
+      "cooldowns": [
+        35
+      ],
+      "mana_costs": [
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        800
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            15
+          ]
+        },
+        {
+          "key": "attack_speed",
+          "heading": "ATTACK SPEED:",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "hp_regen",
+          "heading": "HP REGEN:",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "projectile_speed",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "move_speed",
+          "heading": "MOVE SPEED:",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            35
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "After Razzil's great grandfather tested an early version of this potion on himself, a surviving family member immediately saw the profit potential."
+    },
+    {
+      "key": "alchemist_goblins_greed",
+      "name": "Greevil's Greed",
+      "description": "Alchemist synthesizes additional gold from his enemies and bounty runes. With each kill, Alchemist earns base bonus gold and extra bonus gold. If Alchemist kills another unit which yields gold within the next %duration% seconds, an additional instance of Extra Bonus Gold is added to the total. Additionally, causes bounty runes to yield more gold.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "RECENT KILL WINDOW:",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "bonus_gold",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "bonus_gold_tooltip",
+          "heading": "BASE BONUS GOLD:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "bonus_bonus_gold",
+          "heading": "EXTRA BONUS GOLD:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "bonus_gold_per_scepter",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "bounty_multiplier",
+          "heading": "BOUNTY RUNE MULTIPLIER:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "bonus_gold_cap",
+          "heading": "",
+          "values": [
+            16
+          ]
+        },
+        {
+          "key": "bonus_gold_cap_tooltip",
+          "heading": "MAX BONUS GOLD PER KILL:",
+          "values": [
+            16
+          ]
+        },
+        {
+          "key": "scepter_bonus_damage",
+          "heading": "",
+          "values": [
+            15
+          ]
+        },
+        {
+          "key": "scepter_bonus_damage_tooltip",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "scepter_spell_amp",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        }
+      ],
+      "scepter_upgrade": "Alchemist melts down Aghanim's Scepter to grant an allied hero all Aghanim's Scepter upgrades. Alchemist will gain bonus %scepter_bonus_damage% damage and %bonus_gold_per_scepter% additional base and max Greevil's Greed Extra Gold for each melted Scepter.",
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "While it is not a mountain, Razzil has mastered the conversion of smaller compounds to line his pockets."
+    },
+    {
+      "key": "alchemist_chemical_rage",
+      "name": "Chemical Rage",
+      "description": "Alchemist causes his Ogre to enter a chemically induced rage, reducing base attack cooldown and increasing movement speed and health regeneration.\n\nDISPEL TYPE: Basic Dispel",
+      "max_level": 3,
+      "cooldowns": [
+        60
+      ],
+      "mana_costs": [
+        50,
+        75,
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "transformation_time",
+          "heading": "",
+          "values": [
+            0.35
+          ]
+        },
+        {
+          "key": "base_attack_time",
+          "heading": "BASE ATTACK TIME:",
+          "values": [
+            1.2,
+            1.1,
+            1
+          ]
+        },
+        {
+          "key": "bonus_health_regen",
+          "heading": "BONUS HEALTH REGEN:",
+          "values": [
+            50,
+            85,
+            120
+          ]
+        },
+        {
+          "key": "bonus_movespeed",
+          "heading": "BONUS MOVE SPEED:",
+          "values": [
+            20,
+            30,
+            40
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            50,
+            75,
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            60
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Has a %transformation_time% second transformation time, which can be used to dodge projectiles and stuns."
+      ],
+      "lore": "The brew Razzil gave to the Ogre during their prison bust has become a useful potion in the midst of combat."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_slow_per_stack}% Corrosive Weaponry Slow / Damage Reduction Per Stack"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_radius} Unstable Concoction Radius"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_armor_reduction} Acid Spray Armor Reduction"
+    },
+    {
+      "slot": null,
+      "name": "Greevil's Greed provides +{s:bonus_damage} Damage per stack"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_base_attack_time}s Chemical Rage Base Attack Time"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_max_damage} Unstable Concoction Max Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_movespeed} Chemical Rage Movement Speed"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_health_regen} Chemical Rage Regeneration"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,680 @@
+{
+  "id": 26,
+  "name": "Lion",
+  "slug": "lion",
+  "npc_name": "npc_dota_hero_lion",
+  "primary_attribute": "int",
+  "attack_type": "Ranged",
+  "complexity": 1,
+  "roles": [
+    "Support",
+    "Nuker",
+    "Disabler",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 18,
+    "str_gain": 2.4,
+    "base_agi": 15,
+    "agi_gain": 1.7,
+    "base_int": 19,
+    "int_gain": 3.5,
+    "damage_min": 48,
+    "damage_max": 54,
+    "attack_rate": 1.7,
+    "attack_range": 600,
+    "projectile_speed": 900,
+    "armor": 2.5,
+    "magic_resistance": 25,
+    "movement_speed": 290,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 516,
+    "health_regen": 2.3000002,
+    "max_mana": 303,
+    "mana_regen": 0.95
+  },
+  "lore": "Once a Grandmaster of the Demon Witch tradition of sorcery, Lion earned fame among his brethren for fighting on the side of light and righteousness. But adulation corrupts. With powers surpassed only by his ambition, the mage was seduced by a demon and turned to evil, trading his soul for prestige. After committing horrible crimes that marred his soul, he was abandoned. The demon betrayed him, striking better deals with his enemies. Such was Lion's rage that he followed the demon back to hell and slew it, ripping it limb from limb, taking its demonic hand for his own. However, such demonoplasty comes at a cost. Lion was transfigured by the process, his body transformed into something unrecognizable. He rose from hell, rage incarnate, slaying even those who had once called him master, and laying waste to the lands where he had once been so adored. He survives now as the sole practitioner of the Demon Witch tradition, and those who present themselves as acolytes or students are soon relieved of their mana and carried off by the faintest gust of wind.",
+  "hype": "Lion gives enemies little chance to retaliate. <b>Stunning targets</b> with a damaging row of spikes, or temporarily <b>transforming them into a harmless critter</b>, even if his powerful spells aren't enough, he and his allies should still have all the time they need to slay their foes.",
+  "abilities": [
+    {
+      "key": "lion_impale",
+      "name": "Earth Spike",
+      "description": "Rock spikes burst from the earth along a straight path. Enemy units are hurled into the air, then are stunned and take damage when they fall.",
+      "max_level": 4,
+      "cooldowns": [
+        14,
+        13,
+        12,
+        11
+      ],
+      "mana_costs": [
+        90,
+        110,
+        130,
+        150
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        650
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            105,
+            170,
+            235,
+            300
+          ]
+        },
+        {
+          "key": "width",
+          "heading": "",
+          "values": [
+            140
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            1.3,
+            1.6,
+            1.9,
+            2.2
+          ]
+        },
+        {
+          "key": "length_buffer",
+          "heading": "",
+          "values": [
+            275
+          ]
+        },
+        {
+          "key": "speed",
+          "heading": "",
+          "values": [
+            2800
+          ]
+        },
+        {
+          "key": "cone_shaped",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            650
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            90,
+            110,
+            130,
+            150
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            14,
+            13,
+            12,
+            11
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "The spikes move at %speed% units per second.",
+        "Does not trigger spell block or spell reflect."
+      ],
+      "lore": "The Demon Witch exercises his demonic covenant, opening a fissure from hell."
+    },
+    {
+      "key": "lion_voodoo",
+      "name": "Hex",
+      "description": "Transforms an enemy unit into a harmless beast, with all special abilities disabled.",
+      "max_level": 4,
+      "cooldowns": [
+        24,
+        20,
+        16,
+        12
+      ],
+      "mana_costs": [
+        110,
+        140,
+        170,
+        200
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        575,
+        600,
+        625,
+        650
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            2,
+            2.4,
+            2.8,
+            3.2
+          ]
+        },
+        {
+          "key": "movespeed",
+          "heading": "",
+          "values": [
+            120
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            575,
+            600,
+            625,
+            650
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            110,
+            140,
+            170,
+            200
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            24,
+            20,
+            16,
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Instantly destroys illusions.",
+        "The target will have a base movement speed of %movespeed%, but buffs granting maximum movement speed won't be disabled."
+      ],
+      "lore": "Lion is compelled to share his transfiguration, twisting the essence of those who oppose him."
+    },
+    {
+      "key": "lion_mana_drain",
+      "name": "Mana Drain",
+      "description": "CHANNELED - Channels magical energy, taking mana and slowing enemies over time. If the enemy has no mana remaining, the slow is increased by %movespeed_bonus_when_empty_pct%%%. <br><br> Can target allies to give them mana and movement speed at a %ally_pct%%% rate.",
+      "max_level": 4,
+      "cooldowns": [
+        15,
+        12,
+        9,
+        6
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        850
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "CHANNEL TIME:",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "mana_per_second",
+          "heading": "MANA PER SECOND:",
+          "values": [
+            20,
+            40,
+            60,
+            120
+          ]
+        },
+        {
+          "key": "break_distance",
+          "heading": "BREAK DISTANCE:",
+          "values": [
+            1100
+          ]
+        },
+        {
+          "key": "tick_interval",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "movespeed",
+          "heading": "MOVEMENT SLOW/BONUS:",
+          "values": [
+            15,
+            20,
+            25,
+            30
+          ]
+        },
+        {
+          "key": "movespeed_bonus_when_empty_pct",
+          "heading": "",
+          "values": [
+            15
+          ]
+        },
+        {
+          "key": "shard_bonus_targets",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "magic_resist",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "ally_pct",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            850
+          ]
+        },
+        {
+          "key": "AbilityChannelTime",
+          "heading": "",
+          "values": [
+            5.1
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            15,
+            12,
+            9,
+            6
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Causes Mana Drain to affect up to %shard_bonus_targets% additional enemies and increases break distance. Lion becomes Debuff Immune with %magic_resist%%% magic resistance while channeling.",
+      "notes": [
+        "Prevents heroes from going invisible."
+      ],
+      "lore": "Lesser magi are nothing more than a source of magical restoration for the Demon Witch."
+    },
+    {
+      "key": "lion_to_hell_and_back",
+      "name": "To Hell and Back",
+      "description": "Lion gains %debuff_amp%%% debuff duration after killing or assisting in a Hero kill while that Hero is dead.<br><br>Lion gains %spell_amp%%% spell amplification for %duration%s after respawning or resurrecting or until he gets a kill or assist.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "",
+          "values": [
+            90
+          ]
+        },
+        {
+          "key": "damage_window",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "spell_amp",
+          "heading": "",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "debuff_amp",
+          "heading": "",
+          "values": [
+            20
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "lion_finger_of_death",
+      "name": "Finger of Death",
+      "description": "Rips at an enemy unit, trying to turn it inside-out, dealing massive damage to the target.<br><br>After using Finger of Death, Lion's hand becomes empowered, allowing him to use a cleaving melee attack with %punch_attack_range% range with bonus movement speed.<br><br>Finger of Death gains permanent bonus damage for it and the fist for each enemy Hero it or the fist kills. <br><br>The melee attack may be disabled by setting the ability to Alt Cast.",
+      "max_level": 3,
+      "cooldowns": [
+        110,
+        70,
+        30
+      ],
+      "mana_costs": [
+        200,
+        400,
+        600
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        900
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            600,
+            725,
+            850
+          ]
+        },
+        {
+          "key": "damage_per_kill",
+          "heading": "DAMAGE PER KILL:",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "grace_period",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "damage_delay",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "punch_duration",
+          "heading": "MELEE DURATION:",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "punch_bonus_movespeed",
+          "heading": "MELEE BONUS MOVE SPEED:",
+          "values": [
+            30
+          ]
+        },
+        {
+          "key": "punch_attack_range",
+          "heading": "",
+          "values": [
+            250
+          ]
+        },
+        {
+          "key": "punch_bonus_damage_base",
+          "heading": "MELEE BONUS DAMAGE:",
+          "values": [
+            20,
+            30,
+            40
+          ]
+        },
+        {
+          "key": "cleave_damage",
+          "heading": "CLEAVE DAMAGE:",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "cleave_starting_width",
+          "heading": "CLEAVE STARTING WIDTH:",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "cleave_ending_width",
+          "heading": "CLEAVE ENDING WIDTH:",
+          "values": [
+            350
+          ]
+        },
+        {
+          "key": "cleave_distance",
+          "heading": "CLEAVE DISTANCE:",
+          "values": [
+            650
+          ]
+        },
+        {
+          "key": "splash_radius",
+          "heading": "AREA OF EFFECT:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            200,
+            400,
+            600
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            110,
+            70,
+            30
+          ]
+        }
+      ],
+      "scepter_upgrade": "Finger of Death gains area of effect damage on the initial cast, and increases duration and cleave damage on its subsequent melee attacks.",
+      "shard_upgrade": null,
+      "notes": [
+        "Finger of Death has a %damage_delay% delay before the damage is applied after the spell is cast, allowing certain abilities to avoid the damage.",
+        "Finger of Death only gains damage if the enemy hero dies within %grace_period% seconds of being affected by Finger of Death."
+      ],
+      "lore": "Lion's disfigured hand is also the source of his greatest power, capable of flooding victims with malefic force."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_movespeed}% Mana Drain Slow"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Movement Speed"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Hex Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_spell_amp}% To Hell And Back Debuff/Spell Amp"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_per_kill} Finger of Death Damage Per Kill"
+    },
+    {
+      "slot": null,
+      "name": "Earth Spike affects a 30 degree cone"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_radius} AoE Hex"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_AbilityCastRange} Earth Spike cast range/travel distance"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

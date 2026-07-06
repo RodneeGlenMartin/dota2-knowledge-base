@@ -1,0 +1,32 @@
+{
+  "id": 21,
+  "name": "Ogre Axe",
+  "slug": "ogre_axe",
+  "internal_key": "item_ogre_axe",
+  "cost": 1000,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_strength",
+      "heading": "+$str",
+      "values": [
+        10
+      ]
+    }
+  ],
+  "lore": "You grow stronger just by holding it.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

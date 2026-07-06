@@ -1,0 +1,569 @@
+{
+  "id": 89,
+  "name": "Naga Siren",
+  "slug": "naga_siren",
+  "npc_name": "npc_dota_hero_naga_siren",
+  "primary_attribute": "agi",
+  "attack_type": "Melee",
+  "complexity": 2,
+  "roles": [
+    "Carry",
+    "Support",
+    "Disabler",
+    "Escape",
+    "Pusher",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 21,
+    "str_gain": 2.4,
+    "base_agi": 22,
+    "agi_gain": 3.4,
+    "base_int": 19,
+    "int_gain": 2,
+    "damage_min": 45,
+    "damage_max": 47,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 4.666667,
+    "magic_resistance": 25,
+    "movement_speed": 330,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 582,
+    "health_regen": 3.1000001,
+    "max_mana": 303,
+    "mana_regen": 0.95
+  },
+  "lore": "Among the high-sworn of the Slithereen Guard there is a solemn vow oft repeated before battle: No Slithereen may fail.  In truth, these words are equal parts oath and enforceable covenant, for those who fall short of their duty are banished from the order.  To fail is to be other than Slithereen.\r\n\t\t\t\t<br><br>Once most highly esteemed of her race, Slithice for many years commanded a battalion of her fellows, using her formidable voice as her greatest weapon.  Powerful, sinuous, serpentine, she led her deadly Guard in defense of the Deep Ones, and the great wealth of the sunken cities.  But in the final battle of Crey, her forces were driven back by a marauding army of levianths intent on finding tribute for their god Maelrawn.  After the long and bloody onslaught, as the bodies were cleared from the sunken halls, a single jeweled chalice was found missing from the trove.  Of her hundred Guard, only a handful survived, but their bravery and sacrifice were of little consequence.  What mattered was that treasure was taken.  Honor destroyed.  And so Naga Siren was cast out.  Banished to search for the stolen chalice.  Though she might add a hundred times her weight to the golden trove, she is doomed to live apart until that day she returns that which was taken.  For no amount of gold is equal in honor to the honor she lost.",
+  "hype": "Sending squads of <b>mirrored clones</b> against her foes, Naga Siren ensnares and slays enemies as she leads her forces to victory. With the sound of her voice, she <b>disables nearby foes</b> to spring an ambush or crafting a hasty escape.",
+  "abilities": [
+    {
+      "key": "naga_siren_mirror_image",
+      "name": "Mirror Image",
+      "description": "Creates multiple images of Naga Siren under her control.\n\nDISPEL TYPE: Basic Dispel",
+      "max_level": 4,
+      "cooldowns": [
+        40,
+        35,
+        30,
+        25
+      ],
+      "mana_costs": [
+        75,
+        90,
+        105,
+        120
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.4
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "illusion_duration",
+          "heading": "IMAGE DURATION:",
+          "values": [
+            26
+          ]
+        },
+        {
+          "key": "outgoing_damage",
+          "heading": "",
+          "values": [
+            -75,
+            -70,
+            -65,
+            -60
+          ]
+        },
+        {
+          "key": "outgoing_damage_tooltip",
+          "heading": "IMAGE DAMAGE:",
+          "values": [
+            25,
+            30,
+            35,
+            40
+          ]
+        },
+        {
+          "key": "incoming_damage",
+          "heading": "",
+          "values": [
+            250
+          ]
+        },
+        {
+          "key": "tooltip_incoming_damage_total_pct",
+          "heading": "IMAGE DAMAGE TAKEN:",
+          "values": [
+            350
+          ]
+        },
+        {
+          "key": "images_count",
+          "heading": "IMAGE COUNT:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "invuln_duration",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            75,
+            90,
+            105,
+            120
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            40,
+            35,
+            30,
+            25
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Naga Siren is invulnerable for %invuln_duration% seconds when casting, allowing her to dodge stuns and damage.",
+        "Upon casting, most effects are removed from Naga Siren.",
+        "Upon casting, existing Mirror Image illusions are destroyed."
+      ],
+      "lore": "Slithice, while being strong in her own right, is notoriously hard to track down."
+    },
+    {
+      "key": "naga_siren_ensnare",
+      "name": "Ensnare",
+      "description": "Interrupts the target and traps them in place, preventing movement or blinking. Can target units affected by Song of the Siren.",
+      "max_level": 4,
+      "cooldowns": [
+        21,
+        18,
+        15,
+        12
+      ],
+      "mana_costs": [
+        70,
+        80,
+        90,
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        500,
+        525,
+        550,
+        575
+      ],
+      "cast_points": [
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            2.75,
+            3.5,
+            4.25,
+            5
+          ]
+        },
+        {
+          "key": "net_speed",
+          "heading": "",
+          "values": [
+            1500
+          ]
+        },
+        {
+          "key": "fake_ensnare_distance",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "can_target_magic_immune",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "does_break",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            500,
+            525,
+            550,
+            575
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            70,
+            80,
+            90,
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            21,
+            18,
+            15,
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": "Increases cast range and projectile speed.  Allows Ensnare to target and affect Debuff Immune units. Ensnare applies Break.",
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "The only way to escape the onslaught of a Slithereen is to never oppose one in the first place."
+    },
+    {
+      "key": "naga_siren_rip_tide",
+      "name": "Rip Tide",
+      "description": "Naga Siren and her illusions deal bonus damage to enemies and reduce their armor for %duration% seconds every %hits% attacks.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "hits",
+          "heading": "",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "armor_reduction",
+          "heading": "ARMOR REDUCTION:",
+          "values": [
+            -2,
+            -4,
+            -6,
+            -8
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            30,
+            40,
+            50,
+            60
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "",
+          "values": [
+            4
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Using Rip Tide doesn't interrupt channeling."
+      ],
+      "lore": "A torrent from the Deep Ones crushes the defenses of the Siren's enemies."
+    },
+    {
+      "key": "naga_siren_eelskin",
+      "name": "Eelskin",
+      "description": "Naga Siren has bonus evasion, increased per every other Naga Siren within %radius% radius.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "evasion_per_naga",
+          "heading": "EVASION PER NAGA:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            900
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "naga_siren_song_of_the_siren",
+      "name": "Song of the Siren",
+      "description": "All enemies in range of the Naga Siren are put into a magical stasis where they cannot act or be attacked. Using Song of the Siren again will end the duration early.",
+      "max_level": 3,
+      "cooldowns": [
+        160,
+        130,
+        100
+      ],
+      "mana_costs": [
+        150,
+        250,
+        350
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        900,
+        1150,
+        1400
+      ],
+      "cast_points": [
+        1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            900,
+            1150,
+            1400
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            7
+          ]
+        },
+        {
+          "key": "animation_rate",
+          "heading": "",
+          "values": [
+            0.55
+          ]
+        },
+        {
+          "key": "heal_pct",
+          "heading": "MAX HP REGEN PER SECOND:",
+          "values": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "key": "mana_pct",
+          "heading": "MAX MANA REGEN PER SECOND:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            900,
+            1150,
+            1400
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            150,
+            250,
+            350
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            160,
+            130,
+            100
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Allies in range of Song of the Siren recover a percentage of their health and mana per second.",
+      "notes": [
+        "Units affected by Song of the Siren are invulnerable and cannot take damage from any source.",
+        "The area of the song follows Naga, so if she moves far enough away from affected units, they will wake up."
+      ],
+      "lore": "Slithice's powerful voice enchants leagues of opponents, while calling her Slithereen kin in a time of need."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_pull_strength} Reel In Pull Speed"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage}% Rip Tide Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_outgoing_damage_tooltip}% Mirror Image Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_incoming_damage}% Mirror Image Illusion Damage Taken"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Song of the Siren Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_images_count} Mirror Image Illusion"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Mirror Image Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Agility"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

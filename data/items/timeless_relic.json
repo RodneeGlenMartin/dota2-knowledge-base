@@ -1,0 +1,41 @@
+{
+  "id": 300,
+  "name": "Timeless Relic",
+  "slug": "timeless_relic",
+  "internal_key": "item_timeless_relic",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "Increases all outgoing spell damage and debuff duration.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "debuff_amp",
+      "heading": "+$debuff_amp",
+      "values": [
+        10,
+        15
+      ]
+    },
+    {
+      "key": "spell_amp",
+      "heading": "+Spell Amplification",
+      "values": [
+        10,
+        20
+      ]
+    }
+  ],
+  "lore": "An unmarred discovery from the excavated ruins of an ancient wizard's academy.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

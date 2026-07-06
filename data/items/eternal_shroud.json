@@ -1,0 +1,81 @@
+{
+  "id": 692,
+  "name": "Eternal Shroud",
+  "slug": "eternal_shroud",
+  "internal_key": "item_eternal_shroud",
+  "cost": 3900,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Shroud</h1> Restores mana equal to %mana_restore_pct%%% of incoming enemy spell damage before reductions.\n\n<h1>Passive: Eternal Endurance</h1> For every %stack_threshold% spell damage that equipped hero receives, it gains a stack of Endurance for %stack_duration%s up to a maximum of %max_stacks% charges. Each charge increases Eternal Shroud's magic resistance by %stack_resist%%% .",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_spell_resist",
+      "heading": "+$spell_resist",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "bonus_strength",
+      "heading": "+$str",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "bonus_health",
+      "heading": "+$health",
+      "values": [
+        250
+      ]
+    },
+    {
+      "key": "stack_threshold",
+      "heading": "",
+      "values": [
+        300
+      ]
+    },
+    {
+      "key": "stack_duration",
+      "heading": "",
+      "values": [
+        5
+      ]
+    },
+    {
+      "key": "stack_resist",
+      "heading": "",
+      "values": [
+        3.5
+      ]
+    },
+    {
+      "key": "mana_restore_pct",
+      "heading": "",
+      "values": [
+        25
+      ]
+    },
+    {
+      "key": "max_stacks",
+      "heading": "",
+      "values": [
+        6
+      ]
+    }
+  ],
+  "lore": "A pristine hood that feeds upon strife to empower its owner.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

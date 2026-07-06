@@ -1,0 +1,83 @@
+{
+  "id": 212,
+  "name": "Ring of Aquila",
+  "slug": "ring_of_aquila",
+  "internal_key": "item_ring_of_aquila",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Aquila Aura</h1>Grants %aura_mana_regen% mana regeneration and %aura_bonus_armor% armor to nearby allies.<br><br>Radius: %aura_radius%\n<h1>Toggle: Aura</h1> Deactivate to stop affecting non-hero units.",
+  "notes": [
+    "Multiple instances of Aquila Aura do not stack."
+  ],
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    1200
+  ],
+  "special_values": [
+    {
+      "key": "bonus_damage",
+      "heading": "+$damage",
+      "values": [
+        3
+      ]
+    },
+    {
+      "key": "bonus_strength",
+      "heading": "+$str",
+      "values": [
+        3
+      ]
+    },
+    {
+      "key": "bonus_agility",
+      "heading": "+$agi",
+      "values": [
+        9
+      ]
+    },
+    {
+      "key": "bonus_intellect",
+      "heading": "+$int",
+      "values": [
+        3
+      ]
+    },
+    {
+      "key": "aura_radius",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    },
+    {
+      "key": "aura_mana_regen",
+      "heading": "",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "aura_bonus_armor",
+      "heading": "",
+      "values": [
+        2
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    }
+  ],
+  "lore": "The ring of the fallen Warlord Aquila continues to support armies in battle.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

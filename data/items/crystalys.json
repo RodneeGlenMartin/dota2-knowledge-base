@@ -1,0 +1,55 @@
+{
+  "id": 149,
+  "name": "Crystalys",
+  "slug": "crystalys",
+  "internal_key": "item_lesser_crit",
+  "cost": 2000,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Critical Strike</h1>Grants each attack a %crit_chance%%% chance to deal %crit_multiplier%%% damage.",
+  "notes": [
+    "Critical Strike does not work against buildings."
+  ],
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_damage",
+      "heading": "+$damage",
+      "values": [
+        32
+      ]
+    },
+    {
+      "key": "crit_chance",
+      "heading": "",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "crit_multiplier",
+      "heading": "",
+      "values": [
+        160
+      ]
+    },
+    {
+      "key": "tooltip_crit_damage",
+      "heading": "",
+      "values": [
+        60
+      ]
+    }
+  ],
+  "lore": "A blade forged from rare crystals, it seeks weak points in enemy armor.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

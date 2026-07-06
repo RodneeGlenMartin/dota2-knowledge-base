@@ -1,0 +1,148 @@
+{
+  "id": 147,
+  "name": "Manta Style",
+  "slug": "manta_style",
+  "internal_key": "item_manta",
+  "cost": 4650,
+  "neutral_tier": null,
+  "description": "<h1>Active: Mirror Image</h1>Creates %images_count% images of your hero that last %illusion_duration% seconds. <br><br>Melee images deal %tooltip_damage_outgoing_melee%%% damage, while Ranged images deal %tooltip_damage_outgoing_ranged%%%. Illusions take %tooltip_damage_incoming_total_pct%%% damage. <br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>",
+  "notes": [
+    "Has a %invuln_duration% second cast time during which you are invulnerable.",
+    "Many effects are removed upon using Manta.",
+    "Yasha based movement speed bonuses from multiple items do not stack."
+  ],
+  "cooldowns": [
+    34
+  ],
+  "mana_costs": [
+    125
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_strength",
+      "heading": "+$str",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "bonus_agility",
+      "heading": "+$agi",
+      "values": [
+        26
+      ]
+    },
+    {
+      "key": "bonus_intellect",
+      "heading": "+$int",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "bonus_attack_speed",
+      "heading": "+$attack",
+      "values": [
+        15
+      ]
+    },
+    {
+      "key": "bonus_movement_speed",
+      "heading": "+$move_speed",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "images_count",
+      "heading": "",
+      "values": [
+        2
+      ]
+    },
+    {
+      "key": "illusion_duration",
+      "heading": "",
+      "values": [
+        18
+      ]
+    },
+    {
+      "key": "images_do_damage_percent_melee",
+      "heading": "",
+      "values": [
+        -67
+      ]
+    },
+    {
+      "key": "tooltip_damage_outgoing_melee",
+      "heading": "",
+      "values": [
+        33
+      ]
+    },
+    {
+      "key": "images_take_damage_percent",
+      "heading": "",
+      "values": [
+        200
+      ]
+    },
+    {
+      "key": "tooltip_damage_incoming_total_pct",
+      "heading": "",
+      "values": [
+        300
+      ]
+    },
+    {
+      "key": "images_do_damage_percent_ranged",
+      "heading": "",
+      "values": [
+        -72
+      ]
+    },
+    {
+      "key": "tooltip_damage_outgoing_ranged",
+      "heading": "",
+      "values": [
+        28
+      ]
+    },
+    {
+      "key": "invuln_duration",
+      "heading": "",
+      "values": [
+        0.1
+      ]
+    },
+    {
+      "key": "vision_radius",
+      "heading": "",
+      "values": [
+        1000
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        125
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        34
+      ]
+    }
+  ],
+  "lore": "An axe made of reflective materials that causes confusion amongst enemy ranks.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

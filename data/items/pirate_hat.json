@@ -1,0 +1,53 @@
+{
+  "id": 372,
+  "name": "Pirate Hat",
+  "slug": "pirate_hat",
+  "internal_key": "item_pirate_hat",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Plunder</h1> Steals %gold_steal_base% gold from enemy heroes that die within %gold_steal_range% units. If the wearer is the killer, there is no range limit and an additional %gold_steal_kill% gold is stolen.\n<h1>Passive: Buried Treasure</h1> Gold loss on death reduced by %gold_loss_reduction%%%.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "gold_steal_base",
+      "heading": "",
+      "values": [
+        150
+      ]
+    },
+    {
+      "key": "gold_steal_kill",
+      "heading": "",
+      "values": [
+        400
+      ]
+    },
+    {
+      "key": "gold_steal_range",
+      "heading": "",
+      "values": [
+        2400
+      ]
+    },
+    {
+      "key": "gold_loss_reduction",
+      "heading": "",
+      "values": [
+        100
+      ]
+    }
+  ],
+  "lore": "A salty skulltopper cursed with endless good fortune.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

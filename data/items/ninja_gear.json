@@ -1,0 +1,60 @@
+{
+  "id": 362,
+  "name": "Ninja Gear",
+  "slug": "ninja_gear",
+  "internal_key": "item_ninja_gear",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Solitary Disguise</h1> Casts Smoke of Deceit on yourself only that lasts for up to %duration% seconds.",
+  "notes": null,
+  "cooldowns": [
+    60
+  ],
+  "mana_costs": [
+    100
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "visibility_radius",
+      "heading": "",
+      "values": [
+        1025
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        15
+      ]
+    },
+    {
+      "key": "bonus_movement_speed",
+      "heading": "",
+      "values": [
+        15
+      ]
+    },
+    {
+      "key": "AbilityManaCost",
+      "heading": "",
+      "values": [
+        100
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        60
+      ]
+    }
+  ],
+  "lore": "Valuable equipment recovered by a young explorer sifting through the flotsam and detritus drifting in the void.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

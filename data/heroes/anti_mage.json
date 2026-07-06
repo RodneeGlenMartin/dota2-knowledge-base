@@ -1,0 +1,535 @@
+{
+  "id": 1,
+  "name": "Anti-Mage",
+  "slug": "anti_mage",
+  "npc_name": "npc_dota_hero_antimage",
+  "primary_attribute": "agi",
+  "attack_type": "Melee",
+  "complexity": 1,
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Escape"
+  ],
+  "stats": {
+    "base_str": 21,
+    "str_gain": 1.6,
+    "base_agi": 25,
+    "agi_gain": 2.8,
+    "base_int": 12,
+    "int_gain": 1.8,
+    "damage_min": 54,
+    "damage_max": 58,
+    "attack_rate": 1.4,
+    "attack_range": 150,
+    "projectile_speed": 0,
+    "armor": 6.166667,
+    "magic_resistance": 25,
+    "movement_speed": 315,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 582,
+    "health_regen": 3.6000001,
+    "max_mana": 219,
+    "mana_regen": 0.6
+  },
+  "lore": "The monks of Turstarkuri watched the rugged valleys below their mountain monastery as wave after wave of invaders swept through the lower kingdoms. Ascetic and pragmatic, in their remote monastic eyrie they remained aloof from mundane strife, wrapped in meditation that knew no gods or elements of magic. Then came the Legion of the Dead God, crusaders with a sinister mandate to replace all local worship with their Unliving Lord's poisonous nihilosophy. From a landscape that had known nothing but blood and battle for a thousand years, they tore the souls and bones of countless fallen legions and pitched them against Turstarkuri. The monastery stood scarcely a fortnight against the assault, and the few monks who bothered to surface from their meditations believed the invaders were but demonic visions sent to distract them from meditation. They died where they sat on their silken cushions. Only one youth survived--a pilgrim who had come as an acolyte, seeking wisdom, but had yet to be admitted to the monastery. He watched in horror as the monks to whom he had served tea and nettles were first slaughtered, then raised to join the ranks of the Dead God's priesthood. With nothing but a few of Turstarkuri's prized dogmatic scrolls, he crept away to the comparative safety of other lands, swearing to obliterate not only the Dead God's magic users--but to put an end to magic altogether. ",
+  "hype": "Should Anti-Mage have the opportunity to gather his full strength, few can stop his assaults. <b>Draining mana</b> from enemies with every strike or <b>teleporting short distances</b> to escape an ambush, cornering him is a challenge for any foe.",
+  "abilities": [
+    {
+      "key": "antimage_mana_break",
+      "name": "Mana Break",
+      "description": "Burns an opponent's mana on each attack and deals damage equal to a percentage of the mana burnt.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "percent_damage_per_burn",
+          "heading": "MANA BURNED AS DAMAGE:",
+          "values": [
+            60
+          ]
+        },
+        {
+          "key": "mana_per_hit",
+          "heading": "MANA BURNED PER HIT:",
+          "values": [
+            25,
+            30,
+            35,
+            40
+          ]
+        },
+        {
+          "key": "mana_per_hit_pct",
+          "heading": "MAX MANA BURNED PER HIT:",
+          "values": [
+            1.8,
+            2.7,
+            3.6,
+            4.5
+          ]
+        },
+        {
+          "key": "illusion_percentage",
+          "heading": "",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "empowered_max_burn_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "empowered_mana_break_debuff_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": "Increases Max Mana Burned per Hit.",
+      "shard_upgrade": null,
+      "notes": [
+        "Mana Break has %illusion_percentage%%% mana burn effect if caused by illusions."
+      ],
+      "lore": "A modified technique of the Turstarkuri monks' peaceful ways is to turn magical energies on their owner."
+    },
+    {
+      "key": "antimage_blink",
+      "name": "Blink",
+      "description": "Short distance teleportation that allows Anti-Mage to move in and out of combat.",
+      "max_level": 4,
+      "cooldowns": [
+        10.5,
+        9,
+        7.5,
+        6
+      ],
+      "mana_costs": [
+        60,
+        55,
+        50,
+        45
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        875,
+        950,
+        1025,
+        1100
+      ],
+      "cast_points": [
+        0.4,
+        0.4,
+        0.4,
+        0.4
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "min_blink_range",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "empowered_mana_break_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "empowered_max_burn_pct_tooltip",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "empowered_mana_break_debuff_duration_tooltip",
+          "heading": "DEBUFF DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            875,
+            950,
+            1025,
+            1100
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.4
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            60,
+            55,
+            50,
+            45
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            10.5,
+            9,
+            7.5,
+            6
+          ]
+        }
+      ],
+      "scepter_upgrade": "After casting Blink, your next Mana Break within %empowered_mana_break_duration%s burns an additional %empowered_max_burn_pct_tooltip%%% max mana and prevents the target from regenerating or gaining mana for a short duration. This debuff is undispellable.",
+      "shard_upgrade": null,
+      "notes": [
+        "You can use Blink to dodge incoming projectiles."
+      ],
+      "lore": "In his encounter with the Dead Gods, Anti-Mage learned the value of being elusive."
+    },
+    {
+      "key": "antimage_counterspell",
+      "name": "Counterspell",
+      "description": "Passively grants magic resistance. Counterspell may be activated to create an anti-magic shell around Anti-Mage that blocks and reflects any targeted spells.",
+      "max_level": 4,
+      "cooldowns": [
+        15,
+        11,
+        7,
+        3
+      ],
+      "mana_costs": [
+        50
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "magic_resistance",
+          "heading": "MAGIC RESISTANCE:",
+          "values": [
+            14,
+            21,
+            28,
+            35
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            1.3
+          ]
+        },
+        {
+          "key": "duration_illusion",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "incoming_damage",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "does_reflect",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            15,
+            11,
+            7,
+            3
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Creates a blinked fragment of Anti-Mage next to the enemy caster upon reflecting their unit-targeted spell while active.",
+      "notes": [
+        "Break disables the passive magic resistance."
+      ],
+      "lore": "With the proper focus, Anti-Mage turns innate resistance into calculated retaliation."
+    },
+    {
+      "key": "antimage_persectur",
+      "name": "Persecutor",
+      "description": "Attacks slow enemies based on how much mana they are missing. Min slow at %mana_threshold%%% mana, up to max slow at 0%% mana. No effect if enemy is above %mana_threshold%%% mana.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "move_slow_min",
+          "heading": "MIN MOVEMENT SLOW:",
+          "values": [
+            12
+          ]
+        },
+        {
+          "key": "move_slow_max",
+          "heading": "MAX MOVEMENT SLOW:",
+          "values": [
+            24
+          ]
+        },
+        {
+          "key": "mana_threshold",
+          "heading": "",
+          "values": [
+            60
+          ]
+        },
+        {
+          "key": "slow_duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            0.75
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Full effect if caused by illusions."
+      ],
+      "lore": null
+    },
+    {
+      "key": "antimage_mana_void",
+      "name": "Mana Void",
+      "description": "For each point of mana missing by the target unit, damage is dealt to it and surrounding enemies.  The main target is also mini-stunned.",
+      "max_level": 3,
+      "cooldowns": [
+        100,
+        85,
+        70
+      ],
+      "mana_costs": [
+        100,
+        150,
+        200
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        600
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "mana_void_damage_per_mana",
+          "heading": "DAMAGE PER 1 MANA MISSING:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "mana_void_ministun",
+          "heading": "STUN DURATION:",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "mana_void_aoe_radius",
+          "heading": "RADIUS:",
+          "values": [
+            400,
+            450,
+            500
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            150,
+            200
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            100,
+            85,
+            70
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Damage is calculated based on the primary target's mana, but applied to all enemies within the area of effect.",
+        "Break disables Mana Thirst vision and attack bonuses."
+      ],
+      "lore": "After bringing enemies to their knees, Anti-Mage punishes them for their use of the arcane arts."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:value} Health Regen"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_mana_void_aoe_radius} Mana Void Radius"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_move_slow_min}%/{s:bonus_move_slow_max}% Persecutor Min/Max Movement Slow"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_mana_void_damage_per_mana} Mana Void Damage Multiplier"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_AbilityCastRange} Blink Cast Range"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_mana_void_ministun}s Mana Void Stun"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Blink Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Mana Void Cooldown"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

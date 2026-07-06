@@ -1,0 +1,83 @@
+{
+  "id": 154,
+  "name": "Sange and Yasha",
+  "slug": "sange_and_yasha",
+  "internal_key": "item_sange_and_yasha",
+  "cost": 4200,
+  "neutral_tier": null,
+  "description": "",
+  "notes": [
+    "Yasha-based movement speed bonuses from multiple items do not stack."
+  ],
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_strength",
+      "heading": "+$str",
+      "values": [
+        16
+      ]
+    },
+    {
+      "key": "bonus_agility",
+      "heading": "+$agi",
+      "values": [
+        16
+      ]
+    },
+    {
+      "key": "status_resistance",
+      "heading": "+Status Resistance",
+      "values": [
+        16
+      ]
+    },
+    {
+      "key": "bonus_attack_speed",
+      "heading": "+$attack",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "movement_speed_percent_bonus_melee",
+      "heading": "",
+      "values": [
+        12
+      ]
+    },
+    {
+      "key": "movement_speed_percent_bonus",
+      "heading": "+Movement Speed",
+      "values": [
+        12
+      ]
+    },
+    {
+      "key": "hp_regen_amp",
+      "heading": "+$restoration_amp",
+      "values": [
+        16
+      ]
+    },
+    {
+      "key": "slow_resistance",
+      "heading": "+Slow Resistance",
+      "values": [
+        30
+      ]
+    }
+  ],
+  "lore": "Sange and Yasha, when attuned by the moonlight and used together, become a very powerful combination.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

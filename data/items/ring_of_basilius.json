@@ -1,0 +1,53 @@
+{
+  "id": 88,
+  "name": "Ring of Basilius",
+  "slug": "ring_of_basilius",
+  "internal_key": "item_ring_of_basilius",
+  "cost": 425,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Basilius Aura</h1>Grants %aura_mana_regen% mana regeneration to allies.  <br><br>Radius: %aura_radius%",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    1200
+  ],
+  "special_values": [
+    {
+      "key": "mana_regen",
+      "heading": "+$mana_regen",
+      "values": [
+        0.25
+      ]
+    },
+    {
+      "key": "aura_mana_regen",
+      "heading": "",
+      "values": [
+        1
+      ]
+    },
+    {
+      "key": "aura_radius",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        1200
+      ]
+    }
+  ],
+  "lore": "Ring given as a reward to the greatest mages.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

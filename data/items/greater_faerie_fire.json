@@ -1,0 +1,46 @@
+{
+  "id": 299,
+  "name": "Greater Faerie Fire",
+  "slug": "greater_faerie_fire",
+  "internal_key": "item_greater_faerie_fire",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Use: Imbue</h1> Instantly restores %hp_restore% health.",
+  "notes": null,
+  "cooldowns": [
+    10
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_damage",
+      "heading": "+$damage",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "hp_restore",
+      "heading": "",
+      "values": [
+        250
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        10
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

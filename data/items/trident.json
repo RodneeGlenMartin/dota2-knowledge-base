@@ -1,0 +1,95 @@
+{
+  "id": 369,
+  "name": "Trident",
+  "slug": "trident",
+  "internal_key": "item_trident",
+  "cost": 6301,
+  "neutral_tier": null,
+  "description": "Combines Sange, Yasha and Kaya together.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_strength",
+      "heading": "+$str",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "bonus_agility",
+      "heading": "+$agi",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "bonus_intellect",
+      "heading": "+$int",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "status_resistance",
+      "heading": "+Status Resistance",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "bonus_attack_speed",
+      "heading": "+$attack",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "movement_speed_percent_bonus",
+      "heading": "+$move_speed",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "hp_regen_amp",
+      "heading": "+Health Regen and Lifesteal Amp",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "mana_regen_multiplier",
+      "heading": "+Mana Regen Amplification",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "spell_amp",
+      "heading": "+Spell Amplification",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "magic_damage_attack",
+      "heading": "+Magic Damage Attack",
+      "values": [
+        30
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

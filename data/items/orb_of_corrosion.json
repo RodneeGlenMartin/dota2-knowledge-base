@@ -1,0 +1,69 @@
+{
+  "id": 569,
+  "name": "Orb of Corrosion",
+  "slug": "orb_of_corrosion",
+  "internal_key": "item_orb_of_corrosion",
+  "cost": 1050,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Corrosion</h1> Your attacks reduce the target's armor by %corruption_armor%, slows their movement by %slow_ranged%%% (%slow_melee%%% against melee targets), and reduces Health Restoration by %heal_reduction%%%. Lasts for %duration% seconds.",
+  "notes": [
+    "Armor reduction does not stack with its components, Desolator, or Stygian Desolator."
+  ],
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "corruption_armor",
+      "heading": "",
+      "values": [
+        -2
+      ]
+    },
+    {
+      "key": "slow_melee",
+      "heading": "",
+      "values": [
+        -8
+      ]
+    },
+    {
+      "key": "slow_ranged",
+      "heading": "",
+      "values": [
+        -16
+      ]
+    },
+    {
+      "key": "heal_reduction",
+      "heading": "",
+      "values": [
+        16
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        3
+      ]
+    },
+    {
+      "key": "bonus_agility",
+      "heading": "+$agi",
+      "values": [
+        7
+      ]
+    }
+  ],
+  "lore": "Seepage from the wounds of a warrior deity, sealed in an arcanist's orb following a campaign of vicious slaughter.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

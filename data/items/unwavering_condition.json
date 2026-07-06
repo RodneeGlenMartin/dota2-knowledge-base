@@ -1,0 +1,39 @@
+{
+  "id": 1161,
+  "name": "Unwavering Condition",
+  "slug": "unwavering_condition",
+  "internal_key": "item_unwavering_condition",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Unwavering</h1> Hero's Max Health is set to %max_health% and can't be altered by other effects or attributes.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "max_health",
+      "heading": "",
+      "values": [
+        1800
+      ]
+    },
+    {
+      "key": "magic_resist",
+      "heading": "+$spell_resist",
+      "values": [
+        95
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": 2190,
+  "name": "Dandelion Amulet",
+  "slug": "dandelion_amulet",
+  "internal_key": "item_dandelion_amulet",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Magical Damage Block</h1> Every %AbilityCooldown%s, blocks up to %magic_block% magic damage from damage instances over %min_damage% damage.",
+  "notes": null,
+  "cooldowns": [
+    12
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "magic_block",
+      "heading": "",
+      "values": [
+        300
+      ]
+    },
+    {
+      "key": "min_damage",
+      "heading": "",
+      "values": [
+        75
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        12
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

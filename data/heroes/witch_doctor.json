@@ -1,0 +1,742 @@
+{
+  "id": 30,
+  "name": "Witch Doctor",
+  "slug": "witch_doctor",
+  "npc_name": "npc_dota_hero_witch_doctor",
+  "primary_attribute": "int",
+  "attack_type": "Ranged",
+  "complexity": 1,
+  "roles": [
+    "Support",
+    "Nuker",
+    "Disabler"
+  ],
+  "stats": {
+    "base_str": 20,
+    "str_gain": 2.1,
+    "base_agi": 13,
+    "agi_gain": 1.4,
+    "base_int": 22,
+    "int_gain": 3.1,
+    "damage_min": 48,
+    "damage_max": 58,
+    "attack_rate": 1.7,
+    "attack_range": 550,
+    "projectile_speed": 1200,
+    "armor": 2.1666667,
+    "magic_resistance": 25,
+    "movement_speed": 300,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 560,
+    "health_regen": 2.25,
+    "max_mana": 339,
+    "mana_regen": 1.1
+  },
+  "lore": "A wiry silhouette hitches forward--uneven of feature and limb, bizarre of gait, relentlessly criss-crossing the battlefield in search of that vital weak point where his talents can do most good, and most harm. Whether broken or mismade it is not clear, but still, none can doubt the power carried in his twisted physique. A long staff thumps the earth as Zharvakko the Witch Doctor advances, deploying a terrifying arsenal of fetishes, hexes and spells.  It is a body of magical knowledge learned and perfected over several lifetimes in the island highlands of Arktura, now wielded with precision accuracy against his enemies. Zharvakko can be your best friend or your worst enemy--healing allies and laying waste to all who oppose him.",
+  "hype": "Witch Doctor is <b>whatever his team needs him to be</b>. Whether aiding his team with <b>gradual healing</b>, <b>stunning and cursing foes</b> to ensure a kill, or destroying enemies himself with a dance by his mighty ultimate, few can match Witch Doctor's <b>versatility.</b>",
+  "abilities": [
+    {
+      "key": "witch_doctor_paralyzing_cask",
+      "name": "Paralyzing Cask",
+      "description": "Launches a cask of paralyzing powder that ricochets between enemy units, stunning and damaging those it hits. Damage increases each bounce.",
+      "max_level": 4,
+      "cooldowns": [
+        20,
+        18,
+        16,
+        14
+      ],
+      "mana_costs": [
+        80,
+        100,
+        120,
+        140
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        600
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "hero_duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            0.8
+          ]
+        },
+        {
+          "key": "creep_duration",
+          "heading": "",
+          "values": [
+            0.8
+          ]
+        },
+        {
+          "key": "base_damage",
+          "heading": "BASE DAMAGE:",
+          "values": [
+            55,
+            70,
+            85,
+            100
+          ]
+        },
+        {
+          "key": "bounce_range",
+          "heading": "",
+          "values": [
+            575
+          ]
+        },
+        {
+          "key": "bounces",
+          "heading": "BOUNCES:",
+          "values": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "key": "speed",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "bounce_delay",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "bounce_bonus_damage",
+          "heading": "BONUS DAMAGE PER BOUNCE:",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "creep_damage_pct",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            80,
+            100,
+            120,
+            140
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            20,
+            18,
+            16,
+            14
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Targets can be hit multiple times, as long as another unit is struck in between the bounces."
+      ],
+      "lore": "The Witch Doctor recycles the bones of fallen friends and foes, using the powder as part of his arsenal of charms and alchemy."
+    },
+    {
+      "key": "witch_doctor_voodoo_restoration",
+      "name": "Voodoo Restoration",
+      "description": "Witch Doctor focuses his magic to heal nearby allied units, costing Witch Doctor mana every second Voodoo Restoration is active.",
+      "max_level": 4,
+      "cooldowns": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mana_costs": [
+        25
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "mana_per_second",
+          "heading": "MANA PER SEC:",
+          "values": [
+            9,
+            12,
+            15,
+            18
+          ]
+        },
+        {
+          "key": "tooltip_mana_per_second",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            650
+          ]
+        },
+        {
+          "key": "heal",
+          "heading": "HEAL:",
+          "values": [
+            20,
+            30,
+            40,
+            50
+          ]
+        },
+        {
+          "key": "heal_interval",
+          "heading": "",
+          "values": [
+            0.33
+          ]
+        },
+        {
+          "key": "does_heal_all_allies",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "does_damage",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "self_only_heal_percentage",
+          "heading": "SELF HEAL:",
+          "values": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "key": "bonus_heal_percent",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            25
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Healing is done in %heal_interval% second intervals.",
+        "Can heal Spell Immune units."
+      ],
+      "lore": "Zharvakko's hocus pocus is not limited only to hexxing his opponents and is quite adept at curing ailments."
+    },
+    {
+      "key": "witch_doctor_maledict",
+      "name": "Maledict",
+      "description": "Curses all enemy Heroes and player-controlled units in a small area, causing them to take a set amount of damage each second, as well as bursts of damage every 4 seconds based on how much health they have lost since the curse began.",
+      "max_level": 4,
+      "cooldowns": [
+        30,
+        26,
+        22,
+        18
+      ],
+      "mana_costs": [
+        105,
+        110,
+        115,
+        120
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        600
+      ],
+      "cast_points": [
+        0.35,
+        0.35,
+        0.35,
+        0.35
+      ],
+      "durations": [
+        12
+      ],
+      "damages": [
+        18,
+        22,
+        26,
+        30
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "bonus_damage",
+          "heading": "LOST HEALTH BURST DAMAGE:",
+          "values": [
+            16,
+            24,
+            32,
+            40
+          ]
+        },
+        {
+          "key": "bonus_damage_threshold",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "ticks",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "spread_pct",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "spread_radius",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "spread_speed",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "AbilityDamage",
+          "heading": "",
+          "values": [
+            18,
+            22,
+            26,
+            30
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "DURATION:",
+          "values": [
+            12
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.35
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            105,
+            110,
+            115,
+            120
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            30,
+            26,
+            22,
+            18
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "If an affected hero's health has increased above the amount they had when Maledict was cast, the burst damage will be 0."
+      ],
+      "lore": "Certain voodoo magics can make an enemy regret engaging the Witch Doctor."
+    },
+    {
+      "key": "witch_doctor_voodoo_switcheroo",
+      "name": "Voodoo Switcheroo",
+      "description": "Turns Witch Doctor into a Death Ward briefly with reduced attack speed. He is hidden during this time.",
+      "max_level": 1,
+      "cooldowns": [
+        50
+      ],
+      "mana_costs": [
+        200
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            2.5
+          ]
+        },
+        {
+          "key": "attack_speed_reduction",
+          "heading": "ATTACK SPEED REDUCTION:",
+          "values": [
+            45
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            50
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "witch_doctor_gris_gris",
+      "name": "Gris-Gris",
+      "description": "Witch Doctor gets a Gris-Gris, an item that cannot be dropped or placed in the backpack. When the owner dies, %death_gold_lost_reduction_pct_tooltip%%% of the gold lost from death is added to the item, and will be refunded when the item is consumed. The value of the Gris-Gris is increased by 1 every %gold_tick_interval_tooltip%s. <br><br> Right-click to consume and permanently remove the item.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "death_gold_lost_reduction_pct_tooltip",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "gold_tick_interval_tooltip",
+          "heading": "",
+          "values": [
+            3
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "witch_doctor_death_ward",
+      "name": "Death Ward",
+      "description": "CHANNELED - Summons a deadly ward to attack enemy heroes within its attack range. Lasts a maximum of %abilitychanneltime% seconds. Death Ward has %bonus_accuracy%%% bonus accuracy.",
+      "max_level": 3,
+      "cooldowns": [
+        100,
+        90,
+        80
+      ],
+      "mana_costs": [
+        200,
+        200,
+        200
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        500
+      ],
+      "cast_points": [
+        0.35,
+        0.35,
+        0.35
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            60,
+            90,
+            120
+          ]
+        },
+        {
+          "key": "attack_range_tooltip",
+          "heading": "ATTACK RANGE:",
+          "values": [
+            600,
+            625,
+            650
+          ]
+        },
+        {
+          "key": "bonus_attack_range",
+          "heading": "",
+          "values": [
+            0,
+            25,
+            50
+          ]
+        },
+        {
+          "key": "bounce_radius",
+          "heading": "BOUNCE RADIUS:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "scepter_lifesteal",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "bonus_accuracy",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "initial_target_count",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "secondary_attack_damage_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "AbilityChannelTime",
+          "heading": "",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.35
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            100,
+            90,
+            80
+          ]
+        }
+      ],
+      "scepter_upgrade": "Death Ward attacks bounce between nearby enemies.",
+      "shard_upgrade": null,
+      "notes": [
+        "The Death Ward is invulnerable, and is only destroyed if Witch Doctor is interrupted or its duration expires.",
+        "The Death Ward can be controlled, and made to attack a specific target.",
+        "Death Ward attacks once every 0.22 seconds."
+      ],
+      "lore": "Witch Doctor performs a ritualistic dance, one that haunts the dreams of those who live to recount it."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "-{s:bonus_tooltip_mana_per_second}% Voodoo Restoration Mana Per Second"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Health"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Paralyzing Cask Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_AbilityDuration}s Maledict Duration"
+    },
+    {
+      "slot": null,
+      "name": "Maledict bursts deal {s:bonus_spread_pct}% damage in a {s:bonus_spread_radius} AoE "
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_heal_percent}% Target Max Health Voodoo Restoration Heal"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_bounces} Paralyzing Cask Bounces"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage} Death Ward Damage"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

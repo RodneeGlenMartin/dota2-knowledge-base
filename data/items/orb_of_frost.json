@@ -1,0 +1,53 @@
+{
+  "id": 1575,
+  "name": "Orb of Frost",
+  "slug": "orb_of_frost",
+  "internal_key": "item_orb_of_frost",
+  "cost": 300,
+  "neutral_tier": null,
+  "description": "<h1>Passive: Frost</h1>Your attacks slow the target's movement by %slow_ranged%%% (%slow_melee%%% against melee targets), and reduces Health Restoration by %heal_reduction%%%. Lasts for %duration% seconds.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "slow_melee",
+      "heading": "",
+      "values": [
+        -6
+      ]
+    },
+    {
+      "key": "slow_ranged",
+      "heading": "",
+      "values": [
+        -13
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        3
+      ]
+    },
+    {
+      "key": "heal_reduction",
+      "heading": "",
+      "values": [
+        13
+      ]
+    }
+  ],
+  "lore": "Slowly growing since the universe began, it will envelop everything when it ends.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

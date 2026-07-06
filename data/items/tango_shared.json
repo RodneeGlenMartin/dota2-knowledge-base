@@ -1,0 +1,53 @@
+{
+  "id": 241,
+  "name": "Tango (Shared)",
+  "slug": "tango_shared",
+  "internal_key": "item_tango_single",
+  "cost": 30,
+  "neutral_tier": null,
+  "description": "<h1>Use: Devour</h1> Consumes a target tree to gain %health_regen% health regeneration for %buff_duration% seconds. Consuming an Ironwood Tree doubles the heal duration.<br><br>Tree Range: %abilitycastrange%",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    165
+  ],
+  "special_values": [
+    {
+      "key": "health_regen",
+      "heading": "",
+      "values": [
+        3.5
+      ]
+    },
+    {
+      "key": "buff_duration",
+      "heading": "",
+      "values": [
+        16
+      ]
+    },
+    {
+      "key": "duration_to_use",
+      "heading": "",
+      "values": [
+        40
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        165
+      ]
+    }
+  ],
+  "lore": "Om nom nom.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

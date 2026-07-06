@@ -1,0 +1,67 @@
+{
+  "id": 294,
+  "name": "Seer Stone",
+  "slug": "seer_stone",
+  "internal_key": "item_seer_stone",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Reveal</h1> Reveal a target %radius% area of the map for %duration% seconds.",
+  "notes": null,
+  "cooldowns": [
+    60
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "cast_range_bonus",
+      "heading": "+$cast_range",
+      "values": [
+        350
+      ]
+    },
+    {
+      "key": "vision_bonus",
+      "heading": "+Bonus Vision",
+      "values": [
+        350
+      ]
+    },
+    {
+      "key": "mana_regen",
+      "heading": "+$mana_regen",
+      "values": [
+        10
+      ]
+    },
+    {
+      "key": "radius",
+      "heading": "",
+      "values": [
+        800
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        6
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        60
+      ]
+    }
+  ],
+  "lore": "The curious creation of a wizard who professed to hail from another time.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

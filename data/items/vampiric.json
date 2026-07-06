@@ -1,0 +1,46 @@
+{
+  "id": 1594,
+  "name": "Vampiric",
+  "slug": "vampiric",
+  "internal_key": "item_enhancement_vampiric",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "attack_lifesteal",
+      "heading": "+$lifesteal",
+      "values": [
+        30
+      ]
+    },
+    {
+      "key": "spell_lifesteal",
+      "heading": "+$spell_lifesteal",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "bonus_night_vision",
+      "heading": "+Night Vision",
+      "values": [
+        300
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

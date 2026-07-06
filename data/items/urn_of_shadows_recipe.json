@@ -1,0 +1,24 @@
+{
+  "id": 91,
+  "name": "Urn of Shadows Recipe",
+  "slug": "urn_of_shadows_recipe",
+  "internal_key": "item_recipe_urn_of_shadows",
+  "cost": 320,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

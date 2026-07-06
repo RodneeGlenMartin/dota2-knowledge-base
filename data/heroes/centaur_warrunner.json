@@ -1,0 +1,602 @@
+{
+  "id": 96,
+  "name": "Centaur Warrunner",
+  "slug": "centaur_warrunner",
+  "npc_name": "npc_dota_hero_centaur",
+  "primary_attribute": "str",
+  "attack_type": "Melee",
+  "complexity": 1,
+  "roles": [
+    "Nuker",
+    "Disabler",
+    "Durable",
+    "Escape",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 28,
+    "str_gain": 4.3,
+    "base_agi": 15,
+    "agi_gain": 1,
+    "base_int": 15,
+    "int_gain": 1.6,
+    "damage_min": 64,
+    "damage_max": 66,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 0.5,
+    "magic_resistance": 25,
+    "movement_speed": 300,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 736,
+    "health_regen": 5.8,
+    "max_mana": 255,
+    "mana_regen": 0.75
+  },
+  "lore": "It's said that a centaur's road is paved with the corpses of the fallen.  For the one called Warrunner, it has been a long road indeed.  To outsiders, the four-legged clans of Druud are often mistaken for simple, brutish creatures.  Their language has no written form; their culture lacks pictographic traditions, structured music, formalized religion.  For centaurs, combat is the perfect articulation of thought, the highest expression of self.  If killing is an art among centaurs, then Bradwarden the Warrunner is their greatest artist.  He rose to dominance on the proving grounds of Omexe, an ancient arena where centaur clans have for millennia gathered to perform their gladiatorial rites.  As his fame spread, spectators came from far and wide to see the great centaur in action.  Always the first to step into the arena, and the last to leave, he composes a masterpiece in each guttering spray, each thrust of blood-slickened blade-length.  It is the poetry of blood on steel, flung in complex patterns across the pale sands of the killing floor.\r\n\t\t\t\t<br><br>Warrunner defeated warrior after warrior, until the arena boomed with the cheering of his name, and he found himself alone, the uncontested champion of his kind.  The great belt of Omexe was bestowed, wrapped around his broad torso, but in his victory, the death-artist found only emptiness.  For what is a warrior without a challenge?  The great centaur galloped out of Omexe that day with a new goal.  To his people, Warrunner is the greatest warrior to ever step into the arena.  Now he has set out to prove he is the greatest fighter who has ever lived.",
+  "hype": "Centaur Warrunner is a master of both <b>inflicting and absorbing damage</b>. Leading the charge into battle, he stomps to <b>stun his enemies</b>, and instantly <b>counters</b> their every attack. His stampede <b>speeds his allies</b> in both fight and flight, quickening the pace of the carnage.",
+  "abilities": [
+    {
+      "key": "centaur_hoof_stomp",
+      "name": "Hoof Stomp",
+      "description": "After a brief windup, Centaur Warrunner slams the ground, stunning and damaging nearby enemy units. During the delay, he is disarmed but can move.",
+      "max_level": 4,
+      "cooldowns": [
+        18,
+        16,
+        14,
+        12
+      ],
+      "mana_costs": [
+        100,
+        110,
+        120,
+        130
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            325
+          ]
+        },
+        {
+          "key": "stomp_damage",
+          "heading": "STOMP DAMAGE:",
+          "values": [
+            70,
+            140,
+            210,
+            280
+          ]
+        },
+        {
+          "key": "stun_duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            1.6,
+            1.8,
+            2,
+            2.2
+          ]
+        },
+        {
+          "key": "windup_time",
+          "heading": "WINDUP TIME:",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100,
+            110,
+            120,
+            130
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            18,
+            16,
+            14,
+            12
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "When the mighty hoof of the Warrunner touches soil, the tremors are felt far and wide."
+    },
+    {
+      "key": "centaur_double_edge",
+      "name": "Double Edge",
+      "description": "Centaur strikes a mighty blow at melee range, damaging both himself and a small area around the target. Deals extra damage based on your strength. Centaur cannot die from Double Edge.",
+      "max_level": 4,
+      "cooldowns": [
+        3.5
+      ],
+      "mana_costs": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        175,
+        175,
+        175,
+        175
+      ],
+      "cast_points": [
+        0.25
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "edge_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            120,
+            180,
+            240,
+            300
+          ]
+        },
+        {
+          "key": "strength_damage",
+          "heading": "STRENGTH DAMAGE:",
+          "values": [
+            60,
+            90,
+            120,
+            150
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            220
+          ]
+        },
+        {
+          "key": "shard_str_pct",
+          "heading": "BONUS STRENGTH:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_str_duration",
+          "heading": "STRENGTH DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_max_stacks",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_movement_slow",
+          "heading": "MOVEMENT SLOW:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_movement_slow_duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            175
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            3.5
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Causes Double Edge to slow enemy heroes and increase Centaur's strength per hero hit for a short time. Duration refreshes per stack, up to a max of %shard_max_stacks% stacks.",
+      "notes": [
+        "Double Edge deals magic type damage to both the targets and himself."
+      ],
+      "lore": "In the spurs of combat, Bradwarden's vicious strikes sometimes cause self-inflicted collateral damage."
+    },
+    {
+      "key": "centaur_return",
+      "name": "Retaliate",
+      "description": "Centaur counters all attacks, dealing damage back to the attacker. Returns a fixed amount plus a percentage of your strength. Deals half damage to towers.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "return_damage",
+          "heading": "RETURN DAMAGE:",
+          "values": [
+            15,
+            25,
+            35,
+            45
+          ]
+        },
+        {
+          "key": "return_damage_str",
+          "heading": "STR RETURN DAMAGE:",
+          "values": [
+            16,
+            24,
+            32,
+            40
+          ]
+        },
+        {
+          "key": "aura_radius",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "aura_enabled",
+          "heading": "",
+          "values": null
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Retaliate triggers when the attack hits.",
+        "Retaliate deals damage to towers.",
+        "Damage done by this ability is considered reflected damage. Reflected damage does not provide any lifesteal and cannot be reflected."
+      ],
+      "lore": "Bradwarden has no need to parry his opponent's attacks; his armor-like hide does it for him."
+    },
+    {
+      "key": "centaur_work_horse",
+      "name": "Work Horse",
+      "description": "Centaur hitches a cart behind him. While active, Centaur gains the benefit of Stampede for the current level of Stampede, and can cast Hitch a Ride on a target ally.",
+      "max_level": 1,
+      "cooldowns": [
+        35
+      ],
+      "mana_costs": [
+        75
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "TOTAL DURATION:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "melee_attack_range",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "air_duration",
+          "heading": "",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "air_height",
+          "heading": "",
+          "values": [
+            450
+          ]
+        },
+        {
+          "key": "break_distance",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            35
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "It is a great honor to be offered a ride by Centaur Warrunner and a grave mistake to refuse it."
+    },
+    {
+      "key": "centaur_stampede",
+      "name": "Stampede",
+      "description": "Centaur leads all allies into a vicious charge causing them to move through units at max speed and slow any enemy units they trample. Trampled enemies take damage based on Centaur Warrunner's strength. Each enemy can be trampled once.",
+      "max_level": 3,
+      "cooldowns": [
+        100,
+        95,
+        90
+      ],
+      "mana_costs": [
+        150,
+        200,
+        250
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "STAMPEDE DURATION:",
+          "values": [
+            3.5,
+            4,
+            4.5
+          ]
+        },
+        {
+          "key": "scepter_bonus_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "strength_damage",
+          "heading": "STRENGTH MULTIPLIER DAMAGE:",
+          "values": [
+            2,
+            2.5,
+            3
+          ]
+        },
+        {
+          "key": "slow_duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "TRAMPLE RADIUS:",
+          "values": [
+            105
+          ]
+        },
+        {
+          "key": "slow_movement_speed",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            150,
+            200,
+            250
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            100,
+            95,
+            90
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "The great belt of Omexe, which labels Bradwarden as the greatest warrior of his kind, incites his fellow gladiators to follow him into barbarous combat."
+    },
+    {
+      "key": "centaur_horsepower",
+      "name": "Horsepower",
+      "description": "Centaur Warrunner gains %strength_to_movement_pct%%% of his strength as bonus movement speed.<br><br> This Movement speed bonus does not stack with bonuses from boots.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "strength_to_movement_pct",
+          "heading": "",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "current_speed",
+          "heading": "CURRENT SPEED:",
+          "values": [
+            0
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:value} Health Regen"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Movement Speed"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Strength"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_strength_damage}% Double Edge Strength Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_return_damage} Retaliate Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Stampede Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "Gains Retaliate Aura"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_stun_duration}s Hoof Stomp Duration"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

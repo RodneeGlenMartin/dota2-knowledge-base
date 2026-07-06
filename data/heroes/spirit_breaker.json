@@ -1,0 +1,752 @@
+{
+  "id": 71,
+  "name": "Spirit Breaker",
+  "slug": "spirit_breaker",
+  "npc_name": "npc_dota_hero_spirit_breaker",
+  "primary_attribute": "str",
+  "attack_type": "Melee",
+  "complexity": 1,
+  "roles": [
+    "Carry",
+    "Disabler",
+    "Durable",
+    "Escape",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 28,
+    "str_gain": 3.3,
+    "base_agi": 17,
+    "agi_gain": 1.7,
+    "base_int": 14,
+    "int_gain": 1.8,
+    "damage_min": 62,
+    "damage_max": 72,
+    "attack_rate": 1.9,
+    "attack_range": 170,
+    "projectile_speed": 900,
+    "armor": 3.8333335,
+    "magic_resistance": 25,
+    "movement_speed": 295,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 736,
+    "health_regen": 4.05,
+    "max_mana": 243,
+    "mana_regen": 1.2
+  },
+  "lore": "Barathrum the Spirit Breaker is a lordly and powerful being, a fierce and elemental intelligence which chose to plane-shift into the world of matter to take part in events with repercussions in the elemental realm that is his home. To that end, he assembled a form that would serve him well, both in our world and out of it. His physical form borrows from the strengths of this world, blending features both bovine and simian--horns, hooves and hands--as outward emblems of his inner qualities of strength, speed and cunning. He wears a ring in his nose, as a reminder that he serves a hidden master, and that this world in which he works is but a shadow of the real one.",
+  "hype": "<b>Highly mobile</b> and <b>always aggressive</b>, Spirit Breaker charges across the map to bring the fight to his enemies. With each bash of his heavy lantern, he knocks his foes senseless. His enemies may run, but with the help of a few wards, they cannot hide.",
+  "abilities": [
+    {
+      "key": "spirit_breaker_charge_of_darkness",
+      "name": "Charge of Darkness",
+      "description": "Spirit Breaker fixes his sight on an enemy unit and starts charging through all objects, starting at %min_movespeed_bonus_pct%%% of the bonus speed and reaching his max speed after %windup_time%s.<br><br>All enemy units passed through and the targeted unit will be hit by a Greater Bash.  If the targeted unit dies, Spirit Breaker will change his target to the nearest enemy unit to that location.",
+      "max_level": 4,
+      "cooldowns": [
+        22,
+        19,
+        16,
+        13
+      ],
+      "mana_costs": [
+        80,
+        90,
+        100,
+        110
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "movement_speed",
+          "heading": "CHARGE BONUS SPEED:",
+          "values": [
+            275,
+            325,
+            375,
+            425
+          ]
+        },
+        {
+          "key": "stun_duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            1.3,
+            1.6,
+            1.9,
+            2.2
+          ]
+        },
+        {
+          "key": "bash_radius",
+          "heading": "",
+          "values": [
+            300
+          ]
+        },
+        {
+          "key": "vision_radius",
+          "heading": "",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "vision_duration",
+          "heading": "",
+          "values": [
+            0.94
+          ]
+        },
+        {
+          "key": "windup_time",
+          "heading": "",
+          "values": [
+            1.5
+          ]
+        },
+        {
+          "key": "min_movespeed_bonus_pct",
+          "heading": "",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            80,
+            90,
+            100,
+            110
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            22,
+            19,
+            16,
+            13
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Increases Charge of Darkness Bonus Speed by %bonus_movement_speed%.",
+      "notes": [
+        "Spirit Breaker passes through trees, cliffs, and units.",
+        "The charge indicator is visible only to allies.",
+        "Spirit Breaker gains shared vision of the target."
+      ],
+      "lore": "Barathrum erupts from the darkness with unwieldy force."
+    },
+    {
+      "key": "spirit_breaker_bulldoze",
+      "name": "Bulldoze",
+      "description": "Spirit Breaker gains movement speed and status resistance to ram through enemies. Can be used while charging.",
+      "max_level": 4,
+      "cooldowns": [
+        22,
+        20,
+        18,
+        16
+      ],
+      "mana_costs": [
+        30,
+        40,
+        50,
+        60
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "movement_speed",
+          "heading": "MOVEMENT SPEED:",
+          "values": [
+            8,
+            12,
+            16,
+            20
+          ]
+        },
+        {
+          "key": "status_resistance",
+          "heading": "STATUS RESISTANCE:",
+          "values": [
+            40,
+            50,
+            60,
+            70
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "damage_barrier",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            30,
+            40,
+            50,
+            60
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            22,
+            20,
+            18,
+            16
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Barathrum warps the fabric of reality around him, lessening its influence on his physical form."
+    },
+    {
+      "key": "spirit_breaker_greater_bash",
+      "name": "Greater Bash",
+      "description": "Gives a chance to stun and knockback an enemy unit on an attack. Deals a percentage of movement speed as damage.",
+      "max_level": 4,
+      "cooldowns": [
+        1.2
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "chance_pct",
+          "heading": "CHANCE TO BASH:",
+          "values": [
+            17
+          ]
+        },
+        {
+          "key": "bonus_chance_pct",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "bonus_chance_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "MOVEMENT SPEED AS DAMAGE:",
+          "values": [
+            25,
+            30,
+            35,
+            40
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            0.9,
+            1.1,
+            1.3,
+            1.5
+          ]
+        },
+        {
+          "key": "knockback_duration",
+          "heading": "KNOCKBACK DURATION:",
+          "values": [
+            0.5
+          ]
+        },
+        {
+          "key": "cascading_bash_cooldown",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "cascading_bashes_damage_multiplier",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "cascading_bashes_creep_penalty",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "cascading_bashes_nether_strike_additional_cooldown",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "cascading_bashes_hero_hitbox",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "cascading_bashes_creep_hitbox",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "knockback_distance",
+          "heading": "KNOCKBACK DISTANCE:",
+          "values": [
+            143,
+            152,
+            158,
+            162
+          ]
+        },
+        {
+          "key": "knockback_height",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "bonus_knockback_multiplier",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "bonus_movespeed_pct",
+          "heading": "",
+          "values": [
+            17
+          ]
+        },
+        {
+          "key": "movespeed_duration",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "creep_multiplier",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            1.2
+          ]
+        }
+      ],
+      "scepter_upgrade": "Increases knockback. If a knocked-back enemy collides with another enemy, the second enemy is bashed (creeps only receive %cascading_bashes_creep_penalty%%% damage), and the original target takes %cascading_bashes_damage_multiplier%%% of Greater Bash's damage again.",
+      "shard_upgrade": null,
+      "notes": [
+        "Does not stack with Skull Basher.",
+        "Break disables the passive percent Chance to Bash. Does not disable Greater Bash application from Charge of Darkness or Nether Strike."
+      ],
+      "lore": "The signature strike of Barathrum's ghostly ball and chain."
+    },
+    {
+      "key": "spirit_breaker_planar_pocket",
+      "name": "Planar Pocket",
+      "description": "Barathrum gains magic resistance and distorts reality around the selected hero, making any unit-targeted spells cast by enemy heroes get redirected towards Spirit Breaker. Can be cast on both allied and enemy heroes, but only spells cast by enemies of Spirit Breaker will be redirected.",
+      "max_level": 1,
+      "cooldowns": [
+        30
+      ],
+      "mana_costs": [
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        700
+      ],
+      "cast_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "magic_resistance",
+          "heading": "SELF MAGIC RESISTANCE:",
+          "values": [
+            40
+          ]
+        },
+        {
+          "key": "break_distance",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            30
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Planar Pocket's effect stops if Barathrum moves %break_distance% units away from the target."
+      ],
+      "lore": "Barathrum's unyielding focus forms a pocket of planar convergence from which not even the most powerful arcane energies can escape."
+    },
+    {
+      "key": "spirit_breaker_bull_rush",
+      "name": "Empowering Haste",
+      "description": "Spirit Breaker gains bonus Movement Speed for a duration whenever he stuns an enemy. Effects from multiple stuns stack and have independent durations. Duration pauses during Charge of Darkness.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "hero_duration",
+          "heading": "HERO DURATION:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "creep_duration",
+          "heading": "CREEP DURATION:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "hero_movespeed_percent",
+          "heading": "HERO MOVESPEED:",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "creep_movespeed_percent",
+          "heading": "CREEP MOVESPEED:",
+          "values": [
+            2
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Empowering Haste buff allows Spirit Breaker to go over the max movement speed limit."
+      ],
+      "lore": null
+    },
+    {
+      "key": "spirit_breaker_nether_strike",
+      "name": "Nether Strike",
+      "description": "Spirit Breaker slips into the nether realm, reappearing next to his hapless victim. Upon reappearing, a Greater Bash of the current level occurs and deals bonus damage. Knocks back for double the normal distance.",
+      "max_level": 3,
+      "cooldowns": [
+        75,
+        55,
+        35
+      ],
+      "mana_costs": [
+        125,
+        150,
+        175
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        700
+      ],
+      "cast_points": [
+        1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage",
+          "heading": "BONUS DAMAGE:",
+          "values": [
+            150,
+            250,
+            350
+          ]
+        },
+        {
+          "key": "fade_time",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "shard_bonus_damage",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_break_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "shard_spell_immune_duration",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "knockback_amp",
+          "heading": "KNOCKBACK AMPLIFICATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "knockback_amp_duration",
+          "heading": "KNOCKBACK AMPLIFICATION DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            700
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            125,
+            150,
+            175
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            75,
+            55,
+            35
+          ]
+        }
+      ],
+      "scepter_upgrade": "Greatly increases knockback.",
+      "shard_upgrade": null,
+      "notes": [
+        "Spirit Breaker appears behind the target to deliver the bash."
+      ],
+      "lore": "Barathrum temporarily returns to the realm from where he came, bringing with him the retribution of both worlds."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:value} Night Vision"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Armor"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Bulldoze Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_movement_speed} Charge of Darkness Bonus Speed"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_hero_movespeed_percent}%/+{s:bonus_creep_movespeed_percent}% Empowering Haste Movespeed Bonus"
+    },
+    {
+      "slot": null,
+      "name": "Bulldoze {s:bonus_damage_barrier} All Damage Barrier"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage}% Greater Bash Damage"
+    },
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Charge of Darkness Cooldown"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,511 @@
+{
+  "id": 70,
+  "name": "Ursa",
+  "slug": "ursa",
+  "npc_name": "npc_dota_hero_ursa",
+  "primary_attribute": "agi",
+  "attack_type": "Melee",
+  "complexity": 1,
+  "roles": [
+    "Carry",
+    "Disabler",
+    "Durable"
+  ],
+  "stats": {
+    "base_str": 25,
+    "str_gain": 2.4,
+    "base_agi": 18,
+    "agi_gain": 2.8,
+    "base_int": 16,
+    "int_gain": 1.5,
+    "damage_min": 42,
+    "damage_max": 46,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 4,
+    "magic_resistance": 25,
+    "movement_speed": 310,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 670,
+    "health_regen": 3.5,
+    "max_mana": 267,
+    "mana_regen": 0.8
+  },
+  "lore": "Ulfsaar the Warrior is the fiercest member of an ursine tribe, protective of his land and his people. During the long winters, while the mothers sleep and nurse their cubs, the males patrol the lands above as tireless, vigilant defenders of their ancient ways. Hearing dim but growing rumors of a spreading evil, Ulfsaar headed out beyond the boundaries of his wild wooded homeland, intending to track down and destroy the threat at its source, before it could endanger his people. He is a proud creature with a bright strong spirit, utterly trustworthy, a staunch ally and defender.",
+  "hype": "<b>With each swipe of his claws</b>, Ursa increases his target's vulnerability to his next attack. Capable of briefly increasing how <b>swiftly</b> he can strike, and able to <b>slow down</b> nearby prey, he quickly tears apart his enemies.",
+  "abilities": [
+    {
+      "key": "ursa_earthshock",
+      "name": "Earthshock",
+      "description": "Ursa leaps forward %hop_distance% units and slams the earth, causing a powerful shock to damage and slow all enemy units in a nearby area for %abilityduration% seconds.",
+      "max_level": 4,
+      "cooldowns": [
+        15,
+        13,
+        11,
+        9
+      ],
+      "mana_costs": [
+        95
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        4
+      ],
+      "damages": [
+        75,
+        125,
+        175,
+        225
+      ],
+      "special_values": [
+        {
+          "key": "shock_radius",
+          "heading": "RADIUS:",
+          "values": [
+            385
+          ]
+        },
+        {
+          "key": "movement_slow",
+          "heading": "SLOW:",
+          "values": [
+            -22,
+            -28,
+            -34,
+            -40
+          ]
+        },
+        {
+          "key": "hop_distance",
+          "heading": "",
+          "values": [
+            250
+          ]
+        },
+        {
+          "key": "hop_duration",
+          "heading": "",
+          "values": [
+            0.25
+          ]
+        },
+        {
+          "key": "hop_height",
+          "heading": "",
+          "values": [
+            83
+          ]
+        },
+        {
+          "key": "fury_swipe_stacks_on_hit",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityDamage",
+          "heading": "",
+          "values": [
+            75,
+            125,
+            175,
+            225
+          ]
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "AbilityCharges",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityChargeRestoreTime",
+          "heading": "",
+          "values": [
+            15,
+            13,
+            11,
+            9
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            95
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            15,
+            13,
+            11,
+            9
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Earthshock applies %fury_swipe_stacks_on_hit% Fury Swipes to enemies hit.",
+      "notes": null,
+      "lore": "The very steps of a male ursine shake the ground as well as the resolve of opposing warriors."
+    },
+    {
+      "key": "ursa_overpower",
+      "name": "Overpower",
+      "description": "Using his skill in combat, Ursa gains increased attack speed and slow resistance for a number of subsequent attacks.",
+      "max_level": 4,
+      "cooldowns": [
+        12,
+        11,
+        10,
+        9
+      ],
+      "mana_costs": [
+        45,
+        50,
+        55,
+        60
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "durations": [
+        20
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "max_attacks",
+          "heading": "ATTACKS:",
+          "values": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "key": "attack_speed_bonus_pct",
+          "heading": "BONUS ATTACK SPEED:",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "slow_resist",
+          "heading": "SLOW RESISTANCE:",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "AbilityDuration",
+          "heading": "DURATION:",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            45,
+            50,
+            55,
+            60
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            12,
+            11,
+            10,
+            9
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Missing an attack still consumes a charge of Overpower."
+      ],
+      "lore": "For a behemoth of his size, Ursa is deceptively nimble."
+    },
+    {
+      "key": "ursa_fury_swipes",
+      "name": "Fury Swipes",
+      "description": "Ursa's claws dig deeper wounds in the enemy, causing consecutive attacks to the same enemy to deal more damage.  If the same target is not attacked after %bonus_reset_time% seconds, the bonus damage is lost.",
+      "max_level": 4,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "bonus_reset_time",
+          "heading": "RESET TIME:",
+          "values": [
+            8,
+            12,
+            16,
+            20
+          ]
+        },
+        {
+          "key": "bonus_reset_time_roshan",
+          "heading": "RESET TIME (ROSHAN):",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "damage_per_stack",
+          "heading": "DAMAGE PER ATTACK:",
+          "values": [
+            12,
+            20,
+            28,
+            36
+          ]
+        },
+        {
+          "key": "stun_stack_count",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "stun_duration",
+          "heading": "",
+          "values": null
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Break disables the application of new stacks.",
+        "Break does not disable the effects of existing stacks."
+      ],
+      "lore": "In nature, the wounded rarely survive the attacks of hungry predators."
+    },
+    {
+      "key": "ursa_maul",
+      "name": "Maul",
+      "description": "Ursa gains bonus damage equal to a percentage of his Current HP.",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "health_as_damage_pct",
+          "heading": "HEALTH AS DAMAGE:",
+          "values": [
+            1.25
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": null
+    },
+    {
+      "key": "ursa_enrage",
+      "name": "Enrage",
+      "description": "Ursa goes into a frenzy, providing damage reduction and status resistance. Removes any existing debuffs.\n\nDISPEL TYPE: Strong Dispel",
+      "max_level": 3,
+      "cooldowns": [
+        60,
+        45,
+        30
+      ],
+      "mana_costs": [
+        0,
+        0,
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage_reduction",
+          "heading": "DAMAGE REDUCTION:",
+          "values": [
+            80
+          ]
+        },
+        {
+          "key": "status_resistance",
+          "heading": "STATUS RESISTANCE:",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            4,
+            4.5,
+            5
+          ]
+        },
+        {
+          "key": "damage_increase",
+          "heading": "DAMAGE ABSORBED TO DAMAGE:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "damage_increase_duration",
+          "heading": "DAMAGE INCREASE LINGER DURATION:",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "COOLDOWN:",
+          "values": [
+            60,
+            45,
+            30
+          ]
+        }
+      ],
+      "scepter_upgrade": "Reduces cooldown and allows Ursa to use Enrage while disabled.",
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Ulfsaar succumbs to his ancient spirit, becoming the most ferocious creature on the battlefield."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:bonus_bonus_reset_time}s Fury Swipes Reset Time"
+    },
+    {
+      "slot": null,
+      "name": "+{s:value} Mana Regen"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_health_as_damage_pct}% Maul Health As Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_status_resistance}% Enrage Status Resistance"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_shock_radius} Earthshock Radius"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_per_stack} Fury Swipes Damage"
+    },
+    {
+      "slot": null,
+      "name": "Earthshock has {s:bonus_AbilityCharges} Charges"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_max_attacks} Overpower Attacks"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

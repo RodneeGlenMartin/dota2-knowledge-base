@@ -1,0 +1,825 @@
+{
+  "id": 107,
+  "name": "Earth Spirit",
+  "slug": "earth_spirit",
+  "npc_name": "npc_dota_hero_earth_spirit",
+  "primary_attribute": "str",
+  "attack_type": "Melee",
+  "complexity": 3,
+  "roles": [
+    "Nuker",
+    "Disabler",
+    "Durable",
+    "Escape",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 23,
+    "str_gain": 3.8,
+    "base_agi": 17,
+    "agi_gain": 2.4,
+    "base_int": 18,
+    "int_gain": 2.1,
+    "damage_min": 48,
+    "damage_max": 52,
+    "attack_rate": 1.7,
+    "attack_range": 150,
+    "projectile_speed": 900,
+    "armor": 2.8333335,
+    "magic_resistance": 25,
+    "movement_speed": 290,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 626,
+    "health_regen": 3.3,
+    "max_mana": 291,
+    "mana_regen": 0.90000004
+  },
+  "lore": "Deep amid the Upland crags and cliffs there runs a seam of sacred jade long foresworn by highland miners. From this rare material, the likeness of the great general Kaolin was carved and buried at the head of a stone funerary army ten thousand strong--a force of soldiers and holy men, jesters and acrobats, carved by crafstmen and entombed for millennia in the dark embrace of the Earth.\r\n\t\t\t\t<br><br>What the craftsmen had not known was that within the strange seam of jade flowed the spirit of the Earth itself--an elemental force at one with the planet. When the force within the carved jade found itself cut off from the life's blood of the world, it gathered its strength over the course of a thousand years and dug itself free and into the light. Now the great Kaolin Earth Spirit strides the Upland roads, fighting for the spirit of the Earth; and in times of need calls forth remnants of his buried army still locked in the loving embrace of the soil.",
+  "hype": "Earth Spirit keeps the enemy in chaos and his friends in the fight. <b>Adapting</b> to any battle scenario, he can send his <b>statue remnants</b> back and forth to <b>damage foes</b>, or grips an ally from the jaws of death.",
+  "abilities": [
+    {
+      "key": "earth_spirit_boulder_smash",
+      "name": "Boulder Smash",
+      "description": "Earth Spirit smashes the target enemy or ally, sending them in the direction he is facing. If Earth Spirit targets an area, he will smash the nearest unit in a %remnant_smash_radius_tooltip% radius, prioritizing Stone Remnants. The travelling unit or Remnant damages all enemy units it hits.  If an enemy is hit by a Stone Remnant, they are also slowed. Stone Remnants travel further than other units.",
+      "max_level": 4,
+      "cooldowns": [
+        20,
+        17,
+        14,
+        11
+      ],
+      "mana_costs": [
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        150
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            180
+          ]
+        },
+        {
+          "key": "rock_search_aoe",
+          "heading": "REMNANT SMASH RADIUS:",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "rock_damage",
+          "heading": "DAMAGE:",
+          "values": [
+            110,
+            180,
+            250,
+            320
+          ]
+        },
+        {
+          "key": "move_slow",
+          "heading": "SLOW AMOUNT:",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "SLOW DURATION:",
+          "values": [
+            1.75,
+            2.5,
+            3.25,
+            4
+          ]
+        },
+        {
+          "key": "speed",
+          "heading": "TRAVEL SPEED:",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "unit_distance",
+          "heading": "DISTANCE:",
+          "values": [
+            500,
+            600,
+            700,
+            800
+          ]
+        },
+        {
+          "key": "rock_distance",
+          "heading": "DISTANCE (REMNANT):",
+          "values": [
+            2000
+          ]
+        },
+        {
+          "key": "remnant_smash_radius_tooltip",
+          "heading": "",
+          "values": [
+            200
+          ]
+        },
+        {
+          "key": "creep_multiplier",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            20,
+            17,
+            14,
+            11
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "It is with the power of a mountain that Earth Spirit strikes his enemies."
+    },
+    {
+      "key": "earth_spirit_rolling_boulder",
+      "name": "Rolling Boulder",
+      "description": "Earth Spirit gathers himself into a boulder and, after a %delay%s delay, rolls toward the target location, dealing %damage% + %damage_str%%% STR damage and stunning enemy units. He will stop if he collides with an enemy hero or is stunned. If he rolls over a Stone Remnant, he will travel further and faster, and stun enemies for longer.",
+      "max_level": 4,
+      "cooldowns": [
+        16,
+        12,
+        8,
+        4
+      ],
+      "mana_costs": [
+        50
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        3000
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            160
+          ]
+        },
+        {
+          "key": "speed",
+          "heading": "SPEED:",
+          "values": [
+            1000
+          ]
+        },
+        {
+          "key": "rock_speed",
+          "heading": "SPEED (REMNANT):",
+          "values": [
+            1600
+          ]
+        },
+        {
+          "key": "distance",
+          "heading": "DISTANCE:",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "rock_distance_multiplier",
+          "heading": "DISTANCE MULTIPLIER (REMNANT):",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "delay",
+          "heading": "",
+          "values": [
+            0.6
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "DAMAGE:",
+          "values": [
+            60,
+            70,
+            80,
+            90
+          ]
+        },
+        {
+          "key": "stun_duration",
+          "heading": "STUN DURATION:",
+          "values": [
+            0.3,
+            0.5,
+            0.7,
+            0.9
+          ]
+        },
+        {
+          "key": "rock_bonus_duration",
+          "heading": "ROCK BONUS STUN DURATION:",
+          "values": [
+            0.3,
+            0.5,
+            0.7,
+            0.9
+          ]
+        },
+        {
+          "key": "damage_str",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "destroy_stone",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            3000
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            50
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            16,
+            12,
+            8,
+            4
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Rolling over a Stone Remnant will destroy the Remnant.",
+        "The boulder has a radius of %radius%.",
+        "Earth Spirit is untargetable and invulnerable while rolling."
+      ],
+      "lore": "Calling upon his connection to the land, the Earth Spirit draws loose stone to him, which forms a protective ball that he can use to roll short distances."
+    },
+    {
+      "key": "earth_spirit_geomagnetic_grip",
+      "name": "Geomagnetic Grip",
+      "description": "Earth Spirit pulls the target Stone Remnant or Allied Unit. Enemies struck by the gripped target will be silenced.<br><br>Pulled Remnants also deal damage to struck enemies.<br><br>Cast range is reduced when targeting an ally.",
+      "max_level": 4,
+      "cooldowns": [
+        13
+      ],
+      "mana_costs": [
+        75
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1000,
+        1100,
+        1200,
+        1300
+      ],
+      "cast_points": [
+        0.1
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            180
+          ]
+        },
+        {
+          "key": "rock_damage",
+          "heading": "REMNANT DAMAGE:",
+          "values": [
+            75,
+            150,
+            225,
+            300
+          ]
+        },
+        {
+          "key": "pull_units_per_second",
+          "heading": "REMNANT PULL SPEED:",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "SILENCE DURATION:",
+          "values": [
+            2.3,
+            2.7,
+            3.1,
+            3.5
+          ]
+        },
+        {
+          "key": "pull_units_per_second_heroes",
+          "heading": "ALLIED UNIT PULL SPEED:",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "cast_range_heroes",
+          "heading": "ALLIED UNIT CAST RANGE:",
+          "values": [
+            550,
+            600,
+            650,
+            700
+          ]
+        },
+        {
+          "key": "speed",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "total_pull_distance",
+          "heading": "",
+          "values": [
+            1400
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1000,
+            1100,
+            1200,
+            1300
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            75
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            13
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Decreases cooldown to %AbilityCooldown%s and increases allied unit cast range and pull speed.",
+      "notes": [
+        "Will not work on a unit inside Chronosphere, Duel, or Black Hole.",
+        "Geomagnetic Grip can also target allied creeps."
+      ],
+      "lore": "Like calls to like. Even the minerals found in the blood and bones of living beings are not immune to the call of the Earth Spirit."
+    },
+    {
+      "key": "earth_spirit_stone_caller",
+      "name": "Stone Remnant",
+      "description": "Call a Stone Remnant to the target location.  Stone Remnants have no vision and are invulnerable, and can be used with Earth Spirit's abilities.  Calling a Stone Remnant consumes a charge, which recharge over time. Stone Remnant has %AbilityCharges% charges.<br><br>Earth Spirit passively gains %attack_damage_per_stone%%% bonus damage per unused Stone Remnant charge, and gains an additional %attack_damage_per_stone_used%%% bonus damage for %buff_duration%s when a Stone Remnant is targeted with an ability (does not stack).",
+      "max_level": 1,
+      "cooldowns": [
+        0
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1100
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            60
+          ]
+        },
+        {
+          "key": "rolling_offset_distance",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "attack_damage_per_stone",
+          "heading": "",
+          "values": [
+            3
+          ]
+        },
+        {
+          "key": "attack_damage_per_stone_used",
+          "heading": "",
+          "values": [
+            7.5
+          ]
+        },
+        {
+          "key": "buff_duration",
+          "heading": "",
+          "values": [
+            10
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1100
+          ]
+        },
+        {
+          "key": "AbilityCharges",
+          "heading": "CHARGES:",
+          "values": [
+            7
+          ]
+        },
+        {
+          "key": "AbilityChargeRestoreTime",
+          "heading": "",
+          "values": [
+            18
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "Earth Spirit calls forth a remnant of his stone army, long buried with him in the dark embrace of the Earth."
+    },
+    {
+      "key": "earth_spirit_petrify",
+      "name": "Enchant Remnant",
+      "description": "Earth Spirit temporarily enchants a hero, granting them the properties of a Stone Remnant. After a short duration the remnant shatters, releasing the hero and damaging nearby enemies. < br><br>Can be cast on Stone Remnants. Has a 5 second cooldown when used that way.<br>Has a larger cast range when cast on an ally hero.",
+      "max_level": 1,
+      "cooldowns": [
+        45
+      ],
+      "mana_costs": [
+        150
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        175
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "duration",
+          "heading": "REMNANT DURATION:",
+          "values": [
+            2.4
+          ]
+        },
+        {
+          "key": "damage",
+          "heading": "SHATTER DAMAGE:",
+          "values": [
+            450
+          ]
+        },
+        {
+          "key": "aoe",
+          "heading": "SHATTER RADIUS:",
+          "values": [
+            450
+          ]
+        },
+        {
+          "key": "ally_cast_range",
+          "heading": "CAST RANGE ON ALLIES:",
+          "values": [
+            500
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            175
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            150
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            45
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "Earth Spirit himself can be targeted by Boulder Smash if he is enchanted."
+      ],
+      "lore": "Kaolin uses the elemental power of the Earth to temporarily petrify living beings, so that they might be conscripted into his stone funerary army."
+    },
+    {
+      "key": "earth_spirit_magnetize",
+      "name": "Magnetize",
+      "description": "Magnetizes units in a small nearby area, causing them to take damage for a short duration. Magnetized heroes cause nearby Stone Remnants to explode, destroying the remnant and refreshing Magnetize's duration on all nearby enemies. This process can repeat multiple times. If an enemy hero is affected by Geomagnetic Grip or Boulder Smash, all magnetized heroes share the effects.",
+      "max_level": 3,
+      "cooldowns": [
+        100,
+        90,
+        80
+      ],
+      "mana_costs": [
+        100
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        350
+      ],
+      "cast_points": [
+        0.2
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "cast_radius",
+          "heading": "RADIUS:",
+          "values": [
+            350
+          ]
+        },
+        {
+          "key": "damage_per_second",
+          "heading": "DAMAGE PER SECOND:",
+          "values": [
+            45,
+            90,
+            135
+          ]
+        },
+        {
+          "key": "damage_duration",
+          "heading": "MAGNETIZE DURATION:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "rock_search_radius",
+          "heading": "REMNANT REFRESH/EXPLOSION RADIUS:",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "rock_explosion_radius",
+          "heading": "",
+          "values": [
+            600
+          ]
+        },
+        {
+          "key": "damage_interval",
+          "heading": "",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "rock_explosion_delay",
+          "heading": "",
+          "values": [
+            8
+          ]
+        },
+        {
+          "key": "silence_duration",
+          "heading": "",
+          "values": [
+            5
+          ]
+        },
+        {
+          "key": "slow_duration",
+          "heading": "",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "magnetize_self",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            350
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            100,
+            90,
+            80
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "At the Earth Spirit's call, the minerals in the blood and bones of his enemies rebel against the bodies they find themselves in."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "-{s:bonus_AbilityCooldown}s Boulder Smash Cooldown"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_distance} Rolling Boulder Distance"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_stun_duration}s Rolling Boulder Stun Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_rock_damage} Boulder Smash Damage"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_duration}% Magnetize Damage & Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_str}% Rolling Boulder Damage from Strength"
+    },
+    {
+      "slot": null,
+      "name": "Earth Spirit Magnetizes himself"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_rock_damage} Geomagnetic Grip Remnant Damage"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

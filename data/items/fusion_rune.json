@@ -1,0 +1,46 @@
+{
+  "id": 313,
+  "name": "Fusion Rune",
+  "slug": "fusion_rune",
+  "internal_key": "item_fusion_rune",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Use: Consume</h1> Grants the target the bonuses of every Power Rune for %duration% seconds. Each use consumes a charge.",
+  "notes": null,
+  "cooldowns": [
+    120
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    250
+  ],
+  "special_values": [
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        50
+      ]
+    },
+    {
+      "key": "AbilityCastRange",
+      "heading": "",
+      "values": [
+        250
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        120
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

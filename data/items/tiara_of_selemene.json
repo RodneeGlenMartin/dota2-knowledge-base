@@ -1,0 +1,32 @@
+{
+  "id": 1802,
+  "name": "Tiara of Selemene",
+  "slug": "tiara_of_selemene",
+  "internal_key": "item_tiara_of_selemene",
+  "cost": 1700,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_mana_regen",
+      "heading": "+$mana_regen",
+      "values": [
+        6
+      ]
+    }
+  ],
+  "lore": "A symbol of favor bestowed upon the high priestess of Selemene.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

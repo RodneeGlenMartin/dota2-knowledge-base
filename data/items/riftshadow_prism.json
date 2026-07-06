@@ -1,0 +1,60 @@
+{
+  "id": 1718,
+  "name": "Riftshadow Prism",
+  "slug": "riftshadow_prism",
+  "internal_key": "item_riftshadow_prism",
+  "cost": null,
+  "neutral_tier": null,
+  "description": "<h1>Active: Refract</h1> Spend %health_cost%%% of your current life total to create a full health illusion that lasts for 20 seconds. The illusion has %outgoing_damage%%% outgoing damage and takes %incoming_damage%%% of incoming damage.",
+  "notes": null,
+  "cooldowns": [
+    27
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "outgoing_damage",
+      "heading": "",
+      "values": [
+        60
+      ]
+    },
+    {
+      "key": "incoming_damage",
+      "heading": "",
+      "values": [
+        200
+      ]
+    },
+    {
+      "key": "duration",
+      "heading": "",
+      "values": [
+        20
+      ]
+    },
+    {
+      "key": "health_cost",
+      "heading": "",
+      "values": [
+        8
+      ]
+    },
+    {
+      "key": "AbilityCooldown",
+      "heading": "",
+      "values": [
+        27
+      ]
+    }
+  ],
+  "lore": null,
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

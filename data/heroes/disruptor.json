@@ -1,0 +1,782 @@
+{
+  "id": 87,
+  "name": "Disruptor",
+  "slug": "disruptor",
+  "npc_name": "npc_dota_hero_disruptor",
+  "primary_attribute": "int",
+  "attack_type": "Ranged",
+  "complexity": 2,
+  "roles": [
+    "Support",
+    "Nuker",
+    "Disabler",
+    "Initiator"
+  ],
+  "stats": {
+    "base_str": 21,
+    "str_gain": 2.4,
+    "base_agi": 15,
+    "agi_gain": 1.4,
+    "base_int": 20,
+    "int_gain": 2.9,
+    "damage_min": 47,
+    "damage_max": 51,
+    "attack_rate": 1.7,
+    "attack_range": 625,
+    "projectile_speed": 1200,
+    "armor": 2.5,
+    "magic_resistance": 25,
+    "movement_speed": 300,
+    "turn_rate": 0.6,
+    "sight_range_day": 1800,
+    "sight_range_night": 800,
+    "max_health": 582,
+    "health_regen": 2.3500001,
+    "max_mana": 315,
+    "mana_regen": 1
+  },
+  "lore": "High on the wind-ravaged steppes of Druud, a gifted young stormcrafter called Disruptor was the first to unlock the secrets of the summer squalls.  Constantly under assault from both seasonal storms and encroachment from civilized kingdoms to the South, the upland Oglodi have for centuries struggled to subsist atop the endless tablelands.  They are the fractured remnant of a once-great civilization, a fallen tribe, their stormcraft strange and inscrutable, cobbled together from scraps of lost knowledge which even they no longer fully understand.  For those on the high plain, weather has become a kind of religion, worshiped as both the giver and taker of life.  But the electrical storms that bring life-sustaining rains arrive at a cost, and many are the charred and smoking corpses left in their wake.  \r\n\t\t\t\t<br><br>Although small for his kind, Disruptor is fearless, and driven by an insatiable curiosity.  As a youth, while still unblooded and without a stryder, he explored the ruins of the ancestral cities, searching through collapsed and long-moldering libraries, rummaging through rusting manufactories.  He took what he needed and returned to his tribe.  Adapting a coil of ancient design, he harnessed the power of electrical differential and now calls down the thunder whenever he wishes.  Part magic, part craftsmanship, his coils hold in their glowing plates the power of life and death--a power wielded with precision against the landed castes to the South, and any interlopers who cross into ancient Oglodi lands.",
+  "hype": "Disruptor excels at shattering the plans of his enemies. <b>Summoning impassable fences</b> to trap targets as he calls down a <b>silencing storm</b>, should a foe attempt something unexpected he simply <b>teleports them back</b> to their earlier location.",
+  "abilities": [
+    {
+      "key": "disruptor_thunder_strike",
+      "name": "Thunder Strike",
+      "description": "Repeatedly strikes the targeted unit with lightning.  Each strike damages nearby enemy units in a small radius and slows enemy movement and attack speed by %slow_amount%%% for %slow_duration% seconds.  Provides vision of its target.",
+      "max_level": 4,
+      "cooldowns": [
+        18,
+        15,
+        12,
+        9
+      ],
+      "mana_costs": [
+        115,
+        120,
+        125,
+        130
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        800
+      ],
+      "cast_points": [
+        0.05,
+        0.05,
+        0.05,
+        0.05
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            260
+          ]
+        },
+        {
+          "key": "strikes",
+          "heading": "STRIKES:",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "strike_interval",
+          "heading": "STRIKE INTERVAL:",
+          "values": [
+            2
+          ]
+        },
+        {
+          "key": "strike_damage",
+          "heading": "STRIKE DAMAGE:",
+          "values": [
+            30,
+            60,
+            90,
+            120
+          ]
+        },
+        {
+          "key": "strike_damage_bonus",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "slow_duration",
+          "heading": "",
+          "values": [
+            0.3
+          ]
+        },
+        {
+          "key": "slow_amount",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "shard_ground_delay",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "hits_units_inside_kinetic",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.05
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            115,
+            120,
+            125,
+            130
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            18,
+            15,
+            12,
+            9
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Increases the cast range and strike count of Thunder Strike. It can now also be ground targeted, where it will lie dormant for up to %shard_ground_delay% seconds and attach to the first enemy that comes within the radius.",
+      "notes": null,
+      "lore": "Disruptor's charged coils occasionally overload, and a singed armor plate or tuft of fur is the enemy's result."
+    },
+    {
+      "key": "disruptor_glimpse",
+      "name": "Glimpse",
+      "description": "Teleports the target hero back to where it was %backtrack_time% seconds ago.  Instantly kills illusions. Deals damage equal to a percentage of the distance glimpsed, that cannot go over a damage maximum.",
+      "max_level": 4,
+      "cooldowns": [
+        24,
+        22,
+        20,
+        18
+      ],
+      "mana_costs": [
+        70,
+        85,
+        100,
+        115
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        600,
+        1000,
+        1400,
+        1800
+      ],
+      "cast_points": [
+        0.05,
+        0.05,
+        0.05,
+        0.05
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "backtrack_time",
+          "heading": "",
+          "values": [
+            4
+          ]
+        },
+        {
+          "key": "cast_range",
+          "heading": "",
+          "values": [
+            600,
+            1000,
+            1400,
+            1800
+          ]
+        },
+        {
+          "key": "min_damage",
+          "heading": "MIN DAMAGE:",
+          "values": [
+            25
+          ]
+        },
+        {
+          "key": "max_damage",
+          "heading": "MAX DAMAGE:",
+          "values": [
+            100,
+            160,
+            220,
+            280
+          ]
+        },
+        {
+          "key": "damage_to_distance_pct",
+          "heading": "GLIMPSE DISTANCE TO DAMAGE:",
+          "values": [
+            20,
+            25,
+            30,
+            35
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            600,
+            1000,
+            1400,
+            1800
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.05
+          ]
+        },
+        {
+          "key": "AbilityCharges",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            70,
+            85,
+            100,
+            115
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            24,
+            22,
+            20,
+            18
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "The travel time is a function of the distance the target will travel."
+      ],
+      "lore": "Playing with electricity can have unexpected results."
+    },
+    {
+      "key": "disruptor_kinetic_field",
+      "name": "Kinetic Field",
+      "description": "After a short formation time, creates a circular barrier of kinetic energy that enemies can't pass.",
+      "max_level": 4,
+      "cooldowns": [
+        20,
+        18,
+        16,
+        14
+      ],
+      "mana_costs": [
+        70
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        900
+      ],
+      "cast_points": [
+        0.05
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            350
+          ]
+        },
+        {
+          "key": "formation_time",
+          "heading": "FORMATION DELAY:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            2.6,
+            3.2,
+            3.8,
+            4.4
+          ]
+        },
+        {
+          "key": "damage_per_second",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "wall_thickness",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "tick_rate",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "cooldown_share",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "strike_on_touch",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            900
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.05
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            70
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            20,
+            18,
+            16,
+            14
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": "Both shapes have an independent cooldown.",
+      "notes": [
+        "Debuff Immune units can travel through the field."
+      ],
+      "lore": "The stryder is immune to the gale-force winds that will consume its adversaries."
+    },
+    {
+      "key": "disruptor_kinetic_fence",
+      "name": "Kinetic Fence",
+      "description": "After a short formation time, creates a wall out of kinetic energy that enemies cannot pass.",
+      "max_level": 1,
+      "cooldowns": [
+        14
+      ],
+      "mana_costs": [
+        70
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        1200
+      ],
+      "cast_points": [
+        0.05
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "wall_width",
+          "heading": "LENGTH:",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "wall_thickness",
+          "heading": "",
+          "values": [
+            100
+          ]
+        },
+        {
+          "key": "radius",
+          "heading": "",
+          "values": [
+            350
+          ]
+        },
+        {
+          "key": "formation_time",
+          "heading": "FORMATION DELAY:",
+          "values": [
+            1
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            4.4
+          ]
+        },
+        {
+          "key": "damage_per_second",
+          "heading": "",
+          "values": null
+        },
+        {
+          "key": "tick_rate",
+          "heading": "",
+          "values": [
+            0.1
+          ]
+        },
+        {
+          "key": "cooldown_share",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "strike_on_touch",
+          "heading": "",
+          "values": [
+            0
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            1200
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.05
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            70
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            14
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "For a brief moment, it's as if the wind itself had turned solid."
+    },
+    {
+      "key": "disruptor_electromagnetic_repulsion",
+      "name": "Electromagnetic Repulsion",
+      "description": "Whenever Disruptor takes more than %damage_threshold% damage from any source within %effect_radius% radius, all nearby enemies within take damage equal to %damage_per_int%x of Disruptor's Intelligence, and are pushed back up to a %effect_radius% distance away.",
+      "max_level": 1,
+      "cooldowns": [
+        5
+      ],
+      "mana_costs": [
+        0
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        0
+      ],
+      "cast_points": [
+        0
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "damage_threshold",
+          "heading": "",
+          "values": [
+            250
+          ]
+        },
+        {
+          "key": "effect_radius",
+          "heading": "",
+          "values": [
+            400
+          ]
+        },
+        {
+          "key": "knockback_duration",
+          "heading": "",
+          "values": [
+            0.2
+          ]
+        },
+        {
+          "key": "damage_reset_interval",
+          "heading": "",
+          "values": [
+            7
+          ]
+        },
+        {
+          "key": "damage_per_int",
+          "heading": "",
+          "values": [
+            1.5
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            5
+          ]
+        }
+      ],
+      "scepter_upgrade": null,
+      "shard_upgrade": null,
+      "notes": [
+        "After %damage_reset_interval%s, the damage counter is reset."
+      ],
+      "lore": "Safe harbor found inside the storm."
+    },
+    {
+      "key": "disruptor_static_storm",
+      "name": "Static Storm",
+      "description": "Creates a damaging static storm that also silences all enemy units in the area for the duration.  The damage starts off weak, but increases in power over the duration.",
+      "max_level": 3,
+      "cooldowns": [
+        100,
+        85,
+        70
+      ],
+      "mana_costs": [
+        125,
+        175,
+        225
+      ],
+      "health_costs": [],
+      "cast_ranges": [
+        800
+      ],
+      "cast_points": [
+        0.05
+      ],
+      "durations": [
+        0
+      ],
+      "damages": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_values": [
+        {
+          "key": "radius",
+          "heading": "RADIUS:",
+          "values": [
+            550
+          ]
+        },
+        {
+          "key": "pulses",
+          "heading": "PULSES:",
+          "values": [
+            20
+          ]
+        },
+        {
+          "key": "damage_max",
+          "heading": "MAX DAMAGE PER SECOND:",
+          "values": [
+            200,
+            275,
+            350
+          ]
+        },
+        {
+          "key": "duration",
+          "heading": "DURATION:",
+          "values": [
+            6
+          ]
+        },
+        {
+          "key": "AbilityCastRange",
+          "heading": "",
+          "values": [
+            800
+          ]
+        },
+        {
+          "key": "AbilityCastPoint",
+          "heading": "",
+          "values": [
+            0.05
+          ]
+        },
+        {
+          "key": "AbilityManaCost",
+          "heading": "",
+          "values": [
+            125,
+            175,
+            225
+          ]
+        },
+        {
+          "key": "AbilityCooldown",
+          "heading": "",
+          "values": [
+            100,
+            85,
+            70
+          ]
+        }
+      ],
+      "scepter_upgrade": "Mutes items.",
+      "shard_upgrade": null,
+      "notes": null,
+      "lore": "A summer squall in Druud is a hardship that only an Oglodi can survive."
+    }
+  ],
+  "talents": [
+    {
+      "slot": null,
+      "name": "+{s:value} Movement Speed"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_strike_damage_bonus} Thunder Strike Damage per Strike"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_to_distance_pct}%/{s:bonus_max_damage} Glimpse Distance To Damage/Max"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_damage_max} Static Storm Max DPS"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_duration}s Kinetic Field Duration"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_radius} Static Storm Radius"
+    },
+    {
+      "slot": null,
+      "name": "{s:bonus_AbilityCharges} Glimpse Charges"
+    },
+    {
+      "slot": null,
+      "name": "+{s:bonus_strikes} Thunder Strike Strikes"
+    }
+  ],
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": 129,
+  "name": "Soul Booster",
+  "slug": "soul_booster",
+  "internal_key": "item_soul_booster",
+  "cost": 3000,
+  "neutral_tier": null,
+  "description": "",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_health",
+      "heading": "+$health",
+      "values": [
+        425
+      ]
+    },
+    {
+      "key": "bonus_mana",
+      "heading": "+$mana",
+      "values": [
+        425
+      ]
+    }
+  ],
+  "lore": "Regain lost courage.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}

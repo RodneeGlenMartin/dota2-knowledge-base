@@ -1,0 +1,32 @@
+{
+  "id": 29,
+  "name": "Boots of Speed",
+  "slug": "boots_of_speed",
+  "internal_key": "item_boots",
+  "cost": 500,
+  "neutral_tier": null,
+  "description": "Movement speed bonuses from multiple pairs of boots do not stack.",
+  "notes": null,
+  "cooldowns": [
+    0
+  ],
+  "mana_costs": [
+    0
+  ],
+  "cast_ranges": [
+    0
+  ],
+  "special_values": [
+    {
+      "key": "bonus_movement_speed",
+      "heading": "+$move_speed",
+      "values": [
+        45
+      ]
+    }
+  ],
+  "lore": "Fleet footwear, increasing movement.",
+  "sources": [
+    "Valve dota2.com datafeed (official, patch-current)"
+  ]
+}
