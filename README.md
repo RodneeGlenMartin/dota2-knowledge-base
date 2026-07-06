@@ -3,6 +3,9 @@
 A structured knowledge base of Dota 2 heroes, items, and game mechanics with
 a REST API on top.
 
+**🌐 Public hosted API:** `https://jcrjjbxfgdurusyxkbdv.supabase.co/rest/v1`
+— see **[docs/API.md](docs/API.md)** for the key, endpoints, and examples.
+
 **Data sources**
 
 - **Valve's official dota2.com datafeed** — the JSON backend behind
@@ -53,6 +56,8 @@ scripts/
   fetch_valve.py      download hero/item data from Valve's datafeed
   build_kb.py         assemble data/heroes and data/items from raw
   fetch_liquipedia.py download mechanics articles (batched, rate-limited)
+  load_supabase.py    load the KB into the hosted Supabase database
+docs/API.md           public hosted API documentation
 ```
 
 ## Record shapes
