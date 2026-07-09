@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dota 2 Itemization Guide</title>
+<style>
+  :root{
+    --bg:#0e1116; --panel:#171c24; --panel2:#1f2630; --border:#2b3442;
+    --text:#dbe2ea; --muted:#8b98a8; --accent:#e0a23c; --red:#e05c5c;
+    --green:#59b56b; --blue:#5c9fe0; --agi:#59b56b; --str:#e05c5c; --int:#5c9fe0; --uni:#b78fe0;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--text)}
+  header{padding:16px 24px;border-bottom:1px solid var(--border);display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+  header h1{margin:0;font-size:20px;color:var(--accent)}
+  header .sub{color:var(--muted);font-size:13px}
+  nav button{background:var(--panel2);color:var(--text);border:1px solid var(--border);padding:8px 16px;border-radius:6px;cursor:pointer;font-size:14px}
+  nav button.active{background:var(--accent);color:#141414;border-color:var(--accent);font-weight:600}
+  main{padding:20px 24px;max-width:1200px;margin:0 auto}
+  input[type=text]{background:var(--panel);border:1px solid var(--border);color:var(--text);padding:8px 12px;border-radius:6px;font-size:14px;width:260px}
+  .filters{display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap;align-items:center}
+  .chip{background:var(--panel2);border:1px solid var(--border);color:var(--muted);padding:5px 12px;border-radius:14px;cursor:pointer;font-size:13px;user-select:none}
+  .chip.on{background:var(--accent);color:#141414;border-color:var(--accent);font-weight:600}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px}
+  .card{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:12px;cursor:pointer;transition:border-color .15s}
+  .card:hover{border-color:var(--accent)}
+  .card .nm{font-weight:600;font-size:15px}
+  .card .meta{color:var(--muted);font-size:12px;margin-top:4px}
+  .attr{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px}
+  .attr.str{background:var(--str)}.attr.agi{background:var(--agi)}.attr.int{background:var(--int)}.attr.universal{background:var(--uni)}
+  .posbadges{margin-top:6px}
+  .pos{display:inline-block;background:var(--panel2);border:1px solid var(--border);border-radius:4px;font-size:11px;padding:1px 6px;margin-right:4px;color:var(--muted)}
+  .back{color:var(--accent);cursor:pointer;font-size:14px;margin-bottom:12px;display:inline-block}
+  h2{margin:6px 0 2px}
+  .tags span{display:inline-block;background:#2a2233;border:1px solid #4a3a5e;color:#c9aef0;border-radius:12px;padding:2px 10px;font-size:12px;margin:3px 4px 0 0}
+  .postabs{display:flex;gap:8px;margin:16px 0}
+  .postabs button{background:var(--panel2);border:1px solid var(--border);color:var(--text);padding:8px 18px;border-radius:6px;cursor:pointer;font-size:14px}
+  .postabs button.active{background:var(--accent);color:#141414;font-weight:700;border-color:var(--accent)}
+  .phase{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:14px 16px;margin-bottom:12px}
+  .phase h3{margin:0 0 8px;font-size:14px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+  .items{display:flex;flex-wrap:wrap;gap:8px}
+  .item{background:var(--panel2);border:1px solid var(--border);border-radius:6px;padding:6px 10px;font-size:13px}
+  .item .cost{color:var(--accent);font-size:11px;margin-left:6px}
+  .item .why{display:block;color:var(--muted);font-size:11px;margin-top:2px;max-width:220px}
+  .counterbox{background:#241a1a;border:1px solid #4e2f2f;border-radius:8px;padding:14px 16px;margin-bottom:12px}
+  .counterbox h3{margin:0 0 4px;font-size:14px;color:var(--red);text-transform:uppercase;letter-spacing:.06em}
+  .counterbox .rsn{color:var(--muted);font-size:12px;margin-bottom:8px}
+  .vsline{font-size:12px;color:var(--muted);margin:2px 0 8px}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:800px){.cols{grid-template-columns:1fr}}
+  .pick{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:14px}
+  .pick h3{margin:0 0 8px;font-size:15px}
+  .sel{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0;min-height:30px}
+  .sel .tag{background:var(--panel2);border:1px solid var(--accent);border-radius:6px;padding:4px 10px;font-size:13px;cursor:pointer}
+  .sel .tag:hover{border-color:var(--red);text-decoration:line-through}
+  .list{max-height:260px;overflow-y:auto;border:1px solid var(--border);border-radius:6px;margin-top:6px}
+  .list div{padding:6px 12px;cursor:pointer;font-size:14px;border-bottom:1px solid #202832}
+  .list div:hover{background:var(--panel2)}
+  .muted{color:var(--muted)}
+  footer{color:var(--muted);font-size:12px;padding:20px 24px;border-top:1px solid var(--border);margin-top:30px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Dota 2 Itemization Guide</h1>
+  <span class="sub" id="herocount"></span>
+  <nav>
+    <button id="navHeroes" class="active" onclick="setView('heroes')">Hero Guides</button>
+    <button id="navDraft" onclick="setView('draft')">Draft &amp; Counter Picker</button>
+  </nav>
+</header>
+<main id="main"></main>
+<footer>Data: Valve dota2.com datafeed + curated itemization layer. Positions: 1 safelane carry · 2 mid · 3 offlane · 4 soft support · 5 hard support.</footer>
+<script src="data.js"></script>
+<script>
+const D = window.DOTA_APP_DATA;
+const heroes = D.heroes;
+const bySlug = Object.fromEntries(heroes.map(h=>[h.slug,h]));
+document.getElementById('herocount').textContent = D.hero_count + ' heroes · patch-current';
+
+let state = {view:'heroes', hero:null, pos:null, q:'', attr:null, posf:null,
+             draft:{me:null, role:null, enemies:[]}};
+
+function setView(v){state.view=v; state.hero=null; render();}
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+function gold(c){return c?`<span class="cost">${c}g</span>`:''}
+
+function itemChip(it, why){
+  return `<div class="item">${esc(it.name)}${gold(it.cost)}${why?`<span class="why">${esc(why)}</span>`:''}</div>`;
+}
+
+function heroCard(h){
+  return `<div class="card" onclick="openHero('${h.slug}')">
+    <div class="nm"><span class="attr ${h.attribute}"></span>${esc(h.name)}</div>
+    <div class="meta">${h.attack_type} · ${h.roles.slice(0,3).join(', ')}</div>
+    <div class="posbadges">${h.positions.map(p=>`<span class="pos">Pos ${p}</span>`).join('')}</div>
+  </div>`;
+}
+
+function render(){
+  document.getElementById('navHeroes').classList.toggle('active', state.view==='heroes');
+  document.getElementById('navDraft').classList.toggle('active', state.view==='draft');
+  const m = document.getElementById('main');
+  if(state.view==='draft'){ m.innerHTML = renderDraft(); return; }
+  if(state.hero){ m.innerHTML = renderHero(bySlug[state.hero]); return; }
+  m.innerHTML = renderGrid();
+}
+
+function renderGrid(){
+  const attrs=['str','agi','int','universal'];
+  let list = heroes.filter(h=>
+    (!state.q || h.name.toLowerCase().includes(state.q)) &&
+    (!state.attr || h.attribute===state.attr) &&
+    (!state.posf || h.positions.includes(state.posf)));
+  return `<div class="filters">
+    <input type="text" placeholder="Search hero…" value="${esc(state.q)}"
+      oninput="state.q=this.value.toLowerCase();renderKeepFocus(this)">
+    ${attrs.map(a=>`<span class="chip ${state.attr===a?'on':''}" onclick="state.attr=state.attr==='${a}'?null:'${a}';render()">${a.toUpperCase()}</span>`).join('')}
+    ${[1,2,3,4,5].map(p=>`<span class="chip ${state.posf===p?'on':''}" onclick="state.posf=state.posf===${p}?null:${p};render()">Pos ${p}</span>`).join('')}
+  </div>
+  <div class="grid">${list.map(heroCard).join('')||'<p class="muted">No heroes match.</p>'}</div>`;
+}
+function renderKeepFocus(inp){
+  const pos=inp.selectionStart; render();
+  const ni=document.querySelector('input[type=text]'); if(ni){ni.focus();ni.setSelectionRange(pos,pos);}
+}
+
+function openHero(slug){state.hero=slug; state.pos=bySlug[slug].positions[0]; render(); window.scrollTo(0,0);}
+
+function renderHero(h){
+  const pos = state.pos && h.positions.includes(state.pos) ? state.pos : h.positions[0];
+  const b = h.builds[String(pos)];
+  const counters = countersAgainst(h);
+  return `<span class="back" onclick="state.hero=null;render()">&larr; All heroes</span>
+    <h2><span class="attr ${h.attribute}"></span>${esc(h.name)}</h2>
+    <div class="muted">${h.attack_type} · ${h.roles.join(', ')}</div>
+    <div class="tags">${h.threat_tags.map(t=>`<span>${esc(D.tag_labels[t]||t)}</span>`).join('')}</div>
+    <div class="postabs">${h.positions.map(p=>
+      `<button class="${p===pos?'active':''}" onclick="state.pos=${p};render()">Pos ${p}</button>`).join('')}</div>
+    ${phase('Starting items', b.starting)}
+    ${phase('Early game', b.early)}
+    ${phase('Core build (in order)', b.core)}
+    ${phase('Situational / luxury', b.situational)}
+    <div class="counterbox">
+      <h3>How to counter ${esc(h.name)}</h3>
+      ${counters || '<span class="muted">No specific threat tags — standard itemization applies.</span>'}
+    </div>`;
+}
+
+function phase(title, items){
+  return `<div class="phase"><h3>${title}</h3><div class="items">${items.map(i=>itemChip(i)).join('')}</div></div>`;
+}
+
+function countersAgainst(h, asSupport){
+  const parts=[];
+  for(const t of h.threat_tags){
+    const r = D.counter_rules[t]; if(!r) continue;
+    const pool = asSupport===undefined ? r.core.concat(r.support)
+               : (asSupport ? r.support : r.core);
+    if(!pool.length) continue;
+    parts.push(`<div style="margin-bottom:10px">
+      <b>${esc(r.label)}</b> <span class="rsn">— ${esc(r.reason)}</span>
+      <div class="items" style="margin-top:6px">${pool.map(i=>itemChip(i,i.why)).join('')}</div></div>`);
+  }
+  return parts.join('');
+}
+
+/* ---------------- Draft picker ---------------- */
+function renderDraft(){
+  const d=state.draft;
+  const me = d.me?bySlug[d.me]:null;
+  const role = me ? (d.role && me.positions.includes(d.role) ? d.role : me.positions[0]) : null;
+  return `<h2>Draft &amp; Counter Picker</h2>
+  <p class="muted">Pick your hero and role, add enemy heroes, and get a build with counter items merged in.</p>
+  <div class="cols">
+    <div class="pick">
+      <h3>Your hero</h3>
+      ${me?`<div class="sel"><span class="tag" onclick="state.draft.me=null;render()">${esc(me.name)} ✕</span></div>
+        <div class="postabs">${me.positions.map(p=>`<button class="${p===role?'active':''}" onclick="state.draft.role=${p};render()">Pos ${p}</button>`).join('')}</div>`
+      :pickList('pickMe')}
+    </div>
+    <div class="pick">
+      <h3>Enemy heroes (${d.enemies.length}/5)</h3>
+      <div class="sel">${d.enemies.map(s=>`<span class="tag" onclick="rmEnemy('${s}')">${esc(bySlug[s].name)} ✕</span>`).join('')||'<span class="muted">none yet</span>'}</div>
+      ${d.enemies.length<5?pickList('pickEnemy'):''}
+    </div>
+  </div>
+  ${me?renderDraftBuild(me,role):''}`;
+}
+
+function pickList(fn){
+  return `<input type="text" placeholder="Search…" oninput="filterList(this)">
+   <div class="list">${heroes.map(h=>`<div data-n="${h.name.toLowerCase()}" onclick="${fn}('${h.slug}')">${esc(h.name)}</div>`).join('')}</div>`;
+}
+function filterList(inp){
+  const q=inp.value.toLowerCase();
+  inp.nextElementSibling.querySelectorAll('div[data-n]').forEach(el=>{
+    el.style.display = el.dataset.n.includes(q)?'':'none';});
+}
+function pickMe(s){state.draft.me=s;state.draft.role=null;render();}
+function pickEnemy(s){ if(state.draft.me===s) return;
+  if(!state.draft.enemies.includes(s)&&state.draft.enemies.length<5){state.draft.enemies.push(s);render();}}
+function rmEnemy(s){state.draft.enemies=state.draft.enemies.filter(x=>x!==s);render();}
+
+function renderDraftBuild(me, role){
+  const b = me.builds[String(role)];
+  const isSupport = role>=4;
+  const coreSlugs = new Set(b.core.map(i=>i.slug));
+  // aggregate counter items across enemies
+  const agg = new Map(); // slug -> {item, whys:[], vs:Set}
+  for(const es of state.draft.enemies){
+    const e = bySlug[es];
+    for(const t of e.threat_tags){
+      const r = D.counter_rules[t]; if(!r) continue;
+      for(const it of (isSupport?r.support:r.core)){
+        if(coreSlugs.has(it.slug)) continue;
+        if(!agg.has(it.slug)) agg.set(it.slug,{item:it,whys:new Set(),vs:new Set()});
+        agg.get(it.slug).whys.add(it.why);
+        agg.get(it.slug).vs.add(e.name+' ('+ (D.tag_labels[t]||t) +')');
+      }
+    }
+  }
+  const ranked=[...agg.values()].sort((a,b)=>b.vs.size-a.vs.size);
+  return `<div style="margin-top:20px">
+    <h2>${esc(me.name)} — Pos ${role} build${state.draft.enemies.length?` vs ${state.draft.enemies.map(s=>esc(bySlug[s].name)).join(', ')}`:''}</h2>
+    ${phase('Starting items', b.starting)}
+    ${phase('Early game', b.early)}
+    ${phase('Core build (in order)', b.core)}
+    ${ranked.length?`<div class="counterbox"><h3>Counter items vs this lineup</h3>
+      <div class="rsn">Ranked by how many enemy threats each item answers. Slot these into or after your core build.</div>
+      ${ranked.map(a=>`<div style="margin-bottom:8px"><div class="items">${itemChip(a.item,[...a.whys][0])}</div>
+        <div class="vsline">vs ${[...a.vs].map(esc).join(' · ')}</div></div>`).join('')}
+    </div>`:''}
+    ${phase('Situational / luxury', b.situational)}
+  </div>`;
+}
+
+render();
+</script>
+</body>
+</html>
